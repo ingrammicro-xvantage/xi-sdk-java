@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * Attribute Name and Value: This field identifies if your order is a DIRECT SHIP order (license / warranty) or how you want your Backorders managed as well as other process options like placing your order on hold or adding a comment. 
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-11T06:30:19.223435Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-11T06:39:09.782810Z[Etc/UTC]")
 public class OrderCreateRequestOrdercreaterequestOrdercreatedetailsExtendedspecsInner {
   /**
    * Gets or Sets attributename

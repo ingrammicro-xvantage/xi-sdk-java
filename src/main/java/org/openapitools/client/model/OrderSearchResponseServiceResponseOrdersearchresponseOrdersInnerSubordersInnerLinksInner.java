@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInnerLinksInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-11T06:30:19.223435Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-11T06:39:09.782810Z[Etc/UTC]")
 public class OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInnerLinksInner {
   /**
    * topic being orders or invoices, if it is orders then the link will provide details of the order. If its invoices then the link provides details of the invoice

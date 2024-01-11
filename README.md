@@ -2,7 +2,7 @@
 
 Reseller API Documentation
 - API version: 6.0
-  - Build date: 2024-01-11T06:30:19.223435Z[Etc/UTC]
+  - Build date: 2024-01-11T06:39:09.782810Z[Etc/UTC]
 
 For Resellers. <br>
 Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.

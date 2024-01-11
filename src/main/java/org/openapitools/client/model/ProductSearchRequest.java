@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * Request object model for the product search endpoint
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-11T06:30:19.223435Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-11T06:39:09.782810Z[Etc/UTC]")
 public class ProductSearchRequest {
   public static final String SERIALIZED_NAME_SERVICEREQUEST = "servicerequest";
   @SerializedName(SERIALIZED_NAME_SERVICEREQUEST)

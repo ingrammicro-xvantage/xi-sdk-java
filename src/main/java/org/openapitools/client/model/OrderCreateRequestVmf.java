@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * Vendor mandatory fields, this is required in case of warranty orders.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-11T06:30:19.223435Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-11T06:39:09.782810Z[Etc/UTC]")
 public class OrderCreateRequestVmf {
   public static final String SERIALIZED_NAME_VEND_AUTH_NUMBER = "vendAuthNumber";
   @SerializedName(SERIALIZED_NAME_VEND_AUTH_NUMBER)
