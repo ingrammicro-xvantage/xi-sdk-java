@@ -21,12 +21,12 @@ This endpoint is a request to cancel a previously accepted order. Use your Ingra
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersV5Api;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersV5Api;
 
 public class Example {
   public static void main(String[] args) {
@@ -94,12 +94,12 @@ Search your Ingram Micro orders. This endpoint searches by multiple order parame
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersV5Api;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersV5Api;
 
 public class Example {
   public static void main(String[] args) {
@@ -177,12 +177,12 @@ Use your Ingram Micro sales order number to search for existing orders or retrie
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersV5Api;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersV5Api;
 
 public class Example {
   public static void main(String[] args) {
@@ -256,12 +256,12 @@ Instantly create and place orders. The POST API supports stocked SKUs as well as
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersV5Api;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersV5Api;
 
 public class Example {
   public static void main(String[] args) {

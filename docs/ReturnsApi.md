@@ -20,12 +20,12 @@ The Returns Details API will retrieve all the details related to the specific ca
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ReturnsApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.ReturnsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -97,12 +97,12 @@ The Returns Search API, by default, will retrieve all the returns that are assoc
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ReturnsApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.ReturnsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -202,12 +202,12 @@ Return create endpoint will allow customers to create a return request. In order
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ReturnsApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.ReturnsApi;
 
 public class Example {
   public static void main(String[] args) {

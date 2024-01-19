@@ -22,12 +22,12 @@ This call must be submitted before the order is released to Ingram Micro’s war
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -102,12 +102,12 @@ The Orders details API endpoint allows a customer to retrieve their Ingram Micro
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -188,12 +188,12 @@ The Orders Search API endpoint allows a customer to search their Ingram Micro or
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -300,12 +300,12 @@ Instantly create and place orders. The POST API supports stocked SKUs as well as
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -378,12 +378,12 @@ The Order Modify API endpoint allows for changes to be made to an order after th
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersApi;
 
 public class Example {
   public static void main(String[] args) {

@@ -19,12 +19,12 @@ The Deals Details API will retrieve all the details related to the specific deal
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.DealsApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.DealsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -96,12 +96,12 @@ The Deals Search API, by default, will retrieve all the deals that are associate
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.DealsApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.DealsApi;
 
 public class Example {
   public static void main(String[] args) {

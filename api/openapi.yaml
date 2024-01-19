@@ -3,7 +3,7 @@ info:
   description: |-
     For Resellers. <br>
     Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
-  title: Reseller API Documentation
+  title: Reseller API
   version: "6.0"
 servers:
 - description: Sandbox
@@ -17008,13 +17008,11 @@ components:
         dateofPurchase:
           description: Date of purchase of the hardware.
           format: date
-          maxLength: 8
           type: string
         shipDate:
           description: "Vendor specific mandatory field, date of hardware/product\
             \ shipment from vendor."
           format: date
-          maxLength: 8
           type: string
         primarySerialNumber:
           description: Serial number of the hardware/product.
@@ -17291,7 +17289,6 @@ components:
           description: The reseller-requested delivery date in UTC format. Delivery
             date is not guaranteed.
           format: date
-          maxLength: 8
           type: string
         signatureRequired:
           description: Specifies whether a signature is required for delivery. Default

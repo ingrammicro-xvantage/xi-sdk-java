@@ -22,12 +22,12 @@ The order create transaction is a real-time transaction that allows customers to
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersV4Api;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersV4Api;
 
 public class Example {
   public static void main(String[] args) {
@@ -89,12 +89,12 @@ A real-time request to delete a previously accepted order must be submitted befo
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersV4Api;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersV4Api;
 
 public class Example {
   public static void main(String[] args) {
@@ -156,12 +156,12 @@ A real-time request that allows the customer to query Ingram Micro for detailed 
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersV4Api;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersV4Api;
 
 public class Example {
   public static void main(String[] args) {
@@ -223,12 +223,12 @@ The order modify transaction allows for changes to be made after the order creat
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersV4Api;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersV4Api;
 
 public class Example {
   public static void main(String[] args) {
@@ -290,12 +290,12 @@ Search your orders using various search parameters
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OrdersV4Api;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.OrdersV4Api;
 
 public class Example {
   public static void main(String[] args) {

@@ -1,8 +1,8 @@
-# openapi-java-client
+# xi.sdk.resellers
 
-Reseller API Documentation
+Reseller API
 - API version: 6.0
-  - Build date: 2024-01-11T06:39:09.782810Z[Etc/UTC]
+  - Build date: 2024-01-19T11:54:36.350241Z[Etc/UTC]
 
 For Resellers. <br>
 Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
@@ -39,8 +39,8 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
-  <artifactId>openapi-java-client</artifactId>
+  <groupId>xi.sdk.resellers</groupId>
+  <artifactId>xi.sdk.resellers</artifactId>
   <version>6.0</version>
   <scope>compile</scope>
 </dependency>
@@ -52,12 +52,12 @@ Add this dependency to your project's build file:
 
 ```groovy
   repositories {
-    mavenCentral()     // Needed if the 'openapi-java-client' jar has been published to maven central.
-    mavenLocal()       // Needed if the 'openapi-java-client' jar has been published to the local maven repo.
+    mavenCentral()     // Needed if the 'xi.sdk.resellers' jar has been published to maven central.
+    mavenLocal()       // Needed if the 'xi.sdk.resellers' jar has been published to the local maven repo.
   }
 
   dependencies {
-     implementation "org.openapitools:openapi-java-client:6.0"
+     implementation "xi.sdk.resellers:xi.sdk.resellers:6.0"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/openapi-java-client-6.0.jar`
+* `target/xi.sdk.resellers-6.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -81,12 +81,12 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```java
 
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.DealsApi;
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.DealsApi;
 
 public class Example {
   public static void main(String[] args) {
