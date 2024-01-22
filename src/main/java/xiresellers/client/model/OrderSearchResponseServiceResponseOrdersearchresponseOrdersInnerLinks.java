@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * HATEOAS links for the main order
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-19T11:54:36.350241Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-22T09:48:07.665984Z[Etc/UTC]")
 public class OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks {
   /**
    * Topic being orders in this case, if it is orders then the link will provide details of the order.

@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryTotals
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-19T11:54:36.350241Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-22T09:48:07.665984Z[Etc/UTC]")
 public class InvoiceDetailsv61ResponseSummaryTotals {
   public static final String SERIALIZED_NAME_NET_INVOICE_AMOUNT = "netInvoiceAmount";
   @SerializedName(SERIALIZED_NAME_NET_INVOICE_AMOUNT)

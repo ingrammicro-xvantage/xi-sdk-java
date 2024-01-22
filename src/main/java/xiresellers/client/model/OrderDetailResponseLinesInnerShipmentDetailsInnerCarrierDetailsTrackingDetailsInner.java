@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * The tracking details for the shipment containing the line item.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-19T11:54:36.350241Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-22T09:48:07.665984Z[Etc/UTC]")
 public class OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInner {
   public static final String SERIALIZED_NAME_TRACKING_NUMBER = "trackingNumber";
   @SerializedName(SERIALIZED_NAME_TRACKING_NUMBER)

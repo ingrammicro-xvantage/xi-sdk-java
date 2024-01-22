@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * Attribute Name and Value: This field identifies if your order is a DIRECT SHIP order (license / warranty) or how you want your Backorders managed as well as other process options like placing your order on hold or adding a comment. 
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-19T11:54:36.350241Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-22T09:48:07.665984Z[Etc/UTC]")
 public class OrderCreateRequestOrdercreaterequestOrdercreatedetailsExtendedspecsInner {
   /**
    * Gets or Sets attributename
