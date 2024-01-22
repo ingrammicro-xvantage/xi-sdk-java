@@ -5,29 +5,29 @@
     <artifactId>xi.sdk.resellers</artifactId>
     <packaging>jar</packaging>
     <name>xi.sdk.resellers</name>
-    <version>6.0</version>
-    <url>https://github.com/openapitools/openapi-generator</url>
-    <description>OpenAPI Java</description>
+    <version>1.0.0</version>
+    <url>https://github.com/ingrammicro-xvantage/xi-sdk-resellers-java</url>
+    <description>Ingram Micro - Xvantage Integration (XI) Java Server-side SDK.</description>
     <scm>
-        <connection>scm:git:git@github.com:openapitools/openapi-generator.git</connection>
-        <developerConnection>scm:git:git@github.com:openapitools/openapi-generator.git</developerConnection>
-        <url>https://github.com/openapitools/openapi-generator</url>
+        <connection>scm:git:git@github.com:ingrammicro-xvantage/xi-sdk-resellers-java.git</connection>
+        <developerConnection>scm:git:git@github.com:ingrammicro-xvantage/xi-sdk-resellers-java.git</developerConnection>
+        <url>https://github.com/ingrammicro-xvantage/xi-sdk-resellers-java</url>
     </scm>
 
     <licenses>
         <license>
-            <name>Unlicense</name>
-            <url>http://unlicense.org</url>
+            <name>MIT</name>
+            <url>https://opensource.org/licenses/MIT</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
 
     <developers>
         <developer>
-            <name>OpenAPI-Generator Contributors</name>
-            <email>team@openapitools.org</email>
+            <name>Ingram Micro Xvantage Intergration(XI)</name>
+            <email>xi_support@ingrammicro.com</email>
             <organization>OpenAPITools.org</organization>
-            <organizationUrl>http://openapitools.org</organizationUrl>
+            <organizationUrl>https://developer.ingrammicro.com/reseller</organizationUrl>
         </developer>
     </developers>
 

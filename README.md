@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>xi.sdk.resellers</groupId>
   <artifactId>xi.sdk.resellers</artifactId>
-  <version>6.0</version>
+  <version>1.0.0</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "xi.sdk.resellers:xi.sdk.resellers:6.0"
+     implementation "xi.sdk.resellers:xi.sdk.resellers:1.0.0"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/xi.sdk.resellers-6.0.jar`
+* `target/xi.sdk.resellers-1.0.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -513,6 +513,10 @@ Authentication schemes defined for the API:
 It's recommended to create an instance of `ApiClient` per thread in a multithreaded environment to avoid any potential issues.
 
 ## Author
+-[Ingram Micro Xvantage](https://github.com/ingrammicro-xvantage)
 
+## Contact
 
+For any inquiries or support, please feel free to contact us at:
 
+- Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)
