@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * Payment terms is the agreement between Ingram and the customer by what period they should pay the invoice by
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-22T09:48:07.665984Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-22T11:06:29.712836Z[Etc/UTC]")
 public class InvoiceDetailsv61ResponsePaymentTermsInfo {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_CODE = "paymentTermsCode";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_CODE)
