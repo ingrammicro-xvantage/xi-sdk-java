@@ -1,10 +1,12 @@
 name: Java Package Publishing
+
 on:
   workflow_dispatch:
     inputs:
       version:
         description: 'Enter the new version for the package'
         required: true
+
 jobs:
   build:
     name: Build Reseller API
@@ -12,8 +14,11 @@ jobs:
     strategy:
       matrix:
         java: ['17']
+
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
@@ -31,14 +36,14 @@ jobs:
         if git diff --exit-code; then
           echo "No changes to commit."
         else
-          git add .
           git commit -m "Bump version to ${{ github.event.inputs.version }}"
-          git push https://${{secrets.WORKFLOW_TOKEN}}@github.com/ingrammicro-xvantage/xi-sdk-resellers-java main
+          git push
+        fi
 
     - name: Build with Maven
       run: mvn -B package --no-transfer-progress --file pom.xml
-    
+
     - name: Publish Package
       run: mvn --batch-mode clean deploy
       env:
-        GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN}}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
