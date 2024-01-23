@@ -9,12 +9,9 @@ jobs:
   build:
     name: Build Reseller API
     runs-on: ubuntu-latest
-    permissions: 
-        contents: read
-        packages: write 
     strategy:
       matrix:
-        java: [ '8', '11', '17']
+        java: ['17']
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK

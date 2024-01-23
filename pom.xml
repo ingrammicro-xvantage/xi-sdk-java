@@ -7,6 +7,13 @@
     <name>xi.sdk.resellers</name>
     <version>1.0.0</version>
     <url>https://github.com/ingrammicro-xvantage/xi-sdk-resellers-java</url>
+    <distributionManagement>
+  <repository>
+  <id>github</id>
+  <name>GitHub Packages</name>
+  <url>https://maven.pkg.github.com/ingrammicro-xvantage/xi-sdk-resellers-java</url>
+  </repository>
+</distributionManagement>
     <description>Ingram Micro - Xvantage Integration (XI) Java Server-side SDK.</description>
     <scm>
         <connection>scm:git:git@github.com:ingrammicro-xvantage/xi-sdk-resellers-java.git</connection>
