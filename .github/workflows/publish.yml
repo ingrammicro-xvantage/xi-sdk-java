@@ -28,8 +28,12 @@ jobs:
         git config --global user.email ${{secrets.ADMIN_EMAIL}}
         git config --global user.name ${{secrets.ORG_NAME}}
         git add .
-        git commit -m "Bump version to ${{ github.event.inputs.version }}"
-        git push https://${{secrets.WORKFLOW_TOKEN}}@github.com/ingrammicro-xvantage/xi-sdk-resellers-java main
+        if git diff --exit-code; then
+          echo "No changes to commit."
+        else
+          git add .
+          git commit -m "Bump version to ${{ github.event.inputs.version }}"
+          git push https://${{secrets.WORKFLOW_TOKEN}}@github.com/ingrammicro-xvantage/xi-sdk-resellers-java main
 
     - name: Build with Maven
       run: mvn -B package --no-transfer-progress --file pom.xml
