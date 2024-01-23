@@ -24,7 +24,7 @@
     <licenses>
         <license>
             <name>MIT</name>
-            <url>https://opensource.org/licenses/MIT</url>
+            <url>https://github.com/ingrammicro-xvantage/xi-sdk-resellers-java/blob/main/LICENSE</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -33,7 +33,7 @@
         <developer>
             <name>Ingram Micro Xvantage Intergration(XI)</name>
             <email>xi_support@ingrammicro.com</email>
-            <organization>OpenAPITools.org</organization>
+            <organization>Ingram Micro</organization>
             <organizationUrl>https://developer.ingrammicro.com/reseller</organizationUrl>
         </developer>
     </developers>
