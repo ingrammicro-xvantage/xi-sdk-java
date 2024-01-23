@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>xi.sdk.resellers</groupId>
   <artifactId>xi.sdk.resellers</artifactId>
-  <version>6.0</version>
+  <version>1.0.0</version>
   <scope>compile</scope>
 </dependency>
 ```
