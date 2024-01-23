@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "xi.sdk.resellers:xi.sdk.resellers:6.0"
+     implementation "xi.sdk.resellers:xi.sdk.resellers:1.0.0"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/xi.sdk.resellers-6.0.jar`
+* `target/xi.sdk.resellers-1.0.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
