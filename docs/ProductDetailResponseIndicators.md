@@ -1,7 +1,8 @@
 
 
-# ProductDetailResponseIndicatorsInner
+# ProductDetailResponseIndicators
 
+Indicators of the Product
 
 ## Properties
 

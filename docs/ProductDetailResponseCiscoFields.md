@@ -1,7 +1,8 @@
 
 
-# ProductDetailResponseCiscoFieldsInner
+# ProductDetailResponseCiscoFields
 
+Cisco product related information.
 
 ## Properties
 

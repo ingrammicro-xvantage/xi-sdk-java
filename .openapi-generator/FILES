@@ -249,8 +249,8 @@ docs/ProductCatalogV5Api.md
 docs/ProductDetailResponse.md
 docs/ProductDetailResponseAdditionalInformation.md
 docs/ProductDetailResponseAdditionalInformationProductWeightInner.md
-docs/ProductDetailResponseCiscoFieldsInner.md
-docs/ProductDetailResponseIndicatorsInner.md
+docs/ProductDetailResponseCiscoFields.md
+docs/ProductDetailResponseIndicators.md
 docs/ProductDetailResponseTechnicalSpecificationsInner.md
 docs/ProductLineType.md
 docs/ProductLineTypeSerialnumberdetailsInner.md
@@ -625,8 +625,8 @@ src/main/java/xiresellers/client/model/PriceAndAvailabilityResponseServicerespon
 src/main/java/xiresellers/client/model/ProductDetailResponse.java
 src/main/java/xiresellers/client/model/ProductDetailResponseAdditionalInformation.java
 src/main/java/xiresellers/client/model/ProductDetailResponseAdditionalInformationProductWeightInner.java
-src/main/java/xiresellers/client/model/ProductDetailResponseCiscoFieldsInner.java
-src/main/java/xiresellers/client/model/ProductDetailResponseIndicatorsInner.java
+src/main/java/xiresellers/client/model/ProductDetailResponseCiscoFields.java
+src/main/java/xiresellers/client/model/ProductDetailResponseIndicators.java
 src/main/java/xiresellers/client/model/ProductDetailResponseTechnicalSpecificationsInner.java
 src/main/java/xiresellers/client/model/ProductLineType.java
 src/main/java/xiresellers/client/model/ProductLineTypeSerialnumberdetailsInner.java
@@ -962,8 +962,8 @@ src/test/java/xiresellers/client/model/PriceAndAvailabilityResponseServicerespon
 src/test/java/xiresellers/client/model/PriceAndAvailabilityResponseTest.java
 src/test/java/xiresellers/client/model/ProductDetailResponseAdditionalInformationProductWeightInnerTest.java
 src/test/java/xiresellers/client/model/ProductDetailResponseAdditionalInformationTest.java
-src/test/java/xiresellers/client/model/ProductDetailResponseCiscoFieldsInnerTest.java
-src/test/java/xiresellers/client/model/ProductDetailResponseIndicatorsInnerTest.java
+src/test/java/xiresellers/client/model/ProductDetailResponseCiscoFieldsTest.java
+src/test/java/xiresellers/client/model/ProductDetailResponseIndicatorsTest.java
 src/test/java/xiresellers/client/model/ProductDetailResponseTechnicalSpecificationsInnerTest.java
 src/test/java/xiresellers/client/model/ProductDetailResponseTest.java
 src/test/java/xiresellers/client/model/ProductLineTypeSerialnumberdetailsInnerTest.java

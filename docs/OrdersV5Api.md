@@ -1,6 +1,6 @@
 # OrdersV5Api
 
-All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
+All URIs are relative to *https://api.ingrammicro.com:443*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -31,7 +31,7 @@ import xiresellers.client.api.OrdersV5Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.ingrammicro.com:443/sandbox");
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
     
     // Configure OAuth2 access token for authorization: application
     OAuth application = (OAuth) defaultClient.getAuthentication("application");
@@ -104,7 +104,7 @@ import xiresellers.client.api.OrdersV5Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.ingrammicro.com:443/sandbox");
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
     
     // Configure OAuth2 access token for authorization: application
     OAuth application = (OAuth) defaultClient.getAuthentication("application");
@@ -187,7 +187,7 @@ import xiresellers.client.api.OrdersV5Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.ingrammicro.com:443/sandbox");
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
     
     // Configure OAuth2 access token for authorization: application
     OAuth application = (OAuth) defaultClient.getAuthentication("application");
@@ -266,7 +266,7 @@ import xiresellers.client.api.OrdersV5Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.ingrammicro.com:443/sandbox");
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
     
     // Configure OAuth2 access token for authorization: application
     OAuth application = (OAuth) defaultClient.getAuthentication("application");

@@ -1,0 +1,50 @@
+name: Java Package Publishing
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Enter the new version for the package'
+        required: true
+
+jobs:
+  build:
+    name: Build Reseller API
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Update Version
+      run: |
+        NEW_VERSION="${{ github.event.inputs.version }}"
+        mvn versions:set -DnewVersion=${NEW_VERSION}
+        git config --global user.email ${{secrets.ADMIN_EMAIL}}
+        git config --global user.name ${{secrets.ORG_NAME}}
+        git add .
+        if git diff --exit-code; then
+          echo "No changes to commit."
+        else
+          git commit -m "Bump version to ${{ github.event.inputs.version }}"
+          git push
+        fi
+
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v3
+      with:
+          java-version: '11'
+          distribution: 'temurin'
+    - name: Publish package
+      run: mvn --batch-mode deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}

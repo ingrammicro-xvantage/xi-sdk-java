@@ -14,9 +14,9 @@
 |**upc** | **String** | The UPC code of a product. |  [optional] |
 |**invoiceDate** | **LocalDate** | The date of the invoice. |  [optional] |
 |**invoiceNumber** | **String** | Ingram micro Invoice number. |  [optional] |
-|**customerOrderNumber** | **Integer** | The reseller&#39;s order number for reference in their system. |  [optional] |
-|**requestDetails** | **Integer** | Request details. |  [optional] |
-|**quantity** | **Integer** | The quantity of the line item. |  [optional] |
+|**customerOrderNumber** | **String** | The reseller&#39;s order number for reference in their system. |  [optional] |
+|**requestDetails** | **String** | Request details. |  [optional] |
+|**quantity** | **BigDecimal** | The quantity of the line item. |  [optional] |
 |**unitPrice** | **BigDecimal** | The unit price of the line item. |  [optional] |
 |**extendedPrice** | **BigDecimal** | Unit price X quantity for the line item. |  [optional] |
 |**status** | **String** | The status of the line item. |  [optional] |
