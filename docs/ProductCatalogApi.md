@@ -1,6 +1,6 @@
 # ProductCatalogApi
 
-All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
+All URIs are relative to *https://api.ingrammicro.com:443*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -30,7 +30,7 @@ import xiresellers.client.api.ProductCatalogApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.ingrammicro.com:443/sandbox");
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
     
     // Configure OAuth2 access token for authorization: application
     OAuth application = (OAuth) defaultClient.getAuthentication("application");
@@ -108,7 +108,7 @@ import xiresellers.client.api.ProductCatalogApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.ingrammicro.com:443/sandbox");
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
     
     // Configure OAuth2 access token for authorization: application
     OAuth application = (OAuth) defaultClient.getAuthentication("application");
@@ -206,14 +206,14 @@ import xiresellers.client.api.ProductCatalogApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.ingrammicro.com:443/sandbox");
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
     
     // Configure OAuth2 access token for authorization: application
     OAuth application = (OAuth) defaultClient.getAuthentication("application");
     application.setAccessToken("YOUR ACCESS TOKEN");
 
     ProductCatalogApi apiInstance = new ProductCatalogApi(defaultClient);
-    List<Boolean> includeAvailability = Arrays.asList(); // List<Boolean> | Pass boolean value as input, if true the response will contain warehouse availability details, if false the response will not hold warehouse availability details
+    Boolean includeAvailability = true; // Boolean | Pass boolean value as input, if true the response will contain warehouse availability details, if false the response will not hold warehouse availability details
     Boolean includePricing = true; // Boolean | Pass boolean value as input, if true the response will contain Pricing details of the Product, if false the response will not hold Pricing details.
     String imCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
     String imCountryCode = "US"; // String | Two-character ISO country code.
@@ -239,7 +239,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **includeAvailability** | [**List&lt;Boolean&gt;**](Boolean.md)| Pass boolean value as input, if true the response will contain warehouse availability details, if false the response will not hold warehouse availability details | |
+| **includeAvailability** | **Boolean**| Pass boolean value as input, if true the response will contain warehouse availability details, if false the response will not hold warehouse availability details | |
 | **includePricing** | **Boolean**| Pass boolean value as input, if true the response will contain Pricing details of the Product, if false the response will not hold Pricing details. | |
 | **imCustomerNumber** | **String**| Your unique Ingram Micro customer number. | |
 | **imCountryCode** | **String**| Two-character ISO country code. | |

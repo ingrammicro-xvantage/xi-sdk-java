@@ -1,11 +1,11 @@
 # InvoicesApi
 
-All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
+All URIs are relative to *https://api.ingrammicro.com:443*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**getInvoicedetailsV61**](InvoicesApi.md#getInvoicedetailsV61) | **GET** /resellers/v6.1/invoices/{invoiceNumber} | Get Invoice Details v6.1 |
-| [**getResellersV6Invoicesearch**](InvoicesApi.md#getResellersV6Invoicesearch) | **GET** /resellers/v6/invoices/ | Search your invoice |
+| [**getResellersV6Invoicesearch**](InvoicesApi.md#getResellersV6Invoicesearch) | **GET** /resellers/v6/invoices | Search your invoice |
 
 
 <a id="getInvoicedetailsV61"></a>
@@ -29,7 +29,7 @@ import xiresellers.client.api.InvoicesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.ingrammicro.com:443/sandbox");
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
     
     // Configure OAuth2 access token for authorization: application
     OAuth application = (OAuth) defaultClient.getAuthentication("application");
@@ -110,7 +110,7 @@ import xiresellers.client.api.InvoicesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.ingrammicro.com:443/sandbox");
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
     
     // Configure OAuth2 access token for authorization: application
     OAuth application = (OAuth) defaultClient.getAuthentication("application");
