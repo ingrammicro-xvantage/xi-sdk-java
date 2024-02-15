@@ -49,6 +49,7 @@ Add this dependency to your project's POM:
 ### 
 If you want to compile it yourself, here's how:
 
+
 ```shell
 git clone git@github.com:ingrammicro-xvantage/xi-sdk-resellers-java
 cd xi-sdk-resellers-java
@@ -56,20 +57,6 @@ mvn install       # Requires maven, download from https://maven.apache.org/downl
 
 ```
 
-### Gradle users
-
-Add this dependency to your project's build file:
-
-```groovy
-  repositories {
-    mavenCentral()     // Needed if the 'xi.sdk.resellers' jar has been published to maven central.
-    mavenLocal()       // Needed if the 'xi.sdk.resellers' jar has been published to the local maven repo.
-  }
-
-  dependencies {
-     implementation "xi.sdk.resellers:xi.sdk.resellers:1.0.0"
-  }
-```
 
 ### Others
 
@@ -83,6 +70,8 @@ Then manually install the following JARs:
 
 * `target/xi.sdk.resellers-1.0.0.jar`
 * `target/lib/*.jar`
+
+
 
 ## Getting Started
 
@@ -529,6 +518,7 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 ## Contact
 
 For any inquiries or support, please feel free to contact us at:
+
 
 - Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)
 
