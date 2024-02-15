@@ -16,6 +16,7 @@ Building the API client library requires:
 1. Java 1.8+
 2. Maven (3.8.3+)/Gradle (7.2+)
 
+
 ## Installation
 
 To install the API client library to your local Maven repository, simply execute:
@@ -43,6 +44,16 @@ Add this dependency to your project's POM:
   <version>1.0.0</version>
   <scope>compile</scope>
 </dependency>
+```
+
+### 
+If you want to compile it yourself, here's how:
+
+```shell
+git clone git@github.com:ingrammicro-xvantage/xi-sdk-resellers-java
+cd xi-sdk-resellers-java
+mvn install       # Requires maven, download from https://maven.apache.org/download.html
+
 ```
 
 ### Gradle users
@@ -513,6 +524,12 @@ Authentication schemes defined for the API:
 It's recommended to create an instance of `ApiClient` per thread in a multithreaded environment to avoid any potential issues.
 
 ## Author
+-[Ingram Micro Xvantage](https://github.com/ingrammicro-xvantage)
 
+## Contact
+
+For any inquiries or support, please feel free to contact us at:
+
+- Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)
 
 
