@@ -19,8 +19,13 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.QuoteDetailsResponseQuoteDetailResponse;
+import java.util.List;
+import xiresellers.client.model.QuoteDetailsResponseAdditionalAttributesInner;
+import xiresellers.client.model.QuoteDetailsResponseEndUserInfo;
+import xiresellers.client.model.QuoteDetailsResponseProductsInner;
+import xiresellers.client.model.QuoteDetailsResponseResellerInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -39,11 +44,211 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
-     * Test the property 'quoteDetailResponse'
+     * Test the property 'quoteName'
      */
     @Test
-    public void quoteDetailResponseTest() {
-        // TODO: test quoteDetailResponse
+    public void quoteNameTest() {
+        // TODO: test quoteName
+    }
+
+    /**
+     * Test the property 'quoteNumber'
+     */
+    @Test
+    public void quoteNumberTest() {
+        // TODO: test quoteNumber
+    }
+
+    /**
+     * Test the property 'revision'
+     */
+    @Test
+    public void revisionTest() {
+        // TODO: test revision
+    }
+
+    /**
+     * Test the property 'ingramQuoteDate'
+     */
+    @Test
+    public void ingramQuoteDateTest() {
+        // TODO: test ingramQuoteDate
+    }
+
+    /**
+     * Test the property 'lastModifiedDate'
+     */
+    @Test
+    public void lastModifiedDateTest() {
+        // TODO: test lastModifiedDate
+    }
+
+    /**
+     * Test the property 'ingramQuoteExpiryDate'
+     */
+    @Test
+    public void ingramQuoteExpiryDateTest() {
+        // TODO: test ingramQuoteExpiryDate
+    }
+
+    /**
+     * Test the property 'currencyCode'
+     */
+    @Test
+    public void currencyCodeTest() {
+        // TODO: test currencyCode
+    }
+
+    /**
+     * Test the property 'specialBidId'
+     */
+    @Test
+    public void specialBidIdTest() {
+        // TODO: test specialBidId
+    }
+
+    /**
+     * Test the property 'specialBidEffectiveDate'
+     */
+    @Test
+    public void specialBidEffectiveDateTest() {
+        // TODO: test specialBidEffectiveDate
+    }
+
+    /**
+     * Test the property 'specialBidExpirationDate'
+     */
+    @Test
+    public void specialBidExpirationDateTest() {
+        // TODO: test specialBidExpirationDate
+    }
+
+    /**
+     * Test the property 'status'
+     */
+    @Test
+    public void statusTest() {
+        // TODO: test status
+    }
+
+    /**
+     * Test the property 'customerNeed'
+     */
+    @Test
+    public void customerNeedTest() {
+        // TODO: test customerNeed
+    }
+
+    /**
+     * Test the property 'proposedSolution'
+     */
+    @Test
+    public void proposedSolutionTest() {
+        // TODO: test proposedSolution
+    }
+
+    /**
+     * Test the property 'introPreamble'
+     */
+    @Test
+    public void introPreambleTest() {
+        // TODO: test introPreamble
+    }
+
+    /**
+     * Test the property 'purchaseInstructions'
+     */
+    @Test
+    public void purchaseInstructionsTest() {
+        // TODO: test purchaseInstructions
+    }
+
+    /**
+     * Test the property 'legalTerms'
+     */
+    @Test
+    public void legalTermsTest() {
+        // TODO: test legalTerms
+    }
+
+    /**
+     * Test the property 'leaseInfo'
+     */
+    @Test
+    public void leaseInfoTest() {
+        // TODO: test leaseInfo
+    }
+
+    /**
+     * Test the property 'leasingInstructions'
+     */
+    @Test
+    public void leasingInstructionsTest() {
+        // TODO: test leasingInstructions
+    }
+
+    /**
+     * Test the property 'resellerInfo'
+     */
+    @Test
+    public void resellerInfoTest() {
+        // TODO: test resellerInfo
+    }
+
+    /**
+     * Test the property 'endUserInfo'
+     */
+    @Test
+    public void endUserInfoTest() {
+        // TODO: test endUserInfo
+    }
+
+    /**
+     * Test the property 'products'
+     */
+    @Test
+    public void productsTest() {
+        // TODO: test products
+    }
+
+    /**
+     * Test the property 'productsCount'
+     */
+    @Test
+    public void productsCountTest() {
+        // TODO: test productsCount
+    }
+
+    /**
+     * Test the property 'extendedMsrpTotal'
+     */
+    @Test
+    public void extendedMsrpTotalTest() {
+        // TODO: test extendedMsrpTotal
+    }
+
+    /**
+     * Test the property 'quantityTotal'
+     */
+    @Test
+    public void quantityTotalTest() {
+        // TODO: test quantityTotal
+    }
+
+    /**
+     * Test the property 'extendedQuotePriceTotal'
+     */
+    @Test
+    public void extendedQuotePriceTotalTest() {
+        // TODO: test extendedQuotePriceTotal
+    }
+
+    /**
+     * Test the property 'additionalAttributes'
+     */
+    @Test
+    public void additionalAttributesTest() {
+        // TODO: test additionalAttributes
     }
 
 }

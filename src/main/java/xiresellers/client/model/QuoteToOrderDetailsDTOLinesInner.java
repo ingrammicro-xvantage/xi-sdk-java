@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner;
+import xiresellers.client.model.QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteToOrderDetailsDTOLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-14T10:07:36.431201Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
 public class QuoteToOrderDetailsDTOLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -68,7 +68,7 @@ public class QuoteToOrderDetailsDTOLinesInner {
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES = "vmfAdditionalAttributesLines";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES)
-  private List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines;
+  private List<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines;
 
   public QuoteToOrderDetailsDTOLinesInner() {
   }
@@ -130,12 +130,12 @@ public class QuoteToOrderDetailsDTOLinesInner {
   }
 
 
-  public QuoteToOrderDetailsDTOLinesInner vmfAdditionalAttributesLines(List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
+  public QuoteToOrderDetailsDTOLinesInner vmfAdditionalAttributesLines(List<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
     this.vmfAdditionalAttributesLines = vmfAdditionalAttributesLines;
     return this;
   }
 
-  public QuoteToOrderDetailsDTOLinesInner addVmfAdditionalAttributesLinesItem(ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner vmfAdditionalAttributesLinesItem) {
+  public QuoteToOrderDetailsDTOLinesInner addVmfAdditionalAttributesLinesItem(QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner vmfAdditionalAttributesLinesItem) {
     if (this.vmfAdditionalAttributesLines == null) {
       this.vmfAdditionalAttributesLines = new ArrayList<>();
     }
@@ -148,11 +148,11 @@ public class QuoteToOrderDetailsDTOLinesInner {
    * @return vmfAdditionalAttributesLines
   **/
   @javax.annotation.Nullable
-  public List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> getVmfAdditionalAttributesLines() {
+  public List<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner> getVmfAdditionalAttributesLines() {
     return vmfAdditionalAttributesLines;
   }
 
-  public void setVmfAdditionalAttributesLines(List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
+  public void setVmfAdditionalAttributesLines(List<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
     this.vmfAdditionalAttributesLines = vmfAdditionalAttributesLines;
   }
 
@@ -257,7 +257,7 @@ public class QuoteToOrderDetailsDTOLinesInner {
 
           // validate the optional field `vmfAdditionalAttributesLines` (array)
           for (int i = 0; i < jsonArrayvmfAdditionalAttributesLines.size(); i++) {
-            ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.validateJsonElement(jsonArrayvmfAdditionalAttributesLines.get(i));
+            QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.validateJsonElement(jsonArrayvmfAdditionalAttributesLines.get(i));
           };
         }
       }

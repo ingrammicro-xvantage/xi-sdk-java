@@ -19,8 +19,12 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.PriceAndAvailabilityRequestServicerequest;
+import java.util.List;
+import xiresellers.client.model.PriceAndAvailabilityRequestAdditionalAttributesInner;
+import xiresellers.client.model.PriceAndAvailabilityRequestAvailabilityByWarehouseInner;
+import xiresellers.client.model.PriceAndAvailabilityRequestProductsInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -39,11 +43,51 @@ public class PriceAndAvailabilityRequestTest {
     }
 
     /**
-     * Test the property 'servicerequest'
+     * Test the property 'showAvailableDiscounts'
      */
     @Test
-    public void servicerequestTest() {
-        // TODO: test servicerequest
+    public void showAvailableDiscountsTest() {
+        // TODO: test showAvailableDiscounts
+    }
+
+    /**
+     * Test the property 'showReserveInventoryDetails'
+     */
+    @Test
+    public void showReserveInventoryDetailsTest() {
+        // TODO: test showReserveInventoryDetails
+    }
+
+    /**
+     * Test the property 'specialBidNumber'
+     */
+    @Test
+    public void specialBidNumberTest() {
+        // TODO: test specialBidNumber
+    }
+
+    /**
+     * Test the property 'availabilityByWarehouse'
+     */
+    @Test
+    public void availabilityByWarehouseTest() {
+        // TODO: test availabilityByWarehouse
+    }
+
+    /**
+     * Test the property 'products'
+     */
+    @Test
+    public void productsTest() {
+        // TODO: test products
+    }
+
+    /**
+     * Test the property 'additionalAttributes'
+     */
+    @Test
+    public void additionalAttributesTest() {
+        // TODO: test additionalAttributes
     }
 
 }

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-14T10:07:36.431201Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
 public class InvoiceDetailsv61ResponseLinesInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
@@ -85,7 +86,7 @@ public class InvoiceDetailsv61ResponseLinesInner {
 
   public static final String SERIALIZED_NAME_UNIT_WEIGHT = "unitWeight";
   @SerializedName(SERIALIZED_NAME_UNIT_WEIGHT)
-  private String unitWeight;
+  private BigDecimal unitWeight;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
@@ -267,7 +268,7 @@ public class InvoiceDetailsv61ResponseLinesInner {
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner unitWeight(String unitWeight) {
+  public InvoiceDetailsv61ResponseLinesInner unitWeight(BigDecimal unitWeight) {
     this.unitWeight = unitWeight;
     return this;
   }
@@ -277,11 +278,11 @@ public class InvoiceDetailsv61ResponseLinesInner {
    * @return unitWeight
   **/
   @javax.annotation.Nullable
-  public String getUnitWeight() {
+  public BigDecimal getUnitWeight() {
     return unitWeight;
   }
 
-  public void setUnitWeight(String unitWeight) {
+  public void setUnitWeight(BigDecimal unitWeight) {
     this.unitWeight = unitWeight;
   }
 
@@ -660,9 +661,6 @@ public class InvoiceDetailsv61ResponseLinesInner {
       }
       if ((jsonObj.get("productDescription") != null && !jsonObj.get("productDescription").isJsonNull()) && !jsonObj.get("productDescription").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `productDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productDescription").toString()));
-      }
-      if ((jsonObj.get("unitWeight") != null && !jsonObj.get("unitWeight").isJsonNull()) && !jsonObj.get("unitWeight").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `unitWeight` to be a primitive type in the JSON string but got `%s`", jsonObj.get("unitWeight").toString()));
       }
       if ((jsonObj.get("unitOfMeasure") != null && !jsonObj.get("unitOfMeasure").isJsonNull()) && !jsonObj.get("unitOfMeasure").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `unitOfMeasure` to be a primitive type in the JSON string but got `%s`", jsonObj.get("unitOfMeasure").toString()));

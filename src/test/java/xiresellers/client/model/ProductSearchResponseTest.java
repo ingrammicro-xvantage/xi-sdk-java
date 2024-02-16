@@ -19,8 +19,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.ProductSearchResponseServiceresponse;
+import java.util.List;
+import xiresellers.client.model.ProductSearchResponseCatalogInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -39,11 +41,51 @@ public class ProductSearchResponseTest {
     }
 
     /**
-     * Test the property 'serviceresponse'
+     * Test the property 'recordsFound'
      */
     @Test
-    public void serviceresponseTest() {
-        // TODO: test serviceresponse
+    public void recordsFoundTest() {
+        // TODO: test recordsFound
+    }
+
+    /**
+     * Test the property 'pageSize'
+     */
+    @Test
+    public void pageSizeTest() {
+        // TODO: test pageSize
+    }
+
+    /**
+     * Test the property 'pageNumber'
+     */
+    @Test
+    public void pageNumberTest() {
+        // TODO: test pageNumber
+    }
+
+    /**
+     * Test the property 'catalog'
+     */
+    @Test
+    public void catalogTest() {
+        // TODO: test catalog
+    }
+
+    /**
+     * Test the property 'nextPage'
+     */
+    @Test
+    public void nextPageTest() {
+        // TODO: test nextPage
+    }
+
+    /**
+     * Test the property 'previousPage'
+     */
+    @Test
+    public void previousPageTest() {
+        // TODO: test previousPage
     }
 
 }

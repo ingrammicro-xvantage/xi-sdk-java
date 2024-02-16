@@ -2,13 +2,15 @@
 
 # OrderModifyRequest
 
-Request schema for order modify endpoint
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**servicerequest** | [**OrderModifyRequestServicerequest**](OrderModifyRequestServicerequest.md) |  |  [optional] |
+|**notes** | **String** | Shipment-level notes. |  [optional] |
+|**shipToInfo** | [**OrderModifyRequestShipToInfo**](OrderModifyRequestShipToInfo.md) |  |  [optional] |
+|**lines** | [**List&lt;OrderModifyRequestLinesInner&gt;**](OrderModifyRequestLinesInner.md) | The order line items. |  [optional] |
+|**additionalAttributes** | [**List&lt;OrderModifyRequestAdditionalAttributesInner&gt;**](OrderModifyRequestAdditionalAttributesInner.md) | Header-level additional attributes. |  [optional] |
 
 
 

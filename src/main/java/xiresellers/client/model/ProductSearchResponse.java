@@ -20,8 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.ProductSearchResponseServiceresponse;
+import java.util.List;
+import xiresellers.client.model.ProductSearchResponseCatalogInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -48,33 +50,156 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * Response object model for the product search endpoint
+ * ProductSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-14T10:07:36.431201Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
 public class ProductSearchResponse {
-  public static final String SERIALIZED_NAME_SERVICERESPONSE = "serviceresponse";
-  @SerializedName(SERIALIZED_NAME_SERVICERESPONSE)
-  private ProductSearchResponseServiceresponse serviceresponse;
+  public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
+  @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
+  private Integer recordsFound;
+
+  public static final String SERIALIZED_NAME_PAGE_SIZE = "pageSize";
+  @SerializedName(SERIALIZED_NAME_PAGE_SIZE)
+  private Integer pageSize;
+
+  public static final String SERIALIZED_NAME_PAGE_NUMBER = "pageNumber";
+  @SerializedName(SERIALIZED_NAME_PAGE_NUMBER)
+  private Integer pageNumber;
+
+  public static final String SERIALIZED_NAME_CATALOG = "catalog";
+  @SerializedName(SERIALIZED_NAME_CATALOG)
+  private List<ProductSearchResponseCatalogInner> catalog;
+
+  public static final String SERIALIZED_NAME_NEXT_PAGE = "nextPage";
+  @SerializedName(SERIALIZED_NAME_NEXT_PAGE)
+  private String nextPage;
+
+  public static final String SERIALIZED_NAME_PREVIOUS_PAGE = "previousPage";
+  @SerializedName(SERIALIZED_NAME_PREVIOUS_PAGE)
+  private String previousPage;
 
   public ProductSearchResponse() {
   }
 
-  public ProductSearchResponse serviceresponse(ProductSearchResponseServiceresponse serviceresponse) {
-    this.serviceresponse = serviceresponse;
+  public ProductSearchResponse recordsFound(Integer recordsFound) {
+    this.recordsFound = recordsFound;
     return this;
   }
 
    /**
-   * Get serviceresponse
-   * @return serviceresponse
+   * The number of recourds found for the search.
+   * @return recordsFound
   **/
   @javax.annotation.Nullable
-  public ProductSearchResponseServiceresponse getServiceresponse() {
-    return serviceresponse;
+  public Integer getRecordsFound() {
+    return recordsFound;
   }
 
-  public void setServiceresponse(ProductSearchResponseServiceresponse serviceresponse) {
-    this.serviceresponse = serviceresponse;
+  public void setRecordsFound(Integer recordsFound) {
+    this.recordsFound = recordsFound;
+  }
+
+
+  public ProductSearchResponse pageSize(Integer pageSize) {
+    this.pageSize = pageSize;
+    return this;
+  }
+
+   /**
+   * The number of results per page. Default is 25.
+   * @return pageSize
+  **/
+  @javax.annotation.Nullable
+  public Integer getPageSize() {
+    return pageSize;
+  }
+
+  public void setPageSize(Integer pageSize) {
+    this.pageSize = pageSize;
+  }
+
+
+  public ProductSearchResponse pageNumber(Integer pageNumber) {
+    this.pageNumber = pageNumber;
+    return this;
+  }
+
+   /**
+   * current page number default is 1
+   * @return pageNumber
+  **/
+  @javax.annotation.Nullable
+  public Integer getPageNumber() {
+    return pageNumber;
+  }
+
+  public void setPageNumber(Integer pageNumber) {
+    this.pageNumber = pageNumber;
+  }
+
+
+  public ProductSearchResponse catalog(List<ProductSearchResponseCatalogInner> catalog) {
+    this.catalog = catalog;
+    return this;
+  }
+
+  public ProductSearchResponse addCatalogItem(ProductSearchResponseCatalogInner catalogItem) {
+    if (this.catalog == null) {
+      this.catalog = new ArrayList<>();
+    }
+    this.catalog.add(catalogItem);
+    return this;
+  }
+
+   /**
+   * Get catalog
+   * @return catalog
+  **/
+  @javax.annotation.Nullable
+  public List<ProductSearchResponseCatalogInner> getCatalog() {
+    return catalog;
+  }
+
+  public void setCatalog(List<ProductSearchResponseCatalogInner> catalog) {
+    this.catalog = catalog;
+  }
+
+
+  public ProductSearchResponse nextPage(String nextPage) {
+    this.nextPage = nextPage;
+    return this;
+  }
+
+   /**
+   * link/URL for accessing next page.
+   * @return nextPage
+  **/
+  @javax.annotation.Nullable
+  public String getNextPage() {
+    return nextPage;
+  }
+
+  public void setNextPage(String nextPage) {
+    this.nextPage = nextPage;
+  }
+
+
+  public ProductSearchResponse previousPage(String previousPage) {
+    this.previousPage = previousPage;
+    return this;
+  }
+
+   /**
+   * link/URL for accessing previous page.
+   * @return previousPage
+  **/
+  @javax.annotation.Nullable
+  public String getPreviousPage() {
+    return previousPage;
+  }
+
+  public void setPreviousPage(String previousPage) {
+    this.previousPage = previousPage;
   }
 
 
@@ -88,19 +213,29 @@ public class ProductSearchResponse {
       return false;
     }
     ProductSearchResponse productSearchResponse = (ProductSearchResponse) o;
-    return Objects.equals(this.serviceresponse, productSearchResponse.serviceresponse);
+    return Objects.equals(this.recordsFound, productSearchResponse.recordsFound) &&
+        Objects.equals(this.pageSize, productSearchResponse.pageSize) &&
+        Objects.equals(this.pageNumber, productSearchResponse.pageNumber) &&
+        Objects.equals(this.catalog, productSearchResponse.catalog) &&
+        Objects.equals(this.nextPage, productSearchResponse.nextPage) &&
+        Objects.equals(this.previousPage, productSearchResponse.previousPage);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(serviceresponse);
+    return Objects.hash(recordsFound, pageSize, pageNumber, catalog, nextPage, previousPage);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProductSearchResponse {\n");
-    sb.append("    serviceresponse: ").append(toIndentedString(serviceresponse)).append("\n");
+    sb.append("    recordsFound: ").append(toIndentedString(recordsFound)).append("\n");
+    sb.append("    pageSize: ").append(toIndentedString(pageSize)).append("\n");
+    sb.append("    pageNumber: ").append(toIndentedString(pageNumber)).append("\n");
+    sb.append("    catalog: ").append(toIndentedString(catalog)).append("\n");
+    sb.append("    nextPage: ").append(toIndentedString(nextPage)).append("\n");
+    sb.append("    previousPage: ").append(toIndentedString(previousPage)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -123,7 +258,12 @@ public class ProductSearchResponse {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("serviceresponse");
+    openapiFields.add("recordsFound");
+    openapiFields.add("pageSize");
+    openapiFields.add("pageNumber");
+    openapiFields.add("catalog");
+    openapiFields.add("nextPage");
+    openapiFields.add("previousPage");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -150,9 +290,25 @@ public class ProductSearchResponse {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the optional field `serviceresponse`
-      if (jsonObj.get("serviceresponse") != null && !jsonObj.get("serviceresponse").isJsonNull()) {
-        ProductSearchResponseServiceresponse.validateJsonElement(jsonObj.get("serviceresponse"));
+      if (jsonObj.get("catalog") != null && !jsonObj.get("catalog").isJsonNull()) {
+        JsonArray jsonArraycatalog = jsonObj.getAsJsonArray("catalog");
+        if (jsonArraycatalog != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("catalog").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `catalog` to be an array in the JSON string but got `%s`", jsonObj.get("catalog").toString()));
+          }
+
+          // validate the optional field `catalog` (array)
+          for (int i = 0; i < jsonArraycatalog.size(); i++) {
+            ProductSearchResponseCatalogInner.validateJsonElement(jsonArraycatalog.get(i));
+          };
+        }
+      }
+      if ((jsonObj.get("nextPage") != null && !jsonObj.get("nextPage").isJsonNull()) && !jsonObj.get("nextPage").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `nextPage` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nextPage").toString()));
+      }
+      if ((jsonObj.get("previousPage") != null && !jsonObj.get("previousPage").isJsonNull()) && !jsonObj.get("previousPage").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `previousPage` to be a primitive type in the JSON string but got `%s`", jsonObj.get("previousPage").toString()));
       }
   }
 

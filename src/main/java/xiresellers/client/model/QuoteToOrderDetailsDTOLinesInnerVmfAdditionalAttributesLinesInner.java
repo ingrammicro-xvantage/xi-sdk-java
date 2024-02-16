@@ -47,10 +47,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner
+ * QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
-public class OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner {
+public class QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_NAME = "attributeName";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_NAME)
   private String attributeName;
@@ -59,16 +59,20 @@ public class OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner {
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_VALUE)
   private String attributeValue;
 
-  public OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner() {
+  public static final String SERIALIZED_NAME_ATTRIBUTE_DESCRIPTION = "attributeDescription";
+  @SerializedName(SERIALIZED_NAME_ATTRIBUTE_DESCRIPTION)
+  private String attributeDescription;
+
+  public QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner() {
   }
 
-  public OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner attributeName(String attributeName) {
+  public QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner attributeName(String attributeName) {
     this.attributeName = attributeName;
     return this;
   }
 
    /**
-   * Get attributeName
+   * The name of the line level field.
    * @return attributeName
   **/
   @javax.annotation.Nullable
@@ -81,13 +85,13 @@ public class OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner {
   }
 
 
-  public OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner attributeValue(String attributeValue) {
+  public QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner attributeValue(String attributeValue) {
     this.attributeValue = attributeValue;
     return this;
   }
 
    /**
-   * Get attributeValue
+   * The value of the line level field.
    * @return attributeValue
   **/
   @javax.annotation.Nullable
@@ -100,6 +104,25 @@ public class OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner {
   }
 
 
+  public QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner attributeDescription(String attributeDescription) {
+    this.attributeDescription = attributeDescription;
+    return this;
+  }
+
+   /**
+   * The description of the line level field.
+   * @return attributeDescription
+  **/
+  @javax.annotation.Nullable
+  public String getAttributeDescription() {
+    return attributeDescription;
+  }
+
+  public void setAttributeDescription(String attributeDescription) {
+    this.attributeDescription = attributeDescription;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -109,22 +132,24 @@ public class OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner orderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner = (OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner) o;
-    return Objects.equals(this.attributeName, orderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner.attributeName) &&
-        Objects.equals(this.attributeValue, orderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner.attributeValue);
+    QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner quoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner = (QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner) o;
+    return Objects.equals(this.attributeName, quoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.attributeName) &&
+        Objects.equals(this.attributeValue, quoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.attributeValue) &&
+        Objects.equals(this.attributeDescription, quoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.attributeDescription);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(attributeName, attributeValue);
+    return Objects.hash(attributeName, attributeValue, attributeDescription);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner {\n");
+    sb.append("class QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner {\n");
     sb.append("    attributeName: ").append(toIndentedString(attributeName)).append("\n");
     sb.append("    attributeValue: ").append(toIndentedString(attributeValue)).append("\n");
+    sb.append("    attributeDescription: ").append(toIndentedString(attributeDescription)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -149,6 +174,7 @@ public class OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner {
     openapiFields = new HashSet<String>();
     openapiFields.add("attributeName");
     openapiFields.add("attributeValue");
+    openapiFields.add("attributeDescription");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -158,20 +184,20 @@ public class OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner {
   * Validates the JSON Element and throws an exception if issues found
   *
   * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner
+  * @throws IOException if the JSON Element is invalid with respect to QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner is not found in the empty JSON string", OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner.openapiRequiredFields.toString()));
+        if (!QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner is not found in the empty JSON string", QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -181,28 +207,31 @@ public class OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner {
       if ((jsonObj.get("attributeValue") != null && !jsonObj.get("attributeValue").isJsonNull()) && !jsonObj.get("attributeValue").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `attributeValue` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributeValue").toString()));
       }
+      if ((jsonObj.get("attributeDescription") != null && !jsonObj.get("attributeDescription").isJsonNull()) && !jsonObj.get("attributeDescription").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `attributeDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributeDescription").toString()));
+      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner' and its subtypes
+       if (!QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner.class));
+       final TypeAdapter<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner>() {
            @Override
-           public void write(JsonWriter out, OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner value) throws IOException {
+           public void write(JsonWriter out, QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner read(JsonReader in) throws IOException {
+           public QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -213,18 +242,18 @@ public class OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner {
   }
 
  /**
-  * Create an instance of OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner given an JSON string
+  * Create an instance of QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner
+  * @return An instance of QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
+  * @throws IOException if the JSON string is invalid with respect to QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
   */
-  public static OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner.class);
+  public static QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.class);
   }
 
  /**
-  * Convert an instance of OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner to an JSON string
+  * Convert an instance of QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner to an JSON string
   *
   * @return JSON string
   */
