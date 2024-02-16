@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * FreightRequestShipToAddressInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T08:56:25.348026Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:20:55.562369Z[Etc/UTC]")
 public class FreightRequestShipToAddressInner {
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
