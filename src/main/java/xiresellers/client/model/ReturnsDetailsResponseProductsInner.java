@@ -51,11 +51,11 @@ import xiresellers.client.JSON;
 /**
  * ReturnsDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:20:55.562369Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
 public class ReturnsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
-  private String ingramLineNumber;
+  private Integer ingramLineNumber;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -107,16 +107,16 @@ public class ReturnsDetailsResponseProductsInner {
 
   public static final String SERIALIZED_NAME_RETURN_BRANCH = "returnBranch";
   @SerializedName(SERIALIZED_NAME_RETURN_BRANCH)
-  private Integer returnBranch;
+  private String returnBranch;
 
   public static final String SERIALIZED_NAME_SHIP_FROM_BRANCH = "shipFromBranch";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_BRANCH)
-  private Integer shipFromBranch;
+  private String shipFromBranch;
 
   public ReturnsDetailsResponseProductsInner() {
   }
 
-  public ReturnsDetailsResponseProductsInner ingramLineNumber(String ingramLineNumber) {
+  public ReturnsDetailsResponseProductsInner ingramLineNumber(Integer ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
     return this;
   }
@@ -126,11 +126,11 @@ public class ReturnsDetailsResponseProductsInner {
    * @return ingramLineNumber
   **/
   @javax.annotation.Nullable
-  public String getIngramLineNumber() {
+  public Integer getIngramLineNumber() {
     return ingramLineNumber;
   }
 
-  public void setIngramLineNumber(String ingramLineNumber) {
+  public void setIngramLineNumber(Integer ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
   }
 
@@ -363,7 +363,7 @@ public class ReturnsDetailsResponseProductsInner {
   }
 
 
-  public ReturnsDetailsResponseProductsInner returnBranch(Integer returnBranch) {
+  public ReturnsDetailsResponseProductsInner returnBranch(String returnBranch) {
     this.returnBranch = returnBranch;
     return this;
   }
@@ -373,16 +373,16 @@ public class ReturnsDetailsResponseProductsInner {
    * @return returnBranch
   **/
   @javax.annotation.Nullable
-  public Integer getReturnBranch() {
+  public String getReturnBranch() {
     return returnBranch;
   }
 
-  public void setReturnBranch(Integer returnBranch) {
+  public void setReturnBranch(String returnBranch) {
     this.returnBranch = returnBranch;
   }
 
 
-  public ReturnsDetailsResponseProductsInner shipFromBranch(Integer shipFromBranch) {
+  public ReturnsDetailsResponseProductsInner shipFromBranch(String shipFromBranch) {
     this.shipFromBranch = shipFromBranch;
     return this;
   }
@@ -392,11 +392,11 @@ public class ReturnsDetailsResponseProductsInner {
    * @return shipFromBranch
   **/
   @javax.annotation.Nullable
-  public Integer getShipFromBranch() {
+  public String getShipFromBranch() {
     return shipFromBranch;
   }
 
-  public void setShipFromBranch(Integer shipFromBranch) {
+  public void setShipFromBranch(String shipFromBranch) {
     this.shipFromBranch = shipFromBranch;
   }
 
@@ -515,9 +515,6 @@ public class ReturnsDetailsResponseProductsInner {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("ingramLineNumber") != null && !jsonObj.get("ingramLineNumber").isJsonNull()) && !jsonObj.get("ingramLineNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `ingramLineNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramLineNumber").toString()));
-      }
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
       }
@@ -541,6 +538,12 @@ public class ReturnsDetailsResponseProductsInner {
       }
       if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
+      }
+      if ((jsonObj.get("returnBranch") != null && !jsonObj.get("returnBranch").isJsonNull()) && !jsonObj.get("returnBranch").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `returnBranch` to be a primitive type in the JSON string but got `%s`", jsonObj.get("returnBranch").toString()));
+      }
+      if ((jsonObj.get("shipFromBranch") != null && !jsonObj.get("shipFromBranch").isJsonNull()) && !jsonObj.get("shipFromBranch").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `shipFromBranch` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipFromBranch").toString()));
       }
   }
 

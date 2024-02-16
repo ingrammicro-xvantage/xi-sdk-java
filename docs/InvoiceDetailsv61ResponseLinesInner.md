@@ -14,7 +14,7 @@
 |**customerPartNumber** | **String** | Part number from customer&#39;s system. |  [optional] |
 |**vendorName** | **String** | Name of the vendor. |  [optional] |
 |**productDescription** | **String** | Description of the product. |  [optional] |
-|**unitWeight** | **String** | Weight of the product. |  [optional] |
+|**unitWeight** | **BigDecimal** | Weight of the product. |  [optional] |
 |**quantity** | **Integer** | Quantity of the product. |  [optional] |
 |**unitPrice** | **Double** | Unit price of the product. |  [optional] |
 |**unitOfMeasure** | **String** | Unit of measure of the product. |  [optional] |

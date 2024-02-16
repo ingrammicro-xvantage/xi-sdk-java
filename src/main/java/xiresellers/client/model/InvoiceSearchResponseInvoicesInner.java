@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 
 import com.google.gson.Gson;
@@ -49,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceSearchResponseInvoicesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:20:55.562369Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
 public class InvoiceSearchResponseInvoicesInner {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE = "paymentTermsDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE)
@@ -77,7 +78,7 @@ public class InvoiceSearchResponseInvoicesInner {
 
   public static final String SERIALIZED_NAME_INVOICED_AMOUNT_DUE = "invoicedAmountDue";
   @SerializedName(SERIALIZED_NAME_INVOICED_AMOUNT_DUE)
-  private String invoicedAmountDue;
+  private BigDecimal invoicedAmountDue;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
@@ -93,7 +94,7 @@ public class InvoiceSearchResponseInvoicesInner {
 
   public static final String SERIALIZED_NAME_INVOICE_AMOUNT_INCL_TAX = "invoiceAmountInclTax";
   @SerializedName(SERIALIZED_NAME_INVOICE_AMOUNT_INCL_TAX)
-  private String invoiceAmountInclTax;
+  private BigDecimal invoiceAmountInclTax;
 
   public InvoiceSearchResponseInvoicesInner() {
   }
@@ -212,7 +213,7 @@ public class InvoiceSearchResponseInvoicesInner {
   }
 
 
-  public InvoiceSearchResponseInvoicesInner invoicedAmountDue(String invoicedAmountDue) {
+  public InvoiceSearchResponseInvoicesInner invoicedAmountDue(BigDecimal invoicedAmountDue) {
     this.invoicedAmountDue = invoicedAmountDue;
     return this;
   }
@@ -222,11 +223,11 @@ public class InvoiceSearchResponseInvoicesInner {
    * @return invoicedAmountDue
   **/
   @javax.annotation.Nullable
-  public String getInvoicedAmountDue() {
+  public BigDecimal getInvoicedAmountDue() {
     return invoicedAmountDue;
   }
 
-  public void setInvoicedAmountDue(String invoicedAmountDue) {
+  public void setInvoicedAmountDue(BigDecimal invoicedAmountDue) {
     this.invoicedAmountDue = invoicedAmountDue;
   }
 
@@ -288,7 +289,7 @@ public class InvoiceSearchResponseInvoicesInner {
   }
 
 
-  public InvoiceSearchResponseInvoicesInner invoiceAmountInclTax(String invoiceAmountInclTax) {
+  public InvoiceSearchResponseInvoicesInner invoiceAmountInclTax(BigDecimal invoiceAmountInclTax) {
     this.invoiceAmountInclTax = invoiceAmountInclTax;
     return this;
   }
@@ -298,11 +299,11 @@ public class InvoiceSearchResponseInvoicesInner {
    * @return invoiceAmountInclTax
   **/
   @javax.annotation.Nullable
-  public String getInvoiceAmountInclTax() {
+  public BigDecimal getInvoiceAmountInclTax() {
     return invoiceAmountInclTax;
   }
 
-  public void setInvoiceAmountInclTax(String invoiceAmountInclTax) {
+  public void setInvoiceAmountInclTax(BigDecimal invoiceAmountInclTax) {
     this.invoiceAmountInclTax = invoiceAmountInclTax;
   }
 
@@ -427,9 +428,6 @@ public class InvoiceSearchResponseInvoicesInner {
       if ((jsonObj.get("invoiceDueDate") != null && !jsonObj.get("invoiceDueDate").isJsonNull()) && !jsonObj.get("invoiceDueDate").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `invoiceDueDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceDueDate").toString()));
       }
-      if ((jsonObj.get("invoicedAmountDue") != null && !jsonObj.get("invoicedAmountDue").isJsonNull()) && !jsonObj.get("invoicedAmountDue").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `invoicedAmountDue` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoicedAmountDue").toString()));
-      }
       if ((jsonObj.get("customerOrderNumber") != null && !jsonObj.get("customerOrderNumber").isJsonNull()) && !jsonObj.get("customerOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
       }
@@ -438,9 +436,6 @@ public class InvoiceSearchResponseInvoicesInner {
       }
       if ((jsonObj.get("endCustomerOrderNumber") != null && !jsonObj.get("endCustomerOrderNumber").isJsonNull()) && !jsonObj.get("endCustomerOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endCustomerOrderNumber").toString()));
-      }
-      if ((jsonObj.get("invoiceAmountInclTax") != null && !jsonObj.get("invoiceAmountInclTax").isJsonNull()) && !jsonObj.get("invoiceAmountInclTax").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `invoiceAmountInclTax` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceAmountInclTax").toString()));
       }
   }
 

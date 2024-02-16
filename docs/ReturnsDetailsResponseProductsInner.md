@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**ingramLineNumber** | **String** | Unique Ingram Micro line number. |  [optional] |
+|**ingramLineNumber** | **Integer** | Unique Ingram Micro line number. |  [optional] |
 |**description** | **String** | The description of the line item product. |  [optional] |
 |**ingramPartNumber** | **String** | Unique IngramMicro part number. |  [optional] |
 |**vendorPartNumber** | **String** | The vendor&#39;s part number for the line item. |  [optional] |
@@ -20,8 +20,8 @@
 |**unitPrice** | **BigDecimal** | The unit price of the line item. |  [optional] |
 |**extendedPrice** | **BigDecimal** | Unit price X quantity for the line item. |  [optional] |
 |**status** | **String** | The status of the line item. |  [optional] |
-|**returnBranch** | **Integer** | The code of the return branch. |  [optional] |
-|**shipFromBranch** | **Integer** | The code of the ship from branch. |  [optional] |
+|**returnBranch** | **String** | The code of the return branch. |  [optional] |
+|**shipFromBranch** | **String** | The code of the ship from branch. |  [optional] |
 
 
 

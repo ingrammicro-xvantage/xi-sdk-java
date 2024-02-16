@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * DealsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:20:55.562369Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
 public class DealsDetailsResponse {
   public static final String SERIALIZED_NAME_DEAL_ID = "dealId";
   @SerializedName(SERIALIZED_NAME_DEAL_ID)
@@ -83,11 +83,11 @@ public class DealsDetailsResponse {
 
   public static final String SERIALIZED_NAME_DEAL_EXPIRY_DATE = "dealExpiryDate";
   @SerializedName(SERIALIZED_NAME_DEAL_EXPIRY_DATE)
-  private LocalDate dealExpiryDate;
+  private String dealExpiryDate;
 
   public static final String SERIALIZED_NAME_PRICE_PROTECTION_END_DATE = "priceProtectionEndDate";
   @SerializedName(SERIALIZED_NAME_PRICE_PROTECTION_END_DATE)
-  private LocalDate priceProtectionEndDate;
+  private String priceProtectionEndDate;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
@@ -218,7 +218,7 @@ public class DealsDetailsResponse {
   }
 
 
-  public DealsDetailsResponse dealExpiryDate(LocalDate dealExpiryDate) {
+  public DealsDetailsResponse dealExpiryDate(String dealExpiryDate) {
     this.dealExpiryDate = dealExpiryDate;
     return this;
   }
@@ -228,16 +228,16 @@ public class DealsDetailsResponse {
    * @return dealExpiryDate
   **/
   @javax.annotation.Nullable
-  public LocalDate getDealExpiryDate() {
+  public String getDealExpiryDate() {
     return dealExpiryDate;
   }
 
-  public void setDealExpiryDate(LocalDate dealExpiryDate) {
+  public void setDealExpiryDate(String dealExpiryDate) {
     this.dealExpiryDate = dealExpiryDate;
   }
 
 
-  public DealsDetailsResponse priceProtectionEndDate(LocalDate priceProtectionEndDate) {
+  public DealsDetailsResponse priceProtectionEndDate(String priceProtectionEndDate) {
     this.priceProtectionEndDate = priceProtectionEndDate;
     return this;
   }
@@ -247,11 +247,11 @@ public class DealsDetailsResponse {
    * @return priceProtectionEndDate
   **/
   @javax.annotation.Nullable
-  public LocalDate getPriceProtectionEndDate() {
+  public String getPriceProtectionEndDate() {
     return priceProtectionEndDate;
   }
 
-  public void setPriceProtectionEndDate(LocalDate priceProtectionEndDate) {
+  public void setPriceProtectionEndDate(String priceProtectionEndDate) {
     this.priceProtectionEndDate = priceProtectionEndDate;
   }
 
@@ -434,6 +434,12 @@ public class DealsDetailsResponse {
       }
       if ((jsonObj.get("vendor") != null && !jsonObj.get("vendor").isJsonNull()) && !jsonObj.get("vendor").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendor").toString()));
+      }
+      if ((jsonObj.get("dealExpiryDate") != null && !jsonObj.get("dealExpiryDate").isJsonNull()) && !jsonObj.get("dealExpiryDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `dealExpiryDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dealExpiryDate").toString()));
+      }
+      if ((jsonObj.get("priceProtectionEndDate") != null && !jsonObj.get("priceProtectionEndDate").isJsonNull()) && !jsonObj.get("priceProtectionEndDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `priceProtectionEndDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("priceProtectionEndDate").toString()));
       }
       if ((jsonObj.get("currencyCode") != null && !jsonObj.get("currencyCode").isJsonNull()) && !jsonObj.get("currencyCode").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `currencyCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyCode").toString()));
