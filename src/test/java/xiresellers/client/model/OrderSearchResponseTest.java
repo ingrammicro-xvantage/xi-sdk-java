@@ -1,5 +1,5 @@
 /*
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -19,8 +19,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.OrderSearchResponseServiceResponse;
+import java.util.List;
+import xiresellers.client.model.OrderSearchResponseOrdersInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -39,11 +41,51 @@ public class OrderSearchResponseTest {
     }
 
     /**
-     * Test the property 'serviceResponse'
+     * Test the property 'recordsFound'
      */
     @Test
-    public void serviceResponseTest() {
-        // TODO: test serviceResponse
+    public void recordsFoundTest() {
+        // TODO: test recordsFound
+    }
+
+    /**
+     * Test the property 'pageSize'
+     */
+    @Test
+    public void pageSizeTest() {
+        // TODO: test pageSize
+    }
+
+    /**
+     * Test the property 'pageNumber'
+     */
+    @Test
+    public void pageNumberTest() {
+        // TODO: test pageNumber
+    }
+
+    /**
+     * Test the property 'orders'
+     */
+    @Test
+    public void ordersTest() {
+        // TODO: test orders
+    }
+
+    /**
+     * Test the property 'nextPage'
+     */
+    @Test
+    public void nextPageTest() {
+        // TODO: test nextPage
+    }
+
+    /**
+     * Test the property 'previousPage'
+     */
+    @Test
+    public void previousPageTest() {
+        // TODO: test previousPage
     }
 
 }

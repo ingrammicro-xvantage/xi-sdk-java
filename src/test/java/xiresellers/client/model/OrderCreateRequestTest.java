@@ -1,5 +1,5 @@
 /*
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -19,8 +19,16 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.OrderCreateRequestOrdercreaterequest;
+import java.util.List;
+import xiresellers.client.model.OrderCreateRequestAdditionalAttributesInner;
+import xiresellers.client.model.OrderCreateRequestEndUserInfo;
+import xiresellers.client.model.OrderCreateRequestLinesInner;
+import xiresellers.client.model.OrderCreateRequestResellerInfo;
+import xiresellers.client.model.OrderCreateRequestShipToInfo;
+import xiresellers.client.model.OrderCreateRequestShipmentDetails;
+import xiresellers.client.model.OrderCreateRequestVmf;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -39,11 +47,107 @@ public class OrderCreateRequestTest {
     }
 
     /**
-     * Test the property 'ordercreaterequest'
+     * Test the property 'customerOrderNumber'
      */
     @Test
-    public void ordercreaterequestTest() {
-        // TODO: test ordercreaterequest
+    public void customerOrderNumberTest() {
+        // TODO: test customerOrderNumber
+    }
+
+    /**
+     * Test the property 'endCustomerOrderNumber'
+     */
+    @Test
+    public void endCustomerOrderNumberTest() {
+        // TODO: test endCustomerOrderNumber
+    }
+
+    /**
+     * Test the property 'billToAddressId'
+     */
+    @Test
+    public void billToAddressIdTest() {
+        // TODO: test billToAddressId
+    }
+
+    /**
+     * Test the property 'specialBidNumber'
+     */
+    @Test
+    public void specialBidNumberTest() {
+        // TODO: test specialBidNumber
+    }
+
+    /**
+     * Test the property 'notes'
+     */
+    @Test
+    public void notesTest() {
+        // TODO: test notes
+    }
+
+    /**
+     * Test the property 'acceptBackOrder'
+     */
+    @Test
+    public void acceptBackOrderTest() {
+        // TODO: test acceptBackOrder
+    }
+
+    /**
+     * Test the property 'resellerInfo'
+     */
+    @Test
+    public void resellerInfoTest() {
+        // TODO: test resellerInfo
+    }
+
+    /**
+     * Test the property 'vmf'
+     */
+    @Test
+    public void vmfTest() {
+        // TODO: test vmf
+    }
+
+    /**
+     * Test the property 'shipToInfo'
+     */
+    @Test
+    public void shipToInfoTest() {
+        // TODO: test shipToInfo
+    }
+
+    /**
+     * Test the property 'endUserInfo'
+     */
+    @Test
+    public void endUserInfoTest() {
+        // TODO: test endUserInfo
+    }
+
+    /**
+     * Test the property 'lines'
+     */
+    @Test
+    public void linesTest() {
+        // TODO: test lines
+    }
+
+    /**
+     * Test the property 'shipmentDetails'
+     */
+    @Test
+    public void shipmentDetailsTest() {
+        // TODO: test shipmentDetails
+    }
+
+    /**
+     * Test the property 'additionalAttributes'
+     */
+    @Test
+    public void additionalAttributesTest() {
+        // TODO: test additionalAttributes
     }
 
 }

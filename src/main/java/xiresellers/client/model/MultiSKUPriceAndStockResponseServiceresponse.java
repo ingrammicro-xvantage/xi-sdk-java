@@ -1,5 +1,5 @@
 /*
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import xiresellers.client.model.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse;
-import xiresellers.client.model.PriceAndAvailabilityResponseServiceresponseResponsepreamble;
+import xiresellers.client.model.MultiSKUPriceAndStockResponseServiceresponseResponsepreamble;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,11 +51,11 @@ import xiresellers.client.JSON;
 /**
  * MultiSKUPriceAndStockResponseServiceresponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-14T10:07:36.431201Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T05:46:16.662413Z[Etc/UTC]")
 public class MultiSKUPriceAndStockResponseServiceresponse {
   public static final String SERIALIZED_NAME_RESPONSEPREAMBLE = "responsepreamble";
   @SerializedName(SERIALIZED_NAME_RESPONSEPREAMBLE)
-  private PriceAndAvailabilityResponseServiceresponseResponsepreamble responsepreamble;
+  private MultiSKUPriceAndStockResponseServiceresponseResponsepreamble responsepreamble;
 
   public static final String SERIALIZED_NAME_PRICEANDSTOCKRESPONSE = "priceandstockresponse";
   @SerializedName(SERIALIZED_NAME_PRICEANDSTOCKRESPONSE)
@@ -64,7 +64,7 @@ public class MultiSKUPriceAndStockResponseServiceresponse {
   public MultiSKUPriceAndStockResponseServiceresponse() {
   }
 
-  public MultiSKUPriceAndStockResponseServiceresponse responsepreamble(PriceAndAvailabilityResponseServiceresponseResponsepreamble responsepreamble) {
+  public MultiSKUPriceAndStockResponseServiceresponse responsepreamble(MultiSKUPriceAndStockResponseServiceresponseResponsepreamble responsepreamble) {
     this.responsepreamble = responsepreamble;
     return this;
   }
@@ -74,11 +74,11 @@ public class MultiSKUPriceAndStockResponseServiceresponse {
    * @return responsepreamble
   **/
   @javax.annotation.Nullable
-  public PriceAndAvailabilityResponseServiceresponseResponsepreamble getResponsepreamble() {
+  public MultiSKUPriceAndStockResponseServiceresponseResponsepreamble getResponsepreamble() {
     return responsepreamble;
   }
 
-  public void setResponsepreamble(PriceAndAvailabilityResponseServiceresponseResponsepreamble responsepreamble) {
+  public void setResponsepreamble(MultiSKUPriceAndStockResponseServiceresponseResponsepreamble responsepreamble) {
     this.responsepreamble = responsepreamble;
   }
 
@@ -179,7 +179,7 @@ public class MultiSKUPriceAndStockResponseServiceresponse {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `responsepreamble`
       if (jsonObj.get("responsepreamble") != null && !jsonObj.get("responsepreamble").isJsonNull()) {
-        PriceAndAvailabilityResponseServiceresponseResponsepreamble.validateJsonElement(jsonObj.get("responsepreamble"));
+        MultiSKUPriceAndStockResponseServiceresponseResponsepreamble.validateJsonElement(jsonObj.get("responsepreamble"));
       }
       // validate the optional field `priceandstockresponse`
       if (jsonObj.get("priceandstockresponse") != null && !jsonObj.get("priceandstockresponse").isJsonNull()) {

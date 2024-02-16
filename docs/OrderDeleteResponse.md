@@ -8,7 +8,7 @@ Response schema for order delete endpoint
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**serviceresponse** | [**OrderCancelResponseServiceresponse**](OrderCancelResponseServiceresponse.md) |  |  [optional] |
+|**serviceresponse** | [**OrderDeleteResponseServiceresponse**](OrderDeleteResponseServiceresponse.md) |  |  [optional] |
 
 
 

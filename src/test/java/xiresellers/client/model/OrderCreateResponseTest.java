@@ -1,5 +1,5 @@
 /*
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -19,8 +19,13 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.OrderCreateResponseServiceresponse;
+import java.util.List;
+import xiresellers.client.model.OrderCreateResponseEndUserInfo;
+import xiresellers.client.model.OrderCreateResponseOrdersInner;
+import xiresellers.client.model.OrderCreateResponseShipToInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -39,11 +44,83 @@ public class OrderCreateResponseTest {
     }
 
     /**
-     * Test the property 'serviceresponse'
+     * Test the property 'customerOrderNumber'
      */
     @Test
-    public void serviceresponseTest() {
-        // TODO: test serviceresponse
+    public void customerOrderNumberTest() {
+        // TODO: test customerOrderNumber
+    }
+
+    /**
+     * Test the property 'endCustomerOrderNumber'
+     */
+    @Test
+    public void endCustomerOrderNumberTest() {
+        // TODO: test endCustomerOrderNumber
+    }
+
+    /**
+     * Test the property 'billToAddressId'
+     */
+    @Test
+    public void billToAddressIdTest() {
+        // TODO: test billToAddressId
+    }
+
+    /**
+     * Test the property 'specialBidNumber'
+     */
+    @Test
+    public void specialBidNumberTest() {
+        // TODO: test specialBidNumber
+    }
+
+    /**
+     * Test the property 'orderSplit'
+     */
+    @Test
+    public void orderSplitTest() {
+        // TODO: test orderSplit
+    }
+
+    /**
+     * Test the property 'processedPartially'
+     */
+    @Test
+    public void processedPartiallyTest() {
+        // TODO: test processedPartially
+    }
+
+    /**
+     * Test the property 'purchaseOrderTotal'
+     */
+    @Test
+    public void purchaseOrderTotalTest() {
+        // TODO: test purchaseOrderTotal
+    }
+
+    /**
+     * Test the property 'shipToInfo'
+     */
+    @Test
+    public void shipToInfoTest() {
+        // TODO: test shipToInfo
+    }
+
+    /**
+     * Test the property 'endUserInfo'
+     */
+    @Test
+    public void endUserInfoTest() {
+        // TODO: test endUserInfo
+    }
+
+    /**
+     * Test the property 'orders'
+     */
+    @Test
+    public void ordersTest() {
+        // TODO: test orders
     }
 
 }

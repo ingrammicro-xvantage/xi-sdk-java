@@ -1,5 +1,5 @@
 /*
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -20,8 +20,13 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.OrderCreateResponseServiceresponse;
+import java.util.List;
+import xiresellers.client.model.OrderCreateResponseEndUserInfo;
+import xiresellers.client.model.OrderCreateResponseOrdersInner;
+import xiresellers.client.model.OrderCreateResponseShipToInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -48,33 +53,248 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * Response schema for order create endpoint
+ * OrderCreateResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-14T10:07:36.431201Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T05:46:16.662413Z[Etc/UTC]")
 public class OrderCreateResponse {
-  public static final String SERIALIZED_NAME_SERVICERESPONSE = "serviceresponse";
-  @SerializedName(SERIALIZED_NAME_SERVICERESPONSE)
-  private OrderCreateResponseServiceresponse serviceresponse;
+  public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
+  @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  private String customerOrderNumber;
+
+  public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
+  @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
+  private String endCustomerOrderNumber;
+
+  public static final String SERIALIZED_NAME_BILL_TO_ADDRESS_ID = "billToAddressId";
+  @SerializedName(SERIALIZED_NAME_BILL_TO_ADDRESS_ID)
+  private String billToAddressId;
+
+  public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBER = "specialBidNumber";
+  @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBER)
+  private String specialBidNumber;
+
+  public static final String SERIALIZED_NAME_ORDER_SPLIT = "orderSplit";
+  @SerializedName(SERIALIZED_NAME_ORDER_SPLIT)
+  private Boolean orderSplit;
+
+  public static final String SERIALIZED_NAME_PROCESSED_PARTIALLY = "processedPartially";
+  @SerializedName(SERIALIZED_NAME_PROCESSED_PARTIALLY)
+  private Boolean processedPartially;
+
+  public static final String SERIALIZED_NAME_PURCHASE_ORDER_TOTAL = "purchaseOrderTotal";
+  @SerializedName(SERIALIZED_NAME_PURCHASE_ORDER_TOTAL)
+  private BigDecimal purchaseOrderTotal;
+
+  public static final String SERIALIZED_NAME_SHIP_TO_INFO = "shipToInfo";
+  @SerializedName(SERIALIZED_NAME_SHIP_TO_INFO)
+  private OrderCreateResponseShipToInfo shipToInfo;
+
+  public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
+  @SerializedName(SERIALIZED_NAME_END_USER_INFO)
+  private OrderCreateResponseEndUserInfo endUserInfo;
+
+  public static final String SERIALIZED_NAME_ORDERS = "orders";
+  @SerializedName(SERIALIZED_NAME_ORDERS)
+  private List<OrderCreateResponseOrdersInner> orders;
 
   public OrderCreateResponse() {
   }
 
-  public OrderCreateResponse serviceresponse(OrderCreateResponseServiceresponse serviceresponse) {
-    this.serviceresponse = serviceresponse;
+  public OrderCreateResponse customerOrderNumber(String customerOrderNumber) {
+    this.customerOrderNumber = customerOrderNumber;
     return this;
   }
 
    /**
-   * Get serviceresponse
-   * @return serviceresponse
+   * The reseller&#39;s unique PO/Order number.
+   * @return customerOrderNumber
   **/
   @javax.annotation.Nullable
-  public OrderCreateResponseServiceresponse getServiceresponse() {
-    return serviceresponse;
+  public String getCustomerOrderNumber() {
+    return customerOrderNumber;
   }
 
-  public void setServiceresponse(OrderCreateResponseServiceresponse serviceresponse) {
-    this.serviceresponse = serviceresponse;
+  public void setCustomerOrderNumber(String customerOrderNumber) {
+    this.customerOrderNumber = customerOrderNumber;
+  }
+
+
+  public OrderCreateResponse endCustomerOrderNumber(String endCustomerOrderNumber) {
+    this.endCustomerOrderNumber = endCustomerOrderNumber;
+    return this;
+  }
+
+   /**
+   * The end user/customer&#39;s Purchase Order number.
+   * @return endCustomerOrderNumber
+  **/
+  @javax.annotation.Nullable
+  public String getEndCustomerOrderNumber() {
+    return endCustomerOrderNumber;
+  }
+
+  public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
+    this.endCustomerOrderNumber = endCustomerOrderNumber;
+  }
+
+
+  public OrderCreateResponse billToAddressId(String billToAddressId) {
+    this.billToAddressId = billToAddressId;
+    return this;
+  }
+
+   /**
+   * Suffix used to identify billing address. Created during onboarding. Resellers are provided with one or more address IDs depending on how many bill to addresses they need for various flooring companies they are using for credit
+   * @return billToAddressId
+  **/
+  @javax.annotation.Nullable
+  public String getBillToAddressId() {
+    return billToAddressId;
+  }
+
+  public void setBillToAddressId(String billToAddressId) {
+    this.billToAddressId = billToAddressId;
+  }
+
+
+  public OrderCreateResponse specialBidNumber(String specialBidNumber) {
+    this.specialBidNumber = specialBidNumber;
+    return this;
+  }
+
+   /**
+   * The bid number provided to the reseller by the vendor for special pricing and discounts. Line-level bid numbers take precedence over header-level bid numbers.
+   * @return specialBidNumber
+  **/
+  @javax.annotation.Nullable
+  public String getSpecialBidNumber() {
+    return specialBidNumber;
+  }
+
+  public void setSpecialBidNumber(String specialBidNumber) {
+    this.specialBidNumber = specialBidNumber;
+  }
+
+
+  public OrderCreateResponse orderSplit(Boolean orderSplit) {
+    this.orderSplit = orderSplit;
+    return this;
+  }
+
+   /**
+   * true for multiple orders
+   * @return orderSplit
+  **/
+  @javax.annotation.Nullable
+  public Boolean getOrderSplit() {
+    return orderSplit;
+  }
+
+  public void setOrderSplit(Boolean orderSplit) {
+    this.orderSplit = orderSplit;
+  }
+
+
+  public OrderCreateResponse processedPartially(Boolean processedPartially) {
+    this.processedPartially = processedPartially;
+    return this;
+  }
+
+   /**
+   * true for partial order succesfully placed
+   * @return processedPartially
+  **/
+  @javax.annotation.Nullable
+  public Boolean getProcessedPartially() {
+    return processedPartially;
+  }
+
+  public void setProcessedPartially(Boolean processedPartially) {
+    this.processedPartially = processedPartially;
+  }
+
+
+  public OrderCreateResponse purchaseOrderTotal(BigDecimal purchaseOrderTotal) {
+    this.purchaseOrderTotal = purchaseOrderTotal;
+    return this;
+  }
+
+   /**
+   * Total of all the orders including taxes and fees.
+   * @return purchaseOrderTotal
+  **/
+  @javax.annotation.Nullable
+  public BigDecimal getPurchaseOrderTotal() {
+    return purchaseOrderTotal;
+  }
+
+  public void setPurchaseOrderTotal(BigDecimal purchaseOrderTotal) {
+    this.purchaseOrderTotal = purchaseOrderTotal;
+  }
+
+
+  public OrderCreateResponse shipToInfo(OrderCreateResponseShipToInfo shipToInfo) {
+    this.shipToInfo = shipToInfo;
+    return this;
+  }
+
+   /**
+   * Get shipToInfo
+   * @return shipToInfo
+  **/
+  @javax.annotation.Nullable
+  public OrderCreateResponseShipToInfo getShipToInfo() {
+    return shipToInfo;
+  }
+
+  public void setShipToInfo(OrderCreateResponseShipToInfo shipToInfo) {
+    this.shipToInfo = shipToInfo;
+  }
+
+
+  public OrderCreateResponse endUserInfo(OrderCreateResponseEndUserInfo endUserInfo) {
+    this.endUserInfo = endUserInfo;
+    return this;
+  }
+
+   /**
+   * Get endUserInfo
+   * @return endUserInfo
+  **/
+  @javax.annotation.Nullable
+  public OrderCreateResponseEndUserInfo getEndUserInfo() {
+    return endUserInfo;
+  }
+
+  public void setEndUserInfo(OrderCreateResponseEndUserInfo endUserInfo) {
+    this.endUserInfo = endUserInfo;
+  }
+
+
+  public OrderCreateResponse orders(List<OrderCreateResponseOrdersInner> orders) {
+    this.orders = orders;
+    return this;
+  }
+
+  public OrderCreateResponse addOrdersItem(OrderCreateResponseOrdersInner ordersItem) {
+    if (this.orders == null) {
+      this.orders = new ArrayList<>();
+    }
+    this.orders.add(ordersItem);
+    return this;
+  }
+
+   /**
+   * Order-level details.
+   * @return orders
+  **/
+  @javax.annotation.Nullable
+  public List<OrderCreateResponseOrdersInner> getOrders() {
+    return orders;
+  }
+
+  public void setOrders(List<OrderCreateResponseOrdersInner> orders) {
+    this.orders = orders;
   }
 
 
@@ -88,19 +308,37 @@ public class OrderCreateResponse {
       return false;
     }
     OrderCreateResponse orderCreateResponse = (OrderCreateResponse) o;
-    return Objects.equals(this.serviceresponse, orderCreateResponse.serviceresponse);
+    return Objects.equals(this.customerOrderNumber, orderCreateResponse.customerOrderNumber) &&
+        Objects.equals(this.endCustomerOrderNumber, orderCreateResponse.endCustomerOrderNumber) &&
+        Objects.equals(this.billToAddressId, orderCreateResponse.billToAddressId) &&
+        Objects.equals(this.specialBidNumber, orderCreateResponse.specialBidNumber) &&
+        Objects.equals(this.orderSplit, orderCreateResponse.orderSplit) &&
+        Objects.equals(this.processedPartially, orderCreateResponse.processedPartially) &&
+        Objects.equals(this.purchaseOrderTotal, orderCreateResponse.purchaseOrderTotal) &&
+        Objects.equals(this.shipToInfo, orderCreateResponse.shipToInfo) &&
+        Objects.equals(this.endUserInfo, orderCreateResponse.endUserInfo) &&
+        Objects.equals(this.orders, orderCreateResponse.orders);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(serviceresponse);
+    return Objects.hash(customerOrderNumber, endCustomerOrderNumber, billToAddressId, specialBidNumber, orderSplit, processedPartially, purchaseOrderTotal, shipToInfo, endUserInfo, orders);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OrderCreateResponse {\n");
-    sb.append("    serviceresponse: ").append(toIndentedString(serviceresponse)).append("\n");
+    sb.append("    customerOrderNumber: ").append(toIndentedString(customerOrderNumber)).append("\n");
+    sb.append("    endCustomerOrderNumber: ").append(toIndentedString(endCustomerOrderNumber)).append("\n");
+    sb.append("    billToAddressId: ").append(toIndentedString(billToAddressId)).append("\n");
+    sb.append("    specialBidNumber: ").append(toIndentedString(specialBidNumber)).append("\n");
+    sb.append("    orderSplit: ").append(toIndentedString(orderSplit)).append("\n");
+    sb.append("    processedPartially: ").append(toIndentedString(processedPartially)).append("\n");
+    sb.append("    purchaseOrderTotal: ").append(toIndentedString(purchaseOrderTotal)).append("\n");
+    sb.append("    shipToInfo: ").append(toIndentedString(shipToInfo)).append("\n");
+    sb.append("    endUserInfo: ").append(toIndentedString(endUserInfo)).append("\n");
+    sb.append("    orders: ").append(toIndentedString(orders)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -123,7 +361,16 @@ public class OrderCreateResponse {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("serviceresponse");
+    openapiFields.add("customerOrderNumber");
+    openapiFields.add("endCustomerOrderNumber");
+    openapiFields.add("billToAddressId");
+    openapiFields.add("specialBidNumber");
+    openapiFields.add("orderSplit");
+    openapiFields.add("processedPartially");
+    openapiFields.add("purchaseOrderTotal");
+    openapiFields.add("shipToInfo");
+    openapiFields.add("endUserInfo");
+    openapiFields.add("orders");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -150,9 +397,39 @@ public class OrderCreateResponse {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the optional field `serviceresponse`
-      if (jsonObj.get("serviceresponse") != null && !jsonObj.get("serviceresponse").isJsonNull()) {
-        OrderCreateResponseServiceresponse.validateJsonElement(jsonObj.get("serviceresponse"));
+      if ((jsonObj.get("customerOrderNumber") != null && !jsonObj.get("customerOrderNumber").isJsonNull()) && !jsonObj.get("customerOrderNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
+      }
+      if ((jsonObj.get("endCustomerOrderNumber") != null && !jsonObj.get("endCustomerOrderNumber").isJsonNull()) && !jsonObj.get("endCustomerOrderNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endCustomerOrderNumber").toString()));
+      }
+      if ((jsonObj.get("billToAddressId") != null && !jsonObj.get("billToAddressId").isJsonNull()) && !jsonObj.get("billToAddressId").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `billToAddressId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billToAddressId").toString()));
+      }
+      if ((jsonObj.get("specialBidNumber") != null && !jsonObj.get("specialBidNumber").isJsonNull()) && !jsonObj.get("specialBidNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `specialBidNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialBidNumber").toString()));
+      }
+      // validate the optional field `shipToInfo`
+      if (jsonObj.get("shipToInfo") != null && !jsonObj.get("shipToInfo").isJsonNull()) {
+        OrderCreateResponseShipToInfo.validateJsonElement(jsonObj.get("shipToInfo"));
+      }
+      // validate the optional field `endUserInfo`
+      if (jsonObj.get("endUserInfo") != null && !jsonObj.get("endUserInfo").isJsonNull()) {
+        OrderCreateResponseEndUserInfo.validateJsonElement(jsonObj.get("endUserInfo"));
+      }
+      if (jsonObj.get("orders") != null && !jsonObj.get("orders").isJsonNull()) {
+        JsonArray jsonArrayorders = jsonObj.getAsJsonArray("orders");
+        if (jsonArrayorders != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("orders").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `orders` to be an array in the JSON string but got `%s`", jsonObj.get("orders").toString()));
+          }
+
+          // validate the optional field `orders` (array)
+          for (int i = 0; i < jsonArrayorders.size(); i++) {
+            OrderCreateResponseOrdersInner.validateJsonElement(jsonArrayorders.get(i));
+          };
+        }
       }
   }
 

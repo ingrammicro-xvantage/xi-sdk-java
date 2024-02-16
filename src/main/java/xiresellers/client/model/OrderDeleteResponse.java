@@ -1,5 +1,5 @@
 /*
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import xiresellers.client.model.OrderCancelResponseServiceresponse;
+import xiresellers.client.model.OrderDeleteResponseServiceresponse;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,16 +50,16 @@ import xiresellers.client.JSON;
 /**
  * Response schema for order delete endpoint
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-14T10:07:36.431201Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T05:46:16.662413Z[Etc/UTC]")
 public class OrderDeleteResponse {
   public static final String SERIALIZED_NAME_SERVICERESPONSE = "serviceresponse";
   @SerializedName(SERIALIZED_NAME_SERVICERESPONSE)
-  private OrderCancelResponseServiceresponse serviceresponse;
+  private OrderDeleteResponseServiceresponse serviceresponse;
 
   public OrderDeleteResponse() {
   }
 
-  public OrderDeleteResponse serviceresponse(OrderCancelResponseServiceresponse serviceresponse) {
+  public OrderDeleteResponse serviceresponse(OrderDeleteResponseServiceresponse serviceresponse) {
     this.serviceresponse = serviceresponse;
     return this;
   }
@@ -69,11 +69,11 @@ public class OrderDeleteResponse {
    * @return serviceresponse
   **/
   @javax.annotation.Nullable
-  public OrderCancelResponseServiceresponse getServiceresponse() {
+  public OrderDeleteResponseServiceresponse getServiceresponse() {
     return serviceresponse;
   }
 
-  public void setServiceresponse(OrderCancelResponseServiceresponse serviceresponse) {
+  public void setServiceresponse(OrderDeleteResponseServiceresponse serviceresponse) {
     this.serviceresponse = serviceresponse;
   }
 
@@ -152,7 +152,7 @@ public class OrderDeleteResponse {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `serviceresponse`
       if (jsonObj.get("serviceresponse") != null && !jsonObj.get("serviceresponse").isJsonNull()) {
-        OrderCancelResponseServiceresponse.validateJsonElement(jsonObj.get("serviceresponse"));
+        OrderDeleteResponseServiceresponse.validateJsonElement(jsonObj.get("serviceresponse"));
       }
   }
 
