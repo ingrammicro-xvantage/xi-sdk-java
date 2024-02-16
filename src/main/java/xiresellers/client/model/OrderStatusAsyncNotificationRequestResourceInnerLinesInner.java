@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T07:02:17.403456Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T08:56:25.348026Z[Etc/UTC]")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
   public static final String SERIALIZED_NAME_LINE_NUMBER = "LineNumber";
   @SerializedName(SERIALIZED_NAME_LINE_NUMBER)

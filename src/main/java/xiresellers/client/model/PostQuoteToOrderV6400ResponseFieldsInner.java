@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * PostQuoteToOrderV6400ResponseFieldsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T07:02:17.403456Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T08:56:25.348026Z[Etc/UTC]")
 public class PostQuoteToOrderV6400ResponseFieldsInner {
   public static final String SERIALIZED_NAME_FIELD = "field";
   @SerializedName(SERIALIZED_NAME_FIELD)
