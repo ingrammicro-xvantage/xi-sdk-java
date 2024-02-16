@@ -1,5 +1,5 @@
 /*
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner
+ * Model tests for QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
  */
-public class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInnerTest {
-    private final ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner model = new ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner();
+public class QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInnerTest {
+    private final QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner model = new QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner();
 
     /**
-     * Model tests for ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner
+     * Model tests for QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
      */
     @Test
-    public void testValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner() {
-        // TODO: test ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner
+    public void testQuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner() {
+        // TODO: test QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
     }
 
     /**

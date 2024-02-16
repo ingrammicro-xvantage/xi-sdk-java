@@ -1,5 +1,5 @@
 /*
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -19,8 +19,12 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.OrderModifyRequestServicerequest;
+import java.util.List;
+import xiresellers.client.model.OrderModifyRequestAdditionalAttributesInner;
+import xiresellers.client.model.OrderModifyRequestLinesInner;
+import xiresellers.client.model.OrderModifyRequestShipToInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -39,11 +43,35 @@ public class OrderModifyRequestTest {
     }
 
     /**
-     * Test the property 'servicerequest'
+     * Test the property 'notes'
      */
     @Test
-    public void servicerequestTest() {
-        // TODO: test servicerequest
+    public void notesTest() {
+        // TODO: test notes
+    }
+
+    /**
+     * Test the property 'shipToInfo'
+     */
+    @Test
+    public void shipToInfoTest() {
+        // TODO: test shipToInfo
+    }
+
+    /**
+     * Test the property 'lines'
+     */
+    @Test
+    public void linesTest() {
+        // TODO: test lines
+    }
+
+    /**
+     * Test the property 'additionalAttributes'
+     */
+    @Test
+    public void additionalAttributesTest() {
+        // TODO: test additionalAttributes
     }
 
 }

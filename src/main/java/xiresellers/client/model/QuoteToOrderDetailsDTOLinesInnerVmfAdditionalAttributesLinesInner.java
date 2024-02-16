@@ -1,5 +1,5 @@
 /*
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -47,10 +47,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner
+ * QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T05:46:16.662413Z[Etc/UTC]")
-public class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T07:02:17.403456Z[Etc/UTC]")
+public class QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_NAME = "attributeName";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_NAME)
   private String attributeName;
@@ -63,10 +63,10 @@ public class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner {
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_DESCRIPTION)
   private String attributeDescription;
 
-  public ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner() {
+  public QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner() {
   }
 
-  public ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner attributeName(String attributeName) {
+  public QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner attributeName(String attributeName) {
     this.attributeName = attributeName;
     return this;
   }
@@ -85,7 +85,7 @@ public class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner {
   }
 
 
-  public ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner attributeValue(String attributeValue) {
+  public QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner attributeValue(String attributeValue) {
     this.attributeValue = attributeValue;
     return this;
   }
@@ -104,7 +104,7 @@ public class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner {
   }
 
 
-  public ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner attributeDescription(String attributeDescription) {
+  public QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner attributeDescription(String attributeDescription) {
     this.attributeDescription = attributeDescription;
     return this;
   }
@@ -132,10 +132,10 @@ public class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner validateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner = (ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner) o;
-    return Objects.equals(this.attributeName, validateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.attributeName) &&
-        Objects.equals(this.attributeValue, validateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.attributeValue) &&
-        Objects.equals(this.attributeDescription, validateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.attributeDescription);
+    QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner quoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner = (QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner) o;
+    return Objects.equals(this.attributeName, quoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.attributeName) &&
+        Objects.equals(this.attributeValue, quoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.attributeValue) &&
+        Objects.equals(this.attributeDescription, quoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.attributeDescription);
   }
 
   @Override
@@ -146,7 +146,7 @@ public class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner {\n");
+    sb.append("class QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner {\n");
     sb.append("    attributeName: ").append(toIndentedString(attributeName)).append("\n");
     sb.append("    attributeValue: ").append(toIndentedString(attributeValue)).append("\n");
     sb.append("    attributeDescription: ").append(toIndentedString(attributeDescription)).append("\n");
@@ -184,20 +184,20 @@ public class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner {
   * Validates the JSON Element and throws an exception if issues found
   *
   * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner
+  * @throws IOException if the JSON Element is invalid with respect to QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner is not found in the empty JSON string", ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.openapiRequiredFields.toString()));
+        if (!QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner is not found in the empty JSON string", QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -216,22 +216,22 @@ public class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner' and its subtypes
+       if (!QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.class));
+       final TypeAdapter<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner>() {
            @Override
-           public void write(JsonWriter out, ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner value) throws IOException {
+           public void write(JsonWriter out, QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner read(JsonReader in) throws IOException {
+           public QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -242,18 +242,18 @@ public class ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner {
   }
 
  /**
-  * Create an instance of ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner given an JSON string
+  * Create an instance of QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner
-  * @throws IOException if the JSON string is invalid with respect to ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner
+  * @return An instance of QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
+  * @throws IOException if the JSON string is invalid with respect to QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner
   */
-  public static ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.class);
+  public static QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.class);
   }
 
  /**
-  * Convert an instance of ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner to an JSON string
+  * Convert an instance of QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner to an JSON string
   *
   * @return JSON string
   */

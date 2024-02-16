@@ -1,5 +1,5 @@
 /*
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -19,8 +19,15 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import xiresellers.client.model.AddressType;
+import xiresellers.client.model.InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner;
+import xiresellers.client.model.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner;
+import xiresellers.client.model.ProductLineType;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -204,6 +211,174 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponseTest {
     @Test
     public void creditmemoreasoncodeTest() {
         // TODO: test creditmemoreasoncode
+    }
+
+    /**
+     * Test the property 'fulfillmentflag'
+     */
+    @Test
+    public void fulfillmentflagTest() {
+        // TODO: test fulfillmentflag
+    }
+
+    /**
+     * Test the property 'holdreason'
+     */
+    @Test
+    public void holdreasonTest() {
+        // TODO: test holdreason
+    }
+
+    /**
+     * Test the property 'shipcomplete'
+     */
+    @Test
+    public void shipcompleteTest() {
+        // TODO: test shipcomplete
+    }
+
+    /**
+     * Test the property 'shipdate'
+     */
+    @Test
+    public void shipdateTest() {
+        // TODO: test shipdate
+    }
+
+    /**
+     * Test the property 'companycurrency'
+     */
+    @Test
+    public void companycurrencyTest() {
+        // TODO: test companycurrency
+    }
+
+    /**
+     * Test the property 'currencycode'
+     */
+    @Test
+    public void currencycodeTest() {
+        // TODO: test currencycode
+    }
+
+    /**
+     * Test the property 'currencyrate'
+     */
+    @Test
+    public void currencyrateTest() {
+        // TODO: test currencyrate
+    }
+
+    /**
+     * Test the property 'globalorderid'
+     */
+    @Test
+    public void globalorderidTest() {
+        // TODO: test globalorderid
+    }
+
+    /**
+     * Test the property 'originalshipcode'
+     */
+    @Test
+    public void originalshipcodeTest() {
+        // TODO: test originalshipcode
+    }
+
+    /**
+     * Test the property 'ordertype'
+     */
+    @Test
+    public void ordertypeTest() {
+        // TODO: test ordertype
+    }
+
+    /**
+     * Test the property 'orderstatus'
+     */
+    @Test
+    public void orderstatusTest() {
+        // TODO: test orderstatus
+    }
+
+    /**
+     * Test the property 'totalotherfees'
+     */
+    @Test
+    public void totalotherfeesTest() {
+        // TODO: test totalotherfees
+    }
+
+    /**
+     * Test the property 'totalsales'
+     */
+    @Test
+    public void totalsalesTest() {
+        // TODO: test totalsales
+    }
+
+    /**
+     * Test the property 'weight'
+     */
+    @Test
+    public void weightTest() {
+        // TODO: test weight
+    }
+
+    /**
+     * Test the property 'shippableswitch'
+     */
+    @Test
+    public void shippableswitchTest() {
+        // TODO: test shippableswitch
+    }
+
+    /**
+     * Test the property 'soldto'
+     */
+    @Test
+    public void soldtoTest() {
+        // TODO: test soldto
+    }
+
+    /**
+     * Test the property 'billto'
+     */
+    @Test
+    public void billtoTest() {
+        // TODO: test billto
+    }
+
+    /**
+     * Test the property 'shoptoaddress'
+     */
+    @Test
+    public void shoptoaddressTest() {
+        // TODO: test shoptoaddress
+    }
+
+    /**
+     * Test the property 'lines'
+     */
+    @Test
+    public void linesTest() {
+        // TODO: test lines
+    }
+
+    /**
+     * Test the property 'extendedspecs'
+     */
+    @Test
+    public void extendedspecsTest() {
+        // TODO: test extendedspecs
+    }
+
+    /**
+     * Test the property 'miscfeeline'
+     */
+    @Test
+    public void miscfeelineTest() {
+        // TODO: test miscfeeline
     }
 
 }

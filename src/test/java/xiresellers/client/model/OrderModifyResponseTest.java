@@ -1,5 +1,5 @@
 /*
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -19,8 +19,14 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.OrderModifyResponseServiceresponse;
+import java.util.List;
+import xiresellers.client.model.OrderModifyResponseLinesInner;
+import xiresellers.client.model.OrderModifyResponseLinesInnerAdditionalAttributesInner;
+import xiresellers.client.model.OrderModifyResponseRejectedLineItemsInner;
+import xiresellers.client.model.OrderModifyResponseShipToInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -39,11 +45,131 @@ public class OrderModifyResponseTest {
     }
 
     /**
-     * Test the property 'serviceresponse'
+     * Test the property 'ingramOrderNumber'
      */
     @Test
-    public void serviceresponseTest() {
-        // TODO: test serviceresponse
+    public void ingramOrderNumberTest() {
+        // TODO: test ingramOrderNumber
+    }
+
+    /**
+     * Test the property 'changeDescription'
+     */
+    @Test
+    public void changeDescriptionTest() {
+        // TODO: test changeDescription
+    }
+
+    /**
+     * Test the property 'orderModifiedDate'
+     */
+    @Test
+    public void orderModifiedDateTest() {
+        // TODO: test orderModifiedDate
+    }
+
+    /**
+     * Test the property 'customerOrderNumber'
+     */
+    @Test
+    public void customerOrderNumberTest() {
+        // TODO: test customerOrderNumber
+    }
+
+    /**
+     * Test the property 'endCustomerOrderNumber'
+     */
+    @Test
+    public void endCustomerOrderNumberTest() {
+        // TODO: test endCustomerOrderNumber
+    }
+
+    /**
+     * Test the property 'orderTotal'
+     */
+    @Test
+    public void orderTotalTest() {
+        // TODO: test orderTotal
+    }
+
+    /**
+     * Test the property 'notes'
+     */
+    @Test
+    public void notesTest() {
+        // TODO: test notes
+    }
+
+    /**
+     * Test the property 'orderSubTotal'
+     */
+    @Test
+    public void orderSubTotalTest() {
+        // TODO: test orderSubTotal
+    }
+
+    /**
+     * Test the property 'freightCharges'
+     */
+    @Test
+    public void freightChargesTest() {
+        // TODO: test freightCharges
+    }
+
+    /**
+     * Test the property 'totalTax'
+     */
+    @Test
+    public void totalTaxTest() {
+        // TODO: test totalTax
+    }
+
+    /**
+     * Test the property 'orderStatus'
+     */
+    @Test
+    public void orderStatusTest() {
+        // TODO: test orderStatus
+    }
+
+    /**
+     * Test the property 'billToAddressId'
+     */
+    @Test
+    public void billToAddressIdTest() {
+        // TODO: test billToAddressId
+    }
+
+    /**
+     * Test the property 'shipToInfo'
+     */
+    @Test
+    public void shipToInfoTest() {
+        // TODO: test shipToInfo
+    }
+
+    /**
+     * Test the property 'lines'
+     */
+    @Test
+    public void linesTest() {
+        // TODO: test lines
+    }
+
+    /**
+     * Test the property 'rejectedLineItems'
+     */
+    @Test
+    public void rejectedLineItemsTest() {
+        // TODO: test rejectedLineItems
+    }
+
+    /**
+     * Test the property 'additionalAttributes'
+     */
+    @Test
+    public void additionalAttributesTest() {
+        // TODO: test additionalAttributes
     }
 
 }

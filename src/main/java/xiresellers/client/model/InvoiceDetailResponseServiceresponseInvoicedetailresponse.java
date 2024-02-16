@@ -1,5 +1,5 @@
 /*
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -20,8 +20,15 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import xiresellers.client.model.AddressType;
+import xiresellers.client.model.InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner;
+import xiresellers.client.model.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner;
+import xiresellers.client.model.ProductLineType;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailResponseServiceresponseInvoicedetailresponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T05:46:16.662413Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T07:02:17.403456Z[Etc/UTC]")
 public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
   public static final String SERIALIZED_NAME_CUSTOMERNUMBER = "customernumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMERNUMBER)
@@ -106,7 +113,7 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
 
   public static final String SERIALIZED_NAME_ORDERDATE = "orderdate";
   @SerializedName(SERIALIZED_NAME_ORDERDATE)
-  private String orderdate;
+  private LocalDate orderdate;
 
   public static final String SERIALIZED_NAME_CARRIER = "carrier";
   @SerializedName(SERIALIZED_NAME_CARRIER)
@@ -135,6 +142,90 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
   public static final String SERIALIZED_NAME_CREDITMEMOREASONCODE = "creditmemoreasoncode";
   @SerializedName(SERIALIZED_NAME_CREDITMEMOREASONCODE)
   private String creditmemoreasoncode;
+
+  public static final String SERIALIZED_NAME_FULFILLMENTFLAG = "fulfillmentflag";
+  @SerializedName(SERIALIZED_NAME_FULFILLMENTFLAG)
+  private String fulfillmentflag;
+
+  public static final String SERIALIZED_NAME_HOLDREASON = "holdreason";
+  @SerializedName(SERIALIZED_NAME_HOLDREASON)
+  private String holdreason;
+
+  public static final String SERIALIZED_NAME_SHIPCOMPLETE = "shipcomplete";
+  @SerializedName(SERIALIZED_NAME_SHIPCOMPLETE)
+  private String shipcomplete;
+
+  public static final String SERIALIZED_NAME_SHIPDATE = "shipdate";
+  @SerializedName(SERIALIZED_NAME_SHIPDATE)
+  private LocalDate shipdate;
+
+  public static final String SERIALIZED_NAME_COMPANYCURRENCY = "companycurrency";
+  @SerializedName(SERIALIZED_NAME_COMPANYCURRENCY)
+  private String companycurrency;
+
+  public static final String SERIALIZED_NAME_CURRENCYCODE = "currencycode";
+  @SerializedName(SERIALIZED_NAME_CURRENCYCODE)
+  private String currencycode;
+
+  public static final String SERIALIZED_NAME_CURRENCYRATE = "currencyrate";
+  @SerializedName(SERIALIZED_NAME_CURRENCYRATE)
+  private String currencyrate;
+
+  public static final String SERIALIZED_NAME_GLOBALORDERID = "globalorderid";
+  @SerializedName(SERIALIZED_NAME_GLOBALORDERID)
+  private String globalorderid;
+
+  public static final String SERIALIZED_NAME_ORIGINALSHIPCODE = "originalshipcode";
+  @SerializedName(SERIALIZED_NAME_ORIGINALSHIPCODE)
+  private String originalshipcode;
+
+  public static final String SERIALIZED_NAME_ORDERTYPE = "ordertype";
+  @SerializedName(SERIALIZED_NAME_ORDERTYPE)
+  private String ordertype;
+
+  public static final String SERIALIZED_NAME_ORDERSTATUS = "orderstatus";
+  @SerializedName(SERIALIZED_NAME_ORDERSTATUS)
+  private String orderstatus;
+
+  public static final String SERIALIZED_NAME_TOTALOTHERFEES = "totalotherfees";
+  @SerializedName(SERIALIZED_NAME_TOTALOTHERFEES)
+  private BigDecimal totalotherfees;
+
+  public static final String SERIALIZED_NAME_TOTALSALES = "totalsales";
+  @SerializedName(SERIALIZED_NAME_TOTALSALES)
+  private String totalsales;
+
+  public static final String SERIALIZED_NAME_WEIGHT = "weight";
+  @SerializedName(SERIALIZED_NAME_WEIGHT)
+  private String weight;
+
+  public static final String SERIALIZED_NAME_SHIPPABLESWITCH = "shippableswitch";
+  @SerializedName(SERIALIZED_NAME_SHIPPABLESWITCH)
+  private String shippableswitch;
+
+  public static final String SERIALIZED_NAME_SOLDTO = "soldto";
+  @SerializedName(SERIALIZED_NAME_SOLDTO)
+  private AddressType soldto;
+
+  public static final String SERIALIZED_NAME_BILLTO = "billto";
+  @SerializedName(SERIALIZED_NAME_BILLTO)
+  private AddressType billto;
+
+  public static final String SERIALIZED_NAME_SHOPTOADDRESS = "shoptoaddress";
+  @SerializedName(SERIALIZED_NAME_SHOPTOADDRESS)
+  private AddressType shoptoaddress;
+
+  public static final String SERIALIZED_NAME_LINES = "lines";
+  @SerializedName(SERIALIZED_NAME_LINES)
+  private List<ProductLineType> lines;
+
+  public static final String SERIALIZED_NAME_EXTENDEDSPECS = "extendedspecs";
+  @SerializedName(SERIALIZED_NAME_EXTENDEDSPECS)
+  private List<InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner> extendedspecs;
+
+  public static final String SERIALIZED_NAME_MISCFEELINE = "miscfeeline";
+  @SerializedName(SERIALIZED_NAME_MISCFEELINE)
+  private List<InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner> miscfeeline;
 
   public InvoiceDetailResponseServiceresponseInvoicedetailresponse() {
   }
@@ -354,7 +445,7 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
   }
 
    /**
-   * Get freightamount
+   * May not be available in all countries
    * @return freightamount
   **/
   @javax.annotation.Nullable
@@ -386,7 +477,7 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
   }
 
 
-  public InvoiceDetailResponseServiceresponseInvoicedetailresponse orderdate(String orderdate) {
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse orderdate(LocalDate orderdate) {
     this.orderdate = orderdate;
     return this;
   }
@@ -396,11 +487,11 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
    * @return orderdate
   **/
   @javax.annotation.Nullable
-  public String getOrderdate() {
+  public LocalDate getOrderdate() {
     return orderdate;
   }
 
-  public void setOrderdate(String orderdate) {
+  public void setOrderdate(LocalDate orderdate) {
     this.orderdate = orderdate;
   }
 
@@ -538,6 +629,429 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
   }
 
 
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse fulfillmentflag(String fulfillmentflag) {
+    this.fulfillmentflag = fulfillmentflag;
+    return this;
+  }
+
+   /**
+   * Get fulfillmentflag
+   * @return fulfillmentflag
+  **/
+  @javax.annotation.Nullable
+  public String getFulfillmentflag() {
+    return fulfillmentflag;
+  }
+
+  public void setFulfillmentflag(String fulfillmentflag) {
+    this.fulfillmentflag = fulfillmentflag;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse holdreason(String holdreason) {
+    this.holdreason = holdreason;
+    return this;
+  }
+
+   /**
+   * Get holdreason
+   * @return holdreason
+  **/
+  @javax.annotation.Nullable
+  public String getHoldreason() {
+    return holdreason;
+  }
+
+  public void setHoldreason(String holdreason) {
+    this.holdreason = holdreason;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse shipcomplete(String shipcomplete) {
+    this.shipcomplete = shipcomplete;
+    return this;
+  }
+
+   /**
+   * Get shipcomplete
+   * @return shipcomplete
+  **/
+  @javax.annotation.Nullable
+  public String getShipcomplete() {
+    return shipcomplete;
+  }
+
+  public void setShipcomplete(String shipcomplete) {
+    this.shipcomplete = shipcomplete;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse shipdate(LocalDate shipdate) {
+    this.shipdate = shipdate;
+    return this;
+  }
+
+   /**
+   * Get shipdate
+   * @return shipdate
+  **/
+  @javax.annotation.Nullable
+  public LocalDate getShipdate() {
+    return shipdate;
+  }
+
+  public void setShipdate(LocalDate shipdate) {
+    this.shipdate = shipdate;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse companycurrency(String companycurrency) {
+    this.companycurrency = companycurrency;
+    return this;
+  }
+
+   /**
+   * Get companycurrency
+   * @return companycurrency
+  **/
+  @javax.annotation.Nullable
+  public String getCompanycurrency() {
+    return companycurrency;
+  }
+
+  public void setCompanycurrency(String companycurrency) {
+    this.companycurrency = companycurrency;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse currencycode(String currencycode) {
+    this.currencycode = currencycode;
+    return this;
+  }
+
+   /**
+   * Get currencycode
+   * @return currencycode
+  **/
+  @javax.annotation.Nullable
+  public String getCurrencycode() {
+    return currencycode;
+  }
+
+  public void setCurrencycode(String currencycode) {
+    this.currencycode = currencycode;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse currencyrate(String currencyrate) {
+    this.currencyrate = currencyrate;
+    return this;
+  }
+
+   /**
+   * Get currencyrate
+   * @return currencyrate
+  **/
+  @javax.annotation.Nullable
+  public String getCurrencyrate() {
+    return currencyrate;
+  }
+
+  public void setCurrencyrate(String currencyrate) {
+    this.currencyrate = currencyrate;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse globalorderid(String globalorderid) {
+    this.globalorderid = globalorderid;
+    return this;
+  }
+
+   /**
+   * Get globalorderid
+   * @return globalorderid
+  **/
+  @javax.annotation.Nullable
+  public String getGlobalorderid() {
+    return globalorderid;
+  }
+
+  public void setGlobalorderid(String globalorderid) {
+    this.globalorderid = globalorderid;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse originalshipcode(String originalshipcode) {
+    this.originalshipcode = originalshipcode;
+    return this;
+  }
+
+   /**
+   * Get originalshipcode
+   * @return originalshipcode
+  **/
+  @javax.annotation.Nullable
+  public String getOriginalshipcode() {
+    return originalshipcode;
+  }
+
+  public void setOriginalshipcode(String originalshipcode) {
+    this.originalshipcode = originalshipcode;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse ordertype(String ordertype) {
+    this.ordertype = ordertype;
+    return this;
+  }
+
+   /**
+   * Get ordertype
+   * @return ordertype
+  **/
+  @javax.annotation.Nullable
+  public String getOrdertype() {
+    return ordertype;
+  }
+
+  public void setOrdertype(String ordertype) {
+    this.ordertype = ordertype;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse orderstatus(String orderstatus) {
+    this.orderstatus = orderstatus;
+    return this;
+  }
+
+   /**
+   * Get orderstatus
+   * @return orderstatus
+  **/
+  @javax.annotation.Nullable
+  public String getOrderstatus() {
+    return orderstatus;
+  }
+
+  public void setOrderstatus(String orderstatus) {
+    this.orderstatus = orderstatus;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse totalotherfees(BigDecimal totalotherfees) {
+    this.totalotherfees = totalotherfees;
+    return this;
+  }
+
+   /**
+   * Get totalotherfees
+   * @return totalotherfees
+  **/
+  @javax.annotation.Nullable
+  public BigDecimal getTotalotherfees() {
+    return totalotherfees;
+  }
+
+  public void setTotalotherfees(BigDecimal totalotherfees) {
+    this.totalotherfees = totalotherfees;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse totalsales(String totalsales) {
+    this.totalsales = totalsales;
+    return this;
+  }
+
+   /**
+   * Get totalsales
+   * @return totalsales
+  **/
+  @javax.annotation.Nullable
+  public String getTotalsales() {
+    return totalsales;
+  }
+
+  public void setTotalsales(String totalsales) {
+    this.totalsales = totalsales;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse weight(String weight) {
+    this.weight = weight;
+    return this;
+  }
+
+   /**
+   * Get weight
+   * @return weight
+  **/
+  @javax.annotation.Nullable
+  public String getWeight() {
+    return weight;
+  }
+
+  public void setWeight(String weight) {
+    this.weight = weight;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse shippableswitch(String shippableswitch) {
+    this.shippableswitch = shippableswitch;
+    return this;
+  }
+
+   /**
+   * Get shippableswitch
+   * @return shippableswitch
+  **/
+  @javax.annotation.Nullable
+  public String getShippableswitch() {
+    return shippableswitch;
+  }
+
+  public void setShippableswitch(String shippableswitch) {
+    this.shippableswitch = shippableswitch;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse soldto(AddressType soldto) {
+    this.soldto = soldto;
+    return this;
+  }
+
+   /**
+   * Get soldto
+   * @return soldto
+  **/
+  @javax.annotation.Nullable
+  public AddressType getSoldto() {
+    return soldto;
+  }
+
+  public void setSoldto(AddressType soldto) {
+    this.soldto = soldto;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse billto(AddressType billto) {
+    this.billto = billto;
+    return this;
+  }
+
+   /**
+   * Get billto
+   * @return billto
+  **/
+  @javax.annotation.Nullable
+  public AddressType getBillto() {
+    return billto;
+  }
+
+  public void setBillto(AddressType billto) {
+    this.billto = billto;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse shoptoaddress(AddressType shoptoaddress) {
+    this.shoptoaddress = shoptoaddress;
+    return this;
+  }
+
+   /**
+   * Get shoptoaddress
+   * @return shoptoaddress
+  **/
+  @javax.annotation.Nullable
+  public AddressType getShoptoaddress() {
+    return shoptoaddress;
+  }
+
+  public void setShoptoaddress(AddressType shoptoaddress) {
+    this.shoptoaddress = shoptoaddress;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse lines(List<ProductLineType> lines) {
+    this.lines = lines;
+    return this;
+  }
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse addLinesItem(ProductLineType linesItem) {
+    if (this.lines == null) {
+      this.lines = new ArrayList<>();
+    }
+    this.lines.add(linesItem);
+    return this;
+  }
+
+   /**
+   * Get lines
+   * @return lines
+  **/
+  @javax.annotation.Nullable
+  public List<ProductLineType> getLines() {
+    return lines;
+  }
+
+  public void setLines(List<ProductLineType> lines) {
+    this.lines = lines;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse extendedspecs(List<InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner> extendedspecs) {
+    this.extendedspecs = extendedspecs;
+    return this;
+  }
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse addExtendedspecsItem(InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner extendedspecsItem) {
+    if (this.extendedspecs == null) {
+      this.extendedspecs = new ArrayList<>();
+    }
+    this.extendedspecs.add(extendedspecsItem);
+    return this;
+  }
+
+   /**
+   * Get extendedspecs
+   * @return extendedspecs
+  **/
+  @javax.annotation.Nullable
+  public List<InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner> getExtendedspecs() {
+    return extendedspecs;
+  }
+
+  public void setExtendedspecs(List<InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner> extendedspecs) {
+    this.extendedspecs = extendedspecs;
+  }
+
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse miscfeeline(List<InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner> miscfeeline) {
+    this.miscfeeline = miscfeeline;
+    return this;
+  }
+
+  public InvoiceDetailResponseServiceresponseInvoicedetailresponse addMiscfeelineItem(InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner miscfeelineItem) {
+    if (this.miscfeeline == null) {
+      this.miscfeeline = new ArrayList<>();
+    }
+    this.miscfeeline.add(miscfeelineItem);
+    return this;
+  }
+
+   /**
+   * Get miscfeeline
+   * @return miscfeeline
+  **/
+  @javax.annotation.Nullable
+  public List<InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner> getMiscfeeline() {
+    return miscfeeline;
+  }
+
+  public void setMiscfeeline(List<InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner> miscfeeline) {
+    this.miscfeeline = miscfeeline;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -568,12 +1082,33 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
         Objects.equals(this.taxtype, invoiceDetailResponseServiceresponseInvoicedetailresponse.taxtype) &&
         Objects.equals(this.enduserponumber, invoiceDetailResponseServiceresponseInvoicedetailresponse.enduserponumber) &&
         Objects.equals(this.freightforwardercode, invoiceDetailResponseServiceresponseInvoicedetailresponse.freightforwardercode) &&
-        Objects.equals(this.creditmemoreasoncode, invoiceDetailResponseServiceresponseInvoicedetailresponse.creditmemoreasoncode);
+        Objects.equals(this.creditmemoreasoncode, invoiceDetailResponseServiceresponseInvoicedetailresponse.creditmemoreasoncode) &&
+        Objects.equals(this.fulfillmentflag, invoiceDetailResponseServiceresponseInvoicedetailresponse.fulfillmentflag) &&
+        Objects.equals(this.holdreason, invoiceDetailResponseServiceresponseInvoicedetailresponse.holdreason) &&
+        Objects.equals(this.shipcomplete, invoiceDetailResponseServiceresponseInvoicedetailresponse.shipcomplete) &&
+        Objects.equals(this.shipdate, invoiceDetailResponseServiceresponseInvoicedetailresponse.shipdate) &&
+        Objects.equals(this.companycurrency, invoiceDetailResponseServiceresponseInvoicedetailresponse.companycurrency) &&
+        Objects.equals(this.currencycode, invoiceDetailResponseServiceresponseInvoicedetailresponse.currencycode) &&
+        Objects.equals(this.currencyrate, invoiceDetailResponseServiceresponseInvoicedetailresponse.currencyrate) &&
+        Objects.equals(this.globalorderid, invoiceDetailResponseServiceresponseInvoicedetailresponse.globalorderid) &&
+        Objects.equals(this.originalshipcode, invoiceDetailResponseServiceresponseInvoicedetailresponse.originalshipcode) &&
+        Objects.equals(this.ordertype, invoiceDetailResponseServiceresponseInvoicedetailresponse.ordertype) &&
+        Objects.equals(this.orderstatus, invoiceDetailResponseServiceresponseInvoicedetailresponse.orderstatus) &&
+        Objects.equals(this.totalotherfees, invoiceDetailResponseServiceresponseInvoicedetailresponse.totalotherfees) &&
+        Objects.equals(this.totalsales, invoiceDetailResponseServiceresponseInvoicedetailresponse.totalsales) &&
+        Objects.equals(this.weight, invoiceDetailResponseServiceresponseInvoicedetailresponse.weight) &&
+        Objects.equals(this.shippableswitch, invoiceDetailResponseServiceresponseInvoicedetailresponse.shippableswitch) &&
+        Objects.equals(this.soldto, invoiceDetailResponseServiceresponseInvoicedetailresponse.soldto) &&
+        Objects.equals(this.billto, invoiceDetailResponseServiceresponseInvoicedetailresponse.billto) &&
+        Objects.equals(this.shoptoaddress, invoiceDetailResponseServiceresponseInvoicedetailresponse.shoptoaddress) &&
+        Objects.equals(this.lines, invoiceDetailResponseServiceresponseInvoicedetailresponse.lines) &&
+        Objects.equals(this.extendedspecs, invoiceDetailResponseServiceresponseInvoicedetailresponse.extendedspecs) &&
+        Objects.equals(this.miscfeeline, invoiceDetailResponseServiceresponseInvoicedetailresponse.miscfeeline);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(customernumber, invoicenumber, invoicedate, invoicetype, customerordernumber, customerfreightamount, customerforeignfrightamt, totaltaxamount, totalamount, shiptosuffix, billtosuffix, freightamount, paymentterms, orderdate, carrier, carrierdescription, discountamount, taxtype, enduserponumber, freightforwardercode, creditmemoreasoncode);
+    return Objects.hash(customernumber, invoicenumber, invoicedate, invoicetype, customerordernumber, customerfreightamount, customerforeignfrightamt, totaltaxamount, totalamount, shiptosuffix, billtosuffix, freightamount, paymentterms, orderdate, carrier, carrierdescription, discountamount, taxtype, enduserponumber, freightforwardercode, creditmemoreasoncode, fulfillmentflag, holdreason, shipcomplete, shipdate, companycurrency, currencycode, currencyrate, globalorderid, originalshipcode, ordertype, orderstatus, totalotherfees, totalsales, weight, shippableswitch, soldto, billto, shoptoaddress, lines, extendedspecs, miscfeeline);
   }
 
   @Override
@@ -601,6 +1136,27 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
     sb.append("    enduserponumber: ").append(toIndentedString(enduserponumber)).append("\n");
     sb.append("    freightforwardercode: ").append(toIndentedString(freightforwardercode)).append("\n");
     sb.append("    creditmemoreasoncode: ").append(toIndentedString(creditmemoreasoncode)).append("\n");
+    sb.append("    fulfillmentflag: ").append(toIndentedString(fulfillmentflag)).append("\n");
+    sb.append("    holdreason: ").append(toIndentedString(holdreason)).append("\n");
+    sb.append("    shipcomplete: ").append(toIndentedString(shipcomplete)).append("\n");
+    sb.append("    shipdate: ").append(toIndentedString(shipdate)).append("\n");
+    sb.append("    companycurrency: ").append(toIndentedString(companycurrency)).append("\n");
+    sb.append("    currencycode: ").append(toIndentedString(currencycode)).append("\n");
+    sb.append("    currencyrate: ").append(toIndentedString(currencyrate)).append("\n");
+    sb.append("    globalorderid: ").append(toIndentedString(globalorderid)).append("\n");
+    sb.append("    originalshipcode: ").append(toIndentedString(originalshipcode)).append("\n");
+    sb.append("    ordertype: ").append(toIndentedString(ordertype)).append("\n");
+    sb.append("    orderstatus: ").append(toIndentedString(orderstatus)).append("\n");
+    sb.append("    totalotherfees: ").append(toIndentedString(totalotherfees)).append("\n");
+    sb.append("    totalsales: ").append(toIndentedString(totalsales)).append("\n");
+    sb.append("    weight: ").append(toIndentedString(weight)).append("\n");
+    sb.append("    shippableswitch: ").append(toIndentedString(shippableswitch)).append("\n");
+    sb.append("    soldto: ").append(toIndentedString(soldto)).append("\n");
+    sb.append("    billto: ").append(toIndentedString(billto)).append("\n");
+    sb.append("    shoptoaddress: ").append(toIndentedString(shoptoaddress)).append("\n");
+    sb.append("    lines: ").append(toIndentedString(lines)).append("\n");
+    sb.append("    extendedspecs: ").append(toIndentedString(extendedspecs)).append("\n");
+    sb.append("    miscfeeline: ").append(toIndentedString(miscfeeline)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -644,6 +1200,27 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
     openapiFields.add("enduserponumber");
     openapiFields.add("freightforwardercode");
     openapiFields.add("creditmemoreasoncode");
+    openapiFields.add("fulfillmentflag");
+    openapiFields.add("holdreason");
+    openapiFields.add("shipcomplete");
+    openapiFields.add("shipdate");
+    openapiFields.add("companycurrency");
+    openapiFields.add("currencycode");
+    openapiFields.add("currencyrate");
+    openapiFields.add("globalorderid");
+    openapiFields.add("originalshipcode");
+    openapiFields.add("ordertype");
+    openapiFields.add("orderstatus");
+    openapiFields.add("totalotherfees");
+    openapiFields.add("totalsales");
+    openapiFields.add("weight");
+    openapiFields.add("shippableswitch");
+    openapiFields.add("soldto");
+    openapiFields.add("billto");
+    openapiFields.add("shoptoaddress");
+    openapiFields.add("lines");
+    openapiFields.add("extendedspecs");
+    openapiFields.add("miscfeeline");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -682,17 +1259,29 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
       if ((jsonObj.get("customerordernumber") != null && !jsonObj.get("customerordernumber").isJsonNull()) && !jsonObj.get("customerordernumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `customerordernumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerordernumber").toString()));
       }
+      if ((jsonObj.get("customerfreightamount") != null && !jsonObj.get("customerfreightamount").isJsonNull()) && !jsonObj.get("customerfreightamount").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `customerfreightamount` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerfreightamount").toString()));
+      }
+      if ((jsonObj.get("customerforeignfrightamt") != null && !jsonObj.get("customerforeignfrightamt").isJsonNull()) && !jsonObj.get("customerforeignfrightamt").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `customerforeignfrightamt` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerforeignfrightamt").toString()));
+      }
+      if ((jsonObj.get("totaltaxamount") != null && !jsonObj.get("totaltaxamount").isJsonNull()) && !jsonObj.get("totaltaxamount").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `totaltaxamount` to be a primitive type in the JSON string but got `%s`", jsonObj.get("totaltaxamount").toString()));
+      }
+      if ((jsonObj.get("totalamount") != null && !jsonObj.get("totalamount").isJsonNull()) && !jsonObj.get("totalamount").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `totalamount` to be a primitive type in the JSON string but got `%s`", jsonObj.get("totalamount").toString()));
+      }
       if ((jsonObj.get("shiptosuffix") != null && !jsonObj.get("shiptosuffix").isJsonNull()) && !jsonObj.get("shiptosuffix").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `shiptosuffix` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shiptosuffix").toString()));
       }
       if ((jsonObj.get("billtosuffix") != null && !jsonObj.get("billtosuffix").isJsonNull()) && !jsonObj.get("billtosuffix").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `billtosuffix` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billtosuffix").toString()));
       }
+      if ((jsonObj.get("freightamount") != null && !jsonObj.get("freightamount").isJsonNull()) && !jsonObj.get("freightamount").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `freightamount` to be a primitive type in the JSON string but got `%s`", jsonObj.get("freightamount").toString()));
+      }
       if ((jsonObj.get("paymentterms") != null && !jsonObj.get("paymentterms").isJsonNull()) && !jsonObj.get("paymentterms").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `paymentterms` to be a primitive type in the JSON string but got `%s`", jsonObj.get("paymentterms").toString()));
-      }
-      if ((jsonObj.get("orderdate") != null && !jsonObj.get("orderdate").isJsonNull()) && !jsonObj.get("orderdate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `orderdate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderdate").toString()));
       }
       if ((jsonObj.get("carrier") != null && !jsonObj.get("carrier").isJsonNull()) && !jsonObj.get("carrier").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `carrier` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carrier").toString()));
@@ -711,6 +1300,99 @@ public class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
       }
       if ((jsonObj.get("creditmemoreasoncode") != null && !jsonObj.get("creditmemoreasoncode").isJsonNull()) && !jsonObj.get("creditmemoreasoncode").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `creditmemoreasoncode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("creditmemoreasoncode").toString()));
+      }
+      if ((jsonObj.get("fulfillmentflag") != null && !jsonObj.get("fulfillmentflag").isJsonNull()) && !jsonObj.get("fulfillmentflag").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `fulfillmentflag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("fulfillmentflag").toString()));
+      }
+      if ((jsonObj.get("holdreason") != null && !jsonObj.get("holdreason").isJsonNull()) && !jsonObj.get("holdreason").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `holdreason` to be a primitive type in the JSON string but got `%s`", jsonObj.get("holdreason").toString()));
+      }
+      if ((jsonObj.get("shipcomplete") != null && !jsonObj.get("shipcomplete").isJsonNull()) && !jsonObj.get("shipcomplete").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `shipcomplete` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipcomplete").toString()));
+      }
+      if ((jsonObj.get("companycurrency") != null && !jsonObj.get("companycurrency").isJsonNull()) && !jsonObj.get("companycurrency").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `companycurrency` to be a primitive type in the JSON string but got `%s`", jsonObj.get("companycurrency").toString()));
+      }
+      if ((jsonObj.get("currencycode") != null && !jsonObj.get("currencycode").isJsonNull()) && !jsonObj.get("currencycode").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `currencycode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencycode").toString()));
+      }
+      if ((jsonObj.get("currencyrate") != null && !jsonObj.get("currencyrate").isJsonNull()) && !jsonObj.get("currencyrate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `currencyrate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyrate").toString()));
+      }
+      if ((jsonObj.get("globalorderid") != null && !jsonObj.get("globalorderid").isJsonNull()) && !jsonObj.get("globalorderid").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `globalorderid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("globalorderid").toString()));
+      }
+      if ((jsonObj.get("originalshipcode") != null && !jsonObj.get("originalshipcode").isJsonNull()) && !jsonObj.get("originalshipcode").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `originalshipcode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("originalshipcode").toString()));
+      }
+      if ((jsonObj.get("ordertype") != null && !jsonObj.get("ordertype").isJsonNull()) && !jsonObj.get("ordertype").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `ordertype` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ordertype").toString()));
+      }
+      if ((jsonObj.get("orderstatus") != null && !jsonObj.get("orderstatus").isJsonNull()) && !jsonObj.get("orderstatus").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `orderstatus` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderstatus").toString()));
+      }
+      if ((jsonObj.get("totalsales") != null && !jsonObj.get("totalsales").isJsonNull()) && !jsonObj.get("totalsales").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `totalsales` to be a primitive type in the JSON string but got `%s`", jsonObj.get("totalsales").toString()));
+      }
+      if ((jsonObj.get("weight") != null && !jsonObj.get("weight").isJsonNull()) && !jsonObj.get("weight").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `weight` to be a primitive type in the JSON string but got `%s`", jsonObj.get("weight").toString()));
+      }
+      if ((jsonObj.get("shippableswitch") != null && !jsonObj.get("shippableswitch").isJsonNull()) && !jsonObj.get("shippableswitch").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `shippableswitch` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shippableswitch").toString()));
+      }
+      // validate the optional field `soldto`
+      if (jsonObj.get("soldto") != null && !jsonObj.get("soldto").isJsonNull()) {
+        AddressType.validateJsonElement(jsonObj.get("soldto"));
+      }
+      // validate the optional field `billto`
+      if (jsonObj.get("billto") != null && !jsonObj.get("billto").isJsonNull()) {
+        AddressType.validateJsonElement(jsonObj.get("billto"));
+      }
+      // validate the optional field `shoptoaddress`
+      if (jsonObj.get("shoptoaddress") != null && !jsonObj.get("shoptoaddress").isJsonNull()) {
+        AddressType.validateJsonElement(jsonObj.get("shoptoaddress"));
+      }
+      if (jsonObj.get("lines") != null && !jsonObj.get("lines").isJsonNull()) {
+        JsonArray jsonArraylines = jsonObj.getAsJsonArray("lines");
+        if (jsonArraylines != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("lines").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `lines` to be an array in the JSON string but got `%s`", jsonObj.get("lines").toString()));
+          }
+
+          // validate the optional field `lines` (array)
+          for (int i = 0; i < jsonArraylines.size(); i++) {
+            ProductLineType.validateJsonElement(jsonArraylines.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("extendedspecs") != null && !jsonObj.get("extendedspecs").isJsonNull()) {
+        JsonArray jsonArrayextendedspecs = jsonObj.getAsJsonArray("extendedspecs");
+        if (jsonArrayextendedspecs != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("extendedspecs").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `extendedspecs` to be an array in the JSON string but got `%s`", jsonObj.get("extendedspecs").toString()));
+          }
+
+          // validate the optional field `extendedspecs` (array)
+          for (int i = 0; i < jsonArrayextendedspecs.size(); i++) {
+            InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner.validateJsonElement(jsonArrayextendedspecs.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("miscfeeline") != null && !jsonObj.get("miscfeeline").isJsonNull()) {
+        JsonArray jsonArraymiscfeeline = jsonObj.getAsJsonArray("miscfeeline");
+        if (jsonArraymiscfeeline != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("miscfeeline").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `miscfeeline` to be an array in the JSON string but got `%s`", jsonObj.get("miscfeeline").toString()));
+          }
+
+          // validate the optional field `miscfeeline` (array)
+          for (int i = 0; i < jsonArraymiscfeeline.size(); i++) {
+            InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner.validateJsonElement(jsonArraymiscfeeline.get(i));
+          };
+        }
       }
   }
 

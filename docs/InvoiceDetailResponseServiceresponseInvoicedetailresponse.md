@@ -18,9 +18,9 @@
 |**totalamount** | **Double** |  |  [optional] |
 |**shiptosuffix** | **String** |  |  [optional] |
 |**billtosuffix** | **String** |  |  [optional] |
-|**freightamount** | **Double** |  |  [optional] |
+|**freightamount** | **Double** | May not be available in all countries |  [optional] |
 |**paymentterms** | **String** |  |  [optional] |
-|**orderdate** | **String** |  |  [optional] |
+|**orderdate** | **LocalDate** |  |  [optional] |
 |**carrier** | **String** |  |  [optional] |
 |**carrierdescription** | **String** |  |  [optional] |
 |**discountamount** | **Double** |  |  [optional] |
@@ -28,6 +28,27 @@
 |**enduserponumber** | **String** |  |  [optional] |
 |**freightforwardercode** | **String** |  |  [optional] |
 |**creditmemoreasoncode** | **String** |  |  [optional] |
+|**fulfillmentflag** | **String** |  |  [optional] |
+|**holdreason** | **String** |  |  [optional] |
+|**shipcomplete** | **String** |  |  [optional] |
+|**shipdate** | **LocalDate** |  |  [optional] |
+|**companycurrency** | **String** |  |  [optional] |
+|**currencycode** | **String** |  |  [optional] |
+|**currencyrate** | **String** |  |  [optional] |
+|**globalorderid** | **String** |  |  [optional] |
+|**originalshipcode** | **String** |  |  [optional] |
+|**ordertype** | **String** |  |  [optional] |
+|**orderstatus** | **String** |  |  [optional] |
+|**totalotherfees** | **BigDecimal** |  |  [optional] |
+|**totalsales** | **String** |  |  [optional] |
+|**weight** | **String** |  |  [optional] |
+|**shippableswitch** | **String** |  |  [optional] |
+|**soldto** | [**AddressType**](AddressType.md) |  |  [optional] |
+|**billto** | [**AddressType**](AddressType.md) |  |  [optional] |
+|**shoptoaddress** | [**AddressType**](AddressType.md) |  |  [optional] |
+|**lines** | [**List&lt;ProductLineType&gt;**](ProductLineType.md) |  |  [optional] |
+|**extendedspecs** | [**List&lt;InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner&gt;**](InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner.md) |  |  [optional] |
+|**miscfeeline** | [**List&lt;InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner&gt;**](InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner.md) |  |  [optional] |
 
 
 

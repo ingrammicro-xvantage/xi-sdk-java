@@ -1,5 +1,5 @@
 /*
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -20,8 +20,12 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
-import xiresellers.client.model.OrderModifyRequestServicerequest;
+import java.util.List;
+import xiresellers.client.model.OrderModifyRequestAdditionalAttributesInner;
+import xiresellers.client.model.OrderModifyRequestLinesInner;
+import xiresellers.client.model.OrderModifyRequestShipToInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -48,33 +52,118 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * Request schema for order modify endpoint
+ * OrderModifyRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T05:46:16.662413Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T07:02:17.403456Z[Etc/UTC]")
 public class OrderModifyRequest {
-  public static final String SERIALIZED_NAME_SERVICEREQUEST = "servicerequest";
-  @SerializedName(SERIALIZED_NAME_SERVICEREQUEST)
-  private OrderModifyRequestServicerequest servicerequest;
+  public static final String SERIALIZED_NAME_NOTES = "notes";
+  @SerializedName(SERIALIZED_NAME_NOTES)
+  private String notes;
+
+  public static final String SERIALIZED_NAME_SHIP_TO_INFO = "shipToInfo";
+  @SerializedName(SERIALIZED_NAME_SHIP_TO_INFO)
+  private OrderModifyRequestShipToInfo shipToInfo;
+
+  public static final String SERIALIZED_NAME_LINES = "lines";
+  @SerializedName(SERIALIZED_NAME_LINES)
+  private List<OrderModifyRequestLinesInner> lines;
+
+  public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
+  @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  private List<OrderModifyRequestAdditionalAttributesInner> additionalAttributes;
 
   public OrderModifyRequest() {
   }
 
-  public OrderModifyRequest servicerequest(OrderModifyRequestServicerequest servicerequest) {
-    this.servicerequest = servicerequest;
+  public OrderModifyRequest notes(String notes) {
+    this.notes = notes;
     return this;
   }
 
    /**
-   * Get servicerequest
-   * @return servicerequest
+   * Shipment-level notes.
+   * @return notes
   **/
   @javax.annotation.Nullable
-  public OrderModifyRequestServicerequest getServicerequest() {
-    return servicerequest;
+  public String getNotes() {
+    return notes;
   }
 
-  public void setServicerequest(OrderModifyRequestServicerequest servicerequest) {
-    this.servicerequest = servicerequest;
+  public void setNotes(String notes) {
+    this.notes = notes;
+  }
+
+
+  public OrderModifyRequest shipToInfo(OrderModifyRequestShipToInfo shipToInfo) {
+    this.shipToInfo = shipToInfo;
+    return this;
+  }
+
+   /**
+   * Get shipToInfo
+   * @return shipToInfo
+  **/
+  @javax.annotation.Nullable
+  public OrderModifyRequestShipToInfo getShipToInfo() {
+    return shipToInfo;
+  }
+
+  public void setShipToInfo(OrderModifyRequestShipToInfo shipToInfo) {
+    this.shipToInfo = shipToInfo;
+  }
+
+
+  public OrderModifyRequest lines(List<OrderModifyRequestLinesInner> lines) {
+    this.lines = lines;
+    return this;
+  }
+
+  public OrderModifyRequest addLinesItem(OrderModifyRequestLinesInner linesItem) {
+    if (this.lines == null) {
+      this.lines = new ArrayList<>();
+    }
+    this.lines.add(linesItem);
+    return this;
+  }
+
+   /**
+   * The order line items.
+   * @return lines
+  **/
+  @javax.annotation.Nullable
+  public List<OrderModifyRequestLinesInner> getLines() {
+    return lines;
+  }
+
+  public void setLines(List<OrderModifyRequestLinesInner> lines) {
+    this.lines = lines;
+  }
+
+
+  public OrderModifyRequest additionalAttributes(List<OrderModifyRequestAdditionalAttributesInner> additionalAttributes) {
+    this.additionalAttributes = additionalAttributes;
+    return this;
+  }
+
+  public OrderModifyRequest addAdditionalAttributesItem(OrderModifyRequestAdditionalAttributesInner additionalAttributesItem) {
+    if (this.additionalAttributes == null) {
+      this.additionalAttributes = new ArrayList<>();
+    }
+    this.additionalAttributes.add(additionalAttributesItem);
+    return this;
+  }
+
+   /**
+   * Header-level additional attributes.
+   * @return additionalAttributes
+  **/
+  @javax.annotation.Nullable
+  public List<OrderModifyRequestAdditionalAttributesInner> getAdditionalAttributes() {
+    return additionalAttributes;
+  }
+
+  public void setAdditionalAttributes(List<OrderModifyRequestAdditionalAttributesInner> additionalAttributes) {
+    this.additionalAttributes = additionalAttributes;
   }
 
 
@@ -88,19 +177,25 @@ public class OrderModifyRequest {
       return false;
     }
     OrderModifyRequest orderModifyRequest = (OrderModifyRequest) o;
-    return Objects.equals(this.servicerequest, orderModifyRequest.servicerequest);
+    return Objects.equals(this.notes, orderModifyRequest.notes) &&
+        Objects.equals(this.shipToInfo, orderModifyRequest.shipToInfo) &&
+        Objects.equals(this.lines, orderModifyRequest.lines) &&
+        Objects.equals(this.additionalAttributes, orderModifyRequest.additionalAttributes);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(servicerequest);
+    return Objects.hash(notes, shipToInfo, lines, additionalAttributes);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OrderModifyRequest {\n");
-    sb.append("    servicerequest: ").append(toIndentedString(servicerequest)).append("\n");
+    sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
+    sb.append("    shipToInfo: ").append(toIndentedString(shipToInfo)).append("\n");
+    sb.append("    lines: ").append(toIndentedString(lines)).append("\n");
+    sb.append("    additionalAttributes: ").append(toIndentedString(additionalAttributes)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -123,7 +218,10 @@ public class OrderModifyRequest {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("servicerequest");
+    openapiFields.add("notes");
+    openapiFields.add("shipToInfo");
+    openapiFields.add("lines");
+    openapiFields.add("additionalAttributes");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -150,9 +248,40 @@ public class OrderModifyRequest {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the optional field `servicerequest`
-      if (jsonObj.get("servicerequest") != null && !jsonObj.get("servicerequest").isJsonNull()) {
-        OrderModifyRequestServicerequest.validateJsonElement(jsonObj.get("servicerequest"));
+      if ((jsonObj.get("notes") != null && !jsonObj.get("notes").isJsonNull()) && !jsonObj.get("notes").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `notes` to be a primitive type in the JSON string but got `%s`", jsonObj.get("notes").toString()));
+      }
+      // validate the optional field `shipToInfo`
+      if (jsonObj.get("shipToInfo") != null && !jsonObj.get("shipToInfo").isJsonNull()) {
+        OrderModifyRequestShipToInfo.validateJsonElement(jsonObj.get("shipToInfo"));
+      }
+      if (jsonObj.get("lines") != null && !jsonObj.get("lines").isJsonNull()) {
+        JsonArray jsonArraylines = jsonObj.getAsJsonArray("lines");
+        if (jsonArraylines != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("lines").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `lines` to be an array in the JSON string but got `%s`", jsonObj.get("lines").toString()));
+          }
+
+          // validate the optional field `lines` (array)
+          for (int i = 0; i < jsonArraylines.size(); i++) {
+            OrderModifyRequestLinesInner.validateJsonElement(jsonArraylines.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("additionalAttributes") != null && !jsonObj.get("additionalAttributes").isJsonNull()) {
+        JsonArray jsonArrayadditionalAttributes = jsonObj.getAsJsonArray("additionalAttributes");
+        if (jsonArrayadditionalAttributes != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("additionalAttributes").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `additionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("additionalAttributes").toString()));
+          }
+
+          // validate the optional field `additionalAttributes` (array)
+          for (int i = 0; i < jsonArrayadditionalAttributes.size(); i++) {
+            OrderModifyRequestAdditionalAttributesInner.validateJsonElement(jsonArrayadditionalAttributes.get(i));
+          };
+        }
       }
   }
 
