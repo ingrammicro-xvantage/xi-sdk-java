@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
 public class OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner {
   public static final String SERIALIZED_NAME_DATEOF_PURCHASE = "dateofPurchase";
   @SerializedName(SERIALIZED_NAME_DATEOF_PURCHASE)

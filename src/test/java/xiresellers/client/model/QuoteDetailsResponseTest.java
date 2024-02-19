@@ -100,6 +100,14 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
+     * Test the property 'closingReason'
+     */
+    @Test
+    public void closingReasonTest() {
+        // TODO: test closingReason
+    }
+
+    /**
      * Test the property 'specialBidId'
      */
     @Test

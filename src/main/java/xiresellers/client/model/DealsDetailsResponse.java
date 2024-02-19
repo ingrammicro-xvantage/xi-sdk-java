@@ -21,7 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * DealsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
 public class DealsDetailsResponse {
   public static final String SERIALIZED_NAME_DEAL_ID = "dealId";
   @SerializedName(SERIALIZED_NAME_DEAL_ID)
@@ -79,7 +78,7 @@ public class DealsDetailsResponse {
 
   public static final String SERIALIZED_NAME_DEAL_RECEIVED_ON = "dealReceivedOn";
   @SerializedName(SERIALIZED_NAME_DEAL_RECEIVED_ON)
-  private LocalDate dealReceivedOn;
+  private String dealReceivedOn;
 
   public static final String SERIALIZED_NAME_DEAL_EXPIRY_DATE = "dealExpiryDate";
   @SerializedName(SERIALIZED_NAME_DEAL_EXPIRY_DATE)
@@ -199,7 +198,7 @@ public class DealsDetailsResponse {
   }
 
 
-  public DealsDetailsResponse dealReceivedOn(LocalDate dealReceivedOn) {
+  public DealsDetailsResponse dealReceivedOn(String dealReceivedOn) {
     this.dealReceivedOn = dealReceivedOn;
     return this;
   }
@@ -209,11 +208,11 @@ public class DealsDetailsResponse {
    * @return dealReceivedOn
   **/
   @javax.annotation.Nullable
-  public LocalDate getDealReceivedOn() {
+  public String getDealReceivedOn() {
     return dealReceivedOn;
   }
 
-  public void setDealReceivedOn(LocalDate dealReceivedOn) {
+  public void setDealReceivedOn(String dealReceivedOn) {
     this.dealReceivedOn = dealReceivedOn;
   }
 
@@ -434,6 +433,9 @@ public class DealsDetailsResponse {
       }
       if ((jsonObj.get("vendor") != null && !jsonObj.get("vendor").isJsonNull()) && !jsonObj.get("vendor").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendor").toString()));
+      }
+      if ((jsonObj.get("dealReceivedOn") != null && !jsonObj.get("dealReceivedOn").isJsonNull()) && !jsonObj.get("dealReceivedOn").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `dealReceivedOn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dealReceivedOn").toString()));
       }
       if ((jsonObj.get("dealExpiryDate") != null && !jsonObj.get("dealExpiryDate").isJsonNull()) && !jsonObj.get("dealExpiryDate").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `dealExpiryDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dealExpiryDate").toString()));

@@ -87,6 +87,14 @@ public class InvoiceDetailsv61ResponseTest {
     }
 
     /**
+     * Test the property 'orderNumber'
+     */
+    @Test
+    public void orderNumberTest() {
+        // TODO: test orderNumber
+    }
+
+    /**
      * Test the property 'orderDate'
      */
     @Test

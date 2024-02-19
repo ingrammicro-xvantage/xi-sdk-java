@@ -81,6 +81,14 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     }
 
     /**
+     * Test the property 'quantityOnOrder'
+     */
+    @Test
+    public void quantityOnOrderTest() {
+        // TODO: test quantityOnOrder
+    }
+
+    /**
      * Test the property 'backOrderInfo'
      */
     @Test

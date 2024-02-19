@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
 public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner {
   public static final String SERIALIZED_NAME_LOCATION = "location";
   @SerializedName(SERIALIZED_NAME_LOCATION)
@@ -73,6 +73,10 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
   public static final String SERIALIZED_NAME_QUANTITY_BACKORDERED_ETA = "quantityBackorderedEta";
   @SerializedName(SERIALIZED_NAME_QUANTITY_BACKORDERED_ETA)
   private String quantityBackorderedEta;
+
+  public static final String SERIALIZED_NAME_QUANTITY_ON_ORDER = "quantityOnOrder";
+  @SerializedName(SERIALIZED_NAME_QUANTITY_ON_ORDER)
+  private Integer quantityOnOrder;
 
   public static final String SERIALIZED_NAME_BACK_ORDER_INFO = "backOrderInfo";
   @SerializedName(SERIALIZED_NAME_BACK_ORDER_INFO)
@@ -176,6 +180,25 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
   }
 
 
+  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner quantityOnOrder(Integer quantityOnOrder) {
+    this.quantityOnOrder = quantityOnOrder;
+    return this;
+  }
+
+   /**
+   * The quantity of the product on order.
+   * @return quantityOnOrder
+  **/
+  @javax.annotation.Nullable
+  public Integer getQuantityOnOrder() {
+    return quantityOnOrder;
+  }
+
+  public void setQuantityOnOrder(Integer quantityOnOrder) {
+    this.quantityOnOrder = quantityOnOrder;
+  }
+
+
   public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner backOrderInfo(List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner> backOrderInfo) {
     this.backOrderInfo = backOrderInfo;
     return this;
@@ -218,12 +241,13 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
         Objects.equals(this.quantityAvailable, priceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.quantityAvailable) &&
         Objects.equals(this.quantityBackordered, priceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.quantityBackordered) &&
         Objects.equals(this.quantityBackorderedEta, priceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.quantityBackorderedEta) &&
+        Objects.equals(this.quantityOnOrder, priceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.quantityOnOrder) &&
         Objects.equals(this.backOrderInfo, priceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.backOrderInfo);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(location, warehouseId, quantityAvailable, quantityBackordered, quantityBackorderedEta, backOrderInfo);
+    return Objects.hash(location, warehouseId, quantityAvailable, quantityBackordered, quantityBackorderedEta, quantityOnOrder, backOrderInfo);
   }
 
   @Override
@@ -235,6 +259,7 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     sb.append("    quantityAvailable: ").append(toIndentedString(quantityAvailable)).append("\n");
     sb.append("    quantityBackordered: ").append(toIndentedString(quantityBackordered)).append("\n");
     sb.append("    quantityBackorderedEta: ").append(toIndentedString(quantityBackorderedEta)).append("\n");
+    sb.append("    quantityOnOrder: ").append(toIndentedString(quantityOnOrder)).append("\n");
     sb.append("    backOrderInfo: ").append(toIndentedString(backOrderInfo)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -263,6 +288,7 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     openapiFields.add("quantityAvailable");
     openapiFields.add("quantityBackordered");
     openapiFields.add("quantityBackorderedEta");
+    openapiFields.add("quantityOnOrder");
     openapiFields.add("backOrderInfo");
 
     // a set of required properties/fields (JSON key names)

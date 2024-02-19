@@ -168,6 +168,14 @@ public class OrderDetailB2BTest {
     }
 
     /**
+     * Test the property 'totalFees'
+     */
+    @Test
+    public void totalFeesTest() {
+        // TODO: test totalFees
+    }
+
+    /**
      * Test the property 'paymentTerms'
      */
     @Test

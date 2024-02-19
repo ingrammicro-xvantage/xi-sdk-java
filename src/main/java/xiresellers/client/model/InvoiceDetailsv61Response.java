@@ -58,7 +58,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
 public class InvoiceDetailsv61Response {
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
@@ -80,7 +80,11 @@ public class InvoiceDetailsv61Response {
   @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
   private String endCustomerOrderNumber;
 
-  public static final String SERIALIZED_NAME_ORDER_DATE = "OrderDate";
+  public static final String SERIALIZED_NAME_ORDER_NUMBER = "orderNumber";
+  @SerializedName(SERIALIZED_NAME_ORDER_NUMBER)
+  private String orderNumber;
+
+  public static final String SERIALIZED_NAME_ORDER_DATE = "orderDate";
   @SerializedName(SERIALIZED_NAME_ORDER_DATE)
   private LocalDate orderDate;
 
@@ -231,6 +235,25 @@ public class InvoiceDetailsv61Response {
 
   public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
+  }
+
+
+  public InvoiceDetailsv61Response orderNumber(String orderNumber) {
+    this.orderNumber = orderNumber;
+    return this;
+  }
+
+   /**
+   * The end customer&#39;s order number for reference in their system.
+   * @return orderNumber
+  **/
+  @javax.annotation.Nullable
+  public String getOrderNumber() {
+    return orderNumber;
+  }
+
+  public void setOrderNumber(String orderNumber) {
+    this.orderNumber = orderNumber;
   }
 
 
@@ -523,6 +546,7 @@ public class InvoiceDetailsv61Response {
         Objects.equals(this.invoiceDate, invoiceDetailsv61Response.invoiceDate) &&
         Objects.equals(this.customerOrderNumber, invoiceDetailsv61Response.customerOrderNumber) &&
         Objects.equals(this.endCustomerOrderNumber, invoiceDetailsv61Response.endCustomerOrderNumber) &&
+        Objects.equals(this.orderNumber, invoiceDetailsv61Response.orderNumber) &&
         Objects.equals(this.orderDate, invoiceDetailsv61Response.orderDate) &&
         Objects.equals(this.billToID, invoiceDetailsv61Response.billToID) &&
         Objects.equals(this.invoiceType, invoiceDetailsv61Response.invoiceType) &&
@@ -541,7 +565,7 @@ public class InvoiceDetailsv61Response {
 
   @Override
   public int hashCode() {
-    return Objects.hash(invoiceNumber, invoiceStatus, invoiceDate, customerOrderNumber, endCustomerOrderNumber, orderDate, billToID, invoiceType, invoiceDueDate, customerCountryCode, customerNumber, ingramOrderNumber, notes, paymentTermsInfo, billToInfo, shipToInfo, lines, fxRateInfo, summary);
+    return Objects.hash(invoiceNumber, invoiceStatus, invoiceDate, customerOrderNumber, endCustomerOrderNumber, orderNumber, orderDate, billToID, invoiceType, invoiceDueDate, customerCountryCode, customerNumber, ingramOrderNumber, notes, paymentTermsInfo, billToInfo, shipToInfo, lines, fxRateInfo, summary);
   }
 
   @Override
@@ -553,6 +577,7 @@ public class InvoiceDetailsv61Response {
     sb.append("    invoiceDate: ").append(toIndentedString(invoiceDate)).append("\n");
     sb.append("    customerOrderNumber: ").append(toIndentedString(customerOrderNumber)).append("\n");
     sb.append("    endCustomerOrderNumber: ").append(toIndentedString(endCustomerOrderNumber)).append("\n");
+    sb.append("    orderNumber: ").append(toIndentedString(orderNumber)).append("\n");
     sb.append("    orderDate: ").append(toIndentedString(orderDate)).append("\n");
     sb.append("    billToID: ").append(toIndentedString(billToID)).append("\n");
     sb.append("    invoiceType: ").append(toIndentedString(invoiceType)).append("\n");
@@ -594,7 +619,8 @@ public class InvoiceDetailsv61Response {
     openapiFields.add("invoiceDate");
     openapiFields.add("customerOrderNumber");
     openapiFields.add("endCustomerOrderNumber");
-    openapiFields.add("OrderDate");
+    openapiFields.add("orderNumber");
+    openapiFields.add("orderDate");
     openapiFields.add("billToID");
     openapiFields.add("invoiceType");
     openapiFields.add("invoiceDueDate");
@@ -645,6 +671,9 @@ public class InvoiceDetailsv61Response {
       }
       if ((jsonObj.get("endCustomerOrderNumber") != null && !jsonObj.get("endCustomerOrderNumber").isJsonNull()) && !jsonObj.get("endCustomerOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endCustomerOrderNumber").toString()));
+      }
+      if ((jsonObj.get("orderNumber") != null && !jsonObj.get("orderNumber").isJsonNull()) && !jsonObj.get("orderNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `orderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderNumber").toString()));
       }
       if ((jsonObj.get("billToID") != null && !jsonObj.get("billToID").isJsonNull()) && !jsonObj.get("billToID").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `billToID` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billToID").toString()));

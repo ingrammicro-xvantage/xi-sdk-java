@@ -59,7 +59,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2B
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
 public class OrderDetailB2B {
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
@@ -120,6 +120,10 @@ public class OrderDetailB2B {
   public static final String SERIALIZED_NAME_TOTAL_TAX = "totalTax";
   @SerializedName(SERIALIZED_NAME_TOTAL_TAX)
   private Double totalTax;
+
+  public static final String SERIALIZED_NAME_TOTAL_FEES = "totalFees";
+  @SerializedName(SERIALIZED_NAME_TOTAL_FEES)
+  private Double totalFees;
 
   public static final String SERIALIZED_NAME_PAYMENT_TERMS = "paymentTerms";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS)
@@ -441,6 +445,25 @@ public class OrderDetailB2B {
   }
 
 
+  public OrderDetailB2B totalFees(Double totalFees) {
+    this.totalFees = totalFees;
+    return this;
+  }
+
+   /**
+   * Total fees on the orders placed.
+   * @return totalFees
+  **/
+  @javax.annotation.Nullable
+  public Double getTotalFees() {
+    return totalFees;
+  }
+
+  public void setTotalFees(Double totalFees) {
+    this.totalFees = totalFees;
+  }
+
+
   public OrderDetailB2B paymentTerms(String paymentTerms) {
     this.paymentTerms = paymentTerms;
     return this;
@@ -642,6 +665,7 @@ public class OrderDetailB2B {
         Objects.equals(this.currencyCode, orderDetailB2B.currencyCode) &&
         Objects.equals(this.totalWeight, orderDetailB2B.totalWeight) &&
         Objects.equals(this.totalTax, orderDetailB2B.totalTax) &&
+        Objects.equals(this.totalFees, orderDetailB2B.totalFees) &&
         Objects.equals(this.paymentTerms, orderDetailB2B.paymentTerms) &&
         Objects.equals(this.notes, orderDetailB2B.notes) &&
         Objects.equals(this.billToInfo, orderDetailB2B.billToInfo) &&
@@ -658,7 +682,7 @@ public class OrderDetailB2B {
 
   @Override
   public int hashCode() {
-    return Objects.hash(ingramOrderNumber, ingramOrderDate, orderType, customerOrderNumber, endCustomerOrderNumber, webOrderId, vendorSalesOrderNumber, ingramPurchaseOrderNumber, orderStatus, orderTotal, orderSubTotal, freightCharges, currencyCode, totalWeight, totalTax, paymentTerms, notes, billToInfo, shipToInfo, endUserInfo, lines, miscellaneousCharges, additionalAttributes);
+    return Objects.hash(ingramOrderNumber, ingramOrderDate, orderType, customerOrderNumber, endCustomerOrderNumber, webOrderId, vendorSalesOrderNumber, ingramPurchaseOrderNumber, orderStatus, orderTotal, orderSubTotal, freightCharges, currencyCode, totalWeight, totalTax, totalFees, paymentTerms, notes, billToInfo, shipToInfo, endUserInfo, lines, miscellaneousCharges, additionalAttributes);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -687,6 +711,7 @@ public class OrderDetailB2B {
     sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
     sb.append("    totalWeight: ").append(toIndentedString(totalWeight)).append("\n");
     sb.append("    totalTax: ").append(toIndentedString(totalTax)).append("\n");
+    sb.append("    totalFees: ").append(toIndentedString(totalFees)).append("\n");
     sb.append("    paymentTerms: ").append(toIndentedString(paymentTerms)).append("\n");
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
     sb.append("    billToInfo: ").append(toIndentedString(billToInfo)).append("\n");
@@ -732,6 +757,7 @@ public class OrderDetailB2B {
     openapiFields.add("currencyCode");
     openapiFields.add("totalWeight");
     openapiFields.add("totalTax");
+    openapiFields.add("totalFees");
     openapiFields.add("paymentTerms");
     openapiFields.add("notes");
     openapiFields.add("billToInfo");
