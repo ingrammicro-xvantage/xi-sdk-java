@@ -21,7 +21,10 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import xiresellers.client.model.QuoteSearchResponseQuotesInnerLinksInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,8 +53,12 @@ import xiresellers.client.JSON;
 /**
  * QuoteSearchResponseQuotesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
 public class QuoteSearchResponseQuotesInner {
+  public static final String SERIALIZED_NAME_QUOTE_GUID = "quoteGuid";
+  @SerializedName(SERIALIZED_NAME_QUOTE_GUID)
+  private String quoteGuid;
+
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
   private String quoteName;
@@ -92,6 +99,10 @@ public class QuoteSearchResponseQuotesInner {
   @SerializedName(SERIALIZED_NAME_INGRAM_QUOTE_EXPIRY_DATE)
   private String ingramQuoteExpiryDate;
 
+  public static final String SERIALIZED_NAME_END_USER_NAME = "endUserName";
+  @SerializedName(SERIALIZED_NAME_END_USER_NAME)
+  private String endUserName;
+
   public static final String SERIALIZED_NAME_VENDOR = "vendor";
   @SerializedName(SERIALIZED_NAME_VENDOR)
   private String vendor;
@@ -100,8 +111,35 @@ public class QuoteSearchResponseQuotesInner {
   @SerializedName(SERIALIZED_NAME_CREATED_BY)
   private String createdBy;
 
+  public static final String SERIALIZED_NAME_QUOTE_TYPE = "quoteType";
+  @SerializedName(SERIALIZED_NAME_QUOTE_TYPE)
+  private String quoteType;
+
+  public static final String SERIALIZED_NAME_LINKS = "links";
+  @SerializedName(SERIALIZED_NAME_LINKS)
+  private List<QuoteSearchResponseQuotesInnerLinksInner> links;
+
   public QuoteSearchResponseQuotesInner() {
   }
+
+  public QuoteSearchResponseQuotesInner quoteGuid(String quoteGuid) {
+    this.quoteGuid = quoteGuid;
+    return this;
+  }
+
+   /**
+   * Get quoteGuid
+   * @return quoteGuid
+  **/
+  @javax.annotation.Nullable
+  public String getQuoteGuid() {
+    return quoteGuid;
+  }
+
+  public void setQuoteGuid(String quoteGuid) {
+    this.quoteGuid = quoteGuid;
+  }
+
 
   public QuoteSearchResponseQuotesInner quoteName(String quoteName) {
     this.quoteName = quoteName;
@@ -293,6 +331,25 @@ public class QuoteSearchResponseQuotesInner {
   }
 
 
+  public QuoteSearchResponseQuotesInner endUserName(String endUserName) {
+    this.endUserName = endUserName;
+    return this;
+  }
+
+   /**
+   * End User Name
+   * @return endUserName
+  **/
+  @javax.annotation.Nullable
+  public String getEndUserName() {
+    return endUserName;
+  }
+
+  public void setEndUserName(String endUserName) {
+    this.endUserName = endUserName;
+  }
+
+
   public QuoteSearchResponseQuotesInner vendor(String vendor) {
     this.vendor = vendor;
     return this;
@@ -331,6 +388,52 @@ public class QuoteSearchResponseQuotesInner {
   }
 
 
+  public QuoteSearchResponseQuotesInner quoteType(String quoteType) {
+    this.quoteType = quoteType;
+    return this;
+  }
+
+   /**
+   * Type of quote
+   * @return quoteType
+  **/
+  @javax.annotation.Nullable
+  public String getQuoteType() {
+    return quoteType;
+  }
+
+  public void setQuoteType(String quoteType) {
+    this.quoteType = quoteType;
+  }
+
+
+  public QuoteSearchResponseQuotesInner links(List<QuoteSearchResponseQuotesInnerLinksInner> links) {
+    this.links = links;
+    return this;
+  }
+
+  public QuoteSearchResponseQuotesInner addLinksItem(QuoteSearchResponseQuotesInnerLinksInner linksItem) {
+    if (this.links == null) {
+      this.links = new ArrayList<>();
+    }
+    this.links.add(linksItem);
+    return this;
+  }
+
+   /**
+   * Get links
+   * @return links
+  **/
+  @javax.annotation.Nullable
+  public List<QuoteSearchResponseQuotesInnerLinksInner> getLinks() {
+    return links;
+  }
+
+  public void setLinks(List<QuoteSearchResponseQuotesInnerLinksInner> links) {
+    this.links = links;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -341,7 +444,8 @@ public class QuoteSearchResponseQuotesInner {
       return false;
     }
     QuoteSearchResponseQuotesInner quoteSearchResponseQuotesInner = (QuoteSearchResponseQuotesInner) o;
-    return Objects.equals(this.quoteName, quoteSearchResponseQuotesInner.quoteName) &&
+    return Objects.equals(this.quoteGuid, quoteSearchResponseQuotesInner.quoteGuid) &&
+        Objects.equals(this.quoteName, quoteSearchResponseQuotesInner.quoteName) &&
         Objects.equals(this.quoteNumber, quoteSearchResponseQuotesInner.quoteNumber) &&
         Objects.equals(this.revision, quoteSearchResponseQuotesInner.revision) &&
         Objects.equals(this.endUserContact, quoteSearchResponseQuotesInner.endUserContact) &&
@@ -351,19 +455,23 @@ public class QuoteSearchResponseQuotesInner {
         Objects.equals(this.ingramQuoteDate, quoteSearchResponseQuotesInner.ingramQuoteDate) &&
         Objects.equals(this.lastModifiedDate, quoteSearchResponseQuotesInner.lastModifiedDate) &&
         Objects.equals(this.ingramQuoteExpiryDate, quoteSearchResponseQuotesInner.ingramQuoteExpiryDate) &&
+        Objects.equals(this.endUserName, quoteSearchResponseQuotesInner.endUserName) &&
         Objects.equals(this.vendor, quoteSearchResponseQuotesInner.vendor) &&
-        Objects.equals(this.createdBy, quoteSearchResponseQuotesInner.createdBy);
+        Objects.equals(this.createdBy, quoteSearchResponseQuotesInner.createdBy) &&
+        Objects.equals(this.quoteType, quoteSearchResponseQuotesInner.quoteType) &&
+        Objects.equals(this.links, quoteSearchResponseQuotesInner.links);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteName, quoteNumber, revision, endUserContact, specialBidNumber, quoteTotal, quoteStatus, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, vendor, createdBy);
+    return Objects.hash(quoteGuid, quoteName, quoteNumber, revision, endUserContact, specialBidNumber, quoteTotal, quoteStatus, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, endUserName, vendor, createdBy, quoteType, links);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class QuoteSearchResponseQuotesInner {\n");
+    sb.append("    quoteGuid: ").append(toIndentedString(quoteGuid)).append("\n");
     sb.append("    quoteName: ").append(toIndentedString(quoteName)).append("\n");
     sb.append("    quoteNumber: ").append(toIndentedString(quoteNumber)).append("\n");
     sb.append("    revision: ").append(toIndentedString(revision)).append("\n");
@@ -374,8 +482,11 @@ public class QuoteSearchResponseQuotesInner {
     sb.append("    ingramQuoteDate: ").append(toIndentedString(ingramQuoteDate)).append("\n");
     sb.append("    lastModifiedDate: ").append(toIndentedString(lastModifiedDate)).append("\n");
     sb.append("    ingramQuoteExpiryDate: ").append(toIndentedString(ingramQuoteExpiryDate)).append("\n");
+    sb.append("    endUserName: ").append(toIndentedString(endUserName)).append("\n");
     sb.append("    vendor: ").append(toIndentedString(vendor)).append("\n");
     sb.append("    createdBy: ").append(toIndentedString(createdBy)).append("\n");
+    sb.append("    quoteType: ").append(toIndentedString(quoteType)).append("\n");
+    sb.append("    links: ").append(toIndentedString(links)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -398,6 +509,7 @@ public class QuoteSearchResponseQuotesInner {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
+    openapiFields.add("quoteGuid");
     openapiFields.add("quoteName");
     openapiFields.add("quoteNumber");
     openapiFields.add("revision");
@@ -408,8 +520,11 @@ public class QuoteSearchResponseQuotesInner {
     openapiFields.add("ingramQuoteDate");
     openapiFields.add("lastModifiedDate");
     openapiFields.add("ingramQuoteExpiryDate");
+    openapiFields.add("endUserName");
     openapiFields.add("vendor");
     openapiFields.add("createdBy");
+    openapiFields.add("quoteType");
+    openapiFields.add("links");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -436,6 +551,9 @@ public class QuoteSearchResponseQuotesInner {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("quoteGuid") != null && !jsonObj.get("quoteGuid").isJsonNull()) && !jsonObj.get("quoteGuid").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `quoteGuid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteGuid").toString()));
+      }
       if ((jsonObj.get("quoteName") != null && !jsonObj.get("quoteName").isJsonNull()) && !jsonObj.get("quoteName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `quoteName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteName").toString()));
       }
@@ -463,11 +581,31 @@ public class QuoteSearchResponseQuotesInner {
       if ((jsonObj.get("ingramQuoteExpiryDate") != null && !jsonObj.get("ingramQuoteExpiryDate").isJsonNull()) && !jsonObj.get("ingramQuoteExpiryDate").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `ingramQuoteExpiryDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramQuoteExpiryDate").toString()));
       }
+      if ((jsonObj.get("endUserName") != null && !jsonObj.get("endUserName").isJsonNull()) && !jsonObj.get("endUserName").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `endUserName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endUserName").toString()));
+      }
       if ((jsonObj.get("vendor") != null && !jsonObj.get("vendor").isJsonNull()) && !jsonObj.get("vendor").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendor").toString()));
       }
       if ((jsonObj.get("createdBy") != null && !jsonObj.get("createdBy").isJsonNull()) && !jsonObj.get("createdBy").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `createdBy` to be a primitive type in the JSON string but got `%s`", jsonObj.get("createdBy").toString()));
+      }
+      if ((jsonObj.get("quoteType") != null && !jsonObj.get("quoteType").isJsonNull()) && !jsonObj.get("quoteType").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `quoteType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteType").toString()));
+      }
+      if (jsonObj.get("links") != null && !jsonObj.get("links").isJsonNull()) {
+        JsonArray jsonArraylinks = jsonObj.getAsJsonArray("links");
+        if (jsonArraylinks != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("links").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `links` to be an array in the JSON string but got `%s`", jsonObj.get("links").toString()));
+          }
+
+          // validate the optional field `links` (array)
+          for (int i = 0; i < jsonArraylinks.size(); i++) {
+            QuoteSearchResponseQuotesInnerLinksInner.validateJsonElement(jsonArraylinks.get(i));
+          };
+        }
       }
   }
 

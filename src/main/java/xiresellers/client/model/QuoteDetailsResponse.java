@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
@@ -84,6 +84,10 @@ public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
   private String currencyCode;
+
+  public static final String SERIALIZED_NAME_CLOSING_REASON = "closingReason";
+  @SerializedName(SERIALIZED_NAME_CLOSING_REASON)
+  private String closingReason;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_ID = "specialBidId";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_ID)
@@ -294,6 +298,25 @@ public class QuoteDetailsResponse {
 
   public void setCurrencyCode(String currencyCode) {
     this.currencyCode = currencyCode;
+  }
+
+
+  public QuoteDetailsResponse closingReason(String closingReason) {
+    this.closingReason = closingReason;
+    return this;
+  }
+
+   /**
+   * Closing Reason for quote.
+   * @return closingReason
+  **/
+  @javax.annotation.Nullable
+  public String getClosingReason() {
+    return closingReason;
+  }
+
+  public void setClosingReason(String closingReason) {
+    this.closingReason = closingReason;
   }
 
 
@@ -691,6 +714,7 @@ public class QuoteDetailsResponse {
         Objects.equals(this.lastModifiedDate, quoteDetailsResponse.lastModifiedDate) &&
         Objects.equals(this.ingramQuoteExpiryDate, quoteDetailsResponse.ingramQuoteExpiryDate) &&
         Objects.equals(this.currencyCode, quoteDetailsResponse.currencyCode) &&
+        Objects.equals(this.closingReason, quoteDetailsResponse.closingReason) &&
         Objects.equals(this.specialBidId, quoteDetailsResponse.specialBidId) &&
         Objects.equals(this.specialBidEffectiveDate, quoteDetailsResponse.specialBidEffectiveDate) &&
         Objects.equals(this.specialBidExpirationDate, quoteDetailsResponse.specialBidExpirationDate) &&
@@ -714,7 +738,7 @@ public class QuoteDetailsResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteName, quoteNumber, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, status, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, leaseInfo, leasingInstructions, resellerInfo, endUserInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extendedQuotePriceTotal, additionalAttributes);
+    return Objects.hash(quoteName, quoteNumber, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, closingReason, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, status, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, leaseInfo, leasingInstructions, resellerInfo, endUserInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extendedQuotePriceTotal, additionalAttributes);
   }
 
   @Override
@@ -728,6 +752,7 @@ public class QuoteDetailsResponse {
     sb.append("    lastModifiedDate: ").append(toIndentedString(lastModifiedDate)).append("\n");
     sb.append("    ingramQuoteExpiryDate: ").append(toIndentedString(ingramQuoteExpiryDate)).append("\n");
     sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
+    sb.append("    closingReason: ").append(toIndentedString(closingReason)).append("\n");
     sb.append("    specialBidId: ").append(toIndentedString(specialBidId)).append("\n");
     sb.append("    specialBidEffectiveDate: ").append(toIndentedString(specialBidEffectiveDate)).append("\n");
     sb.append("    specialBidExpirationDate: ").append(toIndentedString(specialBidExpirationDate)).append("\n");
@@ -776,6 +801,7 @@ public class QuoteDetailsResponse {
     openapiFields.add("lastModifiedDate");
     openapiFields.add("ingramQuoteExpiryDate");
     openapiFields.add("currencyCode");
+    openapiFields.add("closingReason");
     openapiFields.add("specialBidId");
     openapiFields.add("specialBidEffectiveDate");
     openapiFields.add("specialBidExpirationDate");
@@ -841,6 +867,9 @@ public class QuoteDetailsResponse {
       }
       if ((jsonObj.get("currencyCode") != null && !jsonObj.get("currencyCode").isJsonNull()) && !jsonObj.get("currencyCode").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `currencyCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyCode").toString()));
+      }
+      if ((jsonObj.get("closingReason") != null && !jsonObj.get("closingReason").isJsonNull()) && !jsonObj.get("closingReason").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `closingReason` to be a primitive type in the JSON string but got `%s`", jsonObj.get("closingReason").toString()));
       }
       if ((jsonObj.get("specialBidId") != null && !jsonObj.get("specialBidId").isJsonNull()) && !jsonObj.get("specialBidId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `specialBidId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialBidId").toString()));

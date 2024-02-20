@@ -20,7 +20,10 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import xiresellers.client.model.QuoteSearchResponseQuotesInnerLinksInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -36,6 +39,14 @@ public class QuoteSearchResponseQuotesInnerTest {
     @Test
     public void testQuoteSearchResponseQuotesInner() {
         // TODO: test QuoteSearchResponseQuotesInner
+    }
+
+    /**
+     * Test the property 'quoteGuid'
+     */
+    @Test
+    public void quoteGuidTest() {
+        // TODO: test quoteGuid
     }
 
     /**
@@ -119,6 +130,14 @@ public class QuoteSearchResponseQuotesInnerTest {
     }
 
     /**
+     * Test the property 'endUserName'
+     */
+    @Test
+    public void endUserNameTest() {
+        // TODO: test endUserName
+    }
+
+    /**
      * Test the property 'vendor'
      */
     @Test
@@ -132,6 +151,22 @@ public class QuoteSearchResponseQuotesInnerTest {
     @Test
     public void createdByTest() {
         // TODO: test createdBy
+    }
+
+    /**
+     * Test the property 'quoteType'
+     */
+    @Test
+    public void quoteTypeTest() {
+        // TODO: test quoteType
+    }
+
+    /**
+     * Test the property 'links'
+     */
+    @Test
+    public void linksTest() {
+        // TODO: test links
     }
 
 }

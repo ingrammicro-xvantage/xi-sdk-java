@@ -154,6 +154,7 @@ docs/QuoteDetailsResponseProductsInnerPrice.md
 docs/QuoteDetailsResponseResellerInfo.md
 docs/QuoteSearchResponse.md
 docs/QuoteSearchResponseQuotesInner.md
+docs/QuoteSearchResponseQuotesInnerLinksInner.md
 docs/QuoteToOrderApi.md
 docs/QuoteToOrderDetailsDTO.md
 docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md
@@ -380,6 +381,7 @@ src/main/java/xiresellers/client/model/QuoteDetailsResponseProductsInnerPrice.ja
 src/main/java/xiresellers/client/model/QuoteDetailsResponseResellerInfo.java
 src/main/java/xiresellers/client/model/QuoteSearchResponse.java
 src/main/java/xiresellers/client/model/QuoteSearchResponseQuotesInner.java
+src/main/java/xiresellers/client/model/QuoteSearchResponseQuotesInnerLinksInner.java
 src/main/java/xiresellers/client/model/QuoteToOrderDetailsDTO.java
 src/main/java/xiresellers/client/model/QuoteToOrderDetailsDTOAdditionalAttributesInner.java
 src/main/java/xiresellers/client/model/QuoteToOrderDetailsDTOEndUserInfoInner.java
@@ -568,6 +570,7 @@ src/test/java/xiresellers/client/model/QuoteDetailsResponseProductsInnerPriceTes
 src/test/java/xiresellers/client/model/QuoteDetailsResponseProductsInnerTest.java
 src/test/java/xiresellers/client/model/QuoteDetailsResponseResellerInfoTest.java
 src/test/java/xiresellers/client/model/QuoteDetailsResponseTest.java
+src/test/java/xiresellers/client/model/QuoteSearchResponseQuotesInnerLinksInnerTest.java
 src/test/java/xiresellers/client/model/QuoteSearchResponseQuotesInnerTest.java
 src/test/java/xiresellers/client/model/QuoteSearchResponseTest.java
 src/test/java/xiresellers/client/model/QuoteToOrderDetailsDTOAdditionalAttributesInnerTest.java

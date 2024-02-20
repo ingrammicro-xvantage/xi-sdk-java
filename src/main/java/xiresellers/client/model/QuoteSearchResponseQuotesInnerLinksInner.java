@@ -47,10 +47,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner
+ * QuoteSearchResponseQuotesInnerLinksInner
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
-public class OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner {
+public class QuoteSearchResponseQuotesInnerLinksInner {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)
   private String topic;
@@ -63,16 +63,16 @@ public class OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner {
   @SerializedName(SERIALIZED_NAME_TYPE)
   private String type;
 
-  public OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner() {
+  public QuoteSearchResponseQuotesInnerLinksInner() {
   }
 
-  public OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner topic(String topic) {
+  public QuoteSearchResponseQuotesInnerLinksInner topic(String topic) {
     this.topic = topic;
     return this;
   }
 
    /**
-   * For orders or invoices. For orders the link provides details of the order. For invoices the link provides details of the invoice.
+   * Get topic
    * @return topic
   **/
   @javax.annotation.Nullable
@@ -85,13 +85,13 @@ public class OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner {
   }
 
 
-  public OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner href(String href) {
+  public QuoteSearchResponseQuotesInnerLinksInner href(String href) {
     this.href = href;
     return this;
   }
 
    /**
-   * The URL endpoint for accessing the relevant data.
+   * Get href
    * @return href
   **/
   @javax.annotation.Nullable
@@ -104,13 +104,13 @@ public class OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner {
   }
 
 
-  public OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner type(String type) {
+  public QuoteSearchResponseQuotesInnerLinksInner type(String type) {
     this.type = type;
     return this;
   }
 
    /**
-   * The type of call that can be made to the href link (GET, POST, Etc.).
+   * Get type
    * @return type
   **/
   @javax.annotation.Nullable
@@ -132,10 +132,10 @@ public class OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner orderSearchResponseOrdersInnerSubOrdersInnerLinksInner = (OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner) o;
-    return Objects.equals(this.topic, orderSearchResponseOrdersInnerSubOrdersInnerLinksInner.topic) &&
-        Objects.equals(this.href, orderSearchResponseOrdersInnerSubOrdersInnerLinksInner.href) &&
-        Objects.equals(this.type, orderSearchResponseOrdersInnerSubOrdersInnerLinksInner.type);
+    QuoteSearchResponseQuotesInnerLinksInner quoteSearchResponseQuotesInnerLinksInner = (QuoteSearchResponseQuotesInnerLinksInner) o;
+    return Objects.equals(this.topic, quoteSearchResponseQuotesInnerLinksInner.topic) &&
+        Objects.equals(this.href, quoteSearchResponseQuotesInnerLinksInner.href) &&
+        Objects.equals(this.type, quoteSearchResponseQuotesInnerLinksInner.type);
   }
 
   @Override
@@ -146,7 +146,7 @@ public class OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner {\n");
+    sb.append("class QuoteSearchResponseQuotesInnerLinksInner {\n");
     sb.append("    topic: ").append(toIndentedString(topic)).append("\n");
     sb.append("    href: ").append(toIndentedString(href)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
@@ -184,20 +184,20 @@ public class OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner {
   * Validates the JSON Element and throws an exception if issues found
   *
   * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner
+  * @throws IOException if the JSON Element is invalid with respect to QuoteSearchResponseQuotesInnerLinksInner
   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner is not found in the empty JSON string", OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner.openapiRequiredFields.toString()));
+        if (!QuoteSearchResponseQuotesInnerLinksInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in QuoteSearchResponseQuotesInnerLinksInner is not found in the empty JSON string", QuoteSearchResponseQuotesInnerLinksInner.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!QuoteSearchResponseQuotesInnerLinksInner.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `QuoteSearchResponseQuotesInnerLinksInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -216,22 +216,22 @@ public class OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner' and its subtypes
+       if (!QuoteSearchResponseQuotesInnerLinksInner.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'QuoteSearchResponseQuotesInnerLinksInner' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner.class));
+       final TypeAdapter<QuoteSearchResponseQuotesInnerLinksInner> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(QuoteSearchResponseQuotesInnerLinksInner.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<QuoteSearchResponseQuotesInnerLinksInner>() {
            @Override
-           public void write(JsonWriter out, OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner value) throws IOException {
+           public void write(JsonWriter out, QuoteSearchResponseQuotesInnerLinksInner value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner read(JsonReader in) throws IOException {
+           public QuoteSearchResponseQuotesInnerLinksInner read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -242,18 +242,18 @@ public class OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner {
   }
 
  /**
-  * Create an instance of OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner given an JSON string
+  * Create an instance of QuoteSearchResponseQuotesInnerLinksInner given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner
-  * @throws IOException if the JSON string is invalid with respect to OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner
+  * @return An instance of QuoteSearchResponseQuotesInnerLinksInner
+  * @throws IOException if the JSON string is invalid with respect to QuoteSearchResponseQuotesInnerLinksInner
   */
-  public static OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner.class);
+  public static QuoteSearchResponseQuotesInnerLinksInner fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, QuoteSearchResponseQuotesInnerLinksInner.class);
   }
 
  /**
-  * Convert an instance of OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner to an JSON string
+  * Convert an instance of QuoteSearchResponseQuotesInnerLinksInner to an JSON string
   *
   * @return JSON string
   */

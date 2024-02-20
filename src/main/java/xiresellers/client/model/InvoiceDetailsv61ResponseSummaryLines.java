@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryLines
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
 public class InvoiceDetailsv61ResponseSummaryLines {
   public static final String SERIALIZED_NAME_PRODUCT_LINE_COUNT = "productLineCount";
   @SerializedName(SERIALIZED_NAME_PRODUCT_LINE_COUNT)

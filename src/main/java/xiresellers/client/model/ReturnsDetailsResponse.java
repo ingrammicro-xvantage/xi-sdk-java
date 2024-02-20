@@ -21,7 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-16T12:42:01.934049Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
 public class ReturnsDetailsResponse {
   public static final String SERIALIZED_NAME_TYPE_OF_DETAILS = "typeOfDetails";
   @SerializedName(SERIALIZED_NAME_TYPE_OF_DETAILS)
@@ -70,7 +69,7 @@ public class ReturnsDetailsResponse {
 
   public static final String SERIALIZED_NAME_CREATED_ON = "createdOn";
   @SerializedName(SERIALIZED_NAME_CREATED_ON)
-  private LocalDate createdOn;
+  private String createdOn;
 
   public static final String SERIALIZED_NAME_RETURN_REASON = "returnReason";
   @SerializedName(SERIALIZED_NAME_RETURN_REASON)
@@ -168,7 +167,7 @@ public class ReturnsDetailsResponse {
   }
 
 
-  public ReturnsDetailsResponse createdOn(LocalDate createdOn) {
+  public ReturnsDetailsResponse createdOn(String createdOn) {
     this.createdOn = createdOn;
     return this;
   }
@@ -178,11 +177,11 @@ public class ReturnsDetailsResponse {
    * @return createdOn
   **/
   @javax.annotation.Nullable
-  public LocalDate getCreatedOn() {
+  public String getCreatedOn() {
     return createdOn;
   }
 
-  public void setCreatedOn(LocalDate createdOn) {
+  public void setCreatedOn(String createdOn) {
     this.createdOn = createdOn;
   }
 
@@ -482,6 +481,9 @@ public class ReturnsDetailsResponse {
       }
       if ((jsonObj.get("caseRequestNumber") != null && !jsonObj.get("caseRequestNumber").isJsonNull()) && !jsonObj.get("caseRequestNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `caseRequestNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("caseRequestNumber").toString()));
+      }
+      if ((jsonObj.get("createdOn") != null && !jsonObj.get("createdOn").isJsonNull()) && !jsonObj.get("createdOn").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `createdOn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("createdOn").toString()));
       }
       if ((jsonObj.get("returnReason") != null && !jsonObj.get("returnReason").isJsonNull()) && !jsonObj.get("returnReason").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `returnReason` to be a primitive type in the JSON string but got `%s`", jsonObj.get("returnReason").toString()));

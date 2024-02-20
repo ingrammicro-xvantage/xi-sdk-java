@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-02-16T12:42:01.934049Z[Etc/UTC]
+  - Build date: 2024-02-19T10:18:25.862607Z[Etc/UTC]
 
 For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
 
@@ -55,6 +55,7 @@ cd xi-sdk-resellers-java
 mvn install       # Requires maven, download from https://maven.apache.org/download.html
 
 ```
+
 
 ### Others
 
@@ -290,6 +291,7 @@ Class | Method | HTTP request | Description
  - [QuoteDetailsResponseResellerInfo](docs/QuoteDetailsResponseResellerInfo.md)
  - [QuoteSearchResponse](docs/QuoteSearchResponse.md)
  - [QuoteSearchResponseQuotesInner](docs/QuoteSearchResponseQuotesInner.md)
+ - [QuoteSearchResponseQuotesInnerLinksInner](docs/QuoteSearchResponseQuotesInnerLinksInner.md)
  - [QuoteToOrderDetailsDTO](docs/QuoteToOrderDetailsDTO.md)
  - [QuoteToOrderDetailsDTOAdditionalAttributesInner](docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md)
  - [QuoteToOrderDetailsDTOEndUserInfoInner](docs/QuoteToOrderDetailsDTOEndUserInfoInner.md)
@@ -358,3 +360,5 @@ For any inquiries or support, please feel free to contact us at:
 
 
 - Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)
+
+
