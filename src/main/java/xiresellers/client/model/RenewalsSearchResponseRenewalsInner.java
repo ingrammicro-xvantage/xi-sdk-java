@@ -52,11 +52,11 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchResponseRenewalsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T10:02:29.305984Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
 public class RenewalsSearchResponseRenewalsInner {
   public static final String SERIALIZED_NAME_RENEWAL_ID = "renewalId";
   @SerializedName(SERIALIZED_NAME_RENEWAL_ID)
-  private String renewalId;
+  private Integer renewalId;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
@@ -80,7 +80,7 @@ public class RenewalsSearchResponseRenewalsInner {
 
   public static final String SERIALIZED_NAME_RENEWAL_VALUE = "renewalValue";
   @SerializedName(SERIALIZED_NAME_RENEWAL_VALUE)
-  private String renewalValue;
+  private Double renewalValue;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
@@ -93,7 +93,7 @@ public class RenewalsSearchResponseRenewalsInner {
   public RenewalsSearchResponseRenewalsInner() {
   }
 
-  public RenewalsSearchResponseRenewalsInner renewalId(String renewalId) {
+  public RenewalsSearchResponseRenewalsInner renewalId(Integer renewalId) {
     this.renewalId = renewalId;
     return this;
   }
@@ -103,11 +103,11 @@ public class RenewalsSearchResponseRenewalsInner {
    * @return renewalId
   **/
   @javax.annotation.Nullable
-  public String getRenewalId() {
+  public Integer getRenewalId() {
     return renewalId;
   }
 
-  public void setRenewalId(String renewalId) {
+  public void setRenewalId(Integer renewalId) {
     this.renewalId = renewalId;
   }
 
@@ -207,7 +207,7 @@ public class RenewalsSearchResponseRenewalsInner {
   }
 
 
-  public RenewalsSearchResponseRenewalsInner renewalValue(String renewalValue) {
+  public RenewalsSearchResponseRenewalsInner renewalValue(Double renewalValue) {
     this.renewalValue = renewalValue;
     return this;
   }
@@ -217,11 +217,11 @@ public class RenewalsSearchResponseRenewalsInner {
    * @return renewalValue
   **/
   @javax.annotation.Nullable
-  public String getRenewalValue() {
+  public Double getRenewalValue() {
     return renewalValue;
   }
 
-  public void setRenewalValue(String renewalValue) {
+  public void setRenewalValue(Double renewalValue) {
     this.renewalValue = renewalValue;
   }
 
@@ -368,9 +368,6 @@ public class RenewalsSearchResponseRenewalsInner {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("renewalId") != null && !jsonObj.get("renewalId").isJsonNull()) && !jsonObj.get("renewalId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `renewalId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("renewalId").toString()));
-      }
       if ((jsonObj.get("customerOrderNumber") != null && !jsonObj.get("customerOrderNumber").isJsonNull()) && !jsonObj.get("customerOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
       }
@@ -385,9 +382,6 @@ public class RenewalsSearchResponseRenewalsInner {
       }
       if ((jsonObj.get("expirationDate") != null && !jsonObj.get("expirationDate").isJsonNull()) && !jsonObj.get("expirationDate").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `expirationDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("expirationDate").toString()));
-      }
-      if ((jsonObj.get("renewalValue") != null && !jsonObj.get("renewalValue").isJsonNull()) && !jsonObj.get("renewalValue").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `renewalValue` to be a primitive type in the JSON string but got `%s`", jsonObj.get("renewalValue").toString()));
       }
       if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));

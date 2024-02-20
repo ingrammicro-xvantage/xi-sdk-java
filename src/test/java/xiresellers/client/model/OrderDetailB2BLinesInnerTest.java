@@ -224,11 +224,11 @@ public class OrderDetailB2BLinesInnerTest {
     }
 
     /**
-     * Test the property 'backOrderETAData'
+     * Test the property 'backOrderETADate'
      */
     @Test
-    public void backOrderETADataTest() {
-        // TODO: test backOrderETAData
+    public void backOrderETADateTest() {
+        // TODO: test backOrderETADate
     }
 
     /**
