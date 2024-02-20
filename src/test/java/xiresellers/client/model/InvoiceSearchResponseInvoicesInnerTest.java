@@ -103,14 +103,6 @@ public class InvoiceSearchResponseInvoicesInnerTest {
     }
 
     /**
-     * Test the property 'orderCreateDate'
-     */
-    @Test
-    public void orderCreateDateTest() {
-        // TODO: test orderCreateDate
-    }
-
-    /**
      * Test the property 'endCustomerOrderNumber'
      */
     @Test
@@ -119,11 +111,43 @@ public class InvoiceSearchResponseInvoicesInnerTest {
     }
 
     /**
+     * Test the property 'orderCreateDate'
+     */
+    @Test
+    public void orderCreateDateTest() {
+        // TODO: test orderCreateDate
+    }
+
+    /**
      * Test the property 'invoiceAmountInclTax'
      */
     @Test
     public void invoiceAmountInclTaxTest() {
         // TODO: test invoiceAmountInclTax
+    }
+
+    /**
+     * Test the property 'forgntotalamount'
+     */
+    @Test
+    public void forgntotalamountTest() {
+        // TODO: test forgntotalamount
+    }
+
+    /**
+     * Test the property 'gstInvoiceNumber'
+     */
+    @Test
+    public void gstInvoiceNumberTest() {
+        // TODO: test gstInvoiceNumber
+    }
+
+    /**
+     * Test the property 'isfeccenabled'
+     */
+    @Test
+    public void isfeccenabledTest() {
+        // TODO: test isfeccenabled
     }
 
 }

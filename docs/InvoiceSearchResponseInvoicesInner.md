@@ -15,9 +15,12 @@
 |**invoiceDueDate** | **String** | Invoice Due Date. |  [optional] |
 |**invoicedAmountDue** | **BigDecimal** | Invoice Amount. |  [optional] |
 |**customerOrderNumber** | **String** | Customer Order No. |  [optional] |
-|**orderCreateDate** | **String** | Order Create Date. |  [optional] |
 |**endCustomerOrderNumber** | **String** | End Customer Order number. |  [optional] |
+|**orderCreateDate** | **String** | Order Create Date. |  [optional] |
 |**invoiceAmountInclTax** | **BigDecimal** | Invoice Amount Inclusive of Taxes |  [optional] |
+|**forgntotalamount** | **BigDecimal** |  |  [optional] |
+|**gstInvoiceNumber** | **String** |  |  [optional] |
+|**isfeccenabled** | **Boolean** |  |  [optional] |
 
 
 

@@ -20,7 +20,6 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -57,11 +56,11 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T09:00:28.102704Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
 public class RenewalsDetailsResponse {
   public static final String SERIALIZED_NAME_RENEWAL_ID = "renewalId";
   @SerializedName(SERIALIZED_NAME_RENEWAL_ID)
-  private String renewalId;
+  private Integer renewalId;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
@@ -89,7 +88,7 @@ public class RenewalsDetailsResponse {
 
   public static final String SERIALIZED_NAME_RENEWAL_VALUE = "renewalValue";
   @SerializedName(SERIALIZED_NAME_RENEWAL_VALUE)
-  private BigDecimal renewalValue;
+  private Double renewalValue;
 
   public static final String SERIALIZED_NAME_END_USER = "endUser";
   @SerializedName(SERIALIZED_NAME_END_USER)
@@ -122,7 +121,7 @@ public class RenewalsDetailsResponse {
   public RenewalsDetailsResponse() {
   }
 
-  public RenewalsDetailsResponse renewalId(String renewalId) {
+  public RenewalsDetailsResponse renewalId(Integer renewalId) {
     this.renewalId = renewalId;
     return this;
   }
@@ -132,11 +131,11 @@ public class RenewalsDetailsResponse {
    * @return renewalId
   **/
   @javax.annotation.Nullable
-  public String getRenewalId() {
+  public Integer getRenewalId() {
     return renewalId;
   }
 
-  public void setRenewalId(String renewalId) {
+  public void setRenewalId(Integer renewalId) {
     this.renewalId = renewalId;
   }
 
@@ -255,7 +254,7 @@ public class RenewalsDetailsResponse {
   }
 
 
-  public RenewalsDetailsResponse renewalValue(BigDecimal renewalValue) {
+  public RenewalsDetailsResponse renewalValue(Double renewalValue) {
     this.renewalValue = renewalValue;
     return this;
   }
@@ -265,11 +264,11 @@ public class RenewalsDetailsResponse {
    * @return renewalValue
   **/
   @javax.annotation.Nullable
-  public BigDecimal getRenewalValue() {
+  public Double getRenewalValue() {
     return renewalValue;
   }
 
-  public void setRenewalValue(BigDecimal renewalValue) {
+  public void setRenewalValue(Double renewalValue) {
     this.renewalValue = renewalValue;
   }
 
@@ -553,9 +552,6 @@ public class RenewalsDetailsResponse {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("renewalId") != null && !jsonObj.get("renewalId").isJsonNull()) && !jsonObj.get("renewalId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `renewalId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("renewalId").toString()));
-      }
       if ((jsonObj.get("ingramOrderNumber") != null && !jsonObj.get("ingramOrderNumber").isJsonNull()) && !jsonObj.get("ingramOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `ingramOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramOrderNumber").toString()));
       }
