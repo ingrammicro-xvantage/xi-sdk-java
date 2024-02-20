@@ -20,7 +20,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.Arrays;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -104,14 +103,6 @@ public class ReturnsDetailsResponseProductsInnerTest {
     }
 
     /**
-     * Test the property 'requestDetails'
-     */
-    @Test
-    public void requestDetailsTest() {
-        // TODO: test requestDetails
-    }
-
-    /**
      * Test the property 'quantity'
      */
     @Test
@@ -157,6 +148,22 @@ public class ReturnsDetailsResponseProductsInnerTest {
     @Test
     public void shipFromBranchTest() {
         // TODO: test shipFromBranch
+    }
+
+    /**
+     * Test the property 'requestDetails'
+     */
+    @Test
+    public void requestDetailsTest() {
+        // TODO: test requestDetails
+    }
+
+    /**
+     * Test the property 'additionalDetails'
+     */
+    @Test
+    public void additionalDetailsTest() {
+        // TODO: test additionalDetails
     }
 
 }

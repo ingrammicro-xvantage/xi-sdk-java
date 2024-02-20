@@ -65,7 +65,6 @@ public class RenewalsApiTest {
         String imCustomerNumber = null;
         String imCountryCode = null;
         String imCorrelationID = null;
-        String contentType = null;
         String imSenderID = null;
         String customerOrderNumber = null;
         String ingramPurchaseOrderNumber = null;
@@ -74,7 +73,7 @@ public class RenewalsApiTest {
         String size = null;
         String sort = null;
         RenewalsSearchRequest renewalsSearchRequest = null;
-        RenewalsSearchResponse response = api.postRenewalssearch(imCustomerNumber, imCountryCode, imCorrelationID, contentType, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest);
+        RenewalsSearchResponse response = api.postRenewalssearch(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest);
         // TODO: test validations
     }
 

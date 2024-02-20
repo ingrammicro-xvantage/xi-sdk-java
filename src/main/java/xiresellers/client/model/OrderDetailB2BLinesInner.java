@@ -59,7 +59,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T05:40:29.622284Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T09:00:28.102704Z[Etc/UTC]")
 public class OrderDetailB2BLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
@@ -148,6 +148,10 @@ public class OrderDetailB2BLinesInner {
   public static final String SERIALIZED_NAME_PROMISED_DELIVERY_DATE = "promisedDeliveryDate";
   @SerializedName(SERIALIZED_NAME_PROMISED_DELIVERY_DATE)
   private String promisedDeliveryDate;
+
+  public static final String SERIALIZED_NAME_BACK_ORDER_E_T_A_DATA = "backOrderETAData";
+  @SerializedName(SERIALIZED_NAME_BACK_ORDER_E_T_A_DATA)
+  private String backOrderETAData;
 
   public static final String SERIALIZED_NAME_LINE_NOTES = "lineNotes";
   @SerializedName(SERIALIZED_NAME_LINE_NOTES)
@@ -602,6 +606,25 @@ public class OrderDetailB2BLinesInner {
   }
 
 
+  public OrderDetailB2BLinesInner backOrderETAData(String backOrderETAData) {
+    this.backOrderETAData = backOrderETAData;
+    return this;
+  }
+
+   /**
+   * Backorder ETA date
+   * @return backOrderETAData
+  **/
+  @javax.annotation.Nullable
+  public String getBackOrderETAData() {
+    return backOrderETAData;
+  }
+
+  public void setBackOrderETAData(String backOrderETAData) {
+    this.backOrderETAData = backOrderETAData;
+  }
+
+
   public OrderDetailB2BLinesInner lineNotes(String lineNotes) {
     this.lineNotes = lineNotes;
     return this;
@@ -834,6 +857,7 @@ public class OrderDetailB2BLinesInner {
         Objects.equals(this.specialBidNumber, orderDetailB2BLinesInner.specialBidNumber) &&
         Objects.equals(this.requestedDeliverydate, orderDetailB2BLinesInner.requestedDeliverydate) &&
         Objects.equals(this.promisedDeliveryDate, orderDetailB2BLinesInner.promisedDeliveryDate) &&
+        Objects.equals(this.backOrderETAData, orderDetailB2BLinesInner.backOrderETAData) &&
         Objects.equals(this.lineNotes, orderDetailB2BLinesInner.lineNotes) &&
         Objects.equals(this.shipmentDetails, orderDetailB2BLinesInner.shipmentDetails) &&
         Objects.equals(this.serviceContractInfo, orderDetailB2BLinesInner.serviceContractInfo) &&
@@ -850,7 +874,7 @@ public class OrderDetailB2BLinesInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(subOrderNumber, ingramOrderLineNumber, vendorSalesOrderLineNumber, customerLineNumber, lineStatus, ingramPartNumber, vendorPartNumber, vendorName, partDescription, unitWeight, weightUom, unitPrice, upcCode, extendedPrice, taxAmount, currencyCode, quantityOrdered, quantityConfirmed, quantityBackOrdered, specialBidNumber, requestedDeliverydate, promisedDeliveryDate, lineNotes, shipmentDetails, serviceContractInfo, additionalAttributes, links, estimatedDates, scheduleLines, multipleShipments);
+    return Objects.hash(subOrderNumber, ingramOrderLineNumber, vendorSalesOrderLineNumber, customerLineNumber, lineStatus, ingramPartNumber, vendorPartNumber, vendorName, partDescription, unitWeight, weightUom, unitPrice, upcCode, extendedPrice, taxAmount, currencyCode, quantityOrdered, quantityConfirmed, quantityBackOrdered, specialBidNumber, requestedDeliverydate, promisedDeliveryDate, backOrderETAData, lineNotes, shipmentDetails, serviceContractInfo, additionalAttributes, links, estimatedDates, scheduleLines, multipleShipments);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -886,6 +910,7 @@ public class OrderDetailB2BLinesInner {
     sb.append("    specialBidNumber: ").append(toIndentedString(specialBidNumber)).append("\n");
     sb.append("    requestedDeliverydate: ").append(toIndentedString(requestedDeliverydate)).append("\n");
     sb.append("    promisedDeliveryDate: ").append(toIndentedString(promisedDeliveryDate)).append("\n");
+    sb.append("    backOrderETAData: ").append(toIndentedString(backOrderETAData)).append("\n");
     sb.append("    lineNotes: ").append(toIndentedString(lineNotes)).append("\n");
     sb.append("    shipmentDetails: ").append(toIndentedString(shipmentDetails)).append("\n");
     sb.append("    serviceContractInfo: ").append(toIndentedString(serviceContractInfo)).append("\n");
@@ -938,6 +963,7 @@ public class OrderDetailB2BLinesInner {
     openapiFields.add("specialBidNumber");
     openapiFields.add("requestedDeliverydate");
     openapiFields.add("promisedDeliveryDate");
+    openapiFields.add("backOrderETAData");
     openapiFields.add("lineNotes");
     openapiFields.add("shipmentDetails");
     openapiFields.add("serviceContractInfo");
@@ -1016,6 +1042,9 @@ public class OrderDetailB2BLinesInner {
       }
       if ((jsonObj.get("promisedDeliveryDate") != null && !jsonObj.get("promisedDeliveryDate").isJsonNull()) && !jsonObj.get("promisedDeliveryDate").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `promisedDeliveryDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("promisedDeliveryDate").toString()));
+      }
+      if ((jsonObj.get("backOrderETAData") != null && !jsonObj.get("backOrderETAData").isJsonNull()) && !jsonObj.get("backOrderETAData").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `backOrderETAData` to be a primitive type in the JSON string but got `%s`", jsonObj.get("backOrderETAData").toString()));
       }
       if ((jsonObj.get("lineNotes") != null && !jsonObj.get("lineNotes").isJsonNull()) && !jsonObj.get("lineNotes").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `lineNotes` to be a primitive type in the JSON string but got `%s`", jsonObj.get("lineNotes").toString()));

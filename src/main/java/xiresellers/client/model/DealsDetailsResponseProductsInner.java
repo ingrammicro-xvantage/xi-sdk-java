@@ -21,7 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.Arrays;
 
 import com.google.gson.Gson;
@@ -51,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * DealsDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T05:40:29.622284Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T09:00:28.102704Z[Etc/UTC]")
 public class DealsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -99,11 +98,11 @@ public class DealsDetailsResponseProductsInner {
 
   public static final String SERIALIZED_NAME_START_DATE = "startDate";
   @SerializedName(SERIALIZED_NAME_START_DATE)
-  private LocalDate startDate;
+  private String startDate;
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expirationDate";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
-  private LocalDate expirationDate;
+  private String expirationDate;
 
   public static final String SERIALIZED_NAME_DAYS_REMAINING = "daysRemaining";
   @SerializedName(SERIALIZED_NAME_DAYS_REMAINING)
@@ -321,7 +320,7 @@ public class DealsDetailsResponseProductsInner {
   }
 
 
-  public DealsDetailsResponseProductsInner startDate(LocalDate startDate) {
+  public DealsDetailsResponseProductsInner startDate(String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -331,16 +330,16 @@ public class DealsDetailsResponseProductsInner {
    * @return startDate
   **/
   @javax.annotation.Nullable
-  public LocalDate getStartDate() {
+  public String getStartDate() {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(String startDate) {
     this.startDate = startDate;
   }
 
 
-  public DealsDetailsResponseProductsInner expirationDate(LocalDate expirationDate) {
+  public DealsDetailsResponseProductsInner expirationDate(String expirationDate) {
     this.expirationDate = expirationDate;
     return this;
   }
@@ -350,11 +349,11 @@ public class DealsDetailsResponseProductsInner {
    * @return expirationDate
   **/
   @javax.annotation.Nullable
-  public LocalDate getExpirationDate() {
+  public String getExpirationDate() {
     return expirationDate;
   }
 
-  public void setExpirationDate(LocalDate expirationDate) {
+  public void setExpirationDate(String expirationDate) {
     this.expirationDate = expirationDate;
   }
 
@@ -506,6 +505,12 @@ public class DealsDetailsResponseProductsInner {
       }
       if ((jsonObj.get("specialConditions") != null && !jsonObj.get("specialConditions").isJsonNull()) && !jsonObj.get("specialConditions").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `specialConditions` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialConditions").toString()));
+      }
+      if ((jsonObj.get("startDate") != null && !jsonObj.get("startDate").isJsonNull()) && !jsonObj.get("startDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `startDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("startDate").toString()));
+      }
+      if ((jsonObj.get("expirationDate") != null && !jsonObj.get("expirationDate").isJsonNull()) && !jsonObj.get("expirationDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `expirationDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("expirationDate").toString()));
       }
   }
 

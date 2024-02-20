@@ -73,4 +73,36 @@ public class ValidateQuoteResponseTest {
         // TODO: test lines
     }
 
+    /**
+     * Test the property 'quoteType'
+     */
+    @Test
+    public void quoteTypeTest() {
+        // TODO: test quoteType
+    }
+
+    /**
+     * Test the property 'vendorGroupName'
+     */
+    @Test
+    public void vendorGroupNameTest() {
+        // TODO: test vendorGroupName
+    }
+
+    /**
+     * Test the property 'vendorQuoteNumber'
+     */
+    @Test
+    public void vendorQuoteNumberTest() {
+        // TODO: test vendorQuoteNumber
+    }
+
+    /**
+     * Test the property 'vendorMasterNumber'
+     */
+    @Test
+    public void vendorMasterNumberTest() {
+        // TODO: test vendorMasterNumber
+    }
+
 }

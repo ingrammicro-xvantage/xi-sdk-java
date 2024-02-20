@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * ValidateQuoteResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T05:40:29.622284Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T09:00:28.102704Z[Etc/UTC]")
 public class ValidateQuoteResponse {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -70,6 +70,22 @@ public class ValidateQuoteResponse {
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
   private List<ValidateQuoteResponseLinesInner> lines;
+
+  public static final String SERIALIZED_NAME_QUOTE_TYPE = "quoteType";
+  @SerializedName(SERIALIZED_NAME_QUOTE_TYPE)
+  private Integer quoteType;
+
+  public static final String SERIALIZED_NAME_VENDOR_GROUP_NAME = "vendorGroupName";
+  @SerializedName(SERIALIZED_NAME_VENDOR_GROUP_NAME)
+  private String vendorGroupName;
+
+  public static final String SERIALIZED_NAME_VENDOR_QUOTE_NUMBER = "vendorQuoteNumber";
+  @SerializedName(SERIALIZED_NAME_VENDOR_QUOTE_NUMBER)
+  private String vendorQuoteNumber;
+
+  public static final String SERIALIZED_NAME_VENDOR_MASTER_NUMBER = "vendorMasterNumber";
+  @SerializedName(SERIALIZED_NAME_VENDOR_MASTER_NUMBER)
+  private String vendorMasterNumber;
 
   public ValidateQuoteResponse() {
   }
@@ -166,6 +182,82 @@ public class ValidateQuoteResponse {
   }
 
 
+  public ValidateQuoteResponse quoteType(Integer quoteType) {
+    this.quoteType = quoteType;
+    return this;
+  }
+
+   /**
+   * Get quoteType
+   * @return quoteType
+  **/
+  @javax.annotation.Nullable
+  public Integer getQuoteType() {
+    return quoteType;
+  }
+
+  public void setQuoteType(Integer quoteType) {
+    this.quoteType = quoteType;
+  }
+
+
+  public ValidateQuoteResponse vendorGroupName(String vendorGroupName) {
+    this.vendorGroupName = vendorGroupName;
+    return this;
+  }
+
+   /**
+   * Get vendorGroupName
+   * @return vendorGroupName
+  **/
+  @javax.annotation.Nullable
+  public String getVendorGroupName() {
+    return vendorGroupName;
+  }
+
+  public void setVendorGroupName(String vendorGroupName) {
+    this.vendorGroupName = vendorGroupName;
+  }
+
+
+  public ValidateQuoteResponse vendorQuoteNumber(String vendorQuoteNumber) {
+    this.vendorQuoteNumber = vendorQuoteNumber;
+    return this;
+  }
+
+   /**
+   * Get vendorQuoteNumber
+   * @return vendorQuoteNumber
+  **/
+  @javax.annotation.Nullable
+  public String getVendorQuoteNumber() {
+    return vendorQuoteNumber;
+  }
+
+  public void setVendorQuoteNumber(String vendorQuoteNumber) {
+    this.vendorQuoteNumber = vendorQuoteNumber;
+  }
+
+
+  public ValidateQuoteResponse vendorMasterNumber(String vendorMasterNumber) {
+    this.vendorMasterNumber = vendorMasterNumber;
+    return this;
+  }
+
+   /**
+   * Get vendorMasterNumber
+   * @return vendorMasterNumber
+  **/
+  @javax.annotation.Nullable
+  public String getVendorMasterNumber() {
+    return vendorMasterNumber;
+  }
+
+  public void setVendorMasterNumber(String vendorMasterNumber) {
+    this.vendorMasterNumber = vendorMasterNumber;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -179,12 +271,16 @@ public class ValidateQuoteResponse {
     return Objects.equals(this.quoteNumber, validateQuoteResponse.quoteNumber) &&
         Objects.equals(this.vendorName, validateQuoteResponse.vendorName) &&
         Objects.equals(this.vmfAdditionalAttributes, validateQuoteResponse.vmfAdditionalAttributes) &&
-        Objects.equals(this.lines, validateQuoteResponse.lines);
+        Objects.equals(this.lines, validateQuoteResponse.lines) &&
+        Objects.equals(this.quoteType, validateQuoteResponse.quoteType) &&
+        Objects.equals(this.vendorGroupName, validateQuoteResponse.vendorGroupName) &&
+        Objects.equals(this.vendorQuoteNumber, validateQuoteResponse.vendorQuoteNumber) &&
+        Objects.equals(this.vendorMasterNumber, validateQuoteResponse.vendorMasterNumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteNumber, vendorName, vmfAdditionalAttributes, lines);
+    return Objects.hash(quoteNumber, vendorName, vmfAdditionalAttributes, lines, quoteType, vendorGroupName, vendorQuoteNumber, vendorMasterNumber);
   }
 
   @Override
@@ -195,6 +291,10 @@ public class ValidateQuoteResponse {
     sb.append("    vendorName: ").append(toIndentedString(vendorName)).append("\n");
     sb.append("    vmfAdditionalAttributes: ").append(toIndentedString(vmfAdditionalAttributes)).append("\n");
     sb.append("    lines: ").append(toIndentedString(lines)).append("\n");
+    sb.append("    quoteType: ").append(toIndentedString(quoteType)).append("\n");
+    sb.append("    vendorGroupName: ").append(toIndentedString(vendorGroupName)).append("\n");
+    sb.append("    vendorQuoteNumber: ").append(toIndentedString(vendorQuoteNumber)).append("\n");
+    sb.append("    vendorMasterNumber: ").append(toIndentedString(vendorMasterNumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -221,6 +321,10 @@ public class ValidateQuoteResponse {
     openapiFields.add("vendorName");
     openapiFields.add("vmfAdditionalAttributes");
     openapiFields.add("lines");
+    openapiFields.add("quoteType");
+    openapiFields.add("vendorGroupName");
+    openapiFields.add("vendorQuoteNumber");
+    openapiFields.add("vendorMasterNumber");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -280,6 +384,15 @@ public class ValidateQuoteResponse {
             ValidateQuoteResponseLinesInner.validateJsonElement(jsonArraylines.get(i));
           };
         }
+      }
+      if ((jsonObj.get("vendorGroupName") != null && !jsonObj.get("vendorGroupName").isJsonNull()) && !jsonObj.get("vendorGroupName").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `vendorGroupName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorGroupName").toString()));
+      }
+      if ((jsonObj.get("vendorQuoteNumber") != null && !jsonObj.get("vendorQuoteNumber").isJsonNull()) && !jsonObj.get("vendorQuoteNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `vendorQuoteNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorQuoteNumber").toString()));
+      }
+      if ((jsonObj.get("vendorMasterNumber") != null && !jsonObj.get("vendorMasterNumber").isJsonNull()) && !jsonObj.get("vendorMasterNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `vendorMasterNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorMasterNumber").toString()));
       }
   }
 
