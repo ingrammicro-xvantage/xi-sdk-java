@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for RenewalsSearchRequestDataTypeInvoiceDate
+ * Model tests for RenewalsSearchRequestDateTypeEndDate
  */
-public class RenewalsSearchRequestDataTypeInvoiceDateTest {
-    private final RenewalsSearchRequestDataTypeInvoiceDate model = new RenewalsSearchRequestDataTypeInvoiceDate();
+public class RenewalsSearchRequestDateTypeEndDateTest {
+    private final RenewalsSearchRequestDateTypeEndDate model = new RenewalsSearchRequestDateTypeEndDate();
 
     /**
-     * Model tests for RenewalsSearchRequestDataTypeInvoiceDate
+     * Model tests for RenewalsSearchRequestDateTypeEndDate
      */
     @Test
-    public void testRenewalsSearchRequestDataTypeInvoiceDate() {
-        // TODO: test RenewalsSearchRequestDataTypeInvoiceDate
+    public void testRenewalsSearchRequestDateTypeEndDate() {
+        // TODO: test RenewalsSearchRequestDateTypeEndDate
     }
 
     /**

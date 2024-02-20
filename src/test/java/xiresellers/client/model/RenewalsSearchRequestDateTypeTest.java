@@ -20,25 +20,25 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import xiresellers.client.model.RenewalsSearchRequestDataTypeEndDate;
-import xiresellers.client.model.RenewalsSearchRequestDataTypeExpirationDate;
-import xiresellers.client.model.RenewalsSearchRequestDataTypeInvoiceDate;
-import xiresellers.client.model.RenewalsSearchRequestDataTypeStartDate;
+import xiresellers.client.model.RenewalsSearchRequestDateTypeEndDate;
+import xiresellers.client.model.RenewalsSearchRequestDateTypeExpirationDate;
+import xiresellers.client.model.RenewalsSearchRequestDateTypeInvoiceDate;
+import xiresellers.client.model.RenewalsSearchRequestDateTypeStartDate;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for RenewalsSearchRequestDataType
+ * Model tests for RenewalsSearchRequestDateType
  */
-public class RenewalsSearchRequestDataTypeTest {
-    private final RenewalsSearchRequestDataType model = new RenewalsSearchRequestDataType();
+public class RenewalsSearchRequestDateTypeTest {
+    private final RenewalsSearchRequestDateType model = new RenewalsSearchRequestDateType();
 
     /**
-     * Model tests for RenewalsSearchRequestDataType
+     * Model tests for RenewalsSearchRequestDateType
      */
     @Test
-    public void testRenewalsSearchRequestDataType() {
-        // TODO: test RenewalsSearchRequestDataType
+    public void testRenewalsSearchRequestDateType() {
+        // TODO: test RenewalsSearchRequestDateType
     }
 
     /**

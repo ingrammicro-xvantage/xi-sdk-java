@@ -47,10 +47,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * RenewalsSearchRequestDataTypeInvoiceDate
+ * RenewalsSearchRequestDateTypeEndDate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
-public class RenewalsSearchRequestDataTypeInvoiceDate {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T05:40:29.622284Z[Etc/UTC]")
+public class RenewalsSearchRequestDateTypeEndDate {
   public static final String SERIALIZED_NAME_CUSTOM_START_DATE = "customStartDate";
   @SerializedName(SERIALIZED_NAME_CUSTOM_START_DATE)
   private String customStartDate;
@@ -59,16 +59,16 @@ public class RenewalsSearchRequestDataTypeInvoiceDate {
   @SerializedName(SERIALIZED_NAME_CUSTOM_END_DATE)
   private String customEndDate;
 
-  public RenewalsSearchRequestDataTypeInvoiceDate() {
+  public RenewalsSearchRequestDateTypeEndDate() {
   }
 
-  public RenewalsSearchRequestDataTypeInvoiceDate customStartDate(String customStartDate) {
+  public RenewalsSearchRequestDateTypeEndDate customStartDate(String customStartDate) {
     this.customStartDate = customStartDate;
     return this;
   }
 
    /**
-   * Custom start date for invoice date.
+   * Custom from date for Renewal end date.
    * @return customStartDate
   **/
   @javax.annotation.Nullable
@@ -81,13 +81,13 @@ public class RenewalsSearchRequestDataTypeInvoiceDate {
   }
 
 
-  public RenewalsSearchRequestDataTypeInvoiceDate customEndDate(String customEndDate) {
+  public RenewalsSearchRequestDateTypeEndDate customEndDate(String customEndDate) {
     this.customEndDate = customEndDate;
     return this;
   }
 
    /**
-   * Custom end date for invoice date.
+   * Custom to date for Renewal end date.
    * @return customEndDate
   **/
   @javax.annotation.Nullable
@@ -109,9 +109,9 @@ public class RenewalsSearchRequestDataTypeInvoiceDate {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    RenewalsSearchRequestDataTypeInvoiceDate renewalsSearchRequestDataTypeInvoiceDate = (RenewalsSearchRequestDataTypeInvoiceDate) o;
-    return Objects.equals(this.customStartDate, renewalsSearchRequestDataTypeInvoiceDate.customStartDate) &&
-        Objects.equals(this.customEndDate, renewalsSearchRequestDataTypeInvoiceDate.customEndDate);
+    RenewalsSearchRequestDateTypeEndDate renewalsSearchRequestDateTypeEndDate = (RenewalsSearchRequestDateTypeEndDate) o;
+    return Objects.equals(this.customStartDate, renewalsSearchRequestDateTypeEndDate.customStartDate) &&
+        Objects.equals(this.customEndDate, renewalsSearchRequestDateTypeEndDate.customEndDate);
   }
 
   @Override
@@ -122,7 +122,7 @@ public class RenewalsSearchRequestDataTypeInvoiceDate {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class RenewalsSearchRequestDataTypeInvoiceDate {\n");
+    sb.append("class RenewalsSearchRequestDateTypeEndDate {\n");
     sb.append("    customStartDate: ").append(toIndentedString(customStartDate)).append("\n");
     sb.append("    customEndDate: ").append(toIndentedString(customEndDate)).append("\n");
     sb.append("}");
@@ -158,20 +158,20 @@ public class RenewalsSearchRequestDataTypeInvoiceDate {
   * Validates the JSON Element and throws an exception if issues found
   *
   * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to RenewalsSearchRequestDataTypeInvoiceDate
+  * @throws IOException if the JSON Element is invalid with respect to RenewalsSearchRequestDateTypeEndDate
   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!RenewalsSearchRequestDataTypeInvoiceDate.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in RenewalsSearchRequestDataTypeInvoiceDate is not found in the empty JSON string", RenewalsSearchRequestDataTypeInvoiceDate.openapiRequiredFields.toString()));
+        if (!RenewalsSearchRequestDateTypeEndDate.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in RenewalsSearchRequestDateTypeEndDate is not found in the empty JSON string", RenewalsSearchRequestDateTypeEndDate.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!RenewalsSearchRequestDataTypeInvoiceDate.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `RenewalsSearchRequestDataTypeInvoiceDate` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!RenewalsSearchRequestDateTypeEndDate.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `RenewalsSearchRequestDateTypeEndDate` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -187,22 +187,22 @@ public class RenewalsSearchRequestDataTypeInvoiceDate {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!RenewalsSearchRequestDataTypeInvoiceDate.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'RenewalsSearchRequestDataTypeInvoiceDate' and its subtypes
+       if (!RenewalsSearchRequestDateTypeEndDate.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'RenewalsSearchRequestDateTypeEndDate' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<RenewalsSearchRequestDataTypeInvoiceDate> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(RenewalsSearchRequestDataTypeInvoiceDate.class));
+       final TypeAdapter<RenewalsSearchRequestDateTypeEndDate> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(RenewalsSearchRequestDateTypeEndDate.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<RenewalsSearchRequestDataTypeInvoiceDate>() {
+       return (TypeAdapter<T>) new TypeAdapter<RenewalsSearchRequestDateTypeEndDate>() {
            @Override
-           public void write(JsonWriter out, RenewalsSearchRequestDataTypeInvoiceDate value) throws IOException {
+           public void write(JsonWriter out, RenewalsSearchRequestDateTypeEndDate value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public RenewalsSearchRequestDataTypeInvoiceDate read(JsonReader in) throws IOException {
+           public RenewalsSearchRequestDateTypeEndDate read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -213,18 +213,18 @@ public class RenewalsSearchRequestDataTypeInvoiceDate {
   }
 
  /**
-  * Create an instance of RenewalsSearchRequestDataTypeInvoiceDate given an JSON string
+  * Create an instance of RenewalsSearchRequestDateTypeEndDate given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of RenewalsSearchRequestDataTypeInvoiceDate
-  * @throws IOException if the JSON string is invalid with respect to RenewalsSearchRequestDataTypeInvoiceDate
+  * @return An instance of RenewalsSearchRequestDateTypeEndDate
+  * @throws IOException if the JSON string is invalid with respect to RenewalsSearchRequestDateTypeEndDate
   */
-  public static RenewalsSearchRequestDataTypeInvoiceDate fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, RenewalsSearchRequestDataTypeInvoiceDate.class);
+  public static RenewalsSearchRequestDateTypeEndDate fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, RenewalsSearchRequestDateTypeEndDate.class);
   }
 
  /**
-  * Convert an instance of RenewalsSearchRequestDataTypeInvoiceDate to an JSON string
+  * Convert an instance of RenewalsSearchRequestDateTypeEndDate to an JSON string
   *
   * @return JSON string
   */

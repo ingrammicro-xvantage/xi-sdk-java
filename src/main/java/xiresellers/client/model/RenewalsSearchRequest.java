@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import xiresellers.client.model.RenewalsSearchRequestDataType;
+import xiresellers.client.model.RenewalsSearchRequestDateType;
 import xiresellers.client.model.RenewalsSearchRequestStatus;
 
 import com.google.gson.Gson;
@@ -51,15 +51,15 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T05:40:29.622284Z[Etc/UTC]")
 public class RenewalsSearchRequest {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
   private RenewalsSearchRequestStatus status;
 
-  public static final String SERIALIZED_NAME_DATA_TYPE = "dataType";
-  @SerializedName(SERIALIZED_NAME_DATA_TYPE)
-  private RenewalsSearchRequestDataType dataType;
+  public static final String SERIALIZED_NAME_DATE_TYPE = "dateType";
+  @SerializedName(SERIALIZED_NAME_DATE_TYPE)
+  private RenewalsSearchRequestDateType dateType;
 
   public static final String SERIALIZED_NAME_VENDOR = "vendor";
   @SerializedName(SERIALIZED_NAME_VENDOR)
@@ -91,22 +91,22 @@ public class RenewalsSearchRequest {
   }
 
 
-  public RenewalsSearchRequest dataType(RenewalsSearchRequestDataType dataType) {
-    this.dataType = dataType;
+  public RenewalsSearchRequest dateType(RenewalsSearchRequestDateType dateType) {
+    this.dateType = dateType;
     return this;
   }
 
    /**
-   * Get dataType
-   * @return dataType
+   * Get dateType
+   * @return dateType
   **/
   @javax.annotation.Nullable
-  public RenewalsSearchRequestDataType getDataType() {
-    return dataType;
+  public RenewalsSearchRequestDateType getDateType() {
+    return dateType;
   }
 
-  public void setDataType(RenewalsSearchRequestDataType dataType) {
-    this.dataType = dataType;
+  public void setDateType(RenewalsSearchRequestDateType dateType) {
+    this.dateType = dateType;
   }
 
 
@@ -159,14 +159,14 @@ public class RenewalsSearchRequest {
     }
     RenewalsSearchRequest renewalsSearchRequest = (RenewalsSearchRequest) o;
     return Objects.equals(this.status, renewalsSearchRequest.status) &&
-        Objects.equals(this.dataType, renewalsSearchRequest.dataType) &&
+        Objects.equals(this.dateType, renewalsSearchRequest.dateType) &&
         Objects.equals(this.vendor, renewalsSearchRequest.vendor) &&
         Objects.equals(this.endUser, renewalsSearchRequest.endUser);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(status, dataType, vendor, endUser);
+    return Objects.hash(status, dateType, vendor, endUser);
   }
 
   @Override
@@ -174,7 +174,7 @@ public class RenewalsSearchRequest {
     StringBuilder sb = new StringBuilder();
     sb.append("class RenewalsSearchRequest {\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    dataType: ").append(toIndentedString(dataType)).append("\n");
+    sb.append("    dateType: ").append(toIndentedString(dateType)).append("\n");
     sb.append("    vendor: ").append(toIndentedString(vendor)).append("\n");
     sb.append("    endUser: ").append(toIndentedString(endUser)).append("\n");
     sb.append("}");
@@ -200,7 +200,7 @@ public class RenewalsSearchRequest {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("status");
-    openapiFields.add("dataType");
+    openapiFields.add("dateType");
     openapiFields.add("vendor");
     openapiFields.add("endUser");
 
@@ -233,9 +233,9 @@ public class RenewalsSearchRequest {
       if (jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) {
         RenewalsSearchRequestStatus.validateJsonElement(jsonObj.get("status"));
       }
-      // validate the optional field `dataType`
-      if (jsonObj.get("dataType") != null && !jsonObj.get("dataType").isJsonNull()) {
-        RenewalsSearchRequestDataType.validateJsonElement(jsonObj.get("dataType"));
+      // validate the optional field `dateType`
+      if (jsonObj.get("dateType") != null && !jsonObj.get("dateType").isJsonNull()) {
+        RenewalsSearchRequestDateType.validateJsonElement(jsonObj.get("dateType"));
       }
       if ((jsonObj.get("vendor") != null && !jsonObj.get("vendor").isJsonNull()) && !jsonObj.get("vendor").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendor").toString()));

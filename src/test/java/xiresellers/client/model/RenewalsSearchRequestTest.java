@@ -20,7 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import xiresellers.client.model.RenewalsSearchRequestDataType;
+import xiresellers.client.model.RenewalsSearchRequestDateType;
 import xiresellers.client.model.RenewalsSearchRequestStatus;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -48,11 +48,11 @@ public class RenewalsSearchRequestTest {
     }
 
     /**
-     * Test the property 'dataType'
+     * Test the property 'dateType'
      */
     @Test
-    public void dataTypeTest() {
-        // TODO: test dataType
+    public void dateTypeTest() {
+        // TODO: test dateType
     }
 
     /**

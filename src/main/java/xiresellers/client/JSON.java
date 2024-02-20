@@ -257,11 +257,11 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseProductsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseReferenceNumberInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequest.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDataType.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDataTypeEndDate.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDataTypeExpirationDate.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDataTypeInvoiceDate.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDataTypeStartDate.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDateType.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDateTypeEndDate.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDateTypeExpirationDate.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDateTypeInvoiceDate.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDateTypeStartDate.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestStatus.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestStatusOpporutinyStatus.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchResponse.CustomTypeAdapterFactory());

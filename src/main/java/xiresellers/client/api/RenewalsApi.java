@@ -345,7 +345,7 @@ public class RenewalsApi {
         }
 
         if (contentType != null) {
-            localVarHeaderParams.put("Content type", localVarApiClient.parameterToString(contentType));
+            localVarHeaderParams.put("Content Type", localVarApiClient.parameterToString(contentType));
         }
 
         final String[] localVarAccepts = {
