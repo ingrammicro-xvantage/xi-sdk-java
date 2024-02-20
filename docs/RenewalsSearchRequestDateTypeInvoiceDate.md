@@ -1,6 +1,6 @@
 
 
-# RenewalsSearchRequestDataTypeInvoiceDate
+# RenewalsSearchRequestDateTypeInvoiceDate
 
 
 ## Properties

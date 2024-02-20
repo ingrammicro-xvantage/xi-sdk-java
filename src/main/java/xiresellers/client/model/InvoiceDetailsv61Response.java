@@ -20,7 +20,6 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -58,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-19T10:18:25.862607Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T05:40:29.622284Z[Etc/UTC]")
 public class InvoiceDetailsv61Response {
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
@@ -70,7 +69,7 @@ public class InvoiceDetailsv61Response {
 
   public static final String SERIALIZED_NAME_INVOICE_DATE = "invoiceDate";
   @SerializedName(SERIALIZED_NAME_INVOICE_DATE)
-  private LocalDate invoiceDate;
+  private String invoiceDate;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
@@ -86,7 +85,7 @@ public class InvoiceDetailsv61Response {
 
   public static final String SERIALIZED_NAME_ORDER_DATE = "orderDate";
   @SerializedName(SERIALIZED_NAME_ORDER_DATE)
-  private LocalDate orderDate;
+  private String orderDate;
 
   public static final String SERIALIZED_NAME_BILL_TO_I_D = "billToID";
   @SerializedName(SERIALIZED_NAME_BILL_TO_I_D)
@@ -181,7 +180,7 @@ public class InvoiceDetailsv61Response {
   }
 
 
-  public InvoiceDetailsv61Response invoiceDate(LocalDate invoiceDate) {
+  public InvoiceDetailsv61Response invoiceDate(String invoiceDate) {
     this.invoiceDate = invoiceDate;
     return this;
   }
@@ -191,11 +190,11 @@ public class InvoiceDetailsv61Response {
    * @return invoiceDate
   **/
   @javax.annotation.Nullable
-  public LocalDate getInvoiceDate() {
+  public String getInvoiceDate() {
     return invoiceDate;
   }
 
-  public void setInvoiceDate(LocalDate invoiceDate) {
+  public void setInvoiceDate(String invoiceDate) {
     this.invoiceDate = invoiceDate;
   }
 
@@ -257,7 +256,7 @@ public class InvoiceDetailsv61Response {
   }
 
 
-  public InvoiceDetailsv61Response orderDate(LocalDate orderDate) {
+  public InvoiceDetailsv61Response orderDate(String orderDate) {
     this.orderDate = orderDate;
     return this;
   }
@@ -267,11 +266,11 @@ public class InvoiceDetailsv61Response {
    * @return orderDate
   **/
   @javax.annotation.Nullable
-  public LocalDate getOrderDate() {
+  public String getOrderDate() {
     return orderDate;
   }
 
-  public void setOrderDate(LocalDate orderDate) {
+  public void setOrderDate(String orderDate) {
     this.orderDate = orderDate;
   }
 
@@ -666,6 +665,9 @@ public class InvoiceDetailsv61Response {
       if ((jsonObj.get("invoiceStatus") != null && !jsonObj.get("invoiceStatus").isJsonNull()) && !jsonObj.get("invoiceStatus").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `invoiceStatus` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceStatus").toString()));
       }
+      if ((jsonObj.get("invoiceDate") != null && !jsonObj.get("invoiceDate").isJsonNull()) && !jsonObj.get("invoiceDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `invoiceDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceDate").toString()));
+      }
       if ((jsonObj.get("customerOrderNumber") != null && !jsonObj.get("customerOrderNumber").isJsonNull()) && !jsonObj.get("customerOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
       }
@@ -674,6 +676,9 @@ public class InvoiceDetailsv61Response {
       }
       if ((jsonObj.get("orderNumber") != null && !jsonObj.get("orderNumber").isJsonNull()) && !jsonObj.get("orderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `orderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderNumber").toString()));
+      }
+      if ((jsonObj.get("orderDate") != null && !jsonObj.get("orderDate").isJsonNull()) && !jsonObj.get("orderDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `orderDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderDate").toString()));
       }
       if ((jsonObj.get("billToID") != null && !jsonObj.get("billToID").isJsonNull()) && !jsonObj.get("billToID").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `billToID` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billToID").toString()));

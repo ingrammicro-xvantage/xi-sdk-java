@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-02-19T10:18:25.862607Z[Etc/UTC]
+  - Build date: 2024-02-20T05:40:29.622284Z[Etc/UTC]
 
 For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
 
@@ -55,7 +55,6 @@ cd xi-sdk-resellers-java
 mvn install       # Requires maven, download from https://maven.apache.org/download.html
 
 ```
-
 
 ### Others
 
@@ -306,11 +305,11 @@ Class | Method | HTTP request | Description
  - [RenewalsDetailsResponseProductsInner](docs/RenewalsDetailsResponseProductsInner.md)
  - [RenewalsDetailsResponseReferenceNumberInner](docs/RenewalsDetailsResponseReferenceNumberInner.md)
  - [RenewalsSearchRequest](docs/RenewalsSearchRequest.md)
- - [RenewalsSearchRequestDataType](docs/RenewalsSearchRequestDataType.md)
- - [RenewalsSearchRequestDataTypeEndDate](docs/RenewalsSearchRequestDataTypeEndDate.md)
- - [RenewalsSearchRequestDataTypeExpirationDate](docs/RenewalsSearchRequestDataTypeExpirationDate.md)
- - [RenewalsSearchRequestDataTypeInvoiceDate](docs/RenewalsSearchRequestDataTypeInvoiceDate.md)
- - [RenewalsSearchRequestDataTypeStartDate](docs/RenewalsSearchRequestDataTypeStartDate.md)
+ - [RenewalsSearchRequestDateType](docs/RenewalsSearchRequestDateType.md)
+ - [RenewalsSearchRequestDateTypeEndDate](docs/RenewalsSearchRequestDateTypeEndDate.md)
+ - [RenewalsSearchRequestDateTypeExpirationDate](docs/RenewalsSearchRequestDateTypeExpirationDate.md)
+ - [RenewalsSearchRequestDateTypeInvoiceDate](docs/RenewalsSearchRequestDateTypeInvoiceDate.md)
+ - [RenewalsSearchRequestDateTypeStartDate](docs/RenewalsSearchRequestDateTypeStartDate.md)
  - [RenewalsSearchRequestStatus](docs/RenewalsSearchRequestStatus.md)
  - [RenewalsSearchRequestStatusOpporutinyStatus](docs/RenewalsSearchRequestStatusOpporutinyStatus.md)
  - [RenewalsSearchResponse](docs/RenewalsSearchResponse.md)
@@ -358,7 +357,4 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 
 For any inquiries or support, please feel free to contact us at:
 
-
 - Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)
-
-

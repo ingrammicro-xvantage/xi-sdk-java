@@ -1,6 +1,6 @@
 
 
-# RenewalsSearchRequestDataTypeStartDate
+# RenewalsSearchRequestDateTypeStartDate
 
 
 ## Properties
