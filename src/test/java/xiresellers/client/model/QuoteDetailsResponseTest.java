@@ -180,6 +180,14 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
+     * Test the property 'quoteType'
+     */
+    @Test
+    public void quoteTypeTest() {
+        // TODO: test quoteType
+    }
+
+    /**
      * Test the property 'leaseInfo'
      */
     @Test

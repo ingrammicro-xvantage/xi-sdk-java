@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T05:40:29.622284Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T09:00:28.102704Z[Etc/UTC]")
 public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -89,9 +89,9 @@ public class ProductDetailResponse {
   @SerializedName(SERIALIZED_NAME_PRODUCT_CATEGORY)
   private String productCategory;
 
-  public static final String SERIALIZED_NAME_PRODUCT_SUBCATEGORY = "productSubcategory";
-  @SerializedName(SERIALIZED_NAME_PRODUCT_SUBCATEGORY)
-  private String productSubcategory;
+  public static final String SERIALIZED_NAME_PRODUCT_SUB_CATEGORY = "productSubCategory";
+  @SerializedName(SERIALIZED_NAME_PRODUCT_SUB_CATEGORY)
+  private String productSubCategory;
 
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
@@ -284,22 +284,22 @@ public class ProductDetailResponse {
   }
 
 
-  public ProductDetailResponse productSubcategory(String productSubcategory) {
-    this.productSubcategory = productSubcategory;
+  public ProductDetailResponse productSubCategory(String productSubCategory) {
+    this.productSubCategory = productSubCategory;
     return this;
   }
 
    /**
    * The sub-category of the product.
-   * @return productSubcategory
+   * @return productSubCategory
   **/
   @javax.annotation.Nullable
-  public String getProductSubcategory() {
-    return productSubcategory;
+  public String getProductSubCategory() {
+    return productSubCategory;
   }
 
-  public void setProductSubcategory(String productSubcategory) {
-    this.productSubcategory = productSubcategory;
+  public void setProductSubCategory(String productSubCategory) {
+    this.productSubCategory = productSubCategory;
   }
 
 
@@ -508,7 +508,7 @@ public class ProductDetailResponse {
         Objects.equals(this.productDetailDescription, productDetailResponse.productDetailDescription) &&
         Objects.equals(this.upc, productDetailResponse.upc) &&
         Objects.equals(this.productCategory, productDetailResponse.productCategory) &&
-        Objects.equals(this.productSubcategory, productDetailResponse.productSubcategory) &&
+        Objects.equals(this.productSubCategory, productDetailResponse.productSubCategory) &&
         Objects.equals(this.vendorName, productDetailResponse.vendorName) &&
         Objects.equals(this.vendorNumber, productDetailResponse.vendorNumber) &&
         Objects.equals(this.productStatusCode, productDetailResponse.productStatusCode) &&
@@ -522,7 +522,7 @@ public class ProductDetailResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(ingramPartNumber, vendorPartNumber, customerPartNumber, productAuthorized, description, productDetailDescription, upc, productCategory, productSubcategory, vendorName, vendorNumber, productStatusCode, productClass, indicators, ciscoFields, technicalSpecifications, warrantyInformation, additionalInformation);
+    return Objects.hash(ingramPartNumber, vendorPartNumber, customerPartNumber, productAuthorized, description, productDetailDescription, upc, productCategory, productSubCategory, vendorName, vendorNumber, productStatusCode, productClass, indicators, ciscoFields, technicalSpecifications, warrantyInformation, additionalInformation);
   }
 
   @Override
@@ -537,7 +537,7 @@ public class ProductDetailResponse {
     sb.append("    productDetailDescription: ").append(toIndentedString(productDetailDescription)).append("\n");
     sb.append("    upc: ").append(toIndentedString(upc)).append("\n");
     sb.append("    productCategory: ").append(toIndentedString(productCategory)).append("\n");
-    sb.append("    productSubcategory: ").append(toIndentedString(productSubcategory)).append("\n");
+    sb.append("    productSubCategory: ").append(toIndentedString(productSubCategory)).append("\n");
     sb.append("    vendorName: ").append(toIndentedString(vendorName)).append("\n");
     sb.append("    vendorNumber: ").append(toIndentedString(vendorNumber)).append("\n");
     sb.append("    productStatusCode: ").append(toIndentedString(productStatusCode)).append("\n");
@@ -577,7 +577,7 @@ public class ProductDetailResponse {
     openapiFields.add("productDetailDescription");
     openapiFields.add("upc");
     openapiFields.add("productCategory");
-    openapiFields.add("productSubcategory");
+    openapiFields.add("productSubCategory");
     openapiFields.add("vendorName");
     openapiFields.add("vendorNumber");
     openapiFields.add("productStatusCode");
@@ -637,8 +637,8 @@ public class ProductDetailResponse {
       if ((jsonObj.get("productCategory") != null && !jsonObj.get("productCategory").isJsonNull()) && !jsonObj.get("productCategory").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `productCategory` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productCategory").toString()));
       }
-      if ((jsonObj.get("productSubcategory") != null && !jsonObj.get("productSubcategory").isJsonNull()) && !jsonObj.get("productSubcategory").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `productSubcategory` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productSubcategory").toString()));
+      if ((jsonObj.get("productSubCategory") != null && !jsonObj.get("productSubCategory").isJsonNull()) && !jsonObj.get("productSubCategory").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `productSubCategory` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productSubCategory").toString()));
       }
       if ((jsonObj.get("vendorName") != null && !jsonObj.get("vendorName").isJsonNull()) && !jsonObj.get("vendorName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendorName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorName").toString()));

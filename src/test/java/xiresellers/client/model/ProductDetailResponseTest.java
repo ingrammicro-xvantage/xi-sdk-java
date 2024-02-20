@@ -108,11 +108,11 @@ public class ProductDetailResponseTest {
     }
 
     /**
-     * Test the property 'productSubcategory'
+     * Test the property 'productSubCategory'
      */
     @Test
-    public void productSubcategoryTest() {
-        // TODO: test productSubcategory
+    public void productSubCategoryTest() {
+        // TODO: test productSubCategory
     }
 
     /**

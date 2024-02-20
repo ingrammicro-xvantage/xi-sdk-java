@@ -87,7 +87,7 @@ public class Example {
 
 <a id="postRenewalssearch"></a>
 # **postRenewalssearch**
-> RenewalsSearchResponse postRenewalssearch(imCustomerNumber, imCountryCode, imCorrelationID, contentType, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest)
+> RenewalsSearchResponse postRenewalssearch(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest)
 
 Renewals Search
 
@@ -116,7 +116,6 @@ public class Example {
     String imCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
     String imCountryCode = "US"; // String | Two-character ISO country code.
     String imCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
-    String contentType = "application/json"; // String | The media type for JSON Request.
     String imSenderID = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
     String customerOrderNumber = "customerOrderNumber_example"; // String | The reseller's unique PO/Order number.
     String ingramPurchaseOrderNumber = "ingramPurchaseOrderNumber_example"; // String | Sales order number.
@@ -126,7 +125,7 @@ public class Example {
     String sort = "sort_example"; // String | Refers to the column selected to apply the sorting criteria.
     RenewalsSearchRequest renewalsSearchRequest = new RenewalsSearchRequest(); // RenewalsSearchRequest | 
     try {
-      RenewalsSearchResponse result = apiInstance.postRenewalssearch(imCustomerNumber, imCountryCode, imCorrelationID, contentType, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest);
+      RenewalsSearchResponse result = apiInstance.postRenewalssearch(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling RenewalsApi#postRenewalssearch");
@@ -146,7 +145,6 @@ public class Example {
 | **imCustomerNumber** | **String**| Your unique Ingram Micro customer number. | |
 | **imCountryCode** | **String**| Two-character ISO country code. | |
 | **imCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | |
-| **contentType** | **String**| The media type for JSON Request. | |
 | **imSenderID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | [optional] |
 | **customerOrderNumber** | **String**| The reseller&#39;s unique PO/Order number. | [optional] |
 | **ingramPurchaseOrderNumber** | **String**| Sales order number. | [optional] |

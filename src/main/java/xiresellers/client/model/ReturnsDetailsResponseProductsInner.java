@@ -21,7 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.Arrays;
 
 import com.google.gson.Gson;
@@ -51,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T05:40:29.622284Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T09:00:28.102704Z[Etc/UTC]")
 public class ReturnsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
@@ -75,7 +74,7 @@ public class ReturnsDetailsResponseProductsInner {
 
   public static final String SERIALIZED_NAME_INVOICE_DATE = "invoiceDate";
   @SerializedName(SERIALIZED_NAME_INVOICE_DATE)
-  private LocalDate invoiceDate;
+  private String invoiceDate;
 
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
@@ -84,10 +83,6 @@ public class ReturnsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
   private String customerOrderNumber;
-
-  public static final String SERIALIZED_NAME_REQUEST_DETAILS = "requestDetails";
-  @SerializedName(SERIALIZED_NAME_REQUEST_DETAILS)
-  private String requestDetails;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
@@ -112,6 +107,14 @@ public class ReturnsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_SHIP_FROM_BRANCH = "shipFromBranch";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_BRANCH)
   private String shipFromBranch;
+
+  public static final String SERIALIZED_NAME_REQUEST_DETAILS = "requestDetails";
+  @SerializedName(SERIALIZED_NAME_REQUEST_DETAILS)
+  private String requestDetails;
+
+  public static final String SERIALIZED_NAME_ADDITIONAL_DETAILS = "additionalDetails";
+  @SerializedName(SERIALIZED_NAME_ADDITIONAL_DETAILS)
+  private String additionalDetails;
 
   public ReturnsDetailsResponseProductsInner() {
   }
@@ -211,7 +214,7 @@ public class ReturnsDetailsResponseProductsInner {
   }
 
 
-  public ReturnsDetailsResponseProductsInner invoiceDate(LocalDate invoiceDate) {
+  public ReturnsDetailsResponseProductsInner invoiceDate(String invoiceDate) {
     this.invoiceDate = invoiceDate;
     return this;
   }
@@ -221,11 +224,11 @@ public class ReturnsDetailsResponseProductsInner {
    * @return invoiceDate
   **/
   @javax.annotation.Nullable
-  public LocalDate getInvoiceDate() {
+  public String getInvoiceDate() {
     return invoiceDate;
   }
 
-  public void setInvoiceDate(LocalDate invoiceDate) {
+  public void setInvoiceDate(String invoiceDate) {
     this.invoiceDate = invoiceDate;
   }
 
@@ -265,25 +268,6 @@ public class ReturnsDetailsResponseProductsInner {
 
   public void setCustomerOrderNumber(String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
-  }
-
-
-  public ReturnsDetailsResponseProductsInner requestDetails(String requestDetails) {
-    this.requestDetails = requestDetails;
-    return this;
-  }
-
-   /**
-   * Request details.
-   * @return requestDetails
-  **/
-  @javax.annotation.Nullable
-  public String getRequestDetails() {
-    return requestDetails;
-  }
-
-  public void setRequestDetails(String requestDetails) {
-    this.requestDetails = requestDetails;
   }
 
 
@@ -401,6 +385,44 @@ public class ReturnsDetailsResponseProductsInner {
   }
 
 
+  public ReturnsDetailsResponseProductsInner requestDetails(String requestDetails) {
+    this.requestDetails = requestDetails;
+    return this;
+  }
+
+   /**
+   * Request details.
+   * @return requestDetails
+  **/
+  @javax.annotation.Nullable
+  public String getRequestDetails() {
+    return requestDetails;
+  }
+
+  public void setRequestDetails(String requestDetails) {
+    this.requestDetails = requestDetails;
+  }
+
+
+  public ReturnsDetailsResponseProductsInner additionalDetails(String additionalDetails) {
+    this.additionalDetails = additionalDetails;
+    return this;
+  }
+
+   /**
+   * Get additionalDetails
+   * @return additionalDetails
+  **/
+  @javax.annotation.Nullable
+  public String getAdditionalDetails() {
+    return additionalDetails;
+  }
+
+  public void setAdditionalDetails(String additionalDetails) {
+    this.additionalDetails = additionalDetails;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -419,18 +441,19 @@ public class ReturnsDetailsResponseProductsInner {
         Objects.equals(this.invoiceDate, returnsDetailsResponseProductsInner.invoiceDate) &&
         Objects.equals(this.invoiceNumber, returnsDetailsResponseProductsInner.invoiceNumber) &&
         Objects.equals(this.customerOrderNumber, returnsDetailsResponseProductsInner.customerOrderNumber) &&
-        Objects.equals(this.requestDetails, returnsDetailsResponseProductsInner.requestDetails) &&
         Objects.equals(this.quantity, returnsDetailsResponseProductsInner.quantity) &&
         Objects.equals(this.unitPrice, returnsDetailsResponseProductsInner.unitPrice) &&
         Objects.equals(this.extendedPrice, returnsDetailsResponseProductsInner.extendedPrice) &&
         Objects.equals(this.status, returnsDetailsResponseProductsInner.status) &&
         Objects.equals(this.returnBranch, returnsDetailsResponseProductsInner.returnBranch) &&
-        Objects.equals(this.shipFromBranch, returnsDetailsResponseProductsInner.shipFromBranch);
+        Objects.equals(this.shipFromBranch, returnsDetailsResponseProductsInner.shipFromBranch) &&
+        Objects.equals(this.requestDetails, returnsDetailsResponseProductsInner.requestDetails) &&
+        Objects.equals(this.additionalDetails, returnsDetailsResponseProductsInner.additionalDetails);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(ingramLineNumber, description, ingramPartNumber, vendorPartNumber, upc, invoiceDate, invoiceNumber, customerOrderNumber, requestDetails, quantity, unitPrice, extendedPrice, status, returnBranch, shipFromBranch);
+    return Objects.hash(ingramLineNumber, description, ingramPartNumber, vendorPartNumber, upc, invoiceDate, invoiceNumber, customerOrderNumber, quantity, unitPrice, extendedPrice, status, returnBranch, shipFromBranch, requestDetails, additionalDetails);
   }
 
   @Override
@@ -445,13 +468,14 @@ public class ReturnsDetailsResponseProductsInner {
     sb.append("    invoiceDate: ").append(toIndentedString(invoiceDate)).append("\n");
     sb.append("    invoiceNumber: ").append(toIndentedString(invoiceNumber)).append("\n");
     sb.append("    customerOrderNumber: ").append(toIndentedString(customerOrderNumber)).append("\n");
-    sb.append("    requestDetails: ").append(toIndentedString(requestDetails)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
     sb.append("    unitPrice: ").append(toIndentedString(unitPrice)).append("\n");
     sb.append("    extendedPrice: ").append(toIndentedString(extendedPrice)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    returnBranch: ").append(toIndentedString(returnBranch)).append("\n");
     sb.append("    shipFromBranch: ").append(toIndentedString(shipFromBranch)).append("\n");
+    sb.append("    requestDetails: ").append(toIndentedString(requestDetails)).append("\n");
+    sb.append("    additionalDetails: ").append(toIndentedString(additionalDetails)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -482,13 +506,14 @@ public class ReturnsDetailsResponseProductsInner {
     openapiFields.add("invoiceDate");
     openapiFields.add("invoiceNumber");
     openapiFields.add("customerOrderNumber");
-    openapiFields.add("requestDetails");
     openapiFields.add("quantity");
     openapiFields.add("unitPrice");
     openapiFields.add("extendedPrice");
     openapiFields.add("status");
     openapiFields.add("returnBranch");
     openapiFields.add("shipFromBranch");
+    openapiFields.add("requestDetails");
+    openapiFields.add("additionalDetails");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -527,14 +552,14 @@ public class ReturnsDetailsResponseProductsInner {
       if ((jsonObj.get("upc") != null && !jsonObj.get("upc").isJsonNull()) && !jsonObj.get("upc").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `upc` to be a primitive type in the JSON string but got `%s`", jsonObj.get("upc").toString()));
       }
+      if ((jsonObj.get("invoiceDate") != null && !jsonObj.get("invoiceDate").isJsonNull()) && !jsonObj.get("invoiceDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `invoiceDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceDate").toString()));
+      }
       if ((jsonObj.get("invoiceNumber") != null && !jsonObj.get("invoiceNumber").isJsonNull()) && !jsonObj.get("invoiceNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `invoiceNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceNumber").toString()));
       }
       if ((jsonObj.get("customerOrderNumber") != null && !jsonObj.get("customerOrderNumber").isJsonNull()) && !jsonObj.get("customerOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
-      }
-      if ((jsonObj.get("requestDetails") != null && !jsonObj.get("requestDetails").isJsonNull()) && !jsonObj.get("requestDetails").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `requestDetails` to be a primitive type in the JSON string but got `%s`", jsonObj.get("requestDetails").toString()));
       }
       if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
@@ -544,6 +569,12 @@ public class ReturnsDetailsResponseProductsInner {
       }
       if ((jsonObj.get("shipFromBranch") != null && !jsonObj.get("shipFromBranch").isJsonNull()) && !jsonObj.get("shipFromBranch").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `shipFromBranch` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipFromBranch").toString()));
+      }
+      if ((jsonObj.get("requestDetails") != null && !jsonObj.get("requestDetails").isJsonNull()) && !jsonObj.get("requestDetails").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `requestDetails` to be a primitive type in the JSON string but got `%s`", jsonObj.get("requestDetails").toString()));
+      }
+      if ((jsonObj.get("additionalDetails") != null && !jsonObj.get("additionalDetails").isJsonNull()) && !jsonObj.get("additionalDetails").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `additionalDetails` to be a primitive type in the JSON string but got `%s`", jsonObj.get("additionalDetails").toString()));
       }
   }
 

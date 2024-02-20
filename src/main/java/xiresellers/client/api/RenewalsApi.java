@@ -259,7 +259,6 @@ public class RenewalsApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param contentType The media type for JSON Request. (required)
      * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @param customerOrderNumber The reseller&#39;s unique PO/Order number. (optional)
      * @param ingramPurchaseOrderNumber Sales order number. (optional)
@@ -279,7 +278,7 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postRenewalssearchCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String contentType, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call postRenewalssearchCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -344,10 +343,6 @@ public class RenewalsApi {
             localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
         }
 
-        if (contentType != null) {
-            localVarHeaderParams.put("Content Type", localVarApiClient.parameterToString(contentType));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -369,7 +364,7 @@ public class RenewalsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call postRenewalssearchValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String contentType, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call postRenewalssearchValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling postRenewalssearch(Async)");
@@ -385,12 +380,7 @@ public class RenewalsApi {
             throw new ApiException("Missing the required parameter 'imCorrelationID' when calling postRenewalssearch(Async)");
         }
 
-        // verify the required parameter 'contentType' is set
-        if (contentType == null) {
-            throw new ApiException("Missing the required parameter 'contentType' when calling postRenewalssearch(Async)");
-        }
-
-        return postRenewalssearchCall(imCustomerNumber, imCountryCode, imCorrelationID, contentType, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest, _callback);
+        return postRenewalssearchCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest, _callback);
 
     }
 
@@ -400,7 +390,6 @@ public class RenewalsApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param contentType The media type for JSON Request. (required)
      * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @param customerOrderNumber The reseller&#39;s unique PO/Order number. (optional)
      * @param ingramPurchaseOrderNumber Sales order number. (optional)
@@ -419,8 +408,8 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public RenewalsSearchResponse postRenewalssearch(String imCustomerNumber, String imCountryCode, String imCorrelationID, String contentType, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest) throws ApiException {
-        ApiResponse<RenewalsSearchResponse> localVarResp = postRenewalssearchWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, contentType, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest);
+    public RenewalsSearchResponse postRenewalssearch(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest) throws ApiException {
+        ApiResponse<RenewalsSearchResponse> localVarResp = postRenewalssearchWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest);
         return localVarResp.getData();
     }
 
@@ -430,7 +419,6 @@ public class RenewalsApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param contentType The media type for JSON Request. (required)
      * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @param customerOrderNumber The reseller&#39;s unique PO/Order number. (optional)
      * @param ingramPurchaseOrderNumber Sales order number. (optional)
@@ -449,8 +437,8 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<RenewalsSearchResponse> postRenewalssearchWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String contentType, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest) throws ApiException {
-        okhttp3.Call localVarCall = postRenewalssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, contentType, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest, null);
+    public ApiResponse<RenewalsSearchResponse> postRenewalssearchWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest) throws ApiException {
+        okhttp3.Call localVarCall = postRenewalssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest, null);
         Type localVarReturnType = new TypeToken<RenewalsSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -461,7 +449,6 @@ public class RenewalsApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param contentType The media type for JSON Request. (required)
      * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @param customerOrderNumber The reseller&#39;s unique PO/Order number. (optional)
      * @param ingramPurchaseOrderNumber Sales order number. (optional)
@@ -481,9 +468,9 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postRenewalssearchAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String contentType, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest, final ApiCallback<RenewalsSearchResponse> _callback) throws ApiException {
+    public okhttp3.Call postRenewalssearchAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest, final ApiCallback<RenewalsSearchResponse> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = postRenewalssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, contentType, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest, _callback);
+        okhttp3.Call localVarCall = postRenewalssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest, _callback);
         Type localVarReturnType = new TypeToken<RenewalsSearchResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
