@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * Additional Information related to the product.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T09:00:28.102704Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T10:02:29.305984Z[Etc/UTC]")
 public class ProductDetailResponseAdditionalInformation {
   public static final String SERIALIZED_NAME_PRODUCT_WEIGHT = "productWeight";
   @SerializedName(SERIALIZED_NAME_PRODUCT_WEIGHT)

@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T09:00:28.102704Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T10:02:29.305984Z[Etc/UTC]")
 public class InvoiceSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)

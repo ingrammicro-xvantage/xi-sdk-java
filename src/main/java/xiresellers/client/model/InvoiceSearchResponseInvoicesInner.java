@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceSearchResponseInvoicesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T09:00:28.102704Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T10:02:29.305984Z[Etc/UTC]")
 public class InvoiceSearchResponseInvoicesInner {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE = "paymentTermsDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE)
@@ -84,17 +84,29 @@ public class InvoiceSearchResponseInvoicesInner {
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
   private String customerOrderNumber;
 
-  public static final String SERIALIZED_NAME_ORDER_CREATE_DATE = "orderCreateDate";
-  @SerializedName(SERIALIZED_NAME_ORDER_CREATE_DATE)
-  private String orderCreateDate;
-
   public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
   @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
   private String endCustomerOrderNumber;
 
+  public static final String SERIALIZED_NAME_ORDER_CREATE_DATE = "orderCreateDate";
+  @SerializedName(SERIALIZED_NAME_ORDER_CREATE_DATE)
+  private String orderCreateDate;
+
   public static final String SERIALIZED_NAME_INVOICE_AMOUNT_INCL_TAX = "invoiceAmountInclTax";
   @SerializedName(SERIALIZED_NAME_INVOICE_AMOUNT_INCL_TAX)
   private BigDecimal invoiceAmountInclTax;
+
+  public static final String SERIALIZED_NAME_FORGNTOTALAMOUNT = "forgntotalamount";
+  @SerializedName(SERIALIZED_NAME_FORGNTOTALAMOUNT)
+  private BigDecimal forgntotalamount;
+
+  public static final String SERIALIZED_NAME_GST_INVOICE_NUMBER = "gstInvoiceNumber";
+  @SerializedName(SERIALIZED_NAME_GST_INVOICE_NUMBER)
+  private String gstInvoiceNumber;
+
+  public static final String SERIALIZED_NAME_ISFECCENABLED = "isfeccenabled";
+  @SerializedName(SERIALIZED_NAME_ISFECCENABLED)
+  private Boolean isfeccenabled;
 
   public InvoiceSearchResponseInvoicesInner() {
   }
@@ -251,25 +263,6 @@ public class InvoiceSearchResponseInvoicesInner {
   }
 
 
-  public InvoiceSearchResponseInvoicesInner orderCreateDate(String orderCreateDate) {
-    this.orderCreateDate = orderCreateDate;
-    return this;
-  }
-
-   /**
-   * Order Create Date.
-   * @return orderCreateDate
-  **/
-  @javax.annotation.Nullable
-  public String getOrderCreateDate() {
-    return orderCreateDate;
-  }
-
-  public void setOrderCreateDate(String orderCreateDate) {
-    this.orderCreateDate = orderCreateDate;
-  }
-
-
   public InvoiceSearchResponseInvoicesInner endCustomerOrderNumber(String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
     return this;
@@ -286,6 +279,25 @@ public class InvoiceSearchResponseInvoicesInner {
 
   public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
+  }
+
+
+  public InvoiceSearchResponseInvoicesInner orderCreateDate(String orderCreateDate) {
+    this.orderCreateDate = orderCreateDate;
+    return this;
+  }
+
+   /**
+   * Order Create Date.
+   * @return orderCreateDate
+  **/
+  @javax.annotation.Nullable
+  public String getOrderCreateDate() {
+    return orderCreateDate;
+  }
+
+  public void setOrderCreateDate(String orderCreateDate) {
+    this.orderCreateDate = orderCreateDate;
   }
 
 
@@ -308,6 +320,63 @@ public class InvoiceSearchResponseInvoicesInner {
   }
 
 
+  public InvoiceSearchResponseInvoicesInner forgntotalamount(BigDecimal forgntotalamount) {
+    this.forgntotalamount = forgntotalamount;
+    return this;
+  }
+
+   /**
+   * Get forgntotalamount
+   * @return forgntotalamount
+  **/
+  @javax.annotation.Nullable
+  public BigDecimal getForgntotalamount() {
+    return forgntotalamount;
+  }
+
+  public void setForgntotalamount(BigDecimal forgntotalamount) {
+    this.forgntotalamount = forgntotalamount;
+  }
+
+
+  public InvoiceSearchResponseInvoicesInner gstInvoiceNumber(String gstInvoiceNumber) {
+    this.gstInvoiceNumber = gstInvoiceNumber;
+    return this;
+  }
+
+   /**
+   * Get gstInvoiceNumber
+   * @return gstInvoiceNumber
+  **/
+  @javax.annotation.Nullable
+  public String getGstInvoiceNumber() {
+    return gstInvoiceNumber;
+  }
+
+  public void setGstInvoiceNumber(String gstInvoiceNumber) {
+    this.gstInvoiceNumber = gstInvoiceNumber;
+  }
+
+
+  public InvoiceSearchResponseInvoicesInner isfeccenabled(Boolean isfeccenabled) {
+    this.isfeccenabled = isfeccenabled;
+    return this;
+  }
+
+   /**
+   * Get isfeccenabled
+   * @return isfeccenabled
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIsfeccenabled() {
+    return isfeccenabled;
+  }
+
+  public void setIsfeccenabled(Boolean isfeccenabled) {
+    this.isfeccenabled = isfeccenabled;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -326,14 +395,17 @@ public class InvoiceSearchResponseInvoicesInner {
         Objects.equals(this.invoiceDueDate, invoiceSearchResponseInvoicesInner.invoiceDueDate) &&
         Objects.equals(this.invoicedAmountDue, invoiceSearchResponseInvoicesInner.invoicedAmountDue) &&
         Objects.equals(this.customerOrderNumber, invoiceSearchResponseInvoicesInner.customerOrderNumber) &&
-        Objects.equals(this.orderCreateDate, invoiceSearchResponseInvoicesInner.orderCreateDate) &&
         Objects.equals(this.endCustomerOrderNumber, invoiceSearchResponseInvoicesInner.endCustomerOrderNumber) &&
-        Objects.equals(this.invoiceAmountInclTax, invoiceSearchResponseInvoicesInner.invoiceAmountInclTax);
+        Objects.equals(this.orderCreateDate, invoiceSearchResponseInvoicesInner.orderCreateDate) &&
+        Objects.equals(this.invoiceAmountInclTax, invoiceSearchResponseInvoicesInner.invoiceAmountInclTax) &&
+        Objects.equals(this.forgntotalamount, invoiceSearchResponseInvoicesInner.forgntotalamount) &&
+        Objects.equals(this.gstInvoiceNumber, invoiceSearchResponseInvoicesInner.gstInvoiceNumber) &&
+        Objects.equals(this.isfeccenabled, invoiceSearchResponseInvoicesInner.isfeccenabled);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(paymentTermsDueDate, erpOrderNumber, invoiceNumber, invoiceStatus, invoiceDate, invoiceDueDate, invoicedAmountDue, customerOrderNumber, orderCreateDate, endCustomerOrderNumber, invoiceAmountInclTax);
+    return Objects.hash(paymentTermsDueDate, erpOrderNumber, invoiceNumber, invoiceStatus, invoiceDate, invoiceDueDate, invoicedAmountDue, customerOrderNumber, endCustomerOrderNumber, orderCreateDate, invoiceAmountInclTax, forgntotalamount, gstInvoiceNumber, isfeccenabled);
   }
 
   @Override
@@ -348,9 +420,12 @@ public class InvoiceSearchResponseInvoicesInner {
     sb.append("    invoiceDueDate: ").append(toIndentedString(invoiceDueDate)).append("\n");
     sb.append("    invoicedAmountDue: ").append(toIndentedString(invoicedAmountDue)).append("\n");
     sb.append("    customerOrderNumber: ").append(toIndentedString(customerOrderNumber)).append("\n");
-    sb.append("    orderCreateDate: ").append(toIndentedString(orderCreateDate)).append("\n");
     sb.append("    endCustomerOrderNumber: ").append(toIndentedString(endCustomerOrderNumber)).append("\n");
+    sb.append("    orderCreateDate: ").append(toIndentedString(orderCreateDate)).append("\n");
     sb.append("    invoiceAmountInclTax: ").append(toIndentedString(invoiceAmountInclTax)).append("\n");
+    sb.append("    forgntotalamount: ").append(toIndentedString(forgntotalamount)).append("\n");
+    sb.append("    gstInvoiceNumber: ").append(toIndentedString(gstInvoiceNumber)).append("\n");
+    sb.append("    isfeccenabled: ").append(toIndentedString(isfeccenabled)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -381,9 +456,12 @@ public class InvoiceSearchResponseInvoicesInner {
     openapiFields.add("invoiceDueDate");
     openapiFields.add("invoicedAmountDue");
     openapiFields.add("customerOrderNumber");
-    openapiFields.add("orderCreateDate");
     openapiFields.add("endCustomerOrderNumber");
+    openapiFields.add("orderCreateDate");
     openapiFields.add("invoiceAmountInclTax");
+    openapiFields.add("forgntotalamount");
+    openapiFields.add("gstInvoiceNumber");
+    openapiFields.add("isfeccenabled");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -431,11 +509,14 @@ public class InvoiceSearchResponseInvoicesInner {
       if ((jsonObj.get("customerOrderNumber") != null && !jsonObj.get("customerOrderNumber").isJsonNull()) && !jsonObj.get("customerOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
       }
+      if ((jsonObj.get("endCustomerOrderNumber") != null && !jsonObj.get("endCustomerOrderNumber").isJsonNull()) && !jsonObj.get("endCustomerOrderNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endCustomerOrderNumber").toString()));
+      }
       if ((jsonObj.get("orderCreateDate") != null && !jsonObj.get("orderCreateDate").isJsonNull()) && !jsonObj.get("orderCreateDate").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `orderCreateDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderCreateDate").toString()));
       }
-      if ((jsonObj.get("endCustomerOrderNumber") != null && !jsonObj.get("endCustomerOrderNumber").isJsonNull()) && !jsonObj.get("endCustomerOrderNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endCustomerOrderNumber").toString()));
+      if ((jsonObj.get("gstInvoiceNumber") != null && !jsonObj.get("gstInvoiceNumber").isJsonNull()) && !jsonObj.get("gstInvoiceNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `gstInvoiceNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("gstInvoiceNumber").toString()));
       }
   }
 

@@ -56,7 +56,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T09:00:28.102704Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T10:02:29.305984Z[Etc/UTC]")
 public class PriceAndAvailabilityResponseInner {
   public static final String SERIALIZED_NAME_PRODUCT_STATUS_CODE = "productStatusCode";
   @SerializedName(SERIALIZED_NAME_PRODUCT_STATUS_CODE)
