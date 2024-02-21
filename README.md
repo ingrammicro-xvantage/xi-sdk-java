@@ -45,20 +45,17 @@ Add this dependency to your project's POM:
 </dependency>
 ```
 
-### Gradle users
+### 
+If you want to compile it yourself, here's how:
 
-Add this dependency to your project's build file:
 
-```groovy
-  repositories {
-    mavenCentral()     // Needed if the 'xi.sdk.resellers' jar has been published to maven central.
-    mavenLocal()       // Needed if the 'xi.sdk.resellers' jar has been published to the local maven repo.
-  }
+```shell
+git clone https://github.com/ingrammicro-xvantage/xi-sdk-resellers-java.git
+cd xi-sdk-resellers-java
+mvn install       # Requires maven, download from https://maven.apache.org/download.html
 
-  dependencies {
-     implementation "xi.sdk.resellers:xi.sdk.resellers:1.0.0"
-  }
 ```
+
 
 ### Others
 
