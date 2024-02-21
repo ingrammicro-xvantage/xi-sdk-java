@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsSearchResponseReturnsClaimsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T08:44:05.228708Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T08:56:46.667951Z[Etc/UTC]")
 public class ReturnsSearchResponseReturnsClaimsInner {
   public static final String SERIALIZED_NAME_RETURN_CLAIM_ID = "returnClaimId";
   @SerializedName(SERIALIZED_NAME_RETURN_CLAIM_ID)

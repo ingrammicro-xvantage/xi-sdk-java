@@ -49,23 +49,23 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseTechnicalSpecificationsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T08:44:05.228708Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T08:56:46.667951Z[Etc/UTC]")
 public class ProductDetailResponseTechnicalSpecificationsInner {
   public static final String SERIALIZED_NAME_HEADER_NAME = "headerName";
   @SerializedName(SERIALIZED_NAME_HEADER_NAME)
   private String headerName;
 
-  public static final String SERIALIZED_NAME_ATTRIBUTEVALUE = "attributevalue";
-  @SerializedName(SERIALIZED_NAME_ATTRIBUTEVALUE)
-  private String attributevalue;
+  public static final String SERIALIZED_NAME_ATTRIBUTE_NAME = "attributeName";
+  @SerializedName(SERIALIZED_NAME_ATTRIBUTE_NAME)
+  private String attributeName;
 
-  public static final String SERIALIZED_NAME_ATTRIBUTEDISPLAY = "attributedisplay";
-  @SerializedName(SERIALIZED_NAME_ATTRIBUTEDISPLAY)
-  private String attributedisplay;
+  public static final String SERIALIZED_NAME_ATTRIBUTE_DISPLAY = "attributeDisplay";
+  @SerializedName(SERIALIZED_NAME_ATTRIBUTE_DISPLAY)
+  private String attributeDisplay;
 
-  public static final String SERIALIZED_NAME_ATTRIBUTENAME = "attributename";
-  @SerializedName(SERIALIZED_NAME_ATTRIBUTENAME)
-  private String attributename;
+  public static final String SERIALIZED_NAME_ATTRIBUTE_VALUE = "attributeValue";
+  @SerializedName(SERIALIZED_NAME_ATTRIBUTE_VALUE)
+  private String attributeValue;
 
   public ProductDetailResponseTechnicalSpecificationsInner() {
   }
@@ -89,60 +89,60 @@ public class ProductDetailResponseTechnicalSpecificationsInner {
   }
 
 
-  public ProductDetailResponseTechnicalSpecificationsInner attributevalue(String attributevalue) {
-    this.attributevalue = attributevalue;
-    return this;
-  }
-
-   /**
-   * Example : &#39;LCD Monitor&#39;
-   * @return attributevalue
-  **/
-  @javax.annotation.Nullable
-  public String getAttributevalue() {
-    return attributevalue;
-  }
-
-  public void setAttributevalue(String attributevalue) {
-    this.attributevalue = attributevalue;
-  }
-
-
-  public ProductDetailResponseTechnicalSpecificationsInner attributedisplay(String attributedisplay) {
-    this.attributedisplay = attributedisplay;
-    return this;
-  }
-
-   /**
-   * Example : &#39;Basic|Product Type|LCD Monitor&#39;
-   * @return attributedisplay
-  **/
-  @javax.annotation.Nullable
-  public String getAttributedisplay() {
-    return attributedisplay;
-  }
-
-  public void setAttributedisplay(String attributedisplay) {
-    this.attributedisplay = attributedisplay;
-  }
-
-
-  public ProductDetailResponseTechnicalSpecificationsInner attributename(String attributename) {
-    this.attributename = attributename;
+  public ProductDetailResponseTechnicalSpecificationsInner attributeName(String attributeName) {
+    this.attributeName = attributeName;
     return this;
   }
 
    /**
    * Example : &#39;Product Type&#39;
-   * @return attributename
+   * @return attributeName
   **/
   @javax.annotation.Nullable
-  public String getAttributename() {
-    return attributename;
+  public String getAttributeName() {
+    return attributeName;
   }
 
-  public void setAttributename(String attributename) {
-    this.attributename = attributename;
+  public void setAttributeName(String attributeName) {
+    this.attributeName = attributeName;
+  }
+
+
+  public ProductDetailResponseTechnicalSpecificationsInner attributeDisplay(String attributeDisplay) {
+    this.attributeDisplay = attributeDisplay;
+    return this;
+  }
+
+   /**
+   * Example : &#39;Basic|Product Type|LCD Monitor&#39;
+   * @return attributeDisplay
+  **/
+  @javax.annotation.Nullable
+  public String getAttributeDisplay() {
+    return attributeDisplay;
+  }
+
+  public void setAttributeDisplay(String attributeDisplay) {
+    this.attributeDisplay = attributeDisplay;
+  }
+
+
+  public ProductDetailResponseTechnicalSpecificationsInner attributeValue(String attributeValue) {
+    this.attributeValue = attributeValue;
+    return this;
+  }
+
+   /**
+   * Example : &#39;LCD Monitor&#39;
+   * @return attributeValue
+  **/
+  @javax.annotation.Nullable
+  public String getAttributeValue() {
+    return attributeValue;
+  }
+
+  public void setAttributeValue(String attributeValue) {
+    this.attributeValue = attributeValue;
   }
 
 
@@ -157,14 +157,14 @@ public class ProductDetailResponseTechnicalSpecificationsInner {
     }
     ProductDetailResponseTechnicalSpecificationsInner productDetailResponseTechnicalSpecificationsInner = (ProductDetailResponseTechnicalSpecificationsInner) o;
     return Objects.equals(this.headerName, productDetailResponseTechnicalSpecificationsInner.headerName) &&
-        Objects.equals(this.attributevalue, productDetailResponseTechnicalSpecificationsInner.attributevalue) &&
-        Objects.equals(this.attributedisplay, productDetailResponseTechnicalSpecificationsInner.attributedisplay) &&
-        Objects.equals(this.attributename, productDetailResponseTechnicalSpecificationsInner.attributename);
+        Objects.equals(this.attributeName, productDetailResponseTechnicalSpecificationsInner.attributeName) &&
+        Objects.equals(this.attributeDisplay, productDetailResponseTechnicalSpecificationsInner.attributeDisplay) &&
+        Objects.equals(this.attributeValue, productDetailResponseTechnicalSpecificationsInner.attributeValue);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(headerName, attributevalue, attributedisplay, attributename);
+    return Objects.hash(headerName, attributeName, attributeDisplay, attributeValue);
   }
 
   @Override
@@ -172,9 +172,9 @@ public class ProductDetailResponseTechnicalSpecificationsInner {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProductDetailResponseTechnicalSpecificationsInner {\n");
     sb.append("    headerName: ").append(toIndentedString(headerName)).append("\n");
-    sb.append("    attributevalue: ").append(toIndentedString(attributevalue)).append("\n");
-    sb.append("    attributedisplay: ").append(toIndentedString(attributedisplay)).append("\n");
-    sb.append("    attributename: ").append(toIndentedString(attributename)).append("\n");
+    sb.append("    attributeName: ").append(toIndentedString(attributeName)).append("\n");
+    sb.append("    attributeDisplay: ").append(toIndentedString(attributeDisplay)).append("\n");
+    sb.append("    attributeValue: ").append(toIndentedString(attributeValue)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -198,9 +198,9 @@ public class ProductDetailResponseTechnicalSpecificationsInner {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("headerName");
-    openapiFields.add("attributevalue");
-    openapiFields.add("attributedisplay");
-    openapiFields.add("attributename");
+    openapiFields.add("attributeName");
+    openapiFields.add("attributeDisplay");
+    openapiFields.add("attributeValue");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -230,14 +230,14 @@ public class ProductDetailResponseTechnicalSpecificationsInner {
       if ((jsonObj.get("headerName") != null && !jsonObj.get("headerName").isJsonNull()) && !jsonObj.get("headerName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `headerName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("headerName").toString()));
       }
-      if ((jsonObj.get("attributevalue") != null && !jsonObj.get("attributevalue").isJsonNull()) && !jsonObj.get("attributevalue").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `attributevalue` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributevalue").toString()));
+      if ((jsonObj.get("attributeName") != null && !jsonObj.get("attributeName").isJsonNull()) && !jsonObj.get("attributeName").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `attributeName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributeName").toString()));
       }
-      if ((jsonObj.get("attributedisplay") != null && !jsonObj.get("attributedisplay").isJsonNull()) && !jsonObj.get("attributedisplay").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `attributedisplay` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributedisplay").toString()));
+      if ((jsonObj.get("attributeDisplay") != null && !jsonObj.get("attributeDisplay").isJsonNull()) && !jsonObj.get("attributeDisplay").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `attributeDisplay` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributeDisplay").toString()));
       }
-      if ((jsonObj.get("attributename") != null && !jsonObj.get("attributename").isJsonNull()) && !jsonObj.get("attributename").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `attributename` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributename").toString()));
+      if ((jsonObj.get("attributeValue") != null && !jsonObj.get("attributeValue").isJsonNull()) && !jsonObj.get("attributeValue").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `attributeValue` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributeValue").toString()));
       }
   }
 
