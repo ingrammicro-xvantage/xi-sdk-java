@@ -86,6 +86,14 @@ public class ProductDetailResponseIndicatorsTest {
     }
 
     /**
+     * Test the property 'replacementType'
+     */
+    @Test
+    public void replacementTypeTest() {
+        // TODO: test replacementType
+    }
+
+    /**
      * Test the property 'isDirectship'
      */
     @Test

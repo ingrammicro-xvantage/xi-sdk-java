@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * Indicators of the Product
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:08:49.827408Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:31:50.207261Z[Etc/UTC]")
 public class ProductDetailResponseIndicators {
   public static final String SERIALIZED_NAME_HAS_WARRANTY = "hasWarranty";
   @SerializedName(SERIALIZED_NAME_HAS_WARRANTY)
@@ -74,6 +74,10 @@ public class ProductDetailResponseIndicators {
   public static final String SERIALIZED_NAME_IS_REPLACEMENT_PRODUCT = "isReplacementProduct";
   @SerializedName(SERIALIZED_NAME_IS_REPLACEMENT_PRODUCT)
   private Boolean isReplacementProduct;
+
+  public static final String SERIALIZED_NAME_REPLACEMENT_TYPE = "replacementType";
+  @SerializedName(SERIALIZED_NAME_REPLACEMENT_TYPE)
+  private String replacementType;
 
   public static final String SERIALIZED_NAME_IS_DIRECTSHIP = "isDirectship";
   @SerializedName(SERIALIZED_NAME_IS_DIRECTSHIP)
@@ -289,6 +293,25 @@ public class ProductDetailResponseIndicators {
 
   public void setIsReplacementProduct(Boolean isReplacementProduct) {
     this.isReplacementProduct = isReplacementProduct;
+  }
+
+
+  public ProductDetailResponseIndicators replacementType(String replacementType) {
+    this.replacementType = replacementType;
+    return this;
+  }
+
+   /**
+   * Get replacementType
+   * @return replacementType
+  **/
+  @javax.annotation.Nullable
+  public String getReplacementType() {
+    return replacementType;
+  }
+
+  public void setReplacementType(String replacementType) {
+    this.replacementType = replacementType;
   }
 
 
@@ -783,6 +806,7 @@ public class ProductDetailResponseIndicators {
         Objects.equals(this.isBackOrderAllowed, productDetailResponseIndicators.isBackOrderAllowed) &&
         Objects.equals(this.isShippedFromPartner, productDetailResponseIndicators.isShippedFromPartner) &&
         Objects.equals(this.isReplacementProduct, productDetailResponseIndicators.isReplacementProduct) &&
+        Objects.equals(this.replacementType, productDetailResponseIndicators.replacementType) &&
         Objects.equals(this.isDirectship, productDetailResponseIndicators.isDirectship) &&
         Objects.equals(this.isDownloadable, productDetailResponseIndicators.isDownloadable) &&
         Objects.equals(this.isDigitalType, productDetailResponseIndicators.isDigitalType) &&
@@ -812,7 +836,7 @@ public class ProductDetailResponseIndicators {
 
   @Override
   public int hashCode() {
-    return Objects.hash(hasWarranty, isNewProduct, hasReturnLimits, isBackOrderAllowed, isShippedFromPartner, isReplacementProduct, isDirectship, isDownloadable, isDigitalType, skuType, hasStdSpecialPrice, hasAcopSpecialPrice, hasAcopQuantityBreak, hasStdWebDiscount, hasSpecialBid, isExportableToCountry, isDiscontinuedProduct, isRefurbishedProduct, isReturnableProduct, isIngramShip, isEnduserRequired, isHeavyWeight, hasLtl, isClearanceProduct, hasBundle, isOversizeProduct, isPreorderProduct, isLicenseProduct, isDirectshipOrderable, isServiceSku, isConfigurable);
+    return Objects.hash(hasWarranty, isNewProduct, hasReturnLimits, isBackOrderAllowed, isShippedFromPartner, isReplacementProduct, replacementType, isDirectship, isDownloadable, isDigitalType, skuType, hasStdSpecialPrice, hasAcopSpecialPrice, hasAcopQuantityBreak, hasStdWebDiscount, hasSpecialBid, isExportableToCountry, isDiscontinuedProduct, isRefurbishedProduct, isReturnableProduct, isIngramShip, isEnduserRequired, isHeavyWeight, hasLtl, isClearanceProduct, hasBundle, isOversizeProduct, isPreorderProduct, isLicenseProduct, isDirectshipOrderable, isServiceSku, isConfigurable);
   }
 
   @Override
@@ -825,6 +849,7 @@ public class ProductDetailResponseIndicators {
     sb.append("    isBackOrderAllowed: ").append(toIndentedString(isBackOrderAllowed)).append("\n");
     sb.append("    isShippedFromPartner: ").append(toIndentedString(isShippedFromPartner)).append("\n");
     sb.append("    isReplacementProduct: ").append(toIndentedString(isReplacementProduct)).append("\n");
+    sb.append("    replacementType: ").append(toIndentedString(replacementType)).append("\n");
     sb.append("    isDirectship: ").append(toIndentedString(isDirectship)).append("\n");
     sb.append("    isDownloadable: ").append(toIndentedString(isDownloadable)).append("\n");
     sb.append("    isDigitalType: ").append(toIndentedString(isDigitalType)).append("\n");
@@ -878,6 +903,7 @@ public class ProductDetailResponseIndicators {
     openapiFields.add("isBackOrderAllowed");
     openapiFields.add("isShippedFromPartner");
     openapiFields.add("isReplacementProduct");
+    openapiFields.add("replacementType");
     openapiFields.add("isDirectship");
     openapiFields.add("isDownloadable");
     openapiFields.add("isDigitalType");
@@ -929,6 +955,9 @@ public class ProductDetailResponseIndicators {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("replacementType") != null && !jsonObj.get("replacementType").isJsonNull()) && !jsonObj.get("replacementType").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `replacementType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("replacementType").toString()));
+      }
       if ((jsonObj.get("skuType") != null && !jsonObj.get("skuType").isJsonNull()) && !jsonObj.get("skuType").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `skuType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("skuType").toString()));
       }

@@ -51,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerEstimatedDatesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:08:49.827408Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:31:50.207261Z[Etc/UTC]")
 public class OrderDetailB2BLinesInnerEstimatedDatesInner {
   public static final String SERIALIZED_NAME_SHIP = "ship";
   @SerializedName(SERIALIZED_NAME_SHIP)
