@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * Indicators of the Product
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:31:50.207261Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:55:29.335518Z[Etc/UTC]")
 public class ProductDetailResponseIndicators {
   public static final String SERIALIZED_NAME_HAS_WARRANTY = "hasWarranty";
   @SerializedName(SERIALIZED_NAME_HAS_WARRANTY)
@@ -111,6 +111,10 @@ public class ProductDetailResponseIndicators {
   @SerializedName(SERIALIZED_NAME_HAS_STD_WEB_DISCOUNT)
   private Boolean hasStdWebDiscount;
 
+  public static final String SERIALIZED_NAME_HAS_ACOP_WEB_DISCOUNT = "hasAcopWebDiscount";
+  @SerializedName(SERIALIZED_NAME_HAS_ACOP_WEB_DISCOUNT)
+  private Boolean hasAcopWebDiscount;
+
   public static final String SERIALIZED_NAME_HAS_SPECIAL_BID = "hasSpecialBid";
   @SerializedName(SERIALIZED_NAME_HAS_SPECIAL_BID)
   private Boolean hasSpecialBid;
@@ -123,9 +127,9 @@ public class ProductDetailResponseIndicators {
   @SerializedName(SERIALIZED_NAME_IS_DISCONTINUED_PRODUCT)
   private Boolean isDiscontinuedProduct;
 
-  public static final String SERIALIZED_NAME_IS_REFURBISHED_PRODUCT = "isRefurbishedProduct";
-  @SerializedName(SERIALIZED_NAME_IS_REFURBISHED_PRODUCT)
-  private Boolean isRefurbishedProduct;
+  public static final String SERIALIZED_NAME_IS_REFURBISHED = "isRefurbished";
+  @SerializedName(SERIALIZED_NAME_IS_REFURBISHED)
+  private Boolean isRefurbished;
 
   public static final String SERIALIZED_NAME_IS_RETURNABLE_PRODUCT = "isReturnableProduct";
   @SerializedName(SERIALIZED_NAME_IS_RETURNABLE_PRODUCT)
@@ -467,6 +471,25 @@ public class ProductDetailResponseIndicators {
   }
 
 
+  public ProductDetailResponseIndicators hasAcopWebDiscount(Boolean hasAcopWebDiscount) {
+    this.hasAcopWebDiscount = hasAcopWebDiscount;
+    return this;
+  }
+
+   /**
+   * Get hasAcopWebDiscount
+   * @return hasAcopWebDiscount
+  **/
+  @javax.annotation.Nullable
+  public Boolean getHasAcopWebDiscount() {
+    return hasAcopWebDiscount;
+  }
+
+  public void setHasAcopWebDiscount(Boolean hasAcopWebDiscount) {
+    this.hasAcopWebDiscount = hasAcopWebDiscount;
+  }
+
+
   public ProductDetailResponseIndicators hasSpecialBid(Boolean hasSpecialBid) {
     this.hasSpecialBid = hasSpecialBid;
     return this;
@@ -524,22 +547,22 @@ public class ProductDetailResponseIndicators {
   }
 
 
-  public ProductDetailResponseIndicators isRefurbishedProduct(Boolean isRefurbishedProduct) {
-    this.isRefurbishedProduct = isRefurbishedProduct;
+  public ProductDetailResponseIndicators isRefurbished(Boolean isRefurbished) {
+    this.isRefurbished = isRefurbished;
     return this;
   }
 
    /**
    * Boolean that indicates whether product is refurbished.
-   * @return isRefurbishedProduct
+   * @return isRefurbished
   **/
   @javax.annotation.Nullable
-  public Boolean getIsRefurbishedProduct() {
-    return isRefurbishedProduct;
+  public Boolean getIsRefurbished() {
+    return isRefurbished;
   }
 
-  public void setIsRefurbishedProduct(Boolean isRefurbishedProduct) {
-    this.isRefurbishedProduct = isRefurbishedProduct;
+  public void setIsRefurbished(Boolean isRefurbished) {
+    this.isRefurbished = isRefurbished;
   }
 
 
@@ -815,10 +838,11 @@ public class ProductDetailResponseIndicators {
         Objects.equals(this.hasAcopSpecialPrice, productDetailResponseIndicators.hasAcopSpecialPrice) &&
         Objects.equals(this.hasAcopQuantityBreak, productDetailResponseIndicators.hasAcopQuantityBreak) &&
         Objects.equals(this.hasStdWebDiscount, productDetailResponseIndicators.hasStdWebDiscount) &&
+        Objects.equals(this.hasAcopWebDiscount, productDetailResponseIndicators.hasAcopWebDiscount) &&
         Objects.equals(this.hasSpecialBid, productDetailResponseIndicators.hasSpecialBid) &&
         Objects.equals(this.isExportableToCountry, productDetailResponseIndicators.isExportableToCountry) &&
         Objects.equals(this.isDiscontinuedProduct, productDetailResponseIndicators.isDiscontinuedProduct) &&
-        Objects.equals(this.isRefurbishedProduct, productDetailResponseIndicators.isRefurbishedProduct) &&
+        Objects.equals(this.isRefurbished, productDetailResponseIndicators.isRefurbished) &&
         Objects.equals(this.isReturnableProduct, productDetailResponseIndicators.isReturnableProduct) &&
         Objects.equals(this.isIngramShip, productDetailResponseIndicators.isIngramShip) &&
         Objects.equals(this.isEnduserRequired, productDetailResponseIndicators.isEnduserRequired) &&
@@ -836,7 +860,7 @@ public class ProductDetailResponseIndicators {
 
   @Override
   public int hashCode() {
-    return Objects.hash(hasWarranty, isNewProduct, hasReturnLimits, isBackOrderAllowed, isShippedFromPartner, isReplacementProduct, replacementType, isDirectship, isDownloadable, isDigitalType, skuType, hasStdSpecialPrice, hasAcopSpecialPrice, hasAcopQuantityBreak, hasStdWebDiscount, hasSpecialBid, isExportableToCountry, isDiscontinuedProduct, isRefurbishedProduct, isReturnableProduct, isIngramShip, isEnduserRequired, isHeavyWeight, hasLtl, isClearanceProduct, hasBundle, isOversizeProduct, isPreorderProduct, isLicenseProduct, isDirectshipOrderable, isServiceSku, isConfigurable);
+    return Objects.hash(hasWarranty, isNewProduct, hasReturnLimits, isBackOrderAllowed, isShippedFromPartner, isReplacementProduct, replacementType, isDirectship, isDownloadable, isDigitalType, skuType, hasStdSpecialPrice, hasAcopSpecialPrice, hasAcopQuantityBreak, hasStdWebDiscount, hasAcopWebDiscount, hasSpecialBid, isExportableToCountry, isDiscontinuedProduct, isRefurbished, isReturnableProduct, isIngramShip, isEnduserRequired, isHeavyWeight, hasLtl, isClearanceProduct, hasBundle, isOversizeProduct, isPreorderProduct, isLicenseProduct, isDirectshipOrderable, isServiceSku, isConfigurable);
   }
 
   @Override
@@ -858,10 +882,11 @@ public class ProductDetailResponseIndicators {
     sb.append("    hasAcopSpecialPrice: ").append(toIndentedString(hasAcopSpecialPrice)).append("\n");
     sb.append("    hasAcopQuantityBreak: ").append(toIndentedString(hasAcopQuantityBreak)).append("\n");
     sb.append("    hasStdWebDiscount: ").append(toIndentedString(hasStdWebDiscount)).append("\n");
+    sb.append("    hasAcopWebDiscount: ").append(toIndentedString(hasAcopWebDiscount)).append("\n");
     sb.append("    hasSpecialBid: ").append(toIndentedString(hasSpecialBid)).append("\n");
     sb.append("    isExportableToCountry: ").append(toIndentedString(isExportableToCountry)).append("\n");
     sb.append("    isDiscontinuedProduct: ").append(toIndentedString(isDiscontinuedProduct)).append("\n");
-    sb.append("    isRefurbishedProduct: ").append(toIndentedString(isRefurbishedProduct)).append("\n");
+    sb.append("    isRefurbished: ").append(toIndentedString(isRefurbished)).append("\n");
     sb.append("    isReturnableProduct: ").append(toIndentedString(isReturnableProduct)).append("\n");
     sb.append("    isIngramShip: ").append(toIndentedString(isIngramShip)).append("\n");
     sb.append("    isEnduserRequired: ").append(toIndentedString(isEnduserRequired)).append("\n");
@@ -912,10 +937,11 @@ public class ProductDetailResponseIndicators {
     openapiFields.add("hasAcopSpecialPrice");
     openapiFields.add("hasAcopQuantityBreak");
     openapiFields.add("hasStdWebDiscount");
+    openapiFields.add("hasAcopWebDiscount");
     openapiFields.add("hasSpecialBid");
     openapiFields.add("isExportableToCountry");
     openapiFields.add("isDiscontinuedProduct");
-    openapiFields.add("isRefurbishedProduct");
+    openapiFields.add("isRefurbished");
     openapiFields.add("isReturnableProduct");
     openapiFields.add("isIngramShip");
     openapiFields.add("isEnduserRequired");
