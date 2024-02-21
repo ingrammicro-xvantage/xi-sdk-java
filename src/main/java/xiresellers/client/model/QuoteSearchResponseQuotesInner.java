@@ -51,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteSearchResponseQuotesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T08:56:46.667951Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:34:45.471304Z[Etc/UTC]")
 public class QuoteSearchResponseQuotesInner {
   public static final String SERIALIZED_NAME_QUOTE_GUID = "quoteGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_GUID)

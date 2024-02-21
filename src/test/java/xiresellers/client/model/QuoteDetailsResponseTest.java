@@ -100,14 +100,6 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
-     * Test the property 'closingReason'
-     */
-    @Test
-    public void closingReasonTest() {
-        // TODO: test closingReason
-    }
-
-    /**
      * Test the property 'specialBidId'
      */
     @Test
@@ -137,6 +129,22 @@ public class QuoteDetailsResponseTest {
     @Test
     public void statusTest() {
         // TODO: test status
+    }
+
+    /**
+     * Test the property 'closingReason'
+     */
+    @Test
+    public void closingReasonTest() {
+        // TODO: test closingReason
+    }
+
+    /**
+     * Test the property 'dateClosed'
+     */
+    @Test
+    public void dateClosedTest() {
+        // TODO: test dateClosed
     }
 
     /**
@@ -204,11 +212,11 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
-     * Test the property 'quoteSybType'
+     * Test the property 'quoteSubType'
      */
     @Test
-    public void quoteSybTypeTest() {
-        // TODO: test quoteSybType
+    public void quoteSubTypeTest() {
+        // TODO: test quoteSubType
     }
 
     /**

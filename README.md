@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-02-21T08:56:46.667951Z[Etc/UTC]
+  - Build date: 2024-02-21T11:34:45.471304Z[Etc/UTC]
 
 For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
 
@@ -352,10 +352,6 @@ Authentication schemes defined for the API:
 It's recommended to create an instance of `ApiClient` per thread in a multithreaded environment to avoid any potential issues.
 
 ## Author
--[Ingram Micro Xvantage](https://github.com/ingrammicro-xvantage)
 
-## Contact
 
-For any inquiries or support, please feel free to contact us at:
 
-- Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)
