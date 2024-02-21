@@ -20,7 +20,6 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.Arrays;
 
 import com.google.gson.Gson;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponseAdditionalAttributesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:34:45.471304Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:49:36.439472Z[Etc/UTC]")
 public class RenewalsDetailsResponseAdditionalAttributesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_DESCRIPTION = "attributeDescription";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_DESCRIPTION)
@@ -62,7 +61,7 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
 
   public static final String SERIALIZED_NAME_START_DATE = "startDate";
   @SerializedName(SERIALIZED_NAME_START_DATE)
-  private LocalDate startDate;
+  private String startDate;
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expirationDate";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
@@ -113,7 +112,7 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
   }
 
 
-  public RenewalsDetailsResponseAdditionalAttributesInner startDate(LocalDate startDate) {
+  public RenewalsDetailsResponseAdditionalAttributesInner startDate(String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -123,11 +122,11 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
    * @return startDate
   **/
   @javax.annotation.Nullable
-  public LocalDate getStartDate() {
+  public String getStartDate() {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(String startDate) {
     this.startDate = startDate;
   }
 
@@ -259,6 +258,9 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
       }
       if ((jsonObj.get("attributeValue") != null && !jsonObj.get("attributeValue").isJsonNull()) && !jsonObj.get("attributeValue").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `attributeValue` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributeValue").toString()));
+      }
+      if ((jsonObj.get("startDate") != null && !jsonObj.get("startDate").isJsonNull()) && !jsonObj.get("startDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `startDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("startDate").toString()));
       }
       if ((jsonObj.get("expirationDate") != null && !jsonObj.get("expirationDate").isJsonNull()) && !jsonObj.get("expirationDate").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `expirationDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("expirationDate").toString()));

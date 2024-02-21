@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-02-21T11:34:45.471304Z[Etc/UTC]
+  - Build date: 2024-02-21T11:49:36.439472Z[Etc/UTC]
 
 For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
 
@@ -45,17 +45,20 @@ Add this dependency to your project's POM:
 </dependency>
 ```
 
-### 
-If you want to compile it yourself, here's how:
+### Gradle users
 
+Add this dependency to your project's build file:
 
-```shell
-git clone https://github.com/ingrammicro-xvantage/xi-sdk-resellers-java.git
-cd xi-sdk-resellers-java
-mvn install       # Requires maven, download from https://maven.apache.org/download.html
+```groovy
+  repositories {
+    mavenCentral()     // Needed if the 'xi.sdk.resellers' jar has been published to maven central.
+    mavenLocal()       // Needed if the 'xi.sdk.resellers' jar has been published to the local maven repo.
+  }
 
+  dependencies {
+     implementation "xi.sdk.resellers:xi.sdk.resellers:1.0.0"
+  }
 ```
-
 
 ### Others
 
