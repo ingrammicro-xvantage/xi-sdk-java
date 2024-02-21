@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
@@ -136,6 +136,10 @@ public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_LEASING_INSTRUCTIONS = "leasingInstructions";
   @SerializedName(SERIALIZED_NAME_LEASING_INSTRUCTIONS)
   private String leasingInstructions;
+
+  public static final String SERIALIZED_NAME_QUOTE_SYB_TYPE = "quoteSybType";
+  @SerializedName(SERIALIZED_NAME_QUOTE_SYB_TYPE)
+  private String quoteSybType;
 
   public static final String SERIALIZED_NAME_RESELLER_INFO = "resellerInfo";
   @SerializedName(SERIALIZED_NAME_RESELLER_INFO)
@@ -552,6 +556,25 @@ public class QuoteDetailsResponse {
   }
 
 
+  public QuoteDetailsResponse quoteSybType(String quoteSybType) {
+    this.quoteSybType = quoteSybType;
+    return this;
+  }
+
+   /**
+   * Get quoteSybType
+   * @return quoteSybType
+  **/
+  @javax.annotation.Nullable
+  public String getQuoteSybType() {
+    return quoteSybType;
+  }
+
+  public void setQuoteSybType(String quoteSybType) {
+    this.quoteSybType = quoteSybType;
+  }
+
+
   public QuoteDetailsResponse resellerInfo(QuoteDetailsResponseResellerInfo resellerInfo) {
     this.resellerInfo = resellerInfo;
     return this;
@@ -750,6 +773,7 @@ public class QuoteDetailsResponse {
         Objects.equals(this.quoteType, quoteDetailsResponse.quoteType) &&
         Objects.equals(this.leaseInfo, quoteDetailsResponse.leaseInfo) &&
         Objects.equals(this.leasingInstructions, quoteDetailsResponse.leasingInstructions) &&
+        Objects.equals(this.quoteSybType, quoteDetailsResponse.quoteSybType) &&
         Objects.equals(this.resellerInfo, quoteDetailsResponse.resellerInfo) &&
         Objects.equals(this.endUserInfo, quoteDetailsResponse.endUserInfo) &&
         Objects.equals(this.products, quoteDetailsResponse.products) &&
@@ -762,7 +786,7 @@ public class QuoteDetailsResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteName, quoteNumber, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, closingReason, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, status, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, resellerInfo, endUserInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extendedQuotePriceTotal, additionalAttributes);
+    return Objects.hash(quoteName, quoteNumber, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, closingReason, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, status, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, quoteSybType, resellerInfo, endUserInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extendedQuotePriceTotal, additionalAttributes);
   }
 
   @Override
@@ -789,6 +813,7 @@ public class QuoteDetailsResponse {
     sb.append("    quoteType: ").append(toIndentedString(quoteType)).append("\n");
     sb.append("    leaseInfo: ").append(toIndentedString(leaseInfo)).append("\n");
     sb.append("    leasingInstructions: ").append(toIndentedString(leasingInstructions)).append("\n");
+    sb.append("    quoteSybType: ").append(toIndentedString(quoteSybType)).append("\n");
     sb.append("    resellerInfo: ").append(toIndentedString(resellerInfo)).append("\n");
     sb.append("    endUserInfo: ").append(toIndentedString(endUserInfo)).append("\n");
     sb.append("    products: ").append(toIndentedString(products)).append("\n");
@@ -839,6 +864,7 @@ public class QuoteDetailsResponse {
     openapiFields.add("quoteType");
     openapiFields.add("leaseInfo");
     openapiFields.add("leasingInstructions");
+    openapiFields.add("quoteSybType");
     openapiFields.add("resellerInfo");
     openapiFields.add("endUserInfo");
     openapiFields.add("products");
@@ -932,6 +958,9 @@ public class QuoteDetailsResponse {
       }
       if ((jsonObj.get("leasingInstructions") != null && !jsonObj.get("leasingInstructions").isJsonNull()) && !jsonObj.get("leasingInstructions").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `leasingInstructions` to be a primitive type in the JSON string but got `%s`", jsonObj.get("leasingInstructions").toString()));
+      }
+      if ((jsonObj.get("quoteSybType") != null && !jsonObj.get("quoteSybType").isJsonNull()) && !jsonObj.get("quoteSybType").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `quoteSybType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteSybType").toString()));
       }
       // validate the optional field `resellerInfo`
       if (jsonObj.get("resellerInfo") != null && !jsonObj.get("resellerInfo").isJsonNull()) {

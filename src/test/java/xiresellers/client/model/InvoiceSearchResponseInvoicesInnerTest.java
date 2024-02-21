@@ -143,11 +143,11 @@ public class InvoiceSearchResponseInvoicesInnerTest {
     }
 
     /**
-     * Test the property 'isfeccenabled'
+     * Test the property 'isfseccenabled'
      */
     @Test
-    public void isfeccenabledTest() {
-        // TODO: test isfeccenabled
+    public void isfseccenabledTest() {
+        // TODO: test isfseccenabled
     }
 
 }

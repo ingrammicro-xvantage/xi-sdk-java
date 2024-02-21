@@ -47,10 +47,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * QuoteSearchResponseQuotesInnerLinksInner
+ * QuoteSearchResponseQuotesInnerLinks
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
-public class QuoteSearchResponseQuotesInnerLinksInner {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
+public class QuoteSearchResponseQuotesInnerLinks {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)
   private String topic;
@@ -63,10 +63,10 @@ public class QuoteSearchResponseQuotesInnerLinksInner {
   @SerializedName(SERIALIZED_NAME_TYPE)
   private String type;
 
-  public QuoteSearchResponseQuotesInnerLinksInner() {
+  public QuoteSearchResponseQuotesInnerLinks() {
   }
 
-  public QuoteSearchResponseQuotesInnerLinksInner topic(String topic) {
+  public QuoteSearchResponseQuotesInnerLinks topic(String topic) {
     this.topic = topic;
     return this;
   }
@@ -85,7 +85,7 @@ public class QuoteSearchResponseQuotesInnerLinksInner {
   }
 
 
-  public QuoteSearchResponseQuotesInnerLinksInner href(String href) {
+  public QuoteSearchResponseQuotesInnerLinks href(String href) {
     this.href = href;
     return this;
   }
@@ -104,7 +104,7 @@ public class QuoteSearchResponseQuotesInnerLinksInner {
   }
 
 
-  public QuoteSearchResponseQuotesInnerLinksInner type(String type) {
+  public QuoteSearchResponseQuotesInnerLinks type(String type) {
     this.type = type;
     return this;
   }
@@ -132,10 +132,10 @@ public class QuoteSearchResponseQuotesInnerLinksInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    QuoteSearchResponseQuotesInnerLinksInner quoteSearchResponseQuotesInnerLinksInner = (QuoteSearchResponseQuotesInnerLinksInner) o;
-    return Objects.equals(this.topic, quoteSearchResponseQuotesInnerLinksInner.topic) &&
-        Objects.equals(this.href, quoteSearchResponseQuotesInnerLinksInner.href) &&
-        Objects.equals(this.type, quoteSearchResponseQuotesInnerLinksInner.type);
+    QuoteSearchResponseQuotesInnerLinks quoteSearchResponseQuotesInnerLinks = (QuoteSearchResponseQuotesInnerLinks) o;
+    return Objects.equals(this.topic, quoteSearchResponseQuotesInnerLinks.topic) &&
+        Objects.equals(this.href, quoteSearchResponseQuotesInnerLinks.href) &&
+        Objects.equals(this.type, quoteSearchResponseQuotesInnerLinks.type);
   }
 
   @Override
@@ -146,7 +146,7 @@ public class QuoteSearchResponseQuotesInnerLinksInner {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class QuoteSearchResponseQuotesInnerLinksInner {\n");
+    sb.append("class QuoteSearchResponseQuotesInnerLinks {\n");
     sb.append("    topic: ").append(toIndentedString(topic)).append("\n");
     sb.append("    href: ").append(toIndentedString(href)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
@@ -184,20 +184,20 @@ public class QuoteSearchResponseQuotesInnerLinksInner {
   * Validates the JSON Element and throws an exception if issues found
   *
   * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to QuoteSearchResponseQuotesInnerLinksInner
+  * @throws IOException if the JSON Element is invalid with respect to QuoteSearchResponseQuotesInnerLinks
   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!QuoteSearchResponseQuotesInnerLinksInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in QuoteSearchResponseQuotesInnerLinksInner is not found in the empty JSON string", QuoteSearchResponseQuotesInnerLinksInner.openapiRequiredFields.toString()));
+        if (!QuoteSearchResponseQuotesInnerLinks.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in QuoteSearchResponseQuotesInnerLinks is not found in the empty JSON string", QuoteSearchResponseQuotesInnerLinks.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!QuoteSearchResponseQuotesInnerLinksInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `QuoteSearchResponseQuotesInnerLinksInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!QuoteSearchResponseQuotesInnerLinks.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `QuoteSearchResponseQuotesInnerLinks` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -216,22 +216,22 @@ public class QuoteSearchResponseQuotesInnerLinksInner {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!QuoteSearchResponseQuotesInnerLinksInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'QuoteSearchResponseQuotesInnerLinksInner' and its subtypes
+       if (!QuoteSearchResponseQuotesInnerLinks.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'QuoteSearchResponseQuotesInnerLinks' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<QuoteSearchResponseQuotesInnerLinksInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(QuoteSearchResponseQuotesInnerLinksInner.class));
+       final TypeAdapter<QuoteSearchResponseQuotesInnerLinks> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(QuoteSearchResponseQuotesInnerLinks.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<QuoteSearchResponseQuotesInnerLinksInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<QuoteSearchResponseQuotesInnerLinks>() {
            @Override
-           public void write(JsonWriter out, QuoteSearchResponseQuotesInnerLinksInner value) throws IOException {
+           public void write(JsonWriter out, QuoteSearchResponseQuotesInnerLinks value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public QuoteSearchResponseQuotesInnerLinksInner read(JsonReader in) throws IOException {
+           public QuoteSearchResponseQuotesInnerLinks read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -242,18 +242,18 @@ public class QuoteSearchResponseQuotesInnerLinksInner {
   }
 
  /**
-  * Create an instance of QuoteSearchResponseQuotesInnerLinksInner given an JSON string
+  * Create an instance of QuoteSearchResponseQuotesInnerLinks given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of QuoteSearchResponseQuotesInnerLinksInner
-  * @throws IOException if the JSON string is invalid with respect to QuoteSearchResponseQuotesInnerLinksInner
+  * @return An instance of QuoteSearchResponseQuotesInnerLinks
+  * @throws IOException if the JSON string is invalid with respect to QuoteSearchResponseQuotesInnerLinks
   */
-  public static QuoteSearchResponseQuotesInnerLinksInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, QuoteSearchResponseQuotesInnerLinksInner.class);
+  public static QuoteSearchResponseQuotesInnerLinks fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, QuoteSearchResponseQuotesInnerLinks.class);
   }
 
  /**
-  * Convert an instance of QuoteSearchResponseQuotesInnerLinksInner to an JSON string
+  * Convert an instance of QuoteSearchResponseQuotesInnerLinks to an JSON string
   *
   * @return JSON string
   */

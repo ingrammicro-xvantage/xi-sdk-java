@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
 public class OrderDetailB2BLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
@@ -66,6 +66,14 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_ESTIMATED_SHIP_DATE = "estimatedShipDate";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_SHIP_DATE)
   private String estimatedShipDate;
+
+  public static final String SERIALIZED_NAME_SHIPPED_DATE = "shippedDate";
+  @SerializedName(SERIALIZED_NAME_SHIPPED_DATE)
+  private String shippedDate;
+
+  public static final String SERIALIZED_NAME_ESTIMATED_DELIVERY_DATE = "estimatedDeliveryDate";
+  @SerializedName(SERIALIZED_NAME_ESTIMATED_DELIVERY_DATE)
+  private String estimatedDeliveryDate;
 
   public static final String SERIALIZED_NAME_SHIP_FROM_WAREHOUSE_ID = "shipFromWarehouseId";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_WAREHOUSE_ID)
@@ -144,6 +152,44 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInner {
 
   public void setEstimatedShipDate(String estimatedShipDate) {
     this.estimatedShipDate = estimatedShipDate;
+  }
+
+
+  public OrderDetailB2BLinesInnerShipmentDetailsInner shippedDate(String shippedDate) {
+    this.shippedDate = shippedDate;
+    return this;
+  }
+
+   /**
+   * Get shippedDate
+   * @return shippedDate
+  **/
+  @javax.annotation.Nullable
+  public String getShippedDate() {
+    return shippedDate;
+  }
+
+  public void setShippedDate(String shippedDate) {
+    this.shippedDate = shippedDate;
+  }
+
+
+  public OrderDetailB2BLinesInnerShipmentDetailsInner estimatedDeliveryDate(String estimatedDeliveryDate) {
+    this.estimatedDeliveryDate = estimatedDeliveryDate;
+    return this;
+  }
+
+   /**
+   * Get estimatedDeliveryDate
+   * @return estimatedDeliveryDate
+  **/
+  @javax.annotation.Nullable
+  public String getEstimatedDeliveryDate() {
+    return estimatedDeliveryDate;
+  }
+
+  public void setEstimatedDeliveryDate(String estimatedDeliveryDate) {
+    this.estimatedDeliveryDate = estimatedDeliveryDate;
   }
 
 
@@ -263,6 +309,8 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInner {
     return Objects.equals(this.quantity, orderDetailB2BLinesInnerShipmentDetailsInner.quantity) &&
         Objects.equals(this.deliveryNumber, orderDetailB2BLinesInnerShipmentDetailsInner.deliveryNumber) &&
         Objects.equals(this.estimatedShipDate, orderDetailB2BLinesInnerShipmentDetailsInner.estimatedShipDate) &&
+        Objects.equals(this.shippedDate, orderDetailB2BLinesInnerShipmentDetailsInner.shippedDate) &&
+        Objects.equals(this.estimatedDeliveryDate, orderDetailB2BLinesInnerShipmentDetailsInner.estimatedDeliveryDate) &&
         Objects.equals(this.shipFromWarehouseId, orderDetailB2BLinesInnerShipmentDetailsInner.shipFromWarehouseId) &&
         Objects.equals(this.shipFromLocation, orderDetailB2BLinesInnerShipmentDetailsInner.shipFromLocation) &&
         Objects.equals(this.invoiceNumber, orderDetailB2BLinesInnerShipmentDetailsInner.invoiceNumber) &&
@@ -276,7 +324,7 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(quantity, deliveryNumber, estimatedShipDate, shipFromWarehouseId, shipFromLocation, invoiceNumber, invoiceDate, carrierDetails);
+    return Objects.hash(quantity, deliveryNumber, estimatedShipDate, shippedDate, estimatedDeliveryDate, shipFromWarehouseId, shipFromLocation, invoiceNumber, invoiceDate, carrierDetails);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -293,6 +341,8 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInner {
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
     sb.append("    deliveryNumber: ").append(toIndentedString(deliveryNumber)).append("\n");
     sb.append("    estimatedShipDate: ").append(toIndentedString(estimatedShipDate)).append("\n");
+    sb.append("    shippedDate: ").append(toIndentedString(shippedDate)).append("\n");
+    sb.append("    estimatedDeliveryDate: ").append(toIndentedString(estimatedDeliveryDate)).append("\n");
     sb.append("    shipFromWarehouseId: ").append(toIndentedString(shipFromWarehouseId)).append("\n");
     sb.append("    shipFromLocation: ").append(toIndentedString(shipFromLocation)).append("\n");
     sb.append("    invoiceNumber: ").append(toIndentedString(invoiceNumber)).append("\n");
@@ -323,6 +373,8 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInner {
     openapiFields.add("quantity");
     openapiFields.add("deliveryNumber");
     openapiFields.add("estimatedShipDate");
+    openapiFields.add("shippedDate");
+    openapiFields.add("estimatedDeliveryDate");
     openapiFields.add("shipFromWarehouseId");
     openapiFields.add("shipFromLocation");
     openapiFields.add("invoiceNumber");
@@ -359,6 +411,12 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInner {
       }
       if ((jsonObj.get("estimatedShipDate") != null && !jsonObj.get("estimatedShipDate").isJsonNull()) && !jsonObj.get("estimatedShipDate").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `estimatedShipDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("estimatedShipDate").toString()));
+      }
+      if ((jsonObj.get("shippedDate") != null && !jsonObj.get("shippedDate").isJsonNull()) && !jsonObj.get("shippedDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `shippedDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shippedDate").toString()));
+      }
+      if ((jsonObj.get("estimatedDeliveryDate") != null && !jsonObj.get("estimatedDeliveryDate").isJsonNull()) && !jsonObj.get("estimatedDeliveryDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `estimatedDeliveryDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("estimatedDeliveryDate").toString()));
       }
       if ((jsonObj.get("shipFromWarehouseId") != null && !jsonObj.get("shipFromWarehouseId").isJsonNull()) && !jsonObj.get("shipFromWarehouseId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `shipFromWarehouseId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipFromWarehouseId").toString()));

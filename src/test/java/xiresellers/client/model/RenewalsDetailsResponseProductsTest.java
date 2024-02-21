@@ -25,17 +25,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for RenewalsDetailsResponseProductsInner
+ * Model tests for RenewalsDetailsResponseProducts
  */
-public class RenewalsDetailsResponseProductsInnerTest {
-    private final RenewalsDetailsResponseProductsInner model = new RenewalsDetailsResponseProductsInner();
+public class RenewalsDetailsResponseProductsTest {
+    private final RenewalsDetailsResponseProducts model = new RenewalsDetailsResponseProducts();
 
     /**
-     * Model tests for RenewalsDetailsResponseProductsInner
+     * Model tests for RenewalsDetailsResponseProducts
      */
     @Test
-    public void testRenewalsDetailsResponseProductsInner() {
-        // TODO: test RenewalsDetailsResponseProductsInner
+    public void testRenewalsDetailsResponseProducts() {
+        // TODO: test RenewalsDetailsResponseProducts
     }
 
     /**
@@ -79,19 +79,19 @@ public class RenewalsDetailsResponseProductsInnerTest {
     }
 
     /**
-     * Test the property 'quantity'
-     */
-    @Test
-    public void quantityTest() {
-        // TODO: test quantity
-    }
-
-    /**
      * Test the property 'unitPrice'
      */
     @Test
     public void unitPriceTest() {
         // TODO: test unitPrice
+    }
+
+    /**
+     * Test the property 'quantity'
+     */
+    @Test
+    public void quantityTest() {
+        // TODO: test quantity
     }
 
     /**

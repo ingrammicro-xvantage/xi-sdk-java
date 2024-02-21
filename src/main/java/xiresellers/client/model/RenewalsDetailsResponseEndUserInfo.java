@@ -47,10 +47,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * RenewalsDetailsResponseEndUserInfoInner
+ * RenewalsDetailsResponseEndUserInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
-public class RenewalsDetailsResponseEndUserInfoInner {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
+public class RenewalsDetailsResponseEndUserInfo {
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
   private String contact;
@@ -107,10 +107,10 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   @SerializedName(SERIALIZED_NAME_EMAIL)
   private String email;
 
-  public RenewalsDetailsResponseEndUserInfoInner() {
+  public RenewalsDetailsResponseEndUserInfo() {
   }
 
-  public RenewalsDetailsResponseEndUserInfoInner contact(String contact) {
+  public RenewalsDetailsResponseEndUserInfo contact(String contact) {
     this.contact = contact;
     return this;
   }
@@ -129,7 +129,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner name1(String name1) {
+  public RenewalsDetailsResponseEndUserInfo name1(String name1) {
     this.name1 = name1;
     return this;
   }
@@ -148,7 +148,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner name2(String name2) {
+  public RenewalsDetailsResponseEndUserInfo name2(String name2) {
     this.name2 = name2;
     return this;
   }
@@ -167,7 +167,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner companyName(String companyName) {
+  public RenewalsDetailsResponseEndUserInfo companyName(String companyName) {
     this.companyName = companyName;
     return this;
   }
@@ -186,7 +186,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner addressLine1(String addressLine1) {
+  public RenewalsDetailsResponseEndUserInfo addressLine1(String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
@@ -205,7 +205,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner addressLine2(String addressLine2) {
+  public RenewalsDetailsResponseEndUserInfo addressLine2(String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
@@ -224,7 +224,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner addressLine3(String addressLine3) {
+  public RenewalsDetailsResponseEndUserInfo addressLine3(String addressLine3) {
     this.addressLine3 = addressLine3;
     return this;
   }
@@ -243,7 +243,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner addressLine4(String addressLine4) {
+  public RenewalsDetailsResponseEndUserInfo addressLine4(String addressLine4) {
     this.addressLine4 = addressLine4;
     return this;
   }
@@ -262,7 +262,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner city(String city) {
+  public RenewalsDetailsResponseEndUserInfo city(String city) {
     this.city = city;
     return this;
   }
@@ -281,7 +281,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner state(String state) {
+  public RenewalsDetailsResponseEndUserInfo state(String state) {
     this.state = state;
     return this;
   }
@@ -300,7 +300,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner postalCode(String postalCode) {
+  public RenewalsDetailsResponseEndUserInfo postalCode(String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
@@ -319,7 +319,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner countryCode(String countryCode) {
+  public RenewalsDetailsResponseEndUserInfo countryCode(String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -338,7 +338,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner phoneNumber(String phoneNumber) {
+  public RenewalsDetailsResponseEndUserInfo phoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
@@ -357,7 +357,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
 
-  public RenewalsDetailsResponseEndUserInfoInner email(String email) {
+  public RenewalsDetailsResponseEndUserInfo email(String email) {
     this.email = email;
     return this;
   }
@@ -385,21 +385,21 @@ public class RenewalsDetailsResponseEndUserInfoInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    RenewalsDetailsResponseEndUserInfoInner renewalsDetailsResponseEndUserInfoInner = (RenewalsDetailsResponseEndUserInfoInner) o;
-    return Objects.equals(this.contact, renewalsDetailsResponseEndUserInfoInner.contact) &&
-        Objects.equals(this.name1, renewalsDetailsResponseEndUserInfoInner.name1) &&
-        Objects.equals(this.name2, renewalsDetailsResponseEndUserInfoInner.name2) &&
-        Objects.equals(this.companyName, renewalsDetailsResponseEndUserInfoInner.companyName) &&
-        Objects.equals(this.addressLine1, renewalsDetailsResponseEndUserInfoInner.addressLine1) &&
-        Objects.equals(this.addressLine2, renewalsDetailsResponseEndUserInfoInner.addressLine2) &&
-        Objects.equals(this.addressLine3, renewalsDetailsResponseEndUserInfoInner.addressLine3) &&
-        Objects.equals(this.addressLine4, renewalsDetailsResponseEndUserInfoInner.addressLine4) &&
-        Objects.equals(this.city, renewalsDetailsResponseEndUserInfoInner.city) &&
-        Objects.equals(this.state, renewalsDetailsResponseEndUserInfoInner.state) &&
-        Objects.equals(this.postalCode, renewalsDetailsResponseEndUserInfoInner.postalCode) &&
-        Objects.equals(this.countryCode, renewalsDetailsResponseEndUserInfoInner.countryCode) &&
-        Objects.equals(this.phoneNumber, renewalsDetailsResponseEndUserInfoInner.phoneNumber) &&
-        Objects.equals(this.email, renewalsDetailsResponseEndUserInfoInner.email);
+    RenewalsDetailsResponseEndUserInfo renewalsDetailsResponseEndUserInfo = (RenewalsDetailsResponseEndUserInfo) o;
+    return Objects.equals(this.contact, renewalsDetailsResponseEndUserInfo.contact) &&
+        Objects.equals(this.name1, renewalsDetailsResponseEndUserInfo.name1) &&
+        Objects.equals(this.name2, renewalsDetailsResponseEndUserInfo.name2) &&
+        Objects.equals(this.companyName, renewalsDetailsResponseEndUserInfo.companyName) &&
+        Objects.equals(this.addressLine1, renewalsDetailsResponseEndUserInfo.addressLine1) &&
+        Objects.equals(this.addressLine2, renewalsDetailsResponseEndUserInfo.addressLine2) &&
+        Objects.equals(this.addressLine3, renewalsDetailsResponseEndUserInfo.addressLine3) &&
+        Objects.equals(this.addressLine4, renewalsDetailsResponseEndUserInfo.addressLine4) &&
+        Objects.equals(this.city, renewalsDetailsResponseEndUserInfo.city) &&
+        Objects.equals(this.state, renewalsDetailsResponseEndUserInfo.state) &&
+        Objects.equals(this.postalCode, renewalsDetailsResponseEndUserInfo.postalCode) &&
+        Objects.equals(this.countryCode, renewalsDetailsResponseEndUserInfo.countryCode) &&
+        Objects.equals(this.phoneNumber, renewalsDetailsResponseEndUserInfo.phoneNumber) &&
+        Objects.equals(this.email, renewalsDetailsResponseEndUserInfo.email);
   }
 
   @Override
@@ -410,7 +410,7 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class RenewalsDetailsResponseEndUserInfoInner {\n");
+    sb.append("class RenewalsDetailsResponseEndUserInfo {\n");
     sb.append("    contact: ").append(toIndentedString(contact)).append("\n");
     sb.append("    name1: ").append(toIndentedString(name1)).append("\n");
     sb.append("    name2: ").append(toIndentedString(name2)).append("\n");
@@ -470,20 +470,20 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   * Validates the JSON Element and throws an exception if issues found
   *
   * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to RenewalsDetailsResponseEndUserInfoInner
+  * @throws IOException if the JSON Element is invalid with respect to RenewalsDetailsResponseEndUserInfo
   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!RenewalsDetailsResponseEndUserInfoInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in RenewalsDetailsResponseEndUserInfoInner is not found in the empty JSON string", RenewalsDetailsResponseEndUserInfoInner.openapiRequiredFields.toString()));
+        if (!RenewalsDetailsResponseEndUserInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in RenewalsDetailsResponseEndUserInfo is not found in the empty JSON string", RenewalsDetailsResponseEndUserInfo.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!RenewalsDetailsResponseEndUserInfoInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `RenewalsDetailsResponseEndUserInfoInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!RenewalsDetailsResponseEndUserInfo.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `RenewalsDetailsResponseEndUserInfo` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -535,22 +535,22 @@ public class RenewalsDetailsResponseEndUserInfoInner {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!RenewalsDetailsResponseEndUserInfoInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'RenewalsDetailsResponseEndUserInfoInner' and its subtypes
+       if (!RenewalsDetailsResponseEndUserInfo.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'RenewalsDetailsResponseEndUserInfo' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<RenewalsDetailsResponseEndUserInfoInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(RenewalsDetailsResponseEndUserInfoInner.class));
+       final TypeAdapter<RenewalsDetailsResponseEndUserInfo> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(RenewalsDetailsResponseEndUserInfo.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<RenewalsDetailsResponseEndUserInfoInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<RenewalsDetailsResponseEndUserInfo>() {
            @Override
-           public void write(JsonWriter out, RenewalsDetailsResponseEndUserInfoInner value) throws IOException {
+           public void write(JsonWriter out, RenewalsDetailsResponseEndUserInfo value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public RenewalsDetailsResponseEndUserInfoInner read(JsonReader in) throws IOException {
+           public RenewalsDetailsResponseEndUserInfo read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -561,18 +561,18 @@ public class RenewalsDetailsResponseEndUserInfoInner {
   }
 
  /**
-  * Create an instance of RenewalsDetailsResponseEndUserInfoInner given an JSON string
+  * Create an instance of RenewalsDetailsResponseEndUserInfo given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of RenewalsDetailsResponseEndUserInfoInner
-  * @throws IOException if the JSON string is invalid with respect to RenewalsDetailsResponseEndUserInfoInner
+  * @return An instance of RenewalsDetailsResponseEndUserInfo
+  * @throws IOException if the JSON string is invalid with respect to RenewalsDetailsResponseEndUserInfo
   */
-  public static RenewalsDetailsResponseEndUserInfoInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, RenewalsDetailsResponseEndUserInfoInner.class);
+  public static RenewalsDetailsResponseEndUserInfo fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, RenewalsDetailsResponseEndUserInfo.class);
   }
 
  /**
-  * Convert an instance of RenewalsDetailsResponseEndUserInfoInner to an JSON string
+  * Convert an instance of RenewalsDetailsResponseEndUserInfo to an JSON string
   *
   * @return JSON string
   */

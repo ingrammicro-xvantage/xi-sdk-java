@@ -1,6 +1,6 @@
 
 
-# RenewalsDetailsResponseReferenceNumberInner
+# RenewalsDetailsResponseReferenceNumber
 
 
 ## Properties

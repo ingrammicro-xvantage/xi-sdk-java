@@ -1,6 +1,6 @@
 
 
-# QuoteSearchResponseQuotesInnerLinksInner
+# QuoteSearchResponseQuotesInnerLinks
 
 
 ## Properties

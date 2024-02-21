@@ -204,6 +204,14 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
+     * Test the property 'quoteSybType'
+     */
+    @Test
+    public void quoteSybTypeTest() {
+        // TODO: test quoteSybType
+    }
+
+    /**
      * Test the property 'resellerInfo'
      */
     @Test

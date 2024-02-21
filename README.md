@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-02-20T11:18:10.423898Z[Etc/UTC]
+  - Build date: 2024-02-21T06:31:48.655902Z[Etc/UTC]
 
 For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
 
@@ -55,6 +55,7 @@ cd xi-sdk-resellers-java
 mvn install       # Requires maven, download from https://maven.apache.org/download.html
 
 ```
+
 
 ### Others
 
@@ -290,7 +291,7 @@ Class | Method | HTTP request | Description
  - [QuoteDetailsResponseResellerInfo](docs/QuoteDetailsResponseResellerInfo.md)
  - [QuoteSearchResponse](docs/QuoteSearchResponse.md)
  - [QuoteSearchResponseQuotesInner](docs/QuoteSearchResponseQuotesInner.md)
- - [QuoteSearchResponseQuotesInnerLinksInner](docs/QuoteSearchResponseQuotesInnerLinksInner.md)
+ - [QuoteSearchResponseQuotesInnerLinks](docs/QuoteSearchResponseQuotesInnerLinks.md)
  - [QuoteToOrderDetailsDTO](docs/QuoteToOrderDetailsDTO.md)
  - [QuoteToOrderDetailsDTOAdditionalAttributesInner](docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md)
  - [QuoteToOrderDetailsDTOEndUserInfoInner](docs/QuoteToOrderDetailsDTOEndUserInfoInner.md)
@@ -301,9 +302,9 @@ Class | Method | HTTP request | Description
  - [QuoteToOrderResponse](docs/QuoteToOrderResponse.md)
  - [RenewalsDetailsResponse](docs/RenewalsDetailsResponse.md)
  - [RenewalsDetailsResponseAdditionalAttributesInner](docs/RenewalsDetailsResponseAdditionalAttributesInner.md)
- - [RenewalsDetailsResponseEndUserInfoInner](docs/RenewalsDetailsResponseEndUserInfoInner.md)
- - [RenewalsDetailsResponseProductsInner](docs/RenewalsDetailsResponseProductsInner.md)
- - [RenewalsDetailsResponseReferenceNumberInner](docs/RenewalsDetailsResponseReferenceNumberInner.md)
+ - [RenewalsDetailsResponseEndUserInfo](docs/RenewalsDetailsResponseEndUserInfo.md)
+ - [RenewalsDetailsResponseProducts](docs/RenewalsDetailsResponseProducts.md)
+ - [RenewalsDetailsResponseReferenceNumber](docs/RenewalsDetailsResponseReferenceNumber.md)
  - [RenewalsSearchRequest](docs/RenewalsSearchRequest.md)
  - [RenewalsSearchRequestDateType](docs/RenewalsSearchRequestDateType.md)
  - [RenewalsSearchRequestDateTypeEndDate](docs/RenewalsSearchRequestDateTypeEndDate.md)
@@ -358,5 +359,3 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 For any inquiries or support, please feel free to contact us at:
 
 - Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)
-
-

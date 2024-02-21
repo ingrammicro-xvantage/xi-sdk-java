@@ -22,7 +22,7 @@
 |**vendor** | **String** | Name of the vendor. |  [optional] |
 |**createdBy** | **String** | Name of the end user/customer who created a quote. |  [optional] |
 |**quoteType** | **String** | Type of quote |  [optional] |
-|**links** | [**List&lt;QuoteSearchResponseQuotesInnerLinksInner&gt;**](QuoteSearchResponseQuotesInnerLinksInner.md) |  |  [optional] |
+|**links** | [**QuoteSearchResponseQuotesInnerLinks**](QuoteSearchResponseQuotesInnerLinks.md) |  |  [optional] |
 
 
 

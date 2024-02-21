@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * Indicators of the Product
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
 public class ProductDetailResponseIndicators {
   public static final String SERIALIZED_NAME_HAS_WARRANTY = "hasWarranty";
   @SerializedName(SERIALIZED_NAME_HAS_WARRANTY)
@@ -59,7 +59,7 @@ public class ProductDetailResponseIndicators {
   @SerializedName(SERIALIZED_NAME_IS_NEW_PRODUCT)
   private Boolean isNewProduct;
 
-  public static final String SERIALIZED_NAME_HAS_RETURN_LIMITS = "HasReturnLimits";
+  public static final String SERIALIZED_NAME_HAS_RETURN_LIMITS = "hasReturnLimits";
   @SerializedName(SERIALIZED_NAME_HAS_RETURN_LIMITS)
   private Boolean hasReturnLimits;
 
@@ -874,7 +874,7 @@ public class ProductDetailResponseIndicators {
     openapiFields = new HashSet<String>();
     openapiFields.add("hasWarranty");
     openapiFields.add("isNewProduct");
-    openapiFields.add("HasReturnLimits");
+    openapiFields.add("hasReturnLimits");
     openapiFields.add("IsBackOrderAllowed");
     openapiFields.add("isShippedFromPartner");
     openapiFields.add("isReplacementProduct");

@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for RenewalsDetailsResponseEndUserInfoInner
+ * Model tests for RenewalsDetailsResponseEndUserInfo
  */
-public class RenewalsDetailsResponseEndUserInfoInnerTest {
-    private final RenewalsDetailsResponseEndUserInfoInner model = new RenewalsDetailsResponseEndUserInfoInner();
+public class RenewalsDetailsResponseEndUserInfoTest {
+    private final RenewalsDetailsResponseEndUserInfo model = new RenewalsDetailsResponseEndUserInfo();
 
     /**
-     * Model tests for RenewalsDetailsResponseEndUserInfoInner
+     * Model tests for RenewalsDetailsResponseEndUserInfo
      */
     @Test
-    public void testRenewalsDetailsResponseEndUserInfoInner() {
-        // TODO: test RenewalsDetailsResponseEndUserInfoInner
+    public void testRenewalsDetailsResponseEndUserInfo() {
+        // TODO: test RenewalsDetailsResponseEndUserInfo
     }
 
     /**

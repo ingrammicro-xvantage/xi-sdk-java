@@ -21,10 +21,8 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import xiresellers.client.model.QuoteSearchResponseQuotesInnerLinksInner;
+import xiresellers.client.model.QuoteSearchResponseQuotesInnerLinks;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -53,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteSearchResponseQuotesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
 public class QuoteSearchResponseQuotesInner {
   public static final String SERIALIZED_NAME_QUOTE_GUID = "quoteGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_GUID)
@@ -117,7 +115,7 @@ public class QuoteSearchResponseQuotesInner {
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<QuoteSearchResponseQuotesInnerLinksInner> links;
+  private QuoteSearchResponseQuotesInnerLinks links;
 
   public QuoteSearchResponseQuotesInner() {
   }
@@ -407,16 +405,8 @@ public class QuoteSearchResponseQuotesInner {
   }
 
 
-  public QuoteSearchResponseQuotesInner links(List<QuoteSearchResponseQuotesInnerLinksInner> links) {
+  public QuoteSearchResponseQuotesInner links(QuoteSearchResponseQuotesInnerLinks links) {
     this.links = links;
-    return this;
-  }
-
-  public QuoteSearchResponseQuotesInner addLinksItem(QuoteSearchResponseQuotesInnerLinksInner linksItem) {
-    if (this.links == null) {
-      this.links = new ArrayList<>();
-    }
-    this.links.add(linksItem);
     return this;
   }
 
@@ -425,11 +415,11 @@ public class QuoteSearchResponseQuotesInner {
    * @return links
   **/
   @javax.annotation.Nullable
-  public List<QuoteSearchResponseQuotesInnerLinksInner> getLinks() {
+  public QuoteSearchResponseQuotesInnerLinks getLinks() {
     return links;
   }
 
-  public void setLinks(List<QuoteSearchResponseQuotesInnerLinksInner> links) {
+  public void setLinks(QuoteSearchResponseQuotesInnerLinks links) {
     this.links = links;
   }
 
@@ -593,19 +583,9 @@ public class QuoteSearchResponseQuotesInner {
       if ((jsonObj.get("quoteType") != null && !jsonObj.get("quoteType").isJsonNull()) && !jsonObj.get("quoteType").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `quoteType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteType").toString()));
       }
+      // validate the optional field `links`
       if (jsonObj.get("links") != null && !jsonObj.get("links").isJsonNull()) {
-        JsonArray jsonArraylinks = jsonObj.getAsJsonArray("links");
-        if (jsonArraylinks != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("links").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `links` to be an array in the JSON string but got `%s`", jsonObj.get("links").toString()));
-          }
-
-          // validate the optional field `links` (array)
-          for (int i = 0; i < jsonArraylinks.size(); i++) {
-            QuoteSearchResponseQuotesInnerLinksInner.validateJsonElement(jsonArraylinks.get(i));
-          };
-        }
+        QuoteSearchResponseQuotesInnerLinks.validateJsonElement(jsonObj.get("links"));
       }
   }
 

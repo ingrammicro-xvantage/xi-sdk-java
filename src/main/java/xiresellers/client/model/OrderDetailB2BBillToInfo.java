@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * The billing information provided by the reseller.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
 public class OrderDetailB2BBillToInfo {
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)

@@ -20,7 +20,7 @@
 |**invoiceAmountInclTax** | **BigDecimal** | Invoice Amount Inclusive of Taxes |  [optional] |
 |**forgntotalamount** | **BigDecimal** |  |  [optional] |
 |**gstInvoiceNumber** | **String** |  |  [optional] |
-|**isfeccenabled** | **Boolean** |  |  [optional] |
+|**isfseccenabled** | **Boolean** |  |  [optional] |
 
 
 

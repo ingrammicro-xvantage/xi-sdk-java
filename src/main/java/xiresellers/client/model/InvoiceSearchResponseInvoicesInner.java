@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceSearchResponseInvoicesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
 public class InvoiceSearchResponseInvoicesInner {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE = "paymentTermsDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE)
@@ -104,9 +104,9 @@ public class InvoiceSearchResponseInvoicesInner {
   @SerializedName(SERIALIZED_NAME_GST_INVOICE_NUMBER)
   private String gstInvoiceNumber;
 
-  public static final String SERIALIZED_NAME_ISFECCENABLED = "isfeccenabled";
-  @SerializedName(SERIALIZED_NAME_ISFECCENABLED)
-  private Boolean isfeccenabled;
+  public static final String SERIALIZED_NAME_ISFSECCENABLED = "isfseccenabled";
+  @SerializedName(SERIALIZED_NAME_ISFSECCENABLED)
+  private Boolean isfseccenabled;
 
   public InvoiceSearchResponseInvoicesInner() {
   }
@@ -358,22 +358,22 @@ public class InvoiceSearchResponseInvoicesInner {
   }
 
 
-  public InvoiceSearchResponseInvoicesInner isfeccenabled(Boolean isfeccenabled) {
-    this.isfeccenabled = isfeccenabled;
+  public InvoiceSearchResponseInvoicesInner isfseccenabled(Boolean isfseccenabled) {
+    this.isfseccenabled = isfseccenabled;
     return this;
   }
 
    /**
-   * Get isfeccenabled
-   * @return isfeccenabled
+   * Get isfseccenabled
+   * @return isfseccenabled
   **/
   @javax.annotation.Nullable
-  public Boolean getIsfeccenabled() {
-    return isfeccenabled;
+  public Boolean getIsfseccenabled() {
+    return isfseccenabled;
   }
 
-  public void setIsfeccenabled(Boolean isfeccenabled) {
-    this.isfeccenabled = isfeccenabled;
+  public void setIsfseccenabled(Boolean isfseccenabled) {
+    this.isfseccenabled = isfseccenabled;
   }
 
 
@@ -400,12 +400,12 @@ public class InvoiceSearchResponseInvoicesInner {
         Objects.equals(this.invoiceAmountInclTax, invoiceSearchResponseInvoicesInner.invoiceAmountInclTax) &&
         Objects.equals(this.forgntotalamount, invoiceSearchResponseInvoicesInner.forgntotalamount) &&
         Objects.equals(this.gstInvoiceNumber, invoiceSearchResponseInvoicesInner.gstInvoiceNumber) &&
-        Objects.equals(this.isfeccenabled, invoiceSearchResponseInvoicesInner.isfeccenabled);
+        Objects.equals(this.isfseccenabled, invoiceSearchResponseInvoicesInner.isfseccenabled);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(paymentTermsDueDate, erpOrderNumber, invoiceNumber, invoiceStatus, invoiceDate, invoiceDueDate, invoicedAmountDue, customerOrderNumber, endCustomerOrderNumber, orderCreateDate, invoiceAmountInclTax, forgntotalamount, gstInvoiceNumber, isfeccenabled);
+    return Objects.hash(paymentTermsDueDate, erpOrderNumber, invoiceNumber, invoiceStatus, invoiceDate, invoiceDueDate, invoicedAmountDue, customerOrderNumber, endCustomerOrderNumber, orderCreateDate, invoiceAmountInclTax, forgntotalamount, gstInvoiceNumber, isfseccenabled);
   }
 
   @Override
@@ -425,7 +425,7 @@ public class InvoiceSearchResponseInvoicesInner {
     sb.append("    invoiceAmountInclTax: ").append(toIndentedString(invoiceAmountInclTax)).append("\n");
     sb.append("    forgntotalamount: ").append(toIndentedString(forgntotalamount)).append("\n");
     sb.append("    gstInvoiceNumber: ").append(toIndentedString(gstInvoiceNumber)).append("\n");
-    sb.append("    isfeccenabled: ").append(toIndentedString(isfeccenabled)).append("\n");
+    sb.append("    isfseccenabled: ").append(toIndentedString(isfseccenabled)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -461,7 +461,7 @@ public class InvoiceSearchResponseInvoicesInner {
     openapiFields.add("invoiceAmountInclTax");
     openapiFields.add("forgntotalamount");
     openapiFields.add("gstInvoiceNumber");
-    openapiFields.add("isfeccenabled");
+    openapiFields.add("isfseccenabled");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

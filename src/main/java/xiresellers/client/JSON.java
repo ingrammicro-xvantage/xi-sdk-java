@@ -242,7 +242,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteDetailsResponseResellerInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteSearchResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteSearchResponseQuotesInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteSearchResponseQuotesInnerLinksInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteSearchResponseQuotesInnerLinks.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTO.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTOAdditionalAttributesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTOEndUserInfoInner.CustomTypeAdapterFactory());
@@ -253,9 +253,9 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseAdditionalAttributesInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseEndUserInfoInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseProductsInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseReferenceNumberInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseEndUserInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseProducts.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseReferenceNumber.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDateType.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDateTypeEndDate.CustomTypeAdapterFactory());

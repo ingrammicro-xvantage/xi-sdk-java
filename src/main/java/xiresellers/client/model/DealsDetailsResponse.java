@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.DealsDetailsResponseProductsInner;
-import xiresellers.client.model.RenewalsDetailsResponseEndUserInfoInner;
+import xiresellers.client.model.RenewalsDetailsResponseEndUserInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * DealsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-20T11:18:10.423898Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
 public class DealsDetailsResponse {
   public static final String SERIALIZED_NAME_DEAL_ID = "dealId";
   @SerializedName(SERIALIZED_NAME_DEAL_ID)
@@ -94,7 +94,7 @@ public class DealsDetailsResponse {
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
-  private RenewalsDetailsResponseEndUserInfoInner endUserInfo;
+  private RenewalsDetailsResponseEndUserInfo endUserInfo;
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
@@ -274,7 +274,7 @@ public class DealsDetailsResponse {
   }
 
 
-  public DealsDetailsResponse endUserInfo(RenewalsDetailsResponseEndUserInfoInner endUserInfo) {
+  public DealsDetailsResponse endUserInfo(RenewalsDetailsResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
     return this;
   }
@@ -284,11 +284,11 @@ public class DealsDetailsResponse {
    * @return endUserInfo
   **/
   @javax.annotation.Nullable
-  public RenewalsDetailsResponseEndUserInfoInner getEndUserInfo() {
+  public RenewalsDetailsResponseEndUserInfo getEndUserInfo() {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(RenewalsDetailsResponseEndUserInfoInner endUserInfo) {
+  public void setEndUserInfo(RenewalsDetailsResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 
@@ -448,7 +448,7 @@ public class DealsDetailsResponse {
       }
       // validate the optional field `endUserInfo`
       if (jsonObj.get("endUserInfo") != null && !jsonObj.get("endUserInfo").isJsonNull()) {
-        RenewalsDetailsResponseEndUserInfoInner.validateJsonElement(jsonObj.get("endUserInfo"));
+        RenewalsDetailsResponseEndUserInfo.validateJsonElement(jsonObj.get("endUserInfo"));
       }
       if (jsonObj.get("products") != null && !jsonObj.get("products").isJsonNull()) {
         JsonArray jsonArrayproducts = jsonObj.getAsJsonArray("products");
