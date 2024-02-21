@@ -49,11 +49,11 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseTechnicalSpecificationsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:55:29.335518Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T08:44:05.228708Z[Etc/UTC]")
 public class ProductDetailResponseTechnicalSpecificationsInner {
-  public static final String SERIALIZED_NAME_HEADERNAME = "headername";
-  @SerializedName(SERIALIZED_NAME_HEADERNAME)
-  private String headername;
+  public static final String SERIALIZED_NAME_HEADER_NAME = "headerName";
+  @SerializedName(SERIALIZED_NAME_HEADER_NAME)
+  private String headerName;
 
   public static final String SERIALIZED_NAME_ATTRIBUTEVALUE = "attributevalue";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTEVALUE)
@@ -70,22 +70,22 @@ public class ProductDetailResponseTechnicalSpecificationsInner {
   public ProductDetailResponseTechnicalSpecificationsInner() {
   }
 
-  public ProductDetailResponseTechnicalSpecificationsInner headername(String headername) {
-    this.headername = headername;
+  public ProductDetailResponseTechnicalSpecificationsInner headerName(String headerName) {
+    this.headerName = headerName;
     return this;
   }
 
    /**
    * Example : &#39;Basic&#39;
-   * @return headername
+   * @return headerName
   **/
   @javax.annotation.Nullable
-  public String getHeadername() {
-    return headername;
+  public String getHeaderName() {
+    return headerName;
   }
 
-  public void setHeadername(String headername) {
-    this.headername = headername;
+  public void setHeaderName(String headerName) {
+    this.headerName = headerName;
   }
 
 
@@ -156,7 +156,7 @@ public class ProductDetailResponseTechnicalSpecificationsInner {
       return false;
     }
     ProductDetailResponseTechnicalSpecificationsInner productDetailResponseTechnicalSpecificationsInner = (ProductDetailResponseTechnicalSpecificationsInner) o;
-    return Objects.equals(this.headername, productDetailResponseTechnicalSpecificationsInner.headername) &&
+    return Objects.equals(this.headerName, productDetailResponseTechnicalSpecificationsInner.headerName) &&
         Objects.equals(this.attributevalue, productDetailResponseTechnicalSpecificationsInner.attributevalue) &&
         Objects.equals(this.attributedisplay, productDetailResponseTechnicalSpecificationsInner.attributedisplay) &&
         Objects.equals(this.attributename, productDetailResponseTechnicalSpecificationsInner.attributename);
@@ -164,14 +164,14 @@ public class ProductDetailResponseTechnicalSpecificationsInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(headername, attributevalue, attributedisplay, attributename);
+    return Objects.hash(headerName, attributevalue, attributedisplay, attributename);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProductDetailResponseTechnicalSpecificationsInner {\n");
-    sb.append("    headername: ").append(toIndentedString(headername)).append("\n");
+    sb.append("    headerName: ").append(toIndentedString(headerName)).append("\n");
     sb.append("    attributevalue: ").append(toIndentedString(attributevalue)).append("\n");
     sb.append("    attributedisplay: ").append(toIndentedString(attributedisplay)).append("\n");
     sb.append("    attributename: ").append(toIndentedString(attributename)).append("\n");
@@ -197,7 +197,7 @@ public class ProductDetailResponseTechnicalSpecificationsInner {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("headername");
+    openapiFields.add("headerName");
     openapiFields.add("attributevalue");
     openapiFields.add("attributedisplay");
     openapiFields.add("attributename");
@@ -227,8 +227,8 @@ public class ProductDetailResponseTechnicalSpecificationsInner {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("headername") != null && !jsonObj.get("headername").isJsonNull()) && !jsonObj.get("headername").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `headername` to be a primitive type in the JSON string but got `%s`", jsonObj.get("headername").toString()));
+      if ((jsonObj.get("headerName") != null && !jsonObj.get("headerName").isJsonNull()) && !jsonObj.get("headerName").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `headerName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("headerName").toString()));
       }
       if ((jsonObj.get("attributevalue") != null && !jsonObj.get("attributevalue").isJsonNull()) && !jsonObj.get("attributevalue").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `attributevalue` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributevalue").toString()));
