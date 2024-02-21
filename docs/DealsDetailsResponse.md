@@ -16,7 +16,7 @@
 |**dealExpiryDate** | **String** | Expiration date of the deal/Special bid. |  [optional] |
 |**priceProtectionEndDate** | **String** | The date on which the price protection will end. |  [optional] |
 |**currencyCode** | **String** | Country specific currency code. |  [optional] |
-|**endUserInfo** | [**RenewalsDetailsResponseEndUserInfoInner**](RenewalsDetailsResponseEndUserInfoInner.md) |  |  [optional] |
+|**endUserInfo** | [**RenewalsDetailsResponseEndUserInfo**](RenewalsDetailsResponseEndUserInfo.md) |  |  [optional] |
 |**products** | [**List&lt;DealsDetailsResponseProductsInner&gt;**](DealsDetailsResponseProductsInner.md) |  |  [optional] |
 
 

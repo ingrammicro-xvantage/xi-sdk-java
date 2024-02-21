@@ -66,6 +66,22 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerTest {
     }
 
     /**
+     * Test the property 'shippedDate'
+     */
+    @Test
+    public void shippedDateTest() {
+        // TODO: test shippedDate
+    }
+
+    /**
+     * Test the property 'estimatedDeliveryDate'
+     */
+    @Test
+    public void estimatedDeliveryDateTest() {
+        // TODO: test estimatedDeliveryDate
+    }
+
+    /**
      * Test the property 'shipFromWarehouseId'
      */
     @Test

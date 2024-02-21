@@ -19,14 +19,13 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.RenewalsDetailsResponseAdditionalAttributesInner;
-import xiresellers.client.model.RenewalsDetailsResponseEndUserInfoInner;
-import xiresellers.client.model.RenewalsDetailsResponseProductsInner;
-import xiresellers.client.model.RenewalsDetailsResponseReferenceNumberInner;
+import xiresellers.client.model.RenewalsDetailsResponseEndUserInfo;
+import xiresellers.client.model.RenewalsDetailsResponseProducts;
+import xiresellers.client.model.RenewalsDetailsResponseReferenceNumber;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

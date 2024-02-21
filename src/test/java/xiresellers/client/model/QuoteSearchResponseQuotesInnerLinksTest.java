@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for QuoteSearchResponseQuotesInnerLinksInner
+ * Model tests for QuoteSearchResponseQuotesInnerLinks
  */
-public class QuoteSearchResponseQuotesInnerLinksInnerTest {
-    private final QuoteSearchResponseQuotesInnerLinksInner model = new QuoteSearchResponseQuotesInnerLinksInner();
+public class QuoteSearchResponseQuotesInnerLinksTest {
+    private final QuoteSearchResponseQuotesInnerLinks model = new QuoteSearchResponseQuotesInnerLinks();
 
     /**
-     * Model tests for QuoteSearchResponseQuotesInnerLinksInner
+     * Model tests for QuoteSearchResponseQuotesInnerLinks
      */
     @Test
-    public void testQuoteSearchResponseQuotesInnerLinksInner() {
-        // TODO: test QuoteSearchResponseQuotesInnerLinksInner
+    public void testQuoteSearchResponseQuotesInnerLinks() {
+        // TODO: test QuoteSearchResponseQuotesInnerLinks
     }
 
     /**

@@ -1,6 +1,6 @@
 
 
-# RenewalsDetailsResponseEndUserInfoInner
+# RenewalsDetailsResponseEndUserInfo
 
 
 ## Properties

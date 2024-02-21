@@ -154,7 +154,7 @@ docs/QuoteDetailsResponseProductsInnerPrice.md
 docs/QuoteDetailsResponseResellerInfo.md
 docs/QuoteSearchResponse.md
 docs/QuoteSearchResponseQuotesInner.md
-docs/QuoteSearchResponseQuotesInnerLinksInner.md
+docs/QuoteSearchResponseQuotesInnerLinks.md
 docs/QuoteToOrderApi.md
 docs/QuoteToOrderDetailsDTO.md
 docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md
@@ -168,9 +168,9 @@ docs/QuotesApi.md
 docs/RenewalsApi.md
 docs/RenewalsDetailsResponse.md
 docs/RenewalsDetailsResponseAdditionalAttributesInner.md
-docs/RenewalsDetailsResponseEndUserInfoInner.md
-docs/RenewalsDetailsResponseProductsInner.md
-docs/RenewalsDetailsResponseReferenceNumberInner.md
+docs/RenewalsDetailsResponseEndUserInfo.md
+docs/RenewalsDetailsResponseProducts.md
+docs/RenewalsDetailsResponseReferenceNumber.md
 docs/RenewalsSearchRequest.md
 docs/RenewalsSearchRequestDateType.md
 docs/RenewalsSearchRequestDateTypeEndDate.md
@@ -381,7 +381,7 @@ src/main/java/xiresellers/client/model/QuoteDetailsResponseProductsInnerPrice.ja
 src/main/java/xiresellers/client/model/QuoteDetailsResponseResellerInfo.java
 src/main/java/xiresellers/client/model/QuoteSearchResponse.java
 src/main/java/xiresellers/client/model/QuoteSearchResponseQuotesInner.java
-src/main/java/xiresellers/client/model/QuoteSearchResponseQuotesInnerLinksInner.java
+src/main/java/xiresellers/client/model/QuoteSearchResponseQuotesInnerLinks.java
 src/main/java/xiresellers/client/model/QuoteToOrderDetailsDTO.java
 src/main/java/xiresellers/client/model/QuoteToOrderDetailsDTOAdditionalAttributesInner.java
 src/main/java/xiresellers/client/model/QuoteToOrderDetailsDTOEndUserInfoInner.java
@@ -392,9 +392,9 @@ src/main/java/xiresellers/client/model/QuoteToOrderDetailsDTOVmfadditionalAttrib
 src/main/java/xiresellers/client/model/QuoteToOrderResponse.java
 src/main/java/xiresellers/client/model/RenewalsDetailsResponse.java
 src/main/java/xiresellers/client/model/RenewalsDetailsResponseAdditionalAttributesInner.java
-src/main/java/xiresellers/client/model/RenewalsDetailsResponseEndUserInfoInner.java
-src/main/java/xiresellers/client/model/RenewalsDetailsResponseProductsInner.java
-src/main/java/xiresellers/client/model/RenewalsDetailsResponseReferenceNumberInner.java
+src/main/java/xiresellers/client/model/RenewalsDetailsResponseEndUserInfo.java
+src/main/java/xiresellers/client/model/RenewalsDetailsResponseProducts.java
+src/main/java/xiresellers/client/model/RenewalsDetailsResponseReferenceNumber.java
 src/main/java/xiresellers/client/model/RenewalsSearchRequest.java
 src/main/java/xiresellers/client/model/RenewalsSearchRequestDateType.java
 src/main/java/xiresellers/client/model/RenewalsSearchRequestDateTypeEndDate.java
@@ -570,7 +570,7 @@ src/test/java/xiresellers/client/model/QuoteDetailsResponseProductsInnerPriceTes
 src/test/java/xiresellers/client/model/QuoteDetailsResponseProductsInnerTest.java
 src/test/java/xiresellers/client/model/QuoteDetailsResponseResellerInfoTest.java
 src/test/java/xiresellers/client/model/QuoteDetailsResponseTest.java
-src/test/java/xiresellers/client/model/QuoteSearchResponseQuotesInnerLinksInnerTest.java
+src/test/java/xiresellers/client/model/QuoteSearchResponseQuotesInnerLinksTest.java
 src/test/java/xiresellers/client/model/QuoteSearchResponseQuotesInnerTest.java
 src/test/java/xiresellers/client/model/QuoteSearchResponseTest.java
 src/test/java/xiresellers/client/model/QuoteToOrderDetailsDTOAdditionalAttributesInnerTest.java
@@ -582,9 +582,9 @@ src/test/java/xiresellers/client/model/QuoteToOrderDetailsDTOTest.java
 src/test/java/xiresellers/client/model/QuoteToOrderDetailsDTOVmfadditionalAttributesInnerTest.java
 src/test/java/xiresellers/client/model/QuoteToOrderResponseTest.java
 src/test/java/xiresellers/client/model/RenewalsDetailsResponseAdditionalAttributesInnerTest.java
-src/test/java/xiresellers/client/model/RenewalsDetailsResponseEndUserInfoInnerTest.java
-src/test/java/xiresellers/client/model/RenewalsDetailsResponseProductsInnerTest.java
-src/test/java/xiresellers/client/model/RenewalsDetailsResponseReferenceNumberInnerTest.java
+src/test/java/xiresellers/client/model/RenewalsDetailsResponseEndUserInfoTest.java
+src/test/java/xiresellers/client/model/RenewalsDetailsResponseProductsTest.java
+src/test/java/xiresellers/client/model/RenewalsDetailsResponseReferenceNumberTest.java
 src/test/java/xiresellers/client/model/RenewalsDetailsResponseTest.java
 src/test/java/xiresellers/client/model/RenewalsSearchRequestDateTypeEndDateTest.java
 src/test/java/xiresellers/client/model/RenewalsSearchRequestDateTypeExpirationDateTest.java

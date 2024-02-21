@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for RenewalsDetailsResponseReferenceNumberInner
+ * Model tests for RenewalsDetailsResponseReferenceNumber
  */
-public class RenewalsDetailsResponseReferenceNumberInnerTest {
-    private final RenewalsDetailsResponseReferenceNumberInner model = new RenewalsDetailsResponseReferenceNumberInner();
+public class RenewalsDetailsResponseReferenceNumberTest {
+    private final RenewalsDetailsResponseReferenceNumber model = new RenewalsDetailsResponseReferenceNumber();
 
     /**
-     * Model tests for RenewalsDetailsResponseReferenceNumberInner
+     * Model tests for RenewalsDetailsResponseReferenceNumber
      */
     @Test
-    public void testRenewalsDetailsResponseReferenceNumberInner() {
-        // TODO: test RenewalsDetailsResponseReferenceNumberInner
+    public void testRenewalsDetailsResponseReferenceNumber() {
+        // TODO: test RenewalsDetailsResponseReferenceNumber
     }
 
     /**

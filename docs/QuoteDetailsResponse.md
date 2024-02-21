@@ -27,6 +27,7 @@
 |**quoteType** | **String** |  |  [optional] |
 |**leaseInfo** | **String** | Lease information. |  [optional] |
 |**leasingInstructions** | **String** | Leasing information |  [optional] |
+|**quoteSybType** | **String** |  |  [optional] |
 |**resellerInfo** | [**QuoteDetailsResponseResellerInfo**](QuoteDetailsResponseResellerInfo.md) |  |  [optional] |
 |**endUserInfo** | [**QuoteDetailsResponseEndUserInfo**](QuoteDetailsResponseEndUserInfo.md) |  |  [optional] |
 |**products** | [**List&lt;QuoteDetailsResponseProductsInner&gt;**](QuoteDetailsResponseProductsInner.md) |  |  [optional] |
