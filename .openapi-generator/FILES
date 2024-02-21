@@ -169,7 +169,7 @@ docs/RenewalsApi.md
 docs/RenewalsDetailsResponse.md
 docs/RenewalsDetailsResponseAdditionalAttributesInner.md
 docs/RenewalsDetailsResponseEndUserInfo.md
-docs/RenewalsDetailsResponseProducts.md
+docs/RenewalsDetailsResponseProductsInner.md
 docs/RenewalsDetailsResponseReferenceNumber.md
 docs/RenewalsSearchRequest.md
 docs/RenewalsSearchRequestDateType.md
@@ -393,7 +393,7 @@ src/main/java/xiresellers/client/model/QuoteToOrderResponse.java
 src/main/java/xiresellers/client/model/RenewalsDetailsResponse.java
 src/main/java/xiresellers/client/model/RenewalsDetailsResponseAdditionalAttributesInner.java
 src/main/java/xiresellers/client/model/RenewalsDetailsResponseEndUserInfo.java
-src/main/java/xiresellers/client/model/RenewalsDetailsResponseProducts.java
+src/main/java/xiresellers/client/model/RenewalsDetailsResponseProductsInner.java
 src/main/java/xiresellers/client/model/RenewalsDetailsResponseReferenceNumber.java
 src/main/java/xiresellers/client/model/RenewalsSearchRequest.java
 src/main/java/xiresellers/client/model/RenewalsSearchRequestDateType.java
@@ -583,7 +583,7 @@ src/test/java/xiresellers/client/model/QuoteToOrderDetailsDTOVmfadditionalAttrib
 src/test/java/xiresellers/client/model/QuoteToOrderResponseTest.java
 src/test/java/xiresellers/client/model/RenewalsDetailsResponseAdditionalAttributesInnerTest.java
 src/test/java/xiresellers/client/model/RenewalsDetailsResponseEndUserInfoTest.java
-src/test/java/xiresellers/client/model/RenewalsDetailsResponseProductsTest.java
+src/test/java/xiresellers/client/model/RenewalsDetailsResponseProductsInnerTest.java
 src/test/java/xiresellers/client/model/RenewalsDetailsResponseReferenceNumberTest.java
 src/test/java/xiresellers/client/model/RenewalsDetailsResponseTest.java
 src/test/java/xiresellers/client/model/RenewalsSearchRequestDateTypeEndDateTest.java

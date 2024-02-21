@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerServiceFeesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:08:49.827408Z[Etc/UTC]")
 public class PriceAndAvailabilityResponseInnerServiceFeesInner {
   public static final String SERIALIZED_NAME_CONDITION_TYPE = "conditionType";
   @SerializedName(SERIALIZED_NAME_CONDITION_TYPE)

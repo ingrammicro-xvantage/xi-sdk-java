@@ -24,7 +24,7 @@ import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.RenewalsDetailsResponseAdditionalAttributesInner;
 import xiresellers.client.model.RenewalsDetailsResponseEndUserInfo;
-import xiresellers.client.model.RenewalsDetailsResponseProducts;
+import xiresellers.client.model.RenewalsDetailsResponseProductsInner;
 import xiresellers.client.model.RenewalsDetailsResponseReferenceNumber;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

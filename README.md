@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-02-21T06:31:48.655902Z[Etc/UTC]
+  - Build date: 2024-02-21T07:08:49.827408Z[Etc/UTC]
 
 For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
 
@@ -55,8 +55,6 @@ cd xi-sdk-resellers-java
 mvn install       # Requires maven, download from https://maven.apache.org/download.html
 
 ```
-
-
 ### Others
 
 At first generate the JAR by executing:
@@ -303,7 +301,7 @@ Class | Method | HTTP request | Description
  - [RenewalsDetailsResponse](docs/RenewalsDetailsResponse.md)
  - [RenewalsDetailsResponseAdditionalAttributesInner](docs/RenewalsDetailsResponseAdditionalAttributesInner.md)
  - [RenewalsDetailsResponseEndUserInfo](docs/RenewalsDetailsResponseEndUserInfo.md)
- - [RenewalsDetailsResponseProducts](docs/RenewalsDetailsResponseProducts.md)
+ - [RenewalsDetailsResponseProductsInner](docs/RenewalsDetailsResponseProductsInner.md)
  - [RenewalsDetailsResponseReferenceNumber](docs/RenewalsDetailsResponseReferenceNumber.md)
  - [RenewalsSearchRequest](docs/RenewalsSearchRequest.md)
  - [RenewalsSearchRequestDateType](docs/RenewalsSearchRequestDateType.md)

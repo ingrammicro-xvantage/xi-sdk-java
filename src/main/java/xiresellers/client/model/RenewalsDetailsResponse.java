@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.RenewalsDetailsResponseAdditionalAttributesInner;
 import xiresellers.client.model.RenewalsDetailsResponseEndUserInfo;
-import xiresellers.client.model.RenewalsDetailsResponseProducts;
+import xiresellers.client.model.RenewalsDetailsResponseProductsInner;
 import xiresellers.client.model.RenewalsDetailsResponseReferenceNumber;
 
 import com.google.gson.Gson;
@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:08:49.827408Z[Etc/UTC]")
 public class RenewalsDetailsResponse {
   public static final String SERIALIZED_NAME_RENEWAL_ID = "renewalId";
   @SerializedName(SERIALIZED_NAME_RENEWAL_ID)
@@ -111,7 +111,7 @@ public class RenewalsDetailsResponse {
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
-  private RenewalsDetailsResponseProducts products;
+  private List<RenewalsDetailsResponseProductsInner> products;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
@@ -367,8 +367,16 @@ public class RenewalsDetailsResponse {
   }
 
 
-  public RenewalsDetailsResponse products(RenewalsDetailsResponseProducts products) {
+  public RenewalsDetailsResponse products(List<RenewalsDetailsResponseProductsInner> products) {
     this.products = products;
+    return this;
+  }
+
+  public RenewalsDetailsResponse addProductsItem(RenewalsDetailsResponseProductsInner productsItem) {
+    if (this.products == null) {
+      this.products = new ArrayList<>();
+    }
+    this.products.add(productsItem);
     return this;
   }
 
@@ -377,11 +385,11 @@ public class RenewalsDetailsResponse {
    * @return products
   **/
   @javax.annotation.Nullable
-  public RenewalsDetailsResponseProducts getProducts() {
+  public List<RenewalsDetailsResponseProductsInner> getProducts() {
     return products;
   }
 
-  public void setProducts(RenewalsDetailsResponseProducts products) {
+  public void setProducts(List<RenewalsDetailsResponseProductsInner> products) {
     this.products = products;
   }
 
@@ -568,9 +576,19 @@ public class RenewalsDetailsResponse {
       if (jsonObj.get("referenceNumber") != null && !jsonObj.get("referenceNumber").isJsonNull()) {
         RenewalsDetailsResponseReferenceNumber.validateJsonElement(jsonObj.get("referenceNumber"));
       }
-      // validate the optional field `products`
       if (jsonObj.get("products") != null && !jsonObj.get("products").isJsonNull()) {
-        RenewalsDetailsResponseProducts.validateJsonElement(jsonObj.get("products"));
+        JsonArray jsonArrayproducts = jsonObj.getAsJsonArray("products");
+        if (jsonArrayproducts != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("products").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `products` to be an array in the JSON string but got `%s`", jsonObj.get("products").toString()));
+          }
+
+          // validate the optional field `products` (array)
+          for (int i = 0; i < jsonArrayproducts.size(); i++) {
+            RenewalsDetailsResponseProductsInner.validateJsonElement(jsonArrayproducts.get(i));
+          };
+        }
       }
       if (jsonObj.get("additionalAttributes") != null && !jsonObj.get("additionalAttributes").isJsonNull()) {
         JsonArray jsonArrayadditionalAttributes = jsonObj.getAsJsonArray("additionalAttributes");

@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * HATEOAS links for the price and availability of the sku.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:08:49.827408Z[Etc/UTC]")
 public class ProductSearchResponseCatalogInnerLinksInner {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)

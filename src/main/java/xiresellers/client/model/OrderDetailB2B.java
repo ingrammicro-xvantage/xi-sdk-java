@@ -20,7 +20,6 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -59,7 +58,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2B
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:08:49.827408Z[Etc/UTC]")
 public class OrderDetailB2B {
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
@@ -67,7 +66,7 @@ public class OrderDetailB2B {
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_DATE = "ingramOrderDate";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_DATE)
-  private OffsetDateTime ingramOrderDate;
+  private String ingramOrderDate;
 
   public static final String SERIALIZED_NAME_ORDER_TYPE = "orderType";
   @SerializedName(SERIALIZED_NAME_ORDER_TYPE)
@@ -179,7 +178,7 @@ public class OrderDetailB2B {
   }
 
 
-  public OrderDetailB2B ingramOrderDate(OffsetDateTime ingramOrderDate) {
+  public OrderDetailB2B ingramOrderDate(String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
     return this;
   }
@@ -189,11 +188,11 @@ public class OrderDetailB2B {
    * @return ingramOrderDate
   **/
   @javax.annotation.Nullable
-  public OffsetDateTime getIngramOrderDate() {
+  public String getIngramOrderDate() {
     return ingramOrderDate;
   }
 
-  public void setIngramOrderDate(OffsetDateTime ingramOrderDate) {
+  public void setIngramOrderDate(String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
   }
 
@@ -794,6 +793,9 @@ public class OrderDetailB2B {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("ingramOrderNumber") != null && !jsonObj.get("ingramOrderNumber").isJsonNull()) && !jsonObj.get("ingramOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `ingramOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramOrderNumber").toString()));
+      }
+      if ((jsonObj.get("ingramOrderDate") != null && !jsonObj.get("ingramOrderDate").isJsonNull()) && !jsonObj.get("ingramOrderDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `ingramOrderDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramOrderDate").toString()));
       }
       if ((jsonObj.get("orderType") != null && !jsonObj.get("orderType").isJsonNull()) && !jsonObj.get("orderType").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `orderType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderType").toString()));

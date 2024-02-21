@@ -9119,7 +9119,6 @@ components:
           isShippedFromPartner: true
           isIngramShip: true
           hasAcopQuantityBreak: true
-          IsBackOrderAllowed: true
           isReplacementProduct: true
           hasSpecialBid: true
           isReturnableProduct: true
@@ -9135,6 +9134,7 @@ components:
           isServiceSku: true
           hasBundle: true
           hasReturnLimits: true
+          isBackOrderAllowed: true
           isDirectship: true
         productCategory: productCategory
         ciscoFields:
@@ -9323,11 +9323,19 @@ components:
         endCustomerOrderNumber: endCustomerOrderNumber
         customerOrderNumber: customerOrderNumber
         products:
-          ingramPartNumber: ingramPartNumber
+        - ingramPartNumber: ingramPartNumber
           unitPrice: 0.8008281904610115
           manufacturerPartNumber: manufacturerPartNumber
           isConsolidated: isConsolidated
-          quantity: 6
+          quantity: quantity
+          ingramLineNumber: ingramLineNumber
+          vendorPartNumber: vendorPartNumber
+          productDescription: productDescription
+        - ingramPartNumber: ingramPartNumber
+          unitPrice: 0.8008281904610115
+          manufacturerPartNumber: manufacturerPartNumber
+          isConsolidated: isConsolidated
+          quantity: quantity
           ingramLineNumber: ingramLineNumber
           vendorPartNumber: vendorPartNumber
           productDescription: productDescription
@@ -9392,7 +9400,9 @@ components:
         referenceNumber:
           $ref: '#/components/schemas/renewalsDetailsResponse_referenceNumber'
         products:
-          $ref: '#/components/schemas/renewalsDetailsResponse_products'
+          items:
+            $ref: '#/components/schemas/renewalsDetailsResponse_products_inner'
+          type: array
         additionalAttributes:
           items:
             $ref: '#/components/schemas/renewalsDetailsResponse_additionalAttributes_inner'
@@ -11262,7 +11272,7 @@ components:
         currencyCode: currencyCode
         freightCharges: 1.4658129805029452
         paymentTerms: paymentTerms
-        ingramOrderDate: 2000-01-23T04:56:07.000+00:00
+        ingramOrderDate: ingramOrderDate
         additionalAttributes:
         - attributeValue: attributeValue
           attributeName: attributeName
@@ -11274,7 +11284,6 @@ components:
           type: string
         ingramOrderDate:
           description: The IngramMicro sales order date.
-          format: date-time
           type: string
         orderType:
           description: The IngramMicro sales order type.
@@ -14035,7 +14044,6 @@ components:
         isShippedFromPartner: true
         isIngramShip: true
         hasAcopQuantityBreak: true
-        IsBackOrderAllowed: true
         isReplacementProduct: true
         hasSpecialBid: true
         isReturnableProduct: true
@@ -14051,6 +14059,7 @@ components:
         isServiceSku: true
         hasBundle: true
         hasReturnLimits: true
+        isBackOrderAllowed: true
         isDirectship: true
       properties:
         hasWarranty:
@@ -14063,7 +14072,7 @@ components:
           description: Boolean that indicates whether there is any limit to return
             the product.
           type: boolean
-        IsBackOrderAllowed:
+        isBackOrderAllowed:
           description: Boolean that indicates whether back order is allowed for the
             product.
           type: boolean
@@ -14469,13 +14478,13 @@ components:
           description: Quote number for the renewal.
           type: string
       type: object
-    renewalsDetailsResponse_products:
+    renewalsDetailsResponse_products_inner:
       example:
         ingramPartNumber: ingramPartNumber
         unitPrice: 0.8008281904610115
         manufacturerPartNumber: manufacturerPartNumber
         isConsolidated: isConsolidated
-        quantity: 6
+        quantity: quantity
         ingramLineNumber: ingramLineNumber
         vendorPartNumber: vendorPartNumber
         productDescription: productDescription
@@ -14495,13 +14504,13 @@ components:
         manufacturerPartNumber:
           description: The manufacturer's part number for the line item.
           type: string
+        quantity:
+          description: The quantity of the line item.
+          type: string
         unitPrice:
           description: The unit price of the line item.
           format: decimal
           type: number
-        quantity:
-          description: The quantity of the line item.
-          type: integer
         isConsolidated:
           description: Is the line item consolidated? Yes or No.
           type: string
