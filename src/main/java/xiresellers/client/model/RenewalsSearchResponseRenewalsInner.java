@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchResponseRenewalsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T07:55:29.335518Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T08:44:05.228708Z[Etc/UTC]")
 public class RenewalsSearchResponseRenewalsInner {
   public static final String SERIALIZED_NAME_RENEWAL_ID = "renewalId";
   @SerializedName(SERIALIZED_NAME_RENEWAL_ID)

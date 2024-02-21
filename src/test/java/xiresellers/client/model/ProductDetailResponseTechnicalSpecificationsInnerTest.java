@@ -38,11 +38,11 @@ public class ProductDetailResponseTechnicalSpecificationsInnerTest {
     }
 
     /**
-     * Test the property 'headername'
+     * Test the property 'headerName'
      */
     @Test
-    public void headernameTest() {
-        // TODO: test headername
+    public void headerNameTest() {
+        // TODO: test headerName
     }
 
     /**
