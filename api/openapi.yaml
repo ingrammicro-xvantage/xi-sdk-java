@@ -9119,7 +9119,6 @@ components:
           isShippedFromPartner: true
           isIngramShip: true
           hasAcopQuantityBreak: true
-          IsBackOrderAllowed: true
           isReplacementProduct: true
           hasSpecialBid: true
           isReturnableProduct: true
@@ -9135,6 +9134,7 @@ components:
           isServiceSku: true
           hasBundle: true
           hasReturnLimits: true
+          isBackOrderAllowed: true
           isDirectship: true
         productCategory: productCategory
         ciscoFields:
@@ -14044,7 +14044,6 @@ components:
         isShippedFromPartner: true
         isIngramShip: true
         hasAcopQuantityBreak: true
-        IsBackOrderAllowed: true
         isReplacementProduct: true
         hasSpecialBid: true
         isReturnableProduct: true
@@ -14060,6 +14059,7 @@ components:
         isServiceSku: true
         hasBundle: true
         hasReturnLimits: true
+        isBackOrderAllowed: true
         isDirectship: true
       properties:
         hasWarranty:
@@ -14072,7 +14072,7 @@ components:
           description: Boolean that indicates whether there is any limit to return
             the product.
           type: boolean
-        IsBackOrderAllowed:
+        isBackOrderAllowed:
           description: Boolean that indicates whether back order is allowed for the
             product.
           type: boolean
