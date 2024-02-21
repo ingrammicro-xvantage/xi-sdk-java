@@ -9110,11 +9110,13 @@ components:
           hasStdWebDiscount: true
           hasStdSpecialPrice: true
           isPreorderProduct: true
+          hasAcopWebDiscount: true
           hasWarranty: true
           isDirectshipOrderable: true
           replacementType: replacementType
           isNewProduct: true
           isDownloadable: true
+          isRefurbished: true
           isClearanceProduct: true
           isOversizeProduct: true
           isShippedFromPartner: true
@@ -9127,7 +9129,6 @@ components:
           isExportableToCountry: true
           isDigitalType: true
           hasAcopSpecialPrice: true
-          isRefurbishedProduct: true
           isLicenseProduct: true
           skuType: skuType
           isDiscontinuedProduct: true
@@ -14036,11 +14037,13 @@ components:
         hasStdWebDiscount: true
         hasStdSpecialPrice: true
         isPreorderProduct: true
+        hasAcopWebDiscount: true
         hasWarranty: true
         isDirectshipOrderable: true
         replacementType: replacementType
         isNewProduct: true
         isDownloadable: true
+        isRefurbished: true
         isClearanceProduct: true
         isOversizeProduct: true
         isShippedFromPartner: true
@@ -14053,7 +14056,6 @@ components:
         isExportableToCountry: true
         isDigitalType: true
         hasAcopSpecialPrice: true
-        isRefurbishedProduct: true
         isLicenseProduct: true
         skuType: skuType
         isDiscontinuedProduct: true
@@ -14115,6 +14117,8 @@ components:
           description: Boolean that indicates whether product has any standard web
             discount.
           type: boolean
+        hasAcopWebDiscount:
+          type: boolean
         hasSpecialBid:
           description: Boolean that indicates whether product has any special bid.
           type: boolean
@@ -14124,7 +14128,7 @@ components:
         isDiscontinuedProduct:
           description: Boolean that indicates whether it’s a discontinued product.
           type: boolean
-        isRefurbishedProduct:
+        isRefurbished:
           description: Boolean that indicates whether product is refurbished.
           type: boolean
         isReturnableProduct:

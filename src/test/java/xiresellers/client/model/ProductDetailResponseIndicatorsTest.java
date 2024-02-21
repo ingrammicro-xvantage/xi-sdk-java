@@ -158,6 +158,14 @@ public class ProductDetailResponseIndicatorsTest {
     }
 
     /**
+     * Test the property 'hasAcopWebDiscount'
+     */
+    @Test
+    public void hasAcopWebDiscountTest() {
+        // TODO: test hasAcopWebDiscount
+    }
+
+    /**
      * Test the property 'hasSpecialBid'
      */
     @Test
@@ -182,11 +190,11 @@ public class ProductDetailResponseIndicatorsTest {
     }
 
     /**
-     * Test the property 'isRefurbishedProduct'
+     * Test the property 'isRefurbished'
      */
     @Test
-    public void isRefurbishedProductTest() {
-        // TODO: test isRefurbishedProduct
+    public void isRefurbishedTest() {
+        // TODO: test isRefurbished
     }
 
     /**
