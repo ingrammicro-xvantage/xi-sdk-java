@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:34:45.471304Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:49:36.439472Z[Etc/UTC]")
 public class InvoiceDetailsv61ResponseLinesInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
