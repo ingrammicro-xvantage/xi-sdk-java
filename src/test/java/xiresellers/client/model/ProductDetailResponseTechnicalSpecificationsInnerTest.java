@@ -46,27 +46,27 @@ public class ProductDetailResponseTechnicalSpecificationsInnerTest {
     }
 
     /**
-     * Test the property 'attributevalue'
+     * Test the property 'attributeName'
      */
     @Test
-    public void attributevalueTest() {
-        // TODO: test attributevalue
+    public void attributeNameTest() {
+        // TODO: test attributeName
     }
 
     /**
-     * Test the property 'attributedisplay'
+     * Test the property 'attributeDisplay'
      */
     @Test
-    public void attributedisplayTest() {
-        // TODO: test attributedisplay
+    public void attributeDisplayTest() {
+        // TODO: test attributeDisplay
     }
 
     /**
-     * Test the property 'attributename'
+     * Test the property 'attributeValue'
      */
     @Test
-    public void attributenameTest() {
-        // TODO: test attributename
+    public void attributeValueTest() {
+        // TODO: test attributeValue
     }
 
 }
