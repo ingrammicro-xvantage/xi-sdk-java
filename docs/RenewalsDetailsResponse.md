@@ -20,7 +20,7 @@
 |**status** | **String** | The status of the renewal. |  [optional] |
 |**endUserInfo** | [**RenewalsDetailsResponseEndUserInfo**](RenewalsDetailsResponseEndUserInfo.md) |  |  [optional] |
 |**referenceNumber** | [**RenewalsDetailsResponseReferenceNumber**](RenewalsDetailsResponseReferenceNumber.md) |  |  [optional] |
-|**products** | [**RenewalsDetailsResponseProducts**](RenewalsDetailsResponseProducts.md) |  |  [optional] |
+|**products** | [**List&lt;RenewalsDetailsResponseProductsInner&gt;**](RenewalsDetailsResponseProductsInner.md) |  |  [optional] |
 |**additionalAttributes** | [**List&lt;RenewalsDetailsResponseAdditionalAttributesInner&gt;**](RenewalsDetailsResponseAdditionalAttributesInner.md) |  |  [optional] |
 
 

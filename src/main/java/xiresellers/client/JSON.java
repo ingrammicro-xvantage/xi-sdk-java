@@ -254,7 +254,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseAdditionalAttributesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseEndUserInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseProducts.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseProductsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponseReferenceNumber.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsSearchRequestDateType.CustomTypeAdapterFactory());

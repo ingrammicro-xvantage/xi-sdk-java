@@ -48,10 +48,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * RenewalsDetailsResponseProducts
+ * RenewalsDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:31:48.655902Z[Etc/UTC]")
-public class RenewalsDetailsResponseProducts {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T06:56:47.990097Z[Etc/UTC]")
+public class RenewalsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
   private String ingramLineNumber;
@@ -72,22 +72,22 @@ public class RenewalsDetailsResponseProducts {
   @SerializedName(SERIALIZED_NAME_MANUFACTURER_PART_NUMBER)
   private String manufacturerPartNumber;
 
+  public static final String SERIALIZED_NAME_QUANTITY = "quantity";
+  @SerializedName(SERIALIZED_NAME_QUANTITY)
+  private String quantity;
+
   public static final String SERIALIZED_NAME_UNIT_PRICE = "unitPrice";
   @SerializedName(SERIALIZED_NAME_UNIT_PRICE)
   private BigDecimal unitPrice;
-
-  public static final String SERIALIZED_NAME_QUANTITY = "quantity";
-  @SerializedName(SERIALIZED_NAME_QUANTITY)
-  private Integer quantity;
 
   public static final String SERIALIZED_NAME_IS_CONSOLIDATED = "isConsolidated";
   @SerializedName(SERIALIZED_NAME_IS_CONSOLIDATED)
   private String isConsolidated;
 
-  public RenewalsDetailsResponseProducts() {
+  public RenewalsDetailsResponseProductsInner() {
   }
 
-  public RenewalsDetailsResponseProducts ingramLineNumber(String ingramLineNumber) {
+  public RenewalsDetailsResponseProductsInner ingramLineNumber(String ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
     return this;
   }
@@ -106,7 +106,7 @@ public class RenewalsDetailsResponseProducts {
   }
 
 
-  public RenewalsDetailsResponseProducts productDescription(String productDescription) {
+  public RenewalsDetailsResponseProductsInner productDescription(String productDescription) {
     this.productDescription = productDescription;
     return this;
   }
@@ -125,7 +125,7 @@ public class RenewalsDetailsResponseProducts {
   }
 
 
-  public RenewalsDetailsResponseProducts vendorPartNumber(String vendorPartNumber) {
+  public RenewalsDetailsResponseProductsInner vendorPartNumber(String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -144,7 +144,7 @@ public class RenewalsDetailsResponseProducts {
   }
 
 
-  public RenewalsDetailsResponseProducts ingramPartNumber(String ingramPartNumber) {
+  public RenewalsDetailsResponseProductsInner ingramPartNumber(String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -163,7 +163,7 @@ public class RenewalsDetailsResponseProducts {
   }
 
 
-  public RenewalsDetailsResponseProducts manufacturerPartNumber(String manufacturerPartNumber) {
+  public RenewalsDetailsResponseProductsInner manufacturerPartNumber(String manufacturerPartNumber) {
     this.manufacturerPartNumber = manufacturerPartNumber;
     return this;
   }
@@ -182,7 +182,26 @@ public class RenewalsDetailsResponseProducts {
   }
 
 
-  public RenewalsDetailsResponseProducts unitPrice(BigDecimal unitPrice) {
+  public RenewalsDetailsResponseProductsInner quantity(String quantity) {
+    this.quantity = quantity;
+    return this;
+  }
+
+   /**
+   * The quantity of the line item.
+   * @return quantity
+  **/
+  @javax.annotation.Nullable
+  public String getQuantity() {
+    return quantity;
+  }
+
+  public void setQuantity(String quantity) {
+    this.quantity = quantity;
+  }
+
+
+  public RenewalsDetailsResponseProductsInner unitPrice(BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
     return this;
   }
@@ -201,26 +220,7 @@ public class RenewalsDetailsResponseProducts {
   }
 
 
-  public RenewalsDetailsResponseProducts quantity(Integer quantity) {
-    this.quantity = quantity;
-    return this;
-  }
-
-   /**
-   * The quantity of the line item.
-   * @return quantity
-  **/
-  @javax.annotation.Nullable
-  public Integer getQuantity() {
-    return quantity;
-  }
-
-  public void setQuantity(Integer quantity) {
-    this.quantity = quantity;
-  }
-
-
-  public RenewalsDetailsResponseProducts isConsolidated(String isConsolidated) {
+  public RenewalsDetailsResponseProductsInner isConsolidated(String isConsolidated) {
     this.isConsolidated = isConsolidated;
     return this;
   }
@@ -248,33 +248,33 @@ public class RenewalsDetailsResponseProducts {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    RenewalsDetailsResponseProducts renewalsDetailsResponseProducts = (RenewalsDetailsResponseProducts) o;
-    return Objects.equals(this.ingramLineNumber, renewalsDetailsResponseProducts.ingramLineNumber) &&
-        Objects.equals(this.productDescription, renewalsDetailsResponseProducts.productDescription) &&
-        Objects.equals(this.vendorPartNumber, renewalsDetailsResponseProducts.vendorPartNumber) &&
-        Objects.equals(this.ingramPartNumber, renewalsDetailsResponseProducts.ingramPartNumber) &&
-        Objects.equals(this.manufacturerPartNumber, renewalsDetailsResponseProducts.manufacturerPartNumber) &&
-        Objects.equals(this.unitPrice, renewalsDetailsResponseProducts.unitPrice) &&
-        Objects.equals(this.quantity, renewalsDetailsResponseProducts.quantity) &&
-        Objects.equals(this.isConsolidated, renewalsDetailsResponseProducts.isConsolidated);
+    RenewalsDetailsResponseProductsInner renewalsDetailsResponseProductsInner = (RenewalsDetailsResponseProductsInner) o;
+    return Objects.equals(this.ingramLineNumber, renewalsDetailsResponseProductsInner.ingramLineNumber) &&
+        Objects.equals(this.productDescription, renewalsDetailsResponseProductsInner.productDescription) &&
+        Objects.equals(this.vendorPartNumber, renewalsDetailsResponseProductsInner.vendorPartNumber) &&
+        Objects.equals(this.ingramPartNumber, renewalsDetailsResponseProductsInner.ingramPartNumber) &&
+        Objects.equals(this.manufacturerPartNumber, renewalsDetailsResponseProductsInner.manufacturerPartNumber) &&
+        Objects.equals(this.quantity, renewalsDetailsResponseProductsInner.quantity) &&
+        Objects.equals(this.unitPrice, renewalsDetailsResponseProductsInner.unitPrice) &&
+        Objects.equals(this.isConsolidated, renewalsDetailsResponseProductsInner.isConsolidated);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(ingramLineNumber, productDescription, vendorPartNumber, ingramPartNumber, manufacturerPartNumber, unitPrice, quantity, isConsolidated);
+    return Objects.hash(ingramLineNumber, productDescription, vendorPartNumber, ingramPartNumber, manufacturerPartNumber, quantity, unitPrice, isConsolidated);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class RenewalsDetailsResponseProducts {\n");
+    sb.append("class RenewalsDetailsResponseProductsInner {\n");
     sb.append("    ingramLineNumber: ").append(toIndentedString(ingramLineNumber)).append("\n");
     sb.append("    productDescription: ").append(toIndentedString(productDescription)).append("\n");
     sb.append("    vendorPartNumber: ").append(toIndentedString(vendorPartNumber)).append("\n");
     sb.append("    ingramPartNumber: ").append(toIndentedString(ingramPartNumber)).append("\n");
     sb.append("    manufacturerPartNumber: ").append(toIndentedString(manufacturerPartNumber)).append("\n");
-    sb.append("    unitPrice: ").append(toIndentedString(unitPrice)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
+    sb.append("    unitPrice: ").append(toIndentedString(unitPrice)).append("\n");
     sb.append("    isConsolidated: ").append(toIndentedString(isConsolidated)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -303,8 +303,8 @@ public class RenewalsDetailsResponseProducts {
     openapiFields.add("vendorPartNumber");
     openapiFields.add("ingramPartNumber");
     openapiFields.add("manufacturerPartNumber");
-    openapiFields.add("unitPrice");
     openapiFields.add("quantity");
+    openapiFields.add("unitPrice");
     openapiFields.add("isConsolidated");
 
     // a set of required properties/fields (JSON key names)
@@ -315,20 +315,20 @@ public class RenewalsDetailsResponseProducts {
   * Validates the JSON Element and throws an exception if issues found
   *
   * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to RenewalsDetailsResponseProducts
+  * @throws IOException if the JSON Element is invalid with respect to RenewalsDetailsResponseProductsInner
   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!RenewalsDetailsResponseProducts.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in RenewalsDetailsResponseProducts is not found in the empty JSON string", RenewalsDetailsResponseProducts.openapiRequiredFields.toString()));
+        if (!RenewalsDetailsResponseProductsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in RenewalsDetailsResponseProductsInner is not found in the empty JSON string", RenewalsDetailsResponseProductsInner.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!RenewalsDetailsResponseProducts.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `RenewalsDetailsResponseProducts` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!RenewalsDetailsResponseProductsInner.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `RenewalsDetailsResponseProductsInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -347,6 +347,9 @@ public class RenewalsDetailsResponseProducts {
       if ((jsonObj.get("manufacturerPartNumber") != null && !jsonObj.get("manufacturerPartNumber").isJsonNull()) && !jsonObj.get("manufacturerPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `manufacturerPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("manufacturerPartNumber").toString()));
       }
+      if ((jsonObj.get("quantity") != null && !jsonObj.get("quantity").isJsonNull()) && !jsonObj.get("quantity").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `quantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quantity").toString()));
+      }
       if ((jsonObj.get("isConsolidated") != null && !jsonObj.get("isConsolidated").isJsonNull()) && !jsonObj.get("isConsolidated").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `isConsolidated` to be a primitive type in the JSON string but got `%s`", jsonObj.get("isConsolidated").toString()));
       }
@@ -356,22 +359,22 @@ public class RenewalsDetailsResponseProducts {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!RenewalsDetailsResponseProducts.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'RenewalsDetailsResponseProducts' and its subtypes
+       if (!RenewalsDetailsResponseProductsInner.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'RenewalsDetailsResponseProductsInner' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<RenewalsDetailsResponseProducts> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(RenewalsDetailsResponseProducts.class));
+       final TypeAdapter<RenewalsDetailsResponseProductsInner> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(RenewalsDetailsResponseProductsInner.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<RenewalsDetailsResponseProducts>() {
+       return (TypeAdapter<T>) new TypeAdapter<RenewalsDetailsResponseProductsInner>() {
            @Override
-           public void write(JsonWriter out, RenewalsDetailsResponseProducts value) throws IOException {
+           public void write(JsonWriter out, RenewalsDetailsResponseProductsInner value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public RenewalsDetailsResponseProducts read(JsonReader in) throws IOException {
+           public RenewalsDetailsResponseProductsInner read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -382,18 +385,18 @@ public class RenewalsDetailsResponseProducts {
   }
 
  /**
-  * Create an instance of RenewalsDetailsResponseProducts given an JSON string
+  * Create an instance of RenewalsDetailsResponseProductsInner given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of RenewalsDetailsResponseProducts
-  * @throws IOException if the JSON string is invalid with respect to RenewalsDetailsResponseProducts
+  * @return An instance of RenewalsDetailsResponseProductsInner
+  * @throws IOException if the JSON string is invalid with respect to RenewalsDetailsResponseProductsInner
   */
-  public static RenewalsDetailsResponseProducts fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, RenewalsDetailsResponseProducts.class);
+  public static RenewalsDetailsResponseProductsInner fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, RenewalsDetailsResponseProductsInner.class);
   }
 
  /**
-  * Convert an instance of RenewalsDetailsResponseProducts to an JSON string
+  * Convert an instance of RenewalsDetailsResponseProductsInner to an JSON string
   *
   * @return JSON string
   */
