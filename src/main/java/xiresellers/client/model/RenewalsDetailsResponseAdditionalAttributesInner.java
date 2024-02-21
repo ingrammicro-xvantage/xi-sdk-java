@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponseAdditionalAttributesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T08:56:46.667951Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:34:45.471304Z[Etc/UTC]")
 public class RenewalsDetailsResponseAdditionalAttributesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_DESCRIPTION = "attributeDescription";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_DESCRIPTION)
@@ -66,7 +66,7 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expirationDate";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
-  private LocalDate expirationDate;
+  private String expirationDate;
 
   public static final String SERIALIZED_NAME_IS_CONSOLIDATED = "isConsolidated";
   @SerializedName(SERIALIZED_NAME_IS_CONSOLIDATED)
@@ -132,7 +132,7 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
   }
 
 
-  public RenewalsDetailsResponseAdditionalAttributesInner expirationDate(LocalDate expirationDate) {
+  public RenewalsDetailsResponseAdditionalAttributesInner expirationDate(String expirationDate) {
     this.expirationDate = expirationDate;
     return this;
   }
@@ -142,11 +142,11 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
    * @return expirationDate
   **/
   @javax.annotation.Nullable
-  public LocalDate getExpirationDate() {
+  public String getExpirationDate() {
     return expirationDate;
   }
 
-  public void setExpirationDate(LocalDate expirationDate) {
+  public void setExpirationDate(String expirationDate) {
     this.expirationDate = expirationDate;
   }
 
@@ -259,6 +259,9 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
       }
       if ((jsonObj.get("attributeValue") != null && !jsonObj.get("attributeValue").isJsonNull()) && !jsonObj.get("attributeValue").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `attributeValue` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributeValue").toString()));
+      }
+      if ((jsonObj.get("expirationDate") != null && !jsonObj.get("expirationDate").isJsonNull()) && !jsonObj.get("expirationDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `expirationDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("expirationDate").toString()));
       }
       if ((jsonObj.get("isConsolidated") != null && !jsonObj.get("isConsolidated").isJsonNull()) && !jsonObj.get("isConsolidated").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `isConsolidated` to be a primitive type in the JSON string but got `%s`", jsonObj.get("isConsolidated").toString()));

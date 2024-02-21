@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T08:56:46.667951Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:34:45.471304Z[Etc/UTC]")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
@@ -85,10 +85,6 @@ public class QuoteDetailsResponse {
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
   private String currencyCode;
 
-  public static final String SERIALIZED_NAME_CLOSING_REASON = "closingReason";
-  @SerializedName(SERIALIZED_NAME_CLOSING_REASON)
-  private String closingReason;
-
   public static final String SERIALIZED_NAME_SPECIAL_BID_ID = "specialBidId";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_ID)
   private String specialBidId;
@@ -104,6 +100,14 @@ public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
   private String status;
+
+  public static final String SERIALIZED_NAME_CLOSING_REASON = "closingReason";
+  @SerializedName(SERIALIZED_NAME_CLOSING_REASON)
+  private String closingReason;
+
+  public static final String SERIALIZED_NAME_DATE_CLOSED = "dateClosed";
+  @SerializedName(SERIALIZED_NAME_DATE_CLOSED)
+  private String dateClosed;
 
   public static final String SERIALIZED_NAME_CUSTOMER_NEED = "customerNeed";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_NEED)
@@ -137,9 +141,9 @@ public class QuoteDetailsResponse {
   @SerializedName(SERIALIZED_NAME_LEASING_INSTRUCTIONS)
   private String leasingInstructions;
 
-  public static final String SERIALIZED_NAME_QUOTE_SYB_TYPE = "quoteSybType";
-  @SerializedName(SERIALIZED_NAME_QUOTE_SYB_TYPE)
-  private String quoteSybType;
+  public static final String SERIALIZED_NAME_QUOTE_SUB_TYPE = "quoteSubType";
+  @SerializedName(SERIALIZED_NAME_QUOTE_SUB_TYPE)
+  private String quoteSubType;
 
   public static final String SERIALIZED_NAME_RESELLER_INFO = "resellerInfo";
   @SerializedName(SERIALIZED_NAME_RESELLER_INFO)
@@ -309,25 +313,6 @@ public class QuoteDetailsResponse {
   }
 
 
-  public QuoteDetailsResponse closingReason(String closingReason) {
-    this.closingReason = closingReason;
-    return this;
-  }
-
-   /**
-   * Closing Reason for quote.
-   * @return closingReason
-  **/
-  @javax.annotation.Nullable
-  public String getClosingReason() {
-    return closingReason;
-  }
-
-  public void setClosingReason(String closingReason) {
-    this.closingReason = closingReason;
-  }
-
-
   public QuoteDetailsResponse specialBidId(String specialBidId) {
     this.specialBidId = specialBidId;
     return this;
@@ -401,6 +386,44 @@ public class QuoteDetailsResponse {
 
   public void setStatus(String status) {
     this.status = status;
+  }
+
+
+  public QuoteDetailsResponse closingReason(String closingReason) {
+    this.closingReason = closingReason;
+    return this;
+  }
+
+   /**
+   * Closing Reason for quote.
+   * @return closingReason
+  **/
+  @javax.annotation.Nullable
+  public String getClosingReason() {
+    return closingReason;
+  }
+
+  public void setClosingReason(String closingReason) {
+    this.closingReason = closingReason;
+  }
+
+
+  public QuoteDetailsResponse dateClosed(String dateClosed) {
+    this.dateClosed = dateClosed;
+    return this;
+  }
+
+   /**
+   * Get dateClosed
+   * @return dateClosed
+  **/
+  @javax.annotation.Nullable
+  public String getDateClosed() {
+    return dateClosed;
+  }
+
+  public void setDateClosed(String dateClosed) {
+    this.dateClosed = dateClosed;
   }
 
 
@@ -556,22 +579,22 @@ public class QuoteDetailsResponse {
   }
 
 
-  public QuoteDetailsResponse quoteSybType(String quoteSybType) {
-    this.quoteSybType = quoteSybType;
+  public QuoteDetailsResponse quoteSubType(String quoteSubType) {
+    this.quoteSubType = quoteSubType;
     return this;
   }
 
    /**
-   * Get quoteSybType
-   * @return quoteSybType
+   * Get quoteSubType
+   * @return quoteSubType
   **/
   @javax.annotation.Nullable
-  public String getQuoteSybType() {
-    return quoteSybType;
+  public String getQuoteSubType() {
+    return quoteSubType;
   }
 
-  public void setQuoteSybType(String quoteSybType) {
-    this.quoteSybType = quoteSybType;
+  public void setQuoteSubType(String quoteSubType) {
+    this.quoteSubType = quoteSubType;
   }
 
 
@@ -760,11 +783,12 @@ public class QuoteDetailsResponse {
         Objects.equals(this.lastModifiedDate, quoteDetailsResponse.lastModifiedDate) &&
         Objects.equals(this.ingramQuoteExpiryDate, quoteDetailsResponse.ingramQuoteExpiryDate) &&
         Objects.equals(this.currencyCode, quoteDetailsResponse.currencyCode) &&
-        Objects.equals(this.closingReason, quoteDetailsResponse.closingReason) &&
         Objects.equals(this.specialBidId, quoteDetailsResponse.specialBidId) &&
         Objects.equals(this.specialBidEffectiveDate, quoteDetailsResponse.specialBidEffectiveDate) &&
         Objects.equals(this.specialBidExpirationDate, quoteDetailsResponse.specialBidExpirationDate) &&
         Objects.equals(this.status, quoteDetailsResponse.status) &&
+        Objects.equals(this.closingReason, quoteDetailsResponse.closingReason) &&
+        Objects.equals(this.dateClosed, quoteDetailsResponse.dateClosed) &&
         Objects.equals(this.customerNeed, quoteDetailsResponse.customerNeed) &&
         Objects.equals(this.proposedSolution, quoteDetailsResponse.proposedSolution) &&
         Objects.equals(this.introPreamble, quoteDetailsResponse.introPreamble) &&
@@ -773,7 +797,7 @@ public class QuoteDetailsResponse {
         Objects.equals(this.quoteType, quoteDetailsResponse.quoteType) &&
         Objects.equals(this.leaseInfo, quoteDetailsResponse.leaseInfo) &&
         Objects.equals(this.leasingInstructions, quoteDetailsResponse.leasingInstructions) &&
-        Objects.equals(this.quoteSybType, quoteDetailsResponse.quoteSybType) &&
+        Objects.equals(this.quoteSubType, quoteDetailsResponse.quoteSubType) &&
         Objects.equals(this.resellerInfo, quoteDetailsResponse.resellerInfo) &&
         Objects.equals(this.endUserInfo, quoteDetailsResponse.endUserInfo) &&
         Objects.equals(this.products, quoteDetailsResponse.products) &&
@@ -786,7 +810,7 @@ public class QuoteDetailsResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteName, quoteNumber, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, closingReason, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, status, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, quoteSybType, resellerInfo, endUserInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extendedQuotePriceTotal, additionalAttributes);
+    return Objects.hash(quoteName, quoteNumber, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, status, closingReason, dateClosed, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, quoteSubType, resellerInfo, endUserInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extendedQuotePriceTotal, additionalAttributes);
   }
 
   @Override
@@ -800,11 +824,12 @@ public class QuoteDetailsResponse {
     sb.append("    lastModifiedDate: ").append(toIndentedString(lastModifiedDate)).append("\n");
     sb.append("    ingramQuoteExpiryDate: ").append(toIndentedString(ingramQuoteExpiryDate)).append("\n");
     sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
-    sb.append("    closingReason: ").append(toIndentedString(closingReason)).append("\n");
     sb.append("    specialBidId: ").append(toIndentedString(specialBidId)).append("\n");
     sb.append("    specialBidEffectiveDate: ").append(toIndentedString(specialBidEffectiveDate)).append("\n");
     sb.append("    specialBidExpirationDate: ").append(toIndentedString(specialBidExpirationDate)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    closingReason: ").append(toIndentedString(closingReason)).append("\n");
+    sb.append("    dateClosed: ").append(toIndentedString(dateClosed)).append("\n");
     sb.append("    customerNeed: ").append(toIndentedString(customerNeed)).append("\n");
     sb.append("    proposedSolution: ").append(toIndentedString(proposedSolution)).append("\n");
     sb.append("    introPreamble: ").append(toIndentedString(introPreamble)).append("\n");
@@ -813,7 +838,7 @@ public class QuoteDetailsResponse {
     sb.append("    quoteType: ").append(toIndentedString(quoteType)).append("\n");
     sb.append("    leaseInfo: ").append(toIndentedString(leaseInfo)).append("\n");
     sb.append("    leasingInstructions: ").append(toIndentedString(leasingInstructions)).append("\n");
-    sb.append("    quoteSybType: ").append(toIndentedString(quoteSybType)).append("\n");
+    sb.append("    quoteSubType: ").append(toIndentedString(quoteSubType)).append("\n");
     sb.append("    resellerInfo: ").append(toIndentedString(resellerInfo)).append("\n");
     sb.append("    endUserInfo: ").append(toIndentedString(endUserInfo)).append("\n");
     sb.append("    products: ").append(toIndentedString(products)).append("\n");
@@ -851,11 +876,12 @@ public class QuoteDetailsResponse {
     openapiFields.add("lastModifiedDate");
     openapiFields.add("ingramQuoteExpiryDate");
     openapiFields.add("currencyCode");
-    openapiFields.add("closingReason");
     openapiFields.add("specialBidId");
     openapiFields.add("specialBidEffectiveDate");
     openapiFields.add("specialBidExpirationDate");
     openapiFields.add("status");
+    openapiFields.add("closingReason");
+    openapiFields.add("dateClosed");
     openapiFields.add("customerNeed");
     openapiFields.add("proposedSolution");
     openapiFields.add("introPreamble");
@@ -864,7 +890,7 @@ public class QuoteDetailsResponse {
     openapiFields.add("quoteType");
     openapiFields.add("leaseInfo");
     openapiFields.add("leasingInstructions");
-    openapiFields.add("quoteSybType");
+    openapiFields.add("quoteSubType");
     openapiFields.add("resellerInfo");
     openapiFields.add("endUserInfo");
     openapiFields.add("products");
@@ -920,9 +946,6 @@ public class QuoteDetailsResponse {
       if ((jsonObj.get("currencyCode") != null && !jsonObj.get("currencyCode").isJsonNull()) && !jsonObj.get("currencyCode").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `currencyCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyCode").toString()));
       }
-      if ((jsonObj.get("closingReason") != null && !jsonObj.get("closingReason").isJsonNull()) && !jsonObj.get("closingReason").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `closingReason` to be a primitive type in the JSON string but got `%s`", jsonObj.get("closingReason").toString()));
-      }
       if ((jsonObj.get("specialBidId") != null && !jsonObj.get("specialBidId").isJsonNull()) && !jsonObj.get("specialBidId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `specialBidId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialBidId").toString()));
       }
@@ -934,6 +957,12 @@ public class QuoteDetailsResponse {
       }
       if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
+      }
+      if ((jsonObj.get("closingReason") != null && !jsonObj.get("closingReason").isJsonNull()) && !jsonObj.get("closingReason").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `closingReason` to be a primitive type in the JSON string but got `%s`", jsonObj.get("closingReason").toString()));
+      }
+      if ((jsonObj.get("dateClosed") != null && !jsonObj.get("dateClosed").isJsonNull()) && !jsonObj.get("dateClosed").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `dateClosed` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dateClosed").toString()));
       }
       if ((jsonObj.get("customerNeed") != null && !jsonObj.get("customerNeed").isJsonNull()) && !jsonObj.get("customerNeed").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `customerNeed` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerNeed").toString()));
@@ -959,8 +988,8 @@ public class QuoteDetailsResponse {
       if ((jsonObj.get("leasingInstructions") != null && !jsonObj.get("leasingInstructions").isJsonNull()) && !jsonObj.get("leasingInstructions").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `leasingInstructions` to be a primitive type in the JSON string but got `%s`", jsonObj.get("leasingInstructions").toString()));
       }
-      if ((jsonObj.get("quoteSybType") != null && !jsonObj.get("quoteSybType").isJsonNull()) && !jsonObj.get("quoteSybType").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `quoteSybType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteSybType").toString()));
+      if ((jsonObj.get("quoteSubType") != null && !jsonObj.get("quoteSubType").isJsonNull()) && !jsonObj.get("quoteSubType").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `quoteSubType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteSubType").toString()));
       }
       // validate the optional field `resellerInfo`
       if (jsonObj.get("resellerInfo") != null && !jsonObj.get("resellerInfo").isJsonNull()) {

@@ -9357,12 +9357,12 @@ components:
           attributeValue: attributeValue
           attributeDescription: attributeDescription
           startDate: 2000-01-23
-          expirationDate: 2000-01-23
+          expirationDate: expirationDate
         - isConsolidated: isConsolidated
           attributeValue: attributeValue
           attributeDescription: attributeDescription
           startDate: 2000-01-23
-          expirationDate: 2000-01-23
+          expirationDate: expirationDate
       properties:
         renewalId:
           description: Unique Ingram renewal ID.
@@ -9907,7 +9907,9 @@ components:
     QuoteDetailsResponse:
       example:
         quantityTotal: 2
+        quoteSubType: quoteSubType
         leaseInfo: leaseInfo
+        dateClosed: dateClosed
         quoteType: quoteType
         products:
         - ingramPartNumber: ingramPartNumber
@@ -9984,7 +9986,6 @@ components:
           companyName: companyName
           customerNumber: customerNumber
           email: email
-        quoteSybType: quoteSybType
         ingramQuoteExpiryDate: ingramQuoteExpiryDate
         closingReason: closingReason
         purchaseInstructions: purchaseInstructions
@@ -10029,9 +10030,6 @@ components:
         currencyCode:
           description: Three letter currency code.
           type: string
-        closingReason:
-          description: Closing Reason for quote.
-          type: string
         specialBidId:
           description: Price discount identifyer to specify  a pricing discount that
             has been applied to the quote. If present - the priceDeviationStartDate
@@ -10049,6 +10047,11 @@ components:
         status:
           description: This refers to the primary status of the quote.  API responses
             will return
+          type: string
+        closingReason:
+          description: Closing Reason for quote.
+          type: string
+        dateClosed:
           type: string
         customerNeed:
           description: Details related to the customer's request for the quote entered
@@ -10077,7 +10080,7 @@ components:
         leasingInstructions:
           description: Leasing information
           type: string
-        quoteSybType:
+        quoteSubType:
           type: string
         resellerInfo:
           $ref: '#/components/schemas/QuoteDetailsResponse_resellerInfo'
@@ -10791,27 +10794,27 @@ components:
           requestedDeliverydate: requestedDeliverydate
           multipleShipments:
           - date: date
+            dateType: dateType
             dateRange:
               endDate: endDate
               startDate: startDate
-            dataType: dataType
-            requestedQuantity: requestedQuantity
+            requestedQuantity: 6
             description: description
             source: source
             lineNumber: lineNumber
             deliveryDate: deliveryDate
-            confirmedQuantity: confirmedQuantity
+            confirmedQuantity: 7
           - date: date
+            dateType: dateType
             dateRange:
               endDate: endDate
               startDate: startDate
-            dataType: dataType
-            requestedQuantity: requestedQuantity
+            requestedQuantity: 6
             description: description
             source: source
             lineNumber: lineNumber
             deliveryDate: deliveryDate
-            confirmedQuantity: confirmedQuantity
+            confirmedQuantity: 7
           quantityOrdered: 4
           customerLineNumber: customerLineNumber
           lineStatus: lineStatus
@@ -11034,27 +11037,27 @@ components:
           requestedDeliverydate: requestedDeliverydate
           multipleShipments:
           - date: date
+            dateType: dateType
             dateRange:
               endDate: endDate
               startDate: startDate
-            dataType: dataType
-            requestedQuantity: requestedQuantity
+            requestedQuantity: 6
             description: description
             source: source
             lineNumber: lineNumber
             deliveryDate: deliveryDate
-            confirmedQuantity: confirmedQuantity
+            confirmedQuantity: 7
           - date: date
+            dateType: dateType
             dateRange:
               endDate: endDate
               startDate: startDate
-            dataType: dataType
-            requestedQuantity: requestedQuantity
+            requestedQuantity: 6
             description: description
             source: source
             lineNumber: lineNumber
             deliveryDate: deliveryDate
-            confirmedQuantity: confirmedQuantity
+            confirmedQuantity: 7
           quantityOrdered: 4
           customerLineNumber: customerLineNumber
           lineStatus: lineStatus
@@ -14529,7 +14532,7 @@ components:
         attributeValue: attributeValue
         attributeDescription: attributeDescription
         startDate: 2000-01-23
-        expirationDate: 2000-01-23
+        expirationDate: expirationDate
       properties:
         attributeDescription:
           description: The description of the additional attribute.
@@ -14543,7 +14546,6 @@ components:
           type: string
         expirationDate:
           description: The attribute expiration date.
-          format: date
           type: string
         isConsolidated:
           description: Is the line item consolidated? Yes or No.
@@ -16950,27 +16952,27 @@ components:
     OrderDetailB2B_lines_inner_multipleShipments_inner:
       example:
         date: date
+        dateType: dateType
         dateRange:
           endDate: endDate
           startDate: startDate
-        dataType: dataType
-        requestedQuantity: requestedQuantity
+        requestedQuantity: 6
         description: description
         source: source
         lineNumber: lineNumber
         deliveryDate: deliveryDate
-        confirmedQuantity: confirmedQuantity
+        confirmedQuantity: 7
       properties:
         lineNumber:
           description: Line number.
           type: string
         requestedQuantity:
           description: Requested quantity.
-          type: string
+          type: integer
         confirmedQuantity:
           description: Confirmed quantity.
-          type: string
-        dataType:
+          type: integer
+        dateType:
           description: Date type. Example Single or multiple dates.
           type: string
         dateRange:
@@ -16997,27 +16999,27 @@ components:
         requestedDeliverydate: requestedDeliverydate
         multipleShipments:
         - date: date
+          dateType: dateType
           dateRange:
             endDate: endDate
             startDate: startDate
-          dataType: dataType
-          requestedQuantity: requestedQuantity
+          requestedQuantity: 6
           description: description
           source: source
           lineNumber: lineNumber
           deliveryDate: deliveryDate
-          confirmedQuantity: confirmedQuantity
+          confirmedQuantity: 7
         - date: date
+          dateType: dateType
           dateRange:
             endDate: endDate
             startDate: startDate
-          dataType: dataType
-          requestedQuantity: requestedQuantity
+          requestedQuantity: 6
           description: description
           source: source
           lineNumber: lineNumber
           deliveryDate: deliveryDate
-          confirmedQuantity: confirmedQuantity
+          confirmedQuantity: 7
         quantityOrdered: 4
         customerLineNumber: customerLineNumber
         lineStatus: lineStatus

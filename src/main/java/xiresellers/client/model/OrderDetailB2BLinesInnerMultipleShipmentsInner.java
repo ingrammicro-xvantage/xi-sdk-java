@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerMultipleShipmentsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T08:56:46.667951Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:34:45.471304Z[Etc/UTC]")
 public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
   public static final String SERIALIZED_NAME_LINE_NUMBER = "lineNumber";
   @SerializedName(SERIALIZED_NAME_LINE_NUMBER)
@@ -58,15 +58,15 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
 
   public static final String SERIALIZED_NAME_REQUESTED_QUANTITY = "requestedQuantity";
   @SerializedName(SERIALIZED_NAME_REQUESTED_QUANTITY)
-  private String requestedQuantity;
+  private Integer requestedQuantity;
 
   public static final String SERIALIZED_NAME_CONFIRMED_QUANTITY = "confirmedQuantity";
   @SerializedName(SERIALIZED_NAME_CONFIRMED_QUANTITY)
-  private String confirmedQuantity;
+  private Integer confirmedQuantity;
 
-  public static final String SERIALIZED_NAME_DATA_TYPE = "dataType";
-  @SerializedName(SERIALIZED_NAME_DATA_TYPE)
-  private String dataType;
+  public static final String SERIALIZED_NAME_DATE_TYPE = "dateType";
+  @SerializedName(SERIALIZED_NAME_DATE_TYPE)
+  private String dateType;
 
   public static final String SERIALIZED_NAME_DATE_RANGE = "dateRange";
   @SerializedName(SERIALIZED_NAME_DATE_RANGE)
@@ -110,7 +110,7 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner requestedQuantity(String requestedQuantity) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner requestedQuantity(Integer requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
     return this;
   }
@@ -120,16 +120,16 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
    * @return requestedQuantity
   **/
   @javax.annotation.Nullable
-  public String getRequestedQuantity() {
+  public Integer getRequestedQuantity() {
     return requestedQuantity;
   }
 
-  public void setRequestedQuantity(String requestedQuantity) {
+  public void setRequestedQuantity(Integer requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner confirmedQuantity(String confirmedQuantity) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner confirmedQuantity(Integer confirmedQuantity) {
     this.confirmedQuantity = confirmedQuantity;
     return this;
   }
@@ -139,31 +139,31 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
    * @return confirmedQuantity
   **/
   @javax.annotation.Nullable
-  public String getConfirmedQuantity() {
+  public Integer getConfirmedQuantity() {
     return confirmedQuantity;
   }
 
-  public void setConfirmedQuantity(String confirmedQuantity) {
+  public void setConfirmedQuantity(Integer confirmedQuantity) {
     this.confirmedQuantity = confirmedQuantity;
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner dataType(String dataType) {
-    this.dataType = dataType;
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner dateType(String dateType) {
+    this.dateType = dateType;
     return this;
   }
 
    /**
    * Date type. Example Single or multiple dates.
-   * @return dataType
+   * @return dateType
   **/
   @javax.annotation.Nullable
-  public String getDataType() {
-    return dataType;
+  public String getDateType() {
+    return dateType;
   }
 
-  public void setDataType(String dataType) {
-    this.dataType = dataType;
+  public void setDateType(String dateType) {
+    this.dateType = dateType;
   }
 
 
@@ -275,7 +275,7 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return Objects.equals(this.lineNumber, orderDetailB2BLinesInnerMultipleShipmentsInner.lineNumber) &&
         Objects.equals(this.requestedQuantity, orderDetailB2BLinesInnerMultipleShipmentsInner.requestedQuantity) &&
         Objects.equals(this.confirmedQuantity, orderDetailB2BLinesInnerMultipleShipmentsInner.confirmedQuantity) &&
-        Objects.equals(this.dataType, orderDetailB2BLinesInnerMultipleShipmentsInner.dataType) &&
+        Objects.equals(this.dateType, orderDetailB2BLinesInnerMultipleShipmentsInner.dateType) &&
         Objects.equals(this.dateRange, orderDetailB2BLinesInnerMultipleShipmentsInner.dateRange) &&
         Objects.equals(this.source, orderDetailB2BLinesInnerMultipleShipmentsInner.source) &&
         Objects.equals(this.description, orderDetailB2BLinesInnerMultipleShipmentsInner.description) &&
@@ -285,7 +285,7 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(lineNumber, requestedQuantity, confirmedQuantity, dataType, dateRange, source, description, date, deliveryDate);
+    return Objects.hash(lineNumber, requestedQuantity, confirmedQuantity, dateType, dateRange, source, description, date, deliveryDate);
   }
 
   @Override
@@ -295,7 +295,7 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     sb.append("    lineNumber: ").append(toIndentedString(lineNumber)).append("\n");
     sb.append("    requestedQuantity: ").append(toIndentedString(requestedQuantity)).append("\n");
     sb.append("    confirmedQuantity: ").append(toIndentedString(confirmedQuantity)).append("\n");
-    sb.append("    dataType: ").append(toIndentedString(dataType)).append("\n");
+    sb.append("    dateType: ").append(toIndentedString(dateType)).append("\n");
     sb.append("    dateRange: ").append(toIndentedString(dateRange)).append("\n");
     sb.append("    source: ").append(toIndentedString(source)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -326,7 +326,7 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     openapiFields.add("lineNumber");
     openapiFields.add("requestedQuantity");
     openapiFields.add("confirmedQuantity");
-    openapiFields.add("dataType");
+    openapiFields.add("dateType");
     openapiFields.add("dateRange");
     openapiFields.add("source");
     openapiFields.add("description");
@@ -361,14 +361,8 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
       if ((jsonObj.get("lineNumber") != null && !jsonObj.get("lineNumber").isJsonNull()) && !jsonObj.get("lineNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `lineNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("lineNumber").toString()));
       }
-      if ((jsonObj.get("requestedQuantity") != null && !jsonObj.get("requestedQuantity").isJsonNull()) && !jsonObj.get("requestedQuantity").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `requestedQuantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("requestedQuantity").toString()));
-      }
-      if ((jsonObj.get("confirmedQuantity") != null && !jsonObj.get("confirmedQuantity").isJsonNull()) && !jsonObj.get("confirmedQuantity").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `confirmedQuantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("confirmedQuantity").toString()));
-      }
-      if ((jsonObj.get("dataType") != null && !jsonObj.get("dataType").isJsonNull()) && !jsonObj.get("dataType").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `dataType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dataType").toString()));
+      if ((jsonObj.get("dateType") != null && !jsonObj.get("dateType").isJsonNull()) && !jsonObj.get("dateType").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `dateType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dateType").toString()));
       }
       // validate the optional field `dateRange`
       if (jsonObj.get("dateRange") != null && !jsonObj.get("dateRange").isJsonNull()) {

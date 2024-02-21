@@ -63,11 +63,11 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInnerTest {
     }
 
     /**
-     * Test the property 'dataType'
+     * Test the property 'dateType'
      */
     @Test
-    public void dataTypeTest() {
-        // TODO: test dataType
+    public void dateTypeTest() {
+        // TODO: test dateType
     }
 
     /**
