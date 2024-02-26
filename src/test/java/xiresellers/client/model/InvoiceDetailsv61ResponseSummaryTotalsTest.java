@@ -70,11 +70,11 @@ public class InvoiceDetailsv61ResponseSummaryTotalsTest {
     }
 
     /**
-     * Test the property 'invoicedAmountDue'
+     * Test the property 'invoicesAmountDue'
      */
     @Test
-    public void invoicedAmountDueTest() {
-        // TODO: test invoicedAmountDue
+    public void invoicesAmountDueTest() {
+        // TODO: test invoicesAmountDue
     }
 
     /**

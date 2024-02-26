@@ -71,19 +71,19 @@ public class QuoteDetailsResponseProductsInnerTest {
     }
 
     /**
-     * Test the property 'EAN'
+     * Test the property 'ean'
      */
     @Test
-    public void EANTest() {
-        // TODO: test EAN
+    public void eanTest() {
+        // TODO: test ean
     }
 
     /**
-     * Test the property 'coO'
+     * Test the property 'coo'
      */
     @Test
-    public void coOTest() {
-        // TODO: test coO
+    public void cooTest() {
+        // TODO: test coo
     }
 
     /**

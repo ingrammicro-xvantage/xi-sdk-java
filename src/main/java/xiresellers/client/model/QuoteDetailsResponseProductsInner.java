@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:01:43.696074Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:22:52.536452Z[Etc/UTC]")
 public class QuoteDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_QUOTE_PRODUCT_GUID = "quoteProductGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRODUCT_GUID)
@@ -68,13 +68,13 @@ public class QuoteDetailsResponseProductsInner {
   @SerializedName(SERIALIZED_NAME_NOTES)
   private String notes;
 
-  public static final String SERIALIZED_NAME_E_A_N = "EAN";
-  @SerializedName(SERIALIZED_NAME_E_A_N)
-  private String EAN;
+  public static final String SERIALIZED_NAME_EAN = "ean";
+  @SerializedName(SERIALIZED_NAME_EAN)
+  private String ean;
 
-  public static final String SERIALIZED_NAME_CO_O = "CoO";
-  @SerializedName(SERIALIZED_NAME_CO_O)
-  private String coO;
+  public static final String SERIALIZED_NAME_COO = "coo";
+  @SerializedName(SERIALIZED_NAME_COO)
+  private String coo;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -199,41 +199,41 @@ public class QuoteDetailsResponseProductsInner {
   }
 
 
-  public QuoteDetailsResponseProductsInner EAN(String EAN) {
-    this.EAN = EAN;
+  public QuoteDetailsResponseProductsInner ean(String ean) {
+    this.ean = ean;
     return this;
   }
 
    /**
    * EANUPC
-   * @return EAN
+   * @return ean
   **/
   @javax.annotation.Nullable
-  public String getEAN() {
-    return EAN;
+  public String getEan() {
+    return ean;
   }
 
-  public void setEAN(String EAN) {
-    this.EAN = EAN;
+  public void setEan(String ean) {
+    this.ean = ean;
   }
 
 
-  public QuoteDetailsResponseProductsInner coO(String coO) {
-    this.coO = coO;
+  public QuoteDetailsResponseProductsInner coo(String coo) {
+    this.coo = coo;
     return this;
   }
 
    /**
    * Country of Origin.
-   * @return coO
+   * @return coo
   **/
   @javax.annotation.Nullable
-  public String getCoO() {
-    return coO;
+  public String getCoo() {
+    return coo;
   }
 
-  public void setCoO(String coO) {
-    this.coO = coO;
+  public void setCoo(String coo) {
+    this.coo = coo;
   }
 
 
@@ -460,8 +460,8 @@ public class QuoteDetailsResponseProductsInner {
         Objects.equals(this.lineNumber, quoteDetailsResponseProductsInner.lineNumber) &&
         Objects.equals(this.quantity, quoteDetailsResponseProductsInner.quantity) &&
         Objects.equals(this.notes, quoteDetailsResponseProductsInner.notes) &&
-        Objects.equals(this.EAN, quoteDetailsResponseProductsInner.EAN) &&
-        Objects.equals(this.coO, quoteDetailsResponseProductsInner.coO) &&
+        Objects.equals(this.ean, quoteDetailsResponseProductsInner.ean) &&
+        Objects.equals(this.coo, quoteDetailsResponseProductsInner.coo) &&
         Objects.equals(this.ingramPartNumber, quoteDetailsResponseProductsInner.ingramPartNumber) &&
         Objects.equals(this.vendorPartNumber, quoteDetailsResponseProductsInner.vendorPartNumber) &&
         Objects.equals(this.description, quoteDetailsResponseProductsInner.description) &&
@@ -477,7 +477,7 @@ public class QuoteDetailsResponseProductsInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteProductGuid, lineNumber, quantity, notes, EAN, coO, ingramPartNumber, vendorPartNumber, description, weight, weightUom, isSuggestionProduct, vpnCategory, quoteProductsSupplierPartAuxiliaryId, vendorName, terms, price);
+    return Objects.hash(quoteProductGuid, lineNumber, quantity, notes, ean, coo, ingramPartNumber, vendorPartNumber, description, weight, weightUom, isSuggestionProduct, vpnCategory, quoteProductsSupplierPartAuxiliaryId, vendorName, terms, price);
   }
 
   @Override
@@ -488,8 +488,8 @@ public class QuoteDetailsResponseProductsInner {
     sb.append("    lineNumber: ").append(toIndentedString(lineNumber)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
-    sb.append("    EAN: ").append(toIndentedString(EAN)).append("\n");
-    sb.append("    coO: ").append(toIndentedString(coO)).append("\n");
+    sb.append("    ean: ").append(toIndentedString(ean)).append("\n");
+    sb.append("    coo: ").append(toIndentedString(coo)).append("\n");
     sb.append("    ingramPartNumber: ").append(toIndentedString(ingramPartNumber)).append("\n");
     sb.append("    vendorPartNumber: ").append(toIndentedString(vendorPartNumber)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -527,8 +527,8 @@ public class QuoteDetailsResponseProductsInner {
     openapiFields.add("lineNumber");
     openapiFields.add("quantity");
     openapiFields.add("notes");
-    openapiFields.add("EAN");
-    openapiFields.add("CoO");
+    openapiFields.add("ean");
+    openapiFields.add("coo");
     openapiFields.add("ingramPartNumber");
     openapiFields.add("vendorPartNumber");
     openapiFields.add("description");
@@ -575,11 +575,11 @@ public class QuoteDetailsResponseProductsInner {
       if ((jsonObj.get("notes") != null && !jsonObj.get("notes").isJsonNull()) && !jsonObj.get("notes").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `notes` to be a primitive type in the JSON string but got `%s`", jsonObj.get("notes").toString()));
       }
-      if ((jsonObj.get("EAN") != null && !jsonObj.get("EAN").isJsonNull()) && !jsonObj.get("EAN").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `EAN` to be a primitive type in the JSON string but got `%s`", jsonObj.get("EAN").toString()));
+      if ((jsonObj.get("ean") != null && !jsonObj.get("ean").isJsonNull()) && !jsonObj.get("ean").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `ean` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ean").toString()));
       }
-      if ((jsonObj.get("CoO") != null && !jsonObj.get("CoO").isJsonNull()) && !jsonObj.get("CoO").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `CoO` to be a primitive type in the JSON string but got `%s`", jsonObj.get("CoO").toString()));
+      if ((jsonObj.get("coo") != null && !jsonObj.get("coo").isJsonNull()) && !jsonObj.get("coo").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `coo` to be a primitive type in the JSON string but got `%s`", jsonObj.get("coo").toString()));
       }
       if ((jsonObj.get("ingramPartNumber") != null && !jsonObj.get("ingramPartNumber").isJsonNull()) && !jsonObj.get("ingramPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `ingramPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramPartNumber").toString()));

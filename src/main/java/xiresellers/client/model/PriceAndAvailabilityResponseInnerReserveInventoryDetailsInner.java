@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:01:43.696074Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:22:52.536452Z[Etc/UTC]")
 public class PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner {
   public static final String SERIALIZED_NAME_QUANTITY_RESERVED = "quantityReserved";
   @SerializedName(SERIALIZED_NAME_QUANTITY_RESERVED)
