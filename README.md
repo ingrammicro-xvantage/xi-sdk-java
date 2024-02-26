@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-02-21T11:49:36.439472Z[Etc/UTC]
+  - Build date: 2024-02-26T07:01:43.696074Z[Etc/UTC]
 
 For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
 
@@ -293,10 +293,10 @@ Class | Method | HTTP request | Description
  - [QuoteSearchResponseQuotesInnerLinks](docs/QuoteSearchResponseQuotesInnerLinks.md)
  - [QuoteToOrderDetailsDTO](docs/QuoteToOrderDetailsDTO.md)
  - [QuoteToOrderDetailsDTOAdditionalAttributesInner](docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md)
- - [QuoteToOrderDetailsDTOEndUserInfoInner](docs/QuoteToOrderDetailsDTOEndUserInfoInner.md)
+ - [QuoteToOrderDetailsDTOEndUserInfo](docs/QuoteToOrderDetailsDTOEndUserInfo.md)
  - [QuoteToOrderDetailsDTOLinesInner](docs/QuoteToOrderDetailsDTOLinesInner.md)
  - [QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner](docs/QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.md)
- - [QuoteToOrderDetailsDTOShipToInfoInner](docs/QuoteToOrderDetailsDTOShipToInfoInner.md)
+ - [QuoteToOrderDetailsDTOShipToInfo](docs/QuoteToOrderDetailsDTOShipToInfo.md)
  - [QuoteToOrderDetailsDTOVmfadditionalAttributesInner](docs/QuoteToOrderDetailsDTOVmfadditionalAttributesInner.md)
  - [QuoteToOrderResponse](docs/QuoteToOrderResponse.md)
  - [RenewalsDetailsResponse](docs/RenewalsDetailsResponse.md)
@@ -358,5 +358,3 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 For any inquiries or support, please feel free to contact us at:
 
 - Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)
-
-

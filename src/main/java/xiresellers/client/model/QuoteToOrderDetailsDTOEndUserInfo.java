@@ -21,7 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -48,14 +47,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * QuoteToOrderDetailsDTOShipToInfoInner
+ * The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:49:36.439472Z[Etc/UTC]")
-public class QuoteToOrderDetailsDTOShipToInfoInner {
-  public static final String SERIALIZED_NAME_ADDRESS_ID = "addressId";
-  @SerializedName(SERIALIZED_NAME_ADDRESS_ID)
-  private String addressId;
-
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:01:43.696074Z[Etc/UTC]")
+public class QuoteToOrderDetailsDTOEndUserInfo {
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
   private String companyName;
@@ -96,35 +91,20 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   @SerializedName(SERIALIZED_NAME_EMAIL)
   private String email;
 
-  public QuoteToOrderDetailsDTOShipToInfoInner() {
+  public static final String SERIALIZED_NAME_PHONE_NUMBER = "phoneNumber";
+  @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
+  private String phoneNumber;
+
+  public QuoteToOrderDetailsDTOEndUserInfo() {
   }
 
-  public QuoteToOrderDetailsDTOShipToInfoInner addressId(String addressId) {
-    this.addressId = addressId;
-    return this;
-  }
-
-   /**
-   * The company contact provided by the reseller.
-   * @return addressId
-  **/
-  @javax.annotation.Nullable
-  public String getAddressId() {
-    return addressId;
-  }
-
-  public void setAddressId(String addressId) {
-    this.addressId = addressId;
-  }
-
-
-  public QuoteToOrderDetailsDTOShipToInfoInner companyName(String companyName) {
+  public QuoteToOrderDetailsDTOEndUserInfo companyName(String companyName) {
     this.companyName = companyName;
     return this;
   }
 
    /**
-   * The name of the company the order will be shipped to.
+   * The company name for the end user/customer.
    * @return companyName
   **/
   @javax.annotation.Nullable
@@ -137,13 +117,13 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
 
-  public QuoteToOrderDetailsDTOShipToInfoInner contact(String contact) {
+  public QuoteToOrderDetailsDTOEndUserInfo contact(String contact) {
     this.contact = contact;
     return this;
   }
 
    /**
-   * The contact name for the order will be shipped to.
+   * The contact name for the end user/customer.
    * @return contact
   **/
   @javax.annotation.Nullable
@@ -156,13 +136,13 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
 
-  public QuoteToOrderDetailsDTOShipToInfoInner addressLine1(String addressLine1) {
+  public QuoteToOrderDetailsDTOEndUserInfo addressLine1(String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
 
    /**
-   * The address line 1 the order will be shipped to.
+   * The address line 1 for the end user/customer.
    * @return addressLine1
   **/
   @javax.annotation.Nullable
@@ -175,13 +155,13 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
 
-  public QuoteToOrderDetailsDTOShipToInfoInner addressLine2(String addressLine2) {
+  public QuoteToOrderDetailsDTOEndUserInfo addressLine2(String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
 
    /**
-   * The address line 2 the order will be shipped to.
+   * The address line 2 for the end user/customer.
    * @return addressLine2
   **/
   @javax.annotation.Nullable
@@ -194,13 +174,13 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
 
-  public QuoteToOrderDetailsDTOShipToInfoInner addressLine3(String addressLine3) {
+  public QuoteToOrderDetailsDTOEndUserInfo addressLine3(String addressLine3) {
     this.addressLine3 = addressLine3;
     return this;
   }
 
    /**
-   * The address line 3 the order will be shipped to.
+   * The address line 3 for the end user/customer.
    * @return addressLine3
   **/
   @javax.annotation.Nullable
@@ -213,13 +193,13 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
 
-  public QuoteToOrderDetailsDTOShipToInfoInner city(String city) {
+  public QuoteToOrderDetailsDTOEndUserInfo city(String city) {
     this.city = city;
     return this;
   }
 
    /**
-   * The city the order will be shipped to.
+   * The end user/customer&#39;s city.
    * @return city
   **/
   @javax.annotation.Nullable
@@ -232,13 +212,13 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
 
-  public QuoteToOrderDetailsDTOShipToInfoInner state(String state) {
+  public QuoteToOrderDetailsDTOEndUserInfo state(String state) {
     this.state = state;
     return this;
   }
 
    /**
-   * The state the order will be shipped to.
+   * The end user/customer&#39;s state.
    * @return state
   **/
   @javax.annotation.Nullable
@@ -251,13 +231,13 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
 
-  public QuoteToOrderDetailsDTOShipToInfoInner postalCode(String postalCode) {
+  public QuoteToOrderDetailsDTOEndUserInfo postalCode(String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
 
    /**
-   * The zip or postal code the order will be shipped to.
+   * The end user/customer&#39;s zip or postal code.
    * @return postalCode
   **/
   @javax.annotation.Nullable
@@ -270,13 +250,13 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
 
-  public QuoteToOrderDetailsDTOShipToInfoInner countryCode(String countryCode) {
+  public QuoteToOrderDetailsDTOEndUserInfo countryCode(String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
 
    /**
-   * The two-character ISO country code the order will be shipped to.
+   * The end user/customer&#39;s two character ISO country code.
    * @return countryCode
   **/
   @javax.annotation.Nullable
@@ -289,13 +269,13 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
 
-  public QuoteToOrderDetailsDTOShipToInfoInner email(String email) {
+  public QuoteToOrderDetailsDTOEndUserInfo email(String email) {
     this.email = email;
     return this;
   }
 
    /**
-   * The company contact email address.
+   * The end user/customer&#39;s phone number.
    * @return email
   **/
   @javax.annotation.Nullable
@@ -308,6 +288,25 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
 
+  public QuoteToOrderDetailsDTOEndUserInfo phoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
+    return this;
+  }
+
+   /**
+   * The end user/customer&#39;s phone number.
+   * @return phoneNumber
+  **/
+  @javax.annotation.Nullable
+  public String getPhoneNumber() {
+    return phoneNumber;
+  }
+
+  public void setPhoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -317,41 +316,29 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    QuoteToOrderDetailsDTOShipToInfoInner quoteToOrderDetailsDTOShipToInfoInner = (QuoteToOrderDetailsDTOShipToInfoInner) o;
-    return Objects.equals(this.addressId, quoteToOrderDetailsDTOShipToInfoInner.addressId) &&
-        Objects.equals(this.companyName, quoteToOrderDetailsDTOShipToInfoInner.companyName) &&
-        Objects.equals(this.contact, quoteToOrderDetailsDTOShipToInfoInner.contact) &&
-        Objects.equals(this.addressLine1, quoteToOrderDetailsDTOShipToInfoInner.addressLine1) &&
-        Objects.equals(this.addressLine2, quoteToOrderDetailsDTOShipToInfoInner.addressLine2) &&
-        Objects.equals(this.addressLine3, quoteToOrderDetailsDTOShipToInfoInner.addressLine3) &&
-        Objects.equals(this.city, quoteToOrderDetailsDTOShipToInfoInner.city) &&
-        Objects.equals(this.state, quoteToOrderDetailsDTOShipToInfoInner.state) &&
-        Objects.equals(this.postalCode, quoteToOrderDetailsDTOShipToInfoInner.postalCode) &&
-        Objects.equals(this.countryCode, quoteToOrderDetailsDTOShipToInfoInner.countryCode) &&
-        Objects.equals(this.email, quoteToOrderDetailsDTOShipToInfoInner.email);
-  }
-
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+    QuoteToOrderDetailsDTOEndUserInfo quoteToOrderDetailsDTOEndUserInfo = (QuoteToOrderDetailsDTOEndUserInfo) o;
+    return Objects.equals(this.companyName, quoteToOrderDetailsDTOEndUserInfo.companyName) &&
+        Objects.equals(this.contact, quoteToOrderDetailsDTOEndUserInfo.contact) &&
+        Objects.equals(this.addressLine1, quoteToOrderDetailsDTOEndUserInfo.addressLine1) &&
+        Objects.equals(this.addressLine2, quoteToOrderDetailsDTOEndUserInfo.addressLine2) &&
+        Objects.equals(this.addressLine3, quoteToOrderDetailsDTOEndUserInfo.addressLine3) &&
+        Objects.equals(this.city, quoteToOrderDetailsDTOEndUserInfo.city) &&
+        Objects.equals(this.state, quoteToOrderDetailsDTOEndUserInfo.state) &&
+        Objects.equals(this.postalCode, quoteToOrderDetailsDTOEndUserInfo.postalCode) &&
+        Objects.equals(this.countryCode, quoteToOrderDetailsDTOEndUserInfo.countryCode) &&
+        Objects.equals(this.email, quoteToOrderDetailsDTOEndUserInfo.email) &&
+        Objects.equals(this.phoneNumber, quoteToOrderDetailsDTOEndUserInfo.phoneNumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(addressId, companyName, contact, addressLine1, addressLine2, addressLine3, city, state, postalCode, countryCode, email);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
-    }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+    return Objects.hash(companyName, contact, addressLine1, addressLine2, addressLine3, city, state, postalCode, countryCode, email, phoneNumber);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class QuoteToOrderDetailsDTOShipToInfoInner {\n");
-    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("class QuoteToOrderDetailsDTOEndUserInfo {\n");
     sb.append("    companyName: ").append(toIndentedString(companyName)).append("\n");
     sb.append("    contact: ").append(toIndentedString(contact)).append("\n");
     sb.append("    addressLine1: ").append(toIndentedString(addressLine1)).append("\n");
@@ -362,6 +349,7 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
     sb.append("    postalCode: ").append(toIndentedString(postalCode)).append("\n");
     sb.append("    countryCode: ").append(toIndentedString(countryCode)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
+    sb.append("    phoneNumber: ").append(toIndentedString(phoneNumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -384,7 +372,6 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("addressId");
     openapiFields.add("companyName");
     openapiFields.add("contact");
     openapiFields.add("addressLine1");
@@ -395,6 +382,7 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
     openapiFields.add("postalCode");
     openapiFields.add("countryCode");
     openapiFields.add("email");
+    openapiFields.add("phoneNumber");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -404,26 +392,23 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   * Validates the JSON Element and throws an exception if issues found
   *
   * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to QuoteToOrderDetailsDTOShipToInfoInner
+  * @throws IOException if the JSON Element is invalid with respect to QuoteToOrderDetailsDTOEndUserInfo
   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!QuoteToOrderDetailsDTOShipToInfoInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in QuoteToOrderDetailsDTOShipToInfoInner is not found in the empty JSON string", QuoteToOrderDetailsDTOShipToInfoInner.openapiRequiredFields.toString()));
+        if (!QuoteToOrderDetailsDTOEndUserInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in QuoteToOrderDetailsDTOEndUserInfo is not found in the empty JSON string", QuoteToOrderDetailsDTOEndUserInfo.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!QuoteToOrderDetailsDTOShipToInfoInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `QuoteToOrderDetailsDTOShipToInfoInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!QuoteToOrderDetailsDTOEndUserInfo.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `QuoteToOrderDetailsDTOEndUserInfo` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("addressId") != null && !jsonObj.get("addressId").isJsonNull()) && !jsonObj.get("addressId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `addressId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("addressId").toString()));
-      }
       if ((jsonObj.get("companyName") != null && !jsonObj.get("companyName").isJsonNull()) && !jsonObj.get("companyName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `companyName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("companyName").toString()));
       }
@@ -454,28 +439,31 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
       if ((jsonObj.get("email") != null && !jsonObj.get("email").isJsonNull()) && !jsonObj.get("email").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
       }
+      if ((jsonObj.get("phoneNumber") != null && !jsonObj.get("phoneNumber").isJsonNull()) && !jsonObj.get("phoneNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `phoneNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("phoneNumber").toString()));
+      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!QuoteToOrderDetailsDTOShipToInfoInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'QuoteToOrderDetailsDTOShipToInfoInner' and its subtypes
+       if (!QuoteToOrderDetailsDTOEndUserInfo.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'QuoteToOrderDetailsDTOEndUserInfo' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<QuoteToOrderDetailsDTOShipToInfoInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(QuoteToOrderDetailsDTOShipToInfoInner.class));
+       final TypeAdapter<QuoteToOrderDetailsDTOEndUserInfo> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(QuoteToOrderDetailsDTOEndUserInfo.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<QuoteToOrderDetailsDTOShipToInfoInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<QuoteToOrderDetailsDTOEndUserInfo>() {
            @Override
-           public void write(JsonWriter out, QuoteToOrderDetailsDTOShipToInfoInner value) throws IOException {
+           public void write(JsonWriter out, QuoteToOrderDetailsDTOEndUserInfo value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public QuoteToOrderDetailsDTOShipToInfoInner read(JsonReader in) throws IOException {
+           public QuoteToOrderDetailsDTOEndUserInfo read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -486,18 +474,18 @@ public class QuoteToOrderDetailsDTOShipToInfoInner {
   }
 
  /**
-  * Create an instance of QuoteToOrderDetailsDTOShipToInfoInner given an JSON string
+  * Create an instance of QuoteToOrderDetailsDTOEndUserInfo given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of QuoteToOrderDetailsDTOShipToInfoInner
-  * @throws IOException if the JSON string is invalid with respect to QuoteToOrderDetailsDTOShipToInfoInner
+  * @return An instance of QuoteToOrderDetailsDTOEndUserInfo
+  * @throws IOException if the JSON string is invalid with respect to QuoteToOrderDetailsDTOEndUserInfo
   */
-  public static QuoteToOrderDetailsDTOShipToInfoInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, QuoteToOrderDetailsDTOShipToInfoInner.class);
+  public static QuoteToOrderDetailsDTOEndUserInfo fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, QuoteToOrderDetailsDTOEndUserInfo.class);
   }
 
  /**
-  * Convert an instance of QuoteToOrderDetailsDTOShipToInfoInner to an JSON string
+  * Convert an instance of QuoteToOrderDetailsDTOEndUserInfo to an JSON string
   *
   * @return JSON string
   */

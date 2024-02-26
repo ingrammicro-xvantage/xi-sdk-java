@@ -245,10 +245,10 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteSearchResponseQuotesInnerLinks.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTO.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTOAdditionalAttributesInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTOEndUserInfoInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTOEndUserInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTOLinesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTOShipToInfoInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTOShipToInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderDetailsDTOVmfadditionalAttributesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.QuoteToOrderResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.RenewalsDetailsResponse.CustomTypeAdapterFactory());

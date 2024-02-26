@@ -36,6 +36,7 @@
 |**extendedMsrpTotal** | **Integer** | Total extended MSRP for all products included in the quote |  [optional] |
 |**quantityTotal** | **Integer** | Total quantity of all items in the quote. |  [optional] |
 |**extendedQuotePriceTotal** | **Integer** | Total amount of quoted price for all products in the quote including both solution products and suggested products. |  [optional] |
+|**totalQuoteAmount** | **String** |  |  [optional] |
 |**additionalAttributes** | [**List&lt;QuoteDetailsResponseAdditionalAttributesInner&gt;**](QuoteDetailsResponseAdditionalAttributesInner.md) |  |  [optional] |
 
 

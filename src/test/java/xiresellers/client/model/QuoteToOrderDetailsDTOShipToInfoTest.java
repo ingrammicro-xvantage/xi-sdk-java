@@ -20,21 +20,30 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for QuoteToOrderDetailsDTOEndUserInfoInner
+ * Model tests for QuoteToOrderDetailsDTOShipToInfo
  */
-public class QuoteToOrderDetailsDTOEndUserInfoInnerTest {
-    private final QuoteToOrderDetailsDTOEndUserInfoInner model = new QuoteToOrderDetailsDTOEndUserInfoInner();
+public class QuoteToOrderDetailsDTOShipToInfoTest {
+    private final QuoteToOrderDetailsDTOShipToInfo model = new QuoteToOrderDetailsDTOShipToInfo();
 
     /**
-     * Model tests for QuoteToOrderDetailsDTOEndUserInfoInner
+     * Model tests for QuoteToOrderDetailsDTOShipToInfo
      */
     @Test
-    public void testQuoteToOrderDetailsDTOEndUserInfoInner() {
-        // TODO: test QuoteToOrderDetailsDTOEndUserInfoInner
+    public void testQuoteToOrderDetailsDTOShipToInfo() {
+        // TODO: test QuoteToOrderDetailsDTOShipToInfo
+    }
+
+    /**
+     * Test the property 'addressId'
+     */
+    @Test
+    public void addressIdTest() {
+        // TODO: test addressId
     }
 
     /**
@@ -115,14 +124,6 @@ public class QuoteToOrderDetailsDTOEndUserInfoInnerTest {
     @Test
     public void emailTest() {
         // TODO: test email
-    }
-
-    /**
-     * Test the property 'phoneNumber'
-     */
-    @Test
-    public void phoneNumberTest() {
-        // TODO: test phoneNumber
     }
 
 }

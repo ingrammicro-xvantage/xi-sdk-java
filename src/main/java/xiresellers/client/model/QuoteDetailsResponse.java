@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:49:36.439472Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:01:43.696074Z[Etc/UTC]")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
@@ -172,6 +172,10 @@ public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_EXTENDED_QUOTE_PRICE_TOTAL = "extendedQuotePriceTotal";
   @SerializedName(SERIALIZED_NAME_EXTENDED_QUOTE_PRICE_TOTAL)
   private Integer extendedQuotePriceTotal;
+
+  public static final String SERIALIZED_NAME_TOTAL_QUOTE_AMOUNT = "totalQuoteAmount";
+  @SerializedName(SERIALIZED_NAME_TOTAL_QUOTE_AMOUNT)
+  private String totalQuoteAmount;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
@@ -739,6 +743,25 @@ public class QuoteDetailsResponse {
   }
 
 
+  public QuoteDetailsResponse totalQuoteAmount(String totalQuoteAmount) {
+    this.totalQuoteAmount = totalQuoteAmount;
+    return this;
+  }
+
+   /**
+   * Get totalQuoteAmount
+   * @return totalQuoteAmount
+  **/
+  @javax.annotation.Nullable
+  public String getTotalQuoteAmount() {
+    return totalQuoteAmount;
+  }
+
+  public void setTotalQuoteAmount(String totalQuoteAmount) {
+    this.totalQuoteAmount = totalQuoteAmount;
+  }
+
+
   public QuoteDetailsResponse additionalAttributes(List<QuoteDetailsResponseAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
@@ -805,12 +828,13 @@ public class QuoteDetailsResponse {
         Objects.equals(this.extendedMsrpTotal, quoteDetailsResponse.extendedMsrpTotal) &&
         Objects.equals(this.quantityTotal, quoteDetailsResponse.quantityTotal) &&
         Objects.equals(this.extendedQuotePriceTotal, quoteDetailsResponse.extendedQuotePriceTotal) &&
+        Objects.equals(this.totalQuoteAmount, quoteDetailsResponse.totalQuoteAmount) &&
         Objects.equals(this.additionalAttributes, quoteDetailsResponse.additionalAttributes);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteName, quoteNumber, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, status, closingReason, dateClosed, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, quoteSubType, resellerInfo, endUserInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extendedQuotePriceTotal, additionalAttributes);
+    return Objects.hash(quoteName, quoteNumber, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, status, closingReason, dateClosed, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, quoteSubType, resellerInfo, endUserInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extendedQuotePriceTotal, totalQuoteAmount, additionalAttributes);
   }
 
   @Override
@@ -846,6 +870,7 @@ public class QuoteDetailsResponse {
     sb.append("    extendedMsrpTotal: ").append(toIndentedString(extendedMsrpTotal)).append("\n");
     sb.append("    quantityTotal: ").append(toIndentedString(quantityTotal)).append("\n");
     sb.append("    extendedQuotePriceTotal: ").append(toIndentedString(extendedQuotePriceTotal)).append("\n");
+    sb.append("    totalQuoteAmount: ").append(toIndentedString(totalQuoteAmount)).append("\n");
     sb.append("    additionalAttributes: ").append(toIndentedString(additionalAttributes)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -898,6 +923,7 @@ public class QuoteDetailsResponse {
     openapiFields.add("extendedMsrpTotal");
     openapiFields.add("quantityTotal");
     openapiFields.add("extendedQuotePriceTotal");
+    openapiFields.add("totalQuoteAmount");
     openapiFields.add("additionalAttributes");
 
     // a set of required properties/fields (JSON key names)
@@ -1012,6 +1038,9 @@ public class QuoteDetailsResponse {
             QuoteDetailsResponseProductsInner.validateJsonElement(jsonArrayproducts.get(i));
           };
         }
+      }
+      if ((jsonObj.get("totalQuoteAmount") != null && !jsonObj.get("totalQuoteAmount").isJsonNull()) && !jsonObj.get("totalQuoteAmount").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `totalQuoteAmount` to be a primitive type in the JSON string but got `%s`", jsonObj.get("totalQuoteAmount").toString()));
       }
       if (jsonObj.get("additionalAttributes") != null && !jsonObj.get("additionalAttributes").isJsonNull()) {
         JsonArray jsonArrayadditionalAttributes = jsonObj.getAsJsonArray("additionalAttributes");
