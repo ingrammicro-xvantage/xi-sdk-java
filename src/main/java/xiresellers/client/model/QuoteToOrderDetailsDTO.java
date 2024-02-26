@@ -25,9 +25,9 @@ import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.QuoteToOrderDetailsDTOAdditionalAttributesInner;
-import xiresellers.client.model.QuoteToOrderDetailsDTOEndUserInfoInner;
+import xiresellers.client.model.QuoteToOrderDetailsDTOEndUserInfo;
 import xiresellers.client.model.QuoteToOrderDetailsDTOLinesInner;
-import xiresellers.client.model.QuoteToOrderDetailsDTOShipToInfoInner;
+import xiresellers.client.model.QuoteToOrderDetailsDTOShipToInfo;
 import xiresellers.client.model.QuoteToOrderDetailsDTOVmfadditionalAttributesInner;
 
 import com.google.gson.Gson;
@@ -57,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteToOrderDetailsDTO
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:49:36.439472Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:01:43.696074Z[Etc/UTC]")
 public class QuoteToOrderDetailsDTO {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -77,11 +77,11 @@ public class QuoteToOrderDetailsDTO {
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
-  private List<QuoteToOrderDetailsDTOEndUserInfoInner> endUserInfo;
+  private QuoteToOrderDetailsDTOEndUserInfo endUserInfo;
 
   public static final String SERIALIZED_NAME_SHIP_TO_INFO = "shipToInfo";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_INFO)
-  private List<QuoteToOrderDetailsDTOShipToInfoInner> shipToInfo;
+  private QuoteToOrderDetailsDTOShipToInfo shipToInfo;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
@@ -174,56 +174,40 @@ public class QuoteToOrderDetailsDTO {
   }
 
 
-  public QuoteToOrderDetailsDTO endUserInfo(List<QuoteToOrderDetailsDTOEndUserInfoInner> endUserInfo) {
+  public QuoteToOrderDetailsDTO endUserInfo(QuoteToOrderDetailsDTOEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
-    return this;
-  }
-
-  public QuoteToOrderDetailsDTO addEndUserInfoItem(QuoteToOrderDetailsDTOEndUserInfoInner endUserInfoItem) {
-    if (this.endUserInfo == null) {
-      this.endUserInfo = new ArrayList<>();
-    }
-    this.endUserInfo.add(endUserInfoItem);
     return this;
   }
 
    /**
-   * The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts.
+   * Get endUserInfo
    * @return endUserInfo
   **/
   @javax.annotation.Nullable
-  public List<QuoteToOrderDetailsDTOEndUserInfoInner> getEndUserInfo() {
+  public QuoteToOrderDetailsDTOEndUserInfo getEndUserInfo() {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(List<QuoteToOrderDetailsDTOEndUserInfoInner> endUserInfo) {
+  public void setEndUserInfo(QuoteToOrderDetailsDTOEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 
 
-  public QuoteToOrderDetailsDTO shipToInfo(List<QuoteToOrderDetailsDTOShipToInfoInner> shipToInfo) {
+  public QuoteToOrderDetailsDTO shipToInfo(QuoteToOrderDetailsDTOShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
     return this;
   }
 
-  public QuoteToOrderDetailsDTO addShipToInfoItem(QuoteToOrderDetailsDTOShipToInfoInner shipToInfoItem) {
-    if (this.shipToInfo == null) {
-      this.shipToInfo = new ArrayList<>();
-    }
-    this.shipToInfo.add(shipToInfoItem);
-    return this;
-  }
-
    /**
-   * The shipping information provided by the reseller for order delivery.
+   * Get shipToInfo
    * @return shipToInfo
   **/
   @javax.annotation.Nullable
-  public List<QuoteToOrderDetailsDTOShipToInfoInner> getShipToInfo() {
+  public QuoteToOrderDetailsDTOShipToInfo getShipToInfo() {
     return shipToInfo;
   }
 
-  public void setShipToInfo(List<QuoteToOrderDetailsDTOShipToInfoInner> shipToInfo) {
+  public void setShipToInfo(QuoteToOrderDetailsDTOShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
   }
 
@@ -428,33 +412,13 @@ public class QuoteToOrderDetailsDTO {
       if ((jsonObj.get("billToAddressId") != null && !jsonObj.get("billToAddressId").isJsonNull()) && !jsonObj.get("billToAddressId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `billToAddressId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billToAddressId").toString()));
       }
+      // validate the optional field `endUserInfo`
       if (jsonObj.get("endUserInfo") != null && !jsonObj.get("endUserInfo").isJsonNull()) {
-        JsonArray jsonArrayendUserInfo = jsonObj.getAsJsonArray("endUserInfo");
-        if (jsonArrayendUserInfo != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("endUserInfo").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `endUserInfo` to be an array in the JSON string but got `%s`", jsonObj.get("endUserInfo").toString()));
-          }
-
-          // validate the optional field `endUserInfo` (array)
-          for (int i = 0; i < jsonArrayendUserInfo.size(); i++) {
-            QuoteToOrderDetailsDTOEndUserInfoInner.validateJsonElement(jsonArrayendUserInfo.get(i));
-          };
-        }
+        QuoteToOrderDetailsDTOEndUserInfo.validateJsonElement(jsonObj.get("endUserInfo"));
       }
+      // validate the optional field `shipToInfo`
       if (jsonObj.get("shipToInfo") != null && !jsonObj.get("shipToInfo").isJsonNull()) {
-        JsonArray jsonArrayshipToInfo = jsonObj.getAsJsonArray("shipToInfo");
-        if (jsonArrayshipToInfo != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("shipToInfo").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `shipToInfo` to be an array in the JSON string but got `%s`", jsonObj.get("shipToInfo").toString()));
-          }
-
-          // validate the optional field `shipToInfo` (array)
-          for (int i = 0; i < jsonArrayshipToInfo.size(); i++) {
-            QuoteToOrderDetailsDTOShipToInfoInner.validateJsonElement(jsonArrayshipToInfo.get(i));
-          };
-        }
+        QuoteToOrderDetailsDTOShipToInfo.validateJsonElement(jsonObj.get("shipToInfo"));
       }
       if (jsonObj.get("additionalAttributes") != null && !jsonObj.get("additionalAttributes").isJsonNull()) {
         JsonArray jsonArrayadditionalAttributes = jsonObj.getAsJsonArray("additionalAttributes");

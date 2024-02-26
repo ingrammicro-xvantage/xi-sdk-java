@@ -276,6 +276,14 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
+     * Test the property 'totalQuoteAmount'
+     */
+    @Test
+    public void totalQuoteAmountTest() {
+        // TODO: test totalQuoteAmount
+    }
+
+    /**
      * Test the property 'additionalAttributes'
      */
     @Test

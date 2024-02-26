@@ -1,7 +1,8 @@
 
 
-# QuoteToOrderDetailsDTOEndUserInfoInner
+# QuoteToOrderDetailsDTOEndUserInfo
 
+The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts.
 
 ## Properties
 

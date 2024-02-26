@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchRequestDateTypeEndDate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:49:36.439472Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:01:43.696074Z[Etc/UTC]")
 public class RenewalsSearchRequestDateTypeEndDate {
   public static final String SERIALIZED_NAME_CUSTOM_START_DATE = "customStartDate";
   @SerializedName(SERIALIZED_NAME_CUSTOM_START_DATE)

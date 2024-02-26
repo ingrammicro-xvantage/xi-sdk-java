@@ -67,6 +67,14 @@ public class InvoiceDetailsv61ResponseLinesInnerTest {
     }
 
     /**
+     * Test the property 'upc'
+     */
+    @Test
+    public void upcTest() {
+        // TODO: test upc
+    }
+
+    /**
      * Test the property 'vendorPartNumber'
      */
     @Test

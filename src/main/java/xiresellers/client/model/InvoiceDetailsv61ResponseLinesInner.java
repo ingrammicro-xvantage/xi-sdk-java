@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-21T11:49:36.439472Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:01:43.696074Z[Etc/UTC]")
 public class InvoiceDetailsv61ResponseLinesInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
@@ -67,6 +67,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
   private String ingramPartNumber;
+
+  public static final String SERIALIZED_NAME_UPC = "upc";
+  @SerializedName(SERIALIZED_NAME_UPC)
+  private String upc;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
@@ -189,6 +193,25 @@ public class InvoiceDetailsv61ResponseLinesInner {
 
   public void setIngramPartNumber(String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
+  }
+
+
+  public InvoiceDetailsv61ResponseLinesInner upc(String upc) {
+    this.upc = upc;
+    return this;
+  }
+
+   /**
+   * Get upc
+   * @return upc
+  **/
+  @javax.annotation.Nullable
+  public String getUpc() {
+    return upc;
+  }
+
+  public void setUpc(String upc) {
+    this.upc = upc;
   }
 
 
@@ -517,6 +540,7 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return Objects.equals(this.ingramLineNumber, invoiceDetailsv61ResponseLinesInner.ingramLineNumber) &&
         Objects.equals(this.customerLineNumber, invoiceDetailsv61ResponseLinesInner.customerLineNumber) &&
         Objects.equals(this.ingramPartNumber, invoiceDetailsv61ResponseLinesInner.ingramPartNumber) &&
+        Objects.equals(this.upc, invoiceDetailsv61ResponseLinesInner.upc) &&
         Objects.equals(this.vendorPartNumber, invoiceDetailsv61ResponseLinesInner.vendorPartNumber) &&
         Objects.equals(this.customerPartNumber, invoiceDetailsv61ResponseLinesInner.customerPartNumber) &&
         Objects.equals(this.vendorName, invoiceDetailsv61ResponseLinesInner.vendorName) &&
@@ -541,7 +565,7 @@ public class InvoiceDetailsv61ResponseLinesInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(ingramLineNumber, customerLineNumber, ingramPartNumber, vendorPartNumber, customerPartNumber, vendorName, productDescription, unitWeight, quantity, unitPrice, unitOfMeasure, currencyCode, extendedPrice, taxPercentage, taxRate, taxAmount, serialNumbers, quantityOrdered, quantityShipped);
+    return Objects.hash(ingramLineNumber, customerLineNumber, ingramPartNumber, upc, vendorPartNumber, customerPartNumber, vendorName, productDescription, unitWeight, quantity, unitPrice, unitOfMeasure, currencyCode, extendedPrice, taxPercentage, taxRate, taxAmount, serialNumbers, quantityOrdered, quantityShipped);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -558,6 +582,7 @@ public class InvoiceDetailsv61ResponseLinesInner {
     sb.append("    ingramLineNumber: ").append(toIndentedString(ingramLineNumber)).append("\n");
     sb.append("    customerLineNumber: ").append(toIndentedString(customerLineNumber)).append("\n");
     sb.append("    ingramPartNumber: ").append(toIndentedString(ingramPartNumber)).append("\n");
+    sb.append("    upc: ").append(toIndentedString(upc)).append("\n");
     sb.append("    vendorPartNumber: ").append(toIndentedString(vendorPartNumber)).append("\n");
     sb.append("    customerPartNumber: ").append(toIndentedString(customerPartNumber)).append("\n");
     sb.append("    vendorName: ").append(toIndentedString(vendorName)).append("\n");
@@ -599,6 +624,7 @@ public class InvoiceDetailsv61ResponseLinesInner {
     openapiFields.add("ingramLineNumber");
     openapiFields.add("customerLineNumber");
     openapiFields.add("ingramPartNumber");
+    openapiFields.add("upc");
     openapiFields.add("vendorPartNumber");
     openapiFields.add("customerPartNumber");
     openapiFields.add("vendorName");
@@ -649,6 +675,9 @@ public class InvoiceDetailsv61ResponseLinesInner {
       }
       if ((jsonObj.get("ingramPartNumber") != null && !jsonObj.get("ingramPartNumber").isJsonNull()) && !jsonObj.get("ingramPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `ingramPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramPartNumber").toString()));
+      }
+      if ((jsonObj.get("upc") != null && !jsonObj.get("upc").isJsonNull()) && !jsonObj.get("upc").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `upc` to be a primitive type in the JSON string but got `%s`", jsonObj.get("upc").toString()));
       }
       if ((jsonObj.get("vendorPartNumber") != null && !jsonObj.get("vendorPartNumber").isJsonNull()) && !jsonObj.get("vendorPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorPartNumber").toString()));

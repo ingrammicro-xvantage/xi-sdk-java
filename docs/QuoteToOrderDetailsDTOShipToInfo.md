@@ -1,7 +1,8 @@
 
 
-# QuoteToOrderDetailsDTOShipToInfoInner
+# QuoteToOrderDetailsDTOShipToInfo
 
+The shipping information provided by the reseller for order delivery.
 
 ## Properties
 

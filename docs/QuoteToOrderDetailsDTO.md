@@ -11,8 +11,8 @@
 |**customerOrderNumber** | **String** | The reseller&#39;s order number for reference in their system. |  [optional] |
 |**enduserOrderNumber** | **String** | The end customer&#39;s order number for reference in their system. |  [optional] |
 |**billToAddressId** | **String** | Suffix used to identify billing address. Created during onboarding. Resellers are provided with one or more address IDs depending on how many bill to addresses they need for various flooring companies they are using for credit. |  [optional] |
-|**endUserInfo** | [**List&lt;QuoteToOrderDetailsDTOEndUserInfoInner&gt;**](QuoteToOrderDetailsDTOEndUserInfoInner.md) | The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts. |  [optional] |
-|**shipToInfo** | [**List&lt;QuoteToOrderDetailsDTOShipToInfoInner&gt;**](QuoteToOrderDetailsDTOShipToInfoInner.md) | The shipping information provided by the reseller for order delivery. |  [optional] |
+|**endUserInfo** | [**QuoteToOrderDetailsDTOEndUserInfo**](QuoteToOrderDetailsDTOEndUserInfo.md) |  |  [optional] |
+|**shipToInfo** | [**QuoteToOrderDetailsDTOShipToInfo**](QuoteToOrderDetailsDTOShipToInfo.md) |  |  [optional] |
 |**additionalAttributes** | [**List&lt;QuoteToOrderDetailsDTOAdditionalAttributesInner&gt;**](QuoteToOrderDetailsDTOAdditionalAttributesInner.md) | Additional order create attributes. |  [optional] |
 |**vmfadditionalAttributes** | [**List&lt;QuoteToOrderDetailsDTOVmfadditionalAttributesInner&gt;**](QuoteToOrderDetailsDTOVmfadditionalAttributesInner.md) | The object containing the list of fields required at a header level by the vendor. |  [optional] |
 |**lines** | [**List&lt;QuoteToOrderDetailsDTOLinesInner&gt;**](QuoteToOrderDetailsDTOLinesInner.md) | The object containing the lines that require vendor mandatory fields. |  [optional] |
