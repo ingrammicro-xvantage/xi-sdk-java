@@ -100,6 +100,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapter(OffsetDateTime.class, offsetDateTimeTypeAdapter);
         gsonBuilder.registerTypeAdapter(LocalDate.class, localDateTypeAdapter);
         gsonBuilder.registerTypeAdapter(byte[].class, byteArrayAdapter);
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.AccesstokenResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.AvailabilityAsyncNotificationRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.AvailabilityAsyncNotificationRequestResourceInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.AvailabilityAsyncNotificationRequestResourceInnerLinksInner.CustomTypeAdapterFactory());
@@ -121,6 +122,10 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.FreightResponseFreightEstimateResponseDistributionInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.FreightResponseFreightEstimateResponseLinesInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetAccesstoken400Response.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetAccesstoken500Response.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetAccesstoken500ResponseFault.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetAccesstoken500ResponseFaultDetail.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetResellerV6ValidateQuote400Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetResellerV6ValidateQuote400ResponseFieldsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetResellerV6ValidateQuote500Response.CustomTypeAdapterFactory());

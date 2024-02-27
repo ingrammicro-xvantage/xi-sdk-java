@@ -78,4 +78,44 @@ public class QuoteDetailsResponseProductsInnerPriceTest {
         // TODO: test discountOffList
     }
 
+    /**
+     * Test the property 'vendorprice'
+     */
+    @Test
+    public void vendorpriceTest() {
+        // TODO: test vendorprice
+    }
+
+    /**
+     * Test the property 'extendedvendorprice'
+     */
+    @Test
+    public void extendedvendorpriceTest() {
+        // TODO: test extendedvendorprice
+    }
+
+    /**
+     * Test the property 'totalVisibleReserveQuantity'
+     */
+    @Test
+    public void totalVisibleReserveQuantityTest() {
+        // TODO: test totalVisibleReserveQuantity
+    }
+
+    /**
+     * Test the property 'type'
+     */
+    @Test
+    public void typeTest() {
+        // TODO: test type
+    }
+
+    /**
+     * Test the property 'recurringPriceModel'
+     */
+    @Test
+    public void recurringPriceModelTest() {
+        // TODO: test recurringPriceModel
+    }
+
 }

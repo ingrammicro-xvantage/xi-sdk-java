@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-02-26T07:22:52.536452Z[Etc/UTC]
+  - Build date: 2024-02-27T08:54:45.542575Z[Etc/UTC]
 
 For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
 
@@ -55,6 +55,7 @@ cd xi-sdk-resellers-java
 mvn install       # Requires maven, download from https://maven.apache.org/download.html
 
 ```
+
 ### Others
 
 At first generate the JAR by executing:
@@ -78,31 +79,23 @@ Please follow the [installation](#installation) instruction and execute the foll
 import xiresellers.client.ApiClient;
 import xiresellers.client.ApiException;
 import xiresellers.client.Configuration;
-import xiresellers.client.auth.*;
 import xiresellers.client.models.*;
-import xiresellers.client.api.DealsApi;
+import xiresellers.client.api.AccesstokenApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.ingrammicro.com:443");
-    
-    // Configure OAuth2 access token for authorization: application
-    OAuth application = (OAuth) defaultClient.getAuthentication("application");
-    application.setAccessToken("YOUR ACCESS TOKEN");
 
-    DealsApi apiInstance = new DealsApi(defaultClient);
-    String imCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
-    String imCountryCode = "US"; // String | Two-character ISO country code.
-    String imCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
-    String imApplicationId = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
-    String imEnvironment = "20-222222"; // String | Environment name.
-    String dealId = "12345678"; // String | Unique deal ID.
+    AccesstokenApi apiInstance = new AccesstokenApi(defaultClient);
+    String grantType = "client_credentials"; // String | Keep grant_type as client_credentials only.
+    String clientId = "clientId_example"; // String | 
+    String clientSecret = "clientSecret_example"; // String | 
     try {
-      DealsDetailsResponse result = apiInstance.getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, imEnvironment, dealId);
+      AccesstokenResponse result = apiInstance.getAccesstoken(grantType, clientId, clientSecret);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling DealsApi#getResellersV6Dealsdetails");
+      System.err.println("Exception when calling AccesstokenApi#getAccesstoken");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -119,6 +112,7 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*AccesstokenApi* | [**getAccesstoken**](docs/AccesstokenApi.md#getAccesstoken) | **GET** /oauth/oauth20/token | Accesstoken
 *DealsApi* | [**getResellersV6Dealsdetails**](docs/DealsApi.md#getResellersV6Dealsdetails) | **GET** /resellers/v6/deals/{dealId} | Deals Details
 *DealsApi* | [**getResellersV6Dealssearch**](docs/DealsApi.md#getResellersV6Dealssearch) | **GET** /resellers/v6/deals/search | Deals Search
 *FreightEstimateApi* | [**postFreightestimate**](docs/FreightEstimateApi.md#postFreightestimate) | **POST** /resellers/v6/freightestimate | Freight Estimate
@@ -147,6 +141,7 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [AccesstokenResponse](docs/AccesstokenResponse.md)
  - [AvailabilityAsyncNotificationRequest](docs/AvailabilityAsyncNotificationRequest.md)
  - [AvailabilityAsyncNotificationRequestResourceInner](docs/AvailabilityAsyncNotificationRequestResourceInner.md)
  - [AvailabilityAsyncNotificationRequestResourceInnerLinksInner](docs/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.md)
@@ -168,6 +163,10 @@ Class | Method | HTTP request | Description
  - [FreightResponseFreightEstimateResponseDistributionInner](docs/FreightResponseFreightEstimateResponseDistributionInner.md)
  - [FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner](docs/FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.md)
  - [FreightResponseFreightEstimateResponseLinesInner](docs/FreightResponseFreightEstimateResponseLinesInner.md)
+ - [GetAccesstoken400Response](docs/GetAccesstoken400Response.md)
+ - [GetAccesstoken500Response](docs/GetAccesstoken500Response.md)
+ - [GetAccesstoken500ResponseFault](docs/GetAccesstoken500ResponseFault.md)
+ - [GetAccesstoken500ResponseFaultDetail](docs/GetAccesstoken500ResponseFaultDetail.md)
  - [GetResellerV6ValidateQuote400Response](docs/GetResellerV6ValidateQuote400Response.md)
  - [GetResellerV6ValidateQuote400ResponseFieldsInner](docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md)
  - [GetResellerV6ValidateQuote500Response](docs/GetResellerV6ValidateQuote500Response.md)
@@ -343,6 +342,7 @@ Authentication schemes defined for the API:
 - **Scopes**: 
   - write: allows modifying resources
   - read: allows reading resources
+  - description: 
 
 
 ## Recommendation

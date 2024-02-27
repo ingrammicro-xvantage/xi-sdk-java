@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:22:52.536452Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
 public class QuoteDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_QUOTE_PRODUCT_GUID = "quoteProductGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRODUCT_GUID)
@@ -115,6 +115,14 @@ public class QuoteDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_TERMS = "terms";
   @SerializedName(SERIALIZED_NAME_TERMS)
   private String terms;
+
+  public static final String SERIALIZED_NAME_IS_SUBSCRIPTION = "isSubscription";
+  @SerializedName(SERIALIZED_NAME_IS_SUBSCRIPTION)
+  private Boolean isSubscription;
+
+  public static final String SERIALIZED_NAME_RESELLER_MARGIN = "resellerMargin";
+  @SerializedName(SERIALIZED_NAME_RESELLER_MARGIN)
+  private String resellerMargin;
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
@@ -427,6 +435,44 @@ public class QuoteDetailsResponseProductsInner {
   }
 
 
+  public QuoteDetailsResponseProductsInner isSubscription(Boolean isSubscription) {
+    this.isSubscription = isSubscription;
+    return this;
+  }
+
+   /**
+   * Get isSubscription
+   * @return isSubscription
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIsSubscription() {
+    return isSubscription;
+  }
+
+  public void setIsSubscription(Boolean isSubscription) {
+    this.isSubscription = isSubscription;
+  }
+
+
+  public QuoteDetailsResponseProductsInner resellerMargin(String resellerMargin) {
+    this.resellerMargin = resellerMargin;
+    return this;
+  }
+
+   /**
+   * Get resellerMargin
+   * @return resellerMargin
+  **/
+  @javax.annotation.Nullable
+  public String getResellerMargin() {
+    return resellerMargin;
+  }
+
+  public void setResellerMargin(String resellerMargin) {
+    this.resellerMargin = resellerMargin;
+  }
+
+
   public QuoteDetailsResponseProductsInner price(QuoteDetailsResponseProductsInnerPrice price) {
     this.price = price;
     return this;
@@ -472,12 +518,14 @@ public class QuoteDetailsResponseProductsInner {
         Objects.equals(this.quoteProductsSupplierPartAuxiliaryId, quoteDetailsResponseProductsInner.quoteProductsSupplierPartAuxiliaryId) &&
         Objects.equals(this.vendorName, quoteDetailsResponseProductsInner.vendorName) &&
         Objects.equals(this.terms, quoteDetailsResponseProductsInner.terms) &&
+        Objects.equals(this.isSubscription, quoteDetailsResponseProductsInner.isSubscription) &&
+        Objects.equals(this.resellerMargin, quoteDetailsResponseProductsInner.resellerMargin) &&
         Objects.equals(this.price, quoteDetailsResponseProductsInner.price);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteProductGuid, lineNumber, quantity, notes, ean, coo, ingramPartNumber, vendorPartNumber, description, weight, weightUom, isSuggestionProduct, vpnCategory, quoteProductsSupplierPartAuxiliaryId, vendorName, terms, price);
+    return Objects.hash(quoteProductGuid, lineNumber, quantity, notes, ean, coo, ingramPartNumber, vendorPartNumber, description, weight, weightUom, isSuggestionProduct, vpnCategory, quoteProductsSupplierPartAuxiliaryId, vendorName, terms, isSubscription, resellerMargin, price);
   }
 
   @Override
@@ -500,6 +548,8 @@ public class QuoteDetailsResponseProductsInner {
     sb.append("    quoteProductsSupplierPartAuxiliaryId: ").append(toIndentedString(quoteProductsSupplierPartAuxiliaryId)).append("\n");
     sb.append("    vendorName: ").append(toIndentedString(vendorName)).append("\n");
     sb.append("    terms: ").append(toIndentedString(terms)).append("\n");
+    sb.append("    isSubscription: ").append(toIndentedString(isSubscription)).append("\n");
+    sb.append("    resellerMargin: ").append(toIndentedString(resellerMargin)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -539,6 +589,8 @@ public class QuoteDetailsResponseProductsInner {
     openapiFields.add("quoteProductsSupplierPartAuxiliaryId");
     openapiFields.add("vendorName");
     openapiFields.add("terms");
+    openapiFields.add("isSubscription");
+    openapiFields.add("resellerMargin");
     openapiFields.add("price");
 
     // a set of required properties/fields (JSON key names)
@@ -604,6 +656,9 @@ public class QuoteDetailsResponseProductsInner {
       }
       if ((jsonObj.get("terms") != null && !jsonObj.get("terms").isJsonNull()) && !jsonObj.get("terms").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `terms` to be a primitive type in the JSON string but got `%s`", jsonObj.get("terms").toString()));
+      }
+      if ((jsonObj.get("resellerMargin") != null && !jsonObj.get("resellerMargin").isJsonNull()) && !jsonObj.get("resellerMargin").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `resellerMargin` to be a primitive type in the JSON string but got `%s`", jsonObj.get("resellerMargin").toString()));
       }
       // validate the optional field `price`
       if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {

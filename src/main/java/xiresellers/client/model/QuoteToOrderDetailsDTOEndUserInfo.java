@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:22:52.536452Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
 public class QuoteToOrderDetailsDTOEndUserInfo {
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)

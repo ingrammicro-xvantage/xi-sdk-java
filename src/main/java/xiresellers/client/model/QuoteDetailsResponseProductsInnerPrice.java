@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPrice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:22:52.536452Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
 public class QuoteDetailsResponseProductsInnerPrice {
   public static final String SERIALIZED_NAME_QUOTE_PRICE = "quotePrice";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRICE)
@@ -70,7 +70,27 @@ public class QuoteDetailsResponseProductsInnerPrice {
 
   public static final String SERIALIZED_NAME_DISCOUNT_OFF_LIST = "discountOffList";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_OFF_LIST)
-  private BigDecimal discountOffList;
+  private String discountOffList;
+
+  public static final String SERIALIZED_NAME_VENDORPRICE = "vendorprice";
+  @SerializedName(SERIALIZED_NAME_VENDORPRICE)
+  private BigDecimal vendorprice;
+
+  public static final String SERIALIZED_NAME_EXTENDEDVENDORPRICE = "extendedvendorprice";
+  @SerializedName(SERIALIZED_NAME_EXTENDEDVENDORPRICE)
+  private BigDecimal extendedvendorprice;
+
+  public static final String SERIALIZED_NAME_TOTAL_VISIBLE_RESERVE_QUANTITY = "totalVisibleReserveQuantity";
+  @SerializedName(SERIALIZED_NAME_TOTAL_VISIBLE_RESERVE_QUANTITY)
+  private Integer totalVisibleReserveQuantity;
+
+  public static final String SERIALIZED_NAME_TYPE = "type";
+  @SerializedName(SERIALIZED_NAME_TYPE)
+  private String type;
+
+  public static final String SERIALIZED_NAME_RECURRING_PRICE_MODEL = "recurringPriceModel";
+  @SerializedName(SERIALIZED_NAME_RECURRING_PRICE_MODEL)
+  private String recurringPriceModel;
 
   public QuoteDetailsResponseProductsInnerPrice() {
   }
@@ -151,22 +171,117 @@ public class QuoteDetailsResponseProductsInnerPrice {
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice discountOffList(BigDecimal discountOffList) {
+  public QuoteDetailsResponseProductsInnerPrice discountOffList(String discountOffList) {
     this.discountOffList = discountOffList;
     return this;
   }
 
    /**
-   * Discount off list percentage
+   * Discount off list percentage extended
    * @return discountOffList
   **/
   @javax.annotation.Nullable
-  public BigDecimal getDiscountOffList() {
+  public String getDiscountOffList() {
     return discountOffList;
   }
 
-  public void setDiscountOffList(BigDecimal discountOffList) {
+  public void setDiscountOffList(String discountOffList) {
     this.discountOffList = discountOffList;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice vendorprice(BigDecimal vendorprice) {
+    this.vendorprice = vendorprice;
+    return this;
+  }
+
+   /**
+   * Get vendorprice
+   * @return vendorprice
+  **/
+  @javax.annotation.Nullable
+  public BigDecimal getVendorprice() {
+    return vendorprice;
+  }
+
+  public void setVendorprice(BigDecimal vendorprice) {
+    this.vendorprice = vendorprice;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice extendedvendorprice(BigDecimal extendedvendorprice) {
+    this.extendedvendorprice = extendedvendorprice;
+    return this;
+  }
+
+   /**
+   * Get extendedvendorprice
+   * @return extendedvendorprice
+  **/
+  @javax.annotation.Nullable
+  public BigDecimal getExtendedvendorprice() {
+    return extendedvendorprice;
+  }
+
+  public void setExtendedvendorprice(BigDecimal extendedvendorprice) {
+    this.extendedvendorprice = extendedvendorprice;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice totalVisibleReserveQuantity(Integer totalVisibleReserveQuantity) {
+    this.totalVisibleReserveQuantity = totalVisibleReserveQuantity;
+    return this;
+  }
+
+   /**
+   * Get totalVisibleReserveQuantity
+   * @return totalVisibleReserveQuantity
+  **/
+  @javax.annotation.Nullable
+  public Integer getTotalVisibleReserveQuantity() {
+    return totalVisibleReserveQuantity;
+  }
+
+  public void setTotalVisibleReserveQuantity(Integer totalVisibleReserveQuantity) {
+    this.totalVisibleReserveQuantity = totalVisibleReserveQuantity;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice type(String type) {
+    this.type = type;
+    return this;
+  }
+
+   /**
+   * Get type
+   * @return type
+  **/
+  @javax.annotation.Nullable
+  public String getType() {
+    return type;
+  }
+
+  public void setType(String type) {
+    this.type = type;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice recurringPriceModel(String recurringPriceModel) {
+    this.recurringPriceModel = recurringPriceModel;
+    return this;
+  }
+
+   /**
+   * Get recurringPriceModel
+   * @return recurringPriceModel
+  **/
+  @javax.annotation.Nullable
+  public String getRecurringPriceModel() {
+    return recurringPriceModel;
+  }
+
+  public void setRecurringPriceModel(String recurringPriceModel) {
+    this.recurringPriceModel = recurringPriceModel;
   }
 
 
@@ -184,12 +299,17 @@ public class QuoteDetailsResponseProductsInnerPrice {
         Objects.equals(this.msrp, quoteDetailsResponseProductsInnerPrice.msrp) &&
         Objects.equals(this.extendedMsrp, quoteDetailsResponseProductsInnerPrice.extendedMsrp) &&
         Objects.equals(this.extendedQuotePrice, quoteDetailsResponseProductsInnerPrice.extendedQuotePrice) &&
-        Objects.equals(this.discountOffList, quoteDetailsResponseProductsInnerPrice.discountOffList);
+        Objects.equals(this.discountOffList, quoteDetailsResponseProductsInnerPrice.discountOffList) &&
+        Objects.equals(this.vendorprice, quoteDetailsResponseProductsInnerPrice.vendorprice) &&
+        Objects.equals(this.extendedvendorprice, quoteDetailsResponseProductsInnerPrice.extendedvendorprice) &&
+        Objects.equals(this.totalVisibleReserveQuantity, quoteDetailsResponseProductsInnerPrice.totalVisibleReserveQuantity) &&
+        Objects.equals(this.type, quoteDetailsResponseProductsInnerPrice.type) &&
+        Objects.equals(this.recurringPriceModel, quoteDetailsResponseProductsInnerPrice.recurringPriceModel);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(quotePrice, msrp, extendedMsrp, extendedQuotePrice, discountOffList);
+    return Objects.hash(quotePrice, msrp, extendedMsrp, extendedQuotePrice, discountOffList, vendorprice, extendedvendorprice, totalVisibleReserveQuantity, type, recurringPriceModel);
   }
 
   @Override
@@ -201,6 +321,11 @@ public class QuoteDetailsResponseProductsInnerPrice {
     sb.append("    extendedMsrp: ").append(toIndentedString(extendedMsrp)).append("\n");
     sb.append("    extendedQuotePrice: ").append(toIndentedString(extendedQuotePrice)).append("\n");
     sb.append("    discountOffList: ").append(toIndentedString(discountOffList)).append("\n");
+    sb.append("    vendorprice: ").append(toIndentedString(vendorprice)).append("\n");
+    sb.append("    extendedvendorprice: ").append(toIndentedString(extendedvendorprice)).append("\n");
+    sb.append("    totalVisibleReserveQuantity: ").append(toIndentedString(totalVisibleReserveQuantity)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    recurringPriceModel: ").append(toIndentedString(recurringPriceModel)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -228,6 +353,11 @@ public class QuoteDetailsResponseProductsInnerPrice {
     openapiFields.add("extendedMsrp");
     openapiFields.add("extendedQuotePrice");
     openapiFields.add("discountOffList");
+    openapiFields.add("vendorprice");
+    openapiFields.add("extendedvendorprice");
+    openapiFields.add("totalVisibleReserveQuantity");
+    openapiFields.add("type");
+    openapiFields.add("recurringPriceModel");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -254,6 +384,15 @@ public class QuoteDetailsResponseProductsInnerPrice {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("discountOffList") != null && !jsonObj.get("discountOffList").isJsonNull()) && !jsonObj.get("discountOffList").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `discountOffList` to be a primitive type in the JSON string but got `%s`", jsonObj.get("discountOffList").toString()));
+      }
+      if ((jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) && !jsonObj.get("type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
+      }
+      if ((jsonObj.get("recurringPriceModel") != null && !jsonObj.get("recurringPriceModel").isJsonNull()) && !jsonObj.get("recurringPriceModel").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `recurringPriceModel` to be a primitive type in the JSON string but got `%s`", jsonObj.get("recurringPriceModel").toString()));
+      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

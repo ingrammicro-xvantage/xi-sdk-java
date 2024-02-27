@@ -20,7 +20,6 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.Arrays;
 
 import com.google.gson.Gson;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteToOrderResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-26T07:22:52.536452Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
 public class QuoteToOrderResponse {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -58,7 +57,7 @@ public class QuoteToOrderResponse {
 
   public static final String SERIALIZED_NAME_CONFIRMATION_NUMBER = "confirmationNumber";
   @SerializedName(SERIALIZED_NAME_CONFIRMATION_NUMBER)
-  private BigDecimal confirmationNumber;
+  private String confirmationNumber;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
@@ -86,7 +85,7 @@ public class QuoteToOrderResponse {
   }
 
 
-  public QuoteToOrderResponse confirmationNumber(BigDecimal confirmationNumber) {
+  public QuoteToOrderResponse confirmationNumber(String confirmationNumber) {
     this.confirmationNumber = confirmationNumber;
     return this;
   }
@@ -96,11 +95,11 @@ public class QuoteToOrderResponse {
    * @return confirmationNumber
   **/
   @javax.annotation.Nullable
-  public BigDecimal getConfirmationNumber() {
+  public String getConfirmationNumber() {
     return confirmationNumber;
   }
 
-  public void setConfirmationNumber(BigDecimal confirmationNumber) {
+  public void setConfirmationNumber(String confirmationNumber) {
     this.confirmationNumber = confirmationNumber;
   }
 
@@ -204,6 +203,9 @@ public class QuoteToOrderResponse {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("quoteNumber") != null && !jsonObj.get("quoteNumber").isJsonNull()) && !jsonObj.get("quoteNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `quoteNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteNumber").toString()));
+      }
+      if ((jsonObj.get("confirmationNumber") != null && !jsonObj.get("confirmationNumber").isJsonNull()) && !jsonObj.get("confirmationNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `confirmationNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("confirmationNumber").toString()));
       }
       if ((jsonObj.get("message") != null && !jsonObj.get("message").isJsonNull()) && !jsonObj.get("message").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `message` to be a primitive type in the JSON string but got `%s`", jsonObj.get("message").toString()));
