@@ -167,6 +167,22 @@ public class QuoteDetailsResponseProductsInnerTest {
     }
 
     /**
+     * Test the property 'isSubscription'
+     */
+    @Test
+    public void isSubscriptionTest() {
+        // TODO: test isSubscription
+    }
+
+    /**
+     * Test the property 'resellerMargin'
+     */
+    @Test
+    public void resellerMarginTest() {
+        // TODO: test resellerMargin
+    }
+
+    /**
      * Test the property 'price'
      */
     @Test

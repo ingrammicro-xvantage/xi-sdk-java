@@ -6,6 +6,8 @@ README.md
 api/openapi.yaml
 build.gradle
 build.sbt
+docs/AccesstokenApi.md
+docs/AccesstokenResponse.md
 docs/AvailabilityAsyncNotificationRequest.md
 docs/AvailabilityAsyncNotificationRequestResourceInner.md
 docs/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.md
@@ -29,6 +31,10 @@ docs/FreightResponseFreightEstimateResponse.md
 docs/FreightResponseFreightEstimateResponseDistributionInner.md
 docs/FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.md
 docs/FreightResponseFreightEstimateResponseLinesInner.md
+docs/GetAccesstoken400Response.md
+docs/GetAccesstoken500Response.md
+docs/GetAccesstoken500ResponseFault.md
+docs/GetAccesstoken500ResponseFaultDetail.md
 docs/GetResellerV6ValidateQuote400Response.md
 docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md
 docs/GetResellerV6ValidateQuote500Response.md
@@ -219,6 +225,7 @@ src/main/java/xiresellers/client/ProgressResponseBody.java
 src/main/java/xiresellers/client/ServerConfiguration.java
 src/main/java/xiresellers/client/ServerVariable.java
 src/main/java/xiresellers/client/StringUtil.java
+src/main/java/xiresellers/client/api/AccesstokenApi.java
 src/main/java/xiresellers/client/api/DealsApi.java
 src/main/java/xiresellers/client/api/FreightEstimateApi.java
 src/main/java/xiresellers/client/api/InvoicesApi.java
@@ -239,6 +246,7 @@ src/main/java/xiresellers/client/auth/OAuthFlow.java
 src/main/java/xiresellers/client/auth/OAuthOkHttpClient.java
 src/main/java/xiresellers/client/auth/RetryingOAuth.java
 src/main/java/xiresellers/client/model/AbstractOpenApiSchema.java
+src/main/java/xiresellers/client/model/AccesstokenResponse.java
 src/main/java/xiresellers/client/model/AvailabilityAsyncNotificationRequest.java
 src/main/java/xiresellers/client/model/AvailabilityAsyncNotificationRequestResourceInner.java
 src/main/java/xiresellers/client/model/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.java
@@ -260,6 +268,10 @@ src/main/java/xiresellers/client/model/FreightResponseFreightEstimateResponse.ja
 src/main/java/xiresellers/client/model/FreightResponseFreightEstimateResponseDistributionInner.java
 src/main/java/xiresellers/client/model/FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.java
 src/main/java/xiresellers/client/model/FreightResponseFreightEstimateResponseLinesInner.java
+src/main/java/xiresellers/client/model/GetAccesstoken400Response.java
+src/main/java/xiresellers/client/model/GetAccesstoken500Response.java
+src/main/java/xiresellers/client/model/GetAccesstoken500ResponseFault.java
+src/main/java/xiresellers/client/model/GetAccesstoken500ResponseFaultDetail.java
 src/main/java/xiresellers/client/model/GetResellerV6ValidateQuote400Response.java
 src/main/java/xiresellers/client/model/GetResellerV6ValidateQuote400ResponseFieldsInner.java
 src/main/java/xiresellers/client/model/GetResellerV6ValidateQuote500Response.java
@@ -419,6 +431,7 @@ src/main/java/xiresellers/client/model/ReturnsSearchResponseReturnsClaimsInnerLi
 src/main/java/xiresellers/client/model/ValidateQuoteResponse.java
 src/main/java/xiresellers/client/model/ValidateQuoteResponseLinesInner.java
 src/main/java/xiresellers/client/model/ValidateQuoteResponseVmfAdditionalAttributesInner.java
+src/test/java/xiresellers/client/api/AccesstokenApiTest.java
 src/test/java/xiresellers/client/api/DealsApiTest.java
 src/test/java/xiresellers/client/api/FreightEstimateApiTest.java
 src/test/java/xiresellers/client/api/InvoicesApiTest.java
@@ -430,6 +443,7 @@ src/test/java/xiresellers/client/api/QuotesApiTest.java
 src/test/java/xiresellers/client/api/RenewalsApiTest.java
 src/test/java/xiresellers/client/api/ReturnsApiTest.java
 src/test/java/xiresellers/client/api/StockUpdateApiTest.java
+src/test/java/xiresellers/client/model/AccesstokenResponseTest.java
 src/test/java/xiresellers/client/model/AvailabilityAsyncNotificationRequestResourceInnerLinksInnerTest.java
 src/test/java/xiresellers/client/model/AvailabilityAsyncNotificationRequestResourceInnerTest.java
 src/test/java/xiresellers/client/model/AvailabilityAsyncNotificationRequestTest.java
@@ -451,6 +465,10 @@ src/test/java/xiresellers/client/model/FreightResponseFreightEstimateResponseDis
 src/test/java/xiresellers/client/model/FreightResponseFreightEstimateResponseLinesInnerTest.java
 src/test/java/xiresellers/client/model/FreightResponseFreightEstimateResponseTest.java
 src/test/java/xiresellers/client/model/FreightResponseTest.java
+src/test/java/xiresellers/client/model/GetAccesstoken400ResponseTest.java
+src/test/java/xiresellers/client/model/GetAccesstoken500ResponseFaultDetailTest.java
+src/test/java/xiresellers/client/model/GetAccesstoken500ResponseFaultTest.java
+src/test/java/xiresellers/client/model/GetAccesstoken500ResponseTest.java
 src/test/java/xiresellers/client/model/GetResellerV6ValidateQuote400ResponseFieldsInnerTest.java
 src/test/java/xiresellers/client/model/GetResellerV6ValidateQuote400ResponseTest.java
 src/test/java/xiresellers/client/model/GetResellerV6ValidateQuote500ResponseTest.java
