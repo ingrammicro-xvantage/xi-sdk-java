@@ -19,7 +19,7 @@ Building the API client library requires:
 To install the API client library to your local Maven repository:
 In settings.xml in your machine add :
 ```xml
-```xml
+
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
