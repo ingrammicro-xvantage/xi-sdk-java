@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * Payment terms is the agreement between Ingram and the customer by what period they should pay the invoice by
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T05:12:38.974992Z[Etc/UTC]")
 public class InvoiceDetailsv61ResponsePaymentTermsInfo {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_CODE = "paymentTermsCode";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_CODE)
