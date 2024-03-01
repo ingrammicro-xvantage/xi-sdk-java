@@ -109,6 +109,8 @@ Then manually install the following JARs:
 
 ## Getting Started
 
+Quickstart on creating an application can be found [here](getting-started.md)
+
 Please follow the [installation](#installation) instruction and execute the following Java code:
 
 ```java
