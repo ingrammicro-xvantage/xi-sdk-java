@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -280,6 +280,8 @@ public class DealsApi {
      * @param endUser The end user/customer&#39;s name. (optional)
      * @param vendor The vendor&#39;s name. (optional)
      * @param dealId Deal/Special bid number. (optional)
+     * @param size The number of records required in the call - max records 100 per page. (optional)
+     * @param page The page number reference. (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -291,7 +293,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6DealssearchCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellersV6DealssearchCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, Integer size, Integer page, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -326,6 +328,14 @@ public class DealsApi {
 
         if (dealId != null) {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("dealId", dealId));
+        }
+
+        if (size != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("Size", size));
+        }
+
+        if (page != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("Page", page));
         }
 
         if (imCustomerNumber != null) {
@@ -364,7 +374,7 @@ public class DealsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellersV6DealssearchValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellersV6DealssearchValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, Integer size, Integer page, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellersV6Dealssearch(Async)");
@@ -380,7 +390,7 @@ public class DealsApi {
             throw new ApiException("Missing the required parameter 'imCorrelationID' when calling getResellersV6Dealssearch(Async)");
         }
 
-        return getResellersV6DealssearchCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, _callback);
+        return getResellersV6DealssearchCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, size, page, _callback);
 
     }
 
@@ -394,6 +404,8 @@ public class DealsApi {
      * @param endUser The end user/customer&#39;s name. (optional)
      * @param vendor The vendor&#39;s name. (optional)
      * @param dealId Deal/Special bid number. (optional)
+     * @param size The number of records required in the call - max records 100 per page. (optional)
+     * @param page The page number reference. (optional)
      * @return DealsSearchResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -404,8 +416,8 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public DealsSearchResponse getResellersV6Dealssearch(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId) throws ApiException {
-        ApiResponse<DealsSearchResponse> localVarResp = getResellersV6DealssearchWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId);
+    public DealsSearchResponse getResellersV6Dealssearch(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, Integer size, Integer page) throws ApiException {
+        ApiResponse<DealsSearchResponse> localVarResp = getResellersV6DealssearchWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, size, page);
         return localVarResp.getData();
     }
 
@@ -419,6 +431,8 @@ public class DealsApi {
      * @param endUser The end user/customer&#39;s name. (optional)
      * @param vendor The vendor&#39;s name. (optional)
      * @param dealId Deal/Special bid number. (optional)
+     * @param size The number of records required in the call - max records 100 per page. (optional)
+     * @param page The page number reference. (optional)
      * @return ApiResponse&lt;DealsSearchResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -429,8 +443,8 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<DealsSearchResponse> getResellersV6DealssearchWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId) throws ApiException {
-        okhttp3.Call localVarCall = getResellersV6DealssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, null);
+    public ApiResponse<DealsSearchResponse> getResellersV6DealssearchWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, Integer size, Integer page) throws ApiException {
+        okhttp3.Call localVarCall = getResellersV6DealssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, size, page, null);
         Type localVarReturnType = new TypeToken<DealsSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -445,6 +459,8 @@ public class DealsApi {
      * @param endUser The end user/customer&#39;s name. (optional)
      * @param vendor The vendor&#39;s name. (optional)
      * @param dealId Deal/Special bid number. (optional)
+     * @param size The number of records required in the call - max records 100 per page. (optional)
+     * @param page The page number reference. (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -456,9 +472,9 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6DealssearchAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, final ApiCallback<DealsSearchResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellersV6DealssearchAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, Integer size, Integer page, final ApiCallback<DealsSearchResponse> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = getResellersV6DealssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, _callback);
+        okhttp3.Call localVarCall = getResellersV6DealssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, size, page, _callback);
         Type localVarReturnType = new TypeToken<DealsSearchResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

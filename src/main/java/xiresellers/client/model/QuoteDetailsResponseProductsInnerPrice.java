@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -50,23 +50,23 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPrice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T05:12:38.974992Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:40:58.644115Z[Etc/UTC]", comments = "Generator version: 7.4.0")
 public class QuoteDetailsResponseProductsInnerPrice {
   public static final String SERIALIZED_NAME_QUOTE_PRICE = "quotePrice";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRICE)
-  private Integer quotePrice;
+  private BigDecimal quotePrice;
 
   public static final String SERIALIZED_NAME_MSRP = "msrp";
   @SerializedName(SERIALIZED_NAME_MSRP)
-  private Integer msrp;
+  private BigDecimal msrp;
 
   public static final String SERIALIZED_NAME_EXTENDED_MSRP = "extendedMsrp";
   @SerializedName(SERIALIZED_NAME_EXTENDED_MSRP)
-  private Integer extendedMsrp;
+  private BigDecimal extendedMsrp;
 
   public static final String SERIALIZED_NAME_EXTENDED_QUOTE_PRICE = "extendedQuotePrice";
   @SerializedName(SERIALIZED_NAME_EXTENDED_QUOTE_PRICE)
-  private Integer extendedQuotePrice;
+  private BigDecimal extendedQuotePrice;
 
   public static final String SERIALIZED_NAME_DISCOUNT_OFF_LIST = "discountOffList";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_OFF_LIST)
@@ -95,7 +95,7 @@ public class QuoteDetailsResponseProductsInnerPrice {
   public QuoteDetailsResponseProductsInnerPrice() {
   }
 
-  public QuoteDetailsResponseProductsInnerPrice quotePrice(Integer quotePrice) {
+  public QuoteDetailsResponseProductsInnerPrice quotePrice(BigDecimal quotePrice) {
     this.quotePrice = quotePrice;
     return this;
   }
@@ -105,16 +105,16 @@ public class QuoteDetailsResponseProductsInnerPrice {
    * @return quotePrice
   **/
   @javax.annotation.Nullable
-  public Integer getQuotePrice() {
+  public BigDecimal getQuotePrice() {
     return quotePrice;
   }
 
-  public void setQuotePrice(Integer quotePrice) {
+  public void setQuotePrice(BigDecimal quotePrice) {
     this.quotePrice = quotePrice;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice msrp(Integer msrp) {
+  public QuoteDetailsResponseProductsInnerPrice msrp(BigDecimal msrp) {
     this.msrp = msrp;
     return this;
   }
@@ -124,16 +124,16 @@ public class QuoteDetailsResponseProductsInnerPrice {
    * @return msrp
   **/
   @javax.annotation.Nullable
-  public Integer getMsrp() {
+  public BigDecimal getMsrp() {
     return msrp;
   }
 
-  public void setMsrp(Integer msrp) {
+  public void setMsrp(BigDecimal msrp) {
     this.msrp = msrp;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice extendedMsrp(Integer extendedMsrp) {
+  public QuoteDetailsResponseProductsInnerPrice extendedMsrp(BigDecimal extendedMsrp) {
     this.extendedMsrp = extendedMsrp;
     return this;
   }
@@ -143,16 +143,16 @@ public class QuoteDetailsResponseProductsInnerPrice {
    * @return extendedMsrp
   **/
   @javax.annotation.Nullable
-  public Integer getExtendedMsrp() {
+  public BigDecimal getExtendedMsrp() {
     return extendedMsrp;
   }
 
-  public void setExtendedMsrp(Integer extendedMsrp) {
+  public void setExtendedMsrp(BigDecimal extendedMsrp) {
     this.extendedMsrp = extendedMsrp;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice extendedQuotePrice(Integer extendedQuotePrice) {
+  public QuoteDetailsResponseProductsInnerPrice extendedQuotePrice(BigDecimal extendedQuotePrice) {
     this.extendedQuotePrice = extendedQuotePrice;
     return this;
   }
@@ -162,11 +162,11 @@ public class QuoteDetailsResponseProductsInnerPrice {
    * @return extendedQuotePrice
   **/
   @javax.annotation.Nullable
-  public Integer getExtendedQuotePrice() {
+  public BigDecimal getExtendedQuotePrice() {
     return extendedQuotePrice;
   }
 
-  public void setExtendedQuotePrice(Integer extendedQuotePrice) {
+  public void setExtendedQuotePrice(BigDecimal extendedQuotePrice) {
     this.extendedQuotePrice = extendedQuotePrice;
   }
 

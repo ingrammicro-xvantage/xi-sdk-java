@@ -38,6 +38,7 @@
 |**estimatedDates** | [**List&lt;OrderDetailB2BLinesInnerEstimatedDatesInner&gt;**](OrderDetailB2BLinesInnerEstimatedDatesInner.md) |  |  [optional] |
 |**scheduleLines** | [**List&lt;OrderDetailB2BLinesInnerScheduleLinesInner&gt;**](OrderDetailB2BLinesInnerScheduleLinesInner.md) |  |  [optional] |
 |**multipleShipments** | [**List&lt;OrderDetailB2BLinesInnerMultipleShipmentsInner&gt;**](OrderDetailB2BLinesInnerMultipleShipmentsInner.md) |  |  [optional] |
+|**defaultCarrierName** | **String** |  |  [optional] |
 
 
 

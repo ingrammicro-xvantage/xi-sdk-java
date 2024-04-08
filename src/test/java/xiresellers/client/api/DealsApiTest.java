@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -69,7 +69,9 @@ public class DealsApiTest {
         String endUser = null;
         String vendor = null;
         String dealId = null;
-        DealsSearchResponse response = api.getResellersV6Dealssearch(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId);
+        Integer size = null;
+        Integer page = null;
+        DealsSearchResponse response = api.getResellersV6Dealssearch(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, size, page);
         // TODO: test validations
     }
 

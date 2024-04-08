@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -59,7 +59,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T05:12:38.974992Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:40:58.644115Z[Etc/UTC]", comments = "Generator version: 7.4.0")
 public class OrderDetailB2BLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
@@ -184,6 +184,10 @@ public class OrderDetailB2BLinesInner {
   public static final String SERIALIZED_NAME_MULTIPLE_SHIPMENTS = "multipleShipments";
   @SerializedName(SERIALIZED_NAME_MULTIPLE_SHIPMENTS)
   private List<OrderDetailB2BLinesInnerMultipleShipmentsInner> multipleShipments;
+
+  public static final String SERIALIZED_NAME_DEFAULT_CARRIER_NAME = "defaultCarrierName";
+  @SerializedName(SERIALIZED_NAME_DEFAULT_CARRIER_NAME)
+  private String defaultCarrierName;
 
   public OrderDetailB2BLinesInner() {
   }
@@ -825,6 +829,25 @@ public class OrderDetailB2BLinesInner {
   }
 
 
+  public OrderDetailB2BLinesInner defaultCarrierName(String defaultCarrierName) {
+    this.defaultCarrierName = defaultCarrierName;
+    return this;
+  }
+
+   /**
+   * Get defaultCarrierName
+   * @return defaultCarrierName
+  **/
+  @javax.annotation.Nullable
+  public String getDefaultCarrierName() {
+    return defaultCarrierName;
+  }
+
+  public void setDefaultCarrierName(String defaultCarrierName) {
+    this.defaultCarrierName = defaultCarrierName;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -865,7 +888,8 @@ public class OrderDetailB2BLinesInner {
         Objects.equals(this.links, orderDetailB2BLinesInner.links) &&
         Objects.equals(this.estimatedDates, orderDetailB2BLinesInner.estimatedDates) &&
         Objects.equals(this.scheduleLines, orderDetailB2BLinesInner.scheduleLines) &&
-        Objects.equals(this.multipleShipments, orderDetailB2BLinesInner.multipleShipments);
+        Objects.equals(this.multipleShipments, orderDetailB2BLinesInner.multipleShipments) &&
+        Objects.equals(this.defaultCarrierName, orderDetailB2BLinesInner.defaultCarrierName);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -874,7 +898,7 @@ public class OrderDetailB2BLinesInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(subOrderNumber, ingramOrderLineNumber, vendorSalesOrderLineNumber, customerLineNumber, lineStatus, ingramPartNumber, vendorPartNumber, vendorName, partDescription, unitWeight, weightUom, unitPrice, upcCode, extendedPrice, taxAmount, currencyCode, quantityOrdered, quantityConfirmed, quantityBackOrdered, specialBidNumber, requestedDeliverydate, promisedDeliveryDate, backOrderETADate, lineNotes, shipmentDetails, serviceContractInfo, additionalAttributes, links, estimatedDates, scheduleLines, multipleShipments);
+    return Objects.hash(subOrderNumber, ingramOrderLineNumber, vendorSalesOrderLineNumber, customerLineNumber, lineStatus, ingramPartNumber, vendorPartNumber, vendorName, partDescription, unitWeight, weightUom, unitPrice, upcCode, extendedPrice, taxAmount, currencyCode, quantityOrdered, quantityConfirmed, quantityBackOrdered, specialBidNumber, requestedDeliverydate, promisedDeliveryDate, backOrderETADate, lineNotes, shipmentDetails, serviceContractInfo, additionalAttributes, links, estimatedDates, scheduleLines, multipleShipments, defaultCarrierName);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -919,6 +943,7 @@ public class OrderDetailB2BLinesInner {
     sb.append("    estimatedDates: ").append(toIndentedString(estimatedDates)).append("\n");
     sb.append("    scheduleLines: ").append(toIndentedString(scheduleLines)).append("\n");
     sb.append("    multipleShipments: ").append(toIndentedString(multipleShipments)).append("\n");
+    sb.append("    defaultCarrierName: ").append(toIndentedString(defaultCarrierName)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -972,6 +997,7 @@ public class OrderDetailB2BLinesInner {
     openapiFields.add("estimatedDates");
     openapiFields.add("scheduleLines");
     openapiFields.add("multipleShipments");
+    openapiFields.add("defaultCarrierName");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -1136,6 +1162,9 @@ public class OrderDetailB2BLinesInner {
             OrderDetailB2BLinesInnerMultipleShipmentsInner.validateJsonElement(jsonArraymultipleShipments.get(i));
           };
         }
+      }
+      if ((jsonObj.get("defaultCarrierName") != null && !jsonObj.get("defaultCarrierName").isJsonNull()) && !jsonObj.get("defaultCarrierName").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `defaultCarrierName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("defaultCarrierName").toString()));
       }
   }
 

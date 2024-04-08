@@ -89,7 +89,7 @@ public class Example {
 
 <a id="getResellersV6Dealssearch"></a>
 # **getResellersV6Dealssearch**
-> DealsSearchResponse getResellersV6Dealssearch(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId)
+> DealsSearchResponse getResellersV6Dealssearch(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, size, page)
 
 Deals Search
 
@@ -122,8 +122,10 @@ public class Example {
     String endUser = "EnduserCompany"; // String | The end user/customer's name.
     String vendor = "Cisco"; // String | The vendor's name.
     String dealId = "12345678"; // String | Deal/Special bid number.
+    Integer size = 56; // Integer | The number of records required in the call - max records 100 per page.
+    Integer page = 56; // Integer | The page number reference.
     try {
-      DealsSearchResponse result = apiInstance.getResellersV6Dealssearch(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId);
+      DealsSearchResponse result = apiInstance.getResellersV6Dealssearch(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, size, page);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DealsApi#getResellersV6Dealssearch");
@@ -147,6 +149,8 @@ public class Example {
 | **endUser** | **String**| The end user/customer&#39;s name. | [optional] |
 | **vendor** | **String**| The vendor&#39;s name. | [optional] |
 | **dealId** | **String**| Deal/Special bid number. | [optional] |
+| **size** | **Integer**| The number of records required in the call - max records 100 per page. | [optional] |
+| **page** | **Integer**| The page number reference. | [optional] |
 
 ### Return type
 

@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +56,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T05:12:38.974992Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:40:58.644115Z[Etc/UTC]", comments = "Generator version: 7.4.0")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
@@ -163,7 +164,7 @@ public class QuoteDetailsResponse {
 
   public static final String SERIALIZED_NAME_EXTENDED_MSRP_TOTAL = "extendedMsrpTotal";
   @SerializedName(SERIALIZED_NAME_EXTENDED_MSRP_TOTAL)
-  private Integer extendedMsrpTotal;
+  private BigDecimal extendedMsrpTotal;
 
   public static final String SERIALIZED_NAME_QUANTITY_TOTAL = "quantityTotal";
   @SerializedName(SERIALIZED_NAME_QUANTITY_TOTAL)
@@ -171,7 +172,7 @@ public class QuoteDetailsResponse {
 
   public static final String SERIALIZED_NAME_EXTENDED_QUOTE_PRICE_TOTAL = "extendedQuotePriceTotal";
   @SerializedName(SERIALIZED_NAME_EXTENDED_QUOTE_PRICE_TOTAL)
-  private Integer extendedQuotePriceTotal;
+  private BigDecimal extendedQuotePriceTotal;
 
   public static final String SERIALIZED_NAME_TOTAL_QUOTE_AMOUNT = "totalQuoteAmount";
   @SerializedName(SERIALIZED_NAME_TOTAL_QUOTE_AMOUNT)
@@ -686,7 +687,7 @@ public class QuoteDetailsResponse {
   }
 
 
-  public QuoteDetailsResponse extendedMsrpTotal(Integer extendedMsrpTotal) {
+  public QuoteDetailsResponse extendedMsrpTotal(BigDecimal extendedMsrpTotal) {
     this.extendedMsrpTotal = extendedMsrpTotal;
     return this;
   }
@@ -696,11 +697,11 @@ public class QuoteDetailsResponse {
    * @return extendedMsrpTotal
   **/
   @javax.annotation.Nullable
-  public Integer getExtendedMsrpTotal() {
+  public BigDecimal getExtendedMsrpTotal() {
     return extendedMsrpTotal;
   }
 
-  public void setExtendedMsrpTotal(Integer extendedMsrpTotal) {
+  public void setExtendedMsrpTotal(BigDecimal extendedMsrpTotal) {
     this.extendedMsrpTotal = extendedMsrpTotal;
   }
 
@@ -724,7 +725,7 @@ public class QuoteDetailsResponse {
   }
 
 
-  public QuoteDetailsResponse extendedQuotePriceTotal(Integer extendedQuotePriceTotal) {
+  public QuoteDetailsResponse extendedQuotePriceTotal(BigDecimal extendedQuotePriceTotal) {
     this.extendedQuotePriceTotal = extendedQuotePriceTotal;
     return this;
   }
@@ -734,11 +735,11 @@ public class QuoteDetailsResponse {
    * @return extendedQuotePriceTotal
   **/
   @javax.annotation.Nullable
-  public Integer getExtendedQuotePriceTotal() {
+  public BigDecimal getExtendedQuotePriceTotal() {
     return extendedQuotePriceTotal;
   }
 
-  public void setExtendedQuotePriceTotal(Integer extendedQuotePriceTotal) {
+  public void setExtendedQuotePriceTotal(BigDecimal extendedQuotePriceTotal) {
     this.extendedQuotePriceTotal = extendedQuotePriceTotal;
   }
 
