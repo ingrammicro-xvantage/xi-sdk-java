@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchRequestStatus
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:40:58.644115Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:46:33.700889Z[Etc/UTC]", comments = "Generator version: 7.4.0")
 public class RenewalsSearchRequestStatus {
   public static final String SERIALIZED_NAME_OPPORUTINY_STATUS = "OpporutinyStatus";
   @SerializedName(SERIALIZED_NAME_OPPORUTINY_STATUS)

@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * The shipping information provided by the reseller for order delivery.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:40:58.644115Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:46:33.700889Z[Etc/UTC]", comments = "Generator version: 7.4.0")
 public class OrderDetailB2BShipToInfo {
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)

@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * DealsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:40:58.644115Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:46:33.700889Z[Etc/UTC]", comments = "Generator version: 7.4.0")
 public class DealsDetailsResponse {
   public static final String SERIALIZED_NAME_DEAL_ID = "dealId";
   @SerializedName(SERIALIZED_NAME_DEAL_ID)
