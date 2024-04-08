@@ -4,7 +4,7 @@ XI Sdk Resellers
 - API version: 1.0.0
   - Build date: 2024-02-27T08:54:45.542575Z[Etc/UTC]
 
-For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
 
 
 
@@ -373,21 +373,16 @@ Class | Method | HTTP request | Description
 
 
 Authentication schemes defined for the API:
-<a id="application"></a>
 ### application
 
 - **Type**: OAuth
 - **Flow**: application
-- **Authorization URL**: 
+- **Authorization URL**: https://api.ingrammicro.com:443/oauth/oauth20/token?grant_type=client_credentials&client_id={ClientId}&client_secret={clientSecret}
+- **Method**: Get
 - **Scopes**: 
   - write: allows modifying resources
   - read: allows reading resources
-  - description: 
-
-
-## Recommendation
-
-It's recommended to create an instance of `ApiClient` per thread in a multithreaded environment to avoid any potential issues.
+ 
 
 ## Author
 -[Ingram Micro Xvantage](https://github.com/ingrammicro-xvantage)
@@ -396,4 +391,4 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 
 For any inquiries or support, please feel free to contact us at:
 
-- Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)
+- Email: xi_support@ingrammicro.com
