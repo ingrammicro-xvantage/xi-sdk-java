@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInnerLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class OrderCreateResponseOrdersInnerLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
@@ -110,11 +110,11 @@ public class OrderCreateResponseOrdersInnerLinesInner {
 
   public static final String SERIALIZED_NAME_SHIPMENT_DETAILS = "shipmentDetails";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DETAILS)
-  private List<OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner> shipmentDetails;
+  private List<OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner> shipmentDetails = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner> additionalAttributes;
+  private List<OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public OrderCreateResponseOrdersInnerLinesInner() {
   }

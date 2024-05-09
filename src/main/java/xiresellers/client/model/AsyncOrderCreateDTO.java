@@ -60,7 +60,7 @@ import xiresellers.client.JSON;
 /**
  * AsyncOrderCreateDTO
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class AsyncOrderCreateDTO {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -116,19 +116,19 @@ public class AsyncOrderCreateDTO {
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<AsyncOrderCreateDTOAdditionalAttributesInner> additionalAttributes;
+  private List<AsyncOrderCreateDTOAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_VMFADDITIONAL_ATTRIBUTES = "vmfadditionalAttributes";
   @SerializedName(SERIALIZED_NAME_VMFADDITIONAL_ATTRIBUTES)
-  private List<AsyncOrderCreateDTOVmfadditionalAttributesInner> vmfadditionalAttributes;
+  private List<AsyncOrderCreateDTOVmfadditionalAttributesInner> vmfadditionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
-  private List<AsyncOrderCreateDTOLinesInner> lines;
+  private List<AsyncOrderCreateDTOLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_WARRANTY_INFO = "warrantyInfo";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFO)
-  private List<AsyncOrderCreateDTOWarrantyInfoInner> warrantyInfo;
+  private List<AsyncOrderCreateDTOWarrantyInfoInner> warrantyInfo = new ArrayList<>();
 
   public AsyncOrderCreateDTO() {
   }

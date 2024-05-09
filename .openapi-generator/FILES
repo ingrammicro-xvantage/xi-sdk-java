@@ -8,7 +8,6 @@ build.gradle
 build.sbt
 docs/AccesstokenApi.md
 docs/AccesstokenResponse.md
-docs/AsyncOrderCreateApi.md
 docs/AsyncOrderCreateDTO.md
 docs/AsyncOrderCreateDTOAdditionalAttributesInner.md
 docs/AsyncOrderCreateDTOEndUserInfo.md
@@ -51,7 +50,6 @@ docs/GetAccesstoken500ResponseFault.md
 docs/GetAccesstoken500ResponseFaultDetail.md
 docs/GetResellerV6ValidateQuote400Response.md
 docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md
-docs/GetResellerV6ValidateQuote500Response.md
 docs/InvoiceDetailsv61Response.md
 docs/InvoiceDetailsv61ResponseBillToInfo.md
 docs/InvoiceDetailsv61ResponseFxRateInfo.md
@@ -140,6 +138,7 @@ docs/OrderStatusAsyncNotificationRequestResourceInnerLinksInner.md
 docs/OrdersApi.md
 docs/PostAsyncOrderCreateV7400Response.md
 docs/PostAsyncOrderCreateV7400ResponseFieldsInner.md
+docs/PostAsyncOrderCreateV7500Response.md
 docs/PostRenewalssearch400Response.md
 docs/PriceAndAvailabilityRequest.md
 docs/PriceAndAvailabilityRequestAdditionalAttributesInner.md
@@ -232,7 +231,6 @@ src/main/java/xiresellers/client/ServerConfiguration.java
 src/main/java/xiresellers/client/ServerVariable.java
 src/main/java/xiresellers/client/StringUtil.java
 src/main/java/xiresellers/client/api/AccesstokenApi.java
-src/main/java/xiresellers/client/api/AsyncOrderCreateApi.java
 src/main/java/xiresellers/client/api/DealsApi.java
 src/main/java/xiresellers/client/api/FreightEstimateApi.java
 src/main/java/xiresellers/client/api/InvoicesApi.java
@@ -293,7 +291,6 @@ src/main/java/xiresellers/client/model/GetAccesstoken500ResponseFault.java
 src/main/java/xiresellers/client/model/GetAccesstoken500ResponseFaultDetail.java
 src/main/java/xiresellers/client/model/GetResellerV6ValidateQuote400Response.java
 src/main/java/xiresellers/client/model/GetResellerV6ValidateQuote400ResponseFieldsInner.java
-src/main/java/xiresellers/client/model/GetResellerV6ValidateQuote500Response.java
 src/main/java/xiresellers/client/model/InvoiceDetailsv61Response.java
 src/main/java/xiresellers/client/model/InvoiceDetailsv61ResponseBillToInfo.java
 src/main/java/xiresellers/client/model/InvoiceDetailsv61ResponseFxRateInfo.java
@@ -379,6 +376,7 @@ src/main/java/xiresellers/client/model/OrderStatusAsyncNotificationRequestResour
 src/main/java/xiresellers/client/model/OrderStatusAsyncNotificationRequestResourceInnerLinksInner.java
 src/main/java/xiresellers/client/model/PostAsyncOrderCreateV7400Response.java
 src/main/java/xiresellers/client/model/PostAsyncOrderCreateV7400ResponseFieldsInner.java
+src/main/java/xiresellers/client/model/PostAsyncOrderCreateV7500Response.java
 src/main/java/xiresellers/client/model/PostRenewalssearch400Response.java
 src/main/java/xiresellers/client/model/PriceAndAvailabilityRequest.java
 src/main/java/xiresellers/client/model/PriceAndAvailabilityRequestAdditionalAttributesInner.java
@@ -444,7 +442,6 @@ src/main/java/xiresellers/client/model/ValidateQuoteResponseLinesInner.java
 src/main/java/xiresellers/client/model/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.java
 src/main/java/xiresellers/client/model/ValidateQuoteResponseVmfAdditionalAttributesInner.java
 src/test/java/xiresellers/client/api/AccesstokenApiTest.java
-src/test/java/xiresellers/client/api/AsyncOrderCreateApiTest.java
 src/test/java/xiresellers/client/api/DealsApiTest.java
 src/test/java/xiresellers/client/api/FreightEstimateApiTest.java
 src/test/java/xiresellers/client/api/InvoicesApiTest.java
@@ -496,7 +493,6 @@ src/test/java/xiresellers/client/model/GetAccesstoken500ResponseFaultTest.java
 src/test/java/xiresellers/client/model/GetAccesstoken500ResponseTest.java
 src/test/java/xiresellers/client/model/GetResellerV6ValidateQuote400ResponseFieldsInnerTest.java
 src/test/java/xiresellers/client/model/GetResellerV6ValidateQuote400ResponseTest.java
-src/test/java/xiresellers/client/model/GetResellerV6ValidateQuote500ResponseTest.java
 src/test/java/xiresellers/client/model/InvoiceDetailsv61ResponseBillToInfoTest.java
 src/test/java/xiresellers/client/model/InvoiceDetailsv61ResponseFxRateInfoTest.java
 src/test/java/xiresellers/client/model/InvoiceDetailsv61ResponseLinesInnerSerialNumbersInnerTest.java
@@ -582,6 +578,7 @@ src/test/java/xiresellers/client/model/OrderStatusAsyncNotificationRequestResour
 src/test/java/xiresellers/client/model/OrderStatusAsyncNotificationRequestTest.java
 src/test/java/xiresellers/client/model/PostAsyncOrderCreateV7400ResponseFieldsInnerTest.java
 src/test/java/xiresellers/client/model/PostAsyncOrderCreateV7400ResponseTest.java
+src/test/java/xiresellers/client/model/PostAsyncOrderCreateV7500ResponseTest.java
 src/test/java/xiresellers/client/model/PostRenewalssearch400ResponseTest.java
 src/test/java/xiresellers/client/model/PriceAndAvailabilityRequestAdditionalAttributesInnerTest.java
 src/test/java/xiresellers/client/model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerTest.java

@@ -56,7 +56,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class PriceAndAvailabilityResponseInner {
   public static final String SERIALIZED_NAME_PRODUCT_STATUS_CODE = "productStatusCode";
   @SerializedName(SERIALIZED_NAME_PRODUCT_STATUS_CODE)
@@ -148,7 +148,7 @@ public class PriceAndAvailabilityResponseInner {
 
   public static final String SERIALIZED_NAME_RESERVE_INVENTORY_DETAILS = "reserveInventoryDetails";
   @SerializedName(SERIALIZED_NAME_RESERVE_INVENTORY_DETAILS)
-  private List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails;
+  private List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PRICING = "pricing";
   @SerializedName(SERIALIZED_NAME_PRICING)
@@ -156,7 +156,7 @@ public class PriceAndAvailabilityResponseInner {
 
   public static final String SERIALIZED_NAME_DISCOUNTS = "discounts";
   @SerializedName(SERIALIZED_NAME_DISCOUNTS)
-  private List<PriceAndAvailabilityResponseInnerDiscountsInner> discounts;
+  private List<PriceAndAvailabilityResponseInnerDiscountsInner> discounts = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_BUNDLE_PART_INDICATOR = "bundlePartIndicator";
   @SerializedName(SERIALIZED_NAME_BUNDLE_PART_INDICATOR)
@@ -164,7 +164,7 @@ public class PriceAndAvailabilityResponseInner {
 
   public static final String SERIALIZED_NAME_SERVICE_FEES = "serviceFees";
   @SerializedName(SERIALIZED_NAME_SERVICE_FEES)
-  private List<PriceAndAvailabilityResponseInnerServiceFeesInner> serviceFees;
+  private List<PriceAndAvailabilityResponseInnerServiceFeesInner> serviceFees = new ArrayList<>();
 
   public PriceAndAvailabilityResponseInner() {
   }

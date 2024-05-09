@@ -141,7 +141,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetAccesstoken500ResponseFaultDetail.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetResellerV6ValidateQuote400Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetResellerV6ValidateQuote400ResponseFieldsInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetResellerV6ValidateQuote500Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.InvoiceDetailsv61Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.InvoiceDetailsv61ResponseBillToInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.InvoiceDetailsv61ResponseFxRateInfo.CustomTypeAdapterFactory());
@@ -227,6 +226,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderStatusAsyncNotificationRequestResourceInnerLinksInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PostAsyncOrderCreateV7400Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PostAsyncOrderCreateV7400ResponseFieldsInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PostAsyncOrderCreateV7500Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PostRenewalssearch400Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityRequestAdditionalAttributesInner.CustomTypeAdapterFactory());

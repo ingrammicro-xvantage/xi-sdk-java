@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class OrderCreateRequestLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -87,15 +87,15 @@ public class OrderCreateRequestLinesInner {
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<OrderCreateRequestLinesInnerAdditionalAttributesInner> additionalAttributes;
+  private List<OrderCreateRequestLinesInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_WARRANTY_INFO = "warrantyInfo";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFO)
-  private List<OrderCreateRequestLinesInnerWarrantyInfoInner> warrantyInfo;
+  private List<OrderCreateRequestLinesInnerWarrantyInfoInner> warrantyInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
-  private List<OrderCreateRequestLinesInnerEndUserInfoInner> endUserInfo;
+  private List<OrderCreateRequestLinesInnerEndUserInfoInner> endUserInfo = new ArrayList<>();
 
   public OrderCreateRequestLinesInner() {
   }

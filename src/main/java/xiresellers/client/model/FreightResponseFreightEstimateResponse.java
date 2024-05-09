@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class FreightResponseFreightEstimateResponse {
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
@@ -82,11 +82,11 @@ public class FreightResponseFreightEstimateResponse {
 
   public static final String SERIALIZED_NAME_DISTRIBUTION = "distribution";
   @SerializedName(SERIALIZED_NAME_DISTRIBUTION)
-  private List<FreightResponseFreightEstimateResponseDistributionInner> distribution;
+  private List<FreightResponseFreightEstimateResponseDistributionInner> distribution = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
-  private List<FreightResponseFreightEstimateResponseLinesInner> lines;
+  private List<FreightResponseFreightEstimateResponseLinesInner> lines = new ArrayList<>();
 
   public FreightResponseFreightEstimateResponse() {
   }

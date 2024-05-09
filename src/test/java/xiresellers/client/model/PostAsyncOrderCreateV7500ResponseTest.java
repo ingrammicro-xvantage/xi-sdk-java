@@ -26,17 +26,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for GetResellerV6ValidateQuote500Response
+ * Model tests for PostAsyncOrderCreateV7500Response
  */
-public class GetResellerV6ValidateQuote500ResponseTest {
-    private final GetResellerV6ValidateQuote500Response model = new GetResellerV6ValidateQuote500Response();
+public class PostAsyncOrderCreateV7500ResponseTest {
+    private final PostAsyncOrderCreateV7500Response model = new PostAsyncOrderCreateV7500Response();
 
     /**
-     * Model tests for GetResellerV6ValidateQuote500Response
+     * Model tests for PostAsyncOrderCreateV7500Response
      */
     @Test
-    public void testGetResellerV6ValidateQuote500Response() {
-        // TODO: test GetResellerV6ValidateQuote500Response
+    public void testPostAsyncOrderCreateV7500Response() {
+        // TODO: test PostAsyncOrderCreateV7500Response
     }
 
     /**

@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * AvailabilityAsyncNotificationRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class AvailabilityAsyncNotificationRequest {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)
@@ -72,7 +72,7 @@ public class AvailabilityAsyncNotificationRequest {
 
   public static final String SERIALIZED_NAME_RESOURCE = "resource";
   @SerializedName(SERIALIZED_NAME_RESOURCE)
-  private List<AvailabilityAsyncNotificationRequestResourceInner> resource;
+  private List<AvailabilityAsyncNotificationRequestResourceInner> resource = new ArrayList<>();
 
   public AvailabilityAsyncNotificationRequest() {
   }

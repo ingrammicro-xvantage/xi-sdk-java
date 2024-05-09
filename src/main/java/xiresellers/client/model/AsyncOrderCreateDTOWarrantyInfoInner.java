@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * AsyncOrderCreateDTOWarrantyInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class AsyncOrderCreateDTOWarrantyInfoInner {
   public static final String SERIALIZED_NAME_HARDWARE_LINE_LINK = "hardwareLineLink";
   @SerializedName(SERIALIZED_NAME_HARDWARE_LINE_LINK)
@@ -69,11 +69,11 @@ public class AsyncOrderCreateDTOWarrantyInfoInner {
 
   public static final String SERIALIZED_NAME_SERIAL_INFO = "serialInfo";
   @SerializedName(SERIALIZED_NAME_SERIAL_INFO)
-  private List<AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner> serialInfo;
+  private List<AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner> serialInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES = "vmfAdditionalAttributesLines";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES)
-  private List<AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines;
+  private List<AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines = new ArrayList<>();
 
   public AsyncOrderCreateDTOWarrantyInfoInner() {
   }

@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class PriceAndAvailabilityRequest {
   public static final String SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS = "showAvailableDiscounts";
   @SerializedName(SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS)
@@ -70,15 +70,15 @@ public class PriceAndAvailabilityRequest {
 
   public static final String SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE = "availabilityByWarehouse";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE)
-  private List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse;
+  private List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
-  private List<PriceAndAvailabilityRequestProductsInner> products;
+  private List<PriceAndAvailabilityRequestProductsInner> products = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes;
+  private List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public PriceAndAvailabilityRequest() {
   }

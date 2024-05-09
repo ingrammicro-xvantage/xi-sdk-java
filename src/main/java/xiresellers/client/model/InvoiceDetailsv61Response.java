@@ -57,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class InvoiceDetailsv61Response {
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
@@ -129,7 +129,7 @@ public class InvoiceDetailsv61Response {
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
-  private List<InvoiceDetailsv61ResponseLinesInner> lines;
+  private List<InvoiceDetailsv61ResponseLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_FX_RATE_INFO = "fxRateInfo";
   @SerializedName(SERIALIZED_NAME_FX_RATE_INFO)

@@ -14,6 +14,8 @@
 package xiresellers.client.api;
 
 import xiresellers.client.ApiException;
+import xiresellers.client.model.AsyncOrderCreateDTO;
+import xiresellers.client.model.AsyncOrderCreateResponse;
 import xiresellers.client.model.ErrorResponse;
 import xiresellers.client.model.ErrorResponseDTO;
 import java.time.LocalDate;
@@ -23,6 +25,8 @@ import xiresellers.client.model.OrderDetailB2B;
 import xiresellers.client.model.OrderModifyRequest;
 import xiresellers.client.model.OrderModifyResponse;
 import xiresellers.client.model.OrderSearchResponse;
+import xiresellers.client.model.PostAsyncOrderCreateV7400Response;
+import xiresellers.client.model.PostAsyncOrderCreateV7500Response;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -113,6 +117,24 @@ public class OrdersApiTest {
         String vendorName = null;
         String specialBidNumber = null;
         OrderSearchResponse response = api.getResellersV6Ordersearch(imCustomerNumber, imCountryCode, imCorrelationID, ingramOrderNumber, orderStatus, orderStatusIn, ingramOrderDate, ingramOrderDateBt, imSenderID, customerOrderNumber, pageSize, pageNumber, endCustomerOrderNumber, invoiceDateBt, shipDateBt, deliveryDateBt, ingramPartNumber, vendorPartNumber, serialNumber, trackingNumber, vendorName, specialBidNumber);
+        // TODO: test validations
+    }
+
+    /**
+     * Async Order Create
+     *
+     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void postAsyncOrderCreateV7Test() throws ApiException {
+        String imCustomerNumber = null;
+        String imCountryCode = null;
+        String imCorrelationID = null;
+        AsyncOrderCreateDTO asyncOrderCreateDTO = null;
+        String imSenderID = null;
+        AsyncOrderCreateResponse response = api.postAsyncOrderCreateV7(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID);
         // TODO: test validations
     }
 

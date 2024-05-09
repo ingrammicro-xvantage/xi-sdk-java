@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class OrderStatusAsyncNotificationRequestResourceInner {
   public static final String SERIALIZED_NAME_EVENT_TYPE = "eventType";
   @SerializedName(SERIALIZED_NAME_EVENT_TYPE)
@@ -73,11 +73,11 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
-  private List<OrderStatusAsyncNotificationRequestResourceInnerLinesInner> lines;
+  private List<OrderStatusAsyncNotificationRequestResourceInnerLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<OrderStatusAsyncNotificationRequestResourceInnerLinksInner> links;
+  private List<OrderStatusAsyncNotificationRequestResourceInnerLinksInner> links = new ArrayList<>();
 
   public OrderStatusAsyncNotificationRequestResourceInner() {
   }

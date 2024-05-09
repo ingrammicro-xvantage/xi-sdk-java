@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInnerWarrantyInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class OrderCreateRequestLinesInnerWarrantyInfoInner {
   public static final String SERIALIZED_NAME_DIRECT_LINE_LINK = "directLineLink";
   @SerializedName(SERIALIZED_NAME_DIRECT_LINE_LINK)
@@ -68,7 +68,7 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
 
   public static final String SERIALIZED_NAME_SERIAL_INFO = "serialInfo";
   @SerializedName(SERIALIZED_NAME_SERIAL_INFO)
-  private List<OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner> serialInfo;
+  private List<OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner> serialInfo = new ArrayList<>();
 
   public OrderCreateRequestLinesInnerWarrantyInfoInner() {
   }

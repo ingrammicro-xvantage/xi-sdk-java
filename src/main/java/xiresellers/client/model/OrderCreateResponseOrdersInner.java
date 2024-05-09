@@ -57,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class OrderCreateResponseOrdersInner {
   public static final String SERIALIZED_NAME_NUMBER_OF_LINES_WITH_SUCCESS = "numberOfLinesWithSuccess";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_LINES_WITH_SUCCESS)
@@ -105,23 +105,23 @@ public class OrderCreateResponseOrdersInner {
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
-  private List<OrderCreateResponseOrdersInnerLinesInner> lines;
+  private List<OrderCreateResponseOrdersInnerLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_MISCELLANEOUS_CHARGES = "miscellaneousCharges";
   @SerializedName(SERIALIZED_NAME_MISCELLANEOUS_CHARGES)
-  private List<OrderCreateResponseOrdersInnerMiscellaneousChargesInner> miscellaneousCharges;
+  private List<OrderCreateResponseOrdersInnerMiscellaneousChargesInner> miscellaneousCharges = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<OrderCreateResponseOrdersInnerLinksInner> links;
+  private List<OrderCreateResponseOrdersInnerLinksInner> links = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_REJECTED_LINE_ITEMS = "rejectedLineItems";
   @SerializedName(SERIALIZED_NAME_REJECTED_LINE_ITEMS)
-  private List<OrderCreateResponseOrdersInnerRejectedLineItemsInner> rejectedLineItems;
+  private List<OrderCreateResponseOrdersInnerRejectedLineItemsInner> rejectedLineItems = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<OrderCreateResponseOrdersInnerAdditionalAttributesInner> additionalAttributes;
+  private List<OrderCreateResponseOrdersInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public OrderCreateResponseOrdersInner() {
   }

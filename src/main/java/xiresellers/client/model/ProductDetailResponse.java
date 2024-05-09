@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -119,11 +119,11 @@ public class ProductDetailResponse {
 
   public static final String SERIALIZED_NAME_TECHNICAL_SPECIFICATIONS = "technicalSpecifications";
   @SerializedName(SERIALIZED_NAME_TECHNICAL_SPECIFICATIONS)
-  private List<ProductDetailResponseTechnicalSpecificationsInner> technicalSpecifications;
+  private List<ProductDetailResponseTechnicalSpecificationsInner> technicalSpecifications = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_WARRANTY_INFORMATION = "warrantyInformation";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFORMATION)
-  private List<Object> warrantyInformation;
+  private List<Object> warrantyInformation = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_INFORMATION = "additionalInformation";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_INFORMATION)

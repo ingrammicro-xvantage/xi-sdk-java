@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * FreightRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class FreightRequest {
   public static final String SERIALIZED_NAME_BILL_TO_ADDRESS_ID = "billToAddressId";
   @SerializedName(SERIALIZED_NAME_BILL_TO_ADDRESS_ID)
@@ -65,11 +65,11 @@ public class FreightRequest {
 
   public static final String SERIALIZED_NAME_SHIP_TO_ADDRESS = "shipToAddress";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_ADDRESS)
-  private List<FreightRequestShipToAddressInner> shipToAddress;
+  private List<FreightRequestShipToAddressInner> shipToAddress = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
-  private List<FreightRequestLinesInner> lines;
+  private List<FreightRequestLinesInner> lines = new ArrayList<>();
 
   public FreightRequest() {
   }

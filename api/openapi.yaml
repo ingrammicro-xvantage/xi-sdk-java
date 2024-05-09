@@ -33,12 +33,6 @@ tags:
     \ not accessible through this API.\n  \n*Host Production URL - https://api.ingrammicro.com:443/resellers/v6*\
     \  "
   name: Quotes
-- description: |
-    This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.
-
-    This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.
-    It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery.
-  name: AsyncOrderCreate
 - description: |2
 
     The Ingram Micro Invoice v6 API endpoint provide real-time information for invoices. Users can:
@@ -121,7 +115,8 @@ paths:
       summary: Accesstoken
       tags:
       - Accesstoken
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/catalog/priceandavailability:
     post:
       description: "The PriceAndAvailability API, will retrieve Pricing, Availability,\
@@ -433,7 +428,8 @@ paths:
       tags:
       - Product Catalog
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/catalog:
     get:
       description: Search the Ingram Micro product catalog by providing any of the
@@ -732,7 +728,8 @@ paths:
       summary: Search Products
       tags:
       - Product Catalog
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/catalog/details/{ingramPartNumber}:
     get:
       description: "Search all the product-related details using a unique Ingram Part\
@@ -1373,7 +1370,8 @@ paths:
       summary: Product Details
       tags:
       - Product Catalog
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v1/webhooks/availabilityupdate:
     post:
       parameters:
@@ -1450,7 +1448,8 @@ paths:
       tags:
       - StockUpdate
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v1/webhooks/orderstatusevent:
     post:
       parameters:
@@ -1532,7 +1531,170 @@ paths:
       tags:
       - OrderStatus
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
+  /resellers/v7/orders:
+    post:
+      description: |
+        This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.
+
+        This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.
+
+        It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery.
+      operationId: post-AsyncOrderCreate_v7
+      parameters:
+      - description: Your unique Ingram Micro customer number.
+        explode: false
+        in: header
+        name: IM-CustomerNumber
+        required: true
+        schema:
+          example: 20-222222
+          maxLength: 10
+          type: string
+        style: simple
+      - description: Two-character ISO country code.
+        explode: false
+        in: header
+        name: IM-CountryCode
+        required: true
+        schema:
+          example: US
+          maxLength: 2
+          minLength: 2
+          type: string
+        style: simple
+      - description: Unique value used to identify the sender of the transaction.
+        explode: false
+        in: header
+        name: IM-SenderID
+        required: false
+        schema:
+          example: MyCompany
+          maxLength: 32
+          type: string
+        style: simple
+      - description: Unique transaction number to identify each transaction accross
+          all the systems.
+        explode: false
+        in: header
+        name: IM-CorrelationID
+        required: true
+        schema:
+          example: fbac82ba-cf0a-4bcf-fc03-0c5084
+          maxLength: 32
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            examples:
+              Sample:
+                value:
+                  quoteNumber: QUO-14551943-D2Y9L9
+                  customerOrderNumber: "12345"
+                  enduserOrderNumber: ""
+                  billToAddressId: XYZ
+                  endUserInfo:
+                    companyName: ABC TECH
+                    contact: "44045678"
+                    addressLine1: Texas
+                    addressLine2: "4"
+                    addressLine3: ""
+                    city: ""
+                    state: ""
+                    postalCode: ""
+                    countryCode: US
+                    email: abc@gmail.com
+                    phoneNumber: "445678901"
+                  shipToInfo:
+                    addressId: "12345"
+                    companyName: ""
+                    contact: ""
+                    addressLine1: Texas
+                    addressLine2: "4"
+                    addressLine3: ""
+                    city: ""
+                    state: ""
+                    postalCode: ""
+                    countryCode: US
+                    email: abc@gmail.com
+                  additionalAttributes:
+                  - attributeName: VEND_AUTH_NBR_FLG
+                    attributeValue: ABC1234
+                  vmfAdditionalAttributes:
+                  - attributeName: ""
+                    attributeValue: ""
+                    attributeDescription: ""
+                  lines:
+                  - customerLineNumber: "12"
+                    ingramPartNumber: YN6231
+                    quantity: "2"
+                    vmfAdditionalAttributesLines:
+                    - attributeName: ""
+                      attributeValue: ""
+                      attributeDescription: ""
+            schema:
+              $ref: '#/components/schemas/AsyncOrderCreateDTO'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              examples:
+                "200":
+                  description: OK
+                  value:
+                    quoteNumber: QUO-148378-R0M3Z6
+                    confirmationNumber: 1669783293
+                    message: "Thank you for submitting the order request, it’s currently\
+                      \ under process.We will notify you of the status via the Order\
+                      \ Status webhook."
+              schema:
+                $ref: '#/components/schemas/AsyncOrderCreateResponse'
+          description: Success
+        "400":
+          content:
+            application/json:
+              examples:
+                "400":
+                  description: Bad Request
+                  value:
+                    errors:
+                    - traceid: "123456"
+                      type: /errors/validation-failed
+                      message: customer validation failed
+                      fields:
+                      - field: IM-CountryCode
+                        message: Required field is missing
+                        value: null
+              schema:
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_400_response'
+          description: Bad Request
+        "500":
+          content:
+            application/json:
+              examples:
+                "500":
+                  description: Internal Server Error
+                  value:
+                    errors:
+                    - traceid: "123456"
+                      type: /errors/system-errors
+                      message: "Some unexpected error occured, please contact support\
+                        \ team for more details"
+              schema:
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_500_response'
+          description: Server Error
+      security:
+      - application:
+        - read
+      summary: Async Order Create
+      tags:
+      - Orders
+      x-content-type: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/orders:
     post:
       description: "Instantly create and place orders. The POST API supports stocked\
@@ -3278,7 +3440,8 @@ paths:
       tags:
       - Orders
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/orders/{orderNumber}:
     put:
       description: "The Order Modify API endpoint allows for changes to be made to\
@@ -4065,7 +4228,8 @@ paths:
       tags:
       - Orders
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6.1/orders/{ordernumber}:
     get:
       description: |+
@@ -4380,7 +4544,8 @@ paths:
       summary: Get Order Details v6.1
       tags:
       - Orders
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/orders/search:
     get:
       description: "The Orders Search API endpoint allows a customer to search their\
@@ -4710,7 +4875,8 @@ paths:
       summary: Search your Orders
       tags:
       - Orders
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/orders/{OrderNumber}:
     delete:
       description: This call must be submitted before the order is released to Ingram
@@ -4925,7 +5091,8 @@ paths:
       summary: Cancel your Order
       tags:
       - Orders
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/quotes/search:
     get:
       description: "The Quote Search API, by default, will retrieve quotes modified\
@@ -5301,7 +5468,8 @@ paths:
       summary: Quote Search
       tags:
       - Quotes
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/quotes/{quoteNumber}:
     get:
       description: "The quote details API provides all quote details associated with\
@@ -5523,7 +5691,8 @@ paths:
       summary: Get Quote Details
       tags:
       - Quotes
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/q2o/validatequote:
     get:
       description: "The validate quote helps the customer validate the quote created\
@@ -5657,7 +5826,7 @@ paths:
                       message: "Some unexpected error occured, please contact support\
                         \ team for more details"
               schema:
-                $ref: '#/components/schemas/get_reseller_v6_validateQuote_500_response'
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_500_response'
           description: Internal Server Error
       security:
       - application:
@@ -5665,168 +5834,8 @@ paths:
       summary: Validate Quote
       tags:
       - Quotes
-      x-accepts: application/json
-  /resellers/v7/orders:
-    post:
-      description: |
-        This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.
-
-        This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.
-
-        It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery.
-      operationId: post-AsyncOrderCreate_v7
-      parameters:
-      - description: Your unique Ingram Micro customer number.
-        explode: false
-        in: header
-        name: IM-CustomerNumber
-        required: true
-        schema:
-          example: 20-222222
-          maxLength: 10
-          type: string
-        style: simple
-      - description: Two-character ISO country code.
-        explode: false
-        in: header
-        name: IM-CountryCode
-        required: true
-        schema:
-          example: US
-          maxLength: 2
-          minLength: 2
-          type: string
-        style: simple
-      - description: Unique value used to identify the sender of the transaction.
-        explode: false
-        in: header
-        name: IM-SenderID
-        required: false
-        schema:
-          example: MyCompany
-          maxLength: 32
-          type: string
-        style: simple
-      - description: Unique transaction number to identify each transaction accross
-          all the systems.
-        explode: false
-        in: header
-        name: IM-CorrelationID
-        required: true
-        schema:
-          example: fbac82ba-cf0a-4bcf-fc03-0c5084
-          maxLength: 32
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            examples:
-              Sample:
-                value:
-                  quoteNumber: QUO-14551943-D2Y9L9
-                  customerOrderNumber: "12345"
-                  enduserOrderNumber: ""
-                  billToAddressId: XYZ
-                  endUserInfo:
-                    companyName: ABC TECH
-                    contact: "44045678"
-                    addressLine1: Texas
-                    addressLine2: "4"
-                    addressLine3: ""
-                    city: ""
-                    state: ""
-                    postalCode: ""
-                    countryCode: US
-                    email: abc@gmail.com
-                    phoneNumber: "445678901"
-                  shipToInfo:
-                    addressId: "12345"
-                    companyName: ""
-                    contact: ""
-                    addressLine1: Texas
-                    addressLine2: "4"
-                    addressLine3: ""
-                    city: ""
-                    state: ""
-                    postalCode: ""
-                    countryCode: US
-                    email: abc@gmail.com
-                  additionalAttributes:
-                  - attributeName: VEND_AUTH_NBR_FLG
-                    attributeValue: ABC1234
-                  vmfAdditionalAttributes:
-                  - attributeName: ""
-                    attributeValue: ""
-                    attributeDescription: ""
-                  lines:
-                  - customerLineNumber: "12"
-                    ingramPartNumber: YN6231
-                    quantity: "2"
-                    vmfAdditionalAttributesLines:
-                    - attributeName: ""
-                      attributeValue: ""
-                      attributeDescription: ""
-            schema:
-              $ref: '#/components/schemas/AsyncOrderCreateDTO'
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              examples:
-                "200":
-                  description: OK
-                  value:
-                    quoteNumber: QUO-148378-R0M3Z6
-                    confirmationNumber: 1669783293
-                    message: "Thank you for submitting the order request, it’s currently\
-                      \ under process.We will notify you of the status via the Order\
-                      \ Status webhook."
-              schema:
-                $ref: '#/components/schemas/AsyncOrderCreateResponse'
-          description: Success
-        "400":
-          content:
-            application/json:
-              examples:
-                "400":
-                  description: Bad Request
-                  value:
-                    errors:
-                    - traceid: "123456"
-                      type: /errors/validation-failed
-                      message: customer validation failed
-                      fields:
-                      - field: IM-CountryCode
-                        message: Required field is missing
-                        value: null
-              schema:
-                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_400_response'
-          description: Bad Request
-        "500":
-          content:
-            application/json:
-              examples:
-                "500":
-                  description: Internal Server Error
-                  value:
-                    errors:
-                    - traceid: "123456"
-                      type: /errors/system-errors
-                      message: "Some unexpected error occured, please contact support\
-                        \ team for more details"
-              schema:
-                $ref: '#/components/schemas/get_reseller_v6_validateQuote_500_response'
-          description: Server Error
-      security:
-      - application:
-        - read
-      summary: Async Order Create
-      tags:
-      - AsyncOrderCreate
-      x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/invoices:
     get:
       description: Search your Ingram Micro invoices. This endpoint searches by multiple
@@ -6151,7 +6160,8 @@ paths:
       summary: Search your invoice
       tags:
       - Invoices
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6.1/invoices/{invoiceNumber}:
     get:
       description: |-
@@ -6410,7 +6420,8 @@ paths:
       summary: Get Invoice Details v6.1
       tags:
       - Invoices
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/renewals/search:
     post:
       description: "The Renewal Search API, by default, will retrieve all the renewals\
@@ -6600,7 +6611,7 @@ paths:
                         Micro API support team
                       fields: []
               schema:
-                $ref: '#/components/schemas/get_reseller_v6_validateQuote_500_response'
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_500_response'
           description: Internal Server Error
       security:
       - application:
@@ -6609,7 +6620,8 @@ paths:
       tags:
       - Renewals
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/renewals/{renewalId}:
     get:
       description: The Renewal Details API endpoint will retrieve all the details
@@ -6769,7 +6781,7 @@ paths:
                         Micro API support team
                       fields: []
               schema:
-                $ref: '#/components/schemas/get_reseller_v6_validateQuote_500_response'
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_500_response'
           description: Internal Server Error
       security:
       - application:
@@ -6777,7 +6789,8 @@ paths:
       summary: Renewals Details
       tags:
       - Renewals
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/deals/search:
     get:
       description: "The Deals Search API, by default, will retrieve all the deals\
@@ -6941,7 +6954,7 @@ paths:
                         Micro API support team
                       fields: []
               schema:
-                $ref: '#/components/schemas/get_reseller_v6_validateQuote_500_response'
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_500_response'
           description: Internal Server Error
       security:
       - application:
@@ -6949,7 +6962,8 @@ paths:
       summary: Deals Search
       tags:
       - Deals
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/deals/{dealId}:
     get:
       description: The Deals Details API will retrieve all the details related to
@@ -7100,7 +7114,7 @@ paths:
                         Micro API support team
                       fields: []
               schema:
-                $ref: '#/components/schemas/get_reseller_v6_validateQuote_500_response'
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_500_response'
           description: Internal Server Error
       security:
       - application:
@@ -7108,7 +7122,8 @@ paths:
       summary: Deals Details
       tags:
       - Deals
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/returns/search:
     get:
       description: "The Returns Search API, by default, will retrieve all the returns\
@@ -7361,7 +7376,7 @@ paths:
                         Micro API support team
                       fields: []
               schema:
-                $ref: '#/components/schemas/get_reseller_v6_validateQuote_500_response'
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_500_response'
           description: Internal Server Error
       security:
       - application:
@@ -7369,7 +7384,8 @@ paths:
       summary: Returns Search
       tags:
       - Returns
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/returns/{caseRequestNumber}:
     get:
       description: The Returns Details API will retrieve all the details related to
@@ -7505,7 +7521,7 @@ paths:
                         Micro API support team
                       fields: []
               schema:
-                $ref: '#/components/schemas/get_reseller_v6_validateQuote_500_response'
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_500_response'
           description: Internal Server Error
       security:
       - application:
@@ -7513,7 +7529,8 @@ paths:
       summary: Returns Details
       tags:
       - Returns
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/returns/create:
     post:
       description: "Return create endpoint will allow customers to create a return\
@@ -7659,7 +7676,7 @@ paths:
                         Micro API support team
                       fields: []
               schema:
-                $ref: '#/components/schemas/get_reseller_v6_validateQuote_500_response'
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_500_response'
           description: Internal Server Error
       security:
       - application:
@@ -7668,7 +7685,8 @@ paths:
       tags:
       - Returns
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /resellers/v6/freightestimate:
     post:
       description: The freight estimator endpoint will allow customers to understand
@@ -7854,7 +7872,7 @@ paths:
                         Micro API support team
                       fields: []
               schema:
-                $ref: '#/components/schemas/get_reseller_v6_validateQuote_500_response'
+                $ref: '#/components/schemas/post_AsyncOrderCreate_v7_500_response'
           description: Internal Server Error
       security:
       - application:
@@ -7863,7 +7881,8 @@ paths:
       tags:
       - Freight Estimate
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
 components:
   schemas:
     AccesstokenResponse:
@@ -10539,6 +10558,9 @@ components:
           invoicedAmountDue: 5.962133916683182
           endCustomerOrderNumber: endCustomerOrderNumber
           invoiceAmountInclTax: 5.637376656633329
+          specialBidNumbers:
+          - specialBidNumbers
+          - specialBidNumbers
           invoiceDate: invoiceDate
           customerOrderNumber: customerOrderNumber
           invoiceDueDate: invoiceDueDate
@@ -10553,6 +10575,9 @@ components:
           invoicedAmountDue: 5.962133916683182
           endCustomerOrderNumber: endCustomerOrderNumber
           invoiceAmountInclTax: 5.637376656633329
+          specialBidNumbers:
+          - specialBidNumbers
+          - specialBidNumbers
           invoiceDate: invoiceDate
           customerOrderNumber: customerOrderNumber
           invoiceDueDate: invoiceDueDate
@@ -11576,72 +11601,6 @@ components:
         fault:
           $ref: '#/components/schemas/get_accesstoken_500_response_fault'
       type: object
-    get_reseller_v6_validateQuote_400_response_fields_inner:
-      example:
-        field: field
-        message: message
-        value: value
-      properties:
-        field:
-          description: Contains the name of the field.
-          type: string
-        message:
-          description: Gives the description of the field message.
-          type: string
-        value:
-          description: Value sent in the input for the specific field.
-          type: string
-      type: object
-    get_reseller_v6_validateQuote_400_response:
-      example:
-        traceid: traceid
-        type: type
-        message: message
-        fields:
-        - field: field
-          message: message
-          value: value
-        - field: field
-          message: message
-          value: value
-      properties:
-        traceid:
-          description: Unique Id to identify error.
-          type: string
-        type:
-          description: Describes the type of the error.
-          type: string
-        message:
-          description: A detailed error message.
-          type: string
-        fields:
-          items:
-            $ref: '#/components/schemas/get_reseller_v6_validateQuote_400_response_fields_inner'
-          type: array
-      type: object
-    get_reseller_v6_validateQuote_500_response:
-      example:
-        traceid: traceid
-        type: type
-        message: message
-        fields:
-        - "{}"
-        - "{}"
-      properties:
-        traceid:
-          description: Unique Id to identify error.
-          type: string
-        type:
-          description: Describes the type of the error.
-          type: string
-        message:
-          description: Describes the error message.
-          type: string
-        fields:
-          items:
-            type: object
-          type: array
-      type: object
     post_AsyncOrderCreate_v7_400_response_fields_inner:
       example:
         field: field
@@ -11683,6 +11642,72 @@ components:
         fields:
           items:
             $ref: '#/components/schemas/post_AsyncOrderCreate_v7_400_response_fields_inner'
+          type: array
+      type: object
+    post_AsyncOrderCreate_v7_500_response:
+      example:
+        traceid: traceid
+        type: type
+        message: message
+        fields:
+        - "{}"
+        - "{}"
+      properties:
+        traceid:
+          description: Unique Id to identify error.
+          type: string
+        type:
+          description: Describes the type of the error.
+          type: string
+        message:
+          description: Describes the error message.
+          type: string
+        fields:
+          items:
+            type: object
+          type: array
+      type: object
+    get_reseller_v6_validateQuote_400_response_fields_inner:
+      example:
+        field: field
+        message: message
+        value: value
+      properties:
+        field:
+          description: Contains the name of the field.
+          type: string
+        message:
+          description: Gives the description of the field message.
+          type: string
+        value:
+          description: Value sent in the input for the specific field.
+          type: string
+      type: object
+    get_reseller_v6_validateQuote_400_response:
+      example:
+        traceid: traceid
+        type: type
+        message: message
+        fields:
+        - field: field
+          message: message
+          value: value
+        - field: field
+          message: message
+          value: value
+      properties:
+        traceid:
+          description: Unique Id to identify error.
+          type: string
+        type:
+          description: Describes the type of the error.
+          type: string
+        message:
+          description: A detailed error message.
+          type: string
+        fields:
+          items:
+            $ref: '#/components/schemas/get_reseller_v6_validateQuote_400_response_fields_inner'
           type: array
       type: object
     post_renewalssearch_400_response:
@@ -16380,6 +16405,9 @@ components:
         invoicedAmountDue: 5.962133916683182
         endCustomerOrderNumber: endCustomerOrderNumber
         invoiceAmountInclTax: 5.637376656633329
+        specialBidNumbers:
+        - specialBidNumbers
+        - specialBidNumbers
         invoiceDate: invoiceDate
         customerOrderNumber: customerOrderNumber
         invoiceDueDate: invoiceDueDate
@@ -16394,6 +16422,11 @@ components:
         paymentTermsDueDate:
           description: Payment Terms Due date.
           type: string
+        specialBidNumbers:
+          items:
+            description: List of Ingram Micro Special Bid Number
+            type: string
+          type: array
         erpOrderNumber:
           description: Order number
           type: string

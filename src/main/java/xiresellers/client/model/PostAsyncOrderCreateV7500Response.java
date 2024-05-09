@@ -49,10 +49,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * GetResellerV6ValidateQuote500Response
+ * PostAsyncOrderCreateV7500Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
-public class GetResellerV6ValidateQuote500Response {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
+public class PostAsyncOrderCreateV7500Response {
   public static final String SERIALIZED_NAME_TRACEID = "traceid";
   @SerializedName(SERIALIZED_NAME_TRACEID)
   private String traceid;
@@ -67,12 +67,12 @@ public class GetResellerV6ValidateQuote500Response {
 
   public static final String SERIALIZED_NAME_FIELDS = "fields";
   @SerializedName(SERIALIZED_NAME_FIELDS)
-  private List<Object> fields;
+  private List<Object> fields = new ArrayList<>();
 
-  public GetResellerV6ValidateQuote500Response() {
+  public PostAsyncOrderCreateV7500Response() {
   }
 
-  public GetResellerV6ValidateQuote500Response traceid(String traceid) {
+  public PostAsyncOrderCreateV7500Response traceid(String traceid) {
     this.traceid = traceid;
     return this;
   }
@@ -91,7 +91,7 @@ public class GetResellerV6ValidateQuote500Response {
   }
 
 
-  public GetResellerV6ValidateQuote500Response type(String type) {
+  public PostAsyncOrderCreateV7500Response type(String type) {
     this.type = type;
     return this;
   }
@@ -110,7 +110,7 @@ public class GetResellerV6ValidateQuote500Response {
   }
 
 
-  public GetResellerV6ValidateQuote500Response message(String message) {
+  public PostAsyncOrderCreateV7500Response message(String message) {
     this.message = message;
     return this;
   }
@@ -129,12 +129,12 @@ public class GetResellerV6ValidateQuote500Response {
   }
 
 
-  public GetResellerV6ValidateQuote500Response fields(List<Object> fields) {
+  public PostAsyncOrderCreateV7500Response fields(List<Object> fields) {
     this.fields = fields;
     return this;
   }
 
-  public GetResellerV6ValidateQuote500Response addFieldsItem(Object fieldsItem) {
+  public PostAsyncOrderCreateV7500Response addFieldsItem(Object fieldsItem) {
     if (this.fields == null) {
       this.fields = new ArrayList<>();
     }
@@ -165,11 +165,11 @@ public class GetResellerV6ValidateQuote500Response {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    GetResellerV6ValidateQuote500Response getResellerV6ValidateQuote500Response = (GetResellerV6ValidateQuote500Response) o;
-    return Objects.equals(this.traceid, getResellerV6ValidateQuote500Response.traceid) &&
-        Objects.equals(this.type, getResellerV6ValidateQuote500Response.type) &&
-        Objects.equals(this.message, getResellerV6ValidateQuote500Response.message) &&
-        Objects.equals(this.fields, getResellerV6ValidateQuote500Response.fields);
+    PostAsyncOrderCreateV7500Response postAsyncOrderCreateV7500Response = (PostAsyncOrderCreateV7500Response) o;
+    return Objects.equals(this.traceid, postAsyncOrderCreateV7500Response.traceid) &&
+        Objects.equals(this.type, postAsyncOrderCreateV7500Response.type) &&
+        Objects.equals(this.message, postAsyncOrderCreateV7500Response.message) &&
+        Objects.equals(this.fields, postAsyncOrderCreateV7500Response.fields);
   }
 
   @Override
@@ -180,7 +180,7 @@ public class GetResellerV6ValidateQuote500Response {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class GetResellerV6ValidateQuote500Response {\n");
+    sb.append("class PostAsyncOrderCreateV7500Response {\n");
     sb.append("    traceid: ").append(toIndentedString(traceid)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
@@ -220,20 +220,20 @@ public class GetResellerV6ValidateQuote500Response {
   * Validates the JSON Element and throws an exception if issues found
   *
   * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to GetResellerV6ValidateQuote500Response
+  * @throws IOException if the JSON Element is invalid with respect to PostAsyncOrderCreateV7500Response
   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!GetResellerV6ValidateQuote500Response.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in GetResellerV6ValidateQuote500Response is not found in the empty JSON string", GetResellerV6ValidateQuote500Response.openapiRequiredFields.toString()));
+        if (!PostAsyncOrderCreateV7500Response.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in PostAsyncOrderCreateV7500Response is not found in the empty JSON string", PostAsyncOrderCreateV7500Response.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!GetResellerV6ValidateQuote500Response.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `GetResellerV6ValidateQuote500Response` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!PostAsyncOrderCreateV7500Response.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `PostAsyncOrderCreateV7500Response` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -256,22 +256,22 @@ public class GetResellerV6ValidateQuote500Response {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!GetResellerV6ValidateQuote500Response.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'GetResellerV6ValidateQuote500Response' and its subtypes
+       if (!PostAsyncOrderCreateV7500Response.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'PostAsyncOrderCreateV7500Response' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<GetResellerV6ValidateQuote500Response> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(GetResellerV6ValidateQuote500Response.class));
+       final TypeAdapter<PostAsyncOrderCreateV7500Response> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(PostAsyncOrderCreateV7500Response.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<GetResellerV6ValidateQuote500Response>() {
+       return (TypeAdapter<T>) new TypeAdapter<PostAsyncOrderCreateV7500Response>() {
            @Override
-           public void write(JsonWriter out, GetResellerV6ValidateQuote500Response value) throws IOException {
+           public void write(JsonWriter out, PostAsyncOrderCreateV7500Response value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public GetResellerV6ValidateQuote500Response read(JsonReader in) throws IOException {
+           public PostAsyncOrderCreateV7500Response read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -282,18 +282,18 @@ public class GetResellerV6ValidateQuote500Response {
   }
 
  /**
-  * Create an instance of GetResellerV6ValidateQuote500Response given an JSON string
+  * Create an instance of PostAsyncOrderCreateV7500Response given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of GetResellerV6ValidateQuote500Response
-  * @throws IOException if the JSON string is invalid with respect to GetResellerV6ValidateQuote500Response
+  * @return An instance of PostAsyncOrderCreateV7500Response
+  * @throws IOException if the JSON string is invalid with respect to PostAsyncOrderCreateV7500Response
   */
-  public static GetResellerV6ValidateQuote500Response fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, GetResellerV6ValidateQuote500Response.class);
+  public static PostAsyncOrderCreateV7500Response fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, PostAsyncOrderCreateV7500Response.class);
   }
 
  /**
-  * Convert an instance of GetResellerV6ValidateQuote500Response to an JSON string
+  * Convert an instance of PostAsyncOrderCreateV7500Response to an JSON string
   *
   * @return JSON string
   */

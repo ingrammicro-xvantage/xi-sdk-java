@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponseDistributionInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class FreightResponseFreightEstimateResponseDistributionInner {
   public static final String SERIALIZED_NAME_SHIP_FROM_BRANCH_NUMBER = "shipFromBranchNumber";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_BRANCH_NUMBER)
@@ -81,7 +81,7 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
 
   public static final String SERIALIZED_NAME_CARRIER_LIST = "carrierList";
   @SerializedName(SERIALIZED_NAME_CARRIER_LIST)
-  private List<FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner> carrierList;
+  private List<FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner> carrierList = new ArrayList<>();
 
   public FreightResponseFreightEstimateResponseDistributionInner() {
   }

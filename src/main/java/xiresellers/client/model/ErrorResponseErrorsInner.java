@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ErrorResponseErrorsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class ErrorResponseErrorsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -68,7 +68,7 @@ public class ErrorResponseErrorsInner {
 
   public static final String SERIALIZED_NAME_FIELDS = "fields";
   @SerializedName(SERIALIZED_NAME_FIELDS)
-  private List<ErrorResponseErrorsInnerFieldsInner> fields;
+  private List<ErrorResponseErrorsInnerFieldsInner> fields = new ArrayList<>();
 
   public ErrorResponseErrorsInner() {
   }

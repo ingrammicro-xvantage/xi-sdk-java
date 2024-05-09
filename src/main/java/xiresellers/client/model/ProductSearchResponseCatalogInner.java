@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ProductSearchResponseCatalogInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class ProductSearchResponseCatalogInner {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -116,7 +116,7 @@ public class ProductSearchResponseCatalogInner {
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<ProductSearchResponseCatalogInnerLinksInner> links;
+  private List<ProductSearchResponseCatalogInnerLinksInner> links = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EXTRA_DESCRIPTION = "extraDescription";
   @SerializedName(SERIALIZED_NAME_EXTRA_DESCRIPTION)

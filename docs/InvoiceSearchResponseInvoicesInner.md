@@ -8,6 +8,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**paymentTermsDueDate** | **String** | Payment Terms Due date. |  [optional] |
+|**specialBidNumbers** | **List&lt;String&gt;** |  |  [optional] |
 |**erpOrderNumber** | **String** | Order number |  [optional] |
 |**invoiceNumber** | **String** | Invoice no. |  [optional] |
 |**invoiceStatus** | **String** | Invoice Status. |  [optional] |

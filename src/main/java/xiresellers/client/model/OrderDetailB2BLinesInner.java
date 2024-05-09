@@ -59,7 +59,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class OrderDetailB2BLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
@@ -175,15 +175,15 @@ public class OrderDetailB2BLinesInner {
 
   public static final String SERIALIZED_NAME_ESTIMATED_DATES = "estimatedDates";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_DATES)
-  private List<OrderDetailB2BLinesInnerEstimatedDatesInner> estimatedDates;
+  private List<OrderDetailB2BLinesInnerEstimatedDatesInner> estimatedDates = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SCHEDULE_LINES = "scheduleLines";
   @SerializedName(SERIALIZED_NAME_SCHEDULE_LINES)
-  private List<OrderDetailB2BLinesInnerScheduleLinesInner> scheduleLines;
+  private List<OrderDetailB2BLinesInnerScheduleLinesInner> scheduleLines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_MULTIPLE_SHIPMENTS = "multipleShipments";
   @SerializedName(SERIALIZED_NAME_MULTIPLE_SHIPMENTS)
-  private List<OrderDetailB2BLinesInnerMultipleShipmentsInner> multipleShipments;
+  private List<OrderDetailB2BLinesInnerMultipleShipmentsInner> multipleShipments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DEFAULT_CARRIER_NAME = "defaultCarrierName";
   @SerializedName(SERIALIZED_NAME_DEFAULT_CARRIER_NAME)

@@ -1,6 +1,6 @@
 
 
-# GetResellerV6ValidateQuote500Response
+# PostAsyncOrderCreateV7500Response
 
 
 ## Properties

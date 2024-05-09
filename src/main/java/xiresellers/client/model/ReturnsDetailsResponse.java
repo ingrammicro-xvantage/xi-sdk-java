@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class ReturnsDetailsResponse {
   public static final String SERIALIZED_NAME_TYPE_OF_DETAILS = "typeOfDetails";
   @SerializedName(SERIALIZED_NAME_TYPE_OF_DETAILS)
@@ -89,7 +89,7 @@ public class ReturnsDetailsResponse {
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
-  private List<ReturnsDetailsResponseProductsInner> products;
+  private List<ReturnsDetailsResponseProductsInner> products = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SUB_TOTAL = "subTotal";
   @SerializedName(SERIALIZED_NAME_SUB_TOTAL)

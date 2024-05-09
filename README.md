@@ -2,8 +2,8 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-04-08T10:59:03.033551Z[Etc/UTC]
-  - Generator version: 7.4.0
+  - Build date: 2024-05-09T07:08:41.679399Z[Etc/UTC]
+  - Generator version: 7.5.0
 
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
 
@@ -118,7 +118,6 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AccesstokenApi* | [**getAccesstoken**](docs/AccesstokenApi.md#getAccesstoken) | **GET** /oauth/oauth20/token | Accesstoken
-*AsyncOrderCreateApi* | [**postAsyncOrderCreateV7**](docs/AsyncOrderCreateApi.md#postAsyncOrderCreateV7) | **POST** /resellers/v7/orders | Async Order Create
 *DealsApi* | [**getResellersV6Dealsdetails**](docs/DealsApi.md#getResellersV6Dealsdetails) | **GET** /resellers/v6/deals/{dealId} | Deals Details
 *DealsApi* | [**getResellersV6Dealssearch**](docs/DealsApi.md#getResellersV6Dealssearch) | **GET** /resellers/v6/deals/search | Deals Search
 *FreightEstimateApi* | [**postFreightestimate**](docs/FreightEstimateApi.md#postFreightestimate) | **POST** /resellers/v6/freightestimate | Freight Estimate
@@ -128,6 +127,7 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**deleteOrdercancel**](docs/OrdersApi.md#deleteOrdercancel) | **DELETE** /resellers/v6/orders/{OrderNumber} | Cancel your Order
 *OrdersApi* | [**getOrderdetailsV61**](docs/OrdersApi.md#getOrderdetailsV61) | **GET** /resellers/v6.1/orders/{ordernumber} | Get Order Details v6.1
 *OrdersApi* | [**getResellersV6Ordersearch**](docs/OrdersApi.md#getResellersV6Ordersearch) | **GET** /resellers/v6/orders/search | Search your Orders
+*OrdersApi* | [**postAsyncOrderCreateV7**](docs/OrdersApi.md#postAsyncOrderCreateV7) | **POST** /resellers/v7/orders | Async Order Create
 *OrdersApi* | [**postCreateorderV6**](docs/OrdersApi.md#postCreateorderV6) | **POST** /resellers/v6/orders | Create your Order
 *OrdersApi* | [**putOrdermodify**](docs/OrdersApi.md#putOrdermodify) | **PUT** /resellers/v6/orders/{orderNumber} | Modify your Order
 *ProductCatalogApi* | [**getResellerV6Productdetail**](docs/ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details
@@ -187,7 +187,6 @@ Class | Method | HTTP request | Description
  - [GetAccesstoken500ResponseFaultDetail](docs/GetAccesstoken500ResponseFaultDetail.md)
  - [GetResellerV6ValidateQuote400Response](docs/GetResellerV6ValidateQuote400Response.md)
  - [GetResellerV6ValidateQuote400ResponseFieldsInner](docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md)
- - [GetResellerV6ValidateQuote500Response](docs/GetResellerV6ValidateQuote500Response.md)
  - [InvoiceDetailsv61Response](docs/InvoiceDetailsv61Response.md)
  - [InvoiceDetailsv61ResponseBillToInfo](docs/InvoiceDetailsv61ResponseBillToInfo.md)
  - [InvoiceDetailsv61ResponseFxRateInfo](docs/InvoiceDetailsv61ResponseFxRateInfo.md)
@@ -273,6 +272,7 @@ Class | Method | HTTP request | Description
  - [OrderStatusAsyncNotificationRequestResourceInnerLinksInner](docs/OrderStatusAsyncNotificationRequestResourceInnerLinksInner.md)
  - [PostAsyncOrderCreateV7400Response](docs/PostAsyncOrderCreateV7400Response.md)
  - [PostAsyncOrderCreateV7400ResponseFieldsInner](docs/PostAsyncOrderCreateV7400ResponseFieldsInner.md)
+ - [PostAsyncOrderCreateV7500Response](docs/PostAsyncOrderCreateV7500Response.md)
  - [PostRenewalssearch400Response](docs/PostRenewalssearch400Response.md)
  - [PriceAndAvailabilityRequest](docs/PriceAndAvailabilityRequest.md)
  - [PriceAndAvailabilityRequestAdditionalAttributesInner](docs/PriceAndAvailabilityRequestAdditionalAttributesInner.md)

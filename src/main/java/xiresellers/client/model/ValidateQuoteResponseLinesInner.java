@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ValidateQuoteResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class ValidateQuoteResponseLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -68,7 +68,7 @@ public class ValidateQuoteResponseLinesInner {
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES = "vmfAdditionalAttributesLines";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES)
-  private List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines;
+  private List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines = new ArrayList<>();
 
   public ValidateQuoteResponseLinesInner() {
   }

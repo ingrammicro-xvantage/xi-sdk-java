@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class OrderModifyRequest {
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
@@ -66,11 +66,11 @@ public class OrderModifyRequest {
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
-  private List<OrderModifyRequestLinesInner> lines;
+  private List<OrderModifyRequestLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<OrderModifyRequestAdditionalAttributesInner> additionalAttributes;
+  private List<OrderModifyRequestAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public OrderModifyRequest() {
   }

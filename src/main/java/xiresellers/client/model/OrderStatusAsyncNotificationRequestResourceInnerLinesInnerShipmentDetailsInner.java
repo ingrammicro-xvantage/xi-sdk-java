@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_SHIPMENT_DATE = "shipmentDate";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DATE)
@@ -76,7 +76,7 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
 
   public static final String SERIALIZED_NAME_PACKAGE_DETAILS = "packageDetails";
   @SerializedName(SERIALIZED_NAME_PACKAGE_DETAILS)
-  private List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner> packageDetails;
+  private List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner> packageDetails = new ArrayList<>();
 
   public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner() {
   }

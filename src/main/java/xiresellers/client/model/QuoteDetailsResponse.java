@@ -56,7 +56,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
@@ -156,7 +156,7 @@ public class QuoteDetailsResponse {
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
-  private List<QuoteDetailsResponseProductsInner> products;
+  private List<QuoteDetailsResponseProductsInner> products = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PRODUCTS_COUNT = "productsCount";
   @SerializedName(SERIALIZED_NAME_PRODUCTS_COUNT)
@@ -180,7 +180,7 @@ public class QuoteDetailsResponse {
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<QuoteDetailsResponseAdditionalAttributesInner> additionalAttributes;
+  private List<QuoteDetailsResponseAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public QuoteDetailsResponse() {
   }

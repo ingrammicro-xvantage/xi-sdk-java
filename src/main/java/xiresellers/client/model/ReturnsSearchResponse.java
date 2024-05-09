@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-08T10:59:03.033551Z[Etc/UTC]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-09T07:08:41.679399Z[Etc/UTC]", comments = "Generator version: 7.5.0")
 public class ReturnsSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
@@ -68,7 +68,7 @@ public class ReturnsSearchResponse {
 
   public static final String SERIALIZED_NAME_RETURNS_CLAIMS = "returnsClaims";
   @SerializedName(SERIALIZED_NAME_RETURNS_CLAIMS)
-  private List<ReturnsSearchResponseReturnsClaimsInner> returnsClaims;
+  private List<ReturnsSearchResponseReturnsClaimsInner> returnsClaims = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT_PAGE = "nextPage";
   @SerializedName(SERIALIZED_NAME_NEXT_PAGE)
