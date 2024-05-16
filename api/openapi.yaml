@@ -7906,7 +7906,7 @@ components:
           city: city
           companyName: companyName
           postalCode: postalCode
-          phoneNumber: 6
+          phoneNumber: phoneNumber
           countryCode: countryCode
           contact: contact
           addressLine1: addressLine1
@@ -7962,8 +7962,8 @@ components:
         acceptBackOrder: true
         lines:
         - ingramPartNumber: ingramPartNumber
-          unitPrice: 5.962133916683182
-          quantity: 1
+          unitPrice: 1.4658129805029452
+          quantity: 6
           specialBidNumber: specialBidNumber
           notes: notes
           endUserInfo:
@@ -7971,7 +7971,7 @@ components:
             city: city
             companyName: companyName
             postalCode: postalCode
-            phoneNumber: 2.3021358869347655
+            phoneNumber: 5.637376656633329
             countryCode: countryCode
             contact: contact
             addressLine1: addressLine1
@@ -7987,7 +7987,7 @@ components:
             city: city
             companyName: companyName
             postalCode: postalCode
-            phoneNumber: 2.3021358869347655
+            phoneNumber: 5.637376656633329
             countryCode: countryCode
             contact: contact
             addressLine1: addressLine1
@@ -7999,7 +7999,7 @@ components:
             addressLine4: addressLine4
             name1: name1
             email: email
-          endUserPrice: 5.637376656633329
+          endUserPrice: 5.962133916683182
           warrantyInfo:
           - hardwareLineLink: hardwareLineLink
             directLineLink: directLineLink
@@ -8032,8 +8032,8 @@ components:
           - attributeValue: attributeValue
             attributeName: attributeName
         - ingramPartNumber: ingramPartNumber
-          unitPrice: 5.962133916683182
-          quantity: 1
+          unitPrice: 1.4658129805029452
+          quantity: 6
           specialBidNumber: specialBidNumber
           notes: notes
           endUserInfo:
@@ -8041,7 +8041,7 @@ components:
             city: city
             companyName: companyName
             postalCode: postalCode
-            phoneNumber: 2.3021358869347655
+            phoneNumber: 5.637376656633329
             countryCode: countryCode
             contact: contact
             addressLine1: addressLine1
@@ -8057,7 +8057,7 @@ components:
             city: city
             companyName: companyName
             postalCode: postalCode
-            phoneNumber: 2.3021358869347655
+            phoneNumber: 5.637376656633329
             countryCode: countryCode
             contact: contact
             addressLine1: addressLine1
@@ -8069,7 +8069,7 @@ components:
             addressLine4: addressLine4
             name1: name1
             email: email
-          endUserPrice: 5.637376656633329
+          endUserPrice: 5.962133916683182
           warrantyInfo:
           - hardwareLineLink: hardwareLineLink
             directLineLink: directLineLink
@@ -11893,7 +11893,7 @@ components:
         city: city
         companyName: companyName
         postalCode: postalCode
-        phoneNumber: 6
+        phoneNumber: phoneNumber
         countryCode: countryCode
         contact: contact
         addressLine1: addressLine1
@@ -11959,7 +11959,7 @@ components:
           type: string
         phoneNumber:
           description: The end user/customer's phone number.
-          type: integer
+          type: string
         email:
           description: The end user/customer's email.
           type: string
@@ -12041,7 +12041,7 @@ components:
         city: city
         companyName: companyName
         postalCode: postalCode
-        phoneNumber: 2.3021358869347655
+        phoneNumber: 5.637376656633329
         countryCode: countryCode
         contact: contact
         addressLine1: addressLine1
@@ -12112,8 +12112,8 @@ components:
     OrderCreateRequest_lines_inner:
       example:
         ingramPartNumber: ingramPartNumber
-        unitPrice: 5.962133916683182
-        quantity: 1
+        unitPrice: 1.4658129805029452
+        quantity: 6
         specialBidNumber: specialBidNumber
         notes: notes
         endUserInfo:
@@ -12121,7 +12121,7 @@ components:
           city: city
           companyName: companyName
           postalCode: postalCode
-          phoneNumber: 2.3021358869347655
+          phoneNumber: 5.637376656633329
           countryCode: countryCode
           contact: contact
           addressLine1: addressLine1
@@ -12137,7 +12137,7 @@ components:
           city: city
           companyName: companyName
           postalCode: postalCode
-          phoneNumber: 2.3021358869347655
+          phoneNumber: 5.637376656633329
           countryCode: countryCode
           contact: contact
           addressLine1: addressLine1
@@ -12149,7 +12149,7 @@ components:
           addressLine4: addressLine4
           name1: name1
           email: email
-        endUserPrice: 5.637376656633329
+        endUserPrice: 5.962133916683182
         warrantyInfo:
         - hardwareLineLink: hardwareLineLink
           directLineLink: directLineLink
