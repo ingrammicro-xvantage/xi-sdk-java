@@ -20,7 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import xiresellers.client.model.QuoteDetailsResponseProductsInnerBillDetailsInner;
 import xiresellers.client.model.QuoteDetailsResponseProductsInnerPrice;
 
 import com.google.gson.Gson;
@@ -50,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-16T06:51:51.114588Z[Etc/UTC]", comments = "Generator version: 7.5.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T09:52:19.181589Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class QuoteDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_QUOTE_PRODUCT_GUID = "quoteProductGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRODUCT_GUID)
@@ -116,6 +119,10 @@ public class QuoteDetailsResponseProductsInner {
   @SerializedName(SERIALIZED_NAME_TERMS)
   private String terms;
 
+  public static final String SERIALIZED_NAME_PLAN_DESCRIPTION = "planDescription";
+  @SerializedName(SERIALIZED_NAME_PLAN_DESCRIPTION)
+  private String planDescription;
+
   public static final String SERIALIZED_NAME_IS_SUBSCRIPTION = "isSubscription";
   @SerializedName(SERIALIZED_NAME_IS_SUBSCRIPTION)
   private Boolean isSubscription;
@@ -124,9 +131,29 @@ public class QuoteDetailsResponseProductsInner {
   @SerializedName(SERIALIZED_NAME_RESELLER_MARGIN)
   private String resellerMargin;
 
+  public static final String SERIALIZED_NAME_REQUESTED_START_DATE = "requestedStartDate";
+  @SerializedName(SERIALIZED_NAME_REQUESTED_START_DATE)
+  private String requestedStartDate;
+
+  public static final String SERIALIZED_NAME_START_DATE = "startDate";
+  @SerializedName(SERIALIZED_NAME_START_DATE)
+  private String startDate;
+
+  public static final String SERIALIZED_NAME_END_DATE = "endDate";
+  @SerializedName(SERIALIZED_NAME_END_DATE)
+  private String endDate;
+
+  public static final String SERIALIZED_NAME_SERIAL_NUMBER = "serialNumber";
+  @SerializedName(SERIALIZED_NAME_SERIAL_NUMBER)
+  private String serialNumber;
+
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
   private QuoteDetailsResponseProductsInnerPrice price;
+
+  public static final String SERIALIZED_NAME_BILL_DETAILS = "billDetails";
+  @SerializedName(SERIALIZED_NAME_BILL_DETAILS)
+  private List<QuoteDetailsResponseProductsInnerBillDetailsInner> billDetails = new ArrayList<>();
 
   public QuoteDetailsResponseProductsInner() {
   }
@@ -435,6 +462,25 @@ public class QuoteDetailsResponseProductsInner {
   }
 
 
+  public QuoteDetailsResponseProductsInner planDescription(String planDescription) {
+    this.planDescription = planDescription;
+    return this;
+  }
+
+   /**
+   * Get planDescription
+   * @return planDescription
+  **/
+  @javax.annotation.Nullable
+  public String getPlanDescription() {
+    return planDescription;
+  }
+
+  public void setPlanDescription(String planDescription) {
+    this.planDescription = planDescription;
+  }
+
+
   public QuoteDetailsResponseProductsInner isSubscription(Boolean isSubscription) {
     this.isSubscription = isSubscription;
     return this;
@@ -473,6 +519,82 @@ public class QuoteDetailsResponseProductsInner {
   }
 
 
+  public QuoteDetailsResponseProductsInner requestedStartDate(String requestedStartDate) {
+    this.requestedStartDate = requestedStartDate;
+    return this;
+  }
+
+   /**
+   * Get requestedStartDate
+   * @return requestedStartDate
+  **/
+  @javax.annotation.Nullable
+  public String getRequestedStartDate() {
+    return requestedStartDate;
+  }
+
+  public void setRequestedStartDate(String requestedStartDate) {
+    this.requestedStartDate = requestedStartDate;
+  }
+
+
+  public QuoteDetailsResponseProductsInner startDate(String startDate) {
+    this.startDate = startDate;
+    return this;
+  }
+
+   /**
+   * Get startDate
+   * @return startDate
+  **/
+  @javax.annotation.Nullable
+  public String getStartDate() {
+    return startDate;
+  }
+
+  public void setStartDate(String startDate) {
+    this.startDate = startDate;
+  }
+
+
+  public QuoteDetailsResponseProductsInner endDate(String endDate) {
+    this.endDate = endDate;
+    return this;
+  }
+
+   /**
+   * Get endDate
+   * @return endDate
+  **/
+  @javax.annotation.Nullable
+  public String getEndDate() {
+    return endDate;
+  }
+
+  public void setEndDate(String endDate) {
+    this.endDate = endDate;
+  }
+
+
+  public QuoteDetailsResponseProductsInner serialNumber(String serialNumber) {
+    this.serialNumber = serialNumber;
+    return this;
+  }
+
+   /**
+   * Get serialNumber
+   * @return serialNumber
+  **/
+  @javax.annotation.Nullable
+  public String getSerialNumber() {
+    return serialNumber;
+  }
+
+  public void setSerialNumber(String serialNumber) {
+    this.serialNumber = serialNumber;
+  }
+
+
   public QuoteDetailsResponseProductsInner price(QuoteDetailsResponseProductsInnerPrice price) {
     this.price = price;
     return this;
@@ -489,6 +611,33 @@ public class QuoteDetailsResponseProductsInner {
 
   public void setPrice(QuoteDetailsResponseProductsInnerPrice price) {
     this.price = price;
+  }
+
+
+  public QuoteDetailsResponseProductsInner billDetails(List<QuoteDetailsResponseProductsInnerBillDetailsInner> billDetails) {
+    this.billDetails = billDetails;
+    return this;
+  }
+
+  public QuoteDetailsResponseProductsInner addBillDetailsItem(QuoteDetailsResponseProductsInnerBillDetailsInner billDetailsItem) {
+    if (this.billDetails == null) {
+      this.billDetails = new ArrayList<>();
+    }
+    this.billDetails.add(billDetailsItem);
+    return this;
+  }
+
+   /**
+   * Get billDetails
+   * @return billDetails
+  **/
+  @javax.annotation.Nullable
+  public List<QuoteDetailsResponseProductsInnerBillDetailsInner> getBillDetails() {
+    return billDetails;
+  }
+
+  public void setBillDetails(List<QuoteDetailsResponseProductsInnerBillDetailsInner> billDetails) {
+    this.billDetails = billDetails;
   }
 
 
@@ -518,14 +667,20 @@ public class QuoteDetailsResponseProductsInner {
         Objects.equals(this.quoteProductsSupplierPartAuxiliaryId, quoteDetailsResponseProductsInner.quoteProductsSupplierPartAuxiliaryId) &&
         Objects.equals(this.vendorName, quoteDetailsResponseProductsInner.vendorName) &&
         Objects.equals(this.terms, quoteDetailsResponseProductsInner.terms) &&
+        Objects.equals(this.planDescription, quoteDetailsResponseProductsInner.planDescription) &&
         Objects.equals(this.isSubscription, quoteDetailsResponseProductsInner.isSubscription) &&
         Objects.equals(this.resellerMargin, quoteDetailsResponseProductsInner.resellerMargin) &&
-        Objects.equals(this.price, quoteDetailsResponseProductsInner.price);
+        Objects.equals(this.requestedStartDate, quoteDetailsResponseProductsInner.requestedStartDate) &&
+        Objects.equals(this.startDate, quoteDetailsResponseProductsInner.startDate) &&
+        Objects.equals(this.endDate, quoteDetailsResponseProductsInner.endDate) &&
+        Objects.equals(this.serialNumber, quoteDetailsResponseProductsInner.serialNumber) &&
+        Objects.equals(this.price, quoteDetailsResponseProductsInner.price) &&
+        Objects.equals(this.billDetails, quoteDetailsResponseProductsInner.billDetails);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteProductGuid, lineNumber, quantity, notes, ean, coo, ingramPartNumber, vendorPartNumber, description, weight, weightUom, isSuggestionProduct, vpnCategory, quoteProductsSupplierPartAuxiliaryId, vendorName, terms, isSubscription, resellerMargin, price);
+    return Objects.hash(quoteProductGuid, lineNumber, quantity, notes, ean, coo, ingramPartNumber, vendorPartNumber, description, weight, weightUom, isSuggestionProduct, vpnCategory, quoteProductsSupplierPartAuxiliaryId, vendorName, terms, planDescription, isSubscription, resellerMargin, requestedStartDate, startDate, endDate, serialNumber, price, billDetails);
   }
 
   @Override
@@ -548,9 +703,15 @@ public class QuoteDetailsResponseProductsInner {
     sb.append("    quoteProductsSupplierPartAuxiliaryId: ").append(toIndentedString(quoteProductsSupplierPartAuxiliaryId)).append("\n");
     sb.append("    vendorName: ").append(toIndentedString(vendorName)).append("\n");
     sb.append("    terms: ").append(toIndentedString(terms)).append("\n");
+    sb.append("    planDescription: ").append(toIndentedString(planDescription)).append("\n");
     sb.append("    isSubscription: ").append(toIndentedString(isSubscription)).append("\n");
     sb.append("    resellerMargin: ").append(toIndentedString(resellerMargin)).append("\n");
+    sb.append("    requestedStartDate: ").append(toIndentedString(requestedStartDate)).append("\n");
+    sb.append("    startDate: ").append(toIndentedString(startDate)).append("\n");
+    sb.append("    endDate: ").append(toIndentedString(endDate)).append("\n");
+    sb.append("    serialNumber: ").append(toIndentedString(serialNumber)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
+    sb.append("    billDetails: ").append(toIndentedString(billDetails)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -589,9 +750,15 @@ public class QuoteDetailsResponseProductsInner {
     openapiFields.add("quoteProductsSupplierPartAuxiliaryId");
     openapiFields.add("vendorName");
     openapiFields.add("terms");
+    openapiFields.add("planDescription");
     openapiFields.add("isSubscription");
     openapiFields.add("resellerMargin");
+    openapiFields.add("requestedStartDate");
+    openapiFields.add("startDate");
+    openapiFields.add("endDate");
+    openapiFields.add("serialNumber");
     openapiFields.add("price");
+    openapiFields.add("billDetails");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -657,12 +824,41 @@ public class QuoteDetailsResponseProductsInner {
       if ((jsonObj.get("terms") != null && !jsonObj.get("terms").isJsonNull()) && !jsonObj.get("terms").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `terms` to be a primitive type in the JSON string but got `%s`", jsonObj.get("terms").toString()));
       }
+      if ((jsonObj.get("planDescription") != null && !jsonObj.get("planDescription").isJsonNull()) && !jsonObj.get("planDescription").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `planDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("planDescription").toString()));
+      }
       if ((jsonObj.get("resellerMargin") != null && !jsonObj.get("resellerMargin").isJsonNull()) && !jsonObj.get("resellerMargin").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `resellerMargin` to be a primitive type in the JSON string but got `%s`", jsonObj.get("resellerMargin").toString()));
+      }
+      if ((jsonObj.get("requestedStartDate") != null && !jsonObj.get("requestedStartDate").isJsonNull()) && !jsonObj.get("requestedStartDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `requestedStartDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("requestedStartDate").toString()));
+      }
+      if ((jsonObj.get("startDate") != null && !jsonObj.get("startDate").isJsonNull()) && !jsonObj.get("startDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `startDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("startDate").toString()));
+      }
+      if ((jsonObj.get("endDate") != null && !jsonObj.get("endDate").isJsonNull()) && !jsonObj.get("endDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `endDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endDate").toString()));
+      }
+      if ((jsonObj.get("serialNumber") != null && !jsonObj.get("serialNumber").isJsonNull()) && !jsonObj.get("serialNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `serialNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("serialNumber").toString()));
       }
       // validate the optional field `price`
       if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {
         QuoteDetailsResponseProductsInnerPrice.validateJsonElement(jsonObj.get("price"));
+      }
+      if (jsonObj.get("billDetails") != null && !jsonObj.get("billDetails").isJsonNull()) {
+        JsonArray jsonArraybillDetails = jsonObj.getAsJsonArray("billDetails");
+        if (jsonArraybillDetails != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("billDetails").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `billDetails` to be an array in the JSON string but got `%s`", jsonObj.get("billDetails").toString()));
+          }
+
+          // validate the optional field `billDetails` (array)
+          for (int i = 0; i < jsonArraybillDetails.size(); i++) {
+            QuoteDetailsResponseProductsInnerBillDetailsInner.validateJsonElement(jsonArraybillDetails.get(i));
+          };
+        }
       }
   }
 

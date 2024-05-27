@@ -1,6 +1,6 @@
 
 
-# PostAsyncOrderCreateV7400ResponseFieldsInner
+# PostCreateorderV7400ResponseFieldsInner
 
 
 ## Properties

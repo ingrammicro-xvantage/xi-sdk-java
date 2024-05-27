@@ -20,7 +20,11 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import xiresellers.client.model.QuoteDetailsResponseProductsInnerPriceDiscountsInner;
+import xiresellers.client.model.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -79,30 +83,6 @@ public class QuoteDetailsResponseProductsInnerPriceTest {
     }
 
     /**
-     * Test the property 'vendorprice'
-     */
-    @Test
-    public void vendorpriceTest() {
-        // TODO: test vendorprice
-    }
-
-    /**
-     * Test the property 'extendedvendorprice'
-     */
-    @Test
-    public void extendedvendorpriceTest() {
-        // TODO: test extendedvendorprice
-    }
-
-    /**
-     * Test the property 'totalVisibleReserveQuantity'
-     */
-    @Test
-    public void totalVisibleReserveQuantityTest() {
-        // TODO: test totalVisibleReserveQuantity
-    }
-
-    /**
      * Test the property 'type'
      */
     @Test
@@ -116,6 +96,46 @@ public class QuoteDetailsResponseProductsInnerPriceTest {
     @Test
     public void recurringPriceModelTest() {
         // TODO: test recurringPriceModel
+    }
+
+    /**
+     * Test the property 'unitOfMeasure'
+     */
+    @Test
+    public void unitOfMeasureTest() {
+        // TODO: test unitOfMeasure
+    }
+
+    /**
+     * Test the property 'tax'
+     */
+    @Test
+    public void taxTest() {
+        // TODO: test tax
+    }
+
+    /**
+     * Test the property 'extrafees'
+     */
+    @Test
+    public void extrafeesTest() {
+        // TODO: test extrafees
+    }
+
+    /**
+     * Test the property 'extraFeesDetails'
+     */
+    @Test
+    public void extraFeesDetailsTest() {
+        // TODO: test extraFeesDetails
+    }
+
+    /**
+     * Test the property 'discounts'
+     */
+    @Test
+    public void discountsTest() {
+        // TODO: test discounts
     }
 
 }

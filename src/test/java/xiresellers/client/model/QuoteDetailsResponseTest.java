@@ -26,7 +26,9 @@ import java.util.List;
 import xiresellers.client.model.QuoteDetailsResponseAdditionalAttributesInner;
 import xiresellers.client.model.QuoteDetailsResponseEndUserInfo;
 import xiresellers.client.model.QuoteDetailsResponseProductsInner;
+import xiresellers.client.model.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner;
 import xiresellers.client.model.QuoteDetailsResponseResellerInfo;
+import xiresellers.client.model.QuoteDetailsResponseShippingInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -58,6 +60,14 @@ public class QuoteDetailsResponseTest {
     @Test
     public void quoteNumberTest() {
         // TODO: test quoteNumber
+    }
+
+    /**
+     * Test the property 'quoteGuid'
+     */
+    @Test
+    public void quoteGuidTest() {
+        // TODO: test quoteGuid
     }
 
     /**
@@ -125,11 +135,27 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
+     * Test the property 'vendorQuoteNumber'
+     */
+    @Test
+    public void vendorQuoteNumberTest() {
+        // TODO: test vendorQuoteNumber
+    }
+
+    /**
      * Test the property 'status'
      */
     @Test
     public void statusTest() {
         // TODO: test status
+    }
+
+    /**
+     * Test the property 'statusReason'
+     */
+    @Test
+    public void statusReasonTest() {
+        // TODO: test statusReason
     }
 
     /**
@@ -213,11 +239,27 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
-     * Test the property 'quoteSubType'
+     * Test the property 'imWarehouse'
      */
     @Test
-    public void quoteSubTypeTest() {
-        // TODO: test quoteSubType
+    public void imWarehouseTest() {
+        // TODO: test imWarehouse
+    }
+
+    /**
+     * Test the property 'imWarehouseGstNumber'
+     */
+    @Test
+    public void imWarehouseGstNumberTest() {
+        // TODO: test imWarehouseGstNumber
+    }
+
+    /**
+     * Test the property 'paymentTermsName'
+     */
+    @Test
+    public void paymentTermsNameTest() {
+        // TODO: test paymentTermsName
     }
 
     /**
@@ -234,6 +276,14 @@ public class QuoteDetailsResponseTest {
     @Test
     public void endUserInfoTest() {
         // TODO: test endUserInfo
+    }
+
+    /**
+     * Test the property 'shippingInfo'
+     */
+    @Test
+    public void shippingInfoTest() {
+        // TODO: test shippingInfo
     }
 
     /**
@@ -269,11 +319,43 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
+     * Test the property 'extraFeesTotal'
+     */
+    @Test
+    public void extraFeesTotalTest() {
+        // TODO: test extraFeesTotal
+    }
+
+    /**
+     * Test the property 'extraFeesTotalDetails'
+     */
+    @Test
+    public void extraFeesTotalDetailsTest() {
+        // TODO: test extraFeesTotalDetails
+    }
+
+    /**
+     * Test the property 'taxTotal'
+     */
+    @Test
+    public void taxTotalTest() {
+        // TODO: test taxTotal
+    }
+
+    /**
      * Test the property 'extendedQuotePriceTotal'
      */
     @Test
     public void extendedQuotePriceTotalTest() {
         // TODO: test extendedQuotePriceTotal
+    }
+
+    /**
+     * Test the property 'freightAmount'
+     */
+    @Test
+    public void freightAmountTest() {
+        // TODO: test freightAmount
     }
 
     /**

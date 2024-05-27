@@ -25,8 +25,8 @@ import xiresellers.client.model.OrderDetailB2B;
 import xiresellers.client.model.OrderModifyRequest;
 import xiresellers.client.model.OrderModifyResponse;
 import xiresellers.client.model.OrderSearchResponse;
-import xiresellers.client.model.PostAsyncOrderCreateV7400Response;
-import xiresellers.client.model.PostAsyncOrderCreateV7500Response;
+import xiresellers.client.model.PostCreateorderV7400Response;
+import xiresellers.client.model.PostCreateorderV7500Response;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -121,24 +121,6 @@ public class OrdersApiTest {
     }
 
     /**
-     * Async Order Create
-     *
-     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void postAsyncOrderCreateV7Test() throws ApiException {
-        String imCustomerNumber = null;
-        String imCountryCode = null;
-        String imCorrelationID = null;
-        AsyncOrderCreateDTO asyncOrderCreateDTO = null;
-        String imSenderID = null;
-        AsyncOrderCreateResponse response = api.postAsyncOrderCreateV7(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID);
-        // TODO: test validations
-    }
-
-    /**
      * Create your Order
      *
      * Instantly create and place orders. The POST API supports stocked SKUs as well as licensing and warranties SKUs. IM-CustomerNumber, IM-CountryCode, IM-SenderID and IM-CorrelationID are required parameters. Ingram Micro recommends that you provide the ingrampartnumber for each SKU contained in each order. NOTE: You must have net terms to use the Ingram Micro Order Create API. Ingram Micro offers trade credit when using our APIs, and repayment is based on net terms. For example, if your net terms agreement is net-30, you will have 30 days to make a full payment. Ingram Micro does not allow credit card transactions for API ordering. 
@@ -153,6 +135,24 @@ public class OrdersApiTest {
         OrderCreateRequest orderCreateRequest = null;
         String imSenderID = null;
         OrderCreateResponse response = api.postCreateorderV6(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateRequest, imSenderID);
+        // TODO: test validations
+    }
+
+    /**
+     * Create your Order v7
+     *
+     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void postCreateorderV7Test() throws ApiException {
+        String imCustomerNumber = null;
+        String imCountryCode = null;
+        String imCorrelationID = null;
+        AsyncOrderCreateDTO asyncOrderCreateDTO = null;
+        String imSenderID = null;
+        AsyncOrderCreateResponse response = api.postCreateorderV7(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID);
         // TODO: test validations
     }
 

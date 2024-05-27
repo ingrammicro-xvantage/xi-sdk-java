@@ -22,22 +22,21 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.PostAsyncOrderCreateV7400ResponseFieldsInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for PostAsyncOrderCreateV7400Response
+ * Model tests for PostCreateorderV7500Response
  */
-public class PostAsyncOrderCreateV7400ResponseTest {
-    private final PostAsyncOrderCreateV7400Response model = new PostAsyncOrderCreateV7400Response();
+public class PostCreateorderV7500ResponseTest {
+    private final PostCreateorderV7500Response model = new PostCreateorderV7500Response();
 
     /**
-     * Model tests for PostAsyncOrderCreateV7400Response
+     * Model tests for PostCreateorderV7500Response
      */
     @Test
-    public void testPostAsyncOrderCreateV7400Response() {
-        // TODO: test PostAsyncOrderCreateV7400Response
+    public void testPostCreateorderV7500Response() {
+        // TODO: test PostCreateorderV7500Response
     }
 
     /**

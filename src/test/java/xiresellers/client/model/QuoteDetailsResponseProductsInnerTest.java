@@ -19,7 +19,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import xiresellers.client.model.QuoteDetailsResponseProductsInnerBillDetailsInner;
 import xiresellers.client.model.QuoteDetailsResponseProductsInnerPrice;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -167,6 +170,14 @@ public class QuoteDetailsResponseProductsInnerTest {
     }
 
     /**
+     * Test the property 'planDescription'
+     */
+    @Test
+    public void planDescriptionTest() {
+        // TODO: test planDescription
+    }
+
+    /**
      * Test the property 'isSubscription'
      */
     @Test
@@ -183,11 +194,51 @@ public class QuoteDetailsResponseProductsInnerTest {
     }
 
     /**
+     * Test the property 'requestedStartDate'
+     */
+    @Test
+    public void requestedStartDateTest() {
+        // TODO: test requestedStartDate
+    }
+
+    /**
+     * Test the property 'startDate'
+     */
+    @Test
+    public void startDateTest() {
+        // TODO: test startDate
+    }
+
+    /**
+     * Test the property 'endDate'
+     */
+    @Test
+    public void endDateTest() {
+        // TODO: test endDate
+    }
+
+    /**
+     * Test the property 'serialNumber'
+     */
+    @Test
+    public void serialNumberTest() {
+        // TODO: test serialNumber
+    }
+
+    /**
      * Test the property 'price'
      */
     @Test
     public void priceTest() {
         // TODO: test price
+    }
+
+    /**
+     * Test the property 'billDetails'
+     */
+    @Test
+    public void billDetailsTest() {
+        // TODO: test billDetails
     }
 
 }

@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-16T06:51:51.114588Z[Etc/UTC]", comments = "Generator version: 7.5.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T09:52:19.181589Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class AsyncOrderCreateDTOEndUserInfo {
   public static final String SERIALIZED_NAME_END_USER_ID = "endUserId";
   @SerializedName(SERIALIZED_NAME_END_USER_ID)
@@ -71,10 +71,6 @@ public class AsyncOrderCreateDTOEndUserInfo {
   @SerializedName(SERIALIZED_NAME_NAME2)
   private String name2;
 
-  public static final String SERIALIZED_NAME_CONTACT_ID = "contactId";
-  @SerializedName(SERIALIZED_NAME_CONTACT_ID)
-  private String contactId;
-
   public static final String SERIALIZED_NAME_ADDRESS_LINE1 = "addressLine1";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE1)
   private String addressLine1;
@@ -90,6 +86,10 @@ public class AsyncOrderCreateDTOEndUserInfo {
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
   private String contact;
+
+  public static final String SERIALIZED_NAME_NAME3 = "name3";
+  @SerializedName(SERIALIZED_NAME_NAME3)
+  private String name3;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
@@ -217,25 +217,6 @@ public class AsyncOrderCreateDTOEndUserInfo {
   }
 
 
-  public AsyncOrderCreateDTOEndUserInfo contactId(String contactId) {
-    this.contactId = contactId;
-    return this;
-  }
-
-   /**
-   * The contact Id for the end user/customer.
-   * @return contactId
-  **/
-  @javax.annotation.Nullable
-  public String getContactId() {
-    return contactId;
-  }
-
-  public void setContactId(String contactId) {
-    this.contactId = contactId;
-  }
-
-
   public AsyncOrderCreateDTOEndUserInfo addressLine1(String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
@@ -309,6 +290,25 @@ public class AsyncOrderCreateDTOEndUserInfo {
 
   public void setContact(String contact) {
     this.contact = contact;
+  }
+
+
+  public AsyncOrderCreateDTOEndUserInfo name3(String name3) {
+    this.name3 = name3;
+    return this;
+  }
+
+   /**
+   * Get name3
+   * @return name3
+  **/
+  @javax.annotation.Nullable
+  public String getName3() {
+    return name3;
+  }
+
+  public void setName3(String name3) {
+    this.name3 = name3;
   }
 
 
@@ -460,11 +460,11 @@ public class AsyncOrderCreateDTOEndUserInfo {
         Objects.equals(this.companyName, asyncOrderCreateDTOEndUserInfo.companyName) &&
         Objects.equals(this.name1, asyncOrderCreateDTOEndUserInfo.name1) &&
         Objects.equals(this.name2, asyncOrderCreateDTOEndUserInfo.name2) &&
-        Objects.equals(this.contactId, asyncOrderCreateDTOEndUserInfo.contactId) &&
         Objects.equals(this.addressLine1, asyncOrderCreateDTOEndUserInfo.addressLine1) &&
         Objects.equals(this.addressLine2, asyncOrderCreateDTOEndUserInfo.addressLine2) &&
         Objects.equals(this.addressLine3, asyncOrderCreateDTOEndUserInfo.addressLine3) &&
         Objects.equals(this.contact, asyncOrderCreateDTOEndUserInfo.contact) &&
+        Objects.equals(this.name3, asyncOrderCreateDTOEndUserInfo.name3) &&
         Objects.equals(this.city, asyncOrderCreateDTOEndUserInfo.city) &&
         Objects.equals(this.state, asyncOrderCreateDTOEndUserInfo.state) &&
         Objects.equals(this.postalCode, asyncOrderCreateDTOEndUserInfo.postalCode) &&
@@ -476,7 +476,7 @@ public class AsyncOrderCreateDTOEndUserInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(endUserId, endUserType, companyName, name1, name2, contactId, addressLine1, addressLine2, addressLine3, contact, city, state, postalCode, addressLine4, countryCode, phoneNumber, email);
+    return Objects.hash(endUserId, endUserType, companyName, name1, name2, addressLine1, addressLine2, addressLine3, contact, name3, city, state, postalCode, addressLine4, countryCode, phoneNumber, email);
   }
 
   @Override
@@ -488,11 +488,11 @@ public class AsyncOrderCreateDTOEndUserInfo {
     sb.append("    companyName: ").append(toIndentedString(companyName)).append("\n");
     sb.append("    name1: ").append(toIndentedString(name1)).append("\n");
     sb.append("    name2: ").append(toIndentedString(name2)).append("\n");
-    sb.append("    contactId: ").append(toIndentedString(contactId)).append("\n");
     sb.append("    addressLine1: ").append(toIndentedString(addressLine1)).append("\n");
     sb.append("    addressLine2: ").append(toIndentedString(addressLine2)).append("\n");
     sb.append("    addressLine3: ").append(toIndentedString(addressLine3)).append("\n");
     sb.append("    contact: ").append(toIndentedString(contact)).append("\n");
+    sb.append("    name3: ").append(toIndentedString(name3)).append("\n");
     sb.append("    city: ").append(toIndentedString(city)).append("\n");
     sb.append("    state: ").append(toIndentedString(state)).append("\n");
     sb.append("    postalCode: ").append(toIndentedString(postalCode)).append("\n");
@@ -527,11 +527,11 @@ public class AsyncOrderCreateDTOEndUserInfo {
     openapiFields.add("companyName");
     openapiFields.add("name1");
     openapiFields.add("name2");
-    openapiFields.add("contactId");
     openapiFields.add("addressLine1");
     openapiFields.add("addressLine2");
     openapiFields.add("addressLine3");
     openapiFields.add("contact");
+    openapiFields.add("name3");
     openapiFields.add("city");
     openapiFields.add("state");
     openapiFields.add("postalCode");
@@ -580,9 +580,6 @@ public class AsyncOrderCreateDTOEndUserInfo {
       if ((jsonObj.get("name2") != null && !jsonObj.get("name2").isJsonNull()) && !jsonObj.get("name2").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name2` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name2").toString()));
       }
-      if ((jsonObj.get("contactId") != null && !jsonObj.get("contactId").isJsonNull()) && !jsonObj.get("contactId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `contactId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contactId").toString()));
-      }
       if ((jsonObj.get("addressLine1") != null && !jsonObj.get("addressLine1").isJsonNull()) && !jsonObj.get("addressLine1").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `addressLine1` to be a primitive type in the JSON string but got `%s`", jsonObj.get("addressLine1").toString()));
       }
@@ -594,6 +591,9 @@ public class AsyncOrderCreateDTOEndUserInfo {
       }
       if ((jsonObj.get("contact") != null && !jsonObj.get("contact").isJsonNull()) && !jsonObj.get("contact").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `contact` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contact").toString()));
+      }
+      if ((jsonObj.get("name3") != null && !jsonObj.get("name3").isJsonNull()) && !jsonObj.get("name3").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `name3` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name3").toString()));
       }
       if ((jsonObj.get("city") != null && !jsonObj.get("city").isJsonNull()) && !jsonObj.get("city").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `city` to be a primitive type in the JSON string but got `%s`", jsonObj.get("city").toString()));

@@ -65,11 +65,11 @@ public class AsyncOrderCreateDTOTest {
     }
 
     /**
-     * Test the property 'endcustomerOrderNumber'
+     * Test the property 'endCustomerOrderNumber'
      */
     @Test
-    public void endcustomerOrderNumberTest() {
-        // TODO: test endcustomerOrderNumber
+    public void endCustomerOrderNumberTest() {
+        // TODO: test endCustomerOrderNumber
     }
 
     /**

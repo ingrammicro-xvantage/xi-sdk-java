@@ -27,7 +27,7 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import xiresellers.client.model.PostAsyncOrderCreateV7500Response;
+import xiresellers.client.model.PostCreateorderV7500Response;
 import xiresellers.client.model.PostRenewalssearch400Response;
 import xiresellers.client.model.RenewalsDetailsResponse;
 import xiresellers.client.model.RenewalsSearchRequest;

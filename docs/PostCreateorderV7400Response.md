@@ -1,6 +1,6 @@
 
 
-# PostAsyncOrderCreateV7400Response
+# PostCreateorderV7400Response
 
 
 ## Properties
@@ -10,7 +10,7 @@
 |**traceid** | **String** | A unique trace id to identify the issue. |  [optional] |
 |**type** | **String** | Type of the error message. |  [optional] |
 |**message** | **String** | A detailed error message. |  [optional] |
-|**fields** | [**List&lt;PostAsyncOrderCreateV7400ResponseFieldsInner&gt;**](PostAsyncOrderCreateV7400ResponseFieldsInner.md) |  |  [optional] |
+|**fields** | [**List&lt;PostCreateorderV7400ResponseFieldsInner&gt;**](PostCreateorderV7400ResponseFieldsInner.md) |  |  [optional] |
 
 
 

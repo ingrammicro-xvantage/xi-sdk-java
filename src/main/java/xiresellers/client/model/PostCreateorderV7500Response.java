@@ -49,10 +49,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * PostAsyncOrderCreateV7500Response
+ * PostCreateorderV7500Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-16T06:51:51.114588Z[Etc/UTC]", comments = "Generator version: 7.5.0")
-public class PostAsyncOrderCreateV7500Response {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T09:52:19.181589Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+public class PostCreateorderV7500Response {
   public static final String SERIALIZED_NAME_TRACEID = "traceid";
   @SerializedName(SERIALIZED_NAME_TRACEID)
   private String traceid;
@@ -69,10 +69,10 @@ public class PostAsyncOrderCreateV7500Response {
   @SerializedName(SERIALIZED_NAME_FIELDS)
   private List<Object> fields = new ArrayList<>();
 
-  public PostAsyncOrderCreateV7500Response() {
+  public PostCreateorderV7500Response() {
   }
 
-  public PostAsyncOrderCreateV7500Response traceid(String traceid) {
+  public PostCreateorderV7500Response traceid(String traceid) {
     this.traceid = traceid;
     return this;
   }
@@ -91,7 +91,7 @@ public class PostAsyncOrderCreateV7500Response {
   }
 
 
-  public PostAsyncOrderCreateV7500Response type(String type) {
+  public PostCreateorderV7500Response type(String type) {
     this.type = type;
     return this;
   }
@@ -110,7 +110,7 @@ public class PostAsyncOrderCreateV7500Response {
   }
 
 
-  public PostAsyncOrderCreateV7500Response message(String message) {
+  public PostCreateorderV7500Response message(String message) {
     this.message = message;
     return this;
   }
@@ -129,12 +129,12 @@ public class PostAsyncOrderCreateV7500Response {
   }
 
 
-  public PostAsyncOrderCreateV7500Response fields(List<Object> fields) {
+  public PostCreateorderV7500Response fields(List<Object> fields) {
     this.fields = fields;
     return this;
   }
 
-  public PostAsyncOrderCreateV7500Response addFieldsItem(Object fieldsItem) {
+  public PostCreateorderV7500Response addFieldsItem(Object fieldsItem) {
     if (this.fields == null) {
       this.fields = new ArrayList<>();
     }
@@ -165,11 +165,11 @@ public class PostAsyncOrderCreateV7500Response {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    PostAsyncOrderCreateV7500Response postAsyncOrderCreateV7500Response = (PostAsyncOrderCreateV7500Response) o;
-    return Objects.equals(this.traceid, postAsyncOrderCreateV7500Response.traceid) &&
-        Objects.equals(this.type, postAsyncOrderCreateV7500Response.type) &&
-        Objects.equals(this.message, postAsyncOrderCreateV7500Response.message) &&
-        Objects.equals(this.fields, postAsyncOrderCreateV7500Response.fields);
+    PostCreateorderV7500Response postCreateorderV7500Response = (PostCreateorderV7500Response) o;
+    return Objects.equals(this.traceid, postCreateorderV7500Response.traceid) &&
+        Objects.equals(this.type, postCreateorderV7500Response.type) &&
+        Objects.equals(this.message, postCreateorderV7500Response.message) &&
+        Objects.equals(this.fields, postCreateorderV7500Response.fields);
   }
 
   @Override
@@ -180,7 +180,7 @@ public class PostAsyncOrderCreateV7500Response {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class PostAsyncOrderCreateV7500Response {\n");
+    sb.append("class PostCreateorderV7500Response {\n");
     sb.append("    traceid: ").append(toIndentedString(traceid)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
@@ -220,20 +220,20 @@ public class PostAsyncOrderCreateV7500Response {
   * Validates the JSON Element and throws an exception if issues found
   *
   * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to PostAsyncOrderCreateV7500Response
+  * @throws IOException if the JSON Element is invalid with respect to PostCreateorderV7500Response
   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!PostAsyncOrderCreateV7500Response.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in PostAsyncOrderCreateV7500Response is not found in the empty JSON string", PostAsyncOrderCreateV7500Response.openapiRequiredFields.toString()));
+        if (!PostCreateorderV7500Response.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in PostCreateorderV7500Response is not found in the empty JSON string", PostCreateorderV7500Response.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!PostAsyncOrderCreateV7500Response.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `PostAsyncOrderCreateV7500Response` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!PostCreateorderV7500Response.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `PostCreateorderV7500Response` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -256,22 +256,22 @@ public class PostAsyncOrderCreateV7500Response {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!PostAsyncOrderCreateV7500Response.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'PostAsyncOrderCreateV7500Response' and its subtypes
+       if (!PostCreateorderV7500Response.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'PostCreateorderV7500Response' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<PostAsyncOrderCreateV7500Response> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(PostAsyncOrderCreateV7500Response.class));
+       final TypeAdapter<PostCreateorderV7500Response> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(PostCreateorderV7500Response.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<PostAsyncOrderCreateV7500Response>() {
+       return (TypeAdapter<T>) new TypeAdapter<PostCreateorderV7500Response>() {
            @Override
-           public void write(JsonWriter out, PostAsyncOrderCreateV7500Response value) throws IOException {
+           public void write(JsonWriter out, PostCreateorderV7500Response value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public PostAsyncOrderCreateV7500Response read(JsonReader in) throws IOException {
+           public PostCreateorderV7500Response read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -282,18 +282,18 @@ public class PostAsyncOrderCreateV7500Response {
   }
 
  /**
-  * Create an instance of PostAsyncOrderCreateV7500Response given an JSON string
+  * Create an instance of PostCreateorderV7500Response given an JSON string
   *
   * @param jsonString JSON string
-  * @return An instance of PostAsyncOrderCreateV7500Response
-  * @throws IOException if the JSON string is invalid with respect to PostAsyncOrderCreateV7500Response
+  * @return An instance of PostCreateorderV7500Response
+  * @throws IOException if the JSON string is invalid with respect to PostCreateorderV7500Response
   */
-  public static PostAsyncOrderCreateV7500Response fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, PostAsyncOrderCreateV7500Response.class);
+  public static PostCreateorderV7500Response fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, PostCreateorderV7500Response.class);
   }
 
  /**
-  * Convert an instance of PostAsyncOrderCreateV7500Response to an JSON string
+  * Convert an instance of PostCreateorderV7500Response to an JSON string
   *
   * @return JSON string
   */

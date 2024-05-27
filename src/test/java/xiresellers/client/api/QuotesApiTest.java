@@ -16,7 +16,7 @@ package xiresellers.client.api;
 import xiresellers.client.ApiException;
 import xiresellers.client.model.ErrorResponse;
 import xiresellers.client.model.GetResellerV6ValidateQuote400Response;
-import xiresellers.client.model.PostAsyncOrderCreateV7500Response;
+import xiresellers.client.model.PostCreateorderV7500Response;
 import xiresellers.client.model.QuoteDetailsResponse;
 import xiresellers.client.model.QuoteSearchResponse;
 import xiresellers.client.model.ValidateQuoteResponse;

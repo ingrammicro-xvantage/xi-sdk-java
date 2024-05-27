@@ -19,46 +19,39 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for PostAsyncOrderCreateV7400ResponseFieldsInner
+ * Model tests for QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner
  */
-public class PostAsyncOrderCreateV7400ResponseFieldsInnerTest {
-    private final PostAsyncOrderCreateV7400ResponseFieldsInner model = new PostAsyncOrderCreateV7400ResponseFieldsInner();
+public class QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInnerTest {
+    private final QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner model = new QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner();
 
     /**
-     * Model tests for PostAsyncOrderCreateV7400ResponseFieldsInner
+     * Model tests for QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner
      */
     @Test
-    public void testPostAsyncOrderCreateV7400ResponseFieldsInner() {
-        // TODO: test PostAsyncOrderCreateV7400ResponseFieldsInner
+    public void testQuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner() {
+        // TODO: test QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner
     }
 
     /**
-     * Test the property 'field'
+     * Test the property 'extraFeesDescription'
      */
     @Test
-    public void fieldTest() {
-        // TODO: test field
+    public void extraFeesDescriptionTest() {
+        // TODO: test extraFeesDescription
     }
 
     /**
-     * Test the property 'message'
+     * Test the property 'extraFeesAmount'
      */
     @Test
-    public void messageTest() {
-        // TODO: test message
-    }
-
-    /**
-     * Test the property 'value'
-     */
-    @Test
-    public void valueTest() {
-        // TODO: test value
+    public void extraFeesAmountTest() {
+        // TODO: test extraFeesAmount
     }
 
 }

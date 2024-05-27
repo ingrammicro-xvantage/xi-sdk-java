@@ -60,7 +60,7 @@ import xiresellers.client.JSON;
 /**
  * AsyncOrderCreateDTO
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-16T06:51:51.114588Z[Etc/UTC]", comments = "Generator version: 7.5.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T09:52:19.181589Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class AsyncOrderCreateDTO {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -70,9 +70,9 @@ public class AsyncOrderCreateDTO {
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
   private String customerOrderNumber;
 
-  public static final String SERIALIZED_NAME_ENDCUSTOMER_ORDER_NUMBER = "endcustomerOrderNumber";
-  @SerializedName(SERIALIZED_NAME_ENDCUSTOMER_ORDER_NUMBER)
-  private String endcustomerOrderNumber;
+  public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
+  @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
+  private String endCustomerOrderNumber;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
@@ -171,22 +171,22 @@ public class AsyncOrderCreateDTO {
   }
 
 
-  public AsyncOrderCreateDTO endcustomerOrderNumber(String endcustomerOrderNumber) {
-    this.endcustomerOrderNumber = endcustomerOrderNumber;
+  public AsyncOrderCreateDTO endCustomerOrderNumber(String endCustomerOrderNumber) {
+    this.endCustomerOrderNumber = endCustomerOrderNumber;
     return this;
   }
 
    /**
    * The end customer&#39;s order number for reference in their system.
-   * @return endcustomerOrderNumber
+   * @return endCustomerOrderNumber
   **/
   @javax.annotation.Nullable
-  public String getEndcustomerOrderNumber() {
-    return endcustomerOrderNumber;
+  public String getEndCustomerOrderNumber() {
+    return endCustomerOrderNumber;
   }
 
-  public void setEndcustomerOrderNumber(String endcustomerOrderNumber) {
-    this.endcustomerOrderNumber = endcustomerOrderNumber;
+  public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
+    this.endCustomerOrderNumber = endCustomerOrderNumber;
   }
 
 
@@ -500,7 +500,7 @@ public class AsyncOrderCreateDTO {
     AsyncOrderCreateDTO asyncOrderCreateDTO = (AsyncOrderCreateDTO) o;
     return Objects.equals(this.quoteNumber, asyncOrderCreateDTO.quoteNumber) &&
         Objects.equals(this.customerOrderNumber, asyncOrderCreateDTO.customerOrderNumber) &&
-        Objects.equals(this.endcustomerOrderNumber, asyncOrderCreateDTO.endcustomerOrderNumber) &&
+        Objects.equals(this.endCustomerOrderNumber, asyncOrderCreateDTO.endCustomerOrderNumber) &&
         Objects.equals(this.notes, asyncOrderCreateDTO.notes) &&
         Objects.equals(this.billToAddressId, asyncOrderCreateDTO.billToAddressId) &&
         Objects.equals(this.specialBidNumber, asyncOrderCreateDTO.specialBidNumber) &&
@@ -523,7 +523,7 @@ public class AsyncOrderCreateDTO {
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteNumber, customerOrderNumber, endcustomerOrderNumber, notes, billToAddressId, specialBidNumber, internalComments, acceptBackOrder, vendAuthNumber, resellerInfo, endUserInfo, shipToInfo, shipmentDetails, additionalAttributes, vmfadditionalAttributes, lines, warrantyInfo);
+    return Objects.hash(quoteNumber, customerOrderNumber, endCustomerOrderNumber, notes, billToAddressId, specialBidNumber, internalComments, acceptBackOrder, vendAuthNumber, resellerInfo, endUserInfo, shipToInfo, shipmentDetails, additionalAttributes, vmfadditionalAttributes, lines, warrantyInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -539,7 +539,7 @@ public class AsyncOrderCreateDTO {
     sb.append("class AsyncOrderCreateDTO {\n");
     sb.append("    quoteNumber: ").append(toIndentedString(quoteNumber)).append("\n");
     sb.append("    customerOrderNumber: ").append(toIndentedString(customerOrderNumber)).append("\n");
-    sb.append("    endcustomerOrderNumber: ").append(toIndentedString(endcustomerOrderNumber)).append("\n");
+    sb.append("    endCustomerOrderNumber: ").append(toIndentedString(endCustomerOrderNumber)).append("\n");
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
     sb.append("    billToAddressId: ").append(toIndentedString(billToAddressId)).append("\n");
     sb.append("    specialBidNumber: ").append(toIndentedString(specialBidNumber)).append("\n");
@@ -578,7 +578,7 @@ public class AsyncOrderCreateDTO {
     openapiFields = new HashSet<String>();
     openapiFields.add("quoteNumber");
     openapiFields.add("customerOrderNumber");
-    openapiFields.add("endcustomerOrderNumber");
+    openapiFields.add("endCustomerOrderNumber");
     openapiFields.add("notes");
     openapiFields.add("billToAddressId");
     openapiFields.add("specialBidNumber");
@@ -625,8 +625,8 @@ public class AsyncOrderCreateDTO {
       if ((jsonObj.get("customerOrderNumber") != null && !jsonObj.get("customerOrderNumber").isJsonNull()) && !jsonObj.get("customerOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
       }
-      if ((jsonObj.get("endcustomerOrderNumber") != null && !jsonObj.get("endcustomerOrderNumber").isJsonNull()) && !jsonObj.get("endcustomerOrderNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `endcustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endcustomerOrderNumber").toString()));
+      if ((jsonObj.get("endCustomerOrderNumber") != null && !jsonObj.get("endCustomerOrderNumber").isJsonNull()) && !jsonObj.get("endCustomerOrderNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endCustomerOrderNumber").toString()));
       }
       if ((jsonObj.get("notes") != null && !jsonObj.get("notes").isJsonNull()) && !jsonObj.get("notes").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `notes` to be a primitive type in the JSON string but got `%s`", jsonObj.get("notes").toString()));

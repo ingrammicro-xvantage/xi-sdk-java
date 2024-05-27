@@ -78,14 +78,6 @@ public class AsyncOrderCreateDTOEndUserInfoTest {
     }
 
     /**
-     * Test the property 'contactId'
-     */
-    @Test
-    public void contactIdTest() {
-        // TODO: test contactId
-    }
-
-    /**
      * Test the property 'addressLine1'
      */
     @Test
@@ -115,6 +107,14 @@ public class AsyncOrderCreateDTOEndUserInfoTest {
     @Test
     public void contactTest() {
         // TODO: test contact
+    }
+
+    /**
+     * Test the property 'name3'
+     */
+    @Test
+    public void name3Test() {
+        // TODO: test name3
     }
 
     /**

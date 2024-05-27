@@ -2,8 +2,8 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-05-16T06:51:51.114588Z[Etc/UTC]
-  - Generator version: 7.5.0
+  - Build date: 2024-05-27T09:52:19.181589Z[Etc/UTC]
+  - Generator version: 7.6.0
 
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
 
@@ -127,8 +127,8 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**deleteOrdercancel**](docs/OrdersApi.md#deleteOrdercancel) | **DELETE** /resellers/v6/orders/{OrderNumber} | Cancel your Order
 *OrdersApi* | [**getOrderdetailsV61**](docs/OrdersApi.md#getOrderdetailsV61) | **GET** /resellers/v6.1/orders/{ordernumber} | Get Order Details v6.1
 *OrdersApi* | [**getResellersV6Ordersearch**](docs/OrdersApi.md#getResellersV6Ordersearch) | **GET** /resellers/v6/orders/search | Search your Orders
-*OrdersApi* | [**postAsyncOrderCreateV7**](docs/OrdersApi.md#postAsyncOrderCreateV7) | **POST** /resellers/v7/orders | Async Order Create
 *OrdersApi* | [**postCreateorderV6**](docs/OrdersApi.md#postCreateorderV6) | **POST** /resellers/v6/orders | Create your Order
+*OrdersApi* | [**postCreateorderV7**](docs/OrdersApi.md#postCreateorderV7) | **POST** /resellers/v7/orders | Create your Order v7
 *OrdersApi* | [**putOrdermodify**](docs/OrdersApi.md#putOrdermodify) | **PUT** /resellers/v6/orders/{orderNumber} | Modify your Order
 *ProductCatalogApi* | [**getResellerV6Productdetail**](docs/ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details
 *ProductCatalogApi* | [**getResellerV6Productsearch**](docs/ProductCatalogApi.md#getResellerV6Productsearch) | **GET** /resellers/v6/catalog | Search Products
@@ -270,9 +270,9 @@ Class | Method | HTTP request | Description
  - [OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner](docs/OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner.md)
  - [OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner](docs/OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner.md)
  - [OrderStatusAsyncNotificationRequestResourceInnerLinksInner](docs/OrderStatusAsyncNotificationRequestResourceInnerLinksInner.md)
- - [PostAsyncOrderCreateV7400Response](docs/PostAsyncOrderCreateV7400Response.md)
- - [PostAsyncOrderCreateV7400ResponseFieldsInner](docs/PostAsyncOrderCreateV7400ResponseFieldsInner.md)
- - [PostAsyncOrderCreateV7500Response](docs/PostAsyncOrderCreateV7500Response.md)
+ - [PostCreateorderV7400Response](docs/PostCreateorderV7400Response.md)
+ - [PostCreateorderV7400ResponseFieldsInner](docs/PostCreateorderV7400ResponseFieldsInner.md)
+ - [PostCreateorderV7500Response](docs/PostCreateorderV7500Response.md)
  - [PostRenewalssearch400Response](docs/PostRenewalssearch400Response.md)
  - [PriceAndAvailabilityRequest](docs/PriceAndAvailabilityRequest.md)
  - [PriceAndAvailabilityRequestAdditionalAttributesInner](docs/PriceAndAvailabilityRequestAdditionalAttributesInner.md)
@@ -302,8 +302,12 @@ Class | Method | HTTP request | Description
  - [QuoteDetailsResponseAdditionalAttributesInner](docs/QuoteDetailsResponseAdditionalAttributesInner.md)
  - [QuoteDetailsResponseEndUserInfo](docs/QuoteDetailsResponseEndUserInfo.md)
  - [QuoteDetailsResponseProductsInner](docs/QuoteDetailsResponseProductsInner.md)
+ - [QuoteDetailsResponseProductsInnerBillDetailsInner](docs/QuoteDetailsResponseProductsInnerBillDetailsInner.md)
  - [QuoteDetailsResponseProductsInnerPrice](docs/QuoteDetailsResponseProductsInnerPrice.md)
+ - [QuoteDetailsResponseProductsInnerPriceDiscountsInner](docs/QuoteDetailsResponseProductsInnerPriceDiscountsInner.md)
+ - [QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner](docs/QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner.md)
  - [QuoteDetailsResponseResellerInfo](docs/QuoteDetailsResponseResellerInfo.md)
+ - [QuoteDetailsResponseShippingInfo](docs/QuoteDetailsResponseShippingInfo.md)
  - [QuoteSearchResponse](docs/QuoteSearchResponse.md)
  - [QuoteSearchResponseQuotesInner](docs/QuoteSearchResponseQuotesInner.md)
  - [QuoteSearchResponseQuotesInnerLinks](docs/QuoteSearchResponseQuotesInnerLinks.md)

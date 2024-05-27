@@ -19,32 +19,22 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for PostAsyncOrderCreateV7500Response
+ * Model tests for QuoteDetailsResponseProductsInnerBillDetailsInner
  */
-public class PostAsyncOrderCreateV7500ResponseTest {
-    private final PostAsyncOrderCreateV7500Response model = new PostAsyncOrderCreateV7500Response();
+public class QuoteDetailsResponseProductsInnerBillDetailsInnerTest {
+    private final QuoteDetailsResponseProductsInnerBillDetailsInner model = new QuoteDetailsResponseProductsInnerBillDetailsInner();
 
     /**
-     * Model tests for PostAsyncOrderCreateV7500Response
+     * Model tests for QuoteDetailsResponseProductsInnerBillDetailsInner
      */
     @Test
-    public void testPostAsyncOrderCreateV7500Response() {
-        // TODO: test PostAsyncOrderCreateV7500Response
-    }
-
-    /**
-     * Test the property 'traceid'
-     */
-    @Test
-    public void traceidTest() {
-        // TODO: test traceid
+    public void testQuoteDetailsResponseProductsInnerBillDetailsInner() {
+        // TODO: test QuoteDetailsResponseProductsInnerBillDetailsInner
     }
 
     /**
@@ -56,19 +46,27 @@ public class PostAsyncOrderCreateV7500ResponseTest {
     }
 
     /**
-     * Test the property 'message'
+     * Test the property 'unit'
      */
     @Test
-    public void messageTest() {
-        // TODO: test message
+    public void unitTest() {
+        // TODO: test unit
     }
 
     /**
-     * Test the property 'fields'
+     * Test the property 'frequency'
      */
     @Test
-    public void fieldsTest() {
-        // TODO: test fields
+    public void frequencyTest() {
+        // TODO: test frequency
+    }
+
+    /**
+     * Test the property 'unitValue'
+     */
+    @Test
+    public void unitValueTest() {
+        // TODO: test unitValue
     }
 
 }
