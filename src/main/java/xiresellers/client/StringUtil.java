@@ -16,7 +16,7 @@ package xiresellers.client;
 import java.util.Collection;
 import java.util.Iterator;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T10:12:59.005193Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T10:35:17.995191Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).
