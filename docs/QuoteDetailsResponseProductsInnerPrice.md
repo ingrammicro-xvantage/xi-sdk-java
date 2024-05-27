@@ -15,7 +15,7 @@
 |**type** | **String** |  |  [optional] |
 |**recurringPriceModel** | **String** |  |  [optional] |
 |**unitOfMeasure** | **String** |  |  [optional] |
-|**tax** | **String** |  |  [optional] |
+|**tax** | **BigDecimal** |  |  [optional] |
 |**extrafees** | **BigDecimal** |  |  [optional] |
 |**extraFeesDetails** | [**List&lt;QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner&gt;**](QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner.md) |  |  [optional] |
 |**discounts** | [**List&lt;QuoteDetailsResponseProductsInnerPriceDiscountsInner&gt;**](QuoteDetailsResponseProductsInnerPriceDiscountsInner.md) |  |  [optional] |

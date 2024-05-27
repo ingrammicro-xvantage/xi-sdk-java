@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPrice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T09:52:19.181589Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T10:12:59.005193Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class QuoteDetailsResponseProductsInnerPrice {
   public static final String SERIALIZED_NAME_QUOTE_PRICE = "quotePrice";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRICE)
@@ -90,7 +90,7 @@ public class QuoteDetailsResponseProductsInnerPrice {
 
   public static final String SERIALIZED_NAME_TAX = "tax";
   @SerializedName(SERIALIZED_NAME_TAX)
-  private String tax;
+  private BigDecimal tax;
 
   public static final String SERIALIZED_NAME_EXTRAFEES = "extrafees";
   @SerializedName(SERIALIZED_NAME_EXTRAFEES)
@@ -259,7 +259,7 @@ public class QuoteDetailsResponseProductsInnerPrice {
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice tax(String tax) {
+  public QuoteDetailsResponseProductsInnerPrice tax(BigDecimal tax) {
     this.tax = tax;
     return this;
   }
@@ -269,11 +269,11 @@ public class QuoteDetailsResponseProductsInnerPrice {
    * @return tax
   **/
   @javax.annotation.Nullable
-  public String getTax() {
+  public BigDecimal getTax() {
     return tax;
   }
 
-  public void setTax(String tax) {
+  public void setTax(BigDecimal tax) {
     this.tax = tax;
   }
 
@@ -467,9 +467,6 @@ public class QuoteDetailsResponseProductsInnerPrice {
       }
       if ((jsonObj.get("unitOfMeasure") != null && !jsonObj.get("unitOfMeasure").isJsonNull()) && !jsonObj.get("unitOfMeasure").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `unitOfMeasure` to be a primitive type in the JSON string but got `%s`", jsonObj.get("unitOfMeasure").toString()));
-      }
-      if ((jsonObj.get("tax") != null && !jsonObj.get("tax").isJsonNull()) && !jsonObj.get("tax").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `tax` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tax").toString()));
       }
       if (jsonObj.get("extraFeesDetails") != null && !jsonObj.get("extraFeesDetails").isJsonNull()) {
         JsonArray jsonArrayextraFeesDetails = jsonObj.getAsJsonArray("extraFeesDetails");

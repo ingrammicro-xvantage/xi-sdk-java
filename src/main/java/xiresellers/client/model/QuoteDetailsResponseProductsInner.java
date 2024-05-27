@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T09:52:19.181589Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T10:12:59.005193Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class QuoteDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_QUOTE_PRODUCT_GUID = "quoteProductGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRODUCT_GUID)
@@ -93,7 +94,7 @@ public class QuoteDetailsResponseProductsInner {
 
   public static final String SERIALIZED_NAME_WEIGHT = "weight";
   @SerializedName(SERIALIZED_NAME_WEIGHT)
-  private Integer weight;
+  private BigDecimal weight;
 
   public static final String SERIALIZED_NAME_WEIGHT_UOM = "weightUom";
   @SerializedName(SERIALIZED_NAME_WEIGHT_UOM)
@@ -329,7 +330,7 @@ public class QuoteDetailsResponseProductsInner {
   }
 
 
-  public QuoteDetailsResponseProductsInner weight(Integer weight) {
+  public QuoteDetailsResponseProductsInner weight(BigDecimal weight) {
     this.weight = weight;
     return this;
   }
@@ -339,11 +340,11 @@ public class QuoteDetailsResponseProductsInner {
    * @return weight
   **/
   @javax.annotation.Nullable
-  public Integer getWeight() {
+  public BigDecimal getWeight() {
     return weight;
   }
 
-  public void setWeight(Integer weight) {
+  public void setWeight(BigDecimal weight) {
     this.weight = weight;
   }
 
