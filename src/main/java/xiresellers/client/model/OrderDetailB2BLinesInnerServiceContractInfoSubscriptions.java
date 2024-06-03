@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerServiceContractInfoSubscriptions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T10:35:17.995191Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-03T11:06:25.961953Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class OrderDetailB2BLinesInnerServiceContractInfoSubscriptions {
   public static final String SERIALIZED_NAME_SUBSCRIPTION_ID = "subscriptionId";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_ID)

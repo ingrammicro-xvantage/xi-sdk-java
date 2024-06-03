@@ -24,6 +24,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.QuoteDetailsResponseProductsInnerPriceDiscountsInner;
 import xiresellers.client.model.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner;
 
@@ -54,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPrice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T10:35:17.995191Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-03T11:06:25.961953Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class QuoteDetailsResponseProductsInnerPrice {
   public static final String SERIALIZED_NAME_QUOTE_PRICE = "quotePrice";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRICE)
@@ -375,9 +376,20 @@ public class QuoteDetailsResponseProductsInnerPrice {
         Objects.equals(this.discounts, quoteDetailsResponseProductsInnerPrice.discounts);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(quotePrice, msrp, extendedMsrp, extendedQuotePrice, discountOffList, type, recurringPriceModel, unitOfMeasure, tax, extrafees, extraFeesDetails, discounts);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override

@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryForeignFxTotals
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T10:35:17.995191Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-03T11:06:25.961953Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class InvoiceDetailsv61ResponseSummaryForeignFxTotals {
   public static final String SERIALIZED_NAME_FOREIGN_CURRENCY_CODE = "foreignCurrencyCode";
   @SerializedName(SERIALIZED_NAME_FOREIGN_CURRENCY_CODE)

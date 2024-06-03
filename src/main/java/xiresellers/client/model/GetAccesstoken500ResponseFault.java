@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * GetAccesstoken500ResponseFault
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T10:35:17.995191Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-03T11:06:25.961953Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class GetAccesstoken500ResponseFault {
   public static final String SERIALIZED_NAME_FAULTSTRING = "faultstring";
   @SerializedName(SERIALIZED_NAME_FAULTSTRING)

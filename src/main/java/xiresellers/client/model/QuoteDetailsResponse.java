@@ -24,6 +24,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.QuoteDetailsResponseAdditionalAttributesInner;
 import xiresellers.client.model.QuoteDetailsResponseEndUserInfo;
 import xiresellers.client.model.QuoteDetailsResponseProductsInner;
@@ -58,7 +59,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-27T10:35:17.995191Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-03T11:06:25.961953Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
@@ -1083,9 +1084,20 @@ public class QuoteDetailsResponse {
         Objects.equals(this.additionalAttributes, quoteDetailsResponse.additionalAttributes);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(quoteName, quoteNumber, quoteGuid, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, vendorQuoteNumber, status, statusReason, closingReason, dateClosed, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, imWarehouse, imWarehouseGstNumber, paymentTermsName, resellerInfo, endUserInfo, shippingInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extraFeesTotal, extraFeesTotalDetails, taxTotal, extendedQuotePriceTotal, freightAmount, totalQuoteAmount, additionalAttributes);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
