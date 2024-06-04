@@ -72,4 +72,20 @@ public class QuoteSearchResponseTest {
         // TODO: test quotes
     }
 
+    /**
+     * Test the property 'nextPage'
+     */
+    @Test
+    public void nextPageTest() {
+        // TODO: test nextPage
+    }
+
+    /**
+     * Test the property 'prevPage'
+     */
+    @Test
+    public void prevPageTest() {
+        // TODO: test prevPage
+    }
+
 }

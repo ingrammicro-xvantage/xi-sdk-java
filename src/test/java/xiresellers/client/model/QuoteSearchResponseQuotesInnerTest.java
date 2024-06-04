@@ -72,6 +72,14 @@ public class QuoteSearchResponseQuotesInnerTest {
     }
 
     /**
+     * Test the property 'currencyCode'
+     */
+    @Test
+    public void currencyCodeTest() {
+        // TODO: test currencyCode
+    }
+
+    /**
      * Test the property 'endUserContact'
      */
     @Test

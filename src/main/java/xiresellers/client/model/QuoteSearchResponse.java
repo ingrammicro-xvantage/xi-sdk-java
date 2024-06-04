@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-03T11:06:25.961953Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class QuoteSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
@@ -69,6 +69,14 @@ public class QuoteSearchResponse {
   public static final String SERIALIZED_NAME_QUOTES = "quotes";
   @SerializedName(SERIALIZED_NAME_QUOTES)
   private List<QuoteSearchResponseQuotesInner> quotes = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_NEXT_PAGE = "nextPage";
+  @SerializedName(SERIALIZED_NAME_NEXT_PAGE)
+  private String nextPage;
+
+  public static final String SERIALIZED_NAME_PREV_PAGE = "prevPage";
+  @SerializedName(SERIALIZED_NAME_PREV_PAGE)
+  private String prevPage;
 
   public QuoteSearchResponse() {
   }
@@ -157,6 +165,44 @@ public class QuoteSearchResponse {
   }
 
 
+  public QuoteSearchResponse nextPage(String nextPage) {
+    this.nextPage = nextPage;
+    return this;
+  }
+
+   /**
+   * Get nextPage
+   * @return nextPage
+  **/
+  @javax.annotation.Nullable
+  public String getNextPage() {
+    return nextPage;
+  }
+
+  public void setNextPage(String nextPage) {
+    this.nextPage = nextPage;
+  }
+
+
+  public QuoteSearchResponse prevPage(String prevPage) {
+    this.prevPage = prevPage;
+    return this;
+  }
+
+   /**
+   * Get prevPage
+   * @return prevPage
+  **/
+  @javax.annotation.Nullable
+  public String getPrevPage() {
+    return prevPage;
+  }
+
+  public void setPrevPage(String prevPage) {
+    this.prevPage = prevPage;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -170,12 +216,14 @@ public class QuoteSearchResponse {
     return Objects.equals(this.recordsFound, quoteSearchResponse.recordsFound) &&
         Objects.equals(this.pageSize, quoteSearchResponse.pageSize) &&
         Objects.equals(this.pageNumber, quoteSearchResponse.pageNumber) &&
-        Objects.equals(this.quotes, quoteSearchResponse.quotes);
+        Objects.equals(this.quotes, quoteSearchResponse.quotes) &&
+        Objects.equals(this.nextPage, quoteSearchResponse.nextPage) &&
+        Objects.equals(this.prevPage, quoteSearchResponse.prevPage);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(recordsFound, pageSize, pageNumber, quotes);
+    return Objects.hash(recordsFound, pageSize, pageNumber, quotes, nextPage, prevPage);
   }
 
   @Override
@@ -186,6 +234,8 @@ public class QuoteSearchResponse {
     sb.append("    pageSize: ").append(toIndentedString(pageSize)).append("\n");
     sb.append("    pageNumber: ").append(toIndentedString(pageNumber)).append("\n");
     sb.append("    quotes: ").append(toIndentedString(quotes)).append("\n");
+    sb.append("    nextPage: ").append(toIndentedString(nextPage)).append("\n");
+    sb.append("    prevPage: ").append(toIndentedString(prevPage)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -212,6 +262,8 @@ public class QuoteSearchResponse {
     openapiFields.add("pageSize");
     openapiFields.add("pageNumber");
     openapiFields.add("quotes");
+    openapiFields.add("nextPage");
+    openapiFields.add("prevPage");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -251,6 +303,12 @@ public class QuoteSearchResponse {
             QuoteSearchResponseQuotesInner.validateJsonElement(jsonArrayquotes.get(i));
           };
         }
+      }
+      if ((jsonObj.get("nextPage") != null && !jsonObj.get("nextPage").isJsonNull()) && !jsonObj.get("nextPage").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `nextPage` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nextPage").toString()));
+      }
+      if ((jsonObj.get("prevPage") != null && !jsonObj.get("prevPage").isJsonNull()) && !jsonObj.get("prevPage").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `prevPage` to be a primitive type in the JSON string but got `%s`", jsonObj.get("prevPage").toString()));
       }
   }
 
