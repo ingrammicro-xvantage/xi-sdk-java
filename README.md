@@ -1,3 +1,7 @@
+
+# xi.sdk.resellers
+
+
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
 
 
