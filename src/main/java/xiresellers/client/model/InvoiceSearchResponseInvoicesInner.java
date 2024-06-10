@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -21,7 +21,9 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,11 +52,15 @@ import xiresellers.client.JSON;
 /**
  * InvoiceSearchResponseInvoicesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class InvoiceSearchResponseInvoicesInner {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE = "paymentTermsDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE)
   private String paymentTermsDueDate;
+
+  public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBERS = "specialBidNumbers";
+  @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBERS)
+  private List<String> specialBidNumbers = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ERP_ORDER_NUMBER = "erpOrderNumber";
   @SerializedName(SERIALIZED_NAME_ERP_ORDER_NUMBER)
@@ -127,6 +133,33 @@ public class InvoiceSearchResponseInvoicesInner {
 
   public void setPaymentTermsDueDate(String paymentTermsDueDate) {
     this.paymentTermsDueDate = paymentTermsDueDate;
+  }
+
+
+  public InvoiceSearchResponseInvoicesInner specialBidNumbers(List<String> specialBidNumbers) {
+    this.specialBidNumbers = specialBidNumbers;
+    return this;
+  }
+
+  public InvoiceSearchResponseInvoicesInner addSpecialBidNumbersItem(String specialBidNumbersItem) {
+    if (this.specialBidNumbers == null) {
+      this.specialBidNumbers = new ArrayList<>();
+    }
+    this.specialBidNumbers.add(specialBidNumbersItem);
+    return this;
+  }
+
+   /**
+   * Get specialBidNumbers
+   * @return specialBidNumbers
+  **/
+  @javax.annotation.Nullable
+  public List<String> getSpecialBidNumbers() {
+    return specialBidNumbers;
+  }
+
+  public void setSpecialBidNumbers(List<String> specialBidNumbers) {
+    this.specialBidNumbers = specialBidNumbers;
   }
 
 
@@ -388,6 +421,7 @@ public class InvoiceSearchResponseInvoicesInner {
     }
     InvoiceSearchResponseInvoicesInner invoiceSearchResponseInvoicesInner = (InvoiceSearchResponseInvoicesInner) o;
     return Objects.equals(this.paymentTermsDueDate, invoiceSearchResponseInvoicesInner.paymentTermsDueDate) &&
+        Objects.equals(this.specialBidNumbers, invoiceSearchResponseInvoicesInner.specialBidNumbers) &&
         Objects.equals(this.erpOrderNumber, invoiceSearchResponseInvoicesInner.erpOrderNumber) &&
         Objects.equals(this.invoiceNumber, invoiceSearchResponseInvoicesInner.invoiceNumber) &&
         Objects.equals(this.invoiceStatus, invoiceSearchResponseInvoicesInner.invoiceStatus) &&
@@ -405,7 +439,7 @@ public class InvoiceSearchResponseInvoicesInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(paymentTermsDueDate, erpOrderNumber, invoiceNumber, invoiceStatus, invoiceDate, invoiceDueDate, invoicedAmountDue, customerOrderNumber, endCustomerOrderNumber, orderCreateDate, invoiceAmountInclTax, forgntotalamount, gstInvoiceNumber, isfseccenabled);
+    return Objects.hash(paymentTermsDueDate, specialBidNumbers, erpOrderNumber, invoiceNumber, invoiceStatus, invoiceDate, invoiceDueDate, invoicedAmountDue, customerOrderNumber, endCustomerOrderNumber, orderCreateDate, invoiceAmountInclTax, forgntotalamount, gstInvoiceNumber, isfseccenabled);
   }
 
   @Override
@@ -413,6 +447,7 @@ public class InvoiceSearchResponseInvoicesInner {
     StringBuilder sb = new StringBuilder();
     sb.append("class InvoiceSearchResponseInvoicesInner {\n");
     sb.append("    paymentTermsDueDate: ").append(toIndentedString(paymentTermsDueDate)).append("\n");
+    sb.append("    specialBidNumbers: ").append(toIndentedString(specialBidNumbers)).append("\n");
     sb.append("    erpOrderNumber: ").append(toIndentedString(erpOrderNumber)).append("\n");
     sb.append("    invoiceNumber: ").append(toIndentedString(invoiceNumber)).append("\n");
     sb.append("    invoiceStatus: ").append(toIndentedString(invoiceStatus)).append("\n");
@@ -449,6 +484,7 @@ public class InvoiceSearchResponseInvoicesInner {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("paymentTermsDueDate");
+    openapiFields.add("specialBidNumbers");
     openapiFields.add("erpOrderNumber");
     openapiFields.add("invoiceNumber");
     openapiFields.add("invoiceStatus");
@@ -490,6 +526,10 @@ public class InvoiceSearchResponseInvoicesInner {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("paymentTermsDueDate") != null && !jsonObj.get("paymentTermsDueDate").isJsonNull()) && !jsonObj.get("paymentTermsDueDate").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `paymentTermsDueDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("paymentTermsDueDate").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("specialBidNumbers") != null && !jsonObj.get("specialBidNumbers").isJsonNull() && !jsonObj.get("specialBidNumbers").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `specialBidNumbers` to be an array in the JSON string but got `%s`", jsonObj.get("specialBidNumbers").toString()));
       }
       if ((jsonObj.get("erpOrderNumber") != null && !jsonObj.get("erpOrderNumber").isJsonNull()) && !jsonObj.get("erpOrderNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `erpOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("erpOrderNumber").toString()));

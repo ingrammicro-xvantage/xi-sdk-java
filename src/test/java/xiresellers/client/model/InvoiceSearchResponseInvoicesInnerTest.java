@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -20,7 +20,9 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -44,6 +46,14 @@ public class InvoiceSearchResponseInvoicesInnerTest {
     @Test
     public void paymentTermsDueDateTest() {
         // TODO: test paymentTermsDueDate
+    }
+
+    /**
+     * Test the property 'specialBidNumbers'
+     */
+    @Test
+    public void specialBidNumbersTest() {
+        // TODO: test specialBidNumbers
     }
 
     /**

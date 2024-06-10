@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -70,6 +70,22 @@ public class QuoteSearchResponseTest {
     @Test
     public void quotesTest() {
         // TODO: test quotes
+    }
+
+    /**
+     * Test the property 'nextPage'
+     */
+    @Test
+    public void nextPageTest() {
+        // TODO: test nextPage
+    }
+
+    /**
+     * Test the property 'prevPage'
+     */
+    @Test
+    public void prevPageTest() {
+        // TODO: test prevPage
     }
 
 }

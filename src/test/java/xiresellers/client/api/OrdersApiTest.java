@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,8 @@
 package xiresellers.client.api;
 
 import xiresellers.client.ApiException;
+import xiresellers.client.model.AsyncOrderCreateDTO;
+import xiresellers.client.model.AsyncOrderCreateResponse;
 import xiresellers.client.model.ErrorResponse;
 import xiresellers.client.model.ErrorResponseDTO;
 import java.time.LocalDate;
@@ -23,6 +25,8 @@ import xiresellers.client.model.OrderDetailB2B;
 import xiresellers.client.model.OrderModifyRequest;
 import xiresellers.client.model.OrderModifyResponse;
 import xiresellers.client.model.OrderSearchResponse;
+import xiresellers.client.model.PostCreateorderV7400Response;
+import xiresellers.client.model.PostCreateorderV7500Response;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -131,6 +135,24 @@ public class OrdersApiTest {
         OrderCreateRequest orderCreateRequest = null;
         String imSenderID = null;
         OrderCreateResponse response = api.postCreateorderV6(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateRequest, imSenderID);
+        // TODO: test validations
+    }
+
+    /**
+     * Create your Order v7
+     *
+     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void postCreateorderV7Test() throws ApiException {
+        String imCustomerNumber = null;
+        String imCountryCode = null;
+        String imCorrelationID = null;
+        AsyncOrderCreateDTO asyncOrderCreateDTO = null;
+        String imSenderID = null;
+        AsyncOrderCreateResponse response = api.postCreateorderV7(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID);
         // TODO: test validations
     }
 

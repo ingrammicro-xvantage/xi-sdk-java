@@ -11,7 +11,7 @@
 |**discountAmount** | **Double** | Discount amount. |  [optional] |
 |**discountType** | **String** | Type of discount. |  [optional] |
 |**totalTaxAmount** | **Double** | Total Tax amount. |  [optional] |
-|**invoicesAmountDue** | **Double** | Total amount due for the invoice. |  [optional] |
+|**invoicedAmountDue** | **Double** | Total amount due for the invoice. |  [optional] |
 |**freightAmount** | **Double** | Freight amount |  [optional] |
 
 

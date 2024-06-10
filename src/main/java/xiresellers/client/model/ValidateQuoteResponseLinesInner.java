@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner;
+import xiresellers.client.model.ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ValidateQuoteResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class ValidateQuoteResponseLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -64,11 +64,11 @@ public class ValidateQuoteResponseLinesInner {
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
-  private String quantity;
+  private Integer quantity;
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES = "vmfAdditionalAttributesLines";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES)
-  private List<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines;
+  private List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines = new ArrayList<>();
 
   public ValidateQuoteResponseLinesInner() {
   }
@@ -111,7 +111,7 @@ public class ValidateQuoteResponseLinesInner {
   }
 
 
-  public ValidateQuoteResponseLinesInner quantity(String quantity) {
+  public ValidateQuoteResponseLinesInner quantity(Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -121,21 +121,21 @@ public class ValidateQuoteResponseLinesInner {
    * @return quantity
   **/
   @javax.annotation.Nullable
-  public String getQuantity() {
+  public Integer getQuantity() {
     return quantity;
   }
 
-  public void setQuantity(String quantity) {
+  public void setQuantity(Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public ValidateQuoteResponseLinesInner vmfAdditionalAttributesLines(List<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
+  public ValidateQuoteResponseLinesInner vmfAdditionalAttributesLines(List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
     this.vmfAdditionalAttributesLines = vmfAdditionalAttributesLines;
     return this;
   }
 
-  public ValidateQuoteResponseLinesInner addVmfAdditionalAttributesLinesItem(QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner vmfAdditionalAttributesLinesItem) {
+  public ValidateQuoteResponseLinesInner addVmfAdditionalAttributesLinesItem(ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner vmfAdditionalAttributesLinesItem) {
     if (this.vmfAdditionalAttributesLines == null) {
       this.vmfAdditionalAttributesLines = new ArrayList<>();
     }
@@ -148,11 +148,11 @@ public class ValidateQuoteResponseLinesInner {
    * @return vmfAdditionalAttributesLines
   **/
   @javax.annotation.Nullable
-  public List<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner> getVmfAdditionalAttributesLines() {
+  public List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> getVmfAdditionalAttributesLines() {
     return vmfAdditionalAttributesLines;
   }
 
-  public void setVmfAdditionalAttributesLines(List<QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
+  public void setVmfAdditionalAttributesLines(List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
     this.vmfAdditionalAttributesLines = vmfAdditionalAttributesLines;
   }
 
@@ -244,9 +244,6 @@ public class ValidateQuoteResponseLinesInner {
       if ((jsonObj.get("ingramPartNumber") != null && !jsonObj.get("ingramPartNumber").isJsonNull()) && !jsonObj.get("ingramPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `ingramPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramPartNumber").toString()));
       }
-      if ((jsonObj.get("quantity") != null && !jsonObj.get("quantity").isJsonNull()) && !jsonObj.get("quantity").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `quantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quantity").toString()));
-      }
       if (jsonObj.get("vmfAdditionalAttributesLines") != null && !jsonObj.get("vmfAdditionalAttributesLines").isJsonNull()) {
         JsonArray jsonArrayvmfAdditionalAttributesLines = jsonObj.getAsJsonArray("vmfAdditionalAttributesLines");
         if (jsonArrayvmfAdditionalAttributesLines != null) {
@@ -257,7 +254,7 @@ public class ValidateQuoteResponseLinesInner {
 
           // validate the optional field `vmfAdditionalAttributesLines` (array)
           for (int i = 0; i < jsonArrayvmfAdditionalAttributesLines.size(); i++) {
-            QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.validateJsonElement(jsonArrayvmfAdditionalAttributesLines.get(i));
+            ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.validateJsonElement(jsonArrayvmfAdditionalAttributesLines.get(i));
           };
         }
       }

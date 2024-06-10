@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -51,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteSearchResponseQuotesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class QuoteSearchResponseQuotesInner {
   public static final String SERIALIZED_NAME_QUOTE_GUID = "quoteGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_GUID)
@@ -68,6 +68,10 @@ public class QuoteSearchResponseQuotesInner {
   public static final String SERIALIZED_NAME_REVISION = "revision";
   @SerializedName(SERIALIZED_NAME_REVISION)
   private String revision;
+
+  public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
+  @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  private String currencyCode;
 
   public static final String SERIALIZED_NAME_END_USER_CONTACT = "endUserContact";
   @SerializedName(SERIALIZED_NAME_END_USER_CONTACT)
@@ -193,6 +197,25 @@ public class QuoteSearchResponseQuotesInner {
 
   public void setRevision(String revision) {
     this.revision = revision;
+  }
+
+
+  public QuoteSearchResponseQuotesInner currencyCode(String currencyCode) {
+    this.currencyCode = currencyCode;
+    return this;
+  }
+
+   /**
+   * The country-specific three digit ISO 4217 currency code for the order.
+   * @return currencyCode
+  **/
+  @javax.annotation.Nullable
+  public String getCurrencyCode() {
+    return currencyCode;
+  }
+
+  public void setCurrencyCode(String currencyCode) {
+    this.currencyCode = currencyCode;
   }
 
 
@@ -438,6 +461,7 @@ public class QuoteSearchResponseQuotesInner {
         Objects.equals(this.quoteName, quoteSearchResponseQuotesInner.quoteName) &&
         Objects.equals(this.quoteNumber, quoteSearchResponseQuotesInner.quoteNumber) &&
         Objects.equals(this.revision, quoteSearchResponseQuotesInner.revision) &&
+        Objects.equals(this.currencyCode, quoteSearchResponseQuotesInner.currencyCode) &&
         Objects.equals(this.endUserContact, quoteSearchResponseQuotesInner.endUserContact) &&
         Objects.equals(this.specialBidNumber, quoteSearchResponseQuotesInner.specialBidNumber) &&
         Objects.equals(this.quoteTotal, quoteSearchResponseQuotesInner.quoteTotal) &&
@@ -454,7 +478,7 @@ public class QuoteSearchResponseQuotesInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteGuid, quoteName, quoteNumber, revision, endUserContact, specialBidNumber, quoteTotal, quoteStatus, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, endUserName, vendor, createdBy, quoteType, links);
+    return Objects.hash(quoteGuid, quoteName, quoteNumber, revision, currencyCode, endUserContact, specialBidNumber, quoteTotal, quoteStatus, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, endUserName, vendor, createdBy, quoteType, links);
   }
 
   @Override
@@ -465,6 +489,7 @@ public class QuoteSearchResponseQuotesInner {
     sb.append("    quoteName: ").append(toIndentedString(quoteName)).append("\n");
     sb.append("    quoteNumber: ").append(toIndentedString(quoteNumber)).append("\n");
     sb.append("    revision: ").append(toIndentedString(revision)).append("\n");
+    sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
     sb.append("    endUserContact: ").append(toIndentedString(endUserContact)).append("\n");
     sb.append("    specialBidNumber: ").append(toIndentedString(specialBidNumber)).append("\n");
     sb.append("    quoteTotal: ").append(toIndentedString(quoteTotal)).append("\n");
@@ -503,6 +528,7 @@ public class QuoteSearchResponseQuotesInner {
     openapiFields.add("quoteName");
     openapiFields.add("quoteNumber");
     openapiFields.add("revision");
+    openapiFields.add("currencyCode");
     openapiFields.add("endUserContact");
     openapiFields.add("specialBidNumber");
     openapiFields.add("quoteTotal");
@@ -552,6 +578,9 @@ public class QuoteSearchResponseQuotesInner {
       }
       if ((jsonObj.get("revision") != null && !jsonObj.get("revision").isJsonNull()) && !jsonObj.get("revision").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `revision` to be a primitive type in the JSON string but got `%s`", jsonObj.get("revision").toString()));
+      }
+      if ((jsonObj.get("currencyCode") != null && !jsonObj.get("currencyCode").isJsonNull()) && !jsonObj.get("currencyCode").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `currencyCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyCode").toString()));
       }
       if ((jsonObj.get("endUserContact") != null && !jsonObj.get("endUserContact").isJsonNull()) && !jsonObj.get("endUserContact").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `endUserContact` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endUserContact").toString()));

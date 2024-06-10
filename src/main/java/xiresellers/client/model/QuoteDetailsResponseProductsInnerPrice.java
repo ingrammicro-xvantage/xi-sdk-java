@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -21,7 +21,12 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
+import xiresellers.client.model.QuoteDetailsResponseProductsInnerPriceDiscountsInner;
+import xiresellers.client.model.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,39 +55,27 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPrice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class QuoteDetailsResponseProductsInnerPrice {
   public static final String SERIALIZED_NAME_QUOTE_PRICE = "quotePrice";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRICE)
-  private Integer quotePrice;
+  private BigDecimal quotePrice;
 
   public static final String SERIALIZED_NAME_MSRP = "msrp";
   @SerializedName(SERIALIZED_NAME_MSRP)
-  private Integer msrp;
+  private BigDecimal msrp;
 
   public static final String SERIALIZED_NAME_EXTENDED_MSRP = "extendedMsrp";
   @SerializedName(SERIALIZED_NAME_EXTENDED_MSRP)
-  private Integer extendedMsrp;
+  private BigDecimal extendedMsrp;
 
   public static final String SERIALIZED_NAME_EXTENDED_QUOTE_PRICE = "extendedQuotePrice";
   @SerializedName(SERIALIZED_NAME_EXTENDED_QUOTE_PRICE)
-  private Integer extendedQuotePrice;
+  private BigDecimal extendedQuotePrice;
 
   public static final String SERIALIZED_NAME_DISCOUNT_OFF_LIST = "discountOffList";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_OFF_LIST)
   private String discountOffList;
-
-  public static final String SERIALIZED_NAME_VENDORPRICE = "vendorprice";
-  @SerializedName(SERIALIZED_NAME_VENDORPRICE)
-  private BigDecimal vendorprice;
-
-  public static final String SERIALIZED_NAME_EXTENDEDVENDORPRICE = "extendedvendorprice";
-  @SerializedName(SERIALIZED_NAME_EXTENDEDVENDORPRICE)
-  private BigDecimal extendedvendorprice;
-
-  public static final String SERIALIZED_NAME_TOTAL_VISIBLE_RESERVE_QUANTITY = "totalVisibleReserveQuantity";
-  @SerializedName(SERIALIZED_NAME_TOTAL_VISIBLE_RESERVE_QUANTITY)
-  private Integer totalVisibleReserveQuantity;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -92,10 +85,30 @@ public class QuoteDetailsResponseProductsInnerPrice {
   @SerializedName(SERIALIZED_NAME_RECURRING_PRICE_MODEL)
   private String recurringPriceModel;
 
+  public static final String SERIALIZED_NAME_UNIT_OF_MEASURE = "unitOfMeasure";
+  @SerializedName(SERIALIZED_NAME_UNIT_OF_MEASURE)
+  private String unitOfMeasure;
+
+  public static final String SERIALIZED_NAME_TAX = "tax";
+  @SerializedName(SERIALIZED_NAME_TAX)
+  private BigDecimal tax;
+
+  public static final String SERIALIZED_NAME_EXTRAFEES = "extrafees";
+  @SerializedName(SERIALIZED_NAME_EXTRAFEES)
+  private BigDecimal extrafees;
+
+  public static final String SERIALIZED_NAME_EXTRA_FEES_DETAILS = "extraFeesDetails";
+  @SerializedName(SERIALIZED_NAME_EXTRA_FEES_DETAILS)
+  private List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesDetails = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_DISCOUNTS = "discounts";
+  @SerializedName(SERIALIZED_NAME_DISCOUNTS)
+  private List<QuoteDetailsResponseProductsInnerPriceDiscountsInner> discounts = new ArrayList<>();
+
   public QuoteDetailsResponseProductsInnerPrice() {
   }
 
-  public QuoteDetailsResponseProductsInnerPrice quotePrice(Integer quotePrice) {
+  public QuoteDetailsResponseProductsInnerPrice quotePrice(BigDecimal quotePrice) {
     this.quotePrice = quotePrice;
     return this;
   }
@@ -105,16 +118,16 @@ public class QuoteDetailsResponseProductsInnerPrice {
    * @return quotePrice
   **/
   @javax.annotation.Nullable
-  public Integer getQuotePrice() {
+  public BigDecimal getQuotePrice() {
     return quotePrice;
   }
 
-  public void setQuotePrice(Integer quotePrice) {
+  public void setQuotePrice(BigDecimal quotePrice) {
     this.quotePrice = quotePrice;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice msrp(Integer msrp) {
+  public QuoteDetailsResponseProductsInnerPrice msrp(BigDecimal msrp) {
     this.msrp = msrp;
     return this;
   }
@@ -124,16 +137,16 @@ public class QuoteDetailsResponseProductsInnerPrice {
    * @return msrp
   **/
   @javax.annotation.Nullable
-  public Integer getMsrp() {
+  public BigDecimal getMsrp() {
     return msrp;
   }
 
-  public void setMsrp(Integer msrp) {
+  public void setMsrp(BigDecimal msrp) {
     this.msrp = msrp;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice extendedMsrp(Integer extendedMsrp) {
+  public QuoteDetailsResponseProductsInnerPrice extendedMsrp(BigDecimal extendedMsrp) {
     this.extendedMsrp = extendedMsrp;
     return this;
   }
@@ -143,16 +156,16 @@ public class QuoteDetailsResponseProductsInnerPrice {
    * @return extendedMsrp
   **/
   @javax.annotation.Nullable
-  public Integer getExtendedMsrp() {
+  public BigDecimal getExtendedMsrp() {
     return extendedMsrp;
   }
 
-  public void setExtendedMsrp(Integer extendedMsrp) {
+  public void setExtendedMsrp(BigDecimal extendedMsrp) {
     this.extendedMsrp = extendedMsrp;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice extendedQuotePrice(Integer extendedQuotePrice) {
+  public QuoteDetailsResponseProductsInnerPrice extendedQuotePrice(BigDecimal extendedQuotePrice) {
     this.extendedQuotePrice = extendedQuotePrice;
     return this;
   }
@@ -162,11 +175,11 @@ public class QuoteDetailsResponseProductsInnerPrice {
    * @return extendedQuotePrice
   **/
   @javax.annotation.Nullable
-  public Integer getExtendedQuotePrice() {
+  public BigDecimal getExtendedQuotePrice() {
     return extendedQuotePrice;
   }
 
-  public void setExtendedQuotePrice(Integer extendedQuotePrice) {
+  public void setExtendedQuotePrice(BigDecimal extendedQuotePrice) {
     this.extendedQuotePrice = extendedQuotePrice;
   }
 
@@ -187,63 +200,6 @@ public class QuoteDetailsResponseProductsInnerPrice {
 
   public void setDiscountOffList(String discountOffList) {
     this.discountOffList = discountOffList;
-  }
-
-
-  public QuoteDetailsResponseProductsInnerPrice vendorprice(BigDecimal vendorprice) {
-    this.vendorprice = vendorprice;
-    return this;
-  }
-
-   /**
-   * Get vendorprice
-   * @return vendorprice
-  **/
-  @javax.annotation.Nullable
-  public BigDecimal getVendorprice() {
-    return vendorprice;
-  }
-
-  public void setVendorprice(BigDecimal vendorprice) {
-    this.vendorprice = vendorprice;
-  }
-
-
-  public QuoteDetailsResponseProductsInnerPrice extendedvendorprice(BigDecimal extendedvendorprice) {
-    this.extendedvendorprice = extendedvendorprice;
-    return this;
-  }
-
-   /**
-   * Get extendedvendorprice
-   * @return extendedvendorprice
-  **/
-  @javax.annotation.Nullable
-  public BigDecimal getExtendedvendorprice() {
-    return extendedvendorprice;
-  }
-
-  public void setExtendedvendorprice(BigDecimal extendedvendorprice) {
-    this.extendedvendorprice = extendedvendorprice;
-  }
-
-
-  public QuoteDetailsResponseProductsInnerPrice totalVisibleReserveQuantity(Integer totalVisibleReserveQuantity) {
-    this.totalVisibleReserveQuantity = totalVisibleReserveQuantity;
-    return this;
-  }
-
-   /**
-   * Get totalVisibleReserveQuantity
-   * @return totalVisibleReserveQuantity
-  **/
-  @javax.annotation.Nullable
-  public Integer getTotalVisibleReserveQuantity() {
-    return totalVisibleReserveQuantity;
-  }
-
-  public void setTotalVisibleReserveQuantity(Integer totalVisibleReserveQuantity) {
-    this.totalVisibleReserveQuantity = totalVisibleReserveQuantity;
   }
 
 
@@ -285,6 +241,117 @@ public class QuoteDetailsResponseProductsInnerPrice {
   }
 
 
+  public QuoteDetailsResponseProductsInnerPrice unitOfMeasure(String unitOfMeasure) {
+    this.unitOfMeasure = unitOfMeasure;
+    return this;
+  }
+
+   /**
+   * Get unitOfMeasure
+   * @return unitOfMeasure
+  **/
+  @javax.annotation.Nullable
+  public String getUnitOfMeasure() {
+    return unitOfMeasure;
+  }
+
+  public void setUnitOfMeasure(String unitOfMeasure) {
+    this.unitOfMeasure = unitOfMeasure;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice tax(BigDecimal tax) {
+    this.tax = tax;
+    return this;
+  }
+
+   /**
+   * Get tax
+   * @return tax
+  **/
+  @javax.annotation.Nullable
+  public BigDecimal getTax() {
+    return tax;
+  }
+
+  public void setTax(BigDecimal tax) {
+    this.tax = tax;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice extrafees(BigDecimal extrafees) {
+    this.extrafees = extrafees;
+    return this;
+  }
+
+   /**
+   * Get extrafees
+   * @return extrafees
+  **/
+  @javax.annotation.Nullable
+  public BigDecimal getExtrafees() {
+    return extrafees;
+  }
+
+  public void setExtrafees(BigDecimal extrafees) {
+    this.extrafees = extrafees;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice extraFeesDetails(List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesDetails) {
+    this.extraFeesDetails = extraFeesDetails;
+    return this;
+  }
+
+  public QuoteDetailsResponseProductsInnerPrice addExtraFeesDetailsItem(QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner extraFeesDetailsItem) {
+    if (this.extraFeesDetails == null) {
+      this.extraFeesDetails = new ArrayList<>();
+    }
+    this.extraFeesDetails.add(extraFeesDetailsItem);
+    return this;
+  }
+
+   /**
+   * Get extraFeesDetails
+   * @return extraFeesDetails
+  **/
+  @javax.annotation.Nullable
+  public List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> getExtraFeesDetails() {
+    return extraFeesDetails;
+  }
+
+  public void setExtraFeesDetails(List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesDetails) {
+    this.extraFeesDetails = extraFeesDetails;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice discounts(List<QuoteDetailsResponseProductsInnerPriceDiscountsInner> discounts) {
+    this.discounts = discounts;
+    return this;
+  }
+
+  public QuoteDetailsResponseProductsInnerPrice addDiscountsItem(QuoteDetailsResponseProductsInnerPriceDiscountsInner discountsItem) {
+    if (this.discounts == null) {
+      this.discounts = new ArrayList<>();
+    }
+    this.discounts.add(discountsItem);
+    return this;
+  }
+
+   /**
+   * Get discounts
+   * @return discounts
+  **/
+  @javax.annotation.Nullable
+  public List<QuoteDetailsResponseProductsInnerPriceDiscountsInner> getDiscounts() {
+    return discounts;
+  }
+
+  public void setDiscounts(List<QuoteDetailsResponseProductsInnerPriceDiscountsInner> discounts) {
+    this.discounts = discounts;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -300,16 +367,29 @@ public class QuoteDetailsResponseProductsInnerPrice {
         Objects.equals(this.extendedMsrp, quoteDetailsResponseProductsInnerPrice.extendedMsrp) &&
         Objects.equals(this.extendedQuotePrice, quoteDetailsResponseProductsInnerPrice.extendedQuotePrice) &&
         Objects.equals(this.discountOffList, quoteDetailsResponseProductsInnerPrice.discountOffList) &&
-        Objects.equals(this.vendorprice, quoteDetailsResponseProductsInnerPrice.vendorprice) &&
-        Objects.equals(this.extendedvendorprice, quoteDetailsResponseProductsInnerPrice.extendedvendorprice) &&
-        Objects.equals(this.totalVisibleReserveQuantity, quoteDetailsResponseProductsInnerPrice.totalVisibleReserveQuantity) &&
         Objects.equals(this.type, quoteDetailsResponseProductsInnerPrice.type) &&
-        Objects.equals(this.recurringPriceModel, quoteDetailsResponseProductsInnerPrice.recurringPriceModel);
+        Objects.equals(this.recurringPriceModel, quoteDetailsResponseProductsInnerPrice.recurringPriceModel) &&
+        Objects.equals(this.unitOfMeasure, quoteDetailsResponseProductsInnerPrice.unitOfMeasure) &&
+        Objects.equals(this.tax, quoteDetailsResponseProductsInnerPrice.tax) &&
+        Objects.equals(this.extrafees, quoteDetailsResponseProductsInnerPrice.extrafees) &&
+        Objects.equals(this.extraFeesDetails, quoteDetailsResponseProductsInnerPrice.extraFeesDetails) &&
+        Objects.equals(this.discounts, quoteDetailsResponseProductsInnerPrice.discounts);
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(quotePrice, msrp, extendedMsrp, extendedQuotePrice, discountOffList, vendorprice, extendedvendorprice, totalVisibleReserveQuantity, type, recurringPriceModel);
+    return Objects.hash(quotePrice, msrp, extendedMsrp, extendedQuotePrice, discountOffList, type, recurringPriceModel, unitOfMeasure, tax, extrafees, extraFeesDetails, discounts);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -321,11 +401,13 @@ public class QuoteDetailsResponseProductsInnerPrice {
     sb.append("    extendedMsrp: ").append(toIndentedString(extendedMsrp)).append("\n");
     sb.append("    extendedQuotePrice: ").append(toIndentedString(extendedQuotePrice)).append("\n");
     sb.append("    discountOffList: ").append(toIndentedString(discountOffList)).append("\n");
-    sb.append("    vendorprice: ").append(toIndentedString(vendorprice)).append("\n");
-    sb.append("    extendedvendorprice: ").append(toIndentedString(extendedvendorprice)).append("\n");
-    sb.append("    totalVisibleReserveQuantity: ").append(toIndentedString(totalVisibleReserveQuantity)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    recurringPriceModel: ").append(toIndentedString(recurringPriceModel)).append("\n");
+    sb.append("    unitOfMeasure: ").append(toIndentedString(unitOfMeasure)).append("\n");
+    sb.append("    tax: ").append(toIndentedString(tax)).append("\n");
+    sb.append("    extrafees: ").append(toIndentedString(extrafees)).append("\n");
+    sb.append("    extraFeesDetails: ").append(toIndentedString(extraFeesDetails)).append("\n");
+    sb.append("    discounts: ").append(toIndentedString(discounts)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -353,11 +435,13 @@ public class QuoteDetailsResponseProductsInnerPrice {
     openapiFields.add("extendedMsrp");
     openapiFields.add("extendedQuotePrice");
     openapiFields.add("discountOffList");
-    openapiFields.add("vendorprice");
-    openapiFields.add("extendedvendorprice");
-    openapiFields.add("totalVisibleReserveQuantity");
     openapiFields.add("type");
     openapiFields.add("recurringPriceModel");
+    openapiFields.add("unitOfMeasure");
+    openapiFields.add("tax");
+    openapiFields.add("extrafees");
+    openapiFields.add("extraFeesDetails");
+    openapiFields.add("discounts");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -392,6 +476,37 @@ public class QuoteDetailsResponseProductsInnerPrice {
       }
       if ((jsonObj.get("recurringPriceModel") != null && !jsonObj.get("recurringPriceModel").isJsonNull()) && !jsonObj.get("recurringPriceModel").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `recurringPriceModel` to be a primitive type in the JSON string but got `%s`", jsonObj.get("recurringPriceModel").toString()));
+      }
+      if ((jsonObj.get("unitOfMeasure") != null && !jsonObj.get("unitOfMeasure").isJsonNull()) && !jsonObj.get("unitOfMeasure").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `unitOfMeasure` to be a primitive type in the JSON string but got `%s`", jsonObj.get("unitOfMeasure").toString()));
+      }
+      if (jsonObj.get("extraFeesDetails") != null && !jsonObj.get("extraFeesDetails").isJsonNull()) {
+        JsonArray jsonArrayextraFeesDetails = jsonObj.getAsJsonArray("extraFeesDetails");
+        if (jsonArrayextraFeesDetails != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("extraFeesDetails").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `extraFeesDetails` to be an array in the JSON string but got `%s`", jsonObj.get("extraFeesDetails").toString()));
+          }
+
+          // validate the optional field `extraFeesDetails` (array)
+          for (int i = 0; i < jsonArrayextraFeesDetails.size(); i++) {
+            QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner.validateJsonElement(jsonArrayextraFeesDetails.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("discounts") != null && !jsonObj.get("discounts").isJsonNull()) {
+        JsonArray jsonArraydiscounts = jsonObj.getAsJsonArray("discounts");
+        if (jsonArraydiscounts != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("discounts").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `discounts` to be an array in the JSON string but got `%s`", jsonObj.get("discounts").toString()));
+          }
+
+          // validate the optional field `discounts` (array)
+          for (int i = 0; i < jsonArraydiscounts.size(); i++) {
+            QuoteDetailsResponseProductsInnerPriceDiscountsInner.validateJsonElement(jsonArraydiscounts.get(i));
+          };
+        }
       }
   }
 

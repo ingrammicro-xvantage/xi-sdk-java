@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class PriceAndAvailabilityRequest {
   public static final String SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS = "showAvailableDiscounts";
   @SerializedName(SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS)
@@ -70,15 +70,15 @@ public class PriceAndAvailabilityRequest {
 
   public static final String SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE = "availabilityByWarehouse";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE)
-  private List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse;
+  private List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
-  private List<PriceAndAvailabilityRequestProductsInner> products;
+  private List<PriceAndAvailabilityRequestProductsInner> products = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes;
+  private List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public PriceAndAvailabilityRequest() {
   }

@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -119,11 +119,11 @@ public class ProductDetailResponse {
 
   public static final String SERIALIZED_NAME_TECHNICAL_SPECIFICATIONS = "technicalSpecifications";
   @SerializedName(SERIALIZED_NAME_TECHNICAL_SPECIFICATIONS)
-  private List<ProductDetailResponseTechnicalSpecificationsInner> technicalSpecifications;
+  private List<ProductDetailResponseTechnicalSpecificationsInner> technicalSpecifications = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_WARRANTY_INFORMATION = "warrantyInformation";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFORMATION)
-  private List<Object> warrantyInformation;
+  private List<Object> warrantyInformation = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_INFORMATION = "additionalInformation";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_INFORMATION)

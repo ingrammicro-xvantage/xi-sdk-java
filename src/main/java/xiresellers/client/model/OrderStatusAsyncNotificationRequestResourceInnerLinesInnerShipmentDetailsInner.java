@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_SHIPMENT_DATE = "shipmentDate";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DATE)
@@ -76,7 +76,7 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
 
   public static final String SERIALIZED_NAME_PACKAGE_DETAILS = "packageDetails";
   @SerializedName(SERIALIZED_NAME_PACKAGE_DETAILS)
-  private List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner> packageDetails;
+  private List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner> packageDetails = new ArrayList<>();
 
   public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner() {
   }

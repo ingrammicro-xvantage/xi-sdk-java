@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
   public static final String SERIALIZED_NAME_DELIVERY_DATE_TYPE = "deliveryDateType";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE_TYPE)
@@ -68,9 +68,9 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
   @SerializedName(SERIALIZED_NAME_DELIVERY_DESCRIPTION)
   private String deliveryDescription;
 
-  public static final String SERIALIZED_NAME_DELIVERED_DATE = "deliveredDate";
-  @SerializedName(SERIALIZED_NAME_DELIVERED_DATE)
-  private String deliveredDate;
+  public static final String SERIALIZED_NAME_DELIVERY_DATE = "deliveryDate";
+  @SerializedName(SERIALIZED_NAME_DELIVERY_DATE)
+  private String deliveryDate;
 
   public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery() {
   }
@@ -151,22 +151,22 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliveredDate(String deliveredDate) {
-    this.deliveredDate = deliveredDate;
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliveryDate(String deliveryDate) {
+    this.deliveryDate = deliveryDate;
     return this;
   }
 
    /**
    * Delivery date.
-   * @return deliveredDate
+   * @return deliveryDate
   **/
   @javax.annotation.Nullable
-  public String getDeliveredDate() {
-    return deliveredDate;
+  public String getDeliveryDate() {
+    return deliveryDate;
   }
 
-  public void setDeliveredDate(String deliveredDate) {
-    this.deliveredDate = deliveredDate;
+  public void setDeliveryDate(String deliveryDate) {
+    this.deliveryDate = deliveryDate;
   }
 
 
@@ -184,12 +184,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
         Objects.equals(this.deliveryDateRange, orderDetailB2BLinesInnerEstimatedDatesInnerDelivery.deliveryDateRange) &&
         Objects.equals(this.deliverySource, orderDetailB2BLinesInnerEstimatedDatesInnerDelivery.deliverySource) &&
         Objects.equals(this.deliveryDescription, orderDetailB2BLinesInnerEstimatedDatesInnerDelivery.deliveryDescription) &&
-        Objects.equals(this.deliveredDate, orderDetailB2BLinesInnerEstimatedDatesInnerDelivery.deliveredDate);
+        Objects.equals(this.deliveryDate, orderDetailB2BLinesInnerEstimatedDatesInnerDelivery.deliveryDate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(deliveryDateType, deliveryDateRange, deliverySource, deliveryDescription, deliveredDate);
+    return Objects.hash(deliveryDateType, deliveryDateRange, deliverySource, deliveryDescription, deliveryDate);
   }
 
   @Override
@@ -200,7 +200,7 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     sb.append("    deliveryDateRange: ").append(toIndentedString(deliveryDateRange)).append("\n");
     sb.append("    deliverySource: ").append(toIndentedString(deliverySource)).append("\n");
     sb.append("    deliveryDescription: ").append(toIndentedString(deliveryDescription)).append("\n");
-    sb.append("    deliveredDate: ").append(toIndentedString(deliveredDate)).append("\n");
+    sb.append("    deliveryDate: ").append(toIndentedString(deliveryDate)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -227,7 +227,7 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     openapiFields.add("deliveryDateRange");
     openapiFields.add("deliverySource");
     openapiFields.add("deliveryDescription");
-    openapiFields.add("deliveredDate");
+    openapiFields.add("deliveryDate");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -267,8 +267,8 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
       if ((jsonObj.get("deliveryDescription") != null && !jsonObj.get("deliveryDescription").isJsonNull()) && !jsonObj.get("deliveryDescription").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `deliveryDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliveryDescription").toString()));
       }
-      if ((jsonObj.get("deliveredDate") != null && !jsonObj.get("deliveredDate").isJsonNull()) && !jsonObj.get("deliveredDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `deliveredDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliveredDate").toString()));
+      if ((jsonObj.get("deliveryDate") != null && !jsonObj.get("deliveryDate").isJsonNull()) && !jsonObj.get("deliveryDate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `deliveryDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliveryDate").toString()));
       }
   }
 

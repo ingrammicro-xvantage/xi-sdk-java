@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class OrderCreateRequestLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -87,15 +87,15 @@ public class OrderCreateRequestLinesInner {
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<OrderCreateRequestLinesInnerAdditionalAttributesInner> additionalAttributes;
+  private List<OrderCreateRequestLinesInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_WARRANTY_INFO = "warrantyInfo";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFO)
-  private List<OrderCreateRequestLinesInnerWarrantyInfoInner> warrantyInfo;
+  private List<OrderCreateRequestLinesInnerWarrantyInfoInner> warrantyInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
-  private List<OrderCreateRequestLinesInnerEndUserInfoInner> endUserInfo;
+  private List<OrderCreateRequestLinesInnerEndUserInfoInner> endUserInfo = new ArrayList<>();
 
   public OrderCreateRequestLinesInner() {
   }

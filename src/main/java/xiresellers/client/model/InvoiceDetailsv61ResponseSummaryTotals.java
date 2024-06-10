@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryTotals
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class InvoiceDetailsv61ResponseSummaryTotals {
   public static final String SERIALIZED_NAME_NET_INVOICE_AMOUNT = "netInvoiceAmount";
   @SerializedName(SERIALIZED_NAME_NET_INVOICE_AMOUNT)
@@ -67,9 +67,9 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
   @SerializedName(SERIALIZED_NAME_TOTAL_TAX_AMOUNT)
   private Double totalTaxAmount;
 
-  public static final String SERIALIZED_NAME_INVOICES_AMOUNT_DUE = "invoicesAmountDue";
-  @SerializedName(SERIALIZED_NAME_INVOICES_AMOUNT_DUE)
-  private Double invoicesAmountDue;
+  public static final String SERIALIZED_NAME_INVOICED_AMOUNT_DUE = "invoicedAmountDue";
+  @SerializedName(SERIALIZED_NAME_INVOICED_AMOUNT_DUE)
+  private Double invoicedAmountDue;
 
   public static final String SERIALIZED_NAME_FREIGHT_AMOUNT = "freightAmount";
   @SerializedName(SERIALIZED_NAME_FREIGHT_AMOUNT)
@@ -154,22 +154,22 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryTotals invoicesAmountDue(Double invoicesAmountDue) {
-    this.invoicesAmountDue = invoicesAmountDue;
+  public InvoiceDetailsv61ResponseSummaryTotals invoicedAmountDue(Double invoicedAmountDue) {
+    this.invoicedAmountDue = invoicedAmountDue;
     return this;
   }
 
    /**
    * Total amount due for the invoice.
-   * @return invoicesAmountDue
+   * @return invoicedAmountDue
   **/
   @javax.annotation.Nullable
-  public Double getInvoicesAmountDue() {
-    return invoicesAmountDue;
+  public Double getInvoicedAmountDue() {
+    return invoicedAmountDue;
   }
 
-  public void setInvoicesAmountDue(Double invoicesAmountDue) {
-    this.invoicesAmountDue = invoicesAmountDue;
+  public void setInvoicedAmountDue(Double invoicedAmountDue) {
+    this.invoicedAmountDue = invoicedAmountDue;
   }
 
 
@@ -206,13 +206,13 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
         Objects.equals(this.discountAmount, invoiceDetailsv61ResponseSummaryTotals.discountAmount) &&
         Objects.equals(this.discountType, invoiceDetailsv61ResponseSummaryTotals.discountType) &&
         Objects.equals(this.totalTaxAmount, invoiceDetailsv61ResponseSummaryTotals.totalTaxAmount) &&
-        Objects.equals(this.invoicesAmountDue, invoiceDetailsv61ResponseSummaryTotals.invoicesAmountDue) &&
+        Objects.equals(this.invoicedAmountDue, invoiceDetailsv61ResponseSummaryTotals.invoicedAmountDue) &&
         Objects.equals(this.freightAmount, invoiceDetailsv61ResponseSummaryTotals.freightAmount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(netInvoiceAmount, discountAmount, discountType, totalTaxAmount, invoicesAmountDue, freightAmount);
+    return Objects.hash(netInvoiceAmount, discountAmount, discountType, totalTaxAmount, invoicedAmountDue, freightAmount);
   }
 
   @Override
@@ -223,7 +223,7 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
     sb.append("    discountAmount: ").append(toIndentedString(discountAmount)).append("\n");
     sb.append("    discountType: ").append(toIndentedString(discountType)).append("\n");
     sb.append("    totalTaxAmount: ").append(toIndentedString(totalTaxAmount)).append("\n");
-    sb.append("    invoicesAmountDue: ").append(toIndentedString(invoicesAmountDue)).append("\n");
+    sb.append("    invoicedAmountDue: ").append(toIndentedString(invoicedAmountDue)).append("\n");
     sb.append("    freightAmount: ").append(toIndentedString(freightAmount)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -251,7 +251,7 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
     openapiFields.add("discountAmount");
     openapiFields.add("discountType");
     openapiFields.add("totalTaxAmount");
-    openapiFields.add("invoicesAmountDue");
+    openapiFields.add("invoicedAmountDue");
     openapiFields.add("freightAmount");
 
     // a set of required properties/fields (JSON key names)

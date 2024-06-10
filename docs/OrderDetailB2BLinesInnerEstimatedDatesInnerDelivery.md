@@ -11,7 +11,7 @@
 |**deliveryDateRange** | [**OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange**](OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange.md) |  |  [optional] |
 |**deliverySource** | **String** | Source of the delivery. |  [optional] |
 |**deliveryDescription** | **String** | Delivery description. |  [optional] |
-|**deliveredDate** | **String** | Delivery date. |  [optional] |
+|**deliveryDate** | **String** | Delivery date. |  [optional] |
 
 
 

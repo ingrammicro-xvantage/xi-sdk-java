@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -19,13 +19,17 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.QuoteDetailsResponseAdditionalAttributesInner;
 import xiresellers.client.model.QuoteDetailsResponseEndUserInfo;
 import xiresellers.client.model.QuoteDetailsResponseProductsInner;
+import xiresellers.client.model.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner;
 import xiresellers.client.model.QuoteDetailsResponseResellerInfo;
+import xiresellers.client.model.QuoteDetailsResponseShippingInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -57,6 +61,14 @@ public class QuoteDetailsResponseTest {
     @Test
     public void quoteNumberTest() {
         // TODO: test quoteNumber
+    }
+
+    /**
+     * Test the property 'quoteGuid'
+     */
+    @Test
+    public void quoteGuidTest() {
+        // TODO: test quoteGuid
     }
 
     /**
@@ -124,11 +136,27 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
+     * Test the property 'vendorQuoteNumber'
+     */
+    @Test
+    public void vendorQuoteNumberTest() {
+        // TODO: test vendorQuoteNumber
+    }
+
+    /**
      * Test the property 'status'
      */
     @Test
     public void statusTest() {
         // TODO: test status
+    }
+
+    /**
+     * Test the property 'statusReason'
+     */
+    @Test
+    public void statusReasonTest() {
+        // TODO: test statusReason
     }
 
     /**
@@ -212,11 +240,27 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
-     * Test the property 'quoteSubType'
+     * Test the property 'imWarehouse'
      */
     @Test
-    public void quoteSubTypeTest() {
-        // TODO: test quoteSubType
+    public void imWarehouseTest() {
+        // TODO: test imWarehouse
+    }
+
+    /**
+     * Test the property 'imWarehouseGstNumber'
+     */
+    @Test
+    public void imWarehouseGstNumberTest() {
+        // TODO: test imWarehouseGstNumber
+    }
+
+    /**
+     * Test the property 'paymentTermsName'
+     */
+    @Test
+    public void paymentTermsNameTest() {
+        // TODO: test paymentTermsName
     }
 
     /**
@@ -233,6 +277,14 @@ public class QuoteDetailsResponseTest {
     @Test
     public void endUserInfoTest() {
         // TODO: test endUserInfo
+    }
+
+    /**
+     * Test the property 'shippingInfo'
+     */
+    @Test
+    public void shippingInfoTest() {
+        // TODO: test shippingInfo
     }
 
     /**
@@ -268,11 +320,43 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
+     * Test the property 'extraFeesTotal'
+     */
+    @Test
+    public void extraFeesTotalTest() {
+        // TODO: test extraFeesTotal
+    }
+
+    /**
+     * Test the property 'extraFeesTotalDetails'
+     */
+    @Test
+    public void extraFeesTotalDetailsTest() {
+        // TODO: test extraFeesTotalDetails
+    }
+
+    /**
+     * Test the property 'taxTotal'
+     */
+    @Test
+    public void taxTotalTest() {
+        // TODO: test taxTotal
+    }
+
+    /**
      * Test the property 'extendedQuotePriceTotal'
      */
     @Test
     public void extendedQuotePriceTotalTest() {
         // TODO: test extendedQuotePriceTotal
+    }
+
+    /**
+     * Test the property 'freightAmount'
+     */
+    @Test
+    public void freightAmountTest() {
+        // TODO: test freightAmount
     }
 
     /**

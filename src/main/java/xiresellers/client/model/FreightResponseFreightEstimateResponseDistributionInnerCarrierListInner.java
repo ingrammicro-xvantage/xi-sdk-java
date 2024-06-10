@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -20,7 +20,6 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.Arrays;
 
 import com.google.gson.Gson;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
@@ -66,11 +65,11 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
 
   public static final String SERIALIZED_NAME_ESTIMATED_FREIGHT_CHARGE = "estimatedFreightCharge";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_FREIGHT_CHARGE)
-  private BigDecimal estimatedFreightCharge;
+  private String estimatedFreightCharge;
 
   public static final String SERIALIZED_NAME_DAYS_IN_TRANSIT = "daysInTransit";
   @SerializedName(SERIALIZED_NAME_DAYS_IN_TRANSIT)
-  private Integer daysInTransit;
+  private String daysInTransit;
 
   public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner() {
   }
@@ -132,7 +131,7 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner estimatedFreightCharge(BigDecimal estimatedFreightCharge) {
+  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner estimatedFreightCharge(String estimatedFreightCharge) {
     this.estimatedFreightCharge = estimatedFreightCharge;
     return this;
   }
@@ -142,16 +141,16 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
    * @return estimatedFreightCharge
   **/
   @javax.annotation.Nullable
-  public BigDecimal getEstimatedFreightCharge() {
+  public String getEstimatedFreightCharge() {
     return estimatedFreightCharge;
   }
 
-  public void setEstimatedFreightCharge(BigDecimal estimatedFreightCharge) {
+  public void setEstimatedFreightCharge(String estimatedFreightCharge) {
     this.estimatedFreightCharge = estimatedFreightCharge;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner daysInTransit(Integer daysInTransit) {
+  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner daysInTransit(String daysInTransit) {
     this.daysInTransit = daysInTransit;
     return this;
   }
@@ -161,11 +160,11 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
    * @return daysInTransit
   **/
   @javax.annotation.Nullable
-  public Integer getDaysInTransit() {
+  public String getDaysInTransit() {
     return daysInTransit;
   }
 
-  public void setDaysInTransit(Integer daysInTransit) {
+  public void setDaysInTransit(String daysInTransit) {
     this.daysInTransit = daysInTransit;
   }
 
@@ -262,6 +261,12 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
       }
       if ((jsonObj.get("carrierMode") != null && !jsonObj.get("carrierMode").isJsonNull()) && !jsonObj.get("carrierMode").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `carrierMode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carrierMode").toString()));
+      }
+      if ((jsonObj.get("estimatedFreightCharge") != null && !jsonObj.get("estimatedFreightCharge").isJsonNull()) && !jsonObj.get("estimatedFreightCharge").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `estimatedFreightCharge` to be a primitive type in the JSON string but got `%s`", jsonObj.get("estimatedFreightCharge").toString()));
+      }
+      if ((jsonObj.get("daysInTransit") != null && !jsonObj.get("daysInTransit").isJsonNull()) && !jsonObj.get("daysInTransit").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `daysInTransit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("daysInTransit").toString()));
       }
   }
 

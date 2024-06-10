@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -27,6 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
+import xiresellers.client.model.AsyncOrderCreateDTO;
+import xiresellers.client.model.AsyncOrderCreateResponse;
 import xiresellers.client.model.ErrorResponse;
 import xiresellers.client.model.ErrorResponseDTO;
 import java.time.LocalDate;
@@ -36,6 +38,8 @@ import xiresellers.client.model.OrderDetailB2B;
 import xiresellers.client.model.OrderModifyRequest;
 import xiresellers.client.model.OrderModifyResponse;
 import xiresellers.client.model.OrderSearchResponse;
+import xiresellers.client.model.PostCreateorderV7400Response;
+import xiresellers.client.model.PostCreateorderV7500Response;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -979,6 +983,184 @@ public class OrdersApi {
 
         okhttp3.Call localVarCall = postCreateorderV6ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateRequest, imSenderID, _callback);
         Type localVarReturnType = new TypeToken<OrderCreateResponse>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for postCreateorderV7
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems. (required)
+     * @param asyncOrderCreateDTO  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call postCreateorderV7Call(String imCustomerNumber, String imCountryCode, String imCorrelationID, AsyncOrderCreateDTO asyncOrderCreateDTO, String imSenderID, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = asyncOrderCreateDTO;
+
+        // create path and map variables
+        String localVarPath = "/resellers/v7/orders";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "application" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call postCreateorderV7ValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, AsyncOrderCreateDTO asyncOrderCreateDTO, String imSenderID, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'imCustomerNumber' is set
+        if (imCustomerNumber == null) {
+            throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling postCreateorderV7(Async)");
+        }
+
+        // verify the required parameter 'imCountryCode' is set
+        if (imCountryCode == null) {
+            throw new ApiException("Missing the required parameter 'imCountryCode' when calling postCreateorderV7(Async)");
+        }
+
+        // verify the required parameter 'imCorrelationID' is set
+        if (imCorrelationID == null) {
+            throw new ApiException("Missing the required parameter 'imCorrelationID' when calling postCreateorderV7(Async)");
+        }
+
+        // verify the required parameter 'asyncOrderCreateDTO' is set
+        if (asyncOrderCreateDTO == null) {
+            throw new ApiException("Missing the required parameter 'asyncOrderCreateDTO' when calling postCreateorderV7(Async)");
+        }
+
+        return postCreateorderV7Call(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID, _callback);
+
+    }
+
+    /**
+     * Create your Order v7
+     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems. (required)
+     * @param asyncOrderCreateDTO  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. (optional)
+     * @return AsyncOrderCreateResponse
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public AsyncOrderCreateResponse postCreateorderV7(String imCustomerNumber, String imCountryCode, String imCorrelationID, AsyncOrderCreateDTO asyncOrderCreateDTO, String imSenderID) throws ApiException {
+        ApiResponse<AsyncOrderCreateResponse> localVarResp = postCreateorderV7WithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID);
+        return localVarResp.getData();
+    }
+
+    /**
+     * Create your Order v7
+     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems. (required)
+     * @param asyncOrderCreateDTO  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. (optional)
+     * @return ApiResponse&lt;AsyncOrderCreateResponse&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<AsyncOrderCreateResponse> postCreateorderV7WithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, AsyncOrderCreateDTO asyncOrderCreateDTO, String imSenderID) throws ApiException {
+        okhttp3.Call localVarCall = postCreateorderV7ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID, null);
+        Type localVarReturnType = new TypeToken<AsyncOrderCreateResponse>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Create your Order v7 (asynchronously)
+     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems. (required)
+     * @param asyncOrderCreateDTO  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call postCreateorderV7Async(String imCustomerNumber, String imCountryCode, String imCorrelationID, AsyncOrderCreateDTO asyncOrderCreateDTO, String imSenderID, final ApiCallback<AsyncOrderCreateResponse> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = postCreateorderV7ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID, _callback);
+        Type localVarReturnType = new TypeToken<AsyncOrderCreateResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

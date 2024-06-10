@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * OrderSearchResponseOrdersInnerSubOrdersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class OrderSearchResponseOrdersInnerSubOrdersInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
@@ -69,7 +69,7 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner> links;
+  private List<OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner> links = new ArrayList<>();
 
   public OrderSearchResponseOrdersInnerSubOrdersInner() {
   }

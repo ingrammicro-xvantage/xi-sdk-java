@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -57,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class OrderCreateResponseOrdersInner {
   public static final String SERIALIZED_NAME_NUMBER_OF_LINES_WITH_SUCCESS = "numberOfLinesWithSuccess";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_LINES_WITH_SUCCESS)
@@ -105,23 +105,23 @@ public class OrderCreateResponseOrdersInner {
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
-  private List<OrderCreateResponseOrdersInnerLinesInner> lines;
+  private List<OrderCreateResponseOrdersInnerLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_MISCELLANEOUS_CHARGES = "miscellaneousCharges";
   @SerializedName(SERIALIZED_NAME_MISCELLANEOUS_CHARGES)
-  private List<OrderCreateResponseOrdersInnerMiscellaneousChargesInner> miscellaneousCharges;
+  private List<OrderCreateResponseOrdersInnerMiscellaneousChargesInner> miscellaneousCharges = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<OrderCreateResponseOrdersInnerLinksInner> links;
+  private List<OrderCreateResponseOrdersInnerLinksInner> links = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_REJECTED_LINE_ITEMS = "rejectedLineItems";
   @SerializedName(SERIALIZED_NAME_REJECTED_LINE_ITEMS)
-  private List<OrderCreateResponseOrdersInnerRejectedLineItemsInner> rejectedLineItems;
+  private List<OrderCreateResponseOrdersInnerRejectedLineItemsInner> rejectedLineItems = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<OrderCreateResponseOrdersInnerAdditionalAttributesInner> additionalAttributes;
+  private List<OrderCreateResponseOrdersInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public OrderCreateResponseOrdersInner() {
   }

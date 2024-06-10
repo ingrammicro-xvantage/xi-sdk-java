@@ -16,16 +16,22 @@
 |**ingramPartNumber** | **String** | Ingram Micro SKU (stock keeping unit). An identification, usually alphanumeric, of a particular product that allows it to be tracked for inventory purposes |  [optional] |
 |**vendorPartNumber** | **String** | Vendor Part Number |  [optional] |
 |**description** | **String** | Product description.  Note - The quote view api returns only the product short description as maintained in Ingram Micro&#39;s crm system.  For long descriptions, please refer to alternative information sources. |  [optional] |
-|**weight** | **Integer** | Weight is provided based on country standard.  For countries following Imperial standards - weight is presented as pounds with decimal.  In countries following metric standards, weight is provided as kilograms with decimal. |  [optional] |
+|**weight** | **BigDecimal** | Weight is provided based on country standard.  For countries following Imperial standards - weight is presented as pounds with decimal.  In countries following metric standards, weight is provided as kilograms with decimal. |  [optional] |
 |**weightUom** | **String** | Unit of measure |  [optional] |
 |**isSuggestionProduct** | **Boolean** | Flag to indicate if a product line item is a suggested product.  The suggested product is provided in addition to the requested quoted products and a suggested option.  Suggested products are grouped together for subtotal and total calculations. |  [optional] |
 |**vpnCategory** | **String** | Vendor product category specific to Cisco. HWDW (hardware) or service. |  [optional] |
 |**quoteProductsSupplierPartAuxiliaryId** | **String** | Vendor product configuration ID specific to Cisco. |  [optional] |
 |**vendorName** | **String** | Vendor name of the product |  [optional] |
 |**terms** | **String** | Terms of the quote |  [optional] |
+|**planDescription** | **String** |  |  [optional] |
 |**isSubscription** | **Boolean** |  |  [optional] |
 |**resellerMargin** | **String** |  |  [optional] |
+|**requestedStartDate** | **String** |  |  [optional] |
+|**startDate** | **String** |  |  [optional] |
+|**endDate** | **String** |  |  [optional] |
+|**serialNumber** | **String** |  |  [optional] |
 |**price** | [**QuoteDetailsResponseProductsInnerPrice**](QuoteDetailsResponseProductsInnerPrice.md) |  |  [optional] |
+|**billDetails** | [**List&lt;QuoteDetailsResponseProductsInnerBillDetailsInner&gt;**](QuoteDetailsResponseProductsInnerBillDetailsInner.md) |  |  [optional] |
 
 
 

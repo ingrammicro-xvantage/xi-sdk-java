@@ -1,8 +1,6 @@
+
 # xi.sdk.resellers
 
-XI Sdk Resellers
-- API version: 1.0.0
-  - Build date: 2024-02-27T08:54:45.542575Z[Etc/UTC]
 
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
 
@@ -78,7 +76,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>xi.sdk.resellers</groupId>
   <artifactId>xi.sdk.resellers</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -163,11 +161,11 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**getOrderdetailsV61**](docs/OrdersApi.md#getOrderdetailsV61) | **GET** /resellers/v6.1/orders/{ordernumber} | Get Order Details v6.1
 *OrdersApi* | [**getResellersV6Ordersearch**](docs/OrdersApi.md#getResellersV6Ordersearch) | **GET** /resellers/v6/orders/search | Search your Orders
 *OrdersApi* | [**postCreateorderV6**](docs/OrdersApi.md#postCreateorderV6) | **POST** /resellers/v6/orders | Create your Order
+*OrdersApi* | [**postCreateorderV7**](docs/OrdersApi.md#postCreateorderV7) | **POST** /resellers/v7/orders | Create your Order v7
 *OrdersApi* | [**putOrdermodify**](docs/OrdersApi.md#putOrdermodify) | **PUT** /resellers/v6/orders/{orderNumber} | Modify your Order
 *ProductCatalogApi* | [**getResellerV6Productdetail**](docs/ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details
 *ProductCatalogApi* | [**getResellerV6Productsearch**](docs/ProductCatalogApi.md#getResellerV6Productsearch) | **GET** /resellers/v6/catalog | Search Products
 *ProductCatalogApi* | [**postPriceandavailability**](docs/ProductCatalogApi.md#postPriceandavailability) | **POST** /resellers/v6/catalog/priceandavailability | Price and Availability
-*QuoteToOrderApi* | [**postQuoteToOrderV6**](docs/QuoteToOrderApi.md#postQuoteToOrderV6) | **POST** /resellers/v6/q2o/orders | Quote To Order
 *QuotesApi* | [**getQuotessearchV6**](docs/QuotesApi.md#getQuotessearchV6) | **GET** /resellers/v6/quotes/search | Quote Search
 *QuotesApi* | [**getResellerV6ValidateQuote**](docs/QuotesApi.md#getResellerV6ValidateQuote) | **GET** /resellers/v6/q2o/validatequote | Validate Quote
 *QuotesApi* | [**getResellersV6Quotes**](docs/QuotesApi.md#getResellersV6Quotes) | **GET** /resellers/v6/quotes/{quoteNumber} | Get Quote Details
@@ -182,6 +180,19 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [AccesstokenResponse](docs/AccesstokenResponse.md)
+ - [AsyncOrderCreateDTO](docs/AsyncOrderCreateDTO.md)
+ - [AsyncOrderCreateDTOAdditionalAttributesInner](docs/AsyncOrderCreateDTOAdditionalAttributesInner.md)
+ - [AsyncOrderCreateDTOEndUserInfo](docs/AsyncOrderCreateDTOEndUserInfo.md)
+ - [AsyncOrderCreateDTOLinesInner](docs/AsyncOrderCreateDTOLinesInner.md)
+ - [AsyncOrderCreateDTOLinesInnerEndUserInfoInner](docs/AsyncOrderCreateDTOLinesInnerEndUserInfoInner.md)
+ - [AsyncOrderCreateDTOResellerInfo](docs/AsyncOrderCreateDTOResellerInfo.md)
+ - [AsyncOrderCreateDTOShipToInfo](docs/AsyncOrderCreateDTOShipToInfo.md)
+ - [AsyncOrderCreateDTOShipmentDetails](docs/AsyncOrderCreateDTOShipmentDetails.md)
+ - [AsyncOrderCreateDTOVmfadditionalAttributesInner](docs/AsyncOrderCreateDTOVmfadditionalAttributesInner.md)
+ - [AsyncOrderCreateDTOWarrantyInfoInner](docs/AsyncOrderCreateDTOWarrantyInfoInner.md)
+ - [AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner](docs/AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner.md)
+ - [AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner](docs/AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner.md)
+ - [AsyncOrderCreateResponse](docs/AsyncOrderCreateResponse.md)
  - [AvailabilityAsyncNotificationRequest](docs/AvailabilityAsyncNotificationRequest.md)
  - [AvailabilityAsyncNotificationRequestResourceInner](docs/AvailabilityAsyncNotificationRequestResourceInner.md)
  - [AvailabilityAsyncNotificationRequestResourceInnerLinksInner](docs/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.md)
@@ -209,7 +220,6 @@ Class | Method | HTTP request | Description
  - [GetAccesstoken500ResponseFaultDetail](docs/GetAccesstoken500ResponseFaultDetail.md)
  - [GetResellerV6ValidateQuote400Response](docs/GetResellerV6ValidateQuote400Response.md)
  - [GetResellerV6ValidateQuote400ResponseFieldsInner](docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md)
- - [GetResellerV6ValidateQuote500Response](docs/GetResellerV6ValidateQuote500Response.md)
  - [InvoiceDetailsv61Response](docs/InvoiceDetailsv61Response.md)
  - [InvoiceDetailsv61ResponseBillToInfo](docs/InvoiceDetailsv61ResponseBillToInfo.md)
  - [InvoiceDetailsv61ResponseFxRateInfo](docs/InvoiceDetailsv61ResponseFxRateInfo.md)
@@ -293,8 +303,9 @@ Class | Method | HTTP request | Description
  - [OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner](docs/OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner.md)
  - [OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner](docs/OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner.md)
  - [OrderStatusAsyncNotificationRequestResourceInnerLinksInner](docs/OrderStatusAsyncNotificationRequestResourceInnerLinksInner.md)
- - [PostQuoteToOrderV6400Response](docs/PostQuoteToOrderV6400Response.md)
- - [PostQuoteToOrderV6400ResponseFieldsInner](docs/PostQuoteToOrderV6400ResponseFieldsInner.md)
+ - [PostCreateorderV7400Response](docs/PostCreateorderV7400Response.md)
+ - [PostCreateorderV7400ResponseFieldsInner](docs/PostCreateorderV7400ResponseFieldsInner.md)
+ - [PostCreateorderV7500Response](docs/PostCreateorderV7500Response.md)
  - [PostRenewalssearch400Response](docs/PostRenewalssearch400Response.md)
  - [PriceAndAvailabilityRequest](docs/PriceAndAvailabilityRequest.md)
  - [PriceAndAvailabilityRequestAdditionalAttributesInner](docs/PriceAndAvailabilityRequestAdditionalAttributesInner.md)
@@ -324,19 +335,15 @@ Class | Method | HTTP request | Description
  - [QuoteDetailsResponseAdditionalAttributesInner](docs/QuoteDetailsResponseAdditionalAttributesInner.md)
  - [QuoteDetailsResponseEndUserInfo](docs/QuoteDetailsResponseEndUserInfo.md)
  - [QuoteDetailsResponseProductsInner](docs/QuoteDetailsResponseProductsInner.md)
+ - [QuoteDetailsResponseProductsInnerBillDetailsInner](docs/QuoteDetailsResponseProductsInnerBillDetailsInner.md)
  - [QuoteDetailsResponseProductsInnerPrice](docs/QuoteDetailsResponseProductsInnerPrice.md)
+ - [QuoteDetailsResponseProductsInnerPriceDiscountsInner](docs/QuoteDetailsResponseProductsInnerPriceDiscountsInner.md)
+ - [QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner](docs/QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner.md)
  - [QuoteDetailsResponseResellerInfo](docs/QuoteDetailsResponseResellerInfo.md)
+ - [QuoteDetailsResponseShippingInfo](docs/QuoteDetailsResponseShippingInfo.md)
  - [QuoteSearchResponse](docs/QuoteSearchResponse.md)
  - [QuoteSearchResponseQuotesInner](docs/QuoteSearchResponseQuotesInner.md)
  - [QuoteSearchResponseQuotesInnerLinks](docs/QuoteSearchResponseQuotesInnerLinks.md)
- - [QuoteToOrderDetailsDTO](docs/QuoteToOrderDetailsDTO.md)
- - [QuoteToOrderDetailsDTOAdditionalAttributesInner](docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md)
- - [QuoteToOrderDetailsDTOEndUserInfo](docs/QuoteToOrderDetailsDTOEndUserInfo.md)
- - [QuoteToOrderDetailsDTOLinesInner](docs/QuoteToOrderDetailsDTOLinesInner.md)
- - [QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner](docs/QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.md)
- - [QuoteToOrderDetailsDTOShipToInfo](docs/QuoteToOrderDetailsDTOShipToInfo.md)
- - [QuoteToOrderDetailsDTOVmfadditionalAttributesInner](docs/QuoteToOrderDetailsDTOVmfadditionalAttributesInner.md)
- - [QuoteToOrderResponse](docs/QuoteToOrderResponse.md)
  - [RenewalsDetailsResponse](docs/RenewalsDetailsResponse.md)
  - [RenewalsDetailsResponseAdditionalAttributesInner](docs/RenewalsDetailsResponseAdditionalAttributesInner.md)
  - [RenewalsDetailsResponseEndUserInfo](docs/RenewalsDetailsResponseEndUserInfo.md)
@@ -365,6 +372,7 @@ Class | Method | HTTP request | Description
  - [ReturnsSearchResponseReturnsClaimsInnerLinksInner](docs/ReturnsSearchResponseReturnsClaimsInnerLinksInner.md)
  - [ValidateQuoteResponse](docs/ValidateQuoteResponse.md)
  - [ValidateQuoteResponseLinesInner](docs/ValidateQuoteResponseLinesInner.md)
+ - [ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner](docs/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.md)
  - [ValidateQuoteResponseVmfAdditionalAttributesInner](docs/ValidateQuoteResponseVmfAdditionalAttributesInner.md)
 
 

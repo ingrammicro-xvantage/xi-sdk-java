@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -20,13 +20,17 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.QuoteDetailsResponseAdditionalAttributesInner;
 import xiresellers.client.model.QuoteDetailsResponseEndUserInfo;
 import xiresellers.client.model.QuoteDetailsResponseProductsInner;
+import xiresellers.client.model.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner;
 import xiresellers.client.model.QuoteDetailsResponseResellerInfo;
+import xiresellers.client.model.QuoteDetailsResponseShippingInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -55,7 +59,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-27T08:54:45.542575Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
@@ -64,6 +68,10 @@ public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
   private String quoteNumber;
+
+  public static final String SERIALIZED_NAME_QUOTE_GUID = "quoteGuid";
+  @SerializedName(SERIALIZED_NAME_QUOTE_GUID)
+  private String quoteGuid;
 
   public static final String SERIALIZED_NAME_REVISION = "revision";
   @SerializedName(SERIALIZED_NAME_REVISION)
@@ -97,9 +105,17 @@ public class QuoteDetailsResponse {
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_EXPIRATION_DATE)
   private String specialBidExpirationDate;
 
+  public static final String SERIALIZED_NAME_VENDOR_QUOTE_NUMBER = "vendorQuoteNumber";
+  @SerializedName(SERIALIZED_NAME_VENDOR_QUOTE_NUMBER)
+  private String vendorQuoteNumber;
+
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
   private String status;
+
+  public static final String SERIALIZED_NAME_STATUS_REASON = "statusReason";
+  @SerializedName(SERIALIZED_NAME_STATUS_REASON)
+  private String statusReason;
 
   public static final String SERIALIZED_NAME_CLOSING_REASON = "closingReason";
   @SerializedName(SERIALIZED_NAME_CLOSING_REASON)
@@ -141,9 +157,17 @@ public class QuoteDetailsResponse {
   @SerializedName(SERIALIZED_NAME_LEASING_INSTRUCTIONS)
   private String leasingInstructions;
 
-  public static final String SERIALIZED_NAME_QUOTE_SUB_TYPE = "quoteSubType";
-  @SerializedName(SERIALIZED_NAME_QUOTE_SUB_TYPE)
-  private String quoteSubType;
+  public static final String SERIALIZED_NAME_IM_WAREHOUSE = "imWarehouse";
+  @SerializedName(SERIALIZED_NAME_IM_WAREHOUSE)
+  private String imWarehouse;
+
+  public static final String SERIALIZED_NAME_IM_WAREHOUSE_GST_NUMBER = "imWarehouseGstNumber";
+  @SerializedName(SERIALIZED_NAME_IM_WAREHOUSE_GST_NUMBER)
+  private String imWarehouseGstNumber;
+
+  public static final String SERIALIZED_NAME_PAYMENT_TERMS_NAME = "paymentTermsName";
+  @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_NAME)
+  private String paymentTermsName;
 
   public static final String SERIALIZED_NAME_RESELLER_INFO = "resellerInfo";
   @SerializedName(SERIALIZED_NAME_RESELLER_INFO)
@@ -153,9 +177,13 @@ public class QuoteDetailsResponse {
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
   private QuoteDetailsResponseEndUserInfo endUserInfo;
 
+  public static final String SERIALIZED_NAME_SHIPPING_INFO = "shippingInfo";
+  @SerializedName(SERIALIZED_NAME_SHIPPING_INFO)
+  private QuoteDetailsResponseShippingInfo shippingInfo;
+
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
-  private List<QuoteDetailsResponseProductsInner> products;
+  private List<QuoteDetailsResponseProductsInner> products = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PRODUCTS_COUNT = "productsCount";
   @SerializedName(SERIALIZED_NAME_PRODUCTS_COUNT)
@@ -163,15 +191,31 @@ public class QuoteDetailsResponse {
 
   public static final String SERIALIZED_NAME_EXTENDED_MSRP_TOTAL = "extendedMsrpTotal";
   @SerializedName(SERIALIZED_NAME_EXTENDED_MSRP_TOTAL)
-  private Integer extendedMsrpTotal;
+  private BigDecimal extendedMsrpTotal;
 
   public static final String SERIALIZED_NAME_QUANTITY_TOTAL = "quantityTotal";
   @SerializedName(SERIALIZED_NAME_QUANTITY_TOTAL)
   private Integer quantityTotal;
 
+  public static final String SERIALIZED_NAME_EXTRA_FEES_TOTAL = "extraFeesTotal";
+  @SerializedName(SERIALIZED_NAME_EXTRA_FEES_TOTAL)
+  private BigDecimal extraFeesTotal;
+
+  public static final String SERIALIZED_NAME_EXTRA_FEES_TOTAL_DETAILS = "extraFeesTotalDetails";
+  @SerializedName(SERIALIZED_NAME_EXTRA_FEES_TOTAL_DETAILS)
+  private List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesTotalDetails = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_TAX_TOTAL = "taxTotal";
+  @SerializedName(SERIALIZED_NAME_TAX_TOTAL)
+  private BigDecimal taxTotal;
+
   public static final String SERIALIZED_NAME_EXTENDED_QUOTE_PRICE_TOTAL = "extendedQuotePriceTotal";
   @SerializedName(SERIALIZED_NAME_EXTENDED_QUOTE_PRICE_TOTAL)
-  private Integer extendedQuotePriceTotal;
+  private BigDecimal extendedQuotePriceTotal;
+
+  public static final String SERIALIZED_NAME_FREIGHT_AMOUNT = "freightAmount";
+  @SerializedName(SERIALIZED_NAME_FREIGHT_AMOUNT)
+  private BigDecimal freightAmount;
 
   public static final String SERIALIZED_NAME_TOTAL_QUOTE_AMOUNT = "totalQuoteAmount";
   @SerializedName(SERIALIZED_NAME_TOTAL_QUOTE_AMOUNT)
@@ -179,7 +223,7 @@ public class QuoteDetailsResponse {
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<QuoteDetailsResponseAdditionalAttributesInner> additionalAttributes;
+  private List<QuoteDetailsResponseAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public QuoteDetailsResponse() {
   }
@@ -219,6 +263,25 @@ public class QuoteDetailsResponse {
 
   public void setQuoteNumber(String quoteNumber) {
     this.quoteNumber = quoteNumber;
+  }
+
+
+  public QuoteDetailsResponse quoteGuid(String quoteGuid) {
+    this.quoteGuid = quoteGuid;
+    return this;
+  }
+
+   /**
+   * Get quoteGuid
+   * @return quoteGuid
+  **/
+  @javax.annotation.Nullable
+  public String getQuoteGuid() {
+    return quoteGuid;
+  }
+
+  public void setQuoteGuid(String quoteGuid) {
+    this.quoteGuid = quoteGuid;
   }
 
 
@@ -374,6 +437,25 @@ public class QuoteDetailsResponse {
   }
 
 
+  public QuoteDetailsResponse vendorQuoteNumber(String vendorQuoteNumber) {
+    this.vendorQuoteNumber = vendorQuoteNumber;
+    return this;
+  }
+
+   /**
+   * Get vendorQuoteNumber
+   * @return vendorQuoteNumber
+  **/
+  @javax.annotation.Nullable
+  public String getVendorQuoteNumber() {
+    return vendorQuoteNumber;
+  }
+
+  public void setVendorQuoteNumber(String vendorQuoteNumber) {
+    this.vendorQuoteNumber = vendorQuoteNumber;
+  }
+
+
   public QuoteDetailsResponse status(String status) {
     this.status = status;
     return this;
@@ -390,6 +472,25 @@ public class QuoteDetailsResponse {
 
   public void setStatus(String status) {
     this.status = status;
+  }
+
+
+  public QuoteDetailsResponse statusReason(String statusReason) {
+    this.statusReason = statusReason;
+    return this;
+  }
+
+   /**
+   * Get statusReason
+   * @return statusReason
+  **/
+  @javax.annotation.Nullable
+  public String getStatusReason() {
+    return statusReason;
+  }
+
+  public void setStatusReason(String statusReason) {
+    this.statusReason = statusReason;
   }
 
 
@@ -583,22 +684,60 @@ public class QuoteDetailsResponse {
   }
 
 
-  public QuoteDetailsResponse quoteSubType(String quoteSubType) {
-    this.quoteSubType = quoteSubType;
+  public QuoteDetailsResponse imWarehouse(String imWarehouse) {
+    this.imWarehouse = imWarehouse;
     return this;
   }
 
    /**
-   * Get quoteSubType
-   * @return quoteSubType
+   * Warehouse name and Address
+   * @return imWarehouse
   **/
   @javax.annotation.Nullable
-  public String getQuoteSubType() {
-    return quoteSubType;
+  public String getImWarehouse() {
+    return imWarehouse;
   }
 
-  public void setQuoteSubType(String quoteSubType) {
-    this.quoteSubType = quoteSubType;
+  public void setImWarehouse(String imWarehouse) {
+    this.imWarehouse = imWarehouse;
+  }
+
+
+  public QuoteDetailsResponse imWarehouseGstNumber(String imWarehouseGstNumber) {
+    this.imWarehouseGstNumber = imWarehouseGstNumber;
+    return this;
+  }
+
+   /**
+   * Warehouse GST Number
+   * @return imWarehouseGstNumber
+  **/
+  @javax.annotation.Nullable
+  public String getImWarehouseGstNumber() {
+    return imWarehouseGstNumber;
+  }
+
+  public void setImWarehouseGstNumber(String imWarehouseGstNumber) {
+    this.imWarehouseGstNumber = imWarehouseGstNumber;
+  }
+
+
+  public QuoteDetailsResponse paymentTermsName(String paymentTermsName) {
+    this.paymentTermsName = paymentTermsName;
+    return this;
+  }
+
+   /**
+   * Get paymentTermsName
+   * @return paymentTermsName
+  **/
+  @javax.annotation.Nullable
+  public String getPaymentTermsName() {
+    return paymentTermsName;
+  }
+
+  public void setPaymentTermsName(String paymentTermsName) {
+    this.paymentTermsName = paymentTermsName;
   }
 
 
@@ -637,6 +776,25 @@ public class QuoteDetailsResponse {
 
   public void setEndUserInfo(QuoteDetailsResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
+  }
+
+
+  public QuoteDetailsResponse shippingInfo(QuoteDetailsResponseShippingInfo shippingInfo) {
+    this.shippingInfo = shippingInfo;
+    return this;
+  }
+
+   /**
+   * Get shippingInfo
+   * @return shippingInfo
+  **/
+  @javax.annotation.Nullable
+  public QuoteDetailsResponseShippingInfo getShippingInfo() {
+    return shippingInfo;
+  }
+
+  public void setShippingInfo(QuoteDetailsResponseShippingInfo shippingInfo) {
+    this.shippingInfo = shippingInfo;
   }
 
 
@@ -686,7 +844,7 @@ public class QuoteDetailsResponse {
   }
 
 
-  public QuoteDetailsResponse extendedMsrpTotal(Integer extendedMsrpTotal) {
+  public QuoteDetailsResponse extendedMsrpTotal(BigDecimal extendedMsrpTotal) {
     this.extendedMsrpTotal = extendedMsrpTotal;
     return this;
   }
@@ -696,11 +854,11 @@ public class QuoteDetailsResponse {
    * @return extendedMsrpTotal
   **/
   @javax.annotation.Nullable
-  public Integer getExtendedMsrpTotal() {
+  public BigDecimal getExtendedMsrpTotal() {
     return extendedMsrpTotal;
   }
 
-  public void setExtendedMsrpTotal(Integer extendedMsrpTotal) {
+  public void setExtendedMsrpTotal(BigDecimal extendedMsrpTotal) {
     this.extendedMsrpTotal = extendedMsrpTotal;
   }
 
@@ -724,7 +882,72 @@ public class QuoteDetailsResponse {
   }
 
 
-  public QuoteDetailsResponse extendedQuotePriceTotal(Integer extendedQuotePriceTotal) {
+  public QuoteDetailsResponse extraFeesTotal(BigDecimal extraFeesTotal) {
+    this.extraFeesTotal = extraFeesTotal;
+    return this;
+  }
+
+   /**
+   * Get extraFeesTotal
+   * @return extraFeesTotal
+  **/
+  @javax.annotation.Nullable
+  public BigDecimal getExtraFeesTotal() {
+    return extraFeesTotal;
+  }
+
+  public void setExtraFeesTotal(BigDecimal extraFeesTotal) {
+    this.extraFeesTotal = extraFeesTotal;
+  }
+
+
+  public QuoteDetailsResponse extraFeesTotalDetails(List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesTotalDetails) {
+    this.extraFeesTotalDetails = extraFeesTotalDetails;
+    return this;
+  }
+
+  public QuoteDetailsResponse addExtraFeesTotalDetailsItem(QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner extraFeesTotalDetailsItem) {
+    if (this.extraFeesTotalDetails == null) {
+      this.extraFeesTotalDetails = new ArrayList<>();
+    }
+    this.extraFeesTotalDetails.add(extraFeesTotalDetailsItem);
+    return this;
+  }
+
+   /**
+   * Get extraFeesTotalDetails
+   * @return extraFeesTotalDetails
+  **/
+  @javax.annotation.Nullable
+  public List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> getExtraFeesTotalDetails() {
+    return extraFeesTotalDetails;
+  }
+
+  public void setExtraFeesTotalDetails(List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesTotalDetails) {
+    this.extraFeesTotalDetails = extraFeesTotalDetails;
+  }
+
+
+  public QuoteDetailsResponse taxTotal(BigDecimal taxTotal) {
+    this.taxTotal = taxTotal;
+    return this;
+  }
+
+   /**
+   * Get taxTotal
+   * @return taxTotal
+  **/
+  @javax.annotation.Nullable
+  public BigDecimal getTaxTotal() {
+    return taxTotal;
+  }
+
+  public void setTaxTotal(BigDecimal taxTotal) {
+    this.taxTotal = taxTotal;
+  }
+
+
+  public QuoteDetailsResponse extendedQuotePriceTotal(BigDecimal extendedQuotePriceTotal) {
     this.extendedQuotePriceTotal = extendedQuotePriceTotal;
     return this;
   }
@@ -734,12 +957,31 @@ public class QuoteDetailsResponse {
    * @return extendedQuotePriceTotal
   **/
   @javax.annotation.Nullable
-  public Integer getExtendedQuotePriceTotal() {
+  public BigDecimal getExtendedQuotePriceTotal() {
     return extendedQuotePriceTotal;
   }
 
-  public void setExtendedQuotePriceTotal(Integer extendedQuotePriceTotal) {
+  public void setExtendedQuotePriceTotal(BigDecimal extendedQuotePriceTotal) {
     this.extendedQuotePriceTotal = extendedQuotePriceTotal;
+  }
+
+
+  public QuoteDetailsResponse freightAmount(BigDecimal freightAmount) {
+    this.freightAmount = freightAmount;
+    return this;
+  }
+
+   /**
+   * Get freightAmount
+   * @return freightAmount
+  **/
+  @javax.annotation.Nullable
+  public BigDecimal getFreightAmount() {
+    return freightAmount;
+  }
+
+  public void setFreightAmount(BigDecimal freightAmount) {
+    this.freightAmount = freightAmount;
   }
 
 
@@ -801,6 +1043,7 @@ public class QuoteDetailsResponse {
     QuoteDetailsResponse quoteDetailsResponse = (QuoteDetailsResponse) o;
     return Objects.equals(this.quoteName, quoteDetailsResponse.quoteName) &&
         Objects.equals(this.quoteNumber, quoteDetailsResponse.quoteNumber) &&
+        Objects.equals(this.quoteGuid, quoteDetailsResponse.quoteGuid) &&
         Objects.equals(this.revision, quoteDetailsResponse.revision) &&
         Objects.equals(this.ingramQuoteDate, quoteDetailsResponse.ingramQuoteDate) &&
         Objects.equals(this.lastModifiedDate, quoteDetailsResponse.lastModifiedDate) &&
@@ -809,7 +1052,9 @@ public class QuoteDetailsResponse {
         Objects.equals(this.specialBidId, quoteDetailsResponse.specialBidId) &&
         Objects.equals(this.specialBidEffectiveDate, quoteDetailsResponse.specialBidEffectiveDate) &&
         Objects.equals(this.specialBidExpirationDate, quoteDetailsResponse.specialBidExpirationDate) &&
+        Objects.equals(this.vendorQuoteNumber, quoteDetailsResponse.vendorQuoteNumber) &&
         Objects.equals(this.status, quoteDetailsResponse.status) &&
+        Objects.equals(this.statusReason, quoteDetailsResponse.statusReason) &&
         Objects.equals(this.closingReason, quoteDetailsResponse.closingReason) &&
         Objects.equals(this.dateClosed, quoteDetailsResponse.dateClosed) &&
         Objects.equals(this.customerNeed, quoteDetailsResponse.customerNeed) &&
@@ -820,21 +1065,39 @@ public class QuoteDetailsResponse {
         Objects.equals(this.quoteType, quoteDetailsResponse.quoteType) &&
         Objects.equals(this.leaseInfo, quoteDetailsResponse.leaseInfo) &&
         Objects.equals(this.leasingInstructions, quoteDetailsResponse.leasingInstructions) &&
-        Objects.equals(this.quoteSubType, quoteDetailsResponse.quoteSubType) &&
+        Objects.equals(this.imWarehouse, quoteDetailsResponse.imWarehouse) &&
+        Objects.equals(this.imWarehouseGstNumber, quoteDetailsResponse.imWarehouseGstNumber) &&
+        Objects.equals(this.paymentTermsName, quoteDetailsResponse.paymentTermsName) &&
         Objects.equals(this.resellerInfo, quoteDetailsResponse.resellerInfo) &&
         Objects.equals(this.endUserInfo, quoteDetailsResponse.endUserInfo) &&
+        Objects.equals(this.shippingInfo, quoteDetailsResponse.shippingInfo) &&
         Objects.equals(this.products, quoteDetailsResponse.products) &&
         Objects.equals(this.productsCount, quoteDetailsResponse.productsCount) &&
         Objects.equals(this.extendedMsrpTotal, quoteDetailsResponse.extendedMsrpTotal) &&
         Objects.equals(this.quantityTotal, quoteDetailsResponse.quantityTotal) &&
+        Objects.equals(this.extraFeesTotal, quoteDetailsResponse.extraFeesTotal) &&
+        Objects.equals(this.extraFeesTotalDetails, quoteDetailsResponse.extraFeesTotalDetails) &&
+        Objects.equals(this.taxTotal, quoteDetailsResponse.taxTotal) &&
         Objects.equals(this.extendedQuotePriceTotal, quoteDetailsResponse.extendedQuotePriceTotal) &&
+        Objects.equals(this.freightAmount, quoteDetailsResponse.freightAmount) &&
         Objects.equals(this.totalQuoteAmount, quoteDetailsResponse.totalQuoteAmount) &&
         Objects.equals(this.additionalAttributes, quoteDetailsResponse.additionalAttributes);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
-    return Objects.hash(quoteName, quoteNumber, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, status, closingReason, dateClosed, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, quoteSubType, resellerInfo, endUserInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extendedQuotePriceTotal, totalQuoteAmount, additionalAttributes);
+    return Objects.hash(quoteName, quoteNumber, quoteGuid, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, vendorQuoteNumber, status, statusReason, closingReason, dateClosed, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, imWarehouse, imWarehouseGstNumber, paymentTermsName, resellerInfo, endUserInfo, shippingInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extraFeesTotal, extraFeesTotalDetails, taxTotal, extendedQuotePriceTotal, freightAmount, totalQuoteAmount, additionalAttributes);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -843,6 +1106,7 @@ public class QuoteDetailsResponse {
     sb.append("class QuoteDetailsResponse {\n");
     sb.append("    quoteName: ").append(toIndentedString(quoteName)).append("\n");
     sb.append("    quoteNumber: ").append(toIndentedString(quoteNumber)).append("\n");
+    sb.append("    quoteGuid: ").append(toIndentedString(quoteGuid)).append("\n");
     sb.append("    revision: ").append(toIndentedString(revision)).append("\n");
     sb.append("    ingramQuoteDate: ").append(toIndentedString(ingramQuoteDate)).append("\n");
     sb.append("    lastModifiedDate: ").append(toIndentedString(lastModifiedDate)).append("\n");
@@ -851,7 +1115,9 @@ public class QuoteDetailsResponse {
     sb.append("    specialBidId: ").append(toIndentedString(specialBidId)).append("\n");
     sb.append("    specialBidEffectiveDate: ").append(toIndentedString(specialBidEffectiveDate)).append("\n");
     sb.append("    specialBidExpirationDate: ").append(toIndentedString(specialBidExpirationDate)).append("\n");
+    sb.append("    vendorQuoteNumber: ").append(toIndentedString(vendorQuoteNumber)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    statusReason: ").append(toIndentedString(statusReason)).append("\n");
     sb.append("    closingReason: ").append(toIndentedString(closingReason)).append("\n");
     sb.append("    dateClosed: ").append(toIndentedString(dateClosed)).append("\n");
     sb.append("    customerNeed: ").append(toIndentedString(customerNeed)).append("\n");
@@ -862,14 +1128,21 @@ public class QuoteDetailsResponse {
     sb.append("    quoteType: ").append(toIndentedString(quoteType)).append("\n");
     sb.append("    leaseInfo: ").append(toIndentedString(leaseInfo)).append("\n");
     sb.append("    leasingInstructions: ").append(toIndentedString(leasingInstructions)).append("\n");
-    sb.append("    quoteSubType: ").append(toIndentedString(quoteSubType)).append("\n");
+    sb.append("    imWarehouse: ").append(toIndentedString(imWarehouse)).append("\n");
+    sb.append("    imWarehouseGstNumber: ").append(toIndentedString(imWarehouseGstNumber)).append("\n");
+    sb.append("    paymentTermsName: ").append(toIndentedString(paymentTermsName)).append("\n");
     sb.append("    resellerInfo: ").append(toIndentedString(resellerInfo)).append("\n");
     sb.append("    endUserInfo: ").append(toIndentedString(endUserInfo)).append("\n");
+    sb.append("    shippingInfo: ").append(toIndentedString(shippingInfo)).append("\n");
     sb.append("    products: ").append(toIndentedString(products)).append("\n");
     sb.append("    productsCount: ").append(toIndentedString(productsCount)).append("\n");
     sb.append("    extendedMsrpTotal: ").append(toIndentedString(extendedMsrpTotal)).append("\n");
     sb.append("    quantityTotal: ").append(toIndentedString(quantityTotal)).append("\n");
+    sb.append("    extraFeesTotal: ").append(toIndentedString(extraFeesTotal)).append("\n");
+    sb.append("    extraFeesTotalDetails: ").append(toIndentedString(extraFeesTotalDetails)).append("\n");
+    sb.append("    taxTotal: ").append(toIndentedString(taxTotal)).append("\n");
     sb.append("    extendedQuotePriceTotal: ").append(toIndentedString(extendedQuotePriceTotal)).append("\n");
+    sb.append("    freightAmount: ").append(toIndentedString(freightAmount)).append("\n");
     sb.append("    totalQuoteAmount: ").append(toIndentedString(totalQuoteAmount)).append("\n");
     sb.append("    additionalAttributes: ").append(toIndentedString(additionalAttributes)).append("\n");
     sb.append("}");
@@ -896,6 +1169,7 @@ public class QuoteDetailsResponse {
     openapiFields = new HashSet<String>();
     openapiFields.add("quoteName");
     openapiFields.add("quoteNumber");
+    openapiFields.add("quoteGuid");
     openapiFields.add("revision");
     openapiFields.add("ingramQuoteDate");
     openapiFields.add("lastModifiedDate");
@@ -904,7 +1178,9 @@ public class QuoteDetailsResponse {
     openapiFields.add("specialBidId");
     openapiFields.add("specialBidEffectiveDate");
     openapiFields.add("specialBidExpirationDate");
+    openapiFields.add("vendorQuoteNumber");
     openapiFields.add("status");
+    openapiFields.add("statusReason");
     openapiFields.add("closingReason");
     openapiFields.add("dateClosed");
     openapiFields.add("customerNeed");
@@ -915,14 +1191,21 @@ public class QuoteDetailsResponse {
     openapiFields.add("quoteType");
     openapiFields.add("leaseInfo");
     openapiFields.add("leasingInstructions");
-    openapiFields.add("quoteSubType");
+    openapiFields.add("imWarehouse");
+    openapiFields.add("imWarehouseGstNumber");
+    openapiFields.add("paymentTermsName");
     openapiFields.add("resellerInfo");
     openapiFields.add("endUserInfo");
+    openapiFields.add("shippingInfo");
     openapiFields.add("products");
     openapiFields.add("productsCount");
     openapiFields.add("extendedMsrpTotal");
     openapiFields.add("quantityTotal");
+    openapiFields.add("extraFeesTotal");
+    openapiFields.add("extraFeesTotalDetails");
+    openapiFields.add("taxTotal");
     openapiFields.add("extendedQuotePriceTotal");
+    openapiFields.add("freightAmount");
     openapiFields.add("totalQuoteAmount");
     openapiFields.add("additionalAttributes");
 
@@ -957,6 +1240,9 @@ public class QuoteDetailsResponse {
       if ((jsonObj.get("quoteNumber") != null && !jsonObj.get("quoteNumber").isJsonNull()) && !jsonObj.get("quoteNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `quoteNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteNumber").toString()));
       }
+      if ((jsonObj.get("quoteGuid") != null && !jsonObj.get("quoteGuid").isJsonNull()) && !jsonObj.get("quoteGuid").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `quoteGuid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteGuid").toString()));
+      }
       if ((jsonObj.get("revision") != null && !jsonObj.get("revision").isJsonNull()) && !jsonObj.get("revision").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `revision` to be a primitive type in the JSON string but got `%s`", jsonObj.get("revision").toString()));
       }
@@ -981,8 +1267,14 @@ public class QuoteDetailsResponse {
       if ((jsonObj.get("specialBidExpirationDate") != null && !jsonObj.get("specialBidExpirationDate").isJsonNull()) && !jsonObj.get("specialBidExpirationDate").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `specialBidExpirationDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialBidExpirationDate").toString()));
       }
+      if ((jsonObj.get("vendorQuoteNumber") != null && !jsonObj.get("vendorQuoteNumber").isJsonNull()) && !jsonObj.get("vendorQuoteNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `vendorQuoteNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorQuoteNumber").toString()));
+      }
       if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
+      }
+      if ((jsonObj.get("statusReason") != null && !jsonObj.get("statusReason").isJsonNull()) && !jsonObj.get("statusReason").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `statusReason` to be a primitive type in the JSON string but got `%s`", jsonObj.get("statusReason").toString()));
       }
       if ((jsonObj.get("closingReason") != null && !jsonObj.get("closingReason").isJsonNull()) && !jsonObj.get("closingReason").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `closingReason` to be a primitive type in the JSON string but got `%s`", jsonObj.get("closingReason").toString()));
@@ -1014,8 +1306,14 @@ public class QuoteDetailsResponse {
       if ((jsonObj.get("leasingInstructions") != null && !jsonObj.get("leasingInstructions").isJsonNull()) && !jsonObj.get("leasingInstructions").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `leasingInstructions` to be a primitive type in the JSON string but got `%s`", jsonObj.get("leasingInstructions").toString()));
       }
-      if ((jsonObj.get("quoteSubType") != null && !jsonObj.get("quoteSubType").isJsonNull()) && !jsonObj.get("quoteSubType").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `quoteSubType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteSubType").toString()));
+      if ((jsonObj.get("imWarehouse") != null && !jsonObj.get("imWarehouse").isJsonNull()) && !jsonObj.get("imWarehouse").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `imWarehouse` to be a primitive type in the JSON string but got `%s`", jsonObj.get("imWarehouse").toString()));
+      }
+      if ((jsonObj.get("imWarehouseGstNumber") != null && !jsonObj.get("imWarehouseGstNumber").isJsonNull()) && !jsonObj.get("imWarehouseGstNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `imWarehouseGstNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("imWarehouseGstNumber").toString()));
+      }
+      if ((jsonObj.get("paymentTermsName") != null && !jsonObj.get("paymentTermsName").isJsonNull()) && !jsonObj.get("paymentTermsName").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `paymentTermsName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("paymentTermsName").toString()));
       }
       // validate the optional field `resellerInfo`
       if (jsonObj.get("resellerInfo") != null && !jsonObj.get("resellerInfo").isJsonNull()) {
@@ -1024,6 +1322,10 @@ public class QuoteDetailsResponse {
       // validate the optional field `endUserInfo`
       if (jsonObj.get("endUserInfo") != null && !jsonObj.get("endUserInfo").isJsonNull()) {
         QuoteDetailsResponseEndUserInfo.validateJsonElement(jsonObj.get("endUserInfo"));
+      }
+      // validate the optional field `shippingInfo`
+      if (jsonObj.get("shippingInfo") != null && !jsonObj.get("shippingInfo").isJsonNull()) {
+        QuoteDetailsResponseShippingInfo.validateJsonElement(jsonObj.get("shippingInfo"));
       }
       if (jsonObj.get("products") != null && !jsonObj.get("products").isJsonNull()) {
         JsonArray jsonArrayproducts = jsonObj.getAsJsonArray("products");
@@ -1036,6 +1338,20 @@ public class QuoteDetailsResponse {
           // validate the optional field `products` (array)
           for (int i = 0; i < jsonArrayproducts.size(); i++) {
             QuoteDetailsResponseProductsInner.validateJsonElement(jsonArrayproducts.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("extraFeesTotalDetails") != null && !jsonObj.get("extraFeesTotalDetails").isJsonNull()) {
+        JsonArray jsonArrayextraFeesTotalDetails = jsonObj.getAsJsonArray("extraFeesTotalDetails");
+        if (jsonArrayextraFeesTotalDetails != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("extraFeesTotalDetails").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `extraFeesTotalDetails` to be an array in the JSON string but got `%s`", jsonObj.get("extraFeesTotalDetails").toString()));
+          }
+
+          // validate the optional field `extraFeesTotalDetails` (array)
+          for (int i = 0; i < jsonArrayextraFeesTotalDetails.size(); i++) {
+            QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner.validateJsonElement(jsonArrayextraFeesTotalDetails.get(i));
           };
         }
       }
