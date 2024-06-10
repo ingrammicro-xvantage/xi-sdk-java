@@ -1,9 +1,5 @@
-# xi.sdk.resellers
+For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
 
-XI Sdk Resellers
-
-
-For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
 
 
 ## Requirements
@@ -76,7 +72,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>xi.sdk.resellers</groupId>
   <artifactId>xi.sdk.resellers</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <scope>compile</scope>
 </dependency>
 ```
