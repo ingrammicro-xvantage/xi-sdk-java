@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * ProductSearchResponseCatalogInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ProductSearchResponseCatalogInner {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -138,10 +137,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * The description of the product.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   public String getDescription() {
     return description;
@@ -157,10 +156,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * The category of the product. Example: Displays.
    * @return category
-  **/
+   */
   @javax.annotation.Nullable
   public String getCategory() {
     return category;
@@ -176,10 +175,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * The sub category for the product. Example: ComputernMonitors.
    * @return subCategory
-  **/
+   */
   @javax.annotation.Nullable
   public String getSubCategory() {
     return subCategory;
@@ -195,10 +194,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * The product type of the product. Example: LCD Monitors.
    * @return productType
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductType() {
     return productType;
@@ -214,10 +213,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * The Unique IngramMicro part number for the product.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -233,10 +232,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor part number for the product.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -252,10 +251,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * The UPC code for the product. Consists of 12 numeric digits that are uniquly assigned to each trade item.
    * @return upcCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getUpcCode() {
     return upcCode;
@@ -271,10 +270,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * The name of the vendor/manufacturer of the product.
    * @return vendorName
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorName() {
     return vendorName;
@@ -290,10 +289,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * Indicates whether the contact information for the end user/customer is required, which determines pricing and discounts.
    * @return endUserRequired
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndUserRequired() {
     return endUserRequired;
@@ -309,10 +308,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * Specifies if there are discounts available for the product.
    * @return hasDiscounts
-  **/
+   */
   @javax.annotation.Nullable
   public String getHasDiscounts() {
     return hasDiscounts;
@@ -328,10 +327,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * The SKU type of product. One of Physical, Digital, or Any.
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   public String getType() {
     return type;
@@ -347,10 +346,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * Indicates if the product has been discontinued.
    * @return discontinued
-  **/
+   */
   @javax.annotation.Nullable
   public String getDiscontinued() {
     return discontinued;
@@ -366,10 +365,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * Indicates if the product is new. For digital products, newer than 10 days. For physical products, newer than 150 days.
    * @return newProduct
-  **/
+   */
   @javax.annotation.Nullable
   public String getNewProduct() {
     return newProduct;
@@ -385,10 +384,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * Indicates if the product will be shipped directly to the reseller or end user from the vendor/manufacturer.
    * @return directShip
-  **/
+   */
   @javax.annotation.Nullable
   public String getDirectShip() {
     return directShip;
@@ -404,10 +403,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * Indicates if the product has a warranty.
    * @return hasWarranty
-  **/
+   */
   @javax.annotation.Nullable
   public String getHasWarranty() {
     return hasWarranty;
@@ -431,10 +430,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * Get links
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public List<ProductSearchResponseCatalogInnerLinksInner> getLinks() {
     return links;
@@ -450,10 +449,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * The extended description of the product.
    * @return extraDescription
-  **/
+   */
   @javax.annotation.Nullable
   public String getExtraDescription() {
     return extraDescription;
@@ -469,10 +468,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * Identifies a SKU that is a comparable subsititution of the current SKU if available.
    * @return replacementSku
-  **/
+   */
   @javax.annotation.Nullable
   public String getReplacementSku() {
     return replacementSku;
@@ -488,10 +487,10 @@ public class ProductSearchResponseCatalogInner {
     return this;
   }
 
-   /**
+  /**
    * It is true when it exists in matched queries field of ealstic search API.
    * @return authorizedToPurchase
-  **/
+   */
   @javax.annotation.Nullable
   public String getAuthorizedToPurchase() {
     return authorizedToPurchase;
@@ -607,12 +606,12 @@ public class ProductSearchResponseCatalogInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ProductSearchResponseCatalogInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ProductSearchResponseCatalogInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ProductSearchResponseCatalogInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -727,22 +726,22 @@ public class ProductSearchResponseCatalogInner {
     }
   }
 
- /**
-  * Create an instance of ProductSearchResponseCatalogInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ProductSearchResponseCatalogInner
-  * @throws IOException if the JSON string is invalid with respect to ProductSearchResponseCatalogInner
-  */
+  /**
+   * Create an instance of ProductSearchResponseCatalogInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ProductSearchResponseCatalogInner
+   * @throws IOException if the JSON string is invalid with respect to ProductSearchResponseCatalogInner
+   */
   public static ProductSearchResponseCatalogInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ProductSearchResponseCatalogInner.class);
   }
 
- /**
-  * Convert an instance of ProductSearchResponseCatalogInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ProductSearchResponseCatalogInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestAdditionalAttributesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateRequestAdditionalAttributesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_NAME = "attributeName";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_NAME)
@@ -67,10 +66,10 @@ public class OrderCreateRequestAdditionalAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * allowPartialOrder: Allow orders with failed lines. (SAP) Depends on backorder settings.    DpasRating: DX rating by Department of Defense is the highest rating by the highest offices and meant to be top priority. DO any other gov offices at the federal level to priotize.    DpasProgramId: Identifies the actual agency that signed off on the DPAS priority.    allowDuplicateCustomerOrderNumber: Allow orders with duplicate customer PO numbers. Enables resellers to have the same PO number for multiple orders.     channelCode: Determine storage location for Markeplace(SAP) for different orderTypes.    customerPOType: Used for pricing, similar to orderType. Possible SAP values- ZXML and ZWEB.    storageLocation: Determine the location of the product stock in SAP for Marketplaces.    soldTo: To be used in cases when Sold-To is different than Customer ID.    orderType: Order Type[SAP]- ZOR and ZLCN.    endUserSearchTerm: Search ID for a end user contact is used in SAP to determine the contact name.    Z101: Used for end customer details such as name, address, phone, etc. This information flows to SAP and is used by warehouse.    euDepId: DEP ID would be the &#39;End User DEP/ABM Organization ID&#39; up to 32 characters and is assigned by Apple.    depOrderNbr: depordernbr is &#39;End User PO to reseller&#39; Can appear in message lines or dedicated end user po#.    govtProgramType: Program type, “PA” for government orders, “ED” for education order.    govtEndUserType: Type of end user of the program. F &#x3D; Federal, S &#x3D; State, E &#x3D; Local, K &#x3D; K-12 school, and H &#x3D; Higher Education    govtSolicitationNumber: Education order’s contract number    govtPublicPrivateCode: Determines TAX / NO TAX.   &#39;P&#39; PUBLIC SECTOR,   &#39;R&#39; PRIVATE SECTOR.  Value needs only to be provided for EDUCATION order.    govtEndUserData: Name of the End user of the program. For example, STATE OF OHIO, CHICAGO SCHOOLDISTRICT etc.    govtEndUserPostalCode: 9 CHAR FIELD / Zip Code of the End user of the order.    dynamicMessageLine1: Custom Dynamic Message line 1.    allowOrderOnCustomerHold: Boolean value flag which allows a customer to create an order with the hold status.
    * @return attributeName
-  **/
+   */
   @javax.annotation.Nullable
   public String getAttributeName() {
     return attributeName;
@@ -86,10 +85,10 @@ public class OrderCreateRequestAdditionalAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * attributefield data
    * @return attributeValue
-  **/
+   */
   @javax.annotation.Nullable
   public String getAttributeValue() {
     return attributeValue;
@@ -154,12 +153,12 @@ public class OrderCreateRequestAdditionalAttributesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequestAdditionalAttributesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequestAdditionalAttributesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateRequestAdditionalAttributesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -212,22 +211,22 @@ public class OrderCreateRequestAdditionalAttributesInner {
     }
   }
 
- /**
-  * Create an instance of OrderCreateRequestAdditionalAttributesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateRequestAdditionalAttributesInner
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateRequestAdditionalAttributesInner
-  */
+  /**
+   * Create an instance of OrderCreateRequestAdditionalAttributesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateRequestAdditionalAttributesInner
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateRequestAdditionalAttributesInner
+   */
   public static OrderCreateRequestAdditionalAttributesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateRequestAdditionalAttributesInner.class);
   }
 
- /**
-  * Convert an instance of OrderCreateRequestAdditionalAttributesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateRequestAdditionalAttributesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

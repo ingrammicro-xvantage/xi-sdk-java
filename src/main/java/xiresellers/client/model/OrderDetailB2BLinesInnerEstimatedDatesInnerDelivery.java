@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
   public static final String SERIALIZED_NAME_DELIVERY_DATE_TYPE = "deliveryDateType";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE_TYPE)
@@ -80,10 +79,10 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     return this;
   }
 
-   /**
+  /**
    * Date type. Example Single or multiple dates.
    * @return deliveryDateType
-  **/
+   */
   @javax.annotation.Nullable
   public String getDeliveryDateType() {
     return deliveryDateType;
@@ -99,10 +98,10 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     return this;
   }
 
-   /**
+  /**
    * Get deliveryDateRange
    * @return deliveryDateRange
-  **/
+   */
   @javax.annotation.Nullable
   public OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange getDeliveryDateRange() {
     return deliveryDateRange;
@@ -118,10 +117,10 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     return this;
   }
 
-   /**
+  /**
    * Source of the delivery.
    * @return deliverySource
-  **/
+   */
   @javax.annotation.Nullable
   public String getDeliverySource() {
     return deliverySource;
@@ -137,10 +136,10 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     return this;
   }
 
-   /**
+  /**
    * Delivery description.
    * @return deliveryDescription
-  **/
+   */
   @javax.annotation.Nullable
   public String getDeliveryDescription() {
     return deliveryDescription;
@@ -156,10 +155,10 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     return this;
   }
 
-   /**
+  /**
    * Delivery date.
    * @return deliveryDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getDeliveryDate() {
     return deliveryDate;
@@ -233,12 +232,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -301,22 +300,22 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     }
   }
 
- /**
-  * Create an instance of OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
-  * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
-  */
+  /**
+   * Create an instance of OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
+   * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
+   */
   public static OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery.class);
   }
 
- /**
-  * Convert an instance of OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

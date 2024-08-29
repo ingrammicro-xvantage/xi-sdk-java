@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * The address and contact information provided by the reseller.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateRequestResellerInfo {
   public static final String SERIALIZED_NAME_RESELLER_ID = "resellerId";
   @SerializedName(SERIALIZED_NAME_RESELLER_ID)
@@ -107,10 +106,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s Id.
    * @return resellerId
-  **/
+   */
   @javax.annotation.Nullable
   public String getResellerId() {
     return resellerId;
@@ -126,10 +125,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s company name.
    * @return companyName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCompanyName() {
     return companyName;
@@ -145,10 +144,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s contact name.
    * @return contact
-  **/
+   */
   @javax.annotation.Nullable
   public String getContact() {
     return contact;
@@ -164,10 +163,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s street address.
    * @return addressLine1
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine1() {
     return addressLine1;
@@ -183,10 +182,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s building or apartment number.
    * @return addressLine2
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine2() {
     return addressLine2;
@@ -202,10 +201,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s address line 3.
    * @return addressLine3
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine3() {
     return addressLine3;
@@ -221,10 +220,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s city.
    * @return city
-  **/
+   */
   @javax.annotation.Nullable
   public String getCity() {
     return city;
@@ -240,10 +239,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s state.
    * @return state
-  **/
+   */
   @javax.annotation.Nullable
   public String getState() {
     return state;
@@ -259,10 +258,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s zip or postal code.
    * @return postalCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getPostalCode() {
     return postalCode;
@@ -278,10 +277,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s two-character ISO country code.
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCountryCode() {
     return countryCode;
@@ -297,10 +296,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s phone number.
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getPhoneNumber() {
     return phoneNumber;
@@ -316,10 +315,10 @@ public class OrderCreateRequestResellerInfo {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s email address.
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   public String getEmail() {
     return email;
@@ -414,12 +413,12 @@ public class OrderCreateRequestResellerInfo {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequestResellerInfo
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequestResellerInfo
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateRequestResellerInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -499,22 +498,22 @@ public class OrderCreateRequestResellerInfo {
     }
   }
 
- /**
-  * Create an instance of OrderCreateRequestResellerInfo given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateRequestResellerInfo
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateRequestResellerInfo
-  */
+  /**
+   * Create an instance of OrderCreateRequestResellerInfo given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateRequestResellerInfo
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateRequestResellerInfo
+   */
   public static OrderCreateRequestResellerInfo fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateRequestResellerInfo.class);
   }
 
- /**
-  * Convert an instance of OrderCreateRequestResellerInfo to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateRequestResellerInfo to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

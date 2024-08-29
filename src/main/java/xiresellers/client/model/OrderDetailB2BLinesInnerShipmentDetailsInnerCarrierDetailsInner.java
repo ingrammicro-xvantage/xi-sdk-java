@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
@@ -95,10 +94,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The carrier code for the shipment containing the line item.
    * @return carrierCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCarrierCode() {
     return carrierCode;
@@ -114,10 +113,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The name of the carrier of the shipment containing the line item.
    * @return carrierName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCarrierName() {
     return carrierName;
@@ -133,10 +132,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity shipped of the line item.
    * @return quantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantity() {
     return quantity;
@@ -152,10 +151,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The actual date when line item shipped.
    * @return shippedDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getShippedDate() {
     return shippedDate;
@@ -171,10 +170,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The date the line item is expected to be delivered.
    * @return estimatedDeliveryDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getEstimatedDeliveryDate() {
     return estimatedDeliveryDate;
@@ -190,10 +189,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The actual date of delivery of the line item.
    * @return deliveredDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getDeliveredDate() {
     return deliveredDate;
@@ -209,10 +208,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The actual date when carrier picked up line item.
    * @return carrierPickupDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getCarrierPickupDate() {
     return carrierPickupDate;
@@ -236,10 +235,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The tracking details for the shipment containing the line item.
    * @return trackingDetails
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner> getTrackingDetails() {
     return trackingDetails;
@@ -333,12 +332,12 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -417,22 +416,22 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner {
     }
   }
 
- /**
-  * Create an instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner
-  * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner
-  */
+  /**
+   * Create an instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner
+   * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner
+   */
   public static OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner.class);
   }
 
- /**
-  * Convert an instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

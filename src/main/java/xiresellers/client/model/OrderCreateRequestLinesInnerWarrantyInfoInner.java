@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInnerWarrantyInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateRequestLinesInnerWarrantyInfoInner {
   public static final String SERIALIZED_NAME_DIRECT_LINE_LINK = "directLineLink";
   @SerializedName(SERIALIZED_NAME_DIRECT_LINE_LINK)
@@ -78,10 +77,10 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Unique value to link hardware and warranty lines. Should be used only when products are purchased from both Ingram and/or vendor but the warranty is purchased through Ingram for them.
    * @return directLineLink
-  **/
+   */
   @javax.annotation.Nullable
   public String getDirectLineLink() {
     return directLineLink;
@@ -97,10 +96,10 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Customer line number of the hardware product in this request for linkage, either hardwareLineLink or warrantyLineLink can be used in a line.
    * @return warrantyLineLink
-  **/
+   */
   @javax.annotation.Nullable
   public String getWarrantyLineLink() {
     return warrantyLineLink;
@@ -116,10 +115,10 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Customer line number of the warranty product in this request for linkage, either hardwareLineLink or warrantyLineLink can be used in a line 
    * @return hardwareLineLink
-  **/
+   */
   @javax.annotation.Nullable
   public String getHardwareLineLink() {
     return hardwareLineLink;
@@ -143,10 +142,10 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Serial information of the hardware to be associated with the warranty, applicable on post sale orders.
    * @return serialInfo
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner> getSerialInfo() {
     return serialInfo;
@@ -217,12 +216,12 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequestLinesInnerWarrantyInfoInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequestLinesInnerWarrantyInfoInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateRequestLinesInnerWarrantyInfoInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -292,22 +291,22 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
     }
   }
 
- /**
-  * Create an instance of OrderCreateRequestLinesInnerWarrantyInfoInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateRequestLinesInnerWarrantyInfoInner
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateRequestLinesInnerWarrantyInfoInner
-  */
+  /**
+   * Create an instance of OrderCreateRequestLinesInnerWarrantyInfoInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateRequestLinesInnerWarrantyInfoInner
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateRequestLinesInnerWarrantyInfoInner
+   */
   public static OrderCreateRequestLinesInnerWarrantyInfoInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateRequestLinesInnerWarrantyInfoInner.class);
   }
 
- /**
-  * Convert an instance of OrderCreateRequestLinesInnerWarrantyInfoInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateRequestLinesInnerWarrantyInfoInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

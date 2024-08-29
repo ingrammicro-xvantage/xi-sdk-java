@@ -42,7 +42,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -54,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * DealsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class DealsDetailsResponse {
   public static final String SERIALIZED_NAME_DEAL_ID = "dealId";
   @SerializedName(SERIALIZED_NAME_DEAL_ID)
@@ -108,10 +107,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Deal/Special bid number.
    * @return dealId
-  **/
+   */
   @javax.annotation.Nullable
   public String getDealId() {
     return dealId;
@@ -127,10 +126,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Most recent version number of the deal.
    * @return version
-  **/
+   */
   @javax.annotation.Nullable
   public String getVersion() {
     return version;
@@ -146,10 +145,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s name.
    * @return endUser
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndUser() {
     return endUser;
@@ -165,10 +164,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Extended MSRP - Manufacturer Suggested Retail Price X Quantity.
    * @return extendedMsrp
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getExtendedMsrp() {
     return extendedMsrp;
@@ -184,10 +183,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The vendor&#39;s name.
    * @return vendor
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendor() {
     return vendor;
@@ -203,10 +202,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The date on which the deal starts.
    * @return dealReceivedOn
-  **/
+   */
   @javax.annotation.Nullable
   public String getDealReceivedOn() {
     return dealReceivedOn;
@@ -222,10 +221,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Expiration date of the deal/Special bid.
    * @return dealExpiryDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getDealExpiryDate() {
     return dealExpiryDate;
@@ -241,10 +240,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The date on which the price protection will end.
    * @return priceProtectionEndDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getPriceProtectionEndDate() {
     return priceProtectionEndDate;
@@ -260,10 +259,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Country specific currency code.
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCurrencyCode() {
     return currencyCode;
@@ -279,10 +278,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get endUserInfo
    * @return endUserInfo
-  **/
+   */
   @javax.annotation.Nullable
   public RenewalsDetailsResponseEndUserInfo getEndUserInfo() {
     return endUserInfo;
@@ -306,10 +305,10 @@ public class DealsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get products
    * @return products
-  **/
+   */
   @javax.annotation.Nullable
   public List<DealsDetailsResponseProductsInner> getProducts() {
     return products;
@@ -401,12 +400,12 @@ public class DealsDetailsResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to DealsDetailsResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to DealsDetailsResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!DealsDetailsResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -495,22 +494,22 @@ public class DealsDetailsResponse {
     }
   }
 
- /**
-  * Create an instance of DealsDetailsResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of DealsDetailsResponse
-  * @throws IOException if the JSON string is invalid with respect to DealsDetailsResponse
-  */
+  /**
+   * Create an instance of DealsDetailsResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of DealsDetailsResponse
+   * @throws IOException if the JSON string is invalid with respect to DealsDetailsResponse
+   */
   public static DealsDetailsResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, DealsDetailsResponse.class);
   }
 
- /**
-  * Convert an instance of DealsDetailsResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of DealsDetailsResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

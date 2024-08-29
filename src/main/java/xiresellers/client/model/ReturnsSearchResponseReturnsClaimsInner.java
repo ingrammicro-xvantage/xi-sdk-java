@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsSearchResponseReturnsClaimsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ReturnsSearchResponseReturnsClaimsInner {
   public static final String SERIALIZED_NAME_RETURN_CLAIM_ID = "returnClaimId";
   @SerializedName(SERIALIZED_NAME_RETURN_CLAIM_ID)
@@ -107,10 +106,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * A unique return claim Id.
    * @return returnClaimId
-  **/
+   */
   @javax.annotation.Nullable
   public String getReturnClaimId() {
     return returnClaimId;
@@ -126,10 +125,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * A unique return request number.
    * @return caseRequestNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCaseRequestNumber() {
     return caseRequestNumber;
@@ -145,10 +144,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The date on which the return request was created. 
    * @return createdOn
-  **/
+   */
   @javax.annotation.Nullable
   public String getCreatedOn() {
     return createdOn;
@@ -164,10 +163,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * Type of request.
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   public String getType() {
     return type;
@@ -183,10 +182,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The reason for the return.
    * @return returnReason
-  **/
+   */
   @javax.annotation.Nullable
   public String getReturnReason() {
     return returnReason;
@@ -202,10 +201,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The reference number for the return.
    * @return referenceNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getReferenceNumber() {
     return referenceNumber;
@@ -221,10 +220,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The estimated total value of the return.
    * @return estimatedTotalValue
-  **/
+   */
   @javax.annotation.Nullable
   public Double getEstimatedTotalValue() {
     return estimatedTotalValue;
@@ -240,10 +239,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The amount of credit.
    * @return credit
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getCredit() {
     return credit;
@@ -259,10 +258,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The date on which the return request was last updated.
    * @return modifiedOn
-  **/
+   */
   @javax.annotation.Nullable
   public String getModifiedOn() {
     return modifiedOn;
@@ -278,10 +277,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The status of the request.
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   public String getStatus() {
     return status;
@@ -305,10 +304,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * Get links
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> getLinks() {
     return links;
@@ -400,12 +399,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ReturnsSearchResponseReturnsClaimsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ReturnsSearchResponseReturnsClaimsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ReturnsSearchResponseReturnsClaimsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -490,22 +489,22 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     }
   }
 
- /**
-  * Create an instance of ReturnsSearchResponseReturnsClaimsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ReturnsSearchResponseReturnsClaimsInner
-  * @throws IOException if the JSON string is invalid with respect to ReturnsSearchResponseReturnsClaimsInner
-  */
+  /**
+   * Create an instance of ReturnsSearchResponseReturnsClaimsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ReturnsSearchResponseReturnsClaimsInner
+   * @throws IOException if the JSON string is invalid with respect to ReturnsSearchResponseReturnsClaimsInner
+   */
   public static ReturnsSearchResponseReturnsClaimsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ReturnsSearchResponseReturnsClaimsInner.class);
   }
 
- /**
-  * Convert an instance of ReturnsSearchResponseReturnsClaimsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ReturnsSearchResponseReturnsClaimsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * DealsDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class DealsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -116,10 +115,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Unique Ingram part number.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -135,10 +134,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor Part number for the product.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -154,10 +153,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The UPC code for the product. Consists of 12 numeric digits that are uniquely assigned to each trade item.
    * @return upc
-  **/
+   */
   @javax.annotation.Nullable
   public String getUpc() {
     return upc;
@@ -173,10 +172,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Description of the product.
    * @return productDescription
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductDescription() {
     return productDescription;
@@ -192,10 +191,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Manufacturer Suggested Retail Price.
    * @return msrp
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getMsrp() {
     return msrp;
@@ -211,10 +210,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Extended MSRP - Manufacturer Suggested Retail Price X Quantity.
    * @return extendedMSRP
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getExtendedMSRP() {
     return extendedMSRP;
@@ -230,10 +229,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Standard price of the line item.
    * @return standardPrice
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getStandardPrice() {
     return standardPrice;
@@ -249,10 +248,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Total quantity approved for the deal.
    * @return approvedQuantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getApprovedQuantity() {
     return approvedQuantity;
@@ -268,10 +267,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity remaining as part of the deal for the customer to order.
    * @return remainingQuantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getRemainingQuantity() {
     return remainingQuantity;
@@ -287,10 +286,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Comments of the deal.
    * @return comments
-  **/
+   */
   @javax.annotation.Nullable
   public String getComments() {
     return comments;
@@ -306,10 +305,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Special conditions of the deal.
    * @return specialConditions
-  **/
+   */
   @javax.annotation.Nullable
   public String getSpecialConditions() {
     return specialConditions;
@@ -325,10 +324,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Start Date.
    * @return startDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getStartDate() {
     return startDate;
@@ -344,10 +343,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Expiration date.
    * @return expirationDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getExpirationDate() {
     return expirationDate;
@@ -363,10 +362,10 @@ public class DealsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of days remaining before the deal expires.
    * @return daysRemaining
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getDaysRemaining() {
     return daysRemaining;
@@ -467,12 +466,12 @@ public class DealsDetailsResponseProductsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to DealsDetailsResponseProductsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to DealsDetailsResponseProductsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!DealsDetailsResponseProductsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -543,22 +542,22 @@ public class DealsDetailsResponseProductsInner {
     }
   }
 
- /**
-  * Create an instance of DealsDetailsResponseProductsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of DealsDetailsResponseProductsInner
-  * @throws IOException if the JSON string is invalid with respect to DealsDetailsResponseProductsInner
-  */
+  /**
+   * Create an instance of DealsDetailsResponseProductsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of DealsDetailsResponseProductsInner
+   * @throws IOException if the JSON string is invalid with respect to DealsDetailsResponseProductsInner
+   */
   public static DealsDetailsResponseProductsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, DealsDetailsResponseProductsInner.class);
   }
 
- /**
-  * Convert an instance of DealsDetailsResponseProductsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of DealsDetailsResponseProductsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

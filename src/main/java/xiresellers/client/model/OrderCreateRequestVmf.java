@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * Vendor mandatory fields, this is required in case of warranty orders.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateRequestVmf {
   public static final String SERIALIZED_NAME_VEND_AUTH_NUMBER = "vendAuthNumber";
   @SerializedName(SERIALIZED_NAME_VEND_AUTH_NUMBER)
@@ -63,10 +62,10 @@ public class OrderCreateRequestVmf {
     return this;
   }
 
-   /**
+  /**
    * Authorization number provided by vendor to Ingram&#39;s reseller. Orders will be placed on hold without this value, vendor specific mandatory field - please reach out Ingram Sales team for list of vendor for whom this is mandatory.
    * @return vendAuthNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendAuthNumber() {
     return vendAuthNumber;
@@ -128,12 +127,12 @@ public class OrderCreateRequestVmf {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequestVmf
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequestVmf
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateRequestVmf.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -183,22 +182,22 @@ public class OrderCreateRequestVmf {
     }
   }
 
- /**
-  * Create an instance of OrderCreateRequestVmf given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateRequestVmf
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateRequestVmf
-  */
+  /**
+   * Create an instance of OrderCreateRequestVmf given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateRequestVmf
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateRequestVmf
+   */
   public static OrderCreateRequestVmf fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateRequestVmf.class);
   }
 
- /**
-  * Convert an instance of OrderCreateRequestVmf to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateRequestVmf to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

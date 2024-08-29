@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange {
   public static final String SERIALIZED_NAME_START_DATE = "startDate";
   @SerializedName(SERIALIZED_NAME_START_DATE)
@@ -67,10 +66,10 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange {
     return this;
   }
 
-   /**
+  /**
    * Start Date.
    * @return startDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getStartDate() {
     return startDate;
@@ -86,10 +85,10 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange {
     return this;
   }
 
-   /**
+  /**
    * End Date.
    * @return endDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndDate() {
     return endDate;
@@ -154,12 +153,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -212,22 +211,22 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange {
     }
   }
 
- /**
-  * Create an instance of OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange
-  * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange
-  */
+  /**
+   * Create an instance of OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange
+   * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange
+   */
   public static OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange.class);
   }
 
- /**
-  * Convert an instance of OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

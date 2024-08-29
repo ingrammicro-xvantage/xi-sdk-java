@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * The shipping information provided by the reseller for order delivery.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderDetailB2BShipToInfo {
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
@@ -103,10 +102,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The company contact provided by the reseller.
    * @return contact
-  **/
+   */
   @javax.annotation.Nullable
   public String getContact() {
     return contact;
@@ -122,10 +121,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The name of the company the order will be shipped to.
    * @return companyName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCompanyName() {
     return companyName;
@@ -141,10 +140,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The address line 1 the order will be shipped to.
    * @return addressLine1
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine1() {
     return addressLine1;
@@ -160,10 +159,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The address line 2 the order will be shipped to.
    * @return addressLine2
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine2() {
     return addressLine2;
@@ -179,10 +178,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The address line 3 the order will be shipped to.
    * @return addressLine3
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine3() {
     return addressLine3;
@@ -198,10 +197,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The city the order will be shipped to.
    * @return city
-  **/
+   */
   @javax.annotation.Nullable
   public String getCity() {
     return city;
@@ -217,10 +216,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The state the order will be shipped to.
    * @return state
-  **/
+   */
   @javax.annotation.Nullable
   public String getState() {
     return state;
@@ -236,10 +235,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The zip or postal code the order will be shipped to.
    * @return postalCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getPostalCode() {
     return postalCode;
@@ -255,10 +254,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The two-character ISO country code the order will be shipped to.
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCountryCode() {
     return countryCode;
@@ -274,10 +273,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The company contact phone number.
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getPhoneNumber() {
     return phoneNumber;
@@ -293,10 +292,10 @@ public class OrderDetailB2BShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The company contact email address.
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   public String getEmail() {
     return email;
@@ -388,12 +387,12 @@ public class OrderDetailB2BShipToInfo {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BShipToInfo
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BShipToInfo
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2BShipToInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -473,22 +472,22 @@ public class OrderDetailB2BShipToInfo {
     }
   }
 
- /**
-  * Create an instance of OrderDetailB2BShipToInfo given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDetailB2BShipToInfo
-  * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BShipToInfo
-  */
+  /**
+   * Create an instance of OrderDetailB2BShipToInfo given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDetailB2BShipToInfo
+   * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BShipToInfo
+   */
   public static OrderDetailB2BShipToInfo fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDetailB2BShipToInfo.class);
   }
 
- /**
-  * Convert an instance of OrderDetailB2BShipToInfo to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDetailB2BShipToInfo to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

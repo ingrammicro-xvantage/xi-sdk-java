@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * GetAccesstoken500ResponseFault
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class GetAccesstoken500ResponseFault {
   public static final String SERIALIZED_NAME_FAULTSTRING = "faultstring";
   @SerializedName(SERIALIZED_NAME_FAULTSTRING)
@@ -68,10 +67,10 @@ public class GetAccesstoken500ResponseFault {
     return this;
   }
 
-   /**
+  /**
    * Get faultstring
    * @return faultstring
-  **/
+   */
   @javax.annotation.Nullable
   public String getFaultstring() {
     return faultstring;
@@ -87,10 +86,10 @@ public class GetAccesstoken500ResponseFault {
     return this;
   }
 
-   /**
+  /**
    * Get detail
    * @return detail
-  **/
+   */
   @javax.annotation.Nullable
   public GetAccesstoken500ResponseFaultDetail getDetail() {
     return detail;
@@ -155,12 +154,12 @@ public class GetAccesstoken500ResponseFault {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to GetAccesstoken500ResponseFault
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to GetAccesstoken500ResponseFault
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!GetAccesstoken500ResponseFault.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -214,22 +213,22 @@ public class GetAccesstoken500ResponseFault {
     }
   }
 
- /**
-  * Create an instance of GetAccesstoken500ResponseFault given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of GetAccesstoken500ResponseFault
-  * @throws IOException if the JSON string is invalid with respect to GetAccesstoken500ResponseFault
-  */
+  /**
+   * Create an instance of GetAccesstoken500ResponseFault given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of GetAccesstoken500ResponseFault
+   * @throws IOException if the JSON string is invalid with respect to GetAccesstoken500ResponseFault
+   */
   public static GetAccesstoken500ResponseFault fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, GetAccesstoken500ResponseFault.class);
   }
 
- /**
-  * Convert an instance of GetAccesstoken500ResponseFault to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of GetAccesstoken500ResponseFault to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

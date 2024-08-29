@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * The shipping information provided by the reseller.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateResponseShipToInfo {
   public static final String SERIALIZED_NAME_ADDRESS_ID = "addressId";
   @SerializedName(SERIALIZED_NAME_ADDRESS_ID)
@@ -119,10 +118,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The ID references the resellers address in Ingram Micro&#39;s system for shipping. Provided to resellers during the onboarding process.
    * @return addressId
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressId() {
     return addressId;
@@ -138,10 +137,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The company contact provided by the reseller.
    * @return contact
-  **/
+   */
   @javax.annotation.Nullable
   public String getContact() {
     return contact;
@@ -157,10 +156,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The name of the company the order will be shipped to.
    * @return companyName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCompanyName() {
     return companyName;
@@ -176,10 +175,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * name1
    * @return name1
-  **/
+   */
   @javax.annotation.Nullable
   public String getName1() {
     return name1;
@@ -195,10 +194,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * name2
    * @return name2
-  **/
+   */
   @javax.annotation.Nullable
   public String getName2() {
     return name2;
@@ -214,10 +213,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The street address and building or house number the order will be shipped to.
    * @return addressLine1
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine1() {
     return addressLine1;
@@ -233,10 +232,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The apartment number the order will be shipped to.
    * @return addressLine2
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine2() {
     return addressLine2;
@@ -252,10 +251,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Line 3 of the address the order will be shipped to.
    * @return addressLine3
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine3() {
     return addressLine3;
@@ -271,10 +270,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Street address4
    * @return addressLine4
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine4() {
     return addressLine4;
@@ -290,10 +289,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The city the order will be shipped to.
    * @return city
-  **/
+   */
   @javax.annotation.Nullable
   public String getCity() {
     return city;
@@ -309,10 +308,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The state the order will be shipped to.
    * @return state
-  **/
+   */
   @javax.annotation.Nullable
   public String getState() {
     return state;
@@ -328,10 +327,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The zip or postal code the order will be shipped to.
    * @return postalCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getPostalCode() {
     return postalCode;
@@ -347,10 +346,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The two-character ISO country code the order will be shipped to.
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCountryCode() {
     return countryCode;
@@ -366,10 +365,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The company contact phone number.
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getPhoneNumber() {
     return phoneNumber;
@@ -385,10 +384,10 @@ public class OrderCreateResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * The company contact email address.
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   public String getEmail() {
     return email;
@@ -492,12 +491,12 @@ public class OrderCreateResponseShipToInfo {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseShipToInfo
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseShipToInfo
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateResponseShipToInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -589,22 +588,22 @@ public class OrderCreateResponseShipToInfo {
     }
   }
 
- /**
-  * Create an instance of OrderCreateResponseShipToInfo given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateResponseShipToInfo
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseShipToInfo
-  */
+  /**
+   * Create an instance of OrderCreateResponseShipToInfo given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateResponseShipToInfo
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseShipToInfo
+   */
   public static OrderCreateResponseShipToInfo fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateResponseShipToInfo.class);
   }
 
- /**
-  * Convert an instance of OrderCreateResponseShipToInfo to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateResponseShipToInfo to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

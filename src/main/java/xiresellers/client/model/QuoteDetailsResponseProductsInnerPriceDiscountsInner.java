@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPriceDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -104,10 +103,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   public String getType() {
     return type;
@@ -123,10 +122,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get amount
    * @return amount
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getAmount() {
     return amount;
@@ -142,10 +141,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get expirationDate
    * @return expirationDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getExpirationDate() {
     return expirationDate;
@@ -161,10 +160,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   public String getDescription() {
     return description;
@@ -180,10 +179,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get avaliableQunatity
    * @return avaliableQunatity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getAvaliableQunatity() {
     return avaliableQunatity;
@@ -199,10 +198,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get minimumQuantity
    * @return minimumQuantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getMinimumQuantity() {
     return minimumQuantity;
@@ -218,10 +217,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get bidNumber
    * @return bidNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getBidNumber() {
     return bidNumber;
@@ -237,10 +236,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get bidVersion
    * @return bidVersion
-  **/
+   */
   @javax.annotation.Nullable
   public String getBidVersion() {
     return bidVersion;
@@ -256,10 +255,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get validFrom
    * @return validFrom
-  **/
+   */
   @javax.annotation.Nullable
   public String getValidFrom() {
     return validFrom;
@@ -275,10 +274,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get validTo
    * @return validTo
-  **/
+   */
   @javax.annotation.Nullable
   public String getValidTo() {
     return validTo;
@@ -294,10 +293,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get discountOffList
    * @return discountOffList
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getDiscountOffList() {
     return discountOffList;
@@ -389,12 +388,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to QuoteDetailsResponseProductsInnerPriceDiscountsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to QuoteDetailsResponseProductsInnerPriceDiscountsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!QuoteDetailsResponseProductsInnerPriceDiscountsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -462,22 +461,22 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     }
   }
 
- /**
-  * Create an instance of QuoteDetailsResponseProductsInnerPriceDiscountsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of QuoteDetailsResponseProductsInnerPriceDiscountsInner
-  * @throws IOException if the JSON string is invalid with respect to QuoteDetailsResponseProductsInnerPriceDiscountsInner
-  */
+  /**
+   * Create an instance of QuoteDetailsResponseProductsInnerPriceDiscountsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of QuoteDetailsResponseProductsInnerPriceDiscountsInner
+   * @throws IOException if the JSON string is invalid with respect to QuoteDetailsResponseProductsInnerPriceDiscountsInner
+   */
   public static QuoteDetailsResponseProductsInnerPriceDiscountsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, QuoteDetailsResponseProductsInnerPriceDiscountsInner.class);
   }
 
- /**
-  * Convert an instance of QuoteDetailsResponseProductsInnerPriceDiscountsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of QuoteDetailsResponseProductsInnerPriceDiscountsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

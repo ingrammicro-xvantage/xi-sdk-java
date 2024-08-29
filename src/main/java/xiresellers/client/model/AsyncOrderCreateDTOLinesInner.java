@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * AsyncOrderCreateDTOLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class AsyncOrderCreateDTOLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -94,10 +93,10 @@ public class AsyncOrderCreateDTOLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s line item number for reference in their system.
    * @return customerLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerLineNumber() {
     return customerLineNumber;
@@ -113,10 +112,10 @@ public class AsyncOrderCreateDTOLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Unique IngramMicro part number.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -132,10 +131,10 @@ public class AsyncOrderCreateDTOLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity of the line item.
    * @return quantity
-  **/
+   */
   @javax.annotation.Nullable
   public String getQuantity() {
     return quantity;
@@ -151,10 +150,10 @@ public class AsyncOrderCreateDTOLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Unit Price of Item
    * @return unitPrice
-  **/
+   */
   @javax.annotation.Nullable
   public String getUnitPrice() {
     return unitPrice;
@@ -170,10 +169,10 @@ public class AsyncOrderCreateDTOLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get specialBidNumber
    * @return specialBidNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSpecialBidNumber() {
     return specialBidNumber;
@@ -189,10 +188,10 @@ public class AsyncOrderCreateDTOLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get endUserPrice
    * @return endUserPrice
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndUserPrice() {
     return endUserPrice;
@@ -208,10 +207,10 @@ public class AsyncOrderCreateDTOLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get notes
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -235,10 +234,10 @@ public class AsyncOrderCreateDTOLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts.
    * @return endUserInfo
-  **/
+   */
   @javax.annotation.Nullable
   public List<AsyncOrderCreateDTOLinesInnerEndUserInfoInner> getEndUserInfo() {
     return endUserInfo;
@@ -321,12 +320,12 @@ public class AsyncOrderCreateDTOLinesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to AsyncOrderCreateDTOLinesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to AsyncOrderCreateDTOLinesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!AsyncOrderCreateDTOLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -408,22 +407,22 @@ public class AsyncOrderCreateDTOLinesInner {
     }
   }
 
- /**
-  * Create an instance of AsyncOrderCreateDTOLinesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of AsyncOrderCreateDTOLinesInner
-  * @throws IOException if the JSON string is invalid with respect to AsyncOrderCreateDTOLinesInner
-  */
+  /**
+   * Create an instance of AsyncOrderCreateDTOLinesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of AsyncOrderCreateDTOLinesInner
+   * @throws IOException if the JSON string is invalid with respect to AsyncOrderCreateDTOLinesInner
+   */
   public static AsyncOrderCreateDTOLinesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, AsyncOrderCreateDTOLinesInner.class);
   }
 
- /**
-  * Convert an instance of AsyncOrderCreateDTOLinesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of AsyncOrderCreateDTOLinesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyRequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderModifyRequestLinesInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -137,10 +136,10 @@ public class OrderModifyRequestLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The unique IngramMicro part number.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -156,10 +155,10 @@ public class OrderModifyRequestLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The IngramMicro line number.
    * @return ingramLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramLineNumber() {
     return ingramLineNumber;
@@ -175,10 +174,10 @@ public class OrderModifyRequestLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s line number for reference in their system.
    * @return customerLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerLineNumber() {
     return customerLineNumber;
@@ -194,10 +193,10 @@ public class OrderModifyRequestLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The line number that was added, updated, or deleted.
    * @return addUpdateDeleteLine
-  **/
+   */
   @javax.annotation.Nullable
   public AddUpdateDeleteLineEnum getAddUpdateDeleteLine() {
     return addUpdateDeleteLine;
@@ -213,10 +212,10 @@ public class OrderModifyRequestLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity of the line item.
    * @return quantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantity() {
     return quantity;
@@ -232,10 +231,10 @@ public class OrderModifyRequestLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The line-level notes.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -312,12 +311,12 @@ public class OrderModifyRequestLinesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderModifyRequestLinesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderModifyRequestLinesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderModifyRequestLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -383,22 +382,22 @@ public class OrderModifyRequestLinesInner {
     }
   }
 
- /**
-  * Create an instance of OrderModifyRequestLinesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderModifyRequestLinesInner
-  * @throws IOException if the JSON string is invalid with respect to OrderModifyRequestLinesInner
-  */
+  /**
+   * Create an instance of OrderModifyRequestLinesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderModifyRequestLinesInner
+   * @throws IOException if the JSON string is invalid with respect to OrderModifyRequestLinesInner
+   */
   public static OrderModifyRequestLinesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderModifyRequestLinesInner.class);
   }
 
- /**
-  * Convert an instance of OrderModifyRequestLinesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderModifyRequestLinesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

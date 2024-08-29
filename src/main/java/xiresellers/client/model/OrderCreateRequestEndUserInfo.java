@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateRequestEndUserInfo {
   public static final String SERIALIZED_NAME_END_USER_ID = "endUserId";
   @SerializedName(SERIALIZED_NAME_END_USER_ID)
@@ -119,10 +118,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * ID for the end user/customer in Ingram Micro&#39;s system.
    * @return endUserId
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndUserId() {
     return endUserId;
@@ -138,10 +137,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * The contact name for the end user/customer.
    * @return contact
-  **/
+   */
   @javax.annotation.Nullable
   public String getContact() {
     return contact;
@@ -157,10 +156,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * The company name for the end user/customer. Required for Impulse countries.
    * @return companyName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCompanyName() {
     return companyName;
@@ -176,10 +175,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * name1
    * @return name1
-  **/
+   */
   @javax.annotation.Nullable
   public String getName1() {
     return name1;
@@ -195,10 +194,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * name2
    * @return name2
-  **/
+   */
   @javax.annotation.Nullable
   public String getName2() {
     return name2;
@@ -214,10 +213,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s street address and building or house number. Required for Impulse countries.
    * @return addressLine1
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine1() {
     return addressLine1;
@@ -233,10 +232,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s apartment number.
    * @return addressLine2
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine2() {
     return addressLine2;
@@ -252,10 +251,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * Line 3 of the address for the end user/customer.
    * @return addressLine3
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine3() {
     return addressLine3;
@@ -271,10 +270,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * Street address4
    * @return addressLine4
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine4() {
     return addressLine4;
@@ -290,10 +289,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s city. Required for Impulse countries.
    * @return city
-  **/
+   */
   @javax.annotation.Nullable
   public String getCity() {
     return city;
@@ -309,10 +308,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s state. Required for Impulse countries but optional for EMEA countries.
    * @return state
-  **/
+   */
   @javax.annotation.Nullable
   public String getState() {
     return state;
@@ -328,10 +327,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s zip or postal code. Required for Impulse countries.
    * @return postalCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getPostalCode() {
     return postalCode;
@@ -347,10 +346,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s two-character ISO country code.
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCountryCode() {
     return countryCode;
@@ -366,10 +365,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s phone number.
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getPhoneNumber() {
     return phoneNumber;
@@ -385,10 +384,10 @@ public class OrderCreateRequestEndUserInfo {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s email.
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   public String getEmail() {
     return email;
@@ -492,12 +491,12 @@ public class OrderCreateRequestEndUserInfo {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequestEndUserInfo
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequestEndUserInfo
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateRequestEndUserInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -589,22 +588,22 @@ public class OrderCreateRequestEndUserInfo {
     }
   }
 
- /**
-  * Create an instance of OrderCreateRequestEndUserInfo given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateRequestEndUserInfo
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateRequestEndUserInfo
-  */
+  /**
+   * Create an instance of OrderCreateRequestEndUserInfo given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateRequestEndUserInfo
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateRequestEndUserInfo
+   */
   public static OrderCreateRequestEndUserInfo fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateRequestEndUserInfo.class);
   }
 
- /**
-  * Convert an instance of OrderCreateRequestEndUserInfo to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateRequestEndUserInfo to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

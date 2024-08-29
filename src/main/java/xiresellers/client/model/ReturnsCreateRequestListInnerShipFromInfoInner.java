@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsCreateRequestListInnerShipFromInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ReturnsCreateRequestListInnerShipFromInfoInner {
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
@@ -103,10 +102,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the company from where the product will be shipped.
    * @return companyName
-  **/
+   */
   @javax.annotation.Nonnull
   public String getCompanyName() {
     return companyName;
@@ -122,10 +121,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Contact name of the person from where the product will be shipped.
    * @return contact
-  **/
+   */
   @javax.annotation.Nonnull
   public String getContact() {
     return contact;
@@ -141,10 +140,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Ship from Address Line1.
    * @return addressLine1
-  **/
+   */
   @javax.annotation.Nonnull
   public String getAddressLine1() {
     return addressLine1;
@@ -160,10 +159,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Ship from Address Line2.
    * @return addressLine2
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine2() {
     return addressLine2;
@@ -179,10 +178,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Ship from Address Line3.
    * @return addressLine3
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine3() {
     return addressLine3;
@@ -198,10 +197,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Ship from City.
    * @return city
-  **/
+   */
   @javax.annotation.Nonnull
   public String getCity() {
     return city;
@@ -217,10 +216,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Ship from state.
    * @return state
-  **/
+   */
   @javax.annotation.Nonnull
   public String getState() {
     return state;
@@ -236,10 +235,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Ship from postal code.
    * @return postalCode
-  **/
+   */
   @javax.annotation.Nonnull
   public String getPostalCode() {
     return postalCode;
@@ -255,10 +254,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * ship from country code.
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nonnull
   public String getCountryCode() {
     return countryCode;
@@ -274,10 +273,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Ship from email.
    * @return email
-  **/
+   */
   @javax.annotation.Nonnull
   public String getEmail() {
     return email;
@@ -293,10 +292,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Ship from phone number.
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getPhoneNumber() {
     return phoneNumber;
@@ -396,12 +395,12 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     openapiRequiredFields.add("email");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ReturnsCreateRequestListInnerShipFromInfoInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ReturnsCreateRequestListInnerShipFromInfoInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ReturnsCreateRequestListInnerShipFromInfoInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -488,22 +487,22 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
     }
   }
 
- /**
-  * Create an instance of ReturnsCreateRequestListInnerShipFromInfoInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ReturnsCreateRequestListInnerShipFromInfoInner
-  * @throws IOException if the JSON string is invalid with respect to ReturnsCreateRequestListInnerShipFromInfoInner
-  */
+  /**
+   * Create an instance of ReturnsCreateRequestListInnerShipFromInfoInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ReturnsCreateRequestListInnerShipFromInfoInner
+   * @throws IOException if the JSON string is invalid with respect to ReturnsCreateRequestListInnerShipFromInfoInner
+   */
   public static ReturnsCreateRequestListInnerShipFromInfoInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ReturnsCreateRequestListInnerShipFromInfoInner.class);
   }
 
- /**
-  * Convert an instance of ReturnsCreateRequestListInnerShipFromInfoInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ReturnsCreateRequestListInnerShipFromInfoInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

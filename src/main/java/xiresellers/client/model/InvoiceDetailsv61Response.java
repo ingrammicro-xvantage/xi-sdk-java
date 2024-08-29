@@ -45,7 +45,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -57,7 +56,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class InvoiceDetailsv61Response {
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
@@ -147,10 +146,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * The Invoice number for the order.
    * @return invoiceNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceNumber() {
     return invoiceNumber;
@@ -166,10 +165,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Status of the invoice.
    * @return invoiceStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceStatus() {
     return invoiceStatus;
@@ -185,10 +184,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Date of an Invoice.
    * @return invoiceDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceDate() {
     return invoiceDate;
@@ -204,10 +203,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s order number for reference in their system.
    * @return customerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerOrderNumber() {
     return customerOrderNumber;
@@ -223,10 +222,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * The end customer&#39;s order number for reference in their system.
    * @return endCustomerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndCustomerOrderNumber() {
     return endCustomerOrderNumber;
@@ -242,10 +241,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * The end customer&#39;s order number for reference in their system.
    * @return orderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderNumber() {
     return orderNumber;
@@ -261,10 +260,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * The date and time in UTC format that the order was created.
    * @return orderDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderDate() {
     return orderDate;
@@ -280,10 +279,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Bill to party
    * @return billToID
-  **/
+   */
   @javax.annotation.Nullable
   public String getBillToID() {
     return billToID;
@@ -299,10 +298,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Type of the Invoice
    * @return invoiceType
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceType() {
     return invoiceType;
@@ -318,10 +317,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Date when the invoice is due.
    * @return invoiceDueDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceDueDate() {
     return invoiceDueDate;
@@ -337,10 +336,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Customer country code.
    * @return customerCountryCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerCountryCode() {
     return customerCountryCode;
@@ -356,10 +355,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Unique customer number in Ingram&#39;s system.
    * @return customerNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerNumber() {
     return customerNumber;
@@ -375,10 +374,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * The IngramMicro sales order number.
    * @return ingramOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderNumber() {
     return ingramOrderNumber;
@@ -394,10 +393,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Notes for the invoice.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -413,10 +412,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Get paymentTermsInfo
    * @return paymentTermsInfo
-  **/
+   */
   @javax.annotation.Nullable
   public InvoiceDetailsv61ResponsePaymentTermsInfo getPaymentTermsInfo() {
     return paymentTermsInfo;
@@ -432,10 +431,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Get billToInfo
    * @return billToInfo
-  **/
+   */
   @javax.annotation.Nullable
   public InvoiceDetailsv61ResponseBillToInfo getBillToInfo() {
     return billToInfo;
@@ -451,10 +450,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Get shipToInfo
    * @return shipToInfo
-  **/
+   */
   @javax.annotation.Nullable
   public InvoiceDetailsv61ResponseShipToInfo getShipToInfo() {
     return shipToInfo;
@@ -478,10 +477,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Get lines
    * @return lines
-  **/
+   */
   @javax.annotation.Nullable
   public List<InvoiceDetailsv61ResponseLinesInner> getLines() {
     return lines;
@@ -497,10 +496,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Get fxRateInfo
    * @return fxRateInfo
-  **/
+   */
   @javax.annotation.Nullable
   public InvoiceDetailsv61ResponseFxRateInfo getFxRateInfo() {
     return fxRateInfo;
@@ -516,10 +515,10 @@ public class InvoiceDetailsv61Response {
     return this;
   }
 
-   /**
+  /**
    * Get summary
    * @return summary
-  **/
+   */
   @javax.annotation.Nullable
   public InvoiceDetailsv61ResponseSummary getSummary() {
     return summary;
@@ -638,12 +637,12 @@ public class InvoiceDetailsv61Response {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to InvoiceDetailsv61Response
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to InvoiceDetailsv61Response
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!InvoiceDetailsv61Response.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -766,22 +765,22 @@ public class InvoiceDetailsv61Response {
     }
   }
 
- /**
-  * Create an instance of InvoiceDetailsv61Response given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of InvoiceDetailsv61Response
-  * @throws IOException if the JSON string is invalid with respect to InvoiceDetailsv61Response
-  */
+  /**
+   * Create an instance of InvoiceDetailsv61Response given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of InvoiceDetailsv61Response
+   * @throws IOException if the JSON string is invalid with respect to InvoiceDetailsv61Response
+   */
   public static InvoiceDetailsv61Response fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, InvoiceDetailsv61Response.class);
   }
 
- /**
-  * Convert an instance of InvoiceDetailsv61Response to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of InvoiceDetailsv61Response to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

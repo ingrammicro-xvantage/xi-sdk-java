@@ -46,7 +46,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -58,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateRequest {
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
@@ -120,10 +119,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s unique PO/Order number.
    * @return customerOrderNumber
-  **/
+   */
   @javax.annotation.Nonnull
   public String getCustomerOrderNumber() {
     return customerOrderNumber;
@@ -139,10 +138,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s Purchase Order number.
    * @return endCustomerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndCustomerOrderNumber() {
     return endCustomerOrderNumber;
@@ -158,10 +157,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Suffix used to identify billing address. Created during onboarding. Resellers are provided with one or more address IDs depending on how many bill to addresses they need for various flooring companies they are using for credit.
    * @return billToAddressId
-  **/
+   */
   @javax.annotation.Nullable
   public String getBillToAddressId() {
     return billToAddressId;
@@ -177,10 +176,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * The bid number provided to the reseller by the vendor for special pricing and discounts. Line-level bid numbers take precedence over header-level bid numbers.
    * @return specialBidNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSpecialBidNumber() {
     return specialBidNumber;
@@ -196,10 +195,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Order level notes.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -215,10 +214,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * ENUM [\&quot;true\&quot;,\&quot;false\&quot;] - accept order if this item is backordered. This field along with shipComplete field decides the value of backorderflag. The value of this field is ignored when shipComplete field is present.
    * @return acceptBackOrder
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getAcceptBackOrder() {
     return acceptBackOrder;
@@ -234,10 +233,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get resellerInfo
    * @return resellerInfo
-  **/
+   */
   @javax.annotation.Nullable
   public OrderCreateRequestResellerInfo getResellerInfo() {
     return resellerInfo;
@@ -253,10 +252,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get vmf
    * @return vmf
-  **/
+   */
   @javax.annotation.Nullable
   public OrderCreateRequestVmf getVmf() {
     return vmf;
@@ -272,10 +271,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get shipToInfo
    * @return shipToInfo
-  **/
+   */
   @javax.annotation.Nullable
   public OrderCreateRequestShipToInfo getShipToInfo() {
     return shipToInfo;
@@ -291,10 +290,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get endUserInfo
    * @return endUserInfo
-  **/
+   */
   @javax.annotation.Nullable
   public OrderCreateRequestEndUserInfo getEndUserInfo() {
     return endUserInfo;
@@ -318,10 +317,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * The line-level details of the order.
    * @return lines
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderCreateRequestLinesInner> getLines() {
     return lines;
@@ -337,10 +336,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Get shipmentDetails
    * @return shipmentDetails
-  **/
+   */
   @javax.annotation.Nullable
   public OrderCreateRequestShipmentDetails getShipmentDetails() {
     return shipmentDetails;
@@ -364,10 +363,10 @@ public class OrderCreateRequest {
     return this;
   }
 
-   /**
+  /**
    * Shipment-level additional attributes.
    * @return additionalAttributes
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderCreateRequestAdditionalAttributesInner> getAdditionalAttributes() {
     return additionalAttributes;
@@ -466,12 +465,12 @@ public class OrderCreateRequest {
     openapiRequiredFields.add("customerOrderNumber");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -588,22 +587,22 @@ public class OrderCreateRequest {
     }
   }
 
- /**
-  * Create an instance of OrderCreateRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateRequest
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateRequest
-  */
+  /**
+   * Create an instance of OrderCreateRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateRequest
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateRequest
+   */
   public static OrderCreateRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateRequest.class);
   }
 
- /**
-  * Convert an instance of OrderCreateRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

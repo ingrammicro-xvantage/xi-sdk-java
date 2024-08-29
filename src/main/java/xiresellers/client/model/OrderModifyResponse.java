@@ -44,7 +44,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -56,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderModifyResponse {
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
@@ -130,10 +129,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The IngramMicro order number.
    * @return ingramOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderNumber() {
     return ingramOrderNumber;
@@ -149,10 +148,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The description of the change.
    * @return changeDescription
-  **/
+   */
   @javax.annotation.Nullable
   public String getChangeDescription() {
     return changeDescription;
@@ -168,10 +167,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The date the order was modified.
    * @return orderModifiedDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderModifiedDate() {
     return orderModifiedDate;
@@ -187,10 +186,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s order number for reference in their system.
    * @return customerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerOrderNumber() {
     return customerOrderNumber;
@@ -206,10 +205,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s order number for reference in their system.
    * @return endCustomerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndCustomerOrderNumber() {
     return endCustomerOrderNumber;
@@ -225,10 +224,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The total for the order.
    * @return orderTotal
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getOrderTotal() {
     return orderTotal;
@@ -244,10 +243,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * Order-level notes.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -263,10 +262,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The sub total for the order.
    * @return orderSubTotal
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getOrderSubTotal() {
     return orderSubTotal;
@@ -282,10 +281,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The freight charges for the order.
    * @return freightCharges
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getFreightCharges() {
     return freightCharges;
@@ -301,10 +300,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The total tax for the order.
    * @return totalTax
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getTotalTax() {
     return totalTax;
@@ -320,10 +319,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The status of the order. One of the following. Backordered, In Progress, Shipped, Delivered, Canceled, On Hold
    * @return orderStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderStatus() {
     return orderStatus;
@@ -339,10 +338,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * Suffix used to identify billing address. Created during onboarding. Resellers are provided with one or more address IDs depending on how many bill to addresses they need for various flooring companies they are using for credit.
    * @return billToAddressId
-  **/
+   */
   @javax.annotation.Nullable
   public String getBillToAddressId() {
     return billToAddressId;
@@ -358,10 +357,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * Get shipToInfo
    * @return shipToInfo
-  **/
+   */
   @javax.annotation.Nullable
   public OrderModifyResponseShipToInfo getShipToInfo() {
     return shipToInfo;
@@ -385,10 +384,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * The line-level details for the order.
    * @return lines
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderModifyResponseLinesInner> getLines() {
     return lines;
@@ -412,10 +411,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * Details for failed lines in the order.
    * @return rejectedLineItems
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderModifyResponseRejectedLineItemsInner> getRejectedLineItems() {
     return rejectedLineItems;
@@ -439,10 +438,10 @@ public class OrderModifyResponse {
     return this;
   }
 
-   /**
+  /**
    * Header-level additional attributes.
    * @return additionalAttributes
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderModifyResponseLinesInnerAdditionalAttributesInner> getAdditionalAttributes() {
     return additionalAttributes;
@@ -549,12 +548,12 @@ public class OrderModifyResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderModifyResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderModifyResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderModifyResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -671,22 +670,22 @@ public class OrderModifyResponse {
     }
   }
 
- /**
-  * Create an instance of OrderModifyResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderModifyResponse
-  * @throws IOException if the JSON string is invalid with respect to OrderModifyResponse
-  */
+  /**
+   * Create an instance of OrderModifyResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderModifyResponse
+   * @throws IOException if the JSON string is invalid with respect to OrderModifyResponse
+   */
   public static OrderModifyResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderModifyResponse.class);
   }
 
- /**
-  * Convert an instance of OrderModifyResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderModifyResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

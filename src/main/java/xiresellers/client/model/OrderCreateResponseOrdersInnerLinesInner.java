@@ -42,7 +42,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -54,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInnerLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateResponseOrdersInnerLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
@@ -124,10 +123,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The sub order number. The two-digit prefix is the warehouse code of the warehouse nearest the reseller. The middle number is the order number. The two-digit suffix is the sub order number.
    * @return subOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSubOrderNumber() {
     return subOrderNumber;
@@ -143,10 +142,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The Ingram Micro line number for the product.
    * @return ingramLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramLineNumber() {
     return ingramLineNumber;
@@ -162,10 +161,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s line number for reference in their system.
    * @return customerLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerLineNumber() {
     return customerLineNumber;
@@ -181,10 +180,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The status for the line item in the order. One of: Backordered, Open
    * @return lineStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getLineStatus() {
     return lineStatus;
@@ -200,10 +199,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The Ingram Micro part number for the line item.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -219,10 +218,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor part number for the line item.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -238,10 +237,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The unit price for the line item.
    * @return unitPrice
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getUnitPrice() {
     return unitPrice;
@@ -257,10 +256,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The extended list price (unit price X quantity) for the line item.
    * @return extendedUnitPrice
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getExtendedUnitPrice() {
     return extendedUnitPrice;
@@ -276,10 +275,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity of the line item ordered.
    * @return quantityOrdered
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityOrdered() {
     return quantityOrdered;
@@ -295,10 +294,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity of the line item that has been confirmed.
    * @return quantityConfirmed
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityConfirmed() {
     return quantityConfirmed;
@@ -314,10 +313,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity of the line item that is backordered.
    * @return quantityBackOrdered
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityBackOrdered() {
     return quantityBackOrdered;
@@ -333,10 +332,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The bid number for the line item provided to the reseller by the vendor for special pricing and discounts. Line-level bid numbers take precedence over header-level bid numbers.
    * @return specialBidNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSpecialBidNumber() {
     return specialBidNumber;
@@ -352,10 +351,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Line-level notes.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -379,10 +378,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The shipment details for the line item.
    * @return shipmentDetails
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner> getShipmentDetails() {
     return shipmentDetails;
@@ -406,10 +405,10 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     return this;
   }
 
-   /**
+  /**
    * SAP requested and country-specific line level details.
    * @return additionalAttributes
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner> getAdditionalAttributes() {
     return additionalAttributes;
@@ -513,12 +512,12 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInnerLinesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInnerLinesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateResponseOrdersInnerLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -617,22 +616,22 @@ public class OrderCreateResponseOrdersInnerLinesInner {
     }
   }
 
- /**
-  * Create an instance of OrderCreateResponseOrdersInnerLinesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateResponseOrdersInnerLinesInner
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInnerLinesInner
-  */
+  /**
+   * Create an instance of OrderCreateResponseOrdersInnerLinesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateResponseOrdersInnerLinesInner
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInnerLinesInner
+   */
   public static OrderCreateResponseOrdersInnerLinesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateResponseOrdersInnerLinesInner.class);
   }
 
- /**
-  * Convert an instance of OrderCreateResponseOrdersInnerLinesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateResponseOrdersInnerLinesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

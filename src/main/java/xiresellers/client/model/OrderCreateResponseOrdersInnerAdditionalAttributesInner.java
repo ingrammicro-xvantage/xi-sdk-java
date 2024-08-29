@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInnerAdditionalAttributesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateResponseOrdersInnerAdditionalAttributesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_NAME = "attributeName";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_NAME)
@@ -67,10 +66,10 @@ public class OrderCreateResponseOrdersInnerAdditionalAttributesInner {
     return this;
   }
 
-   /**
+  /**
    *  allowPartialOrder: Allow orders with failed lines. (SAP) Depends on backorder settings.   dpasRating: DX rating by Department of Defense is the highest rating by the highest offices and meant to be top priority. DO any other gov offices at the federal level to priotize.   dpasProgramId: Identifies the actual agency that signed off on the DPAS priority.   storageLocation: Determine the location of the product stock in SAP for Marketplaces.  soldTo: To be used in cases when Sold-To is different than Customer ID.  Z101: Used for end customer details such as name, address, phone, etc. This information flows to SAP and is used by warehouse.  euDepId: DEP ID would be the &#39;End User DEP/ABM Organization ID&#39; up to 32 characters and is assigned by Apple.  depOrderNbr: depordernbr is &#39;End User PO to reseller&#39; Can appear in message lines or dedicated end user po#.  
    * @return attributeName
-  **/
+   */
   @javax.annotation.Nullable
   public String getAttributeName() {
     return attributeName;
@@ -86,10 +85,10 @@ public class OrderCreateResponseOrdersInnerAdditionalAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Attribute value
    * @return attributeValue
-  **/
+   */
   @javax.annotation.Nullable
   public String getAttributeValue() {
     return attributeValue;
@@ -154,12 +153,12 @@ public class OrderCreateResponseOrdersInnerAdditionalAttributesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInnerAdditionalAttributesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInnerAdditionalAttributesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateResponseOrdersInnerAdditionalAttributesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -212,22 +211,22 @@ public class OrderCreateResponseOrdersInnerAdditionalAttributesInner {
     }
   }
 
- /**
-  * Create an instance of OrderCreateResponseOrdersInnerAdditionalAttributesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateResponseOrdersInnerAdditionalAttributesInner
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInnerAdditionalAttributesInner
-  */
+  /**
+   * Create an instance of OrderCreateResponseOrdersInnerAdditionalAttributesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateResponseOrdersInnerAdditionalAttributesInner
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInnerAdditionalAttributesInner
+   */
   public static OrderCreateResponseOrdersInnerAdditionalAttributesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateResponseOrdersInnerAdditionalAttributesInner.class);
   }
 
- /**
-  * Convert an instance of OrderCreateResponseOrdersInnerAdditionalAttributesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateResponseOrdersInnerAdditionalAttributesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -47,7 +47,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -59,7 +58,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderDetailB2BLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
@@ -197,10 +196,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The sub order number. The two-digit prefix is the warehouse code of the warehouse nearest the reseller. The middle number is the order number. The two-digit suffix is the sub order number.
    * @return subOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSubOrderNumber() {
     return subOrderNumber;
@@ -216,10 +215,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Unique Ingram Micro line number. Starts with 001.
    * @return ingramOrderLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderLineNumber() {
     return ingramOrderLineNumber;
@@ -235,10 +234,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor&#39;s sales order line number.
    * @return vendorSalesOrderLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorSalesOrderLineNumber() {
     return vendorSalesOrderLineNumber;
@@ -254,10 +253,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s line item number for reference in their system.
    * @return customerLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerLineNumber() {
     return customerLineNumber;
@@ -273,10 +272,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The status for the line item in the order. One of- Backordered, In Progress, Shipped, Delivered, Canceled, On Hold.
    * @return lineStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getLineStatus() {
     return lineStatus;
@@ -292,10 +291,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Unique IngramMicro part number.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -311,10 +310,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor&#39;s part number for the line item.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -330,10 +329,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor&#39;s name for the part in their system.
    * @return vendorName
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorName() {
     return vendorName;
@@ -349,10 +348,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor&#39;s description of the part in their system.
    * @return partDescription
-  **/
+   */
   @javax.annotation.Nullable
   public String getPartDescription() {
     return partDescription;
@@ -368,10 +367,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The unit weight of the line item.
    * @return unitWeight
-  **/
+   */
   @javax.annotation.Nullable
   public Double getUnitWeight() {
     return unitWeight;
@@ -387,10 +386,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The unit of measure for the line item.
    * @return weightUom
-  **/
+   */
   @javax.annotation.Nullable
   public String getWeightUom() {
     return weightUom;
@@ -406,10 +405,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The unit price of the line item.
    * @return unitPrice
-  **/
+   */
   @javax.annotation.Nullable
   public Double getUnitPrice() {
     return unitPrice;
@@ -425,10 +424,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The UPC code of a product.
    * @return upcCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getUpcCode() {
     return upcCode;
@@ -444,10 +443,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Unit price X quantity for the line item.
    * @return extendedPrice
-  **/
+   */
   @javax.annotation.Nullable
   public Double getExtendedPrice() {
     return extendedPrice;
@@ -463,10 +462,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The tax amount for the line item.
    * @return taxAmount
-  **/
+   */
   @javax.annotation.Nullable
   public Double getTaxAmount() {
     return taxAmount;
@@ -482,10 +481,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The country-specific three character ISO 4217 currency code for the line item.
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCurrencyCode() {
     return currencyCode;
@@ -501,10 +500,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity ordered of the line item.
    * @return quantityOrdered
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityOrdered() {
     return quantityOrdered;
@@ -520,10 +519,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity confirmed for the line item.
    * @return quantityConfirmed
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityConfirmed() {
     return quantityConfirmed;
@@ -539,10 +538,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity backordered for the line item.
    * @return quantityBackOrdered
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityBackOrdered() {
     return quantityBackOrdered;
@@ -558,10 +557,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The line-level bid number provided to the reseller by the vendor for special pricing and discounts. Used to track the bid number in the case of split orders or where different line items have different bid numbers. Line-level bid numbers take precedence over header-level bid numbers.
    * @return specialBidNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSpecialBidNumber() {
     return specialBidNumber;
@@ -577,10 +576,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Reseller-requested delivery date. Delivery date is not guaranteed.
    * @return requestedDeliverydate
-  **/
+   */
   @javax.annotation.Nullable
   public String getRequestedDeliverydate() {
     return requestedDeliverydate;
@@ -596,10 +595,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The delivery date promised by IngramMicro.
    * @return promisedDeliveryDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getPromisedDeliveryDate() {
     return promisedDeliveryDate;
@@ -615,10 +614,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Backorder ETA date
    * @return backOrderETADate
-  **/
+   */
   @javax.annotation.Nullable
   public String getBackOrderETADate() {
     return backOrderETADate;
@@ -634,10 +633,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Line-level notes for the order.
    * @return lineNotes
-  **/
+   */
   @javax.annotation.Nullable
   public String getLineNotes() {
     return lineNotes;
@@ -661,10 +660,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Shipping details for the line item.
    * @return shipmentDetails
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BLinesInnerShipmentDetailsInner> getShipmentDetails() {
     return shipmentDetails;
@@ -680,10 +679,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get serviceContractInfo
    * @return serviceContractInfo
-  **/
+   */
   @javax.annotation.Nullable
   public OrderDetailB2BLinesInnerServiceContractInfo getServiceContractInfo() {
     return serviceContractInfo;
@@ -707,10 +706,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get additionalAttributes
    * @return additionalAttributes
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BLinesInnerAdditionalAttributesInner> getAdditionalAttributes() {
     return additionalAttributes;
@@ -734,10 +733,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get links
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BLinesInnerLinksInner> getLinks() {
     return links;
@@ -761,10 +760,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get estimatedDates
    * @return estimatedDates
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BLinesInnerEstimatedDatesInner> getEstimatedDates() {
     return estimatedDates;
@@ -788,10 +787,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get scheduleLines
    * @return scheduleLines
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BLinesInnerScheduleLinesInner> getScheduleLines() {
     return scheduleLines;
@@ -815,10 +814,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get multipleShipments
    * @return multipleShipments
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BLinesInnerMultipleShipmentsInner> getMultipleShipments() {
     return multipleShipments;
@@ -834,10 +833,10 @@ public class OrderDetailB2BLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get defaultCarrierName
    * @return defaultCarrierName
-  **/
+   */
   @javax.annotation.Nullable
   public String getDefaultCarrierName() {
     return defaultCarrierName;
@@ -1003,12 +1002,12 @@ public class OrderDetailB2BLinesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2BLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -1197,22 +1196,22 @@ public class OrderDetailB2BLinesInner {
     }
   }
 
- /**
-  * Create an instance of OrderDetailB2BLinesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDetailB2BLinesInner
-  * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInner
-  */
+  /**
+   * Create an instance of OrderDetailB2BLinesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDetailB2BLinesInner
+   * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInner
+   */
   public static OrderDetailB2BLinesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDetailB2BLinesInner.class);
   }
 
- /**
-  * Convert an instance of OrderDetailB2BLinesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDetailB2BLinesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

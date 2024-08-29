@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner {
   public static final String SERIALIZED_NAME_CARTON_NUMBER = "cartonNumber";
   @SerializedName(SERIALIZED_NAME_CARTON_NUMBER)
@@ -71,10 +70,10 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return this;
   }
 
-   /**
+  /**
    * The shipment carton number that contains the line item.
    * @return cartonNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCartonNumber() {
     return cartonNumber;
@@ -90,10 +89,10 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return this;
   }
 
-   /**
+  /**
    * The quantity of line items in the box.
    * @return quantityInbox
-  **/
+   */
   @javax.annotation.Nullable
   public String getQuantityInbox() {
     return quantityInbox;
@@ -109,10 +108,10 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return this;
   }
 
-   /**
+  /**
    * The tracking number for the shipment containing the line item.
    * @return trackingNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getTrackingNumber() {
     return trackingNumber;
@@ -180,12 +179,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -241,22 +240,22 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     }
   }
 
- /**
-  * Create an instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner
-  * @throws IOException if the JSON string is invalid with respect to OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner
-  */
+  /**
+   * Create an instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner
+   * @throws IOException if the JSON string is invalid with respect to OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner
+   */
   public static OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner.class);
   }
 
- /**
-  * Convert an instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

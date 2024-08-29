@@ -46,7 +46,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -58,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2B
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderDetailB2B {
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
@@ -164,10 +163,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The IngramMicro sales order number.
    * @return ingramOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderNumber() {
     return ingramOrderNumber;
@@ -183,10 +182,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The IngramMicro sales order date.
    * @return ingramOrderDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderDate() {
     return ingramOrderDate;
@@ -202,10 +201,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The IngramMicro sales order type.
    * @return orderType
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderType() {
     return orderType;
@@ -221,10 +220,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s order number for reference in their system.
    * @return customerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerOrderNumber() {
     return customerOrderNumber;
@@ -240,10 +239,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The end customer&#39;s order number for reference in their system.
    * @return endCustomerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndCustomerOrderNumber() {
     return endCustomerOrderNumber;
@@ -259,10 +258,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The web order id of the order.
    * @return webOrderId
-  **/
+   */
   @javax.annotation.Nullable
   public String getWebOrderId() {
     return webOrderId;
@@ -278,10 +277,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The vendor&#39;s order number for reference in their system
    * @return vendorSalesOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorSalesOrderNumber() {
     return vendorSalesOrderNumber;
@@ -297,10 +296,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * Ingram purchase order number.
    * @return ingramPurchaseOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPurchaseOrderNumber() {
     return ingramPurchaseOrderNumber;
@@ -316,10 +315,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The header-level status of the order. One of- Shipped, Canceled, Backordered, Processing, On Hold, Delivered.
    * @return orderStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderStatus() {
     return orderStatus;
@@ -335,10 +334,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The total cost for the order, includes subtotal, freight charges, and tax.
    * @return orderTotal
-  **/
+   */
   @javax.annotation.Nullable
   public Double getOrderTotal() {
     return orderTotal;
@@ -354,10 +353,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The sub total cost for the order, not including tax and freight.
    * @return orderSubTotal
-  **/
+   */
   @javax.annotation.Nullable
   public Double getOrderSubTotal() {
     return orderSubTotal;
@@ -373,10 +372,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The freight charges for the order.
    * @return freightCharges
-  **/
+   */
   @javax.annotation.Nullable
   public Double getFreightCharges() {
     return freightCharges;
@@ -392,10 +391,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The country-specific three digit ISO 4217 currency code for the order.
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCurrencyCode() {
     return currencyCode;
@@ -411,10 +410,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * Total order weight. unit -- North america - Pounds , other countries will be KG.
    * @return totalWeight
-  **/
+   */
   @javax.annotation.Nullable
   public Double getTotalWeight() {
     return totalWeight;
@@ -430,10 +429,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * Total tax on the orders placed.
    * @return totalTax
-  **/
+   */
   @javax.annotation.Nullable
   public Double getTotalTax() {
     return totalTax;
@@ -449,10 +448,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * Total fees on the orders placed.
    * @return totalFees
-  **/
+   */
   @javax.annotation.Nullable
   public Double getTotalFees() {
     return totalFees;
@@ -468,10 +467,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The payment terms of the order. (Ex- Net 30 days).
    * @return paymentTerms
-  **/
+   */
   @javax.annotation.Nullable
   public String getPaymentTerms() {
     return paymentTerms;
@@ -487,10 +486,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * The header-level notes for the order.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -506,10 +505,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * Get billToInfo
    * @return billToInfo
-  **/
+   */
   @javax.annotation.Nullable
   public OrderDetailB2BBillToInfo getBillToInfo() {
     return billToInfo;
@@ -525,10 +524,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * Get shipToInfo
    * @return shipToInfo
-  **/
+   */
   @javax.annotation.Nullable
   public OrderDetailB2BShipToInfo getShipToInfo() {
     return shipToInfo;
@@ -544,10 +543,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * Get endUserInfo
    * @return endUserInfo
-  **/
+   */
   @javax.annotation.Nullable
   public OrderDetailB2BEndUserInfo getEndUserInfo() {
     return endUserInfo;
@@ -571,10 +570,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * Get lines
    * @return lines
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BLinesInner> getLines() {
     return lines;
@@ -598,10 +597,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * Get miscellaneousCharges
    * @return miscellaneousCharges
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BMiscellaneousChargesInner> getMiscellaneousCharges() {
     return miscellaneousCharges;
@@ -625,10 +624,10 @@ public class OrderDetailB2B {
     return this;
   }
 
-   /**
+  /**
    * Get additionalAttributes
    * @return additionalAttributes
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BAdditionalAttributesInner> getAdditionalAttributes() {
     return additionalAttributes;
@@ -770,12 +769,12 @@ public class OrderDetailB2B {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2B
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2B
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2B.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -912,22 +911,22 @@ public class OrderDetailB2B {
     }
   }
 
- /**
-  * Create an instance of OrderDetailB2B given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDetailB2B
-  * @throws IOException if the JSON string is invalid with respect to OrderDetailB2B
-  */
+  /**
+   * Create an instance of OrderDetailB2B given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDetailB2B
+   * @throws IOException if the JSON string is invalid with respect to OrderDetailB2B
+   */
   public static OrderDetailB2B fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDetailB2B.class);
   }
 
- /**
-  * Convert an instance of OrderDetailB2B to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDetailB2B to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

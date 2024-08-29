@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequestProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class PriceAndAvailabilityRequestProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -86,10 +85,10 @@ public class PriceAndAvailabilityRequestProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Ingram Micro unique part number for the product.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -105,10 +104,10 @@ public class PriceAndAvailabilityRequestProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor’s part number for the product.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -124,10 +123,10 @@ public class PriceAndAvailabilityRequestProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Reseller/end-user’s part number for the product.
    * @return customerPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerPartNumber() {
     return customerPartNumber;
@@ -143,10 +142,10 @@ public class PriceAndAvailabilityRequestProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The UPC code for the product. Consists of 12 numeric digits that are uniquely assigned to each trade item.
    * @return upc
-  **/
+   */
   @javax.annotation.Nullable
   public String getUpc() {
     return upc;
@@ -162,10 +161,10 @@ public class PriceAndAvailabilityRequestProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Number of quantity of the Product.
    * @return quantityRequested
-  **/
+   */
   @javax.annotation.Nullable
   public String getQuantityRequested() {
     return quantityRequested;
@@ -189,10 +188,10 @@ public class PriceAndAvailabilityRequestProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get additionalAttributes
    * @return additionalAttributes
-  **/
+   */
   @javax.annotation.Nullable
   public List<PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner> getAdditionalAttributes() {
     return additionalAttributes;
@@ -269,12 +268,12 @@ public class PriceAndAvailabilityRequestProductsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityRequestProductsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityRequestProductsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!PriceAndAvailabilityRequestProductsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -350,22 +349,22 @@ public class PriceAndAvailabilityRequestProductsInner {
     }
   }
 
- /**
-  * Create an instance of PriceAndAvailabilityRequestProductsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of PriceAndAvailabilityRequestProductsInner
-  * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityRequestProductsInner
-  */
+  /**
+   * Create an instance of PriceAndAvailabilityRequestProductsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of PriceAndAvailabilityRequestProductsInner
+   * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityRequestProductsInner
+   */
   public static PriceAndAvailabilityRequestProductsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, PriceAndAvailabilityRequestProductsInner.class);
   }
 
- /**
-  * Convert an instance of PriceAndAvailabilityRequestProductsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of PriceAndAvailabilityRequestProductsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

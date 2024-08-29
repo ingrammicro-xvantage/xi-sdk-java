@@ -161,7 +161,6 @@ docs/ProductDetailResponseAdditionalInformation.md
 docs/ProductDetailResponseAdditionalInformationProductWeightInner.md
 docs/ProductDetailResponseCiscoFields.md
 docs/ProductDetailResponseIndicators.md
-docs/ProductDetailResponseTechnicalSpecificationsInner.md
 docs/ProductSearchResponse.md
 docs/ProductSearchResponseCatalogInner.md
 docs/ProductSearchResponseCatalogInnerLinksInner.md
@@ -402,7 +401,6 @@ src/main/java/xiresellers/client/model/ProductDetailResponseAdditionalInformatio
 src/main/java/xiresellers/client/model/ProductDetailResponseAdditionalInformationProductWeightInner.java
 src/main/java/xiresellers/client/model/ProductDetailResponseCiscoFields.java
 src/main/java/xiresellers/client/model/ProductDetailResponseIndicators.java
-src/main/java/xiresellers/client/model/ProductDetailResponseTechnicalSpecificationsInner.java
 src/main/java/xiresellers/client/model/ProductSearchResponse.java
 src/main/java/xiresellers/client/model/ProductSearchResponseCatalogInner.java
 src/main/java/xiresellers/client/model/ProductSearchResponseCatalogInnerLinksInner.java
@@ -607,7 +605,6 @@ src/test/java/xiresellers/client/model/ProductDetailResponseAdditionalInformatio
 src/test/java/xiresellers/client/model/ProductDetailResponseAdditionalInformationTest.java
 src/test/java/xiresellers/client/model/ProductDetailResponseCiscoFieldsTest.java
 src/test/java/xiresellers/client/model/ProductDetailResponseIndicatorsTest.java
-src/test/java/xiresellers/client/model/ProductDetailResponseTechnicalSpecificationsInnerTest.java
 src/test/java/xiresellers/client/model/ProductDetailResponseTest.java
 src/test/java/xiresellers/client/model/ProductSearchResponseCatalogInnerLinksInnerTest.java
 src/test/java/xiresellers/client/model/ProductSearchResponseCatalogInnerTest.java

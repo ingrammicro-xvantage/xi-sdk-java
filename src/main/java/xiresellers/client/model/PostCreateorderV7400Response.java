@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * PostCreateorderV7400Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class PostCreateorderV7400Response {
   public static final String SERIALIZED_NAME_TRACEID = "traceid";
   @SerializedName(SERIALIZED_NAME_TRACEID)
@@ -78,10 +77,10 @@ public class PostCreateorderV7400Response {
     return this;
   }
 
-   /**
+  /**
    * A unique trace id to identify the issue.
    * @return traceid
-  **/
+   */
   @javax.annotation.Nullable
   public String getTraceid() {
     return traceid;
@@ -97,10 +96,10 @@ public class PostCreateorderV7400Response {
     return this;
   }
 
-   /**
+  /**
    * Type of the error message.
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   public String getType() {
     return type;
@@ -116,10 +115,10 @@ public class PostCreateorderV7400Response {
     return this;
   }
 
-   /**
+  /**
    * A detailed error message.
    * @return message
-  **/
+   */
   @javax.annotation.Nullable
   public String getMessage() {
     return message;
@@ -143,10 +142,10 @@ public class PostCreateorderV7400Response {
     return this;
   }
 
-   /**
+  /**
    * Get fields
    * @return fields
-  **/
+   */
   @javax.annotation.Nullable
   public List<PostCreateorderV7400ResponseFieldsInner> getFields() {
     return fields;
@@ -217,12 +216,12 @@ public class PostCreateorderV7400Response {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to PostCreateorderV7400Response
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to PostCreateorderV7400Response
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!PostCreateorderV7400Response.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -292,22 +291,22 @@ public class PostCreateorderV7400Response {
     }
   }
 
- /**
-  * Create an instance of PostCreateorderV7400Response given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of PostCreateorderV7400Response
-  * @throws IOException if the JSON string is invalid with respect to PostCreateorderV7400Response
-  */
+  /**
+   * Create an instance of PostCreateorderV7400Response given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of PostCreateorderV7400Response
+   * @throws IOException if the JSON string is invalid with respect to PostCreateorderV7400Response
+   */
   public static PostCreateorderV7400Response fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, PostCreateorderV7400Response.class);
   }
 
- /**
-  * Convert an instance of PostCreateorderV7400Response to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of PostCreateorderV7400Response to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

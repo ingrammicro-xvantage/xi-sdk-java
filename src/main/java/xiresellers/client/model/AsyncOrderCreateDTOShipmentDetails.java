@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * Shipping details for the order provided by the customer.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class AsyncOrderCreateDTOShipmentDetails {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
@@ -83,10 +82,10 @@ public class AsyncOrderCreateDTOShipmentDetails {
     return this;
   }
 
-   /**
+  /**
    * The code for the shipping carrier for the line item.
    * @return carrierCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCarrierCode() {
     return carrierCode;
@@ -102,10 +101,10 @@ public class AsyncOrderCreateDTOShipmentDetails {
     return this;
   }
 
-   /**
+  /**
    * The reseller-requested delivery date in UTC format. Delivery date is not guaranteed.
    * @return requestedDeliveryDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getRequestedDeliveryDate() {
     return requestedDeliveryDate;
@@ -121,10 +120,10 @@ public class AsyncOrderCreateDTOShipmentDetails {
     return this;
   }
 
-   /**
+  /**
    * Specifies whether the shipment will be shipped only when all products are fulfilled. The value of this field along with acceptBackOrder field decides the value of backorderflag. If this field is set, acceptBackOrder field is ignored. Possible values for this field are true, C, P, E.
    * @return shipComplete
-  **/
+   */
   @javax.annotation.Nullable
   public String getShipComplete() {
     return shipComplete;
@@ -140,10 +139,10 @@ public class AsyncOrderCreateDTOShipmentDetails {
     return this;
   }
 
-   /**
+  /**
    * Any special shipping instructions for the order.
    * @return shippingInstructions
-  **/
+   */
   @javax.annotation.Nullable
   public String getShippingInstructions() {
     return shippingInstructions;
@@ -159,10 +158,10 @@ public class AsyncOrderCreateDTOShipmentDetails {
     return this;
   }
 
-   /**
+  /**
    * The reseller &#39;s shipping account number with carrier. Used to bill the shipping carrier directly from the reseller&#39;s account with the carrier.
    * @return freightAccountNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getFreightAccountNumber() {
     return freightAccountNumber;
@@ -178,10 +177,10 @@ public class AsyncOrderCreateDTOShipmentDetails {
     return this;
   }
 
-   /**
+  /**
    * Specifies whether a signature is required for delivery. Default is False.
    * @return signatureRequired
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getSignatureRequired() {
     return signatureRequired;
@@ -258,12 +257,12 @@ public class AsyncOrderCreateDTOShipmentDetails {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to AsyncOrderCreateDTOShipmentDetails
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to AsyncOrderCreateDTOShipmentDetails
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!AsyncOrderCreateDTOShipmentDetails.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -325,22 +324,22 @@ public class AsyncOrderCreateDTOShipmentDetails {
     }
   }
 
- /**
-  * Create an instance of AsyncOrderCreateDTOShipmentDetails given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of AsyncOrderCreateDTOShipmentDetails
-  * @throws IOException if the JSON string is invalid with respect to AsyncOrderCreateDTOShipmentDetails
-  */
+  /**
+   * Create an instance of AsyncOrderCreateDTOShipmentDetails given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of AsyncOrderCreateDTOShipmentDetails
+   * @throws IOException if the JSON string is invalid with respect to AsyncOrderCreateDTOShipmentDetails
+   */
   public static AsyncOrderCreateDTOShipmentDetails fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, AsyncOrderCreateDTOShipmentDetails.class);
   }
 
- /**
-  * Convert an instance of AsyncOrderCreateDTOShipmentDetails to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of AsyncOrderCreateDTOShipmentDetails to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

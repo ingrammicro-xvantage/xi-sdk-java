@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponseReferenceNumber
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class RenewalsDetailsResponseReferenceNumber {
   public static final String SERIALIZED_NAME_NOTIFICATION_ID = "notificationId";
   @SerializedName(SERIALIZED_NAME_NOTIFICATION_ID)
@@ -67,10 +66,10 @@ public class RenewalsDetailsResponseReferenceNumber {
     return this;
   }
 
-   /**
+  /**
    * Notification id of the communication sent from Ingram.
    * @return notificationId
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotificationId() {
     return notificationId;
@@ -86,10 +85,10 @@ public class RenewalsDetailsResponseReferenceNumber {
     return this;
   }
 
-   /**
+  /**
    * Quote number for the renewal.
    * @return quoteNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getQuoteNumber() {
     return quoteNumber;
@@ -154,12 +153,12 @@ public class RenewalsDetailsResponseReferenceNumber {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to RenewalsDetailsResponseReferenceNumber
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to RenewalsDetailsResponseReferenceNumber
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!RenewalsDetailsResponseReferenceNumber.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -212,22 +211,22 @@ public class RenewalsDetailsResponseReferenceNumber {
     }
   }
 
- /**
-  * Create an instance of RenewalsDetailsResponseReferenceNumber given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of RenewalsDetailsResponseReferenceNumber
-  * @throws IOException if the JSON string is invalid with respect to RenewalsDetailsResponseReferenceNumber
-  */
+  /**
+   * Create an instance of RenewalsDetailsResponseReferenceNumber given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of RenewalsDetailsResponseReferenceNumber
+   * @throws IOException if the JSON string is invalid with respect to RenewalsDetailsResponseReferenceNumber
+   */
   public static RenewalsDetailsResponseReferenceNumber fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, RenewalsDetailsResponseReferenceNumber.class);
   }
 
- /**
-  * Convert an instance of RenewalsDetailsResponseReferenceNumber to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of RenewalsDetailsResponseReferenceNumber to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

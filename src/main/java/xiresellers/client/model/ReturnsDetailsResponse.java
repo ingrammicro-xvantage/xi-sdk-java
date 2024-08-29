@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ReturnsDetailsResponse {
   public static final String SERIALIZED_NAME_TYPE_OF_DETAILS = "typeOfDetails";
   @SerializedName(SERIALIZED_NAME_TYPE_OF_DETAILS)
@@ -115,10 +114,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The type of the details. Return or Claim.
    * @return typeOfDetails
-  **/
+   */
   @javax.annotation.Nullable
   public String getTypeOfDetails() {
     return typeOfDetails;
@@ -134,10 +133,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The rmaClaimId claim id.
    * @return rmaClaimId
-  **/
+   */
   @javax.annotation.Nullable
   public String getRmaClaimId() {
     return rmaClaimId;
@@ -153,10 +152,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * A unique return request number.
    * @return caseRequestNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCaseRequestNumber() {
     return caseRequestNumber;
@@ -172,10 +171,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The date on which the return request was created.
    * @return createdOn
-  **/
+   */
   @javax.annotation.Nullable
   public String getCreatedOn() {
     return createdOn;
@@ -191,10 +190,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The reason for the return.
    * @return returnReason
-  **/
+   */
   @javax.annotation.Nullable
   public String getReturnReason() {
     return returnReason;
@@ -210,10 +209,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The reference number for the return.
    * @return referenceNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getReferenceNumber() {
     return referenceNumber;
@@ -229,10 +228,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The status of the request.
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   public String getStatus() {
     return status;
@@ -248,10 +247,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The address of the return warehouse.
    * @return returnWarehouseAddress
-  **/
+   */
   @javax.annotation.Nullable
   public String getReturnWarehouseAddress() {
     return returnWarehouseAddress;
@@ -275,10 +274,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get products
    * @return products
-  **/
+   */
   @javax.annotation.Nullable
   public List<ReturnsDetailsResponseProductsInner> getProducts() {
     return products;
@@ -294,10 +293,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Sub total amount of the return request.
    * @return subTotal
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getSubTotal() {
     return subTotal;
@@ -313,10 +312,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The tax amount of the return request.
    * @return tax
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getTax() {
     return tax;
@@ -332,10 +331,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The additional fees for the return request.
    * @return additionalFees
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getAdditionalFees() {
     return additionalFees;
@@ -351,10 +350,10 @@ public class ReturnsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The total estimated amount for the return request.
    * @return estimatedTotal
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getEstimatedTotal() {
     return estimatedTotal;
@@ -452,12 +451,12 @@ public class ReturnsDetailsResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ReturnsDetailsResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ReturnsDetailsResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ReturnsDetailsResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -542,22 +541,22 @@ public class ReturnsDetailsResponse {
     }
   }
 
- /**
-  * Create an instance of ReturnsDetailsResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ReturnsDetailsResponse
-  * @throws IOException if the JSON string is invalid with respect to ReturnsDetailsResponse
-  */
+  /**
+   * Create an instance of ReturnsDetailsResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ReturnsDetailsResponse
+   * @throws IOException if the JSON string is invalid with respect to ReturnsDetailsResponse
+   */
   public static ReturnsDetailsResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ReturnsDetailsResponse.class);
   }
 
- /**
-  * Convert an instance of ReturnsDetailsResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ReturnsDetailsResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

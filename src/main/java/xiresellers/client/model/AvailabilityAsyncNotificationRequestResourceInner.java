@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * AvailabilityAsyncNotificationRequestResourceInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class AvailabilityAsyncNotificationRequestResourceInner {
   public static final String SERIALIZED_NAME_EVENT_TYPE = "eventType";
   @SerializedName(SERIALIZED_NAME_EVENT_TYPE)
@@ -98,10 +97,10 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * The event name sent in the event request.
    * @return eventType
-  **/
+   */
   @javax.annotation.Nullable
   public String getEventType() {
     return eventType;
@@ -117,10 +116,10 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * The Unique IngramMicro part number for the product.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -136,10 +135,10 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * The vendors part number for the product.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -155,10 +154,10 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * The name of the vendor/manufacturer of the product.
    * @return vendorName
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorName() {
     return vendorName;
@@ -174,10 +173,10 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * The UPC code for the product. Consists of 12 numeric digits that are uniquly assigned to each trade item.
    * @return upcCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getUpcCode() {
     return upcCode;
@@ -193,10 +192,10 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * Status returned saying whether sku is active.
    * @return skuStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getSkuStatus() {
     return skuStatus;
@@ -212,10 +211,10 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * Backordered Flag.
    * @return backOrderFlag
-  **/
+   */
   @javax.annotation.Nullable
   public String getBackOrderFlag() {
     return backOrderFlag;
@@ -231,10 +230,10 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * totalAvailability.
    * @return totalAvailability
-  **/
+   */
   @javax.annotation.Nullable
   public String getTotalAvailability() {
     return totalAvailability;
@@ -258,10 +257,10 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * Link to Order Details for the order(s).
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public List<AvailabilityAsyncNotificationRequestResourceInnerLinksInner> getLinks() {
     return links;
@@ -347,12 +346,12 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to AvailabilityAsyncNotificationRequestResourceInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to AvailabilityAsyncNotificationRequestResourceInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!AvailabilityAsyncNotificationRequestResourceInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -437,22 +436,22 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     }
   }
 
- /**
-  * Create an instance of AvailabilityAsyncNotificationRequestResourceInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of AvailabilityAsyncNotificationRequestResourceInner
-  * @throws IOException if the JSON string is invalid with respect to AvailabilityAsyncNotificationRequestResourceInner
-  */
+  /**
+   * Create an instance of AvailabilityAsyncNotificationRequestResourceInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of AvailabilityAsyncNotificationRequestResourceInner
+   * @throws IOException if the JSON string is invalid with respect to AvailabilityAsyncNotificationRequestResourceInner
+   */
   public static AvailabilityAsyncNotificationRequestResourceInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, AvailabilityAsyncNotificationRequestResourceInner.class);
   }
 
- /**
-  * Convert an instance of AvailabilityAsyncNotificationRequestResourceInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of AvailabilityAsyncNotificationRequestResourceInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

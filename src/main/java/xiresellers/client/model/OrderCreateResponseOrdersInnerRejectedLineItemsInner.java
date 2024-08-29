@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInnerRejectedLineItemsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINENUMBER = "customerLinenumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINENUMBER)
@@ -83,10 +82,10 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s line item number of the rejected item for their reference. Number
    * @return customerLinenumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerLinenumber() {
     return customerLinenumber;
@@ -102,10 +101,10 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return this;
   }
 
-   /**
+  /**
    * The Ingram Micro part number for the rejected line item.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -121,10 +120,10 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor part number for the rejected line item.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -140,10 +139,10 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity ordered of the rejected line item.
    * @return quantityOrdered
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityOrdered() {
     return quantityOrdered;
@@ -159,10 +158,10 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return this;
   }
 
-   /**
+  /**
    * The rejection code for the rejected line item. Ex: &#39;EN&#39; 
    * @return rejectCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getRejectCode() {
     return rejectCode;
@@ -178,10 +177,10 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return this;
   }
 
-   /**
+  /**
    * The rejection reason for the rejected line item. Ex: &#39;SKU-NOTFOUND    DF41281&#39; 
    * @return rejectReason
-  **/
+   */
   @javax.annotation.Nullable
   public String getRejectReason() {
     return rejectReason;
@@ -258,12 +257,12 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInnerRejectedLineItemsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInnerRejectedLineItemsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateResponseOrdersInnerRejectedLineItemsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -325,22 +324,22 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     }
   }
 
- /**
-  * Create an instance of OrderCreateResponseOrdersInnerRejectedLineItemsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateResponseOrdersInnerRejectedLineItemsInner
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInnerRejectedLineItemsInner
-  */
+  /**
+   * Create an instance of OrderCreateResponseOrdersInnerRejectedLineItemsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateResponseOrdersInnerRejectedLineItemsInner
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInnerRejectedLineItemsInner
+   */
   public static OrderCreateResponseOrdersInnerRejectedLineItemsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateResponseOrdersInnerRejectedLineItemsInner.class);
   }
 
- /**
-  * Convert an instance of OrderCreateResponseOrdersInnerRejectedLineItemsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateResponseOrdersInnerRejectedLineItemsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

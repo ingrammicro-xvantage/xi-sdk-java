@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * Cisco product related information.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ProductDetailResponseCiscoFields {
   public static final String SERIALIZED_NAME_PRODUCT_SUB_GROUP = "productSubGroup";
   @SerializedName(SERIALIZED_NAME_PRODUCT_SUB_GROUP)
@@ -87,10 +86,10 @@ public class ProductDetailResponseCiscoFields {
     return this;
   }
 
-   /**
+  /**
    * Cisco product sub-group
    * @return productSubGroup
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductSubGroup() {
     return productSubGroup;
@@ -106,10 +105,10 @@ public class ProductDetailResponseCiscoFields {
     return this;
   }
 
-   /**
+  /**
    * Cisco service program name
    * @return serviceProgramName
-  **/
+   */
   @javax.annotation.Nullable
   public String getServiceProgramName() {
     return serviceProgramName;
@@ -125,10 +124,10 @@ public class ProductDetailResponseCiscoFields {
     return this;
   }
 
-   /**
+  /**
    * Cisco item catalog category
    * @return itemCatalogCategory
-  **/
+   */
   @javax.annotation.Nullable
   public String getItemCatalogCategory() {
     return itemCatalogCategory;
@@ -144,10 +143,10 @@ public class ProductDetailResponseCiscoFields {
     return this;
   }
 
-   /**
+  /**
    * Cisco configuration indicator
    * @return configurationIndicator
-  **/
+   */
   @javax.annotation.Nullable
   public String getConfigurationIndicator() {
     return configurationIndicator;
@@ -163,10 +162,10 @@ public class ProductDetailResponseCiscoFields {
     return this;
   }
 
-   /**
+  /**
    * Cisco internal business entity
    * @return internalBusinessEntity
-  **/
+   */
   @javax.annotation.Nullable
   public String getInternalBusinessEntity() {
     return internalBusinessEntity;
@@ -182,10 +181,10 @@ public class ProductDetailResponseCiscoFields {
     return this;
   }
 
-   /**
+  /**
    * Cisco item type
    * @return itemType
-  **/
+   */
   @javax.annotation.Nullable
   public String getItemType() {
     return itemType;
@@ -201,10 +200,10 @@ public class ProductDetailResponseCiscoFields {
     return this;
   }
 
-   /**
+  /**
    * Cisco global list price
    * @return globalListPrice
-  **/
+   */
   @javax.annotation.Nullable
   public String getGlobalListPrice() {
     return globalListPrice;
@@ -284,12 +283,12 @@ public class ProductDetailResponseCiscoFields {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseCiscoFields
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseCiscoFields
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ProductDetailResponseCiscoFields.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -357,22 +356,22 @@ public class ProductDetailResponseCiscoFields {
     }
   }
 
- /**
-  * Create an instance of ProductDetailResponseCiscoFields given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ProductDetailResponseCiscoFields
-  * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseCiscoFields
-  */
+  /**
+   * Create an instance of ProductDetailResponseCiscoFields given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ProductDetailResponseCiscoFields
+   * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseCiscoFields
+   */
   public static ProductDetailResponseCiscoFields fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ProductDetailResponseCiscoFields.class);
   }
 
- /**
-  * Convert an instance of ProductDetailResponseCiscoFields to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ProductDetailResponseCiscoFields to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

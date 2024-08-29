@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerServiceFeesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class PriceAndAvailabilityResponseInnerServiceFeesInner {
   public static final String SERIALIZED_NAME_CONDITION_TYPE = "conditionType";
   @SerializedName(SERIALIZED_NAME_CONDITION_TYPE)
@@ -80,10 +79,10 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     return this;
   }
 
-   /**
+  /**
    * Condition Type of the service fees.
    * @return conditionType
-  **/
+   */
   @javax.annotation.Nullable
   public String getConditionType() {
     return conditionType;
@@ -99,10 +98,10 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     return this;
   }
 
-   /**
+  /**
    * Description of the service fees.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   public String getDescription() {
     return description;
@@ -118,10 +117,10 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     return this;
   }
 
-   /**
+  /**
    * Amount of the service fees.
    * @return amount
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getAmount() {
     return amount;
@@ -137,10 +136,10 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     return this;
   }
 
-   /**
+  /**
    * End Date of the service fees.
    * @return endDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndDate() {
     return endDate;
@@ -156,10 +155,10 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     return this;
   }
 
-   /**
+  /**
    * Currency Code of the service fees.
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCurrencyCode() {
     return currencyCode;
@@ -233,12 +232,12 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityResponseInnerServiceFeesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityResponseInnerServiceFeesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!PriceAndAvailabilityResponseInnerServiceFeesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -297,22 +296,22 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     }
   }
 
- /**
-  * Create an instance of PriceAndAvailabilityResponseInnerServiceFeesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of PriceAndAvailabilityResponseInnerServiceFeesInner
-  * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityResponseInnerServiceFeesInner
-  */
+  /**
+   * Create an instance of PriceAndAvailabilityResponseInnerServiceFeesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of PriceAndAvailabilityResponseInnerServiceFeesInner
+   * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityResponseInnerServiceFeesInner
+   */
   public static PriceAndAvailabilityResponseInnerServiceFeesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, PriceAndAvailabilityResponseInnerServiceFeesInner.class);
   }
 
- /**
-  * Convert an instance of PriceAndAvailabilityResponseInnerServiceFeesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of PriceAndAvailabilityResponseInnerServiceFeesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

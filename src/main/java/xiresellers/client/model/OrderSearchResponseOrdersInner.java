@@ -42,7 +42,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -54,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * OrderSearchResponseOrdersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderSearchResponseOrdersInner {
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
@@ -104,10 +103,10 @@ public class OrderSearchResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The Ingram Micro order number.
    * @return ingramOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderNumber() {
     return ingramOrderNumber;
@@ -123,10 +122,10 @@ public class OrderSearchResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The date the order was created(UTC).
    * @return ingramOrderDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderDate() {
     return ingramOrderDate;
@@ -142,10 +141,10 @@ public class OrderSearchResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s order number for reference in their system.
    * @return customerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerOrderNumber() {
     return customerOrderNumber;
@@ -161,10 +160,10 @@ public class OrderSearchResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor&#39;s order number.(only for D-Type Orders)
    * @return vendorSalesOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorSalesOrderNumber() {
     return vendorSalesOrderNumber;
@@ -180,10 +179,10 @@ public class OrderSearchResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The name of the vendor.
    * @return vendorName
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorName() {
     return vendorName;
@@ -199,10 +198,10 @@ public class OrderSearchResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The company name of the end user/customer.
    * @return endUserCompanyName
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndUserCompanyName() {
     return endUserCompanyName;
@@ -218,10 +217,10 @@ public class OrderSearchResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The total of the order.
    * @return orderTotal
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getOrderTotal() {
     return orderTotal;
@@ -237,10 +236,10 @@ public class OrderSearchResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The header-level status of the order.(OPEN/CLOSED/CANCELLED)
    * @return orderStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderStatus() {
     return orderStatus;
@@ -264,10 +263,10 @@ public class OrderSearchResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * Individual Ingram Micro order numbers associated with a single reseller PO.
    * @return subOrders
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderSearchResponseOrdersInnerSubOrdersInner> getSubOrders() {
     return subOrders;
@@ -283,10 +282,10 @@ public class OrderSearchResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * Get links
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public OrderSearchResponseOrdersInnerLinks getLinks() {
     return links;
@@ -375,12 +374,12 @@ public class OrderSearchResponseOrdersInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderSearchResponseOrdersInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderSearchResponseOrdersInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderSearchResponseOrdersInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -466,22 +465,22 @@ public class OrderSearchResponseOrdersInner {
     }
   }
 
- /**
-  * Create an instance of OrderSearchResponseOrdersInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderSearchResponseOrdersInner
-  * @throws IOException if the JSON string is invalid with respect to OrderSearchResponseOrdersInner
-  */
+  /**
+   * Create an instance of OrderSearchResponseOrdersInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderSearchResponseOrdersInner
+   * @throws IOException if the JSON string is invalid with respect to OrderSearchResponseOrdersInner
+   */
   public static OrderSearchResponseOrdersInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderSearchResponseOrdersInner.class);
   }
 
- /**
-  * Convert an instance of OrderSearchResponseOrdersInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderSearchResponseOrdersInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

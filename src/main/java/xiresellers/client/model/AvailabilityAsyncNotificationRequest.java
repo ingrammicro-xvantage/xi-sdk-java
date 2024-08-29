@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * AvailabilityAsyncNotificationRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class AvailabilityAsyncNotificationRequest {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)
@@ -82,10 +81,10 @@ public class AvailabilityAsyncNotificationRequest {
     return this;
   }
 
-   /**
+  /**
    * Field for identifying whether it is a reseller or vendor event. For eg, resellers/orders
    * @return topic
-  **/
+   */
   @javax.annotation.Nullable
   public String getTopic() {
     return topic;
@@ -101,10 +100,10 @@ public class AvailabilityAsyncNotificationRequest {
     return this;
   }
 
-   /**
+  /**
    * The event sent in the request. For eg, im::create.
    * @return event
-  **/
+   */
   @javax.annotation.Nullable
   public String getEvent() {
     return event;
@@ -120,10 +119,10 @@ public class AvailabilityAsyncNotificationRequest {
     return this;
   }
 
-   /**
+  /**
    * The timestamp at which the event was sent.
    * @return eventTimeStamp
-  **/
+   */
   @javax.annotation.Nullable
   public String getEventTimeStamp() {
     return eventTimeStamp;
@@ -139,10 +138,10 @@ public class AvailabilityAsyncNotificationRequest {
     return this;
   }
 
-   /**
+  /**
    * A unique id used as identifier for the sepcific event and used for generating the x-hub signature.
    * @return eventId
-  **/
+   */
   @javax.annotation.Nullable
   public String getEventId() {
     return eventId;
@@ -166,10 +165,10 @@ public class AvailabilityAsyncNotificationRequest {
     return this;
   }
 
-   /**
+  /**
    * Get resource
    * @return resource
-  **/
+   */
   @javax.annotation.Nullable
   public List<AvailabilityAsyncNotificationRequestResourceInner> getResource() {
     return resource;
@@ -243,12 +242,12 @@ public class AvailabilityAsyncNotificationRequest {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to AvailabilityAsyncNotificationRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to AvailabilityAsyncNotificationRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!AvailabilityAsyncNotificationRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -321,22 +320,22 @@ public class AvailabilityAsyncNotificationRequest {
     }
   }
 
- /**
-  * Create an instance of AvailabilityAsyncNotificationRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of AvailabilityAsyncNotificationRequest
-  * @throws IOException if the JSON string is invalid with respect to AvailabilityAsyncNotificationRequest
-  */
+  /**
+   * Create an instance of AvailabilityAsyncNotificationRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of AvailabilityAsyncNotificationRequest
+   * @throws IOException if the JSON string is invalid with respect to AvailabilityAsyncNotificationRequest
+   */
   public static AvailabilityAsyncNotificationRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, AvailabilityAsyncNotificationRequest.class);
   }
 
- /**
-  * Convert an instance of AvailabilityAsyncNotificationRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of AvailabilityAsyncNotificationRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsCreateRequestListInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ReturnsCreateRequestListInner {
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
@@ -119,10 +118,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * The Invoice number of the order.
    * @return invoiceNumber
-  **/
+   */
   @javax.annotation.Nonnull
   public String getInvoiceNumber() {
     return invoiceNumber;
@@ -138,10 +137,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Date of an Invoice.
    * @return invoiceDate
-  **/
+   */
   @javax.annotation.Nonnull
   public LocalDate getInvoiceDate() {
     return invoiceDate;
@@ -157,10 +156,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s order number for reference in their system.
    * @return customerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerOrderNumber() {
     return customerOrderNumber;
@@ -176,10 +175,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Unique line number from Ingram.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -195,10 +194,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor Part Number.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -214,10 +213,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Serial number of the product.
    * @return serialNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSerialNumber() {
     return serialNumber;
@@ -233,10 +232,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Return quantity of the product.
    * @return quantity
-  **/
+   */
   @javax.annotation.Nonnull
   public Integer getQuantity() {
     return quantity;
@@ -252,10 +251,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Primary reason to return the product.
    * @return primaryReason
-  **/
+   */
   @javax.annotation.Nonnull
   public String getPrimaryReason() {
     return primaryReason;
@@ -271,10 +270,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Secondary reason to return the product.
    * @return secondaryReason
-  **/
+   */
   @javax.annotation.Nonnull
   public String getSecondaryReason() {
     return secondaryReason;
@@ -290,10 +289,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Return notes.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -309,10 +308,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Reference number to return the product.
    * @return referenceNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getReferenceNumber() {
     return referenceNumber;
@@ -328,10 +327,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Suffix used to identify billing address.
    * @return billToAddressId
-  **/
+   */
   @javax.annotation.Nullable
   public String getBillToAddressId() {
     return billToAddressId;
@@ -355,10 +354,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Get shipFromInfo
    * @return shipFromInfo
-  **/
+   */
   @javax.annotation.Nonnull
   public List<ReturnsCreateRequestListInnerShipFromInfoInner> getShipFromInfo() {
     return shipFromInfo;
@@ -374,10 +373,10 @@ public class ReturnsCreateRequestListInner {
     return this;
   }
 
-   /**
+  /**
    * Number of boxes to return.
    * @return numberOfBoxes
-  **/
+   */
   @javax.annotation.Nonnull
   public Integer getNumberOfBoxes() {
     return numberOfBoxes;
@@ -485,12 +484,12 @@ public class ReturnsCreateRequestListInner {
     openapiRequiredFields.add("numberOfBoxes");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ReturnsCreateRequestListInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ReturnsCreateRequestListInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ReturnsCreateRequestListInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -584,22 +583,22 @@ public class ReturnsCreateRequestListInner {
     }
   }
 
- /**
-  * Create an instance of ReturnsCreateRequestListInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ReturnsCreateRequestListInner
-  * @throws IOException if the JSON string is invalid with respect to ReturnsCreateRequestListInner
-  */
+  /**
+   * Create an instance of ReturnsCreateRequestListInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ReturnsCreateRequestListInner
+   * @throws IOException if the JSON string is invalid with respect to ReturnsCreateRequestListInner
+   */
   public static ReturnsCreateRequestListInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ReturnsCreateRequestListInner.class);
   }
 
- /**
-  * Convert an instance of ReturnsCreateRequestListInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ReturnsCreateRequestListInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

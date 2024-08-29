@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * AsyncOrderCreateDTOAdditionalAttributesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class AsyncOrderCreateDTOAdditionalAttributesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_NAME = "attributeName";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_NAME)
@@ -67,10 +66,10 @@ public class AsyncOrderCreateDTOAdditionalAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * The attribute name. allowDuplicateCustomerOrderNumber: Allow orders with duplicate customer PO numbers. Enables resellers to have the same PO number for multiple orders. enableCommentsAsLines:  It will enable comments as lines.
    * @return attributeName
-  **/
+   */
   @javax.annotation.Nullable
   public String getAttributeName() {
     return attributeName;
@@ -86,10 +85,10 @@ public class AsyncOrderCreateDTOAdditionalAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * The attribute field data.
    * @return attributeValue
-  **/
+   */
   @javax.annotation.Nullable
   public String getAttributeValue() {
     return attributeValue;
@@ -154,12 +153,12 @@ public class AsyncOrderCreateDTOAdditionalAttributesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to AsyncOrderCreateDTOAdditionalAttributesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to AsyncOrderCreateDTOAdditionalAttributesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!AsyncOrderCreateDTOAdditionalAttributesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -212,22 +211,22 @@ public class AsyncOrderCreateDTOAdditionalAttributesInner {
     }
   }
 
- /**
-  * Create an instance of AsyncOrderCreateDTOAdditionalAttributesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of AsyncOrderCreateDTOAdditionalAttributesInner
-  * @throws IOException if the JSON string is invalid with respect to AsyncOrderCreateDTOAdditionalAttributesInner
-  */
+  /**
+   * Create an instance of AsyncOrderCreateDTOAdditionalAttributesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of AsyncOrderCreateDTOAdditionalAttributesInner
+   * @throws IOException if the JSON string is invalid with respect to AsyncOrderCreateDTOAdditionalAttributesInner
+   */
   public static AsyncOrderCreateDTOAdditionalAttributesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, AsyncOrderCreateDTOAdditionalAttributesInner.class);
   }
 
- /**
-  * Convert an instance of AsyncOrderCreateDTOAdditionalAttributesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of AsyncOrderCreateDTOAdditionalAttributesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

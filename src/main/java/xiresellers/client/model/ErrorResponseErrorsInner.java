@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * ErrorResponseErrorsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ErrorResponseErrorsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -78,10 +77,10 @@ public class ErrorResponseErrorsInner {
     return this;
   }
 
-   /**
+  /**
    * Unique Id to identify error.
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -97,10 +96,10 @@ public class ErrorResponseErrorsInner {
     return this;
   }
 
-   /**
+  /**
    * Describes the type of the error.
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   public String getType() {
     return type;
@@ -116,10 +115,10 @@ public class ErrorResponseErrorsInner {
     return this;
   }
 
-   /**
+  /**
    * Describes the error message.
    * @return message
-  **/
+   */
   @javax.annotation.Nullable
   public String getMessage() {
     return message;
@@ -143,10 +142,10 @@ public class ErrorResponseErrorsInner {
     return this;
   }
 
-   /**
+  /**
    * Get fields
    * @return fields
-  **/
+   */
   @javax.annotation.Nullable
   public List<ErrorResponseErrorsInnerFieldsInner> getFields() {
     return fields;
@@ -217,12 +216,12 @@ public class ErrorResponseErrorsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ErrorResponseErrorsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ErrorResponseErrorsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ErrorResponseErrorsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -292,22 +291,22 @@ public class ErrorResponseErrorsInner {
     }
   }
 
- /**
-  * Create an instance of ErrorResponseErrorsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ErrorResponseErrorsInner
-  * @throws IOException if the JSON string is invalid with respect to ErrorResponseErrorsInner
-  */
+  /**
+   * Create an instance of ErrorResponseErrorsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ErrorResponseErrorsInner
+   * @throws IOException if the JSON string is invalid with respect to ErrorResponseErrorsInner
+   */
   public static ErrorResponseErrorsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ErrorResponseErrorsInner.class);
   }
 
- /**
-  * Convert an instance of ErrorResponseErrorsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ErrorResponseErrorsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

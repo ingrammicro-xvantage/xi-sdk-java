@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * OrderSearchResponseOrdersInnerSubOrdersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderSearchResponseOrdersInnerSubOrdersInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
@@ -79,10 +78,10 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The sub order number. The two-digit prefix is the warehouse code of the warehouse nearest to the reseller. The middle number is the order number. The two-digit suffix is the sub order number.
    * @return subOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSubOrderNumber() {
     return subOrderNumber;
@@ -98,10 +97,10 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The total for the suborder.
    * @return subOrderTotal
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getSubOrderTotal() {
     return subOrderTotal;
@@ -117,10 +116,10 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The status of the suborder. One of:- Shipped, Canceled, Backordered, Processing, On Hold, Delivered
    * @return subOrderStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getSubOrderStatus() {
     return subOrderStatus;
@@ -144,10 +143,10 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * Link to Order Details for the sub order(s).
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner> getLinks() {
     return links;
@@ -218,12 +217,12 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderSearchResponseOrdersInnerSubOrdersInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderSearchResponseOrdersInnerSubOrdersInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderSearchResponseOrdersInnerSubOrdersInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -290,22 +289,22 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
     }
   }
 
- /**
-  * Create an instance of OrderSearchResponseOrdersInnerSubOrdersInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderSearchResponseOrdersInnerSubOrdersInner
-  * @throws IOException if the JSON string is invalid with respect to OrderSearchResponseOrdersInnerSubOrdersInner
-  */
+  /**
+   * Create an instance of OrderSearchResponseOrdersInnerSubOrdersInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderSearchResponseOrdersInnerSubOrdersInner
+   * @throws IOException if the JSON string is invalid with respect to OrderSearchResponseOrdersInnerSubOrdersInner
+   */
   public static OrderSearchResponseOrdersInnerSubOrdersInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderSearchResponseOrdersInnerSubOrdersInner.class);
   }
 
- /**
-  * Convert an instance of OrderSearchResponseOrdersInnerSubOrdersInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderSearchResponseOrdersInnerSubOrdersInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

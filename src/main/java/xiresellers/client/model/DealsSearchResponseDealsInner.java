@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * DealsSearchResponseDealsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class DealsSearchResponseDealsInner {
   public static final String SERIALIZED_NAME_DEAL_ID = "dealId";
   @SerializedName(SERIALIZED_NAME_DEAL_ID)
@@ -84,10 +83,10 @@ public class DealsSearchResponseDealsInner {
     return this;
   }
 
-   /**
+  /**
    * Deal/Special bid number.
    * @return dealId
-  **/
+   */
   @javax.annotation.Nullable
   public String getDealId() {
     return dealId;
@@ -103,10 +102,10 @@ public class DealsSearchResponseDealsInner {
     return this;
   }
 
-   /**
+  /**
    * Most recent version number of the deal.
    * @return version
-  **/
+   */
   @javax.annotation.Nullable
   public String getVersion() {
     return version;
@@ -122,10 +121,10 @@ public class DealsSearchResponseDealsInner {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s name.
    * @return endUser
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndUser() {
     return endUser;
@@ -141,10 +140,10 @@ public class DealsSearchResponseDealsInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor&#39;s name.
    * @return vendor
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendor() {
     return vendor;
@@ -160,10 +159,10 @@ public class DealsSearchResponseDealsInner {
     return this;
   }
 
-   /**
+  /**
    * Expiration date of the deal/Special bid.
    * @return dealExpiryDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getDealExpiryDate() {
     return dealExpiryDate;
@@ -179,10 +178,10 @@ public class DealsSearchResponseDealsInner {
     return this;
   }
 
-   /**
+  /**
    * Get links
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public RenewalsSearchResponseRenewalsInnerLinksInner getLinks() {
     return links;
@@ -259,12 +258,12 @@ public class DealsSearchResponseDealsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to DealsSearchResponseDealsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to DealsSearchResponseDealsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!DealsSearchResponseDealsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -330,22 +329,22 @@ public class DealsSearchResponseDealsInner {
     }
   }
 
- /**
-  * Create an instance of DealsSearchResponseDealsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of DealsSearchResponseDealsInner
-  * @throws IOException if the JSON string is invalid with respect to DealsSearchResponseDealsInner
-  */
+  /**
+   * Create an instance of DealsSearchResponseDealsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of DealsSearchResponseDealsInner
+   * @throws IOException if the JSON string is invalid with respect to DealsSearchResponseDealsInner
+   */
   public static DealsSearchResponseDealsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, DealsSearchResponseDealsInner.class);
   }
 
- /**
-  * Convert an instance of DealsSearchResponseDealsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of DealsSearchResponseDealsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

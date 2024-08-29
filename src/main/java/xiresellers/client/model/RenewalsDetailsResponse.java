@@ -43,7 +43,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -55,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class RenewalsDetailsResponse {
   public static final String SERIALIZED_NAME_RENEWAL_ID = "renewalId";
   @SerializedName(SERIALIZED_NAME_RENEWAL_ID)
@@ -125,10 +124,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Unique Ingram renewal ID.
    * @return renewalId
-  **/
+   */
   @javax.annotation.Nullable
   public String getRenewalId() {
     return renewalId;
@@ -144,10 +143,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The IngramMicro sales order number.
    * @return ingramOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderNumber() {
     return ingramOrderNumber;
@@ -163,10 +162,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The IngramMicro sales order date.
    * @return ingramOrderDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderDate() {
     return ingramOrderDate;
@@ -182,10 +181,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Renewal expiration date.
    * @return expirationDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getExpirationDate() {
     return expirationDate;
@@ -201,10 +200,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Ingram purchase order number.
    * @return ingramPurchaseOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPurchaseOrderNumber() {
     return ingramPurchaseOrderNumber;
@@ -220,10 +219,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s order number for reference in their system.
    * @return customerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerOrderNumber() {
     return customerOrderNumber;
@@ -239,10 +238,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The end customer&#39;s order number for reference in their system.
    * @return endCustomerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndCustomerOrderNumber() {
     return endCustomerOrderNumber;
@@ -258,10 +257,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The value of the renewal.
    * @return renewalValue
-  **/
+   */
   @javax.annotation.Nullable
   public String getRenewalValue() {
     return renewalValue;
@@ -277,10 +276,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The company name for the end user/customer.
    * @return endUser
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndUser() {
     return endUser;
@@ -296,10 +295,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The name of the vendor.
    * @return vendor
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendor() {
     return vendor;
@@ -315,10 +314,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * The status of the renewal.
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   public String getStatus() {
     return status;
@@ -334,10 +333,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get endUserInfo
    * @return endUserInfo
-  **/
+   */
   @javax.annotation.Nullable
   public RenewalsDetailsResponseEndUserInfo getEndUserInfo() {
     return endUserInfo;
@@ -353,10 +352,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get referenceNumber
    * @return referenceNumber
-  **/
+   */
   @javax.annotation.Nullable
   public RenewalsDetailsResponseReferenceNumber getReferenceNumber() {
     return referenceNumber;
@@ -380,10 +379,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get products
    * @return products
-  **/
+   */
   @javax.annotation.Nullable
   public List<RenewalsDetailsResponseProductsInner> getProducts() {
     return products;
@@ -407,10 +406,10 @@ public class RenewalsDetailsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get additionalAttributes
    * @return additionalAttributes
-  **/
+   */
   @javax.annotation.Nullable
   public List<RenewalsDetailsResponseAdditionalAttributesInner> getAdditionalAttributes() {
     return additionalAttributes;
@@ -514,12 +513,12 @@ public class RenewalsDetailsResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to RenewalsDetailsResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to RenewalsDetailsResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!RenewalsDetailsResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -635,22 +634,22 @@ public class RenewalsDetailsResponse {
     }
   }
 
- /**
-  * Create an instance of RenewalsDetailsResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of RenewalsDetailsResponse
-  * @throws IOException if the JSON string is invalid with respect to RenewalsDetailsResponse
-  */
+  /**
+   * Create an instance of RenewalsDetailsResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of RenewalsDetailsResponse
+   * @throws IOException if the JSON string is invalid with respect to RenewalsDetailsResponse
+   */
   public static RenewalsDetailsResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, RenewalsDetailsResponse.class);
   }
 
- /**
-  * Convert an instance of RenewalsDetailsResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of RenewalsDetailsResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

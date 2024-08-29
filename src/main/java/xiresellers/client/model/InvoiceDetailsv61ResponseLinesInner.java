@@ -42,7 +42,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -54,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class InvoiceDetailsv61ResponseLinesInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
@@ -144,10 +143,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Unique line number from Ingram.
    * @return ingramLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramLineNumber() {
     return ingramLineNumber;
@@ -163,10 +162,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Line number passes by customer while creating an order.
    * @return customerLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerLineNumber() {
     return customerLineNumber;
@@ -182,10 +181,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Ingram Micro SKU (stock keeping unit). An identification, usually alphanumeric, of a particular product that allows it to be tracked for inventory purposes.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -201,10 +200,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get upc
    * @return upc
-  **/
+   */
   @javax.annotation.Nullable
   public String getUpc() {
     return upc;
@@ -220,10 +219,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor Part Number.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -239,10 +238,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Part number from customer&#39;s system.
    * @return customerPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerPartNumber() {
     return customerPartNumber;
@@ -258,10 +257,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Name of the vendor.
    * @return vendorName
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorName() {
     return vendorName;
@@ -277,10 +276,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Description of the product.
    * @return productDescription
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductDescription() {
     return productDescription;
@@ -296,10 +295,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Weight of the product.
    * @return unitWeight
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getUnitWeight() {
     return unitWeight;
@@ -315,10 +314,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Quantity of the product.
    * @return quantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantity() {
     return quantity;
@@ -334,10 +333,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Unit price of the product.
    * @return unitPrice
-  **/
+   */
   @javax.annotation.Nullable
   public Double getUnitPrice() {
     return unitPrice;
@@ -353,10 +352,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Unit of measure of the product.
    * @return unitOfMeasure
-  **/
+   */
   @javax.annotation.Nullable
   public String getUnitOfMeasure() {
     return unitOfMeasure;
@@ -372,10 +371,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Currency code.
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCurrencyCode() {
     return currencyCode;
@@ -391,10 +390,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Extended price of the product.
    * @return extendedPrice
-  **/
+   */
   @javax.annotation.Nullable
   public Double getExtendedPrice() {
     return extendedPrice;
@@ -410,10 +409,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Tax percentage
    * @return taxPercentage
-  **/
+   */
   @javax.annotation.Nullable
   public Double getTaxPercentage() {
     return taxPercentage;
@@ -429,10 +428,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Tax rate
    * @return taxRate
-  **/
+   */
   @javax.annotation.Nullable
   public Double getTaxRate() {
     return taxRate;
@@ -448,10 +447,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Line level tax amount.
    * @return taxAmount
-  **/
+   */
   @javax.annotation.Nullable
   public Double getTaxAmount() {
     return taxAmount;
@@ -475,10 +474,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get serialNumbers
    * @return serialNumbers
-  **/
+   */
   @javax.annotation.Nullable
   public List<InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner> getSerialNumbers() {
     return serialNumbers;
@@ -494,10 +493,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Quantity ordered by the customer.
    * @return quantityOrdered
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityOrdered() {
     return quantityOrdered;
@@ -513,10 +512,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Quantity shipped to the customer.
    * @return quantityShipped
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityShipped() {
     return quantityShipped;
@@ -646,12 +645,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to InvoiceDetailsv61ResponseLinesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to InvoiceDetailsv61ResponseLinesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!InvoiceDetailsv61ResponseLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -742,22 +741,22 @@ public class InvoiceDetailsv61ResponseLinesInner {
     }
   }
 
- /**
-  * Create an instance of InvoiceDetailsv61ResponseLinesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of InvoiceDetailsv61ResponseLinesInner
-  * @throws IOException if the JSON string is invalid with respect to InvoiceDetailsv61ResponseLinesInner
-  */
+  /**
+   * Create an instance of InvoiceDetailsv61ResponseLinesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of InvoiceDetailsv61ResponseLinesInner
+   * @throws IOException if the JSON string is invalid with respect to InvoiceDetailsv61ResponseLinesInner
+   */
   public static InvoiceDetailsv61ResponseLinesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, InvoiceDetailsv61ResponseLinesInner.class);
   }
 
- /**
-  * Convert an instance of InvoiceDetailsv61ResponseLinesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of InvoiceDetailsv61ResponseLinesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class PriceAndAvailabilityResponseInnerDiscountsInner {
   public static final String SERIALIZED_NAME_SPECIAL_PRICING = "specialPricing";
   @SerializedName(SERIALIZED_NAME_SPECIAL_PRICING)
@@ -79,10 +78,10 @@ public class PriceAndAvailabilityResponseInnerDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get specialPricing
    * @return specialPricing
-  **/
+   */
   @javax.annotation.Nullable
   public List<PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner> getSpecialPricing() {
     return specialPricing;
@@ -106,10 +105,10 @@ public class PriceAndAvailabilityResponseInnerDiscountsInner {
     return this;
   }
 
-   /**
+  /**
    * Get quantityDiscounts
    * @return quantityDiscounts
-  **/
+   */
   @javax.annotation.Nullable
   public List<PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner> getQuantityDiscounts() {
     return quantityDiscounts;
@@ -174,12 +173,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityResponseInnerDiscountsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityResponseInnerDiscountsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!PriceAndAvailabilityResponseInnerDiscountsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -254,22 +253,22 @@ public class PriceAndAvailabilityResponseInnerDiscountsInner {
     }
   }
 
- /**
-  * Create an instance of PriceAndAvailabilityResponseInnerDiscountsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of PriceAndAvailabilityResponseInnerDiscountsInner
-  * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityResponseInnerDiscountsInner
-  */
+  /**
+   * Create an instance of PriceAndAvailabilityResponseInnerDiscountsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of PriceAndAvailabilityResponseInnerDiscountsInner
+   * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityResponseInnerDiscountsInner
+   */
   public static PriceAndAvailabilityResponseInnerDiscountsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, PriceAndAvailabilityResponseInnerDiscountsInner.class);
   }
 
- /**
-  * Convert an instance of PriceAndAvailabilityResponseInnerDiscountsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of PriceAndAvailabilityResponseInnerDiscountsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

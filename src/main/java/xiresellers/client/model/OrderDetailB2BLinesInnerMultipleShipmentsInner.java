@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerMultipleShipmentsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
   public static final String SERIALIZED_NAME_LINE_NUMBER = "lineNumber";
   @SerializedName(SERIALIZED_NAME_LINE_NUMBER)
@@ -96,10 +95,10 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return this;
   }
 
-   /**
+  /**
    * Line number.
    * @return lineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getLineNumber() {
     return lineNumber;
@@ -115,10 +114,10 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return this;
   }
 
-   /**
+  /**
    * Requested quantity.
    * @return requestedQuantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getRequestedQuantity() {
     return requestedQuantity;
@@ -134,10 +133,10 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return this;
   }
 
-   /**
+  /**
    * Confirmed quantity.
    * @return confirmedQuantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getConfirmedQuantity() {
     return confirmedQuantity;
@@ -153,10 +152,10 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return this;
   }
 
-   /**
+  /**
    * Date type. Example Single or multiple dates.
    * @return dateType
-  **/
+   */
   @javax.annotation.Nullable
   public String getDateType() {
     return dateType;
@@ -172,10 +171,10 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return this;
   }
 
-   /**
+  /**
    * Get dateRange
    * @return dateRange
-  **/
+   */
   @javax.annotation.Nullable
   public OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange getDateRange() {
     return dateRange;
@@ -191,10 +190,10 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return this;
   }
 
-   /**
+  /**
    * Source.
    * @return source
-  **/
+   */
   @javax.annotation.Nullable
   public String getSource() {
     return source;
@@ -210,10 +209,10 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return this;
   }
 
-   /**
+  /**
    * Description.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   public String getDescription() {
     return description;
@@ -229,10 +228,10 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return this;
   }
 
-   /**
+  /**
    * Date.
    * @return date
-  **/
+   */
   @javax.annotation.Nullable
   public String getDate() {
     return date;
@@ -248,10 +247,10 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return this;
   }
 
-   /**
+  /**
    * Delivery date.
    * @return deliveryDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getDeliveryDate() {
     return deliveryDate;
@@ -337,12 +336,12 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerMultipleShipmentsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerMultipleShipmentsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2BLinesInnerMultipleShipmentsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -411,22 +410,22 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     }
   }
 
- /**
-  * Create an instance of OrderDetailB2BLinesInnerMultipleShipmentsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDetailB2BLinesInnerMultipleShipmentsInner
-  * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerMultipleShipmentsInner
-  */
+  /**
+   * Create an instance of OrderDetailB2BLinesInnerMultipleShipmentsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDetailB2BLinesInnerMultipleShipmentsInner
+   * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerMultipleShipmentsInner
+   */
   public static OrderDetailB2BLinesInnerMultipleShipmentsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDetailB2BLinesInnerMultipleShipmentsInner.class);
   }
 
- /**
-  * Convert an instance of OrderDetailB2BLinesInnerMultipleShipmentsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDetailB2BLinesInnerMultipleShipmentsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

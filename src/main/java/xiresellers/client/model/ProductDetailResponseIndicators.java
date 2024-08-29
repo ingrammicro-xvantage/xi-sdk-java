@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * Indicators of the Product
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ProductDetailResponseIndicators {
   public static final String SERIALIZED_NAME_HAS_WARRANTY = "hasWarranty";
   @SerializedName(SERIALIZED_NAME_HAS_WARRANTY)
@@ -191,10 +190,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product has a warranty.
    * @return hasWarranty
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getHasWarranty() {
     return hasWarranty;
@@ -210,10 +209,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s a new product. 
    * @return isNewProduct
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsNewProduct() {
     return isNewProduct;
@@ -229,10 +228,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether there is any limit to return the product.
    * @return hasReturnLimits
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getHasReturnLimits() {
     return hasReturnLimits;
@@ -248,10 +247,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether back order is allowed for the product.
    * @return isBackOrderAllowed
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsBackOrderAllowed() {
     return isBackOrderAllowed;
@@ -267,10 +266,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product is shipped from the partner.
    * @return isShippedFromPartner
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsShippedFromPartner() {
     return isShippedFromPartner;
@@ -286,10 +285,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product is a replacement product.
    * @return isReplacementProduct
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsReplacementProduct() {
     return isReplacementProduct;
@@ -305,10 +304,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Get replacementType
    * @return replacementType
-  **/
+   */
   @javax.annotation.Nullable
   public String getReplacementType() {
     return replacementType;
@@ -324,10 +323,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s a direct ship product.
    * @return isDirectship
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsDirectship() {
     return isDirectship;
@@ -343,10 +342,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product is downloadable.
    * @return isDownloadable
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsDownloadable() {
     return isDownloadable;
@@ -362,10 +361,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s a digital product. 
    * @return isDigitalType
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsDigitalType() {
     return isDigitalType;
@@ -381,10 +380,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * skutype
    * @return skuType
-  **/
+   */
   @javax.annotation.Nullable
   public String getSkuType() {
     return skuType;
@@ -400,10 +399,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product has any standard special price.
    * @return hasStdSpecialPrice
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getHasStdSpecialPrice() {
     return hasStdSpecialPrice;
@@ -419,10 +418,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product has any ACOP special price.
    * @return hasAcopSpecialPrice
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getHasAcopSpecialPrice() {
     return hasAcopSpecialPrice;
@@ -438,10 +437,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product has any ACOP quantity break.
    * @return hasAcopQuantityBreak
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getHasAcopQuantityBreak() {
     return hasAcopQuantityBreak;
@@ -457,10 +456,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product has any standard web discount.
    * @return hasStdWebDiscount
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getHasStdWebDiscount() {
     return hasStdWebDiscount;
@@ -476,10 +475,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Get hasAcopWebDiscount
    * @return hasAcopWebDiscount
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getHasAcopWebDiscount() {
     return hasAcopWebDiscount;
@@ -495,10 +494,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product has any special bid.
    * @return hasSpecialBid
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getHasSpecialBid() {
     return hasSpecialBid;
@@ -514,10 +513,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product is exportable.
    * @return isExportableToCountry
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsExportableToCountry() {
     return isExportableToCountry;
@@ -533,10 +532,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s a discontinued product.
    * @return isDiscontinuedProduct
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsDiscontinuedProduct() {
     return isDiscontinuedProduct;
@@ -552,10 +551,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product is refurbished.
    * @return isRefurbished
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsRefurbished() {
     return isRefurbished;
@@ -571,10 +570,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates if the product can be returned.
    * @return isReturnableProduct
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsReturnableProduct() {
     return isReturnableProduct;
@@ -590,10 +589,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s a Ingram shipped product.
    * @return isIngramShip
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsIngramShip() {
     return isIngramShip;
@@ -609,10 +608,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Do vendor requires Enduser name required to create an order.
    * @return isEnduserRequired
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsEnduserRequired() {
     return isEnduserRequired;
@@ -628,10 +627,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s  heavy weight product.
    * @return isHeavyWeight
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsHeavyWeight() {
     return isHeavyWeight;
@@ -647,10 +646,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it hasLtl or not.
    * @return hasLtl
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getHasLtl() {
     return hasLtl;
@@ -666,10 +665,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s clearnce product.
    * @return isClearanceProduct
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsClearanceProduct() {
     return isClearanceProduct;
@@ -685,10 +684,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s a bundled product.
    * @return hasBundle
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getHasBundle() {
     return hasBundle;
@@ -704,10 +703,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s oversized product.
    * @return isOversizeProduct
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsOversizeProduct() {
     return isOversizeProduct;
@@ -723,10 +722,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s a preorder product.
    * @return isPreorderProduct
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsPreorderProduct() {
     return isPreorderProduct;
@@ -742,10 +741,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether it’s a licened product.
    * @return isLicenseProduct
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsLicenseProduct() {
     return isLicenseProduct;
@@ -761,10 +760,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product is directship orderable.
    * @return isDirectshipOrderable
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsDirectshipOrderable() {
     return isDirectshipOrderable;
@@ -780,10 +779,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product is service SKU.
    * @return isServiceSku
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsServiceSku() {
     return isServiceSku;
@@ -799,10 +798,10 @@ public class ProductDetailResponseIndicators {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether product is configurable.
    * @return isConfigurable
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsConfigurable() {
     return isConfigurable;
@@ -960,12 +959,12 @@ public class ProductDetailResponseIndicators {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseIndicators
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseIndicators
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ProductDetailResponseIndicators.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -1018,22 +1017,22 @@ public class ProductDetailResponseIndicators {
     }
   }
 
- /**
-  * Create an instance of ProductDetailResponseIndicators given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ProductDetailResponseIndicators
-  * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseIndicators
-  */
+  /**
+   * Create an instance of ProductDetailResponseIndicators given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ProductDetailResponseIndicators
+   * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseIndicators
+   */
   public static ProductDetailResponseIndicators fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ProductDetailResponseIndicators.class);
   }
 
- /**
-  * Convert an instance of ProductDetailResponseIndicators to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ProductDetailResponseIndicators to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

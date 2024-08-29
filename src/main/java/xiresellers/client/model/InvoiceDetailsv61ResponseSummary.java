@@ -44,7 +44,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -56,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummary
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class InvoiceDetailsv61ResponseSummary {
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
@@ -82,10 +81,10 @@ public class InvoiceDetailsv61ResponseSummary {
     return this;
   }
 
-   /**
+  /**
    * Get lines
    * @return lines
-  **/
+   */
   @javax.annotation.Nullable
   public InvoiceDetailsv61ResponseSummaryLines getLines() {
     return lines;
@@ -109,10 +108,10 @@ public class InvoiceDetailsv61ResponseSummary {
     return this;
   }
 
-   /**
+  /**
    * Miscellaneous charges.
    * @return miscCharges
-  **/
+   */
   @javax.annotation.Nullable
   public List<InvoiceDetailsv61ResponseSummaryMiscChargesInner> getMiscCharges() {
     return miscCharges;
@@ -128,10 +127,10 @@ public class InvoiceDetailsv61ResponseSummary {
     return this;
   }
 
-   /**
+  /**
    * Get totals
    * @return totals
-  **/
+   */
   @javax.annotation.Nullable
   public InvoiceDetailsv61ResponseSummaryTotals getTotals() {
     return totals;
@@ -147,10 +146,10 @@ public class InvoiceDetailsv61ResponseSummary {
     return this;
   }
 
-   /**
+  /**
    * Get foreignFxTotals
    * @return foreignFxTotals
-  **/
+   */
   @javax.annotation.Nullable
   public InvoiceDetailsv61ResponseSummaryForeignFxTotals getForeignFxTotals() {
     return foreignFxTotals;
@@ -232,12 +231,12 @@ public class InvoiceDetailsv61ResponseSummary {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to InvoiceDetailsv61ResponseSummary
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to InvoiceDetailsv61ResponseSummary
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!InvoiceDetailsv61ResponseSummary.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -310,22 +309,22 @@ public class InvoiceDetailsv61ResponseSummary {
     }
   }
 
- /**
-  * Create an instance of InvoiceDetailsv61ResponseSummary given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of InvoiceDetailsv61ResponseSummary
-  * @throws IOException if the JSON string is invalid with respect to InvoiceDetailsv61ResponseSummary
-  */
+  /**
+   * Create an instance of InvoiceDetailsv61ResponseSummary given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of InvoiceDetailsv61ResponseSummary
+   * @throws IOException if the JSON string is invalid with respect to InvoiceDetailsv61ResponseSummary
+   */
   public static InvoiceDetailsv61ResponseSummary fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, InvoiceDetailsv61ResponseSummary.class);
   }
 
- /**
-  * Convert an instance of InvoiceDetailsv61ResponseSummary to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of InvoiceDetailsv61ResponseSummary to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

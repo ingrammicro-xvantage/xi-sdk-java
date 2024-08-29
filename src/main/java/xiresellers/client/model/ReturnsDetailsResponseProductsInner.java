@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ReturnsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
@@ -124,10 +123,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Unique Ingram Micro line number.
    * @return ingramLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getIngramLineNumber() {
     return ingramLineNumber;
@@ -143,10 +142,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The description of the line item product.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   public String getDescription() {
     return description;
@@ -162,10 +161,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Unique IngramMicro part number.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -181,10 +180,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor&#39;s part number for the line item.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -200,10 +199,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The UPC code of a product.
    * @return upc
-  **/
+   */
   @javax.annotation.Nullable
   public String getUpc() {
     return upc;
@@ -219,10 +218,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The date of the invoice.
    * @return invoiceDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceDate() {
     return invoiceDate;
@@ -238,10 +237,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Ingram micro Invoice number.
    * @return invoiceNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceNumber() {
     return invoiceNumber;
@@ -257,10 +256,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s order number for reference in their system.
    * @return customerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerOrderNumber() {
     return customerOrderNumber;
@@ -276,10 +275,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity of the line item.
    * @return quantity
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getQuantity() {
     return quantity;
@@ -295,10 +294,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The unit price of the line item.
    * @return unitPrice
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getUnitPrice() {
     return unitPrice;
@@ -314,10 +313,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Unit price X quantity for the line item.
    * @return extendedPrice
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getExtendedPrice() {
     return extendedPrice;
@@ -333,10 +332,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The status of the line item.
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   public String getStatus() {
     return status;
@@ -352,10 +351,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The code of the return branch.
    * @return returnBranch
-  **/
+   */
   @javax.annotation.Nullable
   public String getReturnBranch() {
     return returnBranch;
@@ -371,10 +370,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * The code of the ship from branch.
    * @return shipFromBranch
-  **/
+   */
   @javax.annotation.Nullable
   public String getShipFromBranch() {
     return shipFromBranch;
@@ -390,10 +389,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Request details.
    * @return requestDetails
-  **/
+   */
   @javax.annotation.Nullable
   public String getRequestDetails() {
     return requestDetails;
@@ -409,10 +408,10 @@ public class ReturnsDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get additionalDetails
    * @return additionalDetails
-  **/
+   */
   @javax.annotation.Nullable
   public String getAdditionalDetails() {
     return additionalDetails;
@@ -519,12 +518,12 @@ public class ReturnsDetailsResponseProductsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ReturnsDetailsResponseProductsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ReturnsDetailsResponseProductsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ReturnsDetailsResponseProductsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -607,22 +606,22 @@ public class ReturnsDetailsResponseProductsInner {
     }
   }
 
- /**
-  * Create an instance of ReturnsDetailsResponseProductsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ReturnsDetailsResponseProductsInner
-  * @throws IOException if the JSON string is invalid with respect to ReturnsDetailsResponseProductsInner
-  */
+  /**
+   * Create an instance of ReturnsDetailsResponseProductsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ReturnsDetailsResponseProductsInner
+   * @throws IOException if the JSON string is invalid with respect to ReturnsDetailsResponseProductsInner
+   */
   public static ReturnsDetailsResponseProductsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ReturnsDetailsResponseProductsInner.class);
   }
 
- /**
-  * Convert an instance of ReturnsDetailsResponseProductsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ReturnsDetailsResponseProductsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

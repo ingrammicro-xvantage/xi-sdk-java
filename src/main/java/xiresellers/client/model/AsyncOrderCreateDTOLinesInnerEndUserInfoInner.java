@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * AsyncOrderCreateDTOLinesInnerEndUserInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
   public static final String SERIALIZED_NAME_END_USER_ID = "endUserId";
   @SerializedName(SERIALIZED_NAME_END_USER_ID)
@@ -127,10 +126,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * ID for the end user/customer in Ingram Micro&#39;s system.
    * @return endUserId
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndUserId() {
     return endUserId;
@@ -146,10 +145,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * End user type
    * @return endUserType
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndUserType() {
     return endUserType;
@@ -165,10 +164,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The company name for the end user/customer.
    * @return companyName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCompanyName() {
     return companyName;
@@ -184,10 +183,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Get name1
    * @return name1
-  **/
+   */
   @javax.annotation.Nullable
   public String getName1() {
     return name1;
@@ -203,10 +202,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * Get name2
    * @return name2
-  **/
+   */
   @javax.annotation.Nullable
   public String getName2() {
     return name2;
@@ -222,10 +221,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The contact Id for the end user/customer.
    * @return contactId
-  **/
+   */
   @javax.annotation.Nullable
   public String getContactId() {
     return contactId;
@@ -241,10 +240,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The address line 1 for the end user/customer.
    * @return addressLine1
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine1() {
     return addressLine1;
@@ -260,10 +259,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The address line 2 for the end user/customer.
    * @return addressLine2
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine2() {
     return addressLine2;
@@ -279,10 +278,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The address line 3 for the end user/customer.
    * @return addressLine3
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine3() {
     return addressLine3;
@@ -298,10 +297,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The contact name for the end user/customer.
    * @return contact
-  **/
+   */
   @javax.annotation.Nullable
   public String getContact() {
     return contact;
@@ -317,10 +316,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s city.
    * @return city
-  **/
+   */
   @javax.annotation.Nullable
   public String getCity() {
     return city;
@@ -336,10 +335,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s state.
    * @return state
-  **/
+   */
   @javax.annotation.Nullable
   public String getState() {
     return state;
@@ -355,10 +354,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s zip or postal code.
    * @return postalCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getPostalCode() {
     return postalCode;
@@ -374,10 +373,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The address line 4 for the end user/customer.
    * @return addressLine4
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine4() {
     return addressLine4;
@@ -393,10 +392,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s two character ISO country code.
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCountryCode() {
     return countryCode;
@@ -412,10 +411,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s phone number.
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getPhoneNumber() {
     return phoneNumber;
@@ -431,10 +430,10 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     return this;
   }
 
-   /**
+  /**
    * The end user/customer&#39;s phone number.
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   public String getEmail() {
     return email;
@@ -544,12 +543,12 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to AsyncOrderCreateDTOLinesInnerEndUserInfoInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to AsyncOrderCreateDTOLinesInnerEndUserInfoInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!AsyncOrderCreateDTOLinesInnerEndUserInfoInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -647,22 +646,22 @@ public class AsyncOrderCreateDTOLinesInnerEndUserInfoInner {
     }
   }
 
- /**
-  * Create an instance of AsyncOrderCreateDTOLinesInnerEndUserInfoInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of AsyncOrderCreateDTOLinesInnerEndUserInfoInner
-  * @throws IOException if the JSON string is invalid with respect to AsyncOrderCreateDTOLinesInnerEndUserInfoInner
-  */
+  /**
+   * Create an instance of AsyncOrderCreateDTOLinesInnerEndUserInfoInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of AsyncOrderCreateDTOLinesInnerEndUserInfoInner
+   * @throws IOException if the JSON string is invalid with respect to AsyncOrderCreateDTOLinesInnerEndUserInfoInner
+   */
   public static AsyncOrderCreateDTOLinesInnerEndUserInfoInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, AsyncOrderCreateDTOLinesInnerEndUserInfoInner.class);
   }
 
- /**
-  * Convert an instance of AsyncOrderCreateDTOLinesInnerEndUserInfoInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of AsyncOrderCreateDTOLinesInnerEndUserInfoInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

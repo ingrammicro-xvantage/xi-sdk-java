@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_SHIPMENT_DATE = "shipmentDate";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DATE)
@@ -86,10 +85,10 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return this;
   }
 
-   /**
+  /**
    * The date the line item was shipped.
    * @return shipmentDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getShipmentDate() {
     return shipmentDate;
@@ -105,10 +104,10 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return this;
   }
 
-   /**
+  /**
    * The ID of the warehouse the product will ship from.
    * @return shipFromWarehouseId
-  **/
+   */
   @javax.annotation.Nullable
   public String getShipFromWarehouseId() {
     return shipFromWarehouseId;
@@ -124,10 +123,10 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return this;
   }
 
-   /**
+  /**
    * \&quot;\&quot;
    * @return warehouseName
-  **/
+   */
   @javax.annotation.Nullable
   public String getWarehouseName() {
     return warehouseName;
@@ -143,10 +142,10 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return this;
   }
 
-   /**
+  /**
    * The carrier code for the shipment containing the  line item.
    * @return carrierCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCarrierCode() {
     return carrierCode;
@@ -162,10 +161,10 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return this;
   }
 
-   /**
+  /**
    * The name of the carrier of the shipment containing   the line item.
    * @return carrierName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCarrierName() {
     return carrierName;
@@ -189,10 +188,10 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return this;
   }
 
-   /**
+  /**
    * Get packageDetails
    * @return packageDetails
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner> getPackageDetails() {
     return packageDetails;
@@ -269,12 +268,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -350,22 +349,22 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     }
   }
 
- /**
-  * Create an instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
-  * @throws IOException if the JSON string is invalid with respect to OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
-  */
+  /**
+   * Create an instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
+   * @throws IOException if the JSON string is invalid with respect to OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
+   */
   public static OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner.class);
   }
 
- /**
-  * Convert an instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

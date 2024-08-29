@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceSearchResponseInvoicesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class InvoiceSearchResponseInvoicesInner {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE = "paymentTermsDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE)
@@ -122,10 +121,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Payment Terms Due date.
    * @return paymentTermsDueDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getPaymentTermsDueDate() {
     return paymentTermsDueDate;
@@ -149,10 +148,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Get specialBidNumbers
    * @return specialBidNumbers
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getSpecialBidNumbers() {
     return specialBidNumbers;
@@ -168,10 +167,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Order number
    * @return erpOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getErpOrderNumber() {
     return erpOrderNumber;
@@ -187,10 +186,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Invoice no.
    * @return invoiceNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceNumber() {
     return invoiceNumber;
@@ -206,10 +205,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Invoice Status.
    * @return invoiceStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceStatus() {
     return invoiceStatus;
@@ -225,10 +224,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Invoice Date.
    * @return invoiceDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceDate() {
     return invoiceDate;
@@ -244,10 +243,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Invoice Due Date.
    * @return invoiceDueDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getInvoiceDueDate() {
     return invoiceDueDate;
@@ -263,10 +262,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Invoice Amount.
    * @return invoicedAmountDue
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getInvoicedAmountDue() {
     return invoicedAmountDue;
@@ -282,10 +281,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Customer Order No.
    * @return customerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerOrderNumber() {
     return customerOrderNumber;
@@ -301,10 +300,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * End Customer Order number.
    * @return endCustomerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndCustomerOrderNumber() {
     return endCustomerOrderNumber;
@@ -320,10 +319,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Order Create Date.
    * @return orderCreateDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderCreateDate() {
     return orderCreateDate;
@@ -339,10 +338,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Invoice Amount Inclusive of Taxes
    * @return invoiceAmountInclTax
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getInvoiceAmountInclTax() {
     return invoiceAmountInclTax;
@@ -358,10 +357,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Get forgntotalamount
    * @return forgntotalamount
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getForgntotalamount() {
     return forgntotalamount;
@@ -377,10 +376,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Get gstInvoiceNumber
    * @return gstInvoiceNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getGstInvoiceNumber() {
     return gstInvoiceNumber;
@@ -396,10 +395,10 @@ public class InvoiceSearchResponseInvoicesInner {
     return this;
   }
 
-   /**
+  /**
    * Get isfseccenabled
    * @return isfseccenabled
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsfseccenabled() {
     return isfseccenabled;
@@ -503,12 +502,12 @@ public class InvoiceSearchResponseInvoicesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to InvoiceSearchResponseInvoicesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to InvoiceSearchResponseInvoicesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!InvoiceSearchResponseInvoicesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -589,22 +588,22 @@ public class InvoiceSearchResponseInvoicesInner {
     }
   }
 
- /**
-  * Create an instance of InvoiceSearchResponseInvoicesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of InvoiceSearchResponseInvoicesInner
-  * @throws IOException if the JSON string is invalid with respect to InvoiceSearchResponseInvoicesInner
-  */
+  /**
+   * Create an instance of InvoiceSearchResponseInvoicesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of InvoiceSearchResponseInvoicesInner
+   * @throws IOException if the JSON string is invalid with respect to InvoiceSearchResponseInvoicesInner
+   */
   public static InvoiceSearchResponseInvoicesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, InvoiceSearchResponseInvoicesInner.class);
   }
 
- /**
-  * Convert an instance of InvoiceSearchResponseInvoicesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of InvoiceSearchResponseInvoicesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

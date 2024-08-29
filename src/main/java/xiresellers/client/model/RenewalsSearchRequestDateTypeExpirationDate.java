@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchRequestDateTypeExpirationDate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class RenewalsSearchRequestDateTypeExpirationDate {
   public static final String SERIALIZED_NAME_CUSTOM_START_DATE = "customStartDate";
   @SerializedName(SERIALIZED_NAME_CUSTOM_START_DATE)
@@ -67,10 +66,10 @@ public class RenewalsSearchRequestDateTypeExpirationDate {
     return this;
   }
 
-   /**
+  /**
    * Custom start date for expiration date.
    * @return customStartDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomStartDate() {
     return customStartDate;
@@ -86,10 +85,10 @@ public class RenewalsSearchRequestDateTypeExpirationDate {
     return this;
   }
 
-   /**
+  /**
    * Custom end date for expiration date.
    * @return customEndDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomEndDate() {
     return customEndDate;
@@ -154,12 +153,12 @@ public class RenewalsSearchRequestDateTypeExpirationDate {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to RenewalsSearchRequestDateTypeExpirationDate
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to RenewalsSearchRequestDateTypeExpirationDate
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!RenewalsSearchRequestDateTypeExpirationDate.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -212,22 +211,22 @@ public class RenewalsSearchRequestDateTypeExpirationDate {
     }
   }
 
- /**
-  * Create an instance of RenewalsSearchRequestDateTypeExpirationDate given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of RenewalsSearchRequestDateTypeExpirationDate
-  * @throws IOException if the JSON string is invalid with respect to RenewalsSearchRequestDateTypeExpirationDate
-  */
+  /**
+   * Create an instance of RenewalsSearchRequestDateTypeExpirationDate given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of RenewalsSearchRequestDateTypeExpirationDate
+   * @throws IOException if the JSON string is invalid with respect to RenewalsSearchRequestDateTypeExpirationDate
+   */
   public static RenewalsSearchRequestDateTypeExpirationDate fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, RenewalsSearchRequestDateTypeExpirationDate.class);
   }
 
- /**
-  * Convert an instance of RenewalsSearchRequestDateTypeExpirationDate to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of RenewalsSearchRequestDateTypeExpirationDate to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

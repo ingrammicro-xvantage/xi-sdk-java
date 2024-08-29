@@ -43,7 +43,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -55,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPrice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class QuoteDetailsResponseProductsInnerPrice {
   public static final String SERIALIZED_NAME_QUOTE_PRICE = "quotePrice";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRICE)
@@ -113,10 +112,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Ingram Micro quoted price specific to the reseller and quote.
    * @return quotePrice
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getQuotePrice() {
     return quotePrice;
@@ -132,10 +131,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Manufacturer Suggested Retail Price
    * @return msrp
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getMsrp() {
     return msrp;
@@ -151,10 +150,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Extended MSRP - Manufacturer Suggested Retail Price X Quantity
    * @return extendedMsrp
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getExtendedMsrp() {
     return extendedMsrp;
@@ -170,10 +169,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Extended reseller quoted price (cost to reseller) X Quantity
    * @return extendedQuotePrice
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getExtendedQuotePrice() {
     return extendedQuotePrice;
@@ -189,10 +188,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Discount off list percentage extended
    * @return discountOffList
-  **/
+   */
   @javax.annotation.Nullable
   public String getDiscountOffList() {
     return discountOffList;
@@ -208,10 +207,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Get type
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   public String getType() {
     return type;
@@ -227,10 +226,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Get recurringPriceModel
    * @return recurringPriceModel
-  **/
+   */
   @javax.annotation.Nullable
   public String getRecurringPriceModel() {
     return recurringPriceModel;
@@ -246,10 +245,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Get unitOfMeasure
    * @return unitOfMeasure
-  **/
+   */
   @javax.annotation.Nullable
   public String getUnitOfMeasure() {
     return unitOfMeasure;
@@ -265,10 +264,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Get tax
    * @return tax
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getTax() {
     return tax;
@@ -284,10 +283,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Get extrafees
    * @return extrafees
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getExtrafees() {
     return extrafees;
@@ -311,10 +310,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Get extraFeesDetails
    * @return extraFeesDetails
-  **/
+   */
   @javax.annotation.Nullable
   public List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> getExtraFeesDetails() {
     return extraFeesDetails;
@@ -338,10 +337,10 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return this;
   }
 
-   /**
+  /**
    * Get discounts
    * @return discounts
-  **/
+   */
   @javax.annotation.Nullable
   public List<QuoteDetailsResponseProductsInnerPriceDiscountsInner> getDiscounts() {
     return discounts;
@@ -447,12 +446,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to QuoteDetailsResponseProductsInnerPrice
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to QuoteDetailsResponseProductsInnerPrice
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!QuoteDetailsResponseProductsInnerPrice.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -539,22 +538,22 @@ public class QuoteDetailsResponseProductsInnerPrice {
     }
   }
 
- /**
-  * Create an instance of QuoteDetailsResponseProductsInnerPrice given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of QuoteDetailsResponseProductsInnerPrice
-  * @throws IOException if the JSON string is invalid with respect to QuoteDetailsResponseProductsInnerPrice
-  */
+  /**
+   * Create an instance of QuoteDetailsResponseProductsInnerPrice given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of QuoteDetailsResponseProductsInnerPrice
+   * @throws IOException if the JSON string is invalid with respect to QuoteDetailsResponseProductsInnerPrice
+   */
   public static QuoteDetailsResponseProductsInnerPrice fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, QuoteDetailsResponseProductsInnerPrice.class);
   }
 
- /**
-  * Convert an instance of QuoteDetailsResponseProductsInnerPrice to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of QuoteDetailsResponseProductsInnerPrice to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

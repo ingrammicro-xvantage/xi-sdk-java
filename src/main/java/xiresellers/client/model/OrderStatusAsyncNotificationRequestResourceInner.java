@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderStatusAsyncNotificationRequestResourceInner {
   public static final String SERIALIZED_NAME_EVENT_TYPE = "eventType";
   @SerializedName(SERIALIZED_NAME_EVENT_TYPE)
@@ -87,10 +86,10 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * The event name sent in the event request.
    * @return eventType
-  **/
+   */
   @javax.annotation.Nullable
   public String getEventType() {
     return eventType;
@@ -106,10 +105,10 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * The Ingram Micro order number.
    * @return orderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderNumber() {
     return orderNumber;
@@ -125,10 +124,10 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s unique PO/Order number.
    * @return customerOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerOrderNumber() {
     return customerOrderNumber;
@@ -144,10 +143,10 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * The timestamp at which the order was created.
    * @return orderEntryTimeStamp
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderEntryTimeStamp() {
     return orderEntryTimeStamp;
@@ -171,10 +170,10 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * The line-level details for the order.
    * @return lines
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderStatusAsyncNotificationRequestResourceInnerLinesInner> getLines() {
     return lines;
@@ -198,10 +197,10 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return this;
   }
 
-   /**
+  /**
    * Link to Order Details for the order(s).
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderStatusAsyncNotificationRequestResourceInnerLinksInner> getLinks() {
     return links;
@@ -278,12 +277,12 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderStatusAsyncNotificationRequestResourceInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderStatusAsyncNotificationRequestResourceInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderStatusAsyncNotificationRequestResourceInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -370,22 +369,22 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     }
   }
 
- /**
-  * Create an instance of OrderStatusAsyncNotificationRequestResourceInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderStatusAsyncNotificationRequestResourceInner
-  * @throws IOException if the JSON string is invalid with respect to OrderStatusAsyncNotificationRequestResourceInner
-  */
+  /**
+   * Create an instance of OrderStatusAsyncNotificationRequestResourceInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderStatusAsyncNotificationRequestResourceInner
+   * @throws IOException if the JSON string is invalid with respect to OrderStatusAsyncNotificationRequestResourceInner
+   */
   public static OrderStatusAsyncNotificationRequestResourceInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderStatusAsyncNotificationRequestResourceInner.class);
   }
 
- /**
-  * Convert an instance of OrderStatusAsyncNotificationRequestResourceInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderStatusAsyncNotificationRequestResourceInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -25,7 +25,6 @@ import java.util.List;
 import xiresellers.client.model.ProductDetailResponseAdditionalInformation;
 import xiresellers.client.model.ProductDetailResponseCiscoFields;
 import xiresellers.client.model.ProductDetailResponseIndicators;
-import xiresellers.client.model.ProductDetailResponseTechnicalSpecificationsInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -81,14 +80,6 @@ public class ProductDetailResponseTest {
     @Test
     public void descriptionTest() {
         // TODO: test description
-    }
-
-    /**
-     * Test the property 'productDetailDescription'
-     */
-    @Test
-    public void productDetailDescriptionTest() {
-        // TODO: test productDetailDescription
     }
 
     /**
@@ -161,14 +152,6 @@ public class ProductDetailResponseTest {
     @Test
     public void ciscoFieldsTest() {
         // TODO: test ciscoFields
-    }
-
-    /**
-     * Test the property 'technicalSpecifications'
-     */
-    @Test
-    public void technicalSpecificationsTest() {
-        // TODO: test technicalSpecifications
     }
 
     /**

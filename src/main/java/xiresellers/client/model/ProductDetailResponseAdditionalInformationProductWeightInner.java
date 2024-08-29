@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseAdditionalInformationProductWeightInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ProductDetailResponseAdditionalInformationProductWeightInner {
   public static final String SERIALIZED_NAME_PLANT_ID = "plantId";
   @SerializedName(SERIALIZED_NAME_PLANT_ID)
@@ -72,10 +71,10 @@ public class ProductDetailResponseAdditionalInformationProductWeightInner {
     return this;
   }
 
-   /**
+  /**
    * ID of the plant.  Example : &#39;US01&#39;
    * @return plantId
-  **/
+   */
   @javax.annotation.Nullable
   public String getPlantId() {
     return plantId;
@@ -91,10 +90,10 @@ public class ProductDetailResponseAdditionalInformationProductWeightInner {
     return this;
   }
 
-   /**
+  /**
    * Weight of the product.   Example : 2
    * @return weight
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getWeight() {
     return weight;
@@ -110,10 +109,10 @@ public class ProductDetailResponseAdditionalInformationProductWeightInner {
     return this;
   }
 
-   /**
+  /**
    * Weight unit of the product.   Example : &#39;LB&#39;
    * @return weightUnit
-  **/
+   */
   @javax.annotation.Nullable
   public String getWeightUnit() {
     return weightUnit;
@@ -181,12 +180,12 @@ public class ProductDetailResponseAdditionalInformationProductWeightInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseAdditionalInformationProductWeightInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseAdditionalInformationProductWeightInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ProductDetailResponseAdditionalInformationProductWeightInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -239,22 +238,22 @@ public class ProductDetailResponseAdditionalInformationProductWeightInner {
     }
   }
 
- /**
-  * Create an instance of ProductDetailResponseAdditionalInformationProductWeightInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ProductDetailResponseAdditionalInformationProductWeightInner
-  * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseAdditionalInformationProductWeightInner
-  */
+  /**
+   * Create an instance of ProductDetailResponseAdditionalInformationProductWeightInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ProductDetailResponseAdditionalInformationProductWeightInner
+   * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseAdditionalInformationProductWeightInner
+   */
   public static ProductDetailResponseAdditionalInformationProductWeightInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ProductDetailResponseAdditionalInformationProductWeightInner.class);
   }
 
- /**
-  * Convert an instance of ProductDetailResponseAdditionalInformationProductWeightInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ProductDetailResponseAdditionalInformationProductWeightInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

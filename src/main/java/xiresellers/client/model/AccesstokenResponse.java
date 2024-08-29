@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * AccesstokenResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class AccesstokenResponse {
   public static final String SERIALIZED_NAME_ACCESS_TOKEN = "access_token";
   @SerializedName(SERIALIZED_NAME_ACCESS_TOKEN)
@@ -71,10 +70,10 @@ public class AccesstokenResponse {
     return this;
   }
 
-   /**
+  /**
    * Get accessToken
    * @return accessToken
-  **/
+   */
   @javax.annotation.Nullable
   public String getAccessToken() {
     return accessToken;
@@ -90,10 +89,10 @@ public class AccesstokenResponse {
     return this;
   }
 
-   /**
+  /**
    * Get tokenType
    * @return tokenType
-  **/
+   */
   @javax.annotation.Nullable
   public String getTokenType() {
     return tokenType;
@@ -109,10 +108,10 @@ public class AccesstokenResponse {
     return this;
   }
 
-   /**
+  /**
    * Get expiresIn
    * @return expiresIn
-  **/
+   */
   @javax.annotation.Nullable
   public String getExpiresIn() {
     return expiresIn;
@@ -180,12 +179,12 @@ public class AccesstokenResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to AccesstokenResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to AccesstokenResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!AccesstokenResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -241,22 +240,22 @@ public class AccesstokenResponse {
     }
   }
 
- /**
-  * Create an instance of AccesstokenResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of AccesstokenResponse
-  * @throws IOException if the JSON string is invalid with respect to AccesstokenResponse
-  */
+  /**
+   * Create an instance of AccesstokenResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of AccesstokenResponse
+   * @throws IOException if the JSON string is invalid with respect to AccesstokenResponse
+   */
   public static AccesstokenResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, AccesstokenResponse.class);
   }
 
- /**
-  * Convert an instance of AccesstokenResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of AccesstokenResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

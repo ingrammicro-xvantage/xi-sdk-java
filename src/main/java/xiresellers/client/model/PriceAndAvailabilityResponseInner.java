@@ -44,7 +44,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -56,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class PriceAndAvailabilityResponseInner {
   public static final String SERIALIZED_NAME_PRODUCT_STATUS_CODE = "productStatusCode";
   @SerializedName(SERIALIZED_NAME_PRODUCT_STATUS_CODE)
@@ -174,10 +173,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Codes signifying whether the sku is active or not.
    * @return productStatusCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductStatusCode() {
     return productStatusCode;
@@ -193,10 +192,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Message returned saying whether sku is active.
    * @return productStatusMessage
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductStatusMessage() {
     return productStatusMessage;
@@ -212,10 +211,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Ingram Micro unique part number for the product.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -231,10 +230,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor’s part number for the product.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -250,10 +249,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Extended Vendor Part Number. *Currently, this feature is not available in these countries (Mexico, Turkey, New Zealand, Colombia, Chile, Brazil, Peru, Western Sahara).
    * @return extendedVendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getExtendedVendorPartNumber() {
     return extendedVendorPartNumber;
@@ -269,10 +268,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Reseller / end-user’s part number for the product.
    * @return customerPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerPartNumber() {
     return customerPartNumber;
@@ -288,10 +287,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * The UPC code for the product. Consists of 12 numeric digits that are uniquely assigned to each trade item.
    * @return upc
-  **/
+   */
   @javax.annotation.Nullable
   public String getUpc() {
     return upc;
@@ -307,10 +306,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Number type of the part.
    * @return partNumberType
-  **/
+   */
   @javax.annotation.Nullable
   public String getPartNumberType() {
     return partNumberType;
@@ -326,10 +325,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor number that identifies the product.
    * @return vendorNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorNumber() {
     return vendorNumber;
@@ -345,10 +344,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor name for the order.
    * @return vendorName
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorName() {
     return vendorName;
@@ -364,10 +363,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * The description given for the product.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   public String getDescription() {
     return description;
@@ -383,10 +382,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Indicates whether the product is directly shipped from the vendor’s warehouse or if the product ships from Ingram Micro’s warehouse. Class Codes are Ingram classifications on how skus are stocked A &#x3D; Product that is stocked usually in all IM warehouses and replenished on a regular basis. B &#x3D; Product that is stocked in limited IM warehouses and replenished on a regular basis C &#x3D; Product that is stocked in fewer IM warehouses and replenished on a regular basis. D &#x3D; Product that Ingram Micro has elected to discontinue. E &#x3D; Product that will be phased out later, according to the vendor. You may not want to replenish this product, but instead sell down what is in stock. F &#x3D; Product that we carry for a specific customer or supplier under a contractual agreement. N &#x3D; New Sku. Classification before first receipt O &#x3D; Discontinued product to be liquidated S&#x3D; Order for Specialized Demand (Order to backorder) X&#x3D; direct ship from Vendor V &#x3D; product that vendor has elected to discontinue.
    * @return productClass
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductClass() {
     return productClass;
@@ -402,10 +401,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * The description given for the product.
    * @return uom
-  **/
+   */
   @javax.annotation.Nullable
   public String getUom() {
     return uom;
@@ -421,10 +420,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Status that gives whether the product is Active.
    * @return productStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductStatus() {
     return productStatus;
@@ -440,10 +439,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates if the product accepts backorder.
    * @return acceptBackOrder
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getAcceptBackOrder() {
     return acceptBackOrder;
@@ -459,10 +458,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether a product is authorized.
    * @return productAuthorized
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getProductAuthorized() {
     return productAuthorized;
@@ -478,10 +477,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates if the product can be returned.
    * @return returnableProduct
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getReturnableProduct() {
     return returnableProduct;
@@ -497,10 +496,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates  if end user information is required.
    * @return endUserInfoRequired
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getEndUserInfoRequired() {
     return endUserInfoRequired;
@@ -516,10 +515,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates if special pricing is available for the product.
    * @return govtSpecialPriceAvailable
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getGovtSpecialPriceAvailable() {
     return govtSpecialPriceAvailable;
@@ -535,10 +534,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Program type, “PA” for government orders, “ED” for education order.
    * @return govtProgramType
-  **/
+   */
   @javax.annotation.Nullable
   public String getGovtProgramType() {
     return govtProgramType;
@@ -554,10 +553,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Type of end user of the program. F &#x3D; Federal, S &#x3D; State, E &#x3D; Local, K &#x3D; K-12 school, and H &#x3D; Higher Education.
    * @return govtEndUserType
-  **/
+   */
   @javax.annotation.Nullable
   public String getGovtEndUserType() {
     return govtEndUserType;
@@ -573,10 +572,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Get availability
    * @return availability
-  **/
+   */
   @javax.annotation.Nullable
   public PriceAndAvailabilityResponseInnerAvailability getAvailability() {
     return availability;
@@ -600,10 +599,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Get reserveInventoryDetails
    * @return reserveInventoryDetails
-  **/
+   */
   @javax.annotation.Nullable
   public List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> getReserveInventoryDetails() {
     return reserveInventoryDetails;
@@ -619,10 +618,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Get pricing
    * @return pricing
-  **/
+   */
   @javax.annotation.Nullable
   public PriceAndAvailabilityResponseInnerPricing getPricing() {
     return pricing;
@@ -646,10 +645,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * Get discounts
    * @return discounts
-  **/
+   */
   @javax.annotation.Nullable
   public List<PriceAndAvailabilityResponseInnerDiscountsInner> getDiscounts() {
     return discounts;
@@ -665,10 +664,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * True of false value to indicate whether it’s bundle part. *Currently, this feature is not available in these countries (Mexico, Turkey, New Zealand, Colombia, Chile, Brazil, Peru, Western Sahara).
    * @return bundlePartIndicator
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getBundlePartIndicator() {
     return bundlePartIndicator;
@@ -692,10 +691,10 @@ public class PriceAndAvailabilityResponseInner {
     return this;
   }
 
-   /**
+  /**
    * *Currently, this feature is not available in these countries (Mexico, Turkey, New Zealand, Colombia, Chile, Brazil, Peru, Western Sahara).
    * @return serviceFees
-  **/
+   */
   @javax.annotation.Nullable
   public List<PriceAndAvailabilityResponseInnerServiceFeesInner> getServiceFees() {
     return serviceFees;
@@ -835,12 +834,12 @@ public class PriceAndAvailabilityResponseInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityResponseInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityResponseInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!PriceAndAvailabilityResponseInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -985,22 +984,22 @@ public class PriceAndAvailabilityResponseInner {
     }
   }
 
- /**
-  * Create an instance of PriceAndAvailabilityResponseInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of PriceAndAvailabilityResponseInner
-  * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityResponseInner
-  */
+  /**
+   * Create an instance of PriceAndAvailabilityResponseInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of PriceAndAvailabilityResponseInner
+   * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityResponseInner
+   */
   public static PriceAndAvailabilityResponseInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, PriceAndAvailabilityResponseInner.class);
   }
 
- /**
-  * Convert an instance of PriceAndAvailabilityResponseInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of PriceAndAvailabilityResponseInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

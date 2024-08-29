@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * DealsSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class DealsSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
@@ -86,10 +85,10 @@ public class DealsSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * Number of records found.
    * @return recordsFound
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getRecordsFound() {
     return recordsFound;
@@ -105,10 +104,10 @@ public class DealsSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * Number of records in a page.
    * @return pageSize
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getPageSize() {
     return pageSize;
@@ -124,10 +123,10 @@ public class DealsSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * Number of page.
    * @return pageNumber
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getPageNumber() {
     return pageNumber;
@@ -151,10 +150,10 @@ public class DealsSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * Get deals
    * @return deals
-  **/
+   */
   @javax.annotation.Nullable
   public List<DealsSearchResponseDealsInner> getDeals() {
     return deals;
@@ -170,10 +169,10 @@ public class DealsSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * URL for the next page.
    * @return nextPage
-  **/
+   */
   @javax.annotation.Nullable
   public String getNextPage() {
     return nextPage;
@@ -189,10 +188,10 @@ public class DealsSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * URL for the previous page.
    * @return previousPage
-  **/
+   */
   @javax.annotation.Nullable
   public String getPreviousPage() {
     return previousPage;
@@ -269,12 +268,12 @@ public class DealsSearchResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to DealsSearchResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to DealsSearchResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!DealsSearchResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -341,22 +340,22 @@ public class DealsSearchResponse {
     }
   }
 
- /**
-  * Create an instance of DealsSearchResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of DealsSearchResponse
-  * @throws IOException if the JSON string is invalid with respect to DealsSearchResponse
-  */
+  /**
+   * Create an instance of DealsSearchResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of DealsSearchResponse
+   * @throws IOException if the JSON string is invalid with respect to DealsSearchResponse
+   */
   public static DealsSearchResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, DealsSearchResponse.class);
   }
 
- /**
-  * Convert an instance of DealsSearchResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of DealsSearchResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

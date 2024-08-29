@@ -45,7 +45,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -57,7 +56,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateResponseOrdersInner {
   public static final String SERIALIZED_NAME_NUMBER_OF_LINES_WITH_SUCCESS = "numberOfLinesWithSuccess";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_LINES_WITH_SUCCESS)
@@ -131,10 +130,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The number of lines in the order that were successful.
    * @return numberOfLinesWithSuccess
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getNumberOfLinesWithSuccess() {
     return numberOfLinesWithSuccess;
@@ -150,10 +149,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The number of lines in the order that have errors.
    * @return numberOfLinesWithError
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getNumberOfLinesWithError() {
     return numberOfLinesWithError;
@@ -169,10 +168,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The number of lines in the order that have a warning.
    * @return numberOfLinesWithWarning
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getNumberOfLinesWithWarning() {
     return numberOfLinesWithWarning;
@@ -188,10 +187,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The Ingram Micro order number.
    * @return ingramOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderNumber() {
     return ingramOrderNumber;
@@ -207,10 +206,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The date in UTC format that the order was created in Ingram Micro&#39;s system.
    * @return ingramOrderDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramOrderDate() {
     return ingramOrderDate;
@@ -226,10 +225,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * Order-level notes.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -245,10 +244,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The order typer. One of: S&#x3D;Stocked PO D&#x3D;Direct Ship PO
    * @return orderType
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderType() {
     return orderType;
@@ -264,10 +263,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The total price for the order.
    * @return orderTotal
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getOrderTotal() {
     return orderTotal;
@@ -283,10 +282,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The total freight charges for the order.
    * @return freightCharges
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getFreightCharges() {
     return freightCharges;
@@ -302,10 +301,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The total tax for the order.
    * @return totalTax
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getTotalTax() {
     return totalTax;
@@ -321,10 +320,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The country-specific three character ISO 4217 currency code used for the order.
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCurrencyCode() {
     return currencyCode;
@@ -348,10 +347,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * The line-level details for the order.
    * @return lines
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderCreateResponseOrdersInnerLinesInner> getLines() {
     return lines;
@@ -375,10 +374,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * Get miscellaneousCharges
    * @return miscellaneousCharges
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderCreateResponseOrdersInnerMiscellaneousChargesInner> getMiscellaneousCharges() {
     return miscellaneousCharges;
@@ -402,10 +401,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * Link to Order Details for the order(s).
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderCreateResponseOrdersInnerLinksInner> getLinks() {
     return links;
@@ -429,10 +428,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * A list of rejected line items.
    * @return rejectedLineItems
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderCreateResponseOrdersInnerRejectedLineItemsInner> getRejectedLineItems() {
     return rejectedLineItems;
@@ -456,10 +455,10 @@ public class OrderCreateResponseOrdersInner {
     return this;
   }
 
-   /**
+  /**
    * Get additionalAttributes
    * @return additionalAttributes
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderCreateResponseOrdersInnerAdditionalAttributesInner> getAdditionalAttributes() {
     return additionalAttributes;
@@ -566,12 +565,12 @@ public class OrderCreateResponseOrdersInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateResponseOrdersInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -703,22 +702,22 @@ public class OrderCreateResponseOrdersInner {
     }
   }
 
- /**
-  * Create an instance of OrderCreateResponseOrdersInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateResponseOrdersInner
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInner
-  */
+  /**
+   * Create an instance of OrderCreateResponseOrdersInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateResponseOrdersInner
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInner
+   */
   public static OrderCreateResponseOrdersInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateResponseOrdersInner.class);
   }
 
- /**
-  * Convert an instance of OrderCreateResponseOrdersInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateResponseOrdersInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

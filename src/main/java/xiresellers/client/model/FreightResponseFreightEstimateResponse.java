@@ -42,7 +42,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -54,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class FreightResponseFreightEstimateResponse {
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
@@ -96,10 +95,10 @@ public class FreightResponseFreightEstimateResponse {
     return this;
   }
 
-   /**
+  /**
    * The country-specific three-character ISO 4217 currency code used for the order.
    * @return currencyCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCurrencyCode() {
     return currencyCode;
@@ -115,10 +114,10 @@ public class FreightResponseFreightEstimateResponse {
     return this;
   }
 
-   /**
+  /**
    * Total freight amount.
    * @return totalFreightAmount
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getTotalFreightAmount() {
     return totalFreightAmount;
@@ -134,10 +133,10 @@ public class FreightResponseFreightEstimateResponse {
     return this;
   }
 
-   /**
+  /**
    * Total tax amount.
    * @return totalTaxAmount
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getTotalTaxAmount() {
     return totalTaxAmount;
@@ -153,10 +152,10 @@ public class FreightResponseFreightEstimateResponse {
     return this;
   }
 
-   /**
+  /**
    * Total fees.
    * @return totalFees
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getTotalFees() {
     return totalFees;
@@ -172,10 +171,10 @@ public class FreightResponseFreightEstimateResponse {
     return this;
   }
 
-   /**
+  /**
    * Total net amount.
    * @return totalNetAmount
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getTotalNetAmount() {
     return totalNetAmount;
@@ -191,10 +190,10 @@ public class FreightResponseFreightEstimateResponse {
     return this;
   }
 
-   /**
+  /**
    * Gross amount.
    * @return grossAmount
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getGrossAmount() {
     return grossAmount;
@@ -218,10 +217,10 @@ public class FreightResponseFreightEstimateResponse {
     return this;
   }
 
-   /**
+  /**
    * Get distribution
    * @return distribution
-  **/
+   */
   @javax.annotation.Nullable
   public List<FreightResponseFreightEstimateResponseDistributionInner> getDistribution() {
     return distribution;
@@ -245,10 +244,10 @@ public class FreightResponseFreightEstimateResponse {
     return this;
   }
 
-   /**
+  /**
    * Get lines
    * @return lines
-  **/
+   */
   @javax.annotation.Nullable
   public List<FreightResponseFreightEstimateResponseLinesInner> getLines() {
     return lines;
@@ -331,12 +330,12 @@ public class FreightResponseFreightEstimateResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to FreightResponseFreightEstimateResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to FreightResponseFreightEstimateResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!FreightResponseFreightEstimateResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -414,22 +413,22 @@ public class FreightResponseFreightEstimateResponse {
     }
   }
 
- /**
-  * Create an instance of FreightResponseFreightEstimateResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of FreightResponseFreightEstimateResponse
-  * @throws IOException if the JSON string is invalid with respect to FreightResponseFreightEstimateResponse
-  */
+  /**
+   * Create an instance of FreightResponseFreightEstimateResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of FreightResponseFreightEstimateResponse
+   * @throws IOException if the JSON string is invalid with respect to FreightResponseFreightEstimateResponse
+   */
   public static FreightResponseFreightEstimateResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, FreightResponseFreightEstimateResponse.class);
   }
 
- /**
-  * Convert an instance of FreightResponseFreightEstimateResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of FreightResponseFreightEstimateResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

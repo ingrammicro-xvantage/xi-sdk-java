@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
@@ -87,10 +86,10 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The code for the shipping carrier for the line item.
    * @return carrierCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCarrierCode() {
     return carrierCode;
@@ -106,10 +105,10 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The name of the shipping carrier for the line item.
    * @return carrierName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCarrierName() {
     return carrierName;
@@ -125,10 +124,10 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The ID of the warehouse the line item will ship from.
    * @return shipFromWarehouseId
-  **/
+   */
   @javax.annotation.Nullable
   public String getShipFromWarehouseId() {
     return shipFromWarehouseId;
@@ -144,10 +143,10 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * Location from which order is shipped.
    * @return shipFromLocation
-  **/
+   */
   @javax.annotation.Nullable
   public String getShipFromLocation() {
     return shipFromLocation;
@@ -163,10 +162,10 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s shipping account number with carrier. Used to bill the shipping carrier directly from the reseller&#39;s account with the carrier.
    * @return freightAccountNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getFreightAccountNumber() {
     return freightAccountNumber;
@@ -182,10 +181,10 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * Specifies whether a signature is required for delivery. Default is False.
    * @return signatureRequired
-  **/
+   */
   @javax.annotation.Nullable
   public String getSignatureRequired() {
     return signatureRequired;
@@ -201,10 +200,10 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return this;
   }
 
-   /**
+  /**
    * The shipping instructions for the order.
    * @return shippingInstructions
-  **/
+   */
   @javax.annotation.Nullable
   public String getShippingInstructions() {
     return shippingInstructions;
@@ -284,12 +283,12 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -357,22 +356,22 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     }
   }
 
- /**
-  * Create an instance of OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
-  */
+  /**
+   * Create an instance of OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
+   */
   public static OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner.class);
   }
 
- /**
-  * Convert an instance of OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -42,7 +42,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -54,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class QuoteDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_QUOTE_PRODUCT_GUID = "quoteProductGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRODUCT_GUID)
@@ -164,10 +163,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Quote Product GUID  is the primary quote key in Ingram Micro&#39;s CRM - needed to retrieve quote details.
    * @return quoteProductGuid
-  **/
+   */
   @javax.annotation.Nullable
   public String getQuoteProductGuid() {
     return quoteProductGuid;
@@ -183,10 +182,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Line number which the product will appear in the quote.  Line number is manditory when unique configurations are included in a quote and mainting the item line order is required.
    * @return lineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getLineNumber() {
     return lineNumber;
@@ -202,10 +201,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Quantity of product line item quoted.
    * @return quantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantity() {
     return quantity;
@@ -221,10 +220,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Product line item comments.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -240,10 +239,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * EANUPC
    * @return ean
-  **/
+   */
   @javax.annotation.Nullable
   public String getEan() {
     return ean;
@@ -259,10 +258,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Country of Origin.
    * @return coo
-  **/
+   */
   @javax.annotation.Nullable
   public String getCoo() {
     return coo;
@@ -278,10 +277,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Ingram Micro SKU (stock keeping unit). An identification, usually alphanumeric, of a particular product that allows it to be tracked for inventory purposes
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -297,10 +296,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor Part Number
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -316,10 +315,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Product description.  Note - The quote view api returns only the product short description as maintained in Ingram Micro&#39;s crm system.  For long descriptions, please refer to alternative information sources.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   public String getDescription() {
     return description;
@@ -335,10 +334,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Weight is provided based on country standard.  For countries following Imperial standards - weight is presented as pounds with decimal.  In countries following metric standards, weight is provided as kilograms with decimal.
    * @return weight
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getWeight() {
     return weight;
@@ -354,10 +353,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Unit of measure
    * @return weightUom
-  **/
+   */
   @javax.annotation.Nullable
   public String getWeightUom() {
     return weightUom;
@@ -373,10 +372,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Flag to indicate if a product line item is a suggested product.  The suggested product is provided in addition to the requested quoted products and a suggested option.  Suggested products are grouped together for subtotal and total calculations.
    * @return isSuggestionProduct
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsSuggestionProduct() {
     return isSuggestionProduct;
@@ -392,10 +391,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor product category specific to Cisco. HWDW (hardware) or service.
    * @return vpnCategory
-  **/
+   */
   @javax.annotation.Nullable
   public String getVpnCategory() {
     return vpnCategory;
@@ -411,10 +410,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor product configuration ID specific to Cisco.
    * @return quoteProductsSupplierPartAuxiliaryId
-  **/
+   */
   @javax.annotation.Nullable
   public String getQuoteProductsSupplierPartAuxiliaryId() {
     return quoteProductsSupplierPartAuxiliaryId;
@@ -430,10 +429,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor name of the product
    * @return vendorName
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorName() {
     return vendorName;
@@ -449,10 +448,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Terms of the quote
    * @return terms
-  **/
+   */
   @javax.annotation.Nullable
   public String getTerms() {
     return terms;
@@ -468,10 +467,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get planDescription
    * @return planDescription
-  **/
+   */
   @javax.annotation.Nullable
   public String getPlanDescription() {
     return planDescription;
@@ -487,10 +486,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get isSubscription
    * @return isSubscription
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsSubscription() {
     return isSubscription;
@@ -506,10 +505,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get resellerMargin
    * @return resellerMargin
-  **/
+   */
   @javax.annotation.Nullable
   public String getResellerMargin() {
     return resellerMargin;
@@ -525,10 +524,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get requestedStartDate
    * @return requestedStartDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getRequestedStartDate() {
     return requestedStartDate;
@@ -544,10 +543,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get startDate
    * @return startDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getStartDate() {
     return startDate;
@@ -563,10 +562,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get endDate
    * @return endDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getEndDate() {
     return endDate;
@@ -582,10 +581,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get serialNumber
    * @return serialNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSerialNumber() {
     return serialNumber;
@@ -601,10 +600,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get price
    * @return price
-  **/
+   */
   @javax.annotation.Nullable
   public QuoteDetailsResponseProductsInnerPrice getPrice() {
     return price;
@@ -628,10 +627,10 @@ public class QuoteDetailsResponseProductsInner {
     return this;
   }
 
-   /**
+  /**
    * Get billDetails
    * @return billDetails
-  **/
+   */
   @javax.annotation.Nullable
   public List<QuoteDetailsResponseProductsInnerBillDetailsInner> getBillDetails() {
     return billDetails;
@@ -765,12 +764,12 @@ public class QuoteDetailsResponseProductsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to QuoteDetailsResponseProductsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to QuoteDetailsResponseProductsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!QuoteDetailsResponseProductsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -892,22 +891,22 @@ public class QuoteDetailsResponseProductsInner {
     }
   }
 
- /**
-  * Create an instance of QuoteDetailsResponseProductsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of QuoteDetailsResponseProductsInner
-  * @throws IOException if the JSON string is invalid with respect to QuoteDetailsResponseProductsInner
-  */
+  /**
+   * Create an instance of QuoteDetailsResponseProductsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of QuoteDetailsResponseProductsInner
+   * @throws IOException if the JSON string is invalid with respect to QuoteDetailsResponseProductsInner
+   */
   public static QuoteDetailsResponseProductsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, QuoteDetailsResponseProductsInner.class);
   }
 
- /**
-  * Convert an instance of QuoteDetailsResponseProductsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of QuoteDetailsResponseProductsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

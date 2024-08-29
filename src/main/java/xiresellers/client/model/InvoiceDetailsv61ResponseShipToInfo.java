@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseShipToInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class InvoiceDetailsv61ResponseShipToInfo {
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
@@ -103,10 +102,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Ship to Name.
    * @return contact
-  **/
+   */
   @javax.annotation.Nullable
   public String getContact() {
     return contact;
@@ -122,10 +121,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Ship to company.
    * @return companyName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCompanyName() {
     return companyName;
@@ -141,10 +140,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Ship to Address Line1.
    * @return addressLine1
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine1() {
     return addressLine1;
@@ -160,10 +159,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Ship to Address Line2.
    * @return addressLine2
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine2() {
     return addressLine2;
@@ -179,10 +178,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Ship to Address Line3.
    * @return addressLine3
-  **/
+   */
   @javax.annotation.Nullable
   public String getAddressLine3() {
     return addressLine3;
@@ -198,10 +197,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Ship to City.
    * @return city
-  **/
+   */
   @javax.annotation.Nullable
   public String getCity() {
     return city;
@@ -217,10 +216,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Ship to State code
    * @return state
-  **/
+   */
   @javax.annotation.Nullable
   public String getState() {
     return state;
@@ -236,10 +235,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Ship to Postalcode code.
    * @return postalCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getPostalCode() {
     return postalCode;
@@ -255,10 +254,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Ship to Country code.
    * @return countryCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCountryCode() {
     return countryCode;
@@ -274,10 +273,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Phone number of the Ship to company.
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getPhoneNumber() {
     return phoneNumber;
@@ -293,10 +292,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     return this;
   }
 
-   /**
+  /**
    * Email address of the Ship to company.
    * @return email
-  **/
+   */
   @javax.annotation.Nullable
   public String getEmail() {
     return email;
@@ -388,12 +387,12 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to InvoiceDetailsv61ResponseShipToInfo
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to InvoiceDetailsv61ResponseShipToInfo
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!InvoiceDetailsv61ResponseShipToInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -473,22 +472,22 @@ public class InvoiceDetailsv61ResponseShipToInfo {
     }
   }
 
- /**
-  * Create an instance of InvoiceDetailsv61ResponseShipToInfo given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of InvoiceDetailsv61ResponseShipToInfo
-  * @throws IOException if the JSON string is invalid with respect to InvoiceDetailsv61ResponseShipToInfo
-  */
+  /**
+   * Create an instance of InvoiceDetailsv61ResponseShipToInfo given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of InvoiceDetailsv61ResponseShipToInfo
+   * @throws IOException if the JSON string is invalid with respect to InvoiceDetailsv61ResponseShipToInfo
+   */
   public static InvoiceDetailsv61ResponseShipToInfo fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, InvoiceDetailsv61ResponseShipToInfo.class);
   }
 
- /**
-  * Convert an instance of InvoiceDetailsv61ResponseShipToInfo to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of InvoiceDetailsv61ResponseShipToInfo to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

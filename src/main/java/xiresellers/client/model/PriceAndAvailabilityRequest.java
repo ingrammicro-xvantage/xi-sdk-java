@@ -42,7 +42,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -54,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class PriceAndAvailabilityRequest {
   public static final String SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS = "showAvailableDiscounts";
   @SerializedName(SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS)
@@ -88,10 +87,10 @@ public class PriceAndAvailabilityRequest {
     return this;
   }
 
-   /**
+  /**
    * Boolean value that will display Discount details in the response when true.
    * @return showAvailableDiscounts
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getShowAvailableDiscounts() {
     return showAvailableDiscounts;
@@ -107,10 +106,10 @@ public class PriceAndAvailabilityRequest {
     return this;
   }
 
-   /**
+  /**
    * Boolean value that will display reserve inventory details in the response when true.
    * @return showReserveInventoryDetails
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getShowReserveInventoryDetails() {
     return showReserveInventoryDetails;
@@ -126,10 +125,10 @@ public class PriceAndAvailabilityRequest {
     return this;
   }
 
-   /**
+  /**
    * Pre-approved special pricing/bid number provided to the reseller by the vendor for special pricing and discounts. Used to track the bid number where different line items have different bid numbers.
    * @return specialBidNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSpecialBidNumber() {
     return specialBidNumber;
@@ -153,10 +152,10 @@ public class PriceAndAvailabilityRequest {
     return this;
   }
 
-   /**
+  /**
    * Get availabilityByWarehouse
    * @return availabilityByWarehouse
-  **/
+   */
   @javax.annotation.Nullable
   public List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> getAvailabilityByWarehouse() {
     return availabilityByWarehouse;
@@ -180,10 +179,10 @@ public class PriceAndAvailabilityRequest {
     return this;
   }
 
-   /**
+  /**
    * Get products
    * @return products
-  **/
+   */
   @javax.annotation.Nullable
   public List<PriceAndAvailabilityRequestProductsInner> getProducts() {
     return products;
@@ -207,10 +206,10 @@ public class PriceAndAvailabilityRequest {
     return this;
   }
 
-   /**
+  /**
    * Get additionalAttributes
    * @return additionalAttributes
-  **/
+   */
   @javax.annotation.Nullable
   public List<PriceAndAvailabilityRequestAdditionalAttributesInner> getAdditionalAttributes() {
     return additionalAttributes;
@@ -287,12 +286,12 @@ public class PriceAndAvailabilityRequest {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!PriceAndAvailabilityRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -384,22 +383,22 @@ public class PriceAndAvailabilityRequest {
     }
   }
 
- /**
-  * Create an instance of PriceAndAvailabilityRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of PriceAndAvailabilityRequest
-  * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityRequest
-  */
+  /**
+   * Create an instance of PriceAndAvailabilityRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of PriceAndAvailabilityRequest
+   * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityRequest
+   */
   public static PriceAndAvailabilityRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, PriceAndAvailabilityRequest.class);
   }
 
- /**
-  * Convert an instance of PriceAndAvailabilityRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of PriceAndAvailabilityRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

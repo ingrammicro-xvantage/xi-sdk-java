@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class FreightResponseFreightEstimateResponseLinesInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -84,10 +83,10 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The unique IngramMicro part number.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -103,10 +102,10 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor part number for the line item.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -122,10 +121,10 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The ID of the warehouse the line item will ship from.
    * @return warehouseId
-  **/
+   */
   @javax.annotation.Nullable
   public String getWarehouseId() {
     return warehouseId;
@@ -141,10 +140,10 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The requested quantity of the line item.
    * @return quantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantity() {
     return quantity;
@@ -160,10 +159,10 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The unit price for the line item.
    * @return unitPrice
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getUnitPrice() {
     return unitPrice;
@@ -179,10 +178,10 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The net amount (unit price X quantity) for the line item.
    * @return netAmount
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getNetAmount() {
     return netAmount;
@@ -259,12 +258,12 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to FreightResponseFreightEstimateResponseLinesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to FreightResponseFreightEstimateResponseLinesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!FreightResponseFreightEstimateResponseLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -320,22 +319,22 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     }
   }
 
- /**
-  * Create an instance of FreightResponseFreightEstimateResponseLinesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of FreightResponseFreightEstimateResponseLinesInner
-  * @throws IOException if the JSON string is invalid with respect to FreightResponseFreightEstimateResponseLinesInner
-  */
+  /**
+   * Create an instance of FreightResponseFreightEstimateResponseLinesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of FreightResponseFreightEstimateResponseLinesInner
+   * @throws IOException if the JSON string is invalid with respect to FreightResponseFreightEstimateResponseLinesInner
+   */
   public static FreightResponseFreightEstimateResponseLinesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, FreightResponseFreightEstimateResponseLinesInner.class);
   }
 
- /**
-  * Convert an instance of FreightResponseFreightEstimateResponseLinesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of FreightResponseFreightEstimateResponseLinesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

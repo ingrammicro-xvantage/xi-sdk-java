@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderModifyResponseLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
@@ -107,10 +106,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The sub order number. The two-digit prefix is the warehouse code of the warehouse nearest the reseller. The middle number is the order number. The two-digit suffix is the sub order number.
    * @return subOrderNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getSubOrderNumber() {
     return subOrderNumber;
@@ -126,10 +125,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The IngramMicro line number.
    * @return ingramLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramLineNumber() {
     return ingramLineNumber;
@@ -145,10 +144,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The reseller&#39;s line number for reference in their system.
    * @return customerLineNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerLineNumber() {
     return customerLineNumber;
@@ -164,10 +163,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The unique IngramMicro part number for the line item.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -183,10 +182,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The vendor&#39;s part number for the line item.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -202,10 +201,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity ordered of the line item.
    * @return quantityOrdered
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityOrdered() {
     return quantityOrdered;
@@ -221,10 +220,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity confirmed of the line item.
    * @return quantityConfirmed
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityConfirmed() {
     return quantityConfirmed;
@@ -240,10 +239,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * The quantity backordered of the line item.
    * @return quantityBackOrdered
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantityBackOrdered() {
     return quantityBackOrdered;
@@ -259,10 +258,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Get shipmentDetails
    * @return shipmentDetails
-  **/
+   */
   @javax.annotation.Nullable
   public OrderModifyResponseLinesInnerShipmentDetails getShipmentDetails() {
     return shipmentDetails;
@@ -286,10 +285,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * SAP requested and country-specific line level details.
    * @return additionalAttributes
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderModifyResponseLinesInnerAdditionalAttributesInner> getAdditionalAttributes() {
     return additionalAttributes;
@@ -305,10 +304,10 @@ public class OrderModifyResponseLinesInner {
     return this;
   }
 
-   /**
+  /**
    * Line-level notes for the order.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -400,12 +399,12 @@ public class OrderModifyResponseLinesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderModifyResponseLinesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderModifyResponseLinesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderModifyResponseLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -488,22 +487,22 @@ public class OrderModifyResponseLinesInner {
     }
   }
 
- /**
-  * Create an instance of OrderModifyResponseLinesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderModifyResponseLinesInner
-  * @throws IOException if the JSON string is invalid with respect to OrderModifyResponseLinesInner
-  */
+  /**
+   * Create an instance of OrderModifyResponseLinesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderModifyResponseLinesInner
+   * @throws IOException if the JSON string is invalid with respect to OrderModifyResponseLinesInner
+   */
   public static OrderModifyResponseLinesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderModifyResponseLinesInner.class);
   }
 
- /**
-  * Convert an instance of OrderModifyResponseLinesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderModifyResponseLinesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

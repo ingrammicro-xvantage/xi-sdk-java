@@ -26,7 +26,6 @@ import java.util.List;
 import xiresellers.client.model.ProductDetailResponseAdditionalInformation;
 import xiresellers.client.model.ProductDetailResponseCiscoFields;
 import xiresellers.client.model.ProductDetailResponseIndicators;
-import xiresellers.client.model.ProductDetailResponseTechnicalSpecificationsInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -43,7 +42,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -55,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -76,10 +74,6 @@ public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
   private String description;
-
-  public static final String SERIALIZED_NAME_PRODUCT_DETAIL_DESCRIPTION = "productDetailDescription";
-  @SerializedName(SERIALIZED_NAME_PRODUCT_DETAIL_DESCRIPTION)
-  private String productDetailDescription;
 
   public static final String SERIALIZED_NAME_UPC = "upc";
   @SerializedName(SERIALIZED_NAME_UPC)
@@ -117,10 +111,6 @@ public class ProductDetailResponse {
   @SerializedName(SERIALIZED_NAME_CISCO_FIELDS)
   private ProductDetailResponseCiscoFields ciscoFields;
 
-  public static final String SERIALIZED_NAME_TECHNICAL_SPECIFICATIONS = "technicalSpecifications";
-  @SerializedName(SERIALIZED_NAME_TECHNICAL_SPECIFICATIONS)
-  private List<ProductDetailResponseTechnicalSpecificationsInner> technicalSpecifications = new ArrayList<>();
-
   public static final String SERIALIZED_NAME_WARRANTY_INFORMATION = "warrantyInformation";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFORMATION)
   private List<Object> warrantyInformation = new ArrayList<>();
@@ -137,10 +127,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Ingram Micro unique part number for the product.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -156,10 +146,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Vendor’s part number for the product.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -175,10 +165,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Reseller / end-user’s part number for the product.
    * @return customerPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCustomerPartNumber() {
     return customerPartNumber;
@@ -194,10 +184,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Boolean that indicates whether a product is authorized.
    * @return productAuthorized
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductAuthorized() {
     return productAuthorized;
@@ -213,10 +203,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * The description given for the product.
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   public String getDescription() {
     return description;
@@ -227,34 +217,15 @@ public class ProductDetailResponse {
   }
 
 
-  public ProductDetailResponse productDetailDescription(String productDetailDescription) {
-    this.productDetailDescription = productDetailDescription;
-    return this;
-  }
-
-   /**
-   * The detailed description given for the product.
-   * @return productDetailDescription
-  **/
-  @javax.annotation.Nullable
-  public String getProductDetailDescription() {
-    return productDetailDescription;
-  }
-
-  public void setProductDetailDescription(String productDetailDescription) {
-    this.productDetailDescription = productDetailDescription;
-  }
-
-
   public ProductDetailResponse upc(String upc) {
     this.upc = upc;
     return this;
   }
 
-   /**
+  /**
    * The UPC code for the product. Consists of 12 numeric digits that are uniquely assigned to each trade item.
    * @return upc
-  **/
+   */
   @javax.annotation.Nullable
   public String getUpc() {
     return upc;
@@ -270,10 +241,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * The category of the product.
    * @return productCategory
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductCategory() {
     return productCategory;
@@ -289,10 +260,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * The sub-category of the product.
    * @return productSubCategory
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductSubCategory() {
     return productSubCategory;
@@ -308,10 +279,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Vendor name for the order.
    * @return vendorName
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorName() {
     return vendorName;
@@ -327,10 +298,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Vendor number that identifies the product.
    * @return vendorNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorNumber() {
     return vendorNumber;
@@ -346,10 +317,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Status code of the product.
    * @return productStatusCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductStatusCode() {
     return productStatusCode;
@@ -365,10 +336,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Indicates whether the product is directly shipped from the vendor’s warehouse or if the product ships from Ingram Micro’s warehouse. Class Codes are Ingram classifications on how skus are stocked A &#x3D; Product that is stocked usually in all IM warehouses and replenished on a regular basis. B &#x3D; Product that is stocked in limited IM warehouses and replenished on a regular basis C &#x3D; Product that is stocked in fewer IM warehouses and replenished on a regular basis. D &#x3D; Product that Ingram Micro has elected to discontinue. E &#x3D; Product that will be phased out later, according to the vendor. You may not want to replenish this product, but instead sell down what is in stock. F &#x3D; Product that we carry for a specific customer or supplier under a contractual agreement. N &#x3D; New Sku. Classification before first receipt O &#x3D; Discontinued product to be liquidated S&#x3D; Order for Specialized Demand (Order to backorder) X&#x3D; direct ship from Vendor V &#x3D; product that vendor has elected to discontinue.
    * @return productClass
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductClass() {
     return productClass;
@@ -384,10 +355,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Get indicators
    * @return indicators
-  **/
+   */
   @javax.annotation.Nullable
   public ProductDetailResponseIndicators getIndicators() {
     return indicators;
@@ -403,10 +374,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Get ciscoFields
    * @return ciscoFields
-  **/
+   */
   @javax.annotation.Nullable
   public ProductDetailResponseCiscoFields getCiscoFields() {
     return ciscoFields;
@@ -414,33 +385,6 @@ public class ProductDetailResponse {
 
   public void setCiscoFields(ProductDetailResponseCiscoFields ciscoFields) {
     this.ciscoFields = ciscoFields;
-  }
-
-
-  public ProductDetailResponse technicalSpecifications(List<ProductDetailResponseTechnicalSpecificationsInner> technicalSpecifications) {
-    this.technicalSpecifications = technicalSpecifications;
-    return this;
-  }
-
-  public ProductDetailResponse addTechnicalSpecificationsItem(ProductDetailResponseTechnicalSpecificationsInner technicalSpecificationsItem) {
-    if (this.technicalSpecifications == null) {
-      this.technicalSpecifications = new ArrayList<>();
-    }
-    this.technicalSpecifications.add(technicalSpecificationsItem);
-    return this;
-  }
-
-   /**
-   * Technical specifications of the product.
-   * @return technicalSpecifications
-  **/
-  @javax.annotation.Nullable
-  public List<ProductDetailResponseTechnicalSpecificationsInner> getTechnicalSpecifications() {
-    return technicalSpecifications;
-  }
-
-  public void setTechnicalSpecifications(List<ProductDetailResponseTechnicalSpecificationsInner> technicalSpecifications) {
-    this.technicalSpecifications = technicalSpecifications;
   }
 
 
@@ -457,10 +401,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Warranty information related to the product.
    * @return warrantyInformation
-  **/
+   */
   @javax.annotation.Nullable
   public List<Object> getWarrantyInformation() {
     return warrantyInformation;
@@ -476,10 +420,10 @@ public class ProductDetailResponse {
     return this;
   }
 
-   /**
+  /**
    * Get additionalInformation
    * @return additionalInformation
-  **/
+   */
   @javax.annotation.Nullable
   public ProductDetailResponseAdditionalInformation getAdditionalInformation() {
     return additionalInformation;
@@ -505,7 +449,6 @@ public class ProductDetailResponse {
         Objects.equals(this.customerPartNumber, productDetailResponse.customerPartNumber) &&
         Objects.equals(this.productAuthorized, productDetailResponse.productAuthorized) &&
         Objects.equals(this.description, productDetailResponse.description) &&
-        Objects.equals(this.productDetailDescription, productDetailResponse.productDetailDescription) &&
         Objects.equals(this.upc, productDetailResponse.upc) &&
         Objects.equals(this.productCategory, productDetailResponse.productCategory) &&
         Objects.equals(this.productSubCategory, productDetailResponse.productSubCategory) &&
@@ -515,14 +458,13 @@ public class ProductDetailResponse {
         Objects.equals(this.productClass, productDetailResponse.productClass) &&
         Objects.equals(this.indicators, productDetailResponse.indicators) &&
         Objects.equals(this.ciscoFields, productDetailResponse.ciscoFields) &&
-        Objects.equals(this.technicalSpecifications, productDetailResponse.technicalSpecifications) &&
         Objects.equals(this.warrantyInformation, productDetailResponse.warrantyInformation) &&
         Objects.equals(this.additionalInformation, productDetailResponse.additionalInformation);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(ingramPartNumber, vendorPartNumber, customerPartNumber, productAuthorized, description, productDetailDescription, upc, productCategory, productSubCategory, vendorName, vendorNumber, productStatusCode, productClass, indicators, ciscoFields, technicalSpecifications, warrantyInformation, additionalInformation);
+    return Objects.hash(ingramPartNumber, vendorPartNumber, customerPartNumber, productAuthorized, description, upc, productCategory, productSubCategory, vendorName, vendorNumber, productStatusCode, productClass, indicators, ciscoFields, warrantyInformation, additionalInformation);
   }
 
   @Override
@@ -534,7 +476,6 @@ public class ProductDetailResponse {
     sb.append("    customerPartNumber: ").append(toIndentedString(customerPartNumber)).append("\n");
     sb.append("    productAuthorized: ").append(toIndentedString(productAuthorized)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    productDetailDescription: ").append(toIndentedString(productDetailDescription)).append("\n");
     sb.append("    upc: ").append(toIndentedString(upc)).append("\n");
     sb.append("    productCategory: ").append(toIndentedString(productCategory)).append("\n");
     sb.append("    productSubCategory: ").append(toIndentedString(productSubCategory)).append("\n");
@@ -544,7 +485,6 @@ public class ProductDetailResponse {
     sb.append("    productClass: ").append(toIndentedString(productClass)).append("\n");
     sb.append("    indicators: ").append(toIndentedString(indicators)).append("\n");
     sb.append("    ciscoFields: ").append(toIndentedString(ciscoFields)).append("\n");
-    sb.append("    technicalSpecifications: ").append(toIndentedString(technicalSpecifications)).append("\n");
     sb.append("    warrantyInformation: ").append(toIndentedString(warrantyInformation)).append("\n");
     sb.append("    additionalInformation: ").append(toIndentedString(additionalInformation)).append("\n");
     sb.append("}");
@@ -574,7 +514,6 @@ public class ProductDetailResponse {
     openapiFields.add("customerPartNumber");
     openapiFields.add("productAuthorized");
     openapiFields.add("description");
-    openapiFields.add("productDetailDescription");
     openapiFields.add("upc");
     openapiFields.add("productCategory");
     openapiFields.add("productSubCategory");
@@ -584,7 +523,6 @@ public class ProductDetailResponse {
     openapiFields.add("productClass");
     openapiFields.add("indicators");
     openapiFields.add("ciscoFields");
-    openapiFields.add("technicalSpecifications");
     openapiFields.add("warrantyInformation");
     openapiFields.add("additionalInformation");
 
@@ -592,12 +530,12 @@ public class ProductDetailResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ProductDetailResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -628,9 +566,6 @@ public class ProductDetailResponse {
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
       }
-      if ((jsonObj.get("productDetailDescription") != null && !jsonObj.get("productDetailDescription").isJsonNull()) && !jsonObj.get("productDetailDescription").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `productDetailDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productDetailDescription").toString()));
-      }
       if ((jsonObj.get("upc") != null && !jsonObj.get("upc").isJsonNull()) && !jsonObj.get("upc").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `upc` to be a primitive type in the JSON string but got `%s`", jsonObj.get("upc").toString()));
       }
@@ -659,20 +594,6 @@ public class ProductDetailResponse {
       // validate the optional field `ciscoFields`
       if (jsonObj.get("ciscoFields") != null && !jsonObj.get("ciscoFields").isJsonNull()) {
         ProductDetailResponseCiscoFields.validateJsonElement(jsonObj.get("ciscoFields"));
-      }
-      if (jsonObj.get("technicalSpecifications") != null && !jsonObj.get("technicalSpecifications").isJsonNull()) {
-        JsonArray jsonArraytechnicalSpecifications = jsonObj.getAsJsonArray("technicalSpecifications");
-        if (jsonArraytechnicalSpecifications != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("technicalSpecifications").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `technicalSpecifications` to be an array in the JSON string but got `%s`", jsonObj.get("technicalSpecifications").toString()));
-          }
-
-          // validate the optional field `technicalSpecifications` (array)
-          for (int i = 0; i < jsonArraytechnicalSpecifications.size(); i++) {
-            ProductDetailResponseTechnicalSpecificationsInner.validateJsonElement(jsonArraytechnicalSpecifications.get(i));
-          };
-        }
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("warrantyInformation") != null && !jsonObj.get("warrantyInformation").isJsonNull() && !jsonObj.get("warrantyInformation").isJsonArray()) {
@@ -713,22 +634,22 @@ public class ProductDetailResponse {
     }
   }
 
- /**
-  * Create an instance of ProductDetailResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ProductDetailResponse
-  * @throws IOException if the JSON string is invalid with respect to ProductDetailResponse
-  */
+  /**
+   * Create an instance of ProductDetailResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ProductDetailResponse
+   * @throws IOException if the JSON string is invalid with respect to ProductDetailResponse
+   */
   public static ProductDetailResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ProductDetailResponse.class);
   }
 
- /**
-  * Convert an instance of ProductDetailResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ProductDetailResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

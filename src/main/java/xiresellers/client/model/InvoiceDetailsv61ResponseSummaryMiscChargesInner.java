@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryMiscChargesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
   public static final String SERIALIZED_NAME_CHARGE_DESCRIPTION = "chargeDescription";
   @SerializedName(SERIALIZED_NAME_CHARGE_DESCRIPTION)
@@ -79,10 +78,10 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     return this;
   }
 
-   /**
+  /**
    * Description of the charge.
    * @return chargeDescription
-  **/
+   */
   @javax.annotation.Nullable
   public String getChargeDescription() {
     return chargeDescription;
@@ -98,10 +97,10 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     return this;
   }
 
-   /**
+  /**
    * The number of lines for which miscellaneous charges are applicable.
    * @return miscChargeLineCount
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getMiscChargeLineCount() {
     return miscChargeLineCount;
@@ -117,10 +116,10 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     return this;
   }
 
-   /**
+  /**
    * Miscellaneous charge amount.
    * @return miscChargeLineTotal
-  **/
+   */
   @javax.annotation.Nullable
   public Double getMiscChargeLineTotal() {
     return miscChargeLineTotal;
@@ -136,10 +135,10 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     return this;
   }
 
-   /**
+  /**
    * Reference of the chargeLine.
    * @return chargeLineReference
-  **/
+   */
   @javax.annotation.Nullable
   public String getChargeLineReference() {
     return chargeLineReference;
@@ -155,10 +154,10 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     return this;
   }
 
-   /**
+  /**
    * Is charge non miscellaneous.
    * @return isNonMisc
-  **/
+   */
   @javax.annotation.Nullable
   public String getIsNonMisc() {
     return isNonMisc;
@@ -232,12 +231,12 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to InvoiceDetailsv61ResponseSummaryMiscChargesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to InvoiceDetailsv61ResponseSummaryMiscChargesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!InvoiceDetailsv61ResponseSummaryMiscChargesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -293,22 +292,22 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     }
   }
 
- /**
-  * Create an instance of InvoiceDetailsv61ResponseSummaryMiscChargesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of InvoiceDetailsv61ResponseSummaryMiscChargesInner
-  * @throws IOException if the JSON string is invalid with respect to InvoiceDetailsv61ResponseSummaryMiscChargesInner
-  */
+  /**
+   * Create an instance of InvoiceDetailsv61ResponseSummaryMiscChargesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of InvoiceDetailsv61ResponseSummaryMiscChargesInner
+   * @throws IOException if the JSON string is invalid with respect to InvoiceDetailsv61ResponseSummaryMiscChargesInner
+   */
   public static InvoiceDetailsv61ResponseSummaryMiscChargesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, InvoiceDetailsv61ResponseSummaryMiscChargesInner.class);
   }
 
- /**
-  * Convert an instance of InvoiceDetailsv61ResponseSummaryMiscChargesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of InvoiceDetailsv61ResponseSummaryMiscChargesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

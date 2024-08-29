@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class InvoiceSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
@@ -82,10 +81,10 @@ public class InvoiceSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * Total count of quotes retrieved in the request response.
    * @return recordsFound
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getRecordsFound() {
     return recordsFound;
@@ -101,10 +100,10 @@ public class InvoiceSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * Number of records (quotes) displayed per page in the quote list.
    * @return pageSize
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getPageSize() {
     return pageSize;
@@ -120,10 +119,10 @@ public class InvoiceSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * Page index or page number for the list of quotes being returned.
    * @return pageNumber
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getPageNumber() {
     return pageNumber;
@@ -147,10 +146,10 @@ public class InvoiceSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * The Invoices details for the requested criteria.
    * @return invoices
-  **/
+   */
   @javax.annotation.Nullable
   public List<InvoiceSearchResponseInvoicesInner> getInvoices() {
     return invoices;
@@ -166,10 +165,10 @@ public class InvoiceSearchResponse {
     return this;
   }
 
-   /**
+  /**
    * Next page of the pagination.
    * @return nextPage
-  **/
+   */
   @javax.annotation.Nullable
   public String getNextPage() {
     return nextPage;
@@ -243,12 +242,12 @@ public class InvoiceSearchResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to InvoiceSearchResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to InvoiceSearchResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!InvoiceSearchResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -312,22 +311,22 @@ public class InvoiceSearchResponse {
     }
   }
 
- /**
-  * Create an instance of InvoiceSearchResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of InvoiceSearchResponse
-  * @throws IOException if the JSON string is invalid with respect to InvoiceSearchResponse
-  */
+  /**
+   * Create an instance of InvoiceSearchResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of InvoiceSearchResponse
+   * @throws IOException if the JSON string is invalid with respect to InvoiceSearchResponse
+   */
   public static InvoiceSearchResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, InvoiceSearchResponse.class);
   }
 
- /**
-  * Convert an instance of InvoiceSearchResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of InvoiceSearchResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

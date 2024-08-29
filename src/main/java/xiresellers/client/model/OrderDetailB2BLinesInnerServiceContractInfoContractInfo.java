@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerServiceContractInfoContractInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
   public static final String SERIALIZED_NAME_CONTRACT_DESCRIPTION = "contractDescription";
   @SerializedName(SERIALIZED_NAME_CONTRACT_DESCRIPTION)
@@ -83,10 +82,10 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return this;
   }
 
-   /**
+  /**
    * The description of the contract.
    * @return contractDescription
-  **/
+   */
   @javax.annotation.Nullable
   public String getContractDescription() {
     return contractDescription;
@@ -102,10 +101,10 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return this;
   }
 
-   /**
+  /**
    * Contract number.
    * @return contractNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getContractNumber() {
     return contractNumber;
@@ -121,10 +120,10 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return this;
   }
 
-   /**
+  /**
    * The status of the contract.
    * @return contractStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getContractStatus() {
     return contractStatus;
@@ -140,10 +139,10 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return this;
   }
 
-   /**
+  /**
    * Start date of the contract.
    * @return contractStartDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getContractStartDate() {
     return contractStartDate;
@@ -159,10 +158,10 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return this;
   }
 
-   /**
+  /**
    * End date of the contract.
    * @return contractEndDate
-  **/
+   */
   @javax.annotation.Nullable
   public String getContractEndDate() {
     return contractEndDate;
@@ -178,10 +177,10 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return this;
   }
 
-   /**
+  /**
    * The duration of the contract.
    * @return contractDuration
-  **/
+   */
   @javax.annotation.Nullable
   public String getContractDuration() {
     return contractDuration;
@@ -258,12 +257,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerServiceContractInfoContractInfo
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerServiceContractInfoContractInfo
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2BLinesInnerServiceContractInfoContractInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -328,22 +327,22 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     }
   }
 
- /**
-  * Create an instance of OrderDetailB2BLinesInnerServiceContractInfoContractInfo given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDetailB2BLinesInnerServiceContractInfoContractInfo
-  * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerServiceContractInfoContractInfo
-  */
+  /**
+   * Create an instance of OrderDetailB2BLinesInnerServiceContractInfoContractInfo given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDetailB2BLinesInnerServiceContractInfoContractInfo
+   * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerServiceContractInfoContractInfo
+   */
   public static OrderDetailB2BLinesInnerServiceContractInfoContractInfo fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDetailB2BLinesInnerServiceContractInfoContractInfo.class);
   }
 
- /**
-  * Convert an instance of OrderDetailB2BLinesInnerServiceContractInfoContractInfo to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDetailB2BLinesInnerServiceContractInfoContractInfo to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

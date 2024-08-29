@@ -42,7 +42,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -54,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsCreateResponseReturnsClaimsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ReturnsCreateResponseReturnsClaimsInner {
   public static final String SERIALIZED_NAME_RMA_CLAIM_ID = "rmaClaimId";
   @SerializedName(SERIALIZED_NAME_RMA_CLAIM_ID)
@@ -120,10 +119,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The rmaClaimId claim id.
    * @return rmaClaimId
-  **/
+   */
   @javax.annotation.Nullable
   public String getRmaClaimId() {
     return rmaClaimId;
@@ -139,10 +138,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * A unique return request number.
    * @return caseRequestNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCaseRequestNumber() {
     return caseRequestNumber;
@@ -158,10 +157,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The reference number for the return.
    * @return referenceNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getReferenceNumber() {
     return referenceNumber;
@@ -177,10 +176,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The date on which the return request was created. 
    * @return createdOn
-  **/
+   */
   @javax.annotation.Nullable
   public LocalDate getCreatedOn() {
     return createdOn;
@@ -196,10 +195,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * Type of request.
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   public String getType() {
     return type;
@@ -215,10 +214,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The reason for the return.
    * @return returnReason
-  **/
+   */
   @javax.annotation.Nullable
   public String getReturnReason() {
     return returnReason;
@@ -234,10 +233,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * Unique line number from Ingram.
    * @return ingramPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getIngramPartNumber() {
     return ingramPartNumber;
@@ -253,10 +252,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * Vendor Part Number.
    * @return vendorPartNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getVendorPartNumber() {
     return vendorPartNumber;
@@ -272,10 +271,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * Return quantity of the product.
    * @return quantity
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getQuantity() {
     return quantity;
@@ -291,10 +290,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * Return notes.
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -310,10 +309,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The estimated total value of the return.
    * @return estimatedTotalValue
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getEstimatedTotalValue() {
     return estimatedTotalValue;
@@ -329,10 +328,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The amount of credit.
    * @return credit
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getCredit() {
     return credit;
@@ -348,10 +347,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * The status of the request.
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   public String getStatus() {
     return status;
@@ -375,10 +374,10 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return this;
   }
 
-   /**
+  /**
    * Get links
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> getLinks() {
     return links;
@@ -479,12 +478,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ReturnsCreateResponseReturnsClaimsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ReturnsCreateResponseReturnsClaimsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ReturnsCreateResponseReturnsClaimsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -572,22 +571,22 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     }
   }
 
- /**
-  * Create an instance of ReturnsCreateResponseReturnsClaimsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ReturnsCreateResponseReturnsClaimsInner
-  * @throws IOException if the JSON string is invalid with respect to ReturnsCreateResponseReturnsClaimsInner
-  */
+  /**
+   * Create an instance of ReturnsCreateResponseReturnsClaimsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ReturnsCreateResponseReturnsClaimsInner
+   * @throws IOException if the JSON string is invalid with respect to ReturnsCreateResponseReturnsClaimsInner
+   */
   public static ReturnsCreateResponseReturnsClaimsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ReturnsCreateResponseReturnsClaimsInner.class);
   }
 
- /**
-  * Convert an instance of ReturnsCreateResponseReturnsClaimsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ReturnsCreateResponseReturnsClaimsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

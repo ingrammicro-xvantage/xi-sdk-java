@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyRequestAdditionalAttributesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderModifyRequestAdditionalAttributesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_NAME = "attributeName";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_NAME)
@@ -67,10 +66,10 @@ public class OrderModifyRequestAdditionalAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Example values are &#39;entryMethod&#39;, &#39;enableCommentsAsLines&#39;, &#39;regionCode&#39;
    * @return attributeName
-  **/
+   */
   @javax.annotation.Nullable
   public String getAttributeName() {
     return attributeName;
@@ -86,10 +85,10 @@ public class OrderModifyRequestAdditionalAttributesInner {
     return this;
   }
 
-   /**
+  /**
    * Attribute Value
    * @return attributeValue
-  **/
+   */
   @javax.annotation.Nullable
   public String getAttributeValue() {
     return attributeValue;
@@ -154,12 +153,12 @@ public class OrderModifyRequestAdditionalAttributesInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderModifyRequestAdditionalAttributesInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderModifyRequestAdditionalAttributesInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderModifyRequestAdditionalAttributesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -212,22 +211,22 @@ public class OrderModifyRequestAdditionalAttributesInner {
     }
   }
 
- /**
-  * Create an instance of OrderModifyRequestAdditionalAttributesInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderModifyRequestAdditionalAttributesInner
-  * @throws IOException if the JSON string is invalid with respect to OrderModifyRequestAdditionalAttributesInner
-  */
+  /**
+   * Create an instance of OrderModifyRequestAdditionalAttributesInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderModifyRequestAdditionalAttributesInner
+   * @throws IOException if the JSON string is invalid with respect to OrderModifyRequestAdditionalAttributesInner
+   */
   public static OrderModifyRequestAdditionalAttributesInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderModifyRequestAdditionalAttributesInner.class);
   }
 
- /**
-  * Convert an instance of OrderModifyRequestAdditionalAttributesInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderModifyRequestAdditionalAttributesInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

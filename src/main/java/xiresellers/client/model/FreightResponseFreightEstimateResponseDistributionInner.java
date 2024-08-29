@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponseDistributionInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class FreightResponseFreightEstimateResponseDistributionInner {
   public static final String SERIALIZED_NAME_SHIP_FROM_BRANCH_NUMBER = "shipFromBranchNumber";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_BRANCH_NUMBER)
@@ -91,10 +90,10 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return this;
   }
 
-   /**
+  /**
    * The ID of the warehouse the line item will ship from.
    * @return shipFromBranchNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getShipFromBranchNumber() {
     return shipFromBranchNumber;
@@ -110,10 +109,10 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return this;
   }
 
-   /**
+  /**
    * The code for the shipping carrier for the line item.
    * @return carrierCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getCarrierCode() {
     return carrierCode;
@@ -129,10 +128,10 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return this;
   }
 
-   /**
+  /**
    * The name of the shipping carrier.
    * @return shipVia
-  **/
+   */
   @javax.annotation.Nullable
   public String getShipVia() {
     return shipVia;
@@ -148,10 +147,10 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return this;
   }
 
-   /**
+  /**
    * Estimated freight charge.
    * @return freightRate
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getFreightRate() {
     return freightRate;
@@ -167,10 +166,10 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return this;
   }
 
-   /**
+  /**
    * Total weight.
    * @return totalWeight
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getTotalWeight() {
     return totalWeight;
@@ -186,10 +185,10 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return this;
   }
 
-   /**
+  /**
    * Number of transit days.
    * @return transitDays
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getTransitDays() {
     return transitDays;
@@ -213,10 +212,10 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return this;
   }
 
-   /**
+  /**
    * Get carrierList
    * @return carrierList
-  **/
+   */
   @javax.annotation.Nullable
   public List<FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner> getCarrierList() {
     return carrierList;
@@ -296,12 +295,12 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to FreightResponseFreightEstimateResponseDistributionInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to FreightResponseFreightEstimateResponseDistributionInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!FreightResponseFreightEstimateResponseDistributionInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -371,22 +370,22 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     }
   }
 
- /**
-  * Create an instance of FreightResponseFreightEstimateResponseDistributionInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of FreightResponseFreightEstimateResponseDistributionInner
-  * @throws IOException if the JSON string is invalid with respect to FreightResponseFreightEstimateResponseDistributionInner
-  */
+  /**
+   * Create an instance of FreightResponseFreightEstimateResponseDistributionInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of FreightResponseFreightEstimateResponseDistributionInner
+   * @throws IOException if the JSON string is invalid with respect to FreightResponseFreightEstimateResponseDistributionInner
+   */
   public static FreightResponseFreightEstimateResponseDistributionInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, FreightResponseFreightEstimateResponseDistributionInner.class);
   }
 
- /**
-  * Convert an instance of FreightResponseFreightEstimateResponseDistributionInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of FreightResponseFreightEstimateResponseDistributionInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

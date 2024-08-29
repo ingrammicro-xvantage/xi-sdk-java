@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * GetAccesstoken500ResponseFaultDetail
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class GetAccesstoken500ResponseFaultDetail {
   public static final String SERIALIZED_NAME_ERRORCODE = "errorcode";
   @SerializedName(SERIALIZED_NAME_ERRORCODE)
@@ -63,10 +62,10 @@ public class GetAccesstoken500ResponseFaultDetail {
     return this;
   }
 
-   /**
+  /**
    * Get errorcode
    * @return errorcode
-  **/
+   */
   @javax.annotation.Nullable
   public String getErrorcode() {
     return errorcode;
@@ -128,12 +127,12 @@ public class GetAccesstoken500ResponseFaultDetail {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to GetAccesstoken500ResponseFaultDetail
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to GetAccesstoken500ResponseFaultDetail
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!GetAccesstoken500ResponseFaultDetail.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -183,22 +182,22 @@ public class GetAccesstoken500ResponseFaultDetail {
     }
   }
 
- /**
-  * Create an instance of GetAccesstoken500ResponseFaultDetail given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of GetAccesstoken500ResponseFaultDetail
-  * @throws IOException if the JSON string is invalid with respect to GetAccesstoken500ResponseFaultDetail
-  */
+  /**
+   * Create an instance of GetAccesstoken500ResponseFaultDetail given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of GetAccesstoken500ResponseFaultDetail
+   * @throws IOException if the JSON string is invalid with respect to GetAccesstoken500ResponseFaultDetail
+   */
   public static GetAccesstoken500ResponseFaultDetail fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, GetAccesstoken500ResponseFaultDetail.class);
   }
 
- /**
-  * Convert an instance of GetAccesstoken500ResponseFaultDetail to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of GetAccesstoken500ResponseFaultDetail to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * Additional Information related to the product.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ProductDetailResponseAdditionalInformation {
   public static final String SERIALIZED_NAME_PRODUCT_WEIGHT = "productWeight";
   @SerializedName(SERIALIZED_NAME_PRODUCT_WEIGHT)
@@ -98,10 +97,10 @@ public class ProductDetailResponseAdditionalInformation {
     return this;
   }
 
-   /**
+  /**
    * Weight information related to the product.
    * @return productWeight
-  **/
+   */
   @javax.annotation.Nullable
   public List<ProductDetailResponseAdditionalInformationProductWeightInner> getProductWeight() {
     return productWeight;
@@ -117,10 +116,10 @@ public class ProductDetailResponseAdditionalInformation {
     return this;
   }
 
-   /**
+  /**
    * Example : true or false
    * @return isBulkFreight
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsBulkFreight() {
     return isBulkFreight;
@@ -136,10 +135,10 @@ public class ProductDetailResponseAdditionalInformation {
     return this;
   }
 
-   /**
+  /**
    * Example : &#39;5.2 Inches&#39;
    * @return height
-  **/
+   */
   @javax.annotation.Nullable
   public String getHeight() {
     return height;
@@ -155,10 +154,10 @@ public class ProductDetailResponseAdditionalInformation {
     return this;
   }
 
-   /**
+  /**
    * Example : &#39;13 inches&#39;
    * @return width
-  **/
+   */
   @javax.annotation.Nullable
   public String getWidth() {
     return width;
@@ -174,10 +173,10 @@ public class ProductDetailResponseAdditionalInformation {
     return this;
   }
 
-   /**
+  /**
    * Example : &#39;20.4 inches&#39;
    * @return length
-  **/
+   */
   @javax.annotation.Nullable
   public String getLength() {
     return length;
@@ -193,10 +192,10 @@ public class ProductDetailResponseAdditionalInformation {
     return this;
   }
 
-   /**
+  /**
    * Example : &#39;10 lb&#39;
    * @return netWeight
-  **/
+   */
   @javax.annotation.Nullable
   public String getNetWeight() {
     return netWeight;
@@ -212,10 +211,10 @@ public class ProductDetailResponseAdditionalInformation {
     return this;
   }
 
-   /**
+  /**
    * Example : &#39;Unit value&#39;
    * @return dimensionUnit
-  **/
+   */
   @javax.annotation.Nullable
   public String getDimensionUnit() {
     return dimensionUnit;
@@ -295,12 +294,12 @@ public class ProductDetailResponseAdditionalInformation {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseAdditionalInformation
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseAdditionalInformation
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ProductDetailResponseAdditionalInformation.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -376,22 +375,22 @@ public class ProductDetailResponseAdditionalInformation {
     }
   }
 
- /**
-  * Create an instance of ProductDetailResponseAdditionalInformation given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ProductDetailResponseAdditionalInformation
-  * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseAdditionalInformation
-  */
+  /**
+   * Create an instance of ProductDetailResponseAdditionalInformation given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ProductDetailResponseAdditionalInformation
+   * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseAdditionalInformation
+   */
   public static ProductDetailResponseAdditionalInformation fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ProductDetailResponseAdditionalInformation.class);
   }
 
- /**
-  * Convert an instance of ProductDetailResponseAdditionalInformation to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ProductDetailResponseAdditionalInformation to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

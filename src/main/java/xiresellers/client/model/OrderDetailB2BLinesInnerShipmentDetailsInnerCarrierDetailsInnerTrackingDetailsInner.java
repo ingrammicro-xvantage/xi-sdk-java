@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-04T13:12:48.606866Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner {
   public static final String SERIALIZED_NAME_TRACKING_NUMBER = "trackingNumber";
   @SerializedName(SERIALIZED_NAME_TRACKING_NUMBER)
@@ -87,10 +86,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return this;
   }
 
-   /**
+  /**
    * The tracking number for the shipment containing the line item.
    * @return trackingNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getTrackingNumber() {
     return trackingNumber;
@@ -106,10 +105,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return this;
   }
 
-   /**
+  /**
    * The tracking URL for the shipment containing the line item.
    * @return trackingUrl
-  **/
+   */
   @javax.annotation.Nullable
   public String getTrackingUrl() {
     return trackingUrl;
@@ -125,10 +124,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return this;
   }
 
-   /**
+  /**
    * The weight of the package for the line item.
    * @return packageWeight
-  **/
+   */
   @javax.annotation.Nullable
   public String getPackageWeight() {
     return packageWeight;
@@ -144,10 +143,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return this;
   }
 
-   /**
+  /**
    * The shipment carton number that contains the line item.
    * @return cartonNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getCartonNumber() {
     return cartonNumber;
@@ -163,10 +162,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return this;
   }
 
-   /**
+  /**
    * The quantity of line items in the box.
    * @return quantityInBox
-  **/
+   */
   @javax.annotation.Nullable
   public String getQuantityInBox() {
     return quantityInBox;
@@ -190,10 +189,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return this;
   }
 
-   /**
+  /**
    * A list of serial numbers of the line items contained in the shipment.
    * @return serialNumbers
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner> getSerialNumbers() {
     return serialNumbers;
@@ -281,12 +280,12 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -362,22 +361,22 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     }
   }
 
- /**
-  * Create an instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner
-  * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner
-  */
+  /**
+   * Create an instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner
+   * @throws IOException if the JSON string is invalid with respect to OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner
+   */
   public static OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner.class);
   }
 
- /**
-  * Convert an instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }
