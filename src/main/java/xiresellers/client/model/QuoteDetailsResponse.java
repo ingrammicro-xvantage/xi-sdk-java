@@ -58,7 +58,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-09T08:55:15.048117Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
@@ -107,6 +107,10 @@ public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_VENDOR_QUOTE_NUMBER = "vendorQuoteNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_QUOTE_NUMBER)
   private String vendorQuoteNumber;
+
+  public static final String SERIALIZED_NAME_IS_PARTIAL_ORDER_ALLOWED = "isPartialOrderAllowed";
+  @SerializedName(SERIALIZED_NAME_IS_PARTIAL_ORDER_ALLOWED)
+  private Boolean isPartialOrderAllowed;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
@@ -452,6 +456,25 @@ public class QuoteDetailsResponse {
 
   public void setVendorQuoteNumber(String vendorQuoteNumber) {
     this.vendorQuoteNumber = vendorQuoteNumber;
+  }
+
+
+  public QuoteDetailsResponse isPartialOrderAllowed(Boolean isPartialOrderAllowed) {
+    this.isPartialOrderAllowed = isPartialOrderAllowed;
+    return this;
+  }
+
+  /**
+   * Get isPartialOrderAllowed
+   * @return isPartialOrderAllowed
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsPartialOrderAllowed() {
+    return isPartialOrderAllowed;
+  }
+
+  public void setIsPartialOrderAllowed(Boolean isPartialOrderAllowed) {
+    this.isPartialOrderAllowed = isPartialOrderAllowed;
   }
 
 
@@ -1052,6 +1075,7 @@ public class QuoteDetailsResponse {
         Objects.equals(this.specialBidEffectiveDate, quoteDetailsResponse.specialBidEffectiveDate) &&
         Objects.equals(this.specialBidExpirationDate, quoteDetailsResponse.specialBidExpirationDate) &&
         Objects.equals(this.vendorQuoteNumber, quoteDetailsResponse.vendorQuoteNumber) &&
+        Objects.equals(this.isPartialOrderAllowed, quoteDetailsResponse.isPartialOrderAllowed) &&
         Objects.equals(this.status, quoteDetailsResponse.status) &&
         Objects.equals(this.statusReason, quoteDetailsResponse.statusReason) &&
         Objects.equals(this.closingReason, quoteDetailsResponse.closingReason) &&
@@ -1089,7 +1113,7 @@ public class QuoteDetailsResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteName, quoteNumber, quoteGuid, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, vendorQuoteNumber, status, statusReason, closingReason, dateClosed, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, imWarehouse, imWarehouseGstNumber, paymentTermsName, resellerInfo, endUserInfo, shippingInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extraFeesTotal, extraFeesTotalDetails, taxTotal, extendedQuotePriceTotal, freightAmount, totalQuoteAmount, additionalAttributes);
+    return Objects.hash(quoteName, quoteNumber, quoteGuid, revision, ingramQuoteDate, lastModifiedDate, ingramQuoteExpiryDate, currencyCode, specialBidId, specialBidEffectiveDate, specialBidExpirationDate, vendorQuoteNumber, isPartialOrderAllowed, status, statusReason, closingReason, dateClosed, customerNeed, proposedSolution, introPreamble, purchaseInstructions, legalTerms, quoteType, leaseInfo, leasingInstructions, imWarehouse, imWarehouseGstNumber, paymentTermsName, resellerInfo, endUserInfo, shippingInfo, products, productsCount, extendedMsrpTotal, quantityTotal, extraFeesTotal, extraFeesTotalDetails, taxTotal, extendedQuotePriceTotal, freightAmount, totalQuoteAmount, additionalAttributes);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1115,6 +1139,7 @@ public class QuoteDetailsResponse {
     sb.append("    specialBidEffectiveDate: ").append(toIndentedString(specialBidEffectiveDate)).append("\n");
     sb.append("    specialBidExpirationDate: ").append(toIndentedString(specialBidExpirationDate)).append("\n");
     sb.append("    vendorQuoteNumber: ").append(toIndentedString(vendorQuoteNumber)).append("\n");
+    sb.append("    isPartialOrderAllowed: ").append(toIndentedString(isPartialOrderAllowed)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    statusReason: ").append(toIndentedString(statusReason)).append("\n");
     sb.append("    closingReason: ").append(toIndentedString(closingReason)).append("\n");
@@ -1178,6 +1203,7 @@ public class QuoteDetailsResponse {
     openapiFields.add("specialBidEffectiveDate");
     openapiFields.add("specialBidExpirationDate");
     openapiFields.add("vendorQuoteNumber");
+    openapiFields.add("isPartialOrderAllowed");
     openapiFields.add("status");
     openapiFields.add("statusReason");
     openapiFields.add("closingReason");

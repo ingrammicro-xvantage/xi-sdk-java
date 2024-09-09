@@ -144,6 +144,14 @@ public class QuoteDetailsResponseTest {
     }
 
     /**
+     * Test the property 'isPartialOrderAllowed'
+     */
+    @Test
+    public void isPartialOrderAllowedTest() {
+        // TODO: test isPartialOrderAllowed
+    }
+
+    /**
      * Test the property 'status'
      */
     @Test

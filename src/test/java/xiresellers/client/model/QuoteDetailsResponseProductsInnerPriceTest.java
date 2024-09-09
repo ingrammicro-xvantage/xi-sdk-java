@@ -76,6 +76,22 @@ public class QuoteDetailsResponseProductsInnerPriceTest {
     }
 
     /**
+     * Test the property 'remainingQuantityExtendedMsrp'
+     */
+    @Test
+    public void remainingQuantityExtendedMsrpTest() {
+        // TODO: test remainingQuantityExtendedMsrp
+    }
+
+    /**
+     * Test the property 'remainingQuantityExtendedQuotePrice'
+     */
+    @Test
+    public void remainingQuantityExtendedQuotePriceTest() {
+        // TODO: test remainingQuantityExtendedQuotePrice
+    }
+
+    /**
      * Test the property 'discountOffList'
      */
     @Test

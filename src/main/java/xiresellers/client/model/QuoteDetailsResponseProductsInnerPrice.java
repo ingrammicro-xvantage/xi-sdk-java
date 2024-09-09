@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPrice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-09T08:55:15.048117Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class QuoteDetailsResponseProductsInnerPrice {
   public static final String SERIALIZED_NAME_QUOTE_PRICE = "quotePrice";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRICE)
@@ -71,6 +71,14 @@ public class QuoteDetailsResponseProductsInnerPrice {
   public static final String SERIALIZED_NAME_EXTENDED_QUOTE_PRICE = "extendedQuotePrice";
   @SerializedName(SERIALIZED_NAME_EXTENDED_QUOTE_PRICE)
   private BigDecimal extendedQuotePrice;
+
+  public static final String SERIALIZED_NAME_REMAINING_QUANTITY_EXTENDED_MSRP = "remainingQuantityExtendedMsrp";
+  @SerializedName(SERIALIZED_NAME_REMAINING_QUANTITY_EXTENDED_MSRP)
+  private BigDecimal remainingQuantityExtendedMsrp;
+
+  public static final String SERIALIZED_NAME_REMAINING_QUANTITY_EXTENDED_QUOTE_PRICE = "remainingQuantityExtendedQuotePrice";
+  @SerializedName(SERIALIZED_NAME_REMAINING_QUANTITY_EXTENDED_QUOTE_PRICE)
+  private BigDecimal remainingQuantityExtendedQuotePrice;
 
   public static final String SERIALIZED_NAME_DISCOUNT_OFF_LIST = "discountOffList";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_OFF_LIST)
@@ -180,6 +188,44 @@ public class QuoteDetailsResponseProductsInnerPrice {
 
   public void setExtendedQuotePrice(BigDecimal extendedQuotePrice) {
     this.extendedQuotePrice = extendedQuotePrice;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice remainingQuantityExtendedMsrp(BigDecimal remainingQuantityExtendedMsrp) {
+    this.remainingQuantityExtendedMsrp = remainingQuantityExtendedMsrp;
+    return this;
+  }
+
+  /**
+   * Get remainingQuantityExtendedMsrp
+   * @return remainingQuantityExtendedMsrp
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getRemainingQuantityExtendedMsrp() {
+    return remainingQuantityExtendedMsrp;
+  }
+
+  public void setRemainingQuantityExtendedMsrp(BigDecimal remainingQuantityExtendedMsrp) {
+    this.remainingQuantityExtendedMsrp = remainingQuantityExtendedMsrp;
+  }
+
+
+  public QuoteDetailsResponseProductsInnerPrice remainingQuantityExtendedQuotePrice(BigDecimal remainingQuantityExtendedQuotePrice) {
+    this.remainingQuantityExtendedQuotePrice = remainingQuantityExtendedQuotePrice;
+    return this;
+  }
+
+  /**
+   * Get remainingQuantityExtendedQuotePrice
+   * @return remainingQuantityExtendedQuotePrice
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getRemainingQuantityExtendedQuotePrice() {
+    return remainingQuantityExtendedQuotePrice;
+  }
+
+  public void setRemainingQuantityExtendedQuotePrice(BigDecimal remainingQuantityExtendedQuotePrice) {
+    this.remainingQuantityExtendedQuotePrice = remainingQuantityExtendedQuotePrice;
   }
 
 
@@ -365,6 +411,8 @@ public class QuoteDetailsResponseProductsInnerPrice {
         Objects.equals(this.msrp, quoteDetailsResponseProductsInnerPrice.msrp) &&
         Objects.equals(this.extendedMsrp, quoteDetailsResponseProductsInnerPrice.extendedMsrp) &&
         Objects.equals(this.extendedQuotePrice, quoteDetailsResponseProductsInnerPrice.extendedQuotePrice) &&
+        Objects.equals(this.remainingQuantityExtendedMsrp, quoteDetailsResponseProductsInnerPrice.remainingQuantityExtendedMsrp) &&
+        Objects.equals(this.remainingQuantityExtendedQuotePrice, quoteDetailsResponseProductsInnerPrice.remainingQuantityExtendedQuotePrice) &&
         Objects.equals(this.discountOffList, quoteDetailsResponseProductsInnerPrice.discountOffList) &&
         Objects.equals(this.type, quoteDetailsResponseProductsInnerPrice.type) &&
         Objects.equals(this.recurringPriceModel, quoteDetailsResponseProductsInnerPrice.recurringPriceModel) &&
@@ -381,7 +429,7 @@ public class QuoteDetailsResponseProductsInnerPrice {
 
   @Override
   public int hashCode() {
-    return Objects.hash(quotePrice, msrp, extendedMsrp, extendedQuotePrice, discountOffList, type, recurringPriceModel, unitOfMeasure, tax, extrafees, extraFeesDetails, discounts);
+    return Objects.hash(quotePrice, msrp, extendedMsrp, extendedQuotePrice, remainingQuantityExtendedMsrp, remainingQuantityExtendedQuotePrice, discountOffList, type, recurringPriceModel, unitOfMeasure, tax, extrafees, extraFeesDetails, discounts);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -399,6 +447,8 @@ public class QuoteDetailsResponseProductsInnerPrice {
     sb.append("    msrp: ").append(toIndentedString(msrp)).append("\n");
     sb.append("    extendedMsrp: ").append(toIndentedString(extendedMsrp)).append("\n");
     sb.append("    extendedQuotePrice: ").append(toIndentedString(extendedQuotePrice)).append("\n");
+    sb.append("    remainingQuantityExtendedMsrp: ").append(toIndentedString(remainingQuantityExtendedMsrp)).append("\n");
+    sb.append("    remainingQuantityExtendedQuotePrice: ").append(toIndentedString(remainingQuantityExtendedQuotePrice)).append("\n");
     sb.append("    discountOffList: ").append(toIndentedString(discountOffList)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    recurringPriceModel: ").append(toIndentedString(recurringPriceModel)).append("\n");
@@ -433,6 +483,8 @@ public class QuoteDetailsResponseProductsInnerPrice {
     openapiFields.add("msrp");
     openapiFields.add("extendedMsrp");
     openapiFields.add("extendedQuotePrice");
+    openapiFields.add("remainingQuantityExtendedMsrp");
+    openapiFields.add("remainingQuantityExtendedQuotePrice");
     openapiFields.add("discountOffList");
     openapiFields.add("type");
     openapiFields.add("recurringPriceModel");

@@ -23,6 +23,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.QuoteDetailsResponseProductsInnerBillDetailsInner;
 import xiresellers.client.model.QuoteDetailsResponseProductsInnerPrice;
 import org.junit.jupiter.api.Disabled;
@@ -64,6 +65,22 @@ public class QuoteDetailsResponseProductsInnerTest {
     @Test
     public void quantityTest() {
         // TODO: test quantity
+    }
+
+    /**
+     * Test the property 'remainingQuoteQty'
+     */
+    @Test
+    public void remainingQuoteQtyTest() {
+        // TODO: test remainingQuoteQty
+    }
+
+    /**
+     * Test the property 'minimumOrderAllowedQty'
+     */
+    @Test
+    public void minimumOrderAllowedQtyTest() {
+        // TODO: test minimumOrderAllowedQty
     }
 
     /**

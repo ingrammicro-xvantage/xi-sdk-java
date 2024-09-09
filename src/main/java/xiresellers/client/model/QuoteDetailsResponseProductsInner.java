@@ -24,6 +24,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.QuoteDetailsResponseProductsInnerBillDetailsInner;
 import xiresellers.client.model.QuoteDetailsResponseProductsInnerPrice;
 
@@ -53,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-29T17:32:11.198732Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-09T08:55:15.048117Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class QuoteDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_QUOTE_PRODUCT_GUID = "quoteProductGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRODUCT_GUID)
@@ -66,6 +67,14 @@ public class QuoteDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
   private Integer quantity;
+
+  public static final String SERIALIZED_NAME_REMAINING_QUOTE_QTY = "remainingQuoteQty";
+  @SerializedName(SERIALIZED_NAME_REMAINING_QUOTE_QTY)
+  private Integer remainingQuoteQty;
+
+  public static final String SERIALIZED_NAME_MINIMUM_ORDER_ALLOWED_QTY = "minimumOrderAllowedQty";
+  @SerializedName(SERIALIZED_NAME_MINIMUM_ORDER_ALLOWED_QTY)
+  private Integer minimumOrderAllowedQty;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
@@ -212,6 +221,44 @@ public class QuoteDetailsResponseProductsInner {
 
   public void setQuantity(Integer quantity) {
     this.quantity = quantity;
+  }
+
+
+  public QuoteDetailsResponseProductsInner remainingQuoteQty(Integer remainingQuoteQty) {
+    this.remainingQuoteQty = remainingQuoteQty;
+    return this;
+  }
+
+  /**
+   * Get remainingQuoteQty
+   * @return remainingQuoteQty
+   */
+  @javax.annotation.Nullable
+  public Integer getRemainingQuoteQty() {
+    return remainingQuoteQty;
+  }
+
+  public void setRemainingQuoteQty(Integer remainingQuoteQty) {
+    this.remainingQuoteQty = remainingQuoteQty;
+  }
+
+
+  public QuoteDetailsResponseProductsInner minimumOrderAllowedQty(Integer minimumOrderAllowedQty) {
+    this.minimumOrderAllowedQty = minimumOrderAllowedQty;
+    return this;
+  }
+
+  /**
+   * Get minimumOrderAllowedQty
+   * @return minimumOrderAllowedQty
+   */
+  @javax.annotation.Nullable
+  public Integer getMinimumOrderAllowedQty() {
+    return minimumOrderAllowedQty;
+  }
+
+  public void setMinimumOrderAllowedQty(Integer minimumOrderAllowedQty) {
+    this.minimumOrderAllowedQty = minimumOrderAllowedQty;
   }
 
 
@@ -654,6 +701,8 @@ public class QuoteDetailsResponseProductsInner {
     return Objects.equals(this.quoteProductGuid, quoteDetailsResponseProductsInner.quoteProductGuid) &&
         Objects.equals(this.lineNumber, quoteDetailsResponseProductsInner.lineNumber) &&
         Objects.equals(this.quantity, quoteDetailsResponseProductsInner.quantity) &&
+        Objects.equals(this.remainingQuoteQty, quoteDetailsResponseProductsInner.remainingQuoteQty) &&
+        Objects.equals(this.minimumOrderAllowedQty, quoteDetailsResponseProductsInner.minimumOrderAllowedQty) &&
         Objects.equals(this.notes, quoteDetailsResponseProductsInner.notes) &&
         Objects.equals(this.ean, quoteDetailsResponseProductsInner.ean) &&
         Objects.equals(this.coo, quoteDetailsResponseProductsInner.coo) &&
@@ -678,9 +727,20 @@ public class QuoteDetailsResponseProductsInner {
         Objects.equals(this.billDetails, quoteDetailsResponseProductsInner.billDetails);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
-    return Objects.hash(quoteProductGuid, lineNumber, quantity, notes, ean, coo, ingramPartNumber, vendorPartNumber, description, weight, weightUom, isSuggestionProduct, vpnCategory, quoteProductsSupplierPartAuxiliaryId, vendorName, terms, planDescription, isSubscription, resellerMargin, requestedStartDate, startDate, endDate, serialNumber, price, billDetails);
+    return Objects.hash(quoteProductGuid, lineNumber, quantity, remainingQuoteQty, minimumOrderAllowedQty, notes, ean, coo, ingramPartNumber, vendorPartNumber, description, weight, weightUom, isSuggestionProduct, vpnCategory, quoteProductsSupplierPartAuxiliaryId, vendorName, terms, planDescription, isSubscription, resellerMargin, requestedStartDate, startDate, endDate, serialNumber, price, billDetails);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -690,6 +750,8 @@ public class QuoteDetailsResponseProductsInner {
     sb.append("    quoteProductGuid: ").append(toIndentedString(quoteProductGuid)).append("\n");
     sb.append("    lineNumber: ").append(toIndentedString(lineNumber)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
+    sb.append("    remainingQuoteQty: ").append(toIndentedString(remainingQuoteQty)).append("\n");
+    sb.append("    minimumOrderAllowedQty: ").append(toIndentedString(minimumOrderAllowedQty)).append("\n");
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
     sb.append("    ean: ").append(toIndentedString(ean)).append("\n");
     sb.append("    coo: ").append(toIndentedString(coo)).append("\n");
@@ -737,6 +799,8 @@ public class QuoteDetailsResponseProductsInner {
     openapiFields.add("quoteProductGuid");
     openapiFields.add("lineNumber");
     openapiFields.add("quantity");
+    openapiFields.add("remainingQuoteQty");
+    openapiFields.add("minimumOrderAllowedQty");
     openapiFields.add("notes");
     openapiFields.add("ean");
     openapiFields.add("coo");

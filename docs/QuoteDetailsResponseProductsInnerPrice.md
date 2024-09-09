@@ -11,6 +11,8 @@
 |**msrp** | **BigDecimal** | Manufacturer Suggested Retail Price |  [optional] |
 |**extendedMsrp** | **BigDecimal** | Extended MSRP - Manufacturer Suggested Retail Price X Quantity |  [optional] |
 |**extendedQuotePrice** | **BigDecimal** | Extended reseller quoted price (cost to reseller) X Quantity |  [optional] |
+|**remainingQuantityExtendedMsrp** | **BigDecimal** |  |  [optional] |
+|**remainingQuantityExtendedQuotePrice** | **BigDecimal** |  |  [optional] |
 |**discountOffList** | **String** | Discount off list percentage extended |  [optional] |
 |**type** | **String** |  |  [optional] |
 |**recurringPriceModel** | **String** |  |  [optional] |
