@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-09T08:55:15.048117Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-22T06:27:36.733892Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner {
   public static final String SERIALIZED_NAME_CARTON_NUMBER = "cartonNumber";
   @SerializedName(SERIALIZED_NAME_CARTON_NUMBER)

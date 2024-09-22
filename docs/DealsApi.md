@@ -10,7 +10,7 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 
 <a id="getResellersV6Dealsdetails"></a>
 # **getResellersV6Dealsdetails**
-> DealsDetailsResponse getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, imEnvironment, dealId)
+> DealsDetailsResponse getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId)
 
 Deals Details
 
@@ -40,10 +40,9 @@ public class Example {
     String imCountryCode = "US"; // String | Two-character ISO country code.
     String imCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
     String imApplicationId = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
-    String imEnvironment = "20-222222"; // String | Environment name.
     String dealId = "12345678"; // String | Unique deal ID.
     try {
-      DealsDetailsResponse result = apiInstance.getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, imEnvironment, dealId);
+      DealsDetailsResponse result = apiInstance.getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DealsApi#getResellersV6Dealsdetails");
@@ -64,7 +63,6 @@ public class Example {
 | **imCountryCode** | **String**| Two-character ISO country code. | |
 | **imCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | |
 | **imApplicationId** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | |
-| **imEnvironment** | **String**| Environment name. | |
 | **dealId** | **String**| Unique deal ID. | |
 
 ### Return type

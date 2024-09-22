@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * The address and contact information provided by the reseller.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-09T08:55:15.048117Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-22T06:27:36.733892Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class OrderCreateRequestResellerInfo {
   public static final String SERIALIZED_NAME_RESELLER_ID = "resellerId";
   @SerializedName(SERIALIZED_NAME_RESELLER_ID)

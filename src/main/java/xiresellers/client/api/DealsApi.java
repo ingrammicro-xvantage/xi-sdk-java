@@ -81,7 +81,6 @@ public class DealsApi {
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
      * @param imApplicationId Unique value used to identify the sender of the transaction. Example: MyCompany (required)
-     * @param imEnvironment Environment name. (required)
      * @param dealId Unique deal ID. (required)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
@@ -94,7 +93,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6DealsdetailsCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String imEnvironment, String dealId, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellersV6DealsdetailsCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String dealId, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -136,10 +135,6 @@ public class DealsApi {
             localVarHeaderParams.put("IM-ApplicationId", localVarApiClient.parameterToString(imApplicationId));
         }
 
-        if (imEnvironment != null) {
-            localVarHeaderParams.put("IM-Environment", localVarApiClient.parameterToString(imEnvironment));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -160,7 +155,7 @@ public class DealsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellersV6DealsdetailsValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String imEnvironment, String dealId, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellersV6DealsdetailsValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String dealId, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellersV6Dealsdetails(Async)");
@@ -181,17 +176,12 @@ public class DealsApi {
             throw new ApiException("Missing the required parameter 'imApplicationId' when calling getResellersV6Dealsdetails(Async)");
         }
 
-        // verify the required parameter 'imEnvironment' is set
-        if (imEnvironment == null) {
-            throw new ApiException("Missing the required parameter 'imEnvironment' when calling getResellersV6Dealsdetails(Async)");
-        }
-
         // verify the required parameter 'dealId' is set
         if (dealId == null) {
             throw new ApiException("Missing the required parameter 'dealId' when calling getResellersV6Dealsdetails(Async)");
         }
 
-        return getResellersV6DealsdetailsCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, imEnvironment, dealId, _callback);
+        return getResellersV6DealsdetailsCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, _callback);
 
     }
 
@@ -202,7 +192,6 @@ public class DealsApi {
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
      * @param imApplicationId Unique value used to identify the sender of the transaction. Example: MyCompany (required)
-     * @param imEnvironment Environment name. (required)
      * @param dealId Unique deal ID. (required)
      * @return DealsDetailsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -214,8 +203,8 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public DealsDetailsResponse getResellersV6Dealsdetails(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String imEnvironment, String dealId) throws ApiException {
-        ApiResponse<DealsDetailsResponse> localVarResp = getResellersV6DealsdetailsWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, imEnvironment, dealId);
+    public DealsDetailsResponse getResellersV6Dealsdetails(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String dealId) throws ApiException {
+        ApiResponse<DealsDetailsResponse> localVarResp = getResellersV6DealsdetailsWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId);
         return localVarResp.getData();
     }
 
@@ -226,7 +215,6 @@ public class DealsApi {
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
      * @param imApplicationId Unique value used to identify the sender of the transaction. Example: MyCompany (required)
-     * @param imEnvironment Environment name. (required)
      * @param dealId Unique deal ID. (required)
      * @return ApiResponse&lt;DealsDetailsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -238,8 +226,8 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<DealsDetailsResponse> getResellersV6DealsdetailsWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String imEnvironment, String dealId) throws ApiException {
-        okhttp3.Call localVarCall = getResellersV6DealsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, imEnvironment, dealId, null);
+    public ApiResponse<DealsDetailsResponse> getResellersV6DealsdetailsWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String dealId) throws ApiException {
+        okhttp3.Call localVarCall = getResellersV6DealsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, null);
         Type localVarReturnType = new TypeToken<DealsDetailsResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -251,7 +239,6 @@ public class DealsApi {
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
      * @param imApplicationId Unique value used to identify the sender of the transaction. Example: MyCompany (required)
-     * @param imEnvironment Environment name. (required)
      * @param dealId Unique deal ID. (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -264,9 +251,9 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6DealsdetailsAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String imEnvironment, String dealId, final ApiCallback<DealsDetailsResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellersV6DealsdetailsAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String dealId, final ApiCallback<DealsDetailsResponse> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = getResellersV6DealsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, imEnvironment, dealId, _callback);
+        okhttp3.Call localVarCall = getResellersV6DealsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, _callback);
         Type localVarReturnType = new TypeToken<DealsDetailsResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
