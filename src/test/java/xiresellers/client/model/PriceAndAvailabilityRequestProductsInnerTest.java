@@ -22,7 +22,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner;
+import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerPlanID;
+import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerQuantityRequested;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -78,6 +81,14 @@ public class PriceAndAvailabilityRequestProductsInnerTest {
     @Test
     public void quantityRequestedTest() {
         // TODO: test quantityRequested
+    }
+
+    /**
+     * Test the property 'planID'
+     */
+    @Test
+    public void planIDTest() {
+        // TODO: test planID
     }
 
     /**

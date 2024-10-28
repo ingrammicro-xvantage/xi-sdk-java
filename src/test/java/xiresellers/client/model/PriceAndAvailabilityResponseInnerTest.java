@@ -22,11 +22,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerAvailability;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerDiscountsInner;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerPricing;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerServiceFeesInner;
+import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -258,6 +260,14 @@ public class PriceAndAvailabilityResponseInnerTest {
     @Test
     public void serviceFeesTest() {
         // TODO: test serviceFees
+    }
+
+    /**
+     * Test the property 'subscriptionPrice'
+     */
+    @Test
+    public void subscriptionPriceTest() {
+        // TODO: test subscriptionPrice
     }
 
 }

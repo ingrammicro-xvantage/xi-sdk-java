@@ -24,8 +24,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.ProductDetailResponseAdditionalInformation;
-import xiresellers.client.model.ProductDetailResponseCiscoFields;
-import xiresellers.client.model.ProductDetailResponseIndicators;
+import xiresellers.client.model.ProductDetailResponseCiscoFieldsInner;
+import xiresellers.client.model.ProductDetailResponseIndicatorsInner;
+import xiresellers.client.model.ProductDetailResponseSubscriptionDetailsInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -53,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-22T06:27:36.733892Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-28T07:33:14.592758Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -63,13 +64,9 @@ public class ProductDetailResponse {
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
   private String vendorPartNumber;
 
-  public static final String SERIALIZED_NAME_CUSTOMER_PART_NUMBER = "customerPartNumber";
-  @SerializedName(SERIALIZED_NAME_CUSTOMER_PART_NUMBER)
-  private String customerPartNumber;
-
   public static final String SERIALIZED_NAME_PRODUCT_AUTHORIZED = "productAuthorized";
   @SerializedName(SERIALIZED_NAME_PRODUCT_AUTHORIZED)
-  private String productAuthorized;
+  private Boolean productAuthorized;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -83,9 +80,9 @@ public class ProductDetailResponse {
   @SerializedName(SERIALIZED_NAME_PRODUCT_CATEGORY)
   private String productCategory;
 
-  public static final String SERIALIZED_NAME_PRODUCT_SUB_CATEGORY = "productSubCategory";
-  @SerializedName(SERIALIZED_NAME_PRODUCT_SUB_CATEGORY)
-  private String productSubCategory;
+  public static final String SERIALIZED_NAME_PRODUCT_SUBCATEGORY = "productSubcategory";
+  @SerializedName(SERIALIZED_NAME_PRODUCT_SUBCATEGORY)
+  private String productSubcategory;
 
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
@@ -103,13 +100,17 @@ public class ProductDetailResponse {
   @SerializedName(SERIALIZED_NAME_PRODUCT_CLASS)
   private String productClass;
 
+  public static final String SERIALIZED_NAME_CUSTOMER_PART_NUMBER = "customerPartNumber";
+  @SerializedName(SERIALIZED_NAME_CUSTOMER_PART_NUMBER)
+  private String customerPartNumber;
+
   public static final String SERIALIZED_NAME_INDICATORS = "indicators";
   @SerializedName(SERIALIZED_NAME_INDICATORS)
-  private ProductDetailResponseIndicators indicators;
+  private List<ProductDetailResponseIndicatorsInner> indicators = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CISCO_FIELDS = "ciscoFields";
   @SerializedName(SERIALIZED_NAME_CISCO_FIELDS)
-  private ProductDetailResponseCiscoFields ciscoFields;
+  private List<ProductDetailResponseCiscoFieldsInner> ciscoFields = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_WARRANTY_INFORMATION = "warrantyInformation";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFORMATION)
@@ -118,6 +119,10 @@ public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_ADDITIONAL_INFORMATION = "additionalInformation";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_INFORMATION)
   private ProductDetailResponseAdditionalInformation additionalInformation;
+
+  public static final String SERIALIZED_NAME_SUBSCRIPTION_DETAILS = "subscriptionDetails";
+  @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_DETAILS)
+  private List<ProductDetailResponseSubscriptionDetailsInner> subscriptionDetails = new ArrayList<>();
 
   public ProductDetailResponse() {
   }
@@ -160,26 +165,7 @@ public class ProductDetailResponse {
   }
 
 
-  public ProductDetailResponse customerPartNumber(String customerPartNumber) {
-    this.customerPartNumber = customerPartNumber;
-    return this;
-  }
-
-  /**
-   * Reseller / end-user’s part number for the product.
-   * @return customerPartNumber
-   */
-  @javax.annotation.Nullable
-  public String getCustomerPartNumber() {
-    return customerPartNumber;
-  }
-
-  public void setCustomerPartNumber(String customerPartNumber) {
-    this.customerPartNumber = customerPartNumber;
-  }
-
-
-  public ProductDetailResponse productAuthorized(String productAuthorized) {
+  public ProductDetailResponse productAuthorized(Boolean productAuthorized) {
     this.productAuthorized = productAuthorized;
     return this;
   }
@@ -189,11 +175,11 @@ public class ProductDetailResponse {
    * @return productAuthorized
    */
   @javax.annotation.Nullable
-  public String getProductAuthorized() {
+  public Boolean getProductAuthorized() {
     return productAuthorized;
   }
 
-  public void setProductAuthorized(String productAuthorized) {
+  public void setProductAuthorized(Boolean productAuthorized) {
     this.productAuthorized = productAuthorized;
   }
 
@@ -255,22 +241,22 @@ public class ProductDetailResponse {
   }
 
 
-  public ProductDetailResponse productSubCategory(String productSubCategory) {
-    this.productSubCategory = productSubCategory;
+  public ProductDetailResponse productSubcategory(String productSubcategory) {
+    this.productSubcategory = productSubcategory;
     return this;
   }
 
   /**
    * The sub-category of the product.
-   * @return productSubCategory
+   * @return productSubcategory
    */
   @javax.annotation.Nullable
-  public String getProductSubCategory() {
-    return productSubCategory;
+  public String getProductSubcategory() {
+    return productSubcategory;
   }
 
-  public void setProductSubCategory(String productSubCategory) {
-    this.productSubCategory = productSubCategory;
+  public void setProductSubcategory(String productSubcategory) {
+    this.productSubcategory = productSubcategory;
   }
 
 
@@ -350,40 +336,75 @@ public class ProductDetailResponse {
   }
 
 
-  public ProductDetailResponse indicators(ProductDetailResponseIndicators indicators) {
-    this.indicators = indicators;
+  public ProductDetailResponse customerPartNumber(String customerPartNumber) {
+    this.customerPartNumber = customerPartNumber;
     return this;
   }
 
   /**
-   * Get indicators
+   * Reseller / end-user’s part number for the product.
+   * @return customerPartNumber
+   */
+  @javax.annotation.Nullable
+  public String getCustomerPartNumber() {
+    return customerPartNumber;
+  }
+
+  public void setCustomerPartNumber(String customerPartNumber) {
+    this.customerPartNumber = customerPartNumber;
+  }
+
+
+  public ProductDetailResponse indicators(List<ProductDetailResponseIndicatorsInner> indicators) {
+    this.indicators = indicators;
+    return this;
+  }
+
+  public ProductDetailResponse addIndicatorsItem(ProductDetailResponseIndicatorsInner indicatorsItem) {
+    if (this.indicators == null) {
+      this.indicators = new ArrayList<>();
+    }
+    this.indicators.add(indicatorsItem);
+    return this;
+  }
+
+  /**
+   * Indicators of the Product
    * @return indicators
    */
   @javax.annotation.Nullable
-  public ProductDetailResponseIndicators getIndicators() {
+  public List<ProductDetailResponseIndicatorsInner> getIndicators() {
     return indicators;
   }
 
-  public void setIndicators(ProductDetailResponseIndicators indicators) {
+  public void setIndicators(List<ProductDetailResponseIndicatorsInner> indicators) {
     this.indicators = indicators;
   }
 
 
-  public ProductDetailResponse ciscoFields(ProductDetailResponseCiscoFields ciscoFields) {
+  public ProductDetailResponse ciscoFields(List<ProductDetailResponseCiscoFieldsInner> ciscoFields) {
     this.ciscoFields = ciscoFields;
     return this;
   }
 
+  public ProductDetailResponse addCiscoFieldsItem(ProductDetailResponseCiscoFieldsInner ciscoFieldsItem) {
+    if (this.ciscoFields == null) {
+      this.ciscoFields = new ArrayList<>();
+    }
+    this.ciscoFields.add(ciscoFieldsItem);
+    return this;
+  }
+
   /**
-   * Get ciscoFields
+   * Cisco product related information.
    * @return ciscoFields
    */
   @javax.annotation.Nullable
-  public ProductDetailResponseCiscoFields getCiscoFields() {
+  public List<ProductDetailResponseCiscoFieldsInner> getCiscoFields() {
     return ciscoFields;
   }
 
-  public void setCiscoFields(ProductDetailResponseCiscoFields ciscoFields) {
+  public void setCiscoFields(List<ProductDetailResponseCiscoFieldsInner> ciscoFields) {
     this.ciscoFields = ciscoFields;
   }
 
@@ -434,6 +455,33 @@ public class ProductDetailResponse {
   }
 
 
+  public ProductDetailResponse subscriptionDetails(List<ProductDetailResponseSubscriptionDetailsInner> subscriptionDetails) {
+    this.subscriptionDetails = subscriptionDetails;
+    return this;
+  }
+
+  public ProductDetailResponse addSubscriptionDetailsItem(ProductDetailResponseSubscriptionDetailsInner subscriptionDetailsItem) {
+    if (this.subscriptionDetails == null) {
+      this.subscriptionDetails = new ArrayList<>();
+    }
+    this.subscriptionDetails.add(subscriptionDetailsItem);
+    return this;
+  }
+
+  /**
+   * Subscription product Details
+   * @return subscriptionDetails
+   */
+  @javax.annotation.Nullable
+  public List<ProductDetailResponseSubscriptionDetailsInner> getSubscriptionDetails() {
+    return subscriptionDetails;
+  }
+
+  public void setSubscriptionDetails(List<ProductDetailResponseSubscriptionDetailsInner> subscriptionDetails) {
+    this.subscriptionDetails = subscriptionDetails;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -446,25 +494,26 @@ public class ProductDetailResponse {
     ProductDetailResponse productDetailResponse = (ProductDetailResponse) o;
     return Objects.equals(this.ingramPartNumber, productDetailResponse.ingramPartNumber) &&
         Objects.equals(this.vendorPartNumber, productDetailResponse.vendorPartNumber) &&
-        Objects.equals(this.customerPartNumber, productDetailResponse.customerPartNumber) &&
         Objects.equals(this.productAuthorized, productDetailResponse.productAuthorized) &&
         Objects.equals(this.description, productDetailResponse.description) &&
         Objects.equals(this.upc, productDetailResponse.upc) &&
         Objects.equals(this.productCategory, productDetailResponse.productCategory) &&
-        Objects.equals(this.productSubCategory, productDetailResponse.productSubCategory) &&
+        Objects.equals(this.productSubcategory, productDetailResponse.productSubcategory) &&
         Objects.equals(this.vendorName, productDetailResponse.vendorName) &&
         Objects.equals(this.vendorNumber, productDetailResponse.vendorNumber) &&
         Objects.equals(this.productStatusCode, productDetailResponse.productStatusCode) &&
         Objects.equals(this.productClass, productDetailResponse.productClass) &&
+        Objects.equals(this.customerPartNumber, productDetailResponse.customerPartNumber) &&
         Objects.equals(this.indicators, productDetailResponse.indicators) &&
         Objects.equals(this.ciscoFields, productDetailResponse.ciscoFields) &&
         Objects.equals(this.warrantyInformation, productDetailResponse.warrantyInformation) &&
-        Objects.equals(this.additionalInformation, productDetailResponse.additionalInformation);
+        Objects.equals(this.additionalInformation, productDetailResponse.additionalInformation) &&
+        Objects.equals(this.subscriptionDetails, productDetailResponse.subscriptionDetails);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(ingramPartNumber, vendorPartNumber, customerPartNumber, productAuthorized, description, upc, productCategory, productSubCategory, vendorName, vendorNumber, productStatusCode, productClass, indicators, ciscoFields, warrantyInformation, additionalInformation);
+    return Objects.hash(ingramPartNumber, vendorPartNumber, productAuthorized, description, upc, productCategory, productSubcategory, vendorName, vendorNumber, productStatusCode, productClass, customerPartNumber, indicators, ciscoFields, warrantyInformation, additionalInformation, subscriptionDetails);
   }
 
   @Override
@@ -473,20 +522,21 @@ public class ProductDetailResponse {
     sb.append("class ProductDetailResponse {\n");
     sb.append("    ingramPartNumber: ").append(toIndentedString(ingramPartNumber)).append("\n");
     sb.append("    vendorPartNumber: ").append(toIndentedString(vendorPartNumber)).append("\n");
-    sb.append("    customerPartNumber: ").append(toIndentedString(customerPartNumber)).append("\n");
     sb.append("    productAuthorized: ").append(toIndentedString(productAuthorized)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    upc: ").append(toIndentedString(upc)).append("\n");
     sb.append("    productCategory: ").append(toIndentedString(productCategory)).append("\n");
-    sb.append("    productSubCategory: ").append(toIndentedString(productSubCategory)).append("\n");
+    sb.append("    productSubcategory: ").append(toIndentedString(productSubcategory)).append("\n");
     sb.append("    vendorName: ").append(toIndentedString(vendorName)).append("\n");
     sb.append("    vendorNumber: ").append(toIndentedString(vendorNumber)).append("\n");
     sb.append("    productStatusCode: ").append(toIndentedString(productStatusCode)).append("\n");
     sb.append("    productClass: ").append(toIndentedString(productClass)).append("\n");
+    sb.append("    customerPartNumber: ").append(toIndentedString(customerPartNumber)).append("\n");
     sb.append("    indicators: ").append(toIndentedString(indicators)).append("\n");
     sb.append("    ciscoFields: ").append(toIndentedString(ciscoFields)).append("\n");
     sb.append("    warrantyInformation: ").append(toIndentedString(warrantyInformation)).append("\n");
     sb.append("    additionalInformation: ").append(toIndentedString(additionalInformation)).append("\n");
+    sb.append("    subscriptionDetails: ").append(toIndentedString(subscriptionDetails)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -511,20 +561,21 @@ public class ProductDetailResponse {
     openapiFields = new HashSet<String>();
     openapiFields.add("ingramPartNumber");
     openapiFields.add("vendorPartNumber");
-    openapiFields.add("customerPartNumber");
     openapiFields.add("productAuthorized");
     openapiFields.add("description");
     openapiFields.add("upc");
     openapiFields.add("productCategory");
-    openapiFields.add("productSubCategory");
+    openapiFields.add("productSubcategory");
     openapiFields.add("vendorName");
     openapiFields.add("vendorNumber");
     openapiFields.add("productStatusCode");
     openapiFields.add("productClass");
+    openapiFields.add("customerPartNumber");
     openapiFields.add("indicators");
     openapiFields.add("ciscoFields");
     openapiFields.add("warrantyInformation");
     openapiFields.add("additionalInformation");
+    openapiFields.add("subscriptionDetails");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -557,12 +608,6 @@ public class ProductDetailResponse {
       if ((jsonObj.get("vendorPartNumber") != null && !jsonObj.get("vendorPartNumber").isJsonNull()) && !jsonObj.get("vendorPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorPartNumber").toString()));
       }
-      if ((jsonObj.get("customerPartNumber") != null && !jsonObj.get("customerPartNumber").isJsonNull()) && !jsonObj.get("customerPartNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `customerPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerPartNumber").toString()));
-      }
-      if ((jsonObj.get("productAuthorized") != null && !jsonObj.get("productAuthorized").isJsonNull()) && !jsonObj.get("productAuthorized").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `productAuthorized` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productAuthorized").toString()));
-      }
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
       }
@@ -572,8 +617,8 @@ public class ProductDetailResponse {
       if ((jsonObj.get("productCategory") != null && !jsonObj.get("productCategory").isJsonNull()) && !jsonObj.get("productCategory").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `productCategory` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productCategory").toString()));
       }
-      if ((jsonObj.get("productSubCategory") != null && !jsonObj.get("productSubCategory").isJsonNull()) && !jsonObj.get("productSubCategory").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `productSubCategory` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productSubCategory").toString()));
+      if ((jsonObj.get("productSubcategory") != null && !jsonObj.get("productSubcategory").isJsonNull()) && !jsonObj.get("productSubcategory").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `productSubcategory` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productSubcategory").toString()));
       }
       if ((jsonObj.get("vendorName") != null && !jsonObj.get("vendorName").isJsonNull()) && !jsonObj.get("vendorName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendorName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorName").toString()));
@@ -587,13 +632,36 @@ public class ProductDetailResponse {
       if ((jsonObj.get("productClass") != null && !jsonObj.get("productClass").isJsonNull()) && !jsonObj.get("productClass").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `productClass` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productClass").toString()));
       }
-      // validate the optional field `indicators`
-      if (jsonObj.get("indicators") != null && !jsonObj.get("indicators").isJsonNull()) {
-        ProductDetailResponseIndicators.validateJsonElement(jsonObj.get("indicators"));
+      if ((jsonObj.get("customerPartNumber") != null && !jsonObj.get("customerPartNumber").isJsonNull()) && !jsonObj.get("customerPartNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `customerPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerPartNumber").toString()));
       }
-      // validate the optional field `ciscoFields`
+      if (jsonObj.get("indicators") != null && !jsonObj.get("indicators").isJsonNull()) {
+        JsonArray jsonArrayindicators = jsonObj.getAsJsonArray("indicators");
+        if (jsonArrayindicators != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("indicators").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `indicators` to be an array in the JSON string but got `%s`", jsonObj.get("indicators").toString()));
+          }
+
+          // validate the optional field `indicators` (array)
+          for (int i = 0; i < jsonArrayindicators.size(); i++) {
+            ProductDetailResponseIndicatorsInner.validateJsonElement(jsonArrayindicators.get(i));
+          };
+        }
+      }
       if (jsonObj.get("ciscoFields") != null && !jsonObj.get("ciscoFields").isJsonNull()) {
-        ProductDetailResponseCiscoFields.validateJsonElement(jsonObj.get("ciscoFields"));
+        JsonArray jsonArrayciscoFields = jsonObj.getAsJsonArray("ciscoFields");
+        if (jsonArrayciscoFields != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("ciscoFields").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `ciscoFields` to be an array in the JSON string but got `%s`", jsonObj.get("ciscoFields").toString()));
+          }
+
+          // validate the optional field `ciscoFields` (array)
+          for (int i = 0; i < jsonArrayciscoFields.size(); i++) {
+            ProductDetailResponseCiscoFieldsInner.validateJsonElement(jsonArrayciscoFields.get(i));
+          };
+        }
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("warrantyInformation") != null && !jsonObj.get("warrantyInformation").isJsonNull() && !jsonObj.get("warrantyInformation").isJsonArray()) {
@@ -602,6 +670,20 @@ public class ProductDetailResponse {
       // validate the optional field `additionalInformation`
       if (jsonObj.get("additionalInformation") != null && !jsonObj.get("additionalInformation").isJsonNull()) {
         ProductDetailResponseAdditionalInformation.validateJsonElement(jsonObj.get("additionalInformation"));
+      }
+      if (jsonObj.get("subscriptionDetails") != null && !jsonObj.get("subscriptionDetails").isJsonNull()) {
+        JsonArray jsonArraysubscriptionDetails = jsonObj.getAsJsonArray("subscriptionDetails");
+        if (jsonArraysubscriptionDetails != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("subscriptionDetails").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `subscriptionDetails` to be an array in the JSON string but got `%s`", jsonObj.get("subscriptionDetails").toString()));
+          }
+
+          // validate the optional field `subscriptionDetails` (array)
+          for (int i = 0; i < jsonArraysubscriptionDetails.size(); i++) {
+            ProductDetailResponseSubscriptionDetailsInner.validateJsonElement(jsonArraysubscriptionDetails.get(i));
+          };
+        }
       }
   }
 

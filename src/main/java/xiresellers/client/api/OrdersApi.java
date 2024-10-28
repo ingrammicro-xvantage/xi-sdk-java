@@ -27,13 +27,14 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import xiresellers.client.model.AsyncOrderCreateDTO;
-import xiresellers.client.model.AsyncOrderCreateResponse;
 import xiresellers.client.model.ErrorResponse;
 import xiresellers.client.model.ErrorResponseDTO;
 import java.time.LocalDate;
 import xiresellers.client.model.OrderCreateRequest;
 import xiresellers.client.model.OrderCreateResponse;
+import xiresellers.client.model.OrderCreateV7Request;
+import xiresellers.client.model.OrderCreateV7Response;
+import xiresellers.client.model.OrderCreateV7Response201;
 import xiresellers.client.model.OrderDetailB2B;
 import xiresellers.client.model.OrderModifyRequest;
 import xiresellers.client.model.OrderModifyResponse;
@@ -990,21 +991,22 @@ public class OrdersApi {
      * Build call for postCreateorderV7
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
-     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems. (required)
-     * @param asyncOrderCreateDTO  (required)
-     * @param imSenderID Unique value used to identify the sender of the transaction. (optional)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param orderCreateV7Request  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 200 </td><td> Confirmation response </td><td>  -  </td></tr>
+        <tr><td> 201 </td><td> Webhook Response </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postCreateorderV7Call(String imCustomerNumber, String imCountryCode, String imCorrelationID, AsyncOrderCreateDTO asyncOrderCreateDTO, String imSenderID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call postCreateorderV7Call(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateV7Request orderCreateV7Request, String imSenderID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1018,7 +1020,7 @@ public class OrdersApi {
             basePath = null;
         }
 
-        Object localVarPostBody = asyncOrderCreateDTO;
+        Object localVarPostBody = orderCreateV7Request;
 
         // create path and map variables
         String localVarPath = "/resellers/v7/orders";
@@ -1066,7 +1068,7 @@ public class OrdersApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call postCreateorderV7ValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, AsyncOrderCreateDTO asyncOrderCreateDTO, String imSenderID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call postCreateorderV7ValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateV7Request orderCreateV7Request, String imSenderID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling postCreateorderV7(Async)");
@@ -1082,85 +1084,88 @@ public class OrdersApi {
             throw new ApiException("Missing the required parameter 'imCorrelationID' when calling postCreateorderV7(Async)");
         }
 
-        // verify the required parameter 'asyncOrderCreateDTO' is set
-        if (asyncOrderCreateDTO == null) {
-            throw new ApiException("Missing the required parameter 'asyncOrderCreateDTO' when calling postCreateorderV7(Async)");
+        // verify the required parameter 'orderCreateV7Request' is set
+        if (orderCreateV7Request == null) {
+            throw new ApiException("Missing the required parameter 'orderCreateV7Request' when calling postCreateorderV7(Async)");
         }
 
-        return postCreateorderV7Call(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID, _callback);
+        return postCreateorderV7Call(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateV7Request, imSenderID, _callback);
 
     }
 
     /**
      * Create your Order v7
-     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     * The Order Create v7 allows our customers to create orders asynchronously. The customer can create either standard orders using stocked SKUs and/or create a “Quote to Order” using the existing quote which is in “Ready to Order” status, or the customer can create an order using the “Configure to order” (CTO) quote. Upon successful submission of the order create request, a confirmation message will be returned as an API response. &lt;br &gt; &lt;br &gt; Once the order is processed, Ingram Micro will notify customers via webhook using a pre-defined callback URL as an HTTP post regarding the updates related to the order. Upon successful order creation, a notification will be sent via webhook regarding the order details, in the event of any error occurring during the order creation process, an error message will be delivered via webhook. Nightly system unavailability will delay response Async response. &lt;br &gt; &lt;br &gt; The key differentiator between standard ordering and “Quote To Order” is the optional input field in the request body which is “quoteNumber”. If a customer passes the quote number in the request body, the order will be processed as a “Quote To Order” using the details from the quote. Any SKUs, quantity, or price information that are passed in the lines object within the request will be ignored in the case of “Quote To Order”.&lt;br &gt; &lt;br &gt; **Prerequisite:** Pre-defined callback URL &lt;br &gt; &lt;br &gt; **Standard ordering::**&lt;br&gt;&lt;br&gt;Ingram Micro recommends that you provide the ingramPartNumber for each SKU contained in each order. NOTE: You must have net terms to use the Ingram Micro Order Create API. Ingram Micro offers trade credit when using our APIs, and repayment is based on net terms. For example, if your net terms agreement is net 30, you will have 30 days to make a full payment. Ingram Micro does not allow credit card transactions for API ordering. &lt;br&gt;&lt;br&gt;[**Key differences between v6 and v7 Migration**](https://developer.ingrammicro.com/reseller/page/v6-and-v7-migration) &lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;**Quote to Order / Configure to Order:**&lt;br&gt;&lt;br&gt;If customers are planning to use Quote to Order or Configure to Order Quotes, it’s recommended to validate the quote using the “Validate Quote” endpoint before creating an order using the quote. Validate Quote endpoint will not only validate the quote but also outline all the mandatory fields required by the vendor at a header level and at the line level which a customer needs to pass to the Quote to Order endpoint request. For a detailed understanding of the “Validate Quote” endpoint, review the “Validate Quote” endpoint documentation. &lt;br&gt;&lt;br&gt; **How it works:**&lt;br&gt;&lt;br&gt;- The customer validates the quote with a quote number from the Validate Quote endpoint.&lt;br&gt;- The customer copies all the mandatory fields required by the vendor and adds them to the QTO request body.&lt;br&gt;- The customer provides all the values for Vendor mandatory fields along with other required information for QTO to create an order.&lt;br&gt;- After the order creation request receipt acknowledgment from the QTO endpoint, all further order creation updates will be provided via webhook push notification.
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
-     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems. (required)
-     * @param asyncOrderCreateDTO  (required)
-     * @param imSenderID Unique value used to identify the sender of the transaction. (optional)
-     * @return AsyncOrderCreateResponse
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param orderCreateV7Request  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
+     * @return OrderCreateV7Response201
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 200 </td><td> Confirmation response </td><td>  -  </td></tr>
+        <tr><td> 201 </td><td> Webhook Response </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public AsyncOrderCreateResponse postCreateorderV7(String imCustomerNumber, String imCountryCode, String imCorrelationID, AsyncOrderCreateDTO asyncOrderCreateDTO, String imSenderID) throws ApiException {
-        ApiResponse<AsyncOrderCreateResponse> localVarResp = postCreateorderV7WithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID);
+    public OrderCreateV7Response201 postCreateorderV7(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateV7Request orderCreateV7Request, String imSenderID) throws ApiException {
+        ApiResponse<OrderCreateV7Response201> localVarResp = postCreateorderV7WithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateV7Request, imSenderID);
         return localVarResp.getData();
     }
 
     /**
      * Create your Order v7
-     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     * The Order Create v7 allows our customers to create orders asynchronously. The customer can create either standard orders using stocked SKUs and/or create a “Quote to Order” using the existing quote which is in “Ready to Order” status, or the customer can create an order using the “Configure to order” (CTO) quote. Upon successful submission of the order create request, a confirmation message will be returned as an API response. &lt;br &gt; &lt;br &gt; Once the order is processed, Ingram Micro will notify customers via webhook using a pre-defined callback URL as an HTTP post regarding the updates related to the order. Upon successful order creation, a notification will be sent via webhook regarding the order details, in the event of any error occurring during the order creation process, an error message will be delivered via webhook. Nightly system unavailability will delay response Async response. &lt;br &gt; &lt;br &gt; The key differentiator between standard ordering and “Quote To Order” is the optional input field in the request body which is “quoteNumber”. If a customer passes the quote number in the request body, the order will be processed as a “Quote To Order” using the details from the quote. Any SKUs, quantity, or price information that are passed in the lines object within the request will be ignored in the case of “Quote To Order”.&lt;br &gt; &lt;br &gt; **Prerequisite:** Pre-defined callback URL &lt;br &gt; &lt;br &gt; **Standard ordering::**&lt;br&gt;&lt;br&gt;Ingram Micro recommends that you provide the ingramPartNumber for each SKU contained in each order. NOTE: You must have net terms to use the Ingram Micro Order Create API. Ingram Micro offers trade credit when using our APIs, and repayment is based on net terms. For example, if your net terms agreement is net 30, you will have 30 days to make a full payment. Ingram Micro does not allow credit card transactions for API ordering. &lt;br&gt;&lt;br&gt;[**Key differences between v6 and v7 Migration**](https://developer.ingrammicro.com/reseller/page/v6-and-v7-migration) &lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;**Quote to Order / Configure to Order:**&lt;br&gt;&lt;br&gt;If customers are planning to use Quote to Order or Configure to Order Quotes, it’s recommended to validate the quote using the “Validate Quote” endpoint before creating an order using the quote. Validate Quote endpoint will not only validate the quote but also outline all the mandatory fields required by the vendor at a header level and at the line level which a customer needs to pass to the Quote to Order endpoint request. For a detailed understanding of the “Validate Quote” endpoint, review the “Validate Quote” endpoint documentation. &lt;br&gt;&lt;br&gt; **How it works:**&lt;br&gt;&lt;br&gt;- The customer validates the quote with a quote number from the Validate Quote endpoint.&lt;br&gt;- The customer copies all the mandatory fields required by the vendor and adds them to the QTO request body.&lt;br&gt;- The customer provides all the values for Vendor mandatory fields along with other required information for QTO to create an order.&lt;br&gt;- After the order creation request receipt acknowledgment from the QTO endpoint, all further order creation updates will be provided via webhook push notification.
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
-     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems. (required)
-     * @param asyncOrderCreateDTO  (required)
-     * @param imSenderID Unique value used to identify the sender of the transaction. (optional)
-     * @return ApiResponse&lt;AsyncOrderCreateResponse&gt;
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param orderCreateV7Request  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
+     * @return ApiResponse&lt;OrderCreateV7Response201&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 200 </td><td> Confirmation response </td><td>  -  </td></tr>
+        <tr><td> 201 </td><td> Webhook Response </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AsyncOrderCreateResponse> postCreateorderV7WithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, AsyncOrderCreateDTO asyncOrderCreateDTO, String imSenderID) throws ApiException {
-        okhttp3.Call localVarCall = postCreateorderV7ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID, null);
-        Type localVarReturnType = new TypeToken<AsyncOrderCreateResponse>(){}.getType();
+    public ApiResponse<OrderCreateV7Response201> postCreateorderV7WithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateV7Request orderCreateV7Request, String imSenderID) throws ApiException {
+        okhttp3.Call localVarCall = postCreateorderV7ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateV7Request, imSenderID, null);
+        Type localVarReturnType = new TypeToken<OrderCreateV7Response201>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
     /**
      * Create your Order v7 (asynchronously)
-     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     * The Order Create v7 allows our customers to create orders asynchronously. The customer can create either standard orders using stocked SKUs and/or create a “Quote to Order” using the existing quote which is in “Ready to Order” status, or the customer can create an order using the “Configure to order” (CTO) quote. Upon successful submission of the order create request, a confirmation message will be returned as an API response. &lt;br &gt; &lt;br &gt; Once the order is processed, Ingram Micro will notify customers via webhook using a pre-defined callback URL as an HTTP post regarding the updates related to the order. Upon successful order creation, a notification will be sent via webhook regarding the order details, in the event of any error occurring during the order creation process, an error message will be delivered via webhook. Nightly system unavailability will delay response Async response. &lt;br &gt; &lt;br &gt; The key differentiator between standard ordering and “Quote To Order” is the optional input field in the request body which is “quoteNumber”. If a customer passes the quote number in the request body, the order will be processed as a “Quote To Order” using the details from the quote. Any SKUs, quantity, or price information that are passed in the lines object within the request will be ignored in the case of “Quote To Order”.&lt;br &gt; &lt;br &gt; **Prerequisite:** Pre-defined callback URL &lt;br &gt; &lt;br &gt; **Standard ordering::**&lt;br&gt;&lt;br&gt;Ingram Micro recommends that you provide the ingramPartNumber for each SKU contained in each order. NOTE: You must have net terms to use the Ingram Micro Order Create API. Ingram Micro offers trade credit when using our APIs, and repayment is based on net terms. For example, if your net terms agreement is net 30, you will have 30 days to make a full payment. Ingram Micro does not allow credit card transactions for API ordering. &lt;br&gt;&lt;br&gt;[**Key differences between v6 and v7 Migration**](https://developer.ingrammicro.com/reseller/page/v6-and-v7-migration) &lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;**Quote to Order / Configure to Order:**&lt;br&gt;&lt;br&gt;If customers are planning to use Quote to Order or Configure to Order Quotes, it’s recommended to validate the quote using the “Validate Quote” endpoint before creating an order using the quote. Validate Quote endpoint will not only validate the quote but also outline all the mandatory fields required by the vendor at a header level and at the line level which a customer needs to pass to the Quote to Order endpoint request. For a detailed understanding of the “Validate Quote” endpoint, review the “Validate Quote” endpoint documentation. &lt;br&gt;&lt;br&gt; **How it works:**&lt;br&gt;&lt;br&gt;- The customer validates the quote with a quote number from the Validate Quote endpoint.&lt;br&gt;- The customer copies all the mandatory fields required by the vendor and adds them to the QTO request body.&lt;br&gt;- The customer provides all the values for Vendor mandatory fields along with other required information for QTO to create an order.&lt;br&gt;- After the order creation request receipt acknowledgment from the QTO endpoint, all further order creation updates will be provided via webhook push notification.
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
-     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems. (required)
-     * @param asyncOrderCreateDTO  (required)
-     * @param imSenderID Unique value used to identify the sender of the transaction. (optional)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param orderCreateV7Request  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 200 </td><td> Confirmation response </td><td>  -  </td></tr>
+        <tr><td> 201 </td><td> Webhook Response </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postCreateorderV7Async(String imCustomerNumber, String imCountryCode, String imCorrelationID, AsyncOrderCreateDTO asyncOrderCreateDTO, String imSenderID, final ApiCallback<AsyncOrderCreateResponse> _callback) throws ApiException {
+    public okhttp3.Call postCreateorderV7Async(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateV7Request orderCreateV7Request, String imSenderID, final ApiCallback<OrderCreateV7Response201> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = postCreateorderV7ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, asyncOrderCreateDTO, imSenderID, _callback);
-        Type localVarReturnType = new TypeToken<AsyncOrderCreateResponse>(){}.getType();
+        okhttp3.Call localVarCall = postCreateorderV7ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateV7Request, imSenderID, _callback);
+        Type localVarReturnType = new TypeToken<OrderCreateV7Response201>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

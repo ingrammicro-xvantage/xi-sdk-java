@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner;
 
@@ -52,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-22T06:27:36.733892Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-28T07:33:14.592758Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityResponseInnerDiscountsInner {
   public static final String SERIALIZED_NAME_SPECIAL_PRICING = "specialPricing";
   @SerializedName(SERIALIZED_NAME_SPECIAL_PRICING)
@@ -60,7 +61,7 @@ public class PriceAndAvailabilityResponseInnerDiscountsInner {
 
   public static final String SERIALIZED_NAME_QUANTITY_DISCOUNTS = "quantityDiscounts";
   @SerializedName(SERIALIZED_NAME_QUANTITY_DISCOUNTS)
-  private List<PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner> quantityDiscounts = new ArrayList<>();
+  private List<PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner> quantityDiscounts;
 
   public PriceAndAvailabilityResponseInnerDiscountsInner() {
   }
@@ -133,9 +134,20 @@ public class PriceAndAvailabilityResponseInnerDiscountsInner {
         Objects.equals(this.quantityDiscounts, priceAndAvailabilityResponseInnerDiscountsInner.quantityDiscounts);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(specialPricing, quantityDiscounts);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override

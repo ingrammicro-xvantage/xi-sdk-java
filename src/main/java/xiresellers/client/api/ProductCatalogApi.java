@@ -28,6 +28,7 @@ import java.io.IOException;
 
 
 import xiresellers.client.model.ErrorResponse;
+import xiresellers.client.model.GetResellerV6ProductsearchPlanIDParameter;
 import xiresellers.client.model.PriceAndAvailabilityRequest;
 import xiresellers.client.model.PriceAndAvailabilityResponseInner;
 import xiresellers.client.model.ProductDetailResponse;
@@ -259,6 +260,202 @@ public class ProductCatalogApi {
         return localVarCall;
     }
     /**
+     * Build call for getResellerV6ProductdetailCmp
+     * @param imCustomerNumber Your unique Ingram Micro customer number (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems (required)
+     * @param imSenderID Sender Identification text (optional)
+     * @param vendorPartNumber Vendor’s part number for the product. (optional)
+     * @param planName Name of the subscription plan (optional)
+     * @param planId Id of the subscription plan.   &lt;span style&#x3D;&#39;color:red&#39;&gt;To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.&lt;/span&gt; (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No Content </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call getResellerV6ProductdetailCmpCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/resellers/v6/catalog/details";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        if (vendorPartNumber != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("vendorPartNumber", vendorPartNumber));
+        }
+
+        if (planName != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("planName", planName));
+        }
+
+        if (planId != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("planId", planId));
+        }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "application" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call getResellerV6ProductdetailCmpValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'imCustomerNumber' is set
+        if (imCustomerNumber == null) {
+            throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellerV6ProductdetailCmp(Async)");
+        }
+
+        // verify the required parameter 'imCountryCode' is set
+        if (imCountryCode == null) {
+            throw new ApiException("Missing the required parameter 'imCountryCode' when calling getResellerV6ProductdetailCmp(Async)");
+        }
+
+        // verify the required parameter 'imCorrelationID' is set
+        if (imCorrelationID == null) {
+            throw new ApiException("Missing the required parameter 'imCorrelationID' when calling getResellerV6ProductdetailCmp(Async)");
+        }
+
+        return getResellerV6ProductdetailCmpCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId, _callback);
+
+    }
+
+    /**
+     * Product Details
+     * Search all the product-related details using a unique Ingram Part Number.
+     * @param imCustomerNumber Your unique Ingram Micro customer number (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems (required)
+     * @param imSenderID Sender Identification text (optional)
+     * @param vendorPartNumber Vendor’s part number for the product. (optional)
+     * @param planName Name of the subscription plan (optional)
+     * @param planId Id of the subscription plan.   &lt;span style&#x3D;&#39;color:red&#39;&gt;To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.&lt;/span&gt; (optional)
+     * @return ProductDetailResponse
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No Content </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public ProductDetailResponse getResellerV6ProductdetailCmp(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId) throws ApiException {
+        ApiResponse<ProductDetailResponse> localVarResp = getResellerV6ProductdetailCmpWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId);
+        return localVarResp.getData();
+    }
+
+    /**
+     * Product Details
+     * Search all the product-related details using a unique Ingram Part Number.
+     * @param imCustomerNumber Your unique Ingram Micro customer number (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems (required)
+     * @param imSenderID Sender Identification text (optional)
+     * @param vendorPartNumber Vendor’s part number for the product. (optional)
+     * @param planName Name of the subscription plan (optional)
+     * @param planId Id of the subscription plan.   &lt;span style&#x3D;&#39;color:red&#39;&gt;To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.&lt;/span&gt; (optional)
+     * @return ApiResponse&lt;ProductDetailResponse&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No Content </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<ProductDetailResponse> getResellerV6ProductdetailCmpWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId) throws ApiException {
+        okhttp3.Call localVarCall = getResellerV6ProductdetailCmpValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId, null);
+        Type localVarReturnType = new TypeToken<ProductDetailResponse>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Product Details (asynchronously)
+     * Search all the product-related details using a unique Ingram Part Number.
+     * @param imCustomerNumber Your unique Ingram Micro customer number (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems (required)
+     * @param imSenderID Sender Identification text (optional)
+     * @param vendorPartNumber Vendor’s part number for the product. (optional)
+     * @param planName Name of the subscription plan (optional)
+     * @param planId Id of the subscription plan.   &lt;span style&#x3D;&#39;color:red&#39;&gt;To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.&lt;/span&gt; (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No Content </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call getResellerV6ProductdetailCmpAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId, final ApiCallback<ProductDetailResponse> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = getResellerV6ProductdetailCmpValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId, _callback);
+        Type localVarReturnType = new TypeToken<ProductDetailResponse>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
      * Build call for getResellerV6Productsearch
      * @param imCustomerNumber Your unique Ingram Micro customer number (required)
      * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems (required)
@@ -275,6 +472,9 @@ public class ProductCatalogApi {
      * @param keyword Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name. (optional)
      * @param category The category of the product. Example: Displays. (optional)
      * @param skipAuthorisation This parameter is True when you want Skip the authorization, so template will work like current B2b template. (optional)
+     * @param groupName Name of the Product Group (optional)
+     * @param planID ID of the plan (optional)
+     * @param showGroupInfo In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group. (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -287,7 +487,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductsearchCall(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductsearchCall(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, GetResellerV6ProductsearchPlanIDParameter planID, Boolean showGroupInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -352,6 +552,18 @@ public class ProductCatalogApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("skipAuthorisation", skipAuthorisation));
         }
 
+        if (groupName != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("groupName", groupName));
+        }
+
+        if (planID != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("planID", planID));
+        }
+
+        if (showGroupInfo != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("showGroupInfo", showGroupInfo));
+        }
+
         if (imCustomerNumber != null) {
             localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
         }
@@ -392,7 +604,7 @@ public class ProductCatalogApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellerV6ProductsearchValidateBeforeCall(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellerV6ProductsearchValidateBeforeCall(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, GetResellerV6ProductsearchPlanIDParameter planID, Boolean showGroupInfo, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellerV6Productsearch(Async)");
@@ -408,7 +620,7 @@ public class ProductCatalogApi {
             throw new ApiException("Missing the required parameter 'imCountryCode' when calling getResellerV6Productsearch(Async)");
         }
 
-        return getResellerV6ProductsearchCall(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, _callback);
+        return getResellerV6ProductsearchCall(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo, _callback);
 
     }
 
@@ -430,6 +642,9 @@ public class ProductCatalogApi {
      * @param keyword Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name. (optional)
      * @param category The category of the product. Example: Displays. (optional)
      * @param skipAuthorisation This parameter is True when you want Skip the authorization, so template will work like current B2b template. (optional)
+     * @param groupName Name of the Product Group (optional)
+     * @param planID ID of the plan (optional)
+     * @param showGroupInfo In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group. (optional)
      * @return ProductSearchResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -441,8 +656,8 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public ProductSearchResponse getResellerV6Productsearch(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation) throws ApiException {
-        ApiResponse<ProductSearchResponse> localVarResp = getResellerV6ProductsearchWithHttpInfo(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation);
+    public ProductSearchResponse getResellerV6Productsearch(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, GetResellerV6ProductsearchPlanIDParameter planID, Boolean showGroupInfo) throws ApiException {
+        ApiResponse<ProductSearchResponse> localVarResp = getResellerV6ProductsearchWithHttpInfo(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo);
         return localVarResp.getData();
     }
 
@@ -464,6 +679,9 @@ public class ProductCatalogApi {
      * @param keyword Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name. (optional)
      * @param category The category of the product. Example: Displays. (optional)
      * @param skipAuthorisation This parameter is True when you want Skip the authorization, so template will work like current B2b template. (optional)
+     * @param groupName Name of the Product Group (optional)
+     * @param planID ID of the plan (optional)
+     * @param showGroupInfo In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group. (optional)
      * @return ApiResponse&lt;ProductSearchResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -475,8 +693,8 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public ApiResponse<ProductSearchResponse> getResellerV6ProductsearchWithHttpInfo(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation) throws ApiException {
-        okhttp3.Call localVarCall = getResellerV6ProductsearchValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, null);
+    public ApiResponse<ProductSearchResponse> getResellerV6ProductsearchWithHttpInfo(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, GetResellerV6ProductsearchPlanIDParameter planID, Boolean showGroupInfo) throws ApiException {
+        okhttp3.Call localVarCall = getResellerV6ProductsearchValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo, null);
         Type localVarReturnType = new TypeToken<ProductSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -499,6 +717,9 @@ public class ProductCatalogApi {
      * @param keyword Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name. (optional)
      * @param category The category of the product. Example: Displays. (optional)
      * @param skipAuthorisation This parameter is True when you want Skip the authorization, so template will work like current B2b template. (optional)
+     * @param groupName Name of the Product Group (optional)
+     * @param planID ID of the plan (optional)
+     * @param showGroupInfo In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group. (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -511,9 +732,9 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductsearchAsync(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, final ApiCallback<ProductSearchResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductsearchAsync(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, GetResellerV6ProductsearchPlanIDParameter planID, Boolean showGroupInfo, final ApiCallback<ProductSearchResponse> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = getResellerV6ProductsearchValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, _callback);
+        okhttp3.Call localVarCall = getResellerV6ProductsearchValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo, _callback);
         Type localVarReturnType = new TypeToken<ProductSearchResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

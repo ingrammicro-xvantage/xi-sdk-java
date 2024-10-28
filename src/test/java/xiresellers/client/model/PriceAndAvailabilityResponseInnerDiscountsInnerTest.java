@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner;
 import org.junit.jupiter.api.Disabled;

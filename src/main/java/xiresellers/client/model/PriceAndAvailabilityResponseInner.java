@@ -23,11 +23,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerAvailability;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerDiscountsInner;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerPricing;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerServiceFeesInner;
+import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -55,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-22T06:27:36.733892Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-28T07:33:14.592758Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityResponseInner {
   public static final String SERIALIZED_NAME_PRODUCT_STATUS_CODE = "productStatusCode";
   @SerializedName(SERIALIZED_NAME_PRODUCT_STATUS_CODE)
@@ -147,7 +149,7 @@ public class PriceAndAvailabilityResponseInner {
 
   public static final String SERIALIZED_NAME_RESERVE_INVENTORY_DETAILS = "reserveInventoryDetails";
   @SerializedName(SERIALIZED_NAME_RESERVE_INVENTORY_DETAILS)
-  private List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails = new ArrayList<>();
+  private List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails;
 
   public static final String SERIALIZED_NAME_PRICING = "pricing";
   @SerializedName(SERIALIZED_NAME_PRICING)
@@ -155,7 +157,7 @@ public class PriceAndAvailabilityResponseInner {
 
   public static final String SERIALIZED_NAME_DISCOUNTS = "discounts";
   @SerializedName(SERIALIZED_NAME_DISCOUNTS)
-  private List<PriceAndAvailabilityResponseInnerDiscountsInner> discounts = new ArrayList<>();
+  private List<PriceAndAvailabilityResponseInnerDiscountsInner> discounts;
 
   public static final String SERIALIZED_NAME_BUNDLE_PART_INDICATOR = "bundlePartIndicator";
   @SerializedName(SERIALIZED_NAME_BUNDLE_PART_INDICATOR)
@@ -163,7 +165,11 @@ public class PriceAndAvailabilityResponseInner {
 
   public static final String SERIALIZED_NAME_SERVICE_FEES = "serviceFees";
   @SerializedName(SERIALIZED_NAME_SERVICE_FEES)
-  private List<PriceAndAvailabilityResponseInnerServiceFeesInner> serviceFees = new ArrayList<>();
+  private List<PriceAndAvailabilityResponseInnerServiceFeesInner> serviceFees;
+
+  public static final String SERIALIZED_NAME_SUBSCRIPTION_PRICE = "subscriptionPrice";
+  @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PRICE)
+  private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInner> subscriptionPrice = new ArrayList<>();
 
   public PriceAndAvailabilityResponseInner() {
   }
@@ -705,6 +711,33 @@ public class PriceAndAvailabilityResponseInner {
   }
 
 
+  public PriceAndAvailabilityResponseInner subscriptionPrice(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInner> subscriptionPrice) {
+    this.subscriptionPrice = subscriptionPrice;
+    return this;
+  }
+
+  public PriceAndAvailabilityResponseInner addSubscriptionPriceItem(PriceAndAvailabilityResponseInnerSubscriptionPriceInner subscriptionPriceItem) {
+    if (this.subscriptionPrice == null) {
+      this.subscriptionPrice = new ArrayList<>();
+    }
+    this.subscriptionPrice.add(subscriptionPriceItem);
+    return this;
+  }
+
+  /**
+   * Get subscriptionPrice
+   * @return subscriptionPrice
+   */
+  @javax.annotation.Nullable
+  public List<PriceAndAvailabilityResponseInnerSubscriptionPriceInner> getSubscriptionPrice() {
+    return subscriptionPrice;
+  }
+
+  public void setSubscriptionPrice(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInner> subscriptionPrice) {
+    this.subscriptionPrice = subscriptionPrice;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -741,12 +774,24 @@ public class PriceAndAvailabilityResponseInner {
         Objects.equals(this.pricing, priceAndAvailabilityResponseInner.pricing) &&
         Objects.equals(this.discounts, priceAndAvailabilityResponseInner.discounts) &&
         Objects.equals(this.bundlePartIndicator, priceAndAvailabilityResponseInner.bundlePartIndicator) &&
-        Objects.equals(this.serviceFees, priceAndAvailabilityResponseInner.serviceFees);
+        Objects.equals(this.serviceFees, priceAndAvailabilityResponseInner.serviceFees) &&
+        Objects.equals(this.subscriptionPrice, priceAndAvailabilityResponseInner.subscriptionPrice);
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(productStatusCode, productStatusMessage, ingramPartNumber, vendorPartNumber, extendedVendorPartNumber, customerPartNumber, upc, partNumberType, vendorNumber, vendorName, description, productClass, uom, productStatus, acceptBackOrder, productAuthorized, returnableProduct, endUserInfoRequired, govtSpecialPriceAvailable, govtProgramType, govtEndUserType, availability, reserveInventoryDetails, pricing, discounts, bundlePartIndicator, serviceFees);
+    return Objects.hash(productStatusCode, productStatusMessage, ingramPartNumber, vendorPartNumber, extendedVendorPartNumber, customerPartNumber, upc, partNumberType, vendorNumber, vendorName, description, productClass, uom, productStatus, acceptBackOrder, productAuthorized, returnableProduct, endUserInfoRequired, govtSpecialPriceAvailable, govtProgramType, govtEndUserType, availability, reserveInventoryDetails, pricing, discounts, bundlePartIndicator, serviceFees, subscriptionPrice);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -780,6 +825,7 @@ public class PriceAndAvailabilityResponseInner {
     sb.append("    discounts: ").append(toIndentedString(discounts)).append("\n");
     sb.append("    bundlePartIndicator: ").append(toIndentedString(bundlePartIndicator)).append("\n");
     sb.append("    serviceFees: ").append(toIndentedString(serviceFees)).append("\n");
+    sb.append("    subscriptionPrice: ").append(toIndentedString(subscriptionPrice)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -829,6 +875,7 @@ public class PriceAndAvailabilityResponseInner {
     openapiFields.add("discounts");
     openapiFields.add("bundlePartIndicator");
     openapiFields.add("serviceFees");
+    openapiFields.add("subscriptionPrice");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -950,6 +997,20 @@ public class PriceAndAvailabilityResponseInner {
           // validate the optional field `serviceFees` (array)
           for (int i = 0; i < jsonArrayserviceFees.size(); i++) {
             PriceAndAvailabilityResponseInnerServiceFeesInner.validateJsonElement(jsonArrayserviceFees.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("subscriptionPrice") != null && !jsonObj.get("subscriptionPrice").isJsonNull()) {
+        JsonArray jsonArraysubscriptionPrice = jsonObj.getAsJsonArray("subscriptionPrice");
+        if (jsonArraysubscriptionPrice != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("subscriptionPrice").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `subscriptionPrice` to be an array in the JSON string but got `%s`", jsonObj.get("subscriptionPrice").toString()));
+          }
+
+          // validate the optional field `subscriptionPrice` (array)
+          for (int i = 0; i < jsonArraysubscriptionPrice.size(); i++) {
+            PriceAndAvailabilityResponseInnerSubscriptionPriceInner.validateJsonElement(jsonArraysubscriptionPrice.get(i));
           };
         }
       }

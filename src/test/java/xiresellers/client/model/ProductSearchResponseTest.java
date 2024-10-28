@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.ProductSearchResponseCatalogInner;
+import xiresellers.client.model.ProductSearchResponseSubscriptionCatalogInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -70,6 +71,14 @@ public class ProductSearchResponseTest {
     @Test
     public void catalogTest() {
         // TODO: test catalog
+    }
+
+    /**
+     * Test the property 'subscriptionCatalog'
+     */
+    @Test
+    public void subscriptionCatalogTest() {
+        // TODO: test subscriptionCatalog
     }
 
     /**

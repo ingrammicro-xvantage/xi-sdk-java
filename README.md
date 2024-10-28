@@ -2,8 +2,8 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-09-22T06:27:36.733892Z[Etc/UTC]
-  - Generator version: 7.8.0
+  - Build date: 2024-10-28T07:33:14.592758Z[Etc/UTC]
+  - Generator version: 7.9.0
 
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
 
@@ -84,7 +84,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 import xiresellers.client.ApiClient;
 import xiresellers.client.ApiException;
 import xiresellers.client.Configuration;
-import xiresellers.client.models.*;
+import xiresellers.client.model.*;
 import xiresellers.client.api.AccesstokenApi;
 
 public class Example {
@@ -131,6 +131,7 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**postCreateorderV7**](docs/OrdersApi.md#postCreateorderV7) | **POST** /resellers/v7/orders | Create your Order v7
 *OrdersApi* | [**putOrdermodify**](docs/OrdersApi.md#putOrdermodify) | **PUT** /resellers/v6/orders/{orderNumber} | Modify your Order
 *ProductCatalogApi* | [**getResellerV6Productdetail**](docs/ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details
+*ProductCatalogApi* | [**getResellerV6ProductdetailCmp**](docs/ProductCatalogApi.md#getResellerV6ProductdetailCmp) | **GET** /resellers/v6/catalog/details | Product Details
 *ProductCatalogApi* | [**getResellerV6Productsearch**](docs/ProductCatalogApi.md#getResellerV6Productsearch) | **GET** /resellers/v6/catalog | Search Products
 *ProductCatalogApi* | [**postPriceandavailability**](docs/ProductCatalogApi.md#postPriceandavailability) | **POST** /resellers/v6/catalog/priceandavailability | Price and Availability
 *QuotesApi* | [**getQuotessearchV6**](docs/QuotesApi.md#getQuotessearchV6) | **GET** /resellers/v6/quotes/search | Quote Search
@@ -147,19 +148,6 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [AccesstokenResponse](docs/AccesstokenResponse.md)
- - [AsyncOrderCreateDTO](docs/AsyncOrderCreateDTO.md)
- - [AsyncOrderCreateDTOAdditionalAttributesInner](docs/AsyncOrderCreateDTOAdditionalAttributesInner.md)
- - [AsyncOrderCreateDTOEndUserInfo](docs/AsyncOrderCreateDTOEndUserInfo.md)
- - [AsyncOrderCreateDTOLinesInner](docs/AsyncOrderCreateDTOLinesInner.md)
- - [AsyncOrderCreateDTOLinesInnerEndUserInfoInner](docs/AsyncOrderCreateDTOLinesInnerEndUserInfoInner.md)
- - [AsyncOrderCreateDTOResellerInfo](docs/AsyncOrderCreateDTOResellerInfo.md)
- - [AsyncOrderCreateDTOShipToInfo](docs/AsyncOrderCreateDTOShipToInfo.md)
- - [AsyncOrderCreateDTOShipmentDetails](docs/AsyncOrderCreateDTOShipmentDetails.md)
- - [AsyncOrderCreateDTOVmfadditionalAttributesInner](docs/AsyncOrderCreateDTOVmfadditionalAttributesInner.md)
- - [AsyncOrderCreateDTOWarrantyInfoInner](docs/AsyncOrderCreateDTOWarrantyInfoInner.md)
- - [AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner](docs/AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner.md)
- - [AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner](docs/AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner.md)
- - [AsyncOrderCreateResponse](docs/AsyncOrderCreateResponse.md)
  - [AvailabilityAsyncNotificationRequest](docs/AvailabilityAsyncNotificationRequest.md)
  - [AvailabilityAsyncNotificationRequestResourceInner](docs/AvailabilityAsyncNotificationRequestResourceInner.md)
  - [AvailabilityAsyncNotificationRequestResourceInnerLinksInner](docs/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.md)
@@ -185,6 +173,7 @@ Class | Method | HTTP request | Description
  - [GetAccesstoken500Response](docs/GetAccesstoken500Response.md)
  - [GetAccesstoken500ResponseFault](docs/GetAccesstoken500ResponseFault.md)
  - [GetAccesstoken500ResponseFaultDetail](docs/GetAccesstoken500ResponseFaultDetail.md)
+ - [GetResellerV6ProductsearchPlanIDParameter](docs/GetResellerV6ProductsearchPlanIDParameter.md)
  - [GetResellerV6ValidateQuote400Response](docs/GetResellerV6ValidateQuote400Response.md)
  - [GetResellerV6ValidateQuote400ResponseFieldsInner](docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md)
  - [InvoiceDetailsv61Response](docs/InvoiceDetailsv61Response.md)
@@ -224,6 +213,26 @@ Class | Method | HTTP request | Description
  - [OrderCreateResponseOrdersInnerMiscellaneousChargesInner](docs/OrderCreateResponseOrdersInnerMiscellaneousChargesInner.md)
  - [OrderCreateResponseOrdersInnerRejectedLineItemsInner](docs/OrderCreateResponseOrdersInnerRejectedLineItemsInner.md)
  - [OrderCreateResponseShipToInfo](docs/OrderCreateResponseShipToInfo.md)
+ - [OrderCreateV7Request](docs/OrderCreateV7Request.md)
+ - [OrderCreateV7RequestAdditionalAttributesInner](docs/OrderCreateV7RequestAdditionalAttributesInner.md)
+ - [OrderCreateV7RequestEndUserInfo](docs/OrderCreateV7RequestEndUserInfo.md)
+ - [OrderCreateV7RequestLinesInner](docs/OrderCreateV7RequestLinesInner.md)
+ - [OrderCreateV7RequestLinesInnerAdditionalAttributesInner](docs/OrderCreateV7RequestLinesInnerAdditionalAttributesInner.md)
+ - [OrderCreateV7RequestLinesInnerEndUserInfoInner](docs/OrderCreateV7RequestLinesInnerEndUserInfoInner.md)
+ - [OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner](docs/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.md)
+ - [OrderCreateV7RequestLinesInnerWarrantyInfoInner](docs/OrderCreateV7RequestLinesInnerWarrantyInfoInner.md)
+ - [OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner](docs/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner.md)
+ - [OrderCreateV7RequestResellerInfo](docs/OrderCreateV7RequestResellerInfo.md)
+ - [OrderCreateV7RequestShipToInfo](docs/OrderCreateV7RequestShipToInfo.md)
+ - [OrderCreateV7RequestShipmentDetails](docs/OrderCreateV7RequestShipmentDetails.md)
+ - [OrderCreateV7RequestVmfAdditionalAttributesInner](docs/OrderCreateV7RequestVmfAdditionalAttributesInner.md)
+ - [OrderCreateV7Response](docs/OrderCreateV7Response.md)
+ - [OrderCreateV7Response201](docs/OrderCreateV7Response201.md)
+ - [OrderCreateV7ResponseResource](docs/OrderCreateV7ResponseResource.md)
+ - [OrderCreateV7ResponseResourceOrdersInner](docs/OrderCreateV7ResponseResourceOrdersInner.md)
+ - [OrderCreateV7ResponseResourceOrdersInnerLinesInner](docs/OrderCreateV7ResponseResourceOrdersInnerLinesInner.md)
+ - [OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner](docs/OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner.md)
+ - [OrderCreateV7ResponseResourceShipToInfo](docs/OrderCreateV7ResponseResourceShipToInfo.md)
  - [OrderDetailB2B](docs/OrderDetailB2B.md)
  - [OrderDetailB2BAdditionalAttributesInner](docs/OrderDetailB2BAdditionalAttributesInner.md)
  - [OrderDetailB2BBillToInfo](docs/OrderDetailB2BBillToInfo.md)
@@ -277,8 +286,11 @@ Class | Method | HTTP request | Description
  - [PriceAndAvailabilityRequest](docs/PriceAndAvailabilityRequest.md)
  - [PriceAndAvailabilityRequestAdditionalAttributesInner](docs/PriceAndAvailabilityRequestAdditionalAttributesInner.md)
  - [PriceAndAvailabilityRequestAvailabilityByWarehouseInner](docs/PriceAndAvailabilityRequestAvailabilityByWarehouseInner.md)
+ - [PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId](docs/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.md)
  - [PriceAndAvailabilityRequestProductsInner](docs/PriceAndAvailabilityRequestProductsInner.md)
  - [PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner](docs/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner.md)
+ - [PriceAndAvailabilityRequestProductsInnerPlanID](docs/PriceAndAvailabilityRequestProductsInnerPlanID.md)
+ - [PriceAndAvailabilityRequestProductsInnerQuantityRequested](docs/PriceAndAvailabilityRequestProductsInnerQuantityRequested.md)
  - [PriceAndAvailabilityResponseInner](docs/PriceAndAvailabilityResponseInner.md)
  - [PriceAndAvailabilityResponseInnerAvailability](docs/PriceAndAvailabilityResponseInnerAvailability.md)
  - [PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner](docs/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.md)
@@ -289,14 +301,33 @@ Class | Method | HTTP request | Description
  - [PriceAndAvailabilityResponseInnerPricing](docs/PriceAndAvailabilityResponseInnerPricing.md)
  - [PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner](docs/PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner.md)
  - [PriceAndAvailabilityResponseInnerServiceFeesInner](docs/PriceAndAvailabilityResponseInnerServiceFeesInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner.md)
  - [ProductDetailResponse](docs/ProductDetailResponse.md)
  - [ProductDetailResponseAdditionalInformation](docs/ProductDetailResponseAdditionalInformation.md)
  - [ProductDetailResponseAdditionalInformationProductWeightInner](docs/ProductDetailResponseAdditionalInformationProductWeightInner.md)
- - [ProductDetailResponseCiscoFields](docs/ProductDetailResponseCiscoFields.md)
- - [ProductDetailResponseIndicators](docs/ProductDetailResponseIndicators.md)
+ - [ProductDetailResponseCiscoFieldsInner](docs/ProductDetailResponseCiscoFieldsInner.md)
+ - [ProductDetailResponseIndicatorsInner](docs/ProductDetailResponseIndicatorsInner.md)
+ - [ProductDetailResponseSubscriptionDetailsInner](docs/ProductDetailResponseSubscriptionDetailsInner.md)
+ - [ProductDetailResponseSubscriptionDetailsInnerBillingPeriod](docs/ProductDetailResponseSubscriptionDetailsInnerBillingPeriod.md)
+ - [ProductDetailResponseSubscriptionDetailsInnerGroupsInner](docs/ProductDetailResponseSubscriptionDetailsInnerGroupsInner.md)
+ - [ProductDetailResponseSubscriptionDetailsInnerOptionsInner](docs/ProductDetailResponseSubscriptionDetailsInnerOptionsInner.md)
+ - [ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner](docs/ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner.md)
  - [ProductSearchResponse](docs/ProductSearchResponse.md)
  - [ProductSearchResponseCatalogInner](docs/ProductSearchResponseCatalogInner.md)
  - [ProductSearchResponseCatalogInnerLinksInner](docs/ProductSearchResponseCatalogInnerLinksInner.md)
+ - [ProductSearchResponseSubscriptionCatalogInner](docs/ProductSearchResponseSubscriptionCatalogInner.md)
+ - [ProductSearchResponseSubscriptionCatalogInnerPlansInner](docs/ProductSearchResponseSubscriptionCatalogInnerPlansInner.md)
+ - [ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner](docs/ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner.md)
+ - [ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner](docs/ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner.md)
  - [QuoteDetailsResponse](docs/QuoteDetailsResponse.md)
  - [QuoteDetailsResponseAdditionalAttributesInner](docs/QuoteDetailsResponseAdditionalAttributesInner.md)
  - [QuoteDetailsResponseEndUserInfo](docs/QuoteDetailsResponseEndUserInfo.md)

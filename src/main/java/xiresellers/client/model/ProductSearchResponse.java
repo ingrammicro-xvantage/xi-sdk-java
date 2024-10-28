@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.ProductSearchResponseCatalogInner;
+import xiresellers.client.model.ProductSearchResponseSubscriptionCatalogInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ProductSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-22T06:27:36.733892Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-28T07:33:14.592758Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ProductSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
@@ -68,6 +69,10 @@ public class ProductSearchResponse {
   public static final String SERIALIZED_NAME_CATALOG = "catalog";
   @SerializedName(SERIALIZED_NAME_CATALOG)
   private List<ProductSearchResponseCatalogInner> catalog = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_SUBSCRIPTION_CATALOG = "subscriptionCatalog";
+  @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_CATALOG)
+  private List<ProductSearchResponseSubscriptionCatalogInner> subscriptionCatalog = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT_PAGE = "nextPage";
   @SerializedName(SERIALIZED_NAME_NEXT_PAGE)
@@ -164,6 +169,33 @@ public class ProductSearchResponse {
   }
 
 
+  public ProductSearchResponse subscriptionCatalog(List<ProductSearchResponseSubscriptionCatalogInner> subscriptionCatalog) {
+    this.subscriptionCatalog = subscriptionCatalog;
+    return this;
+  }
+
+  public ProductSearchResponse addSubscriptionCatalogItem(ProductSearchResponseSubscriptionCatalogInner subscriptionCatalogItem) {
+    if (this.subscriptionCatalog == null) {
+      this.subscriptionCatalog = new ArrayList<>();
+    }
+    this.subscriptionCatalog.add(subscriptionCatalogItem);
+    return this;
+  }
+
+  /**
+   * Get subscriptionCatalog
+   * @return subscriptionCatalog
+   */
+  @javax.annotation.Nullable
+  public List<ProductSearchResponseSubscriptionCatalogInner> getSubscriptionCatalog() {
+    return subscriptionCatalog;
+  }
+
+  public void setSubscriptionCatalog(List<ProductSearchResponseSubscriptionCatalogInner> subscriptionCatalog) {
+    this.subscriptionCatalog = subscriptionCatalog;
+  }
+
+
   public ProductSearchResponse nextPage(String nextPage) {
     this.nextPage = nextPage;
     return this;
@@ -216,13 +248,14 @@ public class ProductSearchResponse {
         Objects.equals(this.pageSize, productSearchResponse.pageSize) &&
         Objects.equals(this.pageNumber, productSearchResponse.pageNumber) &&
         Objects.equals(this.catalog, productSearchResponse.catalog) &&
+        Objects.equals(this.subscriptionCatalog, productSearchResponse.subscriptionCatalog) &&
         Objects.equals(this.nextPage, productSearchResponse.nextPage) &&
         Objects.equals(this.previousPage, productSearchResponse.previousPage);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(recordsFound, pageSize, pageNumber, catalog, nextPage, previousPage);
+    return Objects.hash(recordsFound, pageSize, pageNumber, catalog, subscriptionCatalog, nextPage, previousPage);
   }
 
   @Override
@@ -233,6 +266,7 @@ public class ProductSearchResponse {
     sb.append("    pageSize: ").append(toIndentedString(pageSize)).append("\n");
     sb.append("    pageNumber: ").append(toIndentedString(pageNumber)).append("\n");
     sb.append("    catalog: ").append(toIndentedString(catalog)).append("\n");
+    sb.append("    subscriptionCatalog: ").append(toIndentedString(subscriptionCatalog)).append("\n");
     sb.append("    nextPage: ").append(toIndentedString(nextPage)).append("\n");
     sb.append("    previousPage: ").append(toIndentedString(previousPage)).append("\n");
     sb.append("}");
@@ -261,6 +295,7 @@ public class ProductSearchResponse {
     openapiFields.add("pageSize");
     openapiFields.add("pageNumber");
     openapiFields.add("catalog");
+    openapiFields.add("subscriptionCatalog");
     openapiFields.add("nextPage");
     openapiFields.add("previousPage");
 
@@ -300,6 +335,20 @@ public class ProductSearchResponse {
           // validate the optional field `catalog` (array)
           for (int i = 0; i < jsonArraycatalog.size(); i++) {
             ProductSearchResponseCatalogInner.validateJsonElement(jsonArraycatalog.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("subscriptionCatalog") != null && !jsonObj.get("subscriptionCatalog").isJsonNull()) {
+        JsonArray jsonArraysubscriptionCatalog = jsonObj.getAsJsonArray("subscriptionCatalog");
+        if (jsonArraysubscriptionCatalog != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("subscriptionCatalog").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `subscriptionCatalog` to be an array in the JSON string but got `%s`", jsonObj.get("subscriptionCatalog").toString()));
+          }
+
+          // validate the optional field `subscriptionCatalog` (array)
+          for (int i = 0; i < jsonArraysubscriptionCatalog.size(); i++) {
+            ProductSearchResponseSubscriptionCatalogInner.validateJsonElement(jsonArraysubscriptionCatalog.get(i));
           };
         }
       }

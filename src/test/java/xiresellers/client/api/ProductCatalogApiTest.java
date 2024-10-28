@@ -15,6 +15,7 @@ package xiresellers.client.api;
 
 import xiresellers.client.ApiException;
 import xiresellers.client.model.ErrorResponse;
+import xiresellers.client.model.GetResellerV6ProductsearchPlanIDParameter;
 import xiresellers.client.model.PriceAndAvailabilityRequest;
 import xiresellers.client.model.PriceAndAvailabilityResponseInner;
 import xiresellers.client.model.ProductDetailResponse;
@@ -54,6 +55,26 @@ public class ProductCatalogApiTest {
     }
 
     /**
+     * Product Details
+     *
+     * Search all the product-related details using a unique Ingram Part Number.
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void getResellerV6ProductdetailCmpTest() throws ApiException {
+        String imCustomerNumber = null;
+        String imCountryCode = null;
+        String imCorrelationID = null;
+        String imSenderID = null;
+        String vendorPartNumber = null;
+        String planName = null;
+        String planId = null;
+        ProductDetailResponse response = api.getResellerV6ProductdetailCmp(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId);
+        // TODO: test validations
+    }
+
+    /**
      * Search Products
      *
      * Search the Ingram Micro product catalog by providing any of the information in the keyword(Ingram part number / vendor part number/ product description / UPC
@@ -77,7 +98,10 @@ public class ProductCatalogApiTest {
         List<String> keyword = null;
         String category = null;
         String skipAuthorisation = null;
-        ProductSearchResponse response = api.getResellerV6Productsearch(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation);
+        String groupName = null;
+        GetResellerV6ProductsearchPlanIDParameter planID = null;
+        Boolean showGroupInfo = null;
+        ProductSearchResponse response = api.getResellerV6Productsearch(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo);
         // TODO: test validations
     }
 

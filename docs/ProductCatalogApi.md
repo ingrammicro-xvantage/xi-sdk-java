@@ -5,6 +5,7 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**getResellerV6Productdetail**](ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details |
+| [**getResellerV6ProductdetailCmp**](ProductCatalogApi.md#getResellerV6ProductdetailCmp) | **GET** /resellers/v6/catalog/details | Product Details |
 | [**getResellerV6Productsearch**](ProductCatalogApi.md#getResellerV6Productsearch) | **GET** /resellers/v6/catalog | Search Products |
 | [**postPriceandavailability**](ProductCatalogApi.md#postPriceandavailability) | **POST** /resellers/v6/catalog/priceandavailability | Price and Availability |
 
@@ -87,9 +88,91 @@ public class Example {
 | **404** | No Content |  -  |
 | **500** | Internal Server Error |  -  |
 
+<a id="getResellerV6ProductdetailCmp"></a>
+# **getResellerV6ProductdetailCmp**
+> ProductDetailResponse getResellerV6ProductdetailCmp(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId)
+
+Product Details
+
+Search all the product-related details using a unique Ingram Part Number.
+
+### Example
+```java
+// Import classes:
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.ProductCatalogApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
+    
+    // Configure OAuth2 access token for authorization: application
+    OAuth application = (OAuth) defaultClient.getAuthentication("application");
+    application.setAccessToken("YOUR ACCESS TOKEN");
+
+    ProductCatalogApi apiInstance = new ProductCatalogApi(defaultClient);
+    String imCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number
+    String imCountryCode = "US"; // String | Two-character ISO country code.
+    String imCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems
+    String imSenderID = "MyCompany"; // String | Sender Identification text
+    String vendorPartNumber = "vendorPartNumber_example"; // String | Vendor’s part number for the product.
+    String planName = "planName_example"; // String | Name of the subscription plan
+    String planId = "planId_example"; // String | Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
+    try {
+      ProductDetailResponse result = apiInstance.getResellerV6ProductdetailCmp(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling ProductCatalogApi#getResellerV6ProductdetailCmp");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **imCustomerNumber** | **String**| Your unique Ingram Micro customer number | |
+| **imCountryCode** | **String**| Two-character ISO country code. | |
+| **imCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems | |
+| **imSenderID** | **String**| Sender Identification text | [optional] |
+| **vendorPartNumber** | **String**| Vendor’s part number for the product. | [optional] |
+| **planName** | **String**| Name of the subscription plan | [optional] |
+| **planId** | **String**| Id of the subscription plan.   &lt;span style&#x3D;&#39;color:red&#39;&gt;To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.&lt;/span&gt; | [optional] |
+
+### Return type
+
+[**ProductDetailResponse**](ProductDetailResponse.md)
+
+### Authorization
+
+[application](../README.md#application)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+| **400** | Bad Request |  -  |
+| **404** | No Content |  -  |
+| **500** | Internal Server Error |  -  |
+
 <a id="getResellerV6Productsearch"></a>
 # **getResellerV6Productsearch**
-> ProductSearchResponse getResellerV6Productsearch(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation)
+> ProductSearchResponse getResellerV6Productsearch(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo)
 
 Search Products
 
@@ -130,8 +213,11 @@ public class Example {
     List<String> keyword = Arrays.asList(); // List<String> | Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name.
     String category = "Accessories"; // String | The category of the product. Example: Displays.
     String skipAuthorisation = "true"; // String | This parameter is True when you want Skip the authorization, so template will work like current B2b template.
+    String groupName = "Microsoft Defender for Endpoint P2 (NCE COM MTH)"; // String | Name of the Product Group
+    GetResellerV6ProductsearchPlanIDParameter planID = new GetResellerV6ProductsearchPlanIDParameter(); // GetResellerV6ProductsearchPlanIDParameter | ID of the plan
+    Boolean showGroupInfo = true; // Boolean | In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group.
     try {
-      ProductSearchResponse result = apiInstance.getResellerV6Productsearch(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation);
+      ProductSearchResponse result = apiInstance.getResellerV6Productsearch(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ProductCatalogApi#getResellerV6Productsearch");
@@ -163,6 +249,9 @@ public class Example {
 | **keyword** | [**List&lt;String&gt;**](String.md)| Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name. | [optional] |
 | **category** | **String**| The category of the product. Example: Displays. | [optional] |
 | **skipAuthorisation** | **String**| This parameter is True when you want Skip the authorization, so template will work like current B2b template. | [optional] |
+| **groupName** | **String**| Name of the Product Group | [optional] |
+| **planID** | [**GetResellerV6ProductsearchPlanIDParameter**](.md)| ID of the plan | [optional] |
+| **showGroupInfo** | **Boolean**| In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group. | [optional] |
 
 ### Return type
 

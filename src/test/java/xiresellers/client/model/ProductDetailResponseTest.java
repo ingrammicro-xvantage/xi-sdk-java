@@ -23,8 +23,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.ProductDetailResponseAdditionalInformation;
-import xiresellers.client.model.ProductDetailResponseCiscoFields;
-import xiresellers.client.model.ProductDetailResponseIndicators;
+import xiresellers.client.model.ProductDetailResponseCiscoFieldsInner;
+import xiresellers.client.model.ProductDetailResponseIndicatorsInner;
+import xiresellers.client.model.ProductDetailResponseSubscriptionDetailsInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -56,14 +57,6 @@ public class ProductDetailResponseTest {
     @Test
     public void vendorPartNumberTest() {
         // TODO: test vendorPartNumber
-    }
-
-    /**
-     * Test the property 'customerPartNumber'
-     */
-    @Test
-    public void customerPartNumberTest() {
-        // TODO: test customerPartNumber
     }
 
     /**
@@ -99,11 +92,11 @@ public class ProductDetailResponseTest {
     }
 
     /**
-     * Test the property 'productSubCategory'
+     * Test the property 'productSubcategory'
      */
     @Test
-    public void productSubCategoryTest() {
-        // TODO: test productSubCategory
+    public void productSubcategoryTest() {
+        // TODO: test productSubcategory
     }
 
     /**
@@ -139,6 +132,14 @@ public class ProductDetailResponseTest {
     }
 
     /**
+     * Test the property 'customerPartNumber'
+     */
+    @Test
+    public void customerPartNumberTest() {
+        // TODO: test customerPartNumber
+    }
+
+    /**
      * Test the property 'indicators'
      */
     @Test
@@ -168,6 +169,14 @@ public class ProductDetailResponseTest {
     @Test
     public void additionalInformationTest() {
         // TODO: test additionalInformation
+    }
+
+    /**
+     * Test the property 'subscriptionDetails'
+     */
+    @Test
+    public void subscriptionDetailsTest() {
+        // TODO: test subscriptionDetails
     }
 
 }

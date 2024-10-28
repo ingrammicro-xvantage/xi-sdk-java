@@ -23,7 +23,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner;
+import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerPlanID;
+import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerQuantityRequested;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequestProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-22T06:27:36.733892Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-28T07:33:14.592758Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityRequestProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -71,7 +74,11 @@ public class PriceAndAvailabilityRequestProductsInner {
 
   public static final String SERIALIZED_NAME_QUANTITY_REQUESTED = "quantityRequested";
   @SerializedName(SERIALIZED_NAME_QUANTITY_REQUESTED)
-  private String quantityRequested;
+  private PriceAndAvailabilityRequestProductsInnerQuantityRequested quantityRequested;
+
+  public static final String SERIALIZED_NAME_PLAN_I_D = "planID";
+  @SerializedName(SERIALIZED_NAME_PLAN_I_D)
+  private PriceAndAvailabilityRequestProductsInnerPlanID planID;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
@@ -156,22 +163,41 @@ public class PriceAndAvailabilityRequestProductsInner {
   }
 
 
-  public PriceAndAvailabilityRequestProductsInner quantityRequested(String quantityRequested) {
+  public PriceAndAvailabilityRequestProductsInner quantityRequested(PriceAndAvailabilityRequestProductsInnerQuantityRequested quantityRequested) {
     this.quantityRequested = quantityRequested;
     return this;
   }
 
   /**
-   * Number of quantity of the Product.
+   * Get quantityRequested
    * @return quantityRequested
    */
   @javax.annotation.Nullable
-  public String getQuantityRequested() {
+  public PriceAndAvailabilityRequestProductsInnerQuantityRequested getQuantityRequested() {
     return quantityRequested;
   }
 
-  public void setQuantityRequested(String quantityRequested) {
+  public void setQuantityRequested(PriceAndAvailabilityRequestProductsInnerQuantityRequested quantityRequested) {
     this.quantityRequested = quantityRequested;
+  }
+
+
+  public PriceAndAvailabilityRequestProductsInner planID(PriceAndAvailabilityRequestProductsInnerPlanID planID) {
+    this.planID = planID;
+    return this;
+  }
+
+  /**
+   * Get planID
+   * @return planID
+   */
+  @javax.annotation.Nullable
+  public PriceAndAvailabilityRequestProductsInnerPlanID getPlanID() {
+    return planID;
+  }
+
+  public void setPlanID(PriceAndAvailabilityRequestProductsInnerPlanID planID) {
+    this.planID = planID;
   }
 
 
@@ -217,12 +243,24 @@ public class PriceAndAvailabilityRequestProductsInner {
         Objects.equals(this.customerPartNumber, priceAndAvailabilityRequestProductsInner.customerPartNumber) &&
         Objects.equals(this.upc, priceAndAvailabilityRequestProductsInner.upc) &&
         Objects.equals(this.quantityRequested, priceAndAvailabilityRequestProductsInner.quantityRequested) &&
+        Objects.equals(this.planID, priceAndAvailabilityRequestProductsInner.planID) &&
         Objects.equals(this.additionalAttributes, priceAndAvailabilityRequestProductsInner.additionalAttributes);
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(ingramPartNumber, vendorPartNumber, customerPartNumber, upc, quantityRequested, additionalAttributes);
+    return Objects.hash(ingramPartNumber, vendorPartNumber, customerPartNumber, upc, quantityRequested, planID, additionalAttributes);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -234,6 +272,7 @@ public class PriceAndAvailabilityRequestProductsInner {
     sb.append("    customerPartNumber: ").append(toIndentedString(customerPartNumber)).append("\n");
     sb.append("    upc: ").append(toIndentedString(upc)).append("\n");
     sb.append("    quantityRequested: ").append(toIndentedString(quantityRequested)).append("\n");
+    sb.append("    planID: ").append(toIndentedString(planID)).append("\n");
     sb.append("    additionalAttributes: ").append(toIndentedString(additionalAttributes)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -262,6 +301,7 @@ public class PriceAndAvailabilityRequestProductsInner {
     openapiFields.add("customerPartNumber");
     openapiFields.add("upc");
     openapiFields.add("quantityRequested");
+    openapiFields.add("planID");
     openapiFields.add("additionalAttributes");
 
     // a set of required properties/fields (JSON key names)
@@ -301,8 +341,13 @@ public class PriceAndAvailabilityRequestProductsInner {
       if ((jsonObj.get("upc") != null && !jsonObj.get("upc").isJsonNull()) && !jsonObj.get("upc").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `upc` to be a primitive type in the JSON string but got `%s`", jsonObj.get("upc").toString()));
       }
-      if ((jsonObj.get("quantityRequested") != null && !jsonObj.get("quantityRequested").isJsonNull()) && !jsonObj.get("quantityRequested").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `quantityRequested` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quantityRequested").toString()));
+      // validate the optional field `quantityRequested`
+      if (jsonObj.get("quantityRequested") != null && !jsonObj.get("quantityRequested").isJsonNull()) {
+        PriceAndAvailabilityRequestProductsInnerQuantityRequested.validateJsonElement(jsonObj.get("quantityRequested"));
+      }
+      // validate the optional field `planID`
+      if (jsonObj.get("planID") != null && !jsonObj.get("planID").isJsonNull()) {
+        PriceAndAvailabilityRequestProductsInnerPlanID.validateJsonElement(jsonObj.get("planID"));
       }
       if (jsonObj.get("additionalAttributes") != null && !jsonObj.get("additionalAttributes").isJsonNull()) {
         JsonArray jsonArrayadditionalAttributes = jsonObj.getAsJsonArray("additionalAttributes");
