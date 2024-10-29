@@ -82,11 +82,8 @@ public class ProductCatalogApi {
      * @param ingramPartNumber Ingram Micro unique part number for the product (required)
      * @param imCustomerNumber Your unique Ingram Micro customer number (required)
      * @param imCountryCode Two-character ISO country code. (required)
-     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems (required)
      * @param imSenderID Sender Identification text (optional)
-     * @param vendorPartNumber Vendor’s part number for the product. (optional)
-     * @param planName Name of the subscription plan (optional)
-     * @param planId Id of the subscription plan.   &lt;span style&#x3D;&#39;color:red&#39;&gt;To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.&lt;/span&gt; (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -99,7 +96,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductdetailCall(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductdetailCall(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -118,6 +115,189 @@ public class ProductCatalogApi {
         // create path and map variables
         String localVarPath = "/resellers/v6/catalog/details/{ingramPartNumber}"
             .replace("{" + "ingramPartNumber" + "}", localVarApiClient.escapeString(ingramPartNumber.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "application" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call getResellerV6ProductdetailValidateBeforeCall(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'ingramPartNumber' is set
+        if (ingramPartNumber == null) {
+            throw new ApiException("Missing the required parameter 'ingramPartNumber' when calling getResellerV6Productdetail(Async)");
+        }
+
+        // verify the required parameter 'imCustomerNumber' is set
+        if (imCustomerNumber == null) {
+            throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellerV6Productdetail(Async)");
+        }
+
+        // verify the required parameter 'imCountryCode' is set
+        if (imCountryCode == null) {
+            throw new ApiException("Missing the required parameter 'imCountryCode' when calling getResellerV6Productdetail(Async)");
+        }
+
+        // verify the required parameter 'imCorrelationID' is set
+        if (imCorrelationID == null) {
+            throw new ApiException("Missing the required parameter 'imCorrelationID' when calling getResellerV6Productdetail(Async)");
+        }
+
+        return getResellerV6ProductdetailCall(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, _callback);
+
+    }
+
+    /**
+     * Product Details
+     * Search all the product-related details using a unique Ingram Part Number. Currently, this API is available in the USA, India, and Netherlands.
+     * @param ingramPartNumber Ingram Micro unique part number for the product (required)
+     * @param imCustomerNumber Your unique Ingram Micro customer number (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems (required)
+     * @param imSenderID Sender Identification text (optional)
+     * @return ProductDetailResponse
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No Content </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public ProductDetailResponse getResellerV6Productdetail(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID) throws ApiException {
+        ApiResponse<ProductDetailResponse> localVarResp = getResellerV6ProductdetailWithHttpInfo(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID);
+        return localVarResp.getData();
+    }
+
+    /**
+     * Product Details
+     * Search all the product-related details using a unique Ingram Part Number. Currently, this API is available in the USA, India, and Netherlands.
+     * @param ingramPartNumber Ingram Micro unique part number for the product (required)
+     * @param imCustomerNumber Your unique Ingram Micro customer number (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems (required)
+     * @param imSenderID Sender Identification text (optional)
+     * @return ApiResponse&lt;ProductDetailResponse&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No Content </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<ProductDetailResponse> getResellerV6ProductdetailWithHttpInfo(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID) throws ApiException {
+        okhttp3.Call localVarCall = getResellerV6ProductdetailValidateBeforeCall(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, null);
+        Type localVarReturnType = new TypeToken<ProductDetailResponse>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Product Details (asynchronously)
+     * Search all the product-related details using a unique Ingram Part Number. Currently, this API is available in the USA, India, and Netherlands.
+     * @param ingramPartNumber Ingram Micro unique part number for the product (required)
+     * @param imCustomerNumber Your unique Ingram Micro customer number (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction accross all the systems (required)
+     * @param imSenderID Sender Identification text (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No Content </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call getResellerV6ProductdetailAsync(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, final ApiCallback<ProductDetailResponse> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = getResellerV6ProductdetailValidateBeforeCall(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, _callback);
+        Type localVarReturnType = new TypeToken<ProductDetailResponse>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for getResellerV6ProductdetailCmp
+     * @param imCustomerNumber Your unique Ingram Micro customer number (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems (required)
+     * @param imSenderID Sender Identification text (optional)
+     * @param vendorPartNumber Vendor’s part number for the product. (optional)
+     * @param planName Name of the subscription plan (optional)
+     * @param planId Id of the subscription plan.   &lt;span style&#x3D;&#39;color:red&#39;&gt;To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.&lt;/span&gt; (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> No Content </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call getResellerV6ProductdetailCmpCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/resellers/v6/catalog/details";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -173,35 +353,29 @@ public class ProductCatalogApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellerV6ProductdetailValidateBeforeCall(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId, final ApiCallback _callback) throws ApiException {
-        // verify the required parameter 'ingramPartNumber' is set
-        if (ingramPartNumber == null) {
-            throw new ApiException("Missing the required parameter 'ingramPartNumber' when calling getResellerV6Productdetail(Async)");
-        }
-
+    private okhttp3.Call getResellerV6ProductdetailCmpValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
-            throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellerV6Productdetail(Async)");
+            throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellerV6ProductdetailCmp(Async)");
         }
 
         // verify the required parameter 'imCountryCode' is set
         if (imCountryCode == null) {
-            throw new ApiException("Missing the required parameter 'imCountryCode' when calling getResellerV6Productdetail(Async)");
+            throw new ApiException("Missing the required parameter 'imCountryCode' when calling getResellerV6ProductdetailCmp(Async)");
         }
 
         // verify the required parameter 'imCorrelationID' is set
         if (imCorrelationID == null) {
-            throw new ApiException("Missing the required parameter 'imCorrelationID' when calling getResellerV6Productdetail(Async)");
+            throw new ApiException("Missing the required parameter 'imCorrelationID' when calling getResellerV6ProductdetailCmp(Async)");
         }
 
-        return getResellerV6ProductdetailCall(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId, _callback);
+        return getResellerV6ProductdetailCmpCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId, _callback);
 
     }
 
     /**
      * Product Details
-     * Search all the product-related details using a unique Ingram Part Number. Currently, this API is available in the USA, India, and Netherlands.
-     * @param ingramPartNumber Ingram Micro unique part number for the product (required)
+     * Search all the product-related details using a unique Ingram Part Number.
      * @param imCustomerNumber Your unique Ingram Micro customer number (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems (required)
@@ -220,15 +394,14 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProductDetailResponse getResellerV6Productdetail(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId) throws ApiException {
-        ApiResponse<ProductDetailResponse> localVarResp = getResellerV6ProductdetailWithHttpInfo(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId);
+    public ProductDetailResponse getResellerV6ProductdetailCmp(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId) throws ApiException {
+        ApiResponse<ProductDetailResponse> localVarResp = getResellerV6ProductdetailCmpWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId);
         return localVarResp.getData();
     }
 
     /**
      * Product Details
-     * Search all the product-related details using a unique Ingram Part Number. Currently, this API is available in the USA, India, and Netherlands.
-     * @param ingramPartNumber Ingram Micro unique part number for the product (required)
+     * Search all the product-related details using a unique Ingram Part Number.
      * @param imCustomerNumber Your unique Ingram Micro customer number (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems (required)
@@ -247,16 +420,15 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProductDetailResponse> getResellerV6ProductdetailWithHttpInfo(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId) throws ApiException {
-        okhttp3.Call localVarCall = getResellerV6ProductdetailValidateBeforeCall(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId, null);
+    public ApiResponse<ProductDetailResponse> getResellerV6ProductdetailCmpWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId) throws ApiException {
+        okhttp3.Call localVarCall = getResellerV6ProductdetailCmpValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId, null);
         Type localVarReturnType = new TypeToken<ProductDetailResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
     /**
      * Product Details (asynchronously)
-     * Search all the product-related details using a unique Ingram Part Number. Currently, this API is available in the USA, India, and Netherlands.
-     * @param ingramPartNumber Ingram Micro unique part number for the product (required)
+     * Search all the product-related details using a unique Ingram Part Number.
      * @param imCustomerNumber Your unique Ingram Micro customer number (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems (required)
@@ -276,9 +448,9 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductdetailAsync(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId, final ApiCallback<ProductDetailResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductdetailCmpAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String vendorPartNumber, String planName, String planId, final ApiCallback<ProductDetailResponse> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = getResellerV6ProductdetailValidateBeforeCall(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId, _callback);
+        okhttp3.Call localVarCall = getResellerV6ProductdetailCmpValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId, _callback);
         Type localVarReturnType = new TypeToken<ProductDetailResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

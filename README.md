@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-10-29T04:33:02.050337Z[Etc/UTC]
+  - Build date: 2024-10-29T04:46:41.573902Z[Etc/UTC]
   - Generator version: 7.9.0
 
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
@@ -131,6 +131,7 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**postCreateorderV7**](docs/OrdersApi.md#postCreateorderV7) | **POST** /resellers/v7/orders | Create your Order v7
 *OrdersApi* | [**putOrdermodify**](docs/OrdersApi.md#putOrdermodify) | **PUT** /resellers/v6/orders/{orderNumber} | Modify your Order
 *ProductCatalogApi* | [**getResellerV6Productdetail**](docs/ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details
+*ProductCatalogApi* | [**getResellerV6ProductdetailCmp**](docs/ProductCatalogApi.md#getResellerV6ProductdetailCmp) | **GET** /resellers/v6/catalog/details | Product Details
 *ProductCatalogApi* | [**getResellerV6Productsearch**](docs/ProductCatalogApi.md#getResellerV6Productsearch) | **GET** /resellers/v6/catalog | Search Products
 *ProductCatalogApi* | [**postPriceandavailability**](docs/ProductCatalogApi.md#postPriceandavailability) | **POST** /resellers/v6/catalog/priceandavailability | Price and Availability
 *QuotesApi* | [**getQuotessearchV6**](docs/QuotesApi.md#getQuotessearchV6) | **GET** /resellers/v6/quotes/search | Quote Search

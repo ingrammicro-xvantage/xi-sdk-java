@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummary
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-29T04:33:02.050337Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-29T04:46:41.573902Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class InvoiceDetailsv61ResponseSummary {
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
