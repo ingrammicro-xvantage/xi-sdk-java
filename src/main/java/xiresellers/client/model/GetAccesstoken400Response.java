@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * GetAccesstoken400Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-28T07:33:14.592758Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-29T04:33:02.050337Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class GetAccesstoken400Response {
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)

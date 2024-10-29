@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsCreateRequestListInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-28T07:33:14.592758Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-29T04:33:02.050337Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ReturnsCreateRequestListInner {
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
