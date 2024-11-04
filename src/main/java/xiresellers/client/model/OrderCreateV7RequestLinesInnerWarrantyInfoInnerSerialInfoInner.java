@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * Serial information of the hardware to be associated with the warranty, applicable on post sale orders.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-29T04:46:41.573902Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-04T05:16:26.828393Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner {
   public static final String SERIALIZED_NAME_DATE_OF_PURCHASE = "dateOfPurchase";
   @SerializedName(SERIALIZED_NAME_DATE_OF_PURCHASE)

@@ -803,9 +803,8 @@ paths:
       - application/json
   /resellers/v6/catalog/details:
     get:
-      description: Search all the product-related details using a unique Ingram Part
-        Number.
-      operationId: get-reseller-v6-productdetail-cmp
+      description: Search all the product-related details.
+      operationId: get-reseller-v6-productdetailcmp
       parameters:
       - description: Your unique Ingram Micro customer number
         explode: false
@@ -849,14 +848,6 @@ paths:
           maxLength: 32
           type: string
         style: simple
-      - description: Vendor’s part number for the product.
-        explode: true
-        in: query
-        name: vendorPartNumber
-        required: false
-        schema:
-          type: string
-        style: form
       - description: Name of the subscription plan
         explode: true
         in: query
@@ -872,6 +863,14 @@ paths:
         explode: true
         in: query
         name: planId
+        required: false
+        schema:
+          type: string
+        style: form
+      - description: Vendor’s part number for the product.
+        explode: true
+        in: query
+        name: vendorPartNumber
         required: false
         schema:
           type: string

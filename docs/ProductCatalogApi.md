@@ -5,7 +5,7 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**getResellerV6Productdetail**](ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details |
-| [**getResellerV6ProductdetailCmp**](ProductCatalogApi.md#getResellerV6ProductdetailCmp) | **GET** /resellers/v6/catalog/details | Product Details |
+| [**getResellerV6Productdetailcmp**](ProductCatalogApi.md#getResellerV6Productdetailcmp) | **GET** /resellers/v6/catalog/details | Product Details |
 | [**getResellerV6Productsearch**](ProductCatalogApi.md#getResellerV6Productsearch) | **GET** /resellers/v6/catalog | Search Products |
 | [**postPriceandavailability**](ProductCatalogApi.md#postPriceandavailability) | **POST** /resellers/v6/catalog/priceandavailability | Price and Availability |
 
@@ -88,13 +88,13 @@ public class Example {
 | **404** | No Content |  -  |
 | **500** | Internal Server Error |  -  |
 
-<a id="getResellerV6ProductdetailCmp"></a>
-# **getResellerV6ProductdetailCmp**
-> ProductDetailResponse getResellerV6ProductdetailCmp(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId)
+<a id="getResellerV6Productdetailcmp"></a>
+# **getResellerV6Productdetailcmp**
+> ProductDetailResponse getResellerV6Productdetailcmp(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, planName, planId, vendorPartNumber)
 
 Product Details
 
-Search all the product-related details using a unique Ingram Part Number.
+Search all the product-related details.
 
 ### Example
 ```java
@@ -120,14 +120,14 @@ public class Example {
     String imCountryCode = "US"; // String | Two-character ISO country code.
     String imCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems
     String imSenderID = "MyCompany"; // String | Sender Identification text
-    String vendorPartNumber = "vendorPartNumber_example"; // String | Vendor’s part number for the product.
     String planName = "planName_example"; // String | Name of the subscription plan
     String planId = "planId_example"; // String | Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
+    String vendorPartNumber = "vendorPartNumber_example"; // String | Vendor’s part number for the product.
     try {
-      ProductDetailResponse result = apiInstance.getResellerV6ProductdetailCmp(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId);
+      ProductDetailResponse result = apiInstance.getResellerV6Productdetailcmp(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, planName, planId, vendorPartNumber);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling ProductCatalogApi#getResellerV6ProductdetailCmp");
+      System.err.println("Exception when calling ProductCatalogApi#getResellerV6Productdetailcmp");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -145,9 +145,9 @@ public class Example {
 | **imCountryCode** | **String**| Two-character ISO country code. | |
 | **imCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems | |
 | **imSenderID** | **String**| Sender Identification text | [optional] |
-| **vendorPartNumber** | **String**| Vendor’s part number for the product. | [optional] |
 | **planName** | **String**| Name of the subscription plan | [optional] |
 | **planId** | **String**| Id of the subscription plan.   &lt;span style&#x3D;&#39;color:red&#39;&gt;To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.&lt;/span&gt; | [optional] |
+| **vendorPartNumber** | **String**| Vendor’s part number for the product. | [optional] |
 
 ### Return type
 

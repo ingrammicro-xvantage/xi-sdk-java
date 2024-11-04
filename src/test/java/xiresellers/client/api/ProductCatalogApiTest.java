@@ -57,20 +57,20 @@ public class ProductCatalogApiTest {
     /**
      * Product Details
      *
-     * Search all the product-related details using a unique Ingram Part Number.
+     * Search all the product-related details.
      *
      * @throws ApiException if the Api call fails
      */
     @Test
-    public void getResellerV6ProductdetailCmpTest() throws ApiException {
+    public void getResellerV6ProductdetailcmpTest() throws ApiException {
         String imCustomerNumber = null;
         String imCountryCode = null;
         String imCorrelationID = null;
         String imSenderID = null;
-        String vendorPartNumber = null;
         String planName = null;
         String planId = null;
-        ProductDetailResponse response = api.getResellerV6ProductdetailCmp(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, vendorPartNumber, planName, planId);
+        String vendorPartNumber = null;
+        ProductDetailResponse response = api.getResellerV6Productdetailcmp(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, planName, planId, vendorPartNumber);
         // TODO: test validations
     }
 
