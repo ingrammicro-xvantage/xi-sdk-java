@@ -260,8 +260,8 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.ProductDetailResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.ProductDetailResponseAdditionalInformation.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.ProductDetailResponseAdditionalInformationProductWeightInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.ProductDetailResponseCiscoFieldsInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.ProductDetailResponseIndicatorsInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.ProductDetailResponseCiscoFields.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.ProductDetailResponseIndicators.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.ProductDetailResponseSubscriptionDetailsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.ProductDetailResponseSubscriptionDetailsInnerBillingPeriod.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.ProductDetailResponseSubscriptionDetailsInnerGroupsInner.CustomTypeAdapterFactory());

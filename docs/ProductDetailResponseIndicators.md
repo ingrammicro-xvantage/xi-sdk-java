@@ -1,6 +1,6 @@
 
 
-# ProductDetailResponseIndicatorsInner
+# ProductDetailResponseIndicators
 
 
 ## Properties

@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-11-04T05:16:26.828393Z[Etc/UTC]
+  - Build date: 2024-11-04T09:04:53.013432Z[Etc/UTC]
   - Generator version: 7.9.0
 
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
@@ -314,8 +314,8 @@ Class | Method | HTTP request | Description
  - [ProductDetailResponse](docs/ProductDetailResponse.md)
  - [ProductDetailResponseAdditionalInformation](docs/ProductDetailResponseAdditionalInformation.md)
  - [ProductDetailResponseAdditionalInformationProductWeightInner](docs/ProductDetailResponseAdditionalInformationProductWeightInner.md)
- - [ProductDetailResponseCiscoFieldsInner](docs/ProductDetailResponseCiscoFieldsInner.md)
- - [ProductDetailResponseIndicatorsInner](docs/ProductDetailResponseIndicatorsInner.md)
+ - [ProductDetailResponseCiscoFields](docs/ProductDetailResponseCiscoFields.md)
+ - [ProductDetailResponseIndicators](docs/ProductDetailResponseIndicators.md)
  - [ProductDetailResponseSubscriptionDetailsInner](docs/ProductDetailResponseSubscriptionDetailsInner.md)
  - [ProductDetailResponseSubscriptionDetailsInnerBillingPeriod](docs/ProductDetailResponseSubscriptionDetailsInnerBillingPeriod.md)
  - [ProductDetailResponseSubscriptionDetailsInnerGroupsInner](docs/ProductDetailResponseSubscriptionDetailsInnerGroupsInner.md)

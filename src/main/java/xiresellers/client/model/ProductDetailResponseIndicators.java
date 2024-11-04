@@ -46,10 +46,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * ProductDetailResponseIndicatorsInner
+ * ProductDetailResponseIndicators
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-04T05:16:26.828393Z[Etc/UTC]", comments = "Generator version: 7.9.0")
-public class ProductDetailResponseIndicatorsInner {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-04T09:04:53.013432Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+public class ProductDetailResponseIndicators {
   public static final String SERIALIZED_NAME_HAS_WARRANTY = "hasWarranty";
   @SerializedName(SERIALIZED_NAME_HAS_WARRANTY)
   private Boolean hasWarranty;
@@ -174,10 +174,10 @@ public class ProductDetailResponseIndicatorsInner {
   @SerializedName(SERIALIZED_NAME_IS_CONFIGURABLE)
   private Boolean isConfigurable;
 
-  public ProductDetailResponseIndicatorsInner() {
+  public ProductDetailResponseIndicators() {
   }
 
-  public ProductDetailResponseIndicatorsInner hasWarranty(Boolean hasWarranty) {
+  public ProductDetailResponseIndicators hasWarranty(Boolean hasWarranty) {
     this.hasWarranty = hasWarranty;
     return this;
   }
@@ -196,7 +196,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isNewProduct(Boolean isNewProduct) {
+  public ProductDetailResponseIndicators isNewProduct(Boolean isNewProduct) {
     this.isNewProduct = isNewProduct;
     return this;
   }
@@ -215,7 +215,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner hasReturnLimits(Boolean hasReturnLimits) {
+  public ProductDetailResponseIndicators hasReturnLimits(Boolean hasReturnLimits) {
     this.hasReturnLimits = hasReturnLimits;
     return this;
   }
@@ -234,7 +234,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isBackOrderAllowed(Boolean isBackOrderAllowed) {
+  public ProductDetailResponseIndicators isBackOrderAllowed(Boolean isBackOrderAllowed) {
     this.isBackOrderAllowed = isBackOrderAllowed;
     return this;
   }
@@ -253,7 +253,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isShippedFromPartner(Boolean isShippedFromPartner) {
+  public ProductDetailResponseIndicators isShippedFromPartner(Boolean isShippedFromPartner) {
     this.isShippedFromPartner = isShippedFromPartner;
     return this;
   }
@@ -272,7 +272,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isReplacementProduct(Boolean isReplacementProduct) {
+  public ProductDetailResponseIndicators isReplacementProduct(Boolean isReplacementProduct) {
     this.isReplacementProduct = isReplacementProduct;
     return this;
   }
@@ -291,7 +291,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isDirectship(Boolean isDirectship) {
+  public ProductDetailResponseIndicators isDirectship(Boolean isDirectship) {
     this.isDirectship = isDirectship;
     return this;
   }
@@ -310,7 +310,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isDownloadable(Boolean isDownloadable) {
+  public ProductDetailResponseIndicators isDownloadable(Boolean isDownloadable) {
     this.isDownloadable = isDownloadable;
     return this;
   }
@@ -329,7 +329,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isDigitalType(Boolean isDigitalType) {
+  public ProductDetailResponseIndicators isDigitalType(Boolean isDigitalType) {
     this.isDigitalType = isDigitalType;
     return this;
   }
@@ -348,7 +348,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner skuType(String skuType) {
+  public ProductDetailResponseIndicators skuType(String skuType) {
     this.skuType = skuType;
     return this;
   }
@@ -367,7 +367,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner hasStdSpecialPrice(Boolean hasStdSpecialPrice) {
+  public ProductDetailResponseIndicators hasStdSpecialPrice(Boolean hasStdSpecialPrice) {
     this.hasStdSpecialPrice = hasStdSpecialPrice;
     return this;
   }
@@ -386,7 +386,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner hasAcopSpecialPrice(Boolean hasAcopSpecialPrice) {
+  public ProductDetailResponseIndicators hasAcopSpecialPrice(Boolean hasAcopSpecialPrice) {
     this.hasAcopSpecialPrice = hasAcopSpecialPrice;
     return this;
   }
@@ -405,7 +405,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner hasAcopQuantityBreak(Boolean hasAcopQuantityBreak) {
+  public ProductDetailResponseIndicators hasAcopQuantityBreak(Boolean hasAcopQuantityBreak) {
     this.hasAcopQuantityBreak = hasAcopQuantityBreak;
     return this;
   }
@@ -424,7 +424,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner hasStdWebDiscount(Boolean hasStdWebDiscount) {
+  public ProductDetailResponseIndicators hasStdWebDiscount(Boolean hasStdWebDiscount) {
     this.hasStdWebDiscount = hasStdWebDiscount;
     return this;
   }
@@ -443,7 +443,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner hasSpecialBid(Boolean hasSpecialBid) {
+  public ProductDetailResponseIndicators hasSpecialBid(Boolean hasSpecialBid) {
     this.hasSpecialBid = hasSpecialBid;
     return this;
   }
@@ -462,7 +462,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isExportableToCountry(Boolean isExportableToCountry) {
+  public ProductDetailResponseIndicators isExportableToCountry(Boolean isExportableToCountry) {
     this.isExportableToCountry = isExportableToCountry;
     return this;
   }
@@ -481,7 +481,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isDiscontinuedProduct(Boolean isDiscontinuedProduct) {
+  public ProductDetailResponseIndicators isDiscontinuedProduct(Boolean isDiscontinuedProduct) {
     this.isDiscontinuedProduct = isDiscontinuedProduct;
     return this;
   }
@@ -500,7 +500,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isRefurbishedProduct(Boolean isRefurbishedProduct) {
+  public ProductDetailResponseIndicators isRefurbishedProduct(Boolean isRefurbishedProduct) {
     this.isRefurbishedProduct = isRefurbishedProduct;
     return this;
   }
@@ -519,7 +519,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isReturnableProduct(Boolean isReturnableProduct) {
+  public ProductDetailResponseIndicators isReturnableProduct(Boolean isReturnableProduct) {
     this.isReturnableProduct = isReturnableProduct;
     return this;
   }
@@ -538,7 +538,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isIngramShip(Boolean isIngramShip) {
+  public ProductDetailResponseIndicators isIngramShip(Boolean isIngramShip) {
     this.isIngramShip = isIngramShip;
     return this;
   }
@@ -557,7 +557,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isEnduserRequired(Boolean isEnduserRequired) {
+  public ProductDetailResponseIndicators isEnduserRequired(Boolean isEnduserRequired) {
     this.isEnduserRequired = isEnduserRequired;
     return this;
   }
@@ -576,7 +576,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isHeavyWeight(Boolean isHeavyWeight) {
+  public ProductDetailResponseIndicators isHeavyWeight(Boolean isHeavyWeight) {
     this.isHeavyWeight = isHeavyWeight;
     return this;
   }
@@ -595,7 +595,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner hasLtl(Boolean hasLtl) {
+  public ProductDetailResponseIndicators hasLtl(Boolean hasLtl) {
     this.hasLtl = hasLtl;
     return this;
   }
@@ -614,7 +614,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isClearanceProduct(Boolean isClearanceProduct) {
+  public ProductDetailResponseIndicators isClearanceProduct(Boolean isClearanceProduct) {
     this.isClearanceProduct = isClearanceProduct;
     return this;
   }
@@ -633,7 +633,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner hasBundle(Boolean hasBundle) {
+  public ProductDetailResponseIndicators hasBundle(Boolean hasBundle) {
     this.hasBundle = hasBundle;
     return this;
   }
@@ -652,7 +652,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isOversizeProduct(Boolean isOversizeProduct) {
+  public ProductDetailResponseIndicators isOversizeProduct(Boolean isOversizeProduct) {
     this.isOversizeProduct = isOversizeProduct;
     return this;
   }
@@ -671,7 +671,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isPreorderProduct(Boolean isPreorderProduct) {
+  public ProductDetailResponseIndicators isPreorderProduct(Boolean isPreorderProduct) {
     this.isPreorderProduct = isPreorderProduct;
     return this;
   }
@@ -690,7 +690,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isLicenseProduct(Boolean isLicenseProduct) {
+  public ProductDetailResponseIndicators isLicenseProduct(Boolean isLicenseProduct) {
     this.isLicenseProduct = isLicenseProduct;
     return this;
   }
@@ -709,7 +709,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isDirectshipOrderable(Boolean isDirectshipOrderable) {
+  public ProductDetailResponseIndicators isDirectshipOrderable(Boolean isDirectshipOrderable) {
     this.isDirectshipOrderable = isDirectshipOrderable;
     return this;
   }
@@ -728,7 +728,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isServiceSku(Boolean isServiceSku) {
+  public ProductDetailResponseIndicators isServiceSku(Boolean isServiceSku) {
     this.isServiceSku = isServiceSku;
     return this;
   }
@@ -747,7 +747,7 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
 
-  public ProductDetailResponseIndicatorsInner isConfigurable(Boolean isConfigurable) {
+  public ProductDetailResponseIndicators isConfigurable(Boolean isConfigurable) {
     this.isConfigurable = isConfigurable;
     return this;
   }
@@ -775,38 +775,38 @@ public class ProductDetailResponseIndicatorsInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    ProductDetailResponseIndicatorsInner productDetailResponseIndicatorsInner = (ProductDetailResponseIndicatorsInner) o;
-    return Objects.equals(this.hasWarranty, productDetailResponseIndicatorsInner.hasWarranty) &&
-        Objects.equals(this.isNewProduct, productDetailResponseIndicatorsInner.isNewProduct) &&
-        Objects.equals(this.hasReturnLimits, productDetailResponseIndicatorsInner.hasReturnLimits) &&
-        Objects.equals(this.isBackOrderAllowed, productDetailResponseIndicatorsInner.isBackOrderAllowed) &&
-        Objects.equals(this.isShippedFromPartner, productDetailResponseIndicatorsInner.isShippedFromPartner) &&
-        Objects.equals(this.isReplacementProduct, productDetailResponseIndicatorsInner.isReplacementProduct) &&
-        Objects.equals(this.isDirectship, productDetailResponseIndicatorsInner.isDirectship) &&
-        Objects.equals(this.isDownloadable, productDetailResponseIndicatorsInner.isDownloadable) &&
-        Objects.equals(this.isDigitalType, productDetailResponseIndicatorsInner.isDigitalType) &&
-        Objects.equals(this.skuType, productDetailResponseIndicatorsInner.skuType) &&
-        Objects.equals(this.hasStdSpecialPrice, productDetailResponseIndicatorsInner.hasStdSpecialPrice) &&
-        Objects.equals(this.hasAcopSpecialPrice, productDetailResponseIndicatorsInner.hasAcopSpecialPrice) &&
-        Objects.equals(this.hasAcopQuantityBreak, productDetailResponseIndicatorsInner.hasAcopQuantityBreak) &&
-        Objects.equals(this.hasStdWebDiscount, productDetailResponseIndicatorsInner.hasStdWebDiscount) &&
-        Objects.equals(this.hasSpecialBid, productDetailResponseIndicatorsInner.hasSpecialBid) &&
-        Objects.equals(this.isExportableToCountry, productDetailResponseIndicatorsInner.isExportableToCountry) &&
-        Objects.equals(this.isDiscontinuedProduct, productDetailResponseIndicatorsInner.isDiscontinuedProduct) &&
-        Objects.equals(this.isRefurbishedProduct, productDetailResponseIndicatorsInner.isRefurbishedProduct) &&
-        Objects.equals(this.isReturnableProduct, productDetailResponseIndicatorsInner.isReturnableProduct) &&
-        Objects.equals(this.isIngramShip, productDetailResponseIndicatorsInner.isIngramShip) &&
-        Objects.equals(this.isEnduserRequired, productDetailResponseIndicatorsInner.isEnduserRequired) &&
-        Objects.equals(this.isHeavyWeight, productDetailResponseIndicatorsInner.isHeavyWeight) &&
-        Objects.equals(this.hasLtl, productDetailResponseIndicatorsInner.hasLtl) &&
-        Objects.equals(this.isClearanceProduct, productDetailResponseIndicatorsInner.isClearanceProduct) &&
-        Objects.equals(this.hasBundle, productDetailResponseIndicatorsInner.hasBundle) &&
-        Objects.equals(this.isOversizeProduct, productDetailResponseIndicatorsInner.isOversizeProduct) &&
-        Objects.equals(this.isPreorderProduct, productDetailResponseIndicatorsInner.isPreorderProduct) &&
-        Objects.equals(this.isLicenseProduct, productDetailResponseIndicatorsInner.isLicenseProduct) &&
-        Objects.equals(this.isDirectshipOrderable, productDetailResponseIndicatorsInner.isDirectshipOrderable) &&
-        Objects.equals(this.isServiceSku, productDetailResponseIndicatorsInner.isServiceSku) &&
-        Objects.equals(this.isConfigurable, productDetailResponseIndicatorsInner.isConfigurable);
+    ProductDetailResponseIndicators productDetailResponseIndicators = (ProductDetailResponseIndicators) o;
+    return Objects.equals(this.hasWarranty, productDetailResponseIndicators.hasWarranty) &&
+        Objects.equals(this.isNewProduct, productDetailResponseIndicators.isNewProduct) &&
+        Objects.equals(this.hasReturnLimits, productDetailResponseIndicators.hasReturnLimits) &&
+        Objects.equals(this.isBackOrderAllowed, productDetailResponseIndicators.isBackOrderAllowed) &&
+        Objects.equals(this.isShippedFromPartner, productDetailResponseIndicators.isShippedFromPartner) &&
+        Objects.equals(this.isReplacementProduct, productDetailResponseIndicators.isReplacementProduct) &&
+        Objects.equals(this.isDirectship, productDetailResponseIndicators.isDirectship) &&
+        Objects.equals(this.isDownloadable, productDetailResponseIndicators.isDownloadable) &&
+        Objects.equals(this.isDigitalType, productDetailResponseIndicators.isDigitalType) &&
+        Objects.equals(this.skuType, productDetailResponseIndicators.skuType) &&
+        Objects.equals(this.hasStdSpecialPrice, productDetailResponseIndicators.hasStdSpecialPrice) &&
+        Objects.equals(this.hasAcopSpecialPrice, productDetailResponseIndicators.hasAcopSpecialPrice) &&
+        Objects.equals(this.hasAcopQuantityBreak, productDetailResponseIndicators.hasAcopQuantityBreak) &&
+        Objects.equals(this.hasStdWebDiscount, productDetailResponseIndicators.hasStdWebDiscount) &&
+        Objects.equals(this.hasSpecialBid, productDetailResponseIndicators.hasSpecialBid) &&
+        Objects.equals(this.isExportableToCountry, productDetailResponseIndicators.isExportableToCountry) &&
+        Objects.equals(this.isDiscontinuedProduct, productDetailResponseIndicators.isDiscontinuedProduct) &&
+        Objects.equals(this.isRefurbishedProduct, productDetailResponseIndicators.isRefurbishedProduct) &&
+        Objects.equals(this.isReturnableProduct, productDetailResponseIndicators.isReturnableProduct) &&
+        Objects.equals(this.isIngramShip, productDetailResponseIndicators.isIngramShip) &&
+        Objects.equals(this.isEnduserRequired, productDetailResponseIndicators.isEnduserRequired) &&
+        Objects.equals(this.isHeavyWeight, productDetailResponseIndicators.isHeavyWeight) &&
+        Objects.equals(this.hasLtl, productDetailResponseIndicators.hasLtl) &&
+        Objects.equals(this.isClearanceProduct, productDetailResponseIndicators.isClearanceProduct) &&
+        Objects.equals(this.hasBundle, productDetailResponseIndicators.hasBundle) &&
+        Objects.equals(this.isOversizeProduct, productDetailResponseIndicators.isOversizeProduct) &&
+        Objects.equals(this.isPreorderProduct, productDetailResponseIndicators.isPreorderProduct) &&
+        Objects.equals(this.isLicenseProduct, productDetailResponseIndicators.isLicenseProduct) &&
+        Objects.equals(this.isDirectshipOrderable, productDetailResponseIndicators.isDirectshipOrderable) &&
+        Objects.equals(this.isServiceSku, productDetailResponseIndicators.isServiceSku) &&
+        Objects.equals(this.isConfigurable, productDetailResponseIndicators.isConfigurable);
   }
 
   @Override
@@ -817,7 +817,7 @@ public class ProductDetailResponseIndicatorsInner {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class ProductDetailResponseIndicatorsInner {\n");
+    sb.append("class ProductDetailResponseIndicators {\n");
     sb.append("    hasWarranty: ").append(toIndentedString(hasWarranty)).append("\n");
     sb.append("    isNewProduct: ").append(toIndentedString(isNewProduct)).append("\n");
     sb.append("    hasReturnLimits: ").append(toIndentedString(hasReturnLimits)).append("\n");
@@ -911,20 +911,20 @@ public class ProductDetailResponseIndicatorsInner {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseIndicatorsInner
+   * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseIndicators
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!ProductDetailResponseIndicatorsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ProductDetailResponseIndicatorsInner is not found in the empty JSON string", ProductDetailResponseIndicatorsInner.openapiRequiredFields.toString()));
+        if (!ProductDetailResponseIndicators.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in ProductDetailResponseIndicators is not found in the empty JSON string", ProductDetailResponseIndicators.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!ProductDetailResponseIndicatorsInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ProductDetailResponseIndicatorsInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!ProductDetailResponseIndicators.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ProductDetailResponseIndicators` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -937,22 +937,22 @@ public class ProductDetailResponseIndicatorsInner {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!ProductDetailResponseIndicatorsInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'ProductDetailResponseIndicatorsInner' and its subtypes
+       if (!ProductDetailResponseIndicators.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'ProductDetailResponseIndicators' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<ProductDetailResponseIndicatorsInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(ProductDetailResponseIndicatorsInner.class));
+       final TypeAdapter<ProductDetailResponseIndicators> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(ProductDetailResponseIndicators.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<ProductDetailResponseIndicatorsInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<ProductDetailResponseIndicators>() {
            @Override
-           public void write(JsonWriter out, ProductDetailResponseIndicatorsInner value) throws IOException {
+           public void write(JsonWriter out, ProductDetailResponseIndicators value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public ProductDetailResponseIndicatorsInner read(JsonReader in) throws IOException {
+           public ProductDetailResponseIndicators read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -963,18 +963,18 @@ public class ProductDetailResponseIndicatorsInner {
   }
 
   /**
-   * Create an instance of ProductDetailResponseIndicatorsInner given an JSON string
+   * Create an instance of ProductDetailResponseIndicators given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of ProductDetailResponseIndicatorsInner
-   * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseIndicatorsInner
+   * @return An instance of ProductDetailResponseIndicators
+   * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseIndicators
    */
-  public static ProductDetailResponseIndicatorsInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, ProductDetailResponseIndicatorsInner.class);
+  public static ProductDetailResponseIndicators fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, ProductDetailResponseIndicators.class);
   }
 
   /**
-   * Convert an instance of ProductDetailResponseIndicatorsInner to an JSON string
+   * Convert an instance of ProductDetailResponseIndicators to an JSON string
    *
    * @return JSON string
    */

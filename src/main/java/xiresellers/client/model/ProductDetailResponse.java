@@ -24,8 +24,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.ProductDetailResponseAdditionalInformation;
-import xiresellers.client.model.ProductDetailResponseCiscoFieldsInner;
-import xiresellers.client.model.ProductDetailResponseIndicatorsInner;
+import xiresellers.client.model.ProductDetailResponseCiscoFields;
+import xiresellers.client.model.ProductDetailResponseIndicators;
 import xiresellers.client.model.ProductDetailResponseSubscriptionDetailsInner;
 
 import com.google.gson.Gson;
@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-04T05:16:26.828393Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-04T09:04:53.013432Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -106,11 +106,11 @@ public class ProductDetailResponse {
 
   public static final String SERIALIZED_NAME_INDICATORS = "indicators";
   @SerializedName(SERIALIZED_NAME_INDICATORS)
-  private List<ProductDetailResponseIndicatorsInner> indicators = new ArrayList<>();
+  private ProductDetailResponseIndicators indicators;
 
   public static final String SERIALIZED_NAME_CISCO_FIELDS = "ciscoFields";
   @SerializedName(SERIALIZED_NAME_CISCO_FIELDS)
-  private List<ProductDetailResponseCiscoFieldsInner> ciscoFields = new ArrayList<>();
+  private ProductDetailResponseCiscoFields ciscoFields;
 
   public static final String SERIALIZED_NAME_WARRANTY_INFORMATION = "warrantyInformation";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFORMATION)
@@ -355,56 +355,40 @@ public class ProductDetailResponse {
   }
 
 
-  public ProductDetailResponse indicators(List<ProductDetailResponseIndicatorsInner> indicators) {
+  public ProductDetailResponse indicators(ProductDetailResponseIndicators indicators) {
     this.indicators = indicators;
-    return this;
-  }
-
-  public ProductDetailResponse addIndicatorsItem(ProductDetailResponseIndicatorsInner indicatorsItem) {
-    if (this.indicators == null) {
-      this.indicators = new ArrayList<>();
-    }
-    this.indicators.add(indicatorsItem);
     return this;
   }
 
   /**
-   * Indicators of the Product
+   * Get indicators
    * @return indicators
    */
   @javax.annotation.Nullable
-  public List<ProductDetailResponseIndicatorsInner> getIndicators() {
+  public ProductDetailResponseIndicators getIndicators() {
     return indicators;
   }
 
-  public void setIndicators(List<ProductDetailResponseIndicatorsInner> indicators) {
+  public void setIndicators(ProductDetailResponseIndicators indicators) {
     this.indicators = indicators;
   }
 
 
-  public ProductDetailResponse ciscoFields(List<ProductDetailResponseCiscoFieldsInner> ciscoFields) {
+  public ProductDetailResponse ciscoFields(ProductDetailResponseCiscoFields ciscoFields) {
     this.ciscoFields = ciscoFields;
     return this;
   }
 
-  public ProductDetailResponse addCiscoFieldsItem(ProductDetailResponseCiscoFieldsInner ciscoFieldsItem) {
-    if (this.ciscoFields == null) {
-      this.ciscoFields = new ArrayList<>();
-    }
-    this.ciscoFields.add(ciscoFieldsItem);
-    return this;
-  }
-
   /**
-   * Cisco product related information.
+   * Get ciscoFields
    * @return ciscoFields
    */
   @javax.annotation.Nullable
-  public List<ProductDetailResponseCiscoFieldsInner> getCiscoFields() {
+  public ProductDetailResponseCiscoFields getCiscoFields() {
     return ciscoFields;
   }
 
-  public void setCiscoFields(List<ProductDetailResponseCiscoFieldsInner> ciscoFields) {
+  public void setCiscoFields(ProductDetailResponseCiscoFields ciscoFields) {
     this.ciscoFields = ciscoFields;
   }
 
@@ -635,33 +619,13 @@ public class ProductDetailResponse {
       if ((jsonObj.get("customerPartNumber") != null && !jsonObj.get("customerPartNumber").isJsonNull()) && !jsonObj.get("customerPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `customerPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerPartNumber").toString()));
       }
+      // validate the optional field `indicators`
       if (jsonObj.get("indicators") != null && !jsonObj.get("indicators").isJsonNull()) {
-        JsonArray jsonArrayindicators = jsonObj.getAsJsonArray("indicators");
-        if (jsonArrayindicators != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("indicators").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `indicators` to be an array in the JSON string but got `%s`", jsonObj.get("indicators").toString()));
-          }
-
-          // validate the optional field `indicators` (array)
-          for (int i = 0; i < jsonArrayindicators.size(); i++) {
-            ProductDetailResponseIndicatorsInner.validateJsonElement(jsonArrayindicators.get(i));
-          };
-        }
+        ProductDetailResponseIndicators.validateJsonElement(jsonObj.get("indicators"));
       }
+      // validate the optional field `ciscoFields`
       if (jsonObj.get("ciscoFields") != null && !jsonObj.get("ciscoFields").isJsonNull()) {
-        JsonArray jsonArrayciscoFields = jsonObj.getAsJsonArray("ciscoFields");
-        if (jsonArrayciscoFields != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("ciscoFields").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `ciscoFields` to be an array in the JSON string but got `%s`", jsonObj.get("ciscoFields").toString()));
-          }
-
-          // validate the optional field `ciscoFields` (array)
-          for (int i = 0; i < jsonArrayciscoFields.size(); i++) {
-            ProductDetailResponseCiscoFieldsInner.validateJsonElement(jsonArrayciscoFields.get(i));
-          };
-        }
+        ProductDetailResponseCiscoFields.validateJsonElement(jsonObj.get("ciscoFields"));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("warrantyInformation") != null && !jsonObj.get("warrantyInformation").isJsonNull() && !jsonObj.get("warrantyInformation").isJsonArray()) {

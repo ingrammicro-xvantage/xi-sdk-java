@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for ProductDetailResponseIndicatorsInner
+ * Model tests for ProductDetailResponseIndicators
  */
-public class ProductDetailResponseIndicatorsInnerTest {
-    private final ProductDetailResponseIndicatorsInner model = new ProductDetailResponseIndicatorsInner();
+public class ProductDetailResponseIndicatorsTest {
+    private final ProductDetailResponseIndicators model = new ProductDetailResponseIndicators();
 
     /**
-     * Model tests for ProductDetailResponseIndicatorsInner
+     * Model tests for ProductDetailResponseIndicators
      */
     @Test
-    public void testProductDetailResponseIndicatorsInner() {
-        // TODO: test ProductDetailResponseIndicatorsInner
+    public void testProductDetailResponseIndicators() {
+        // TODO: test ProductDetailResponseIndicators
     }
 
     /**

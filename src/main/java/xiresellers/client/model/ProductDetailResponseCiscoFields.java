@@ -46,10 +46,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * ProductDetailResponseCiscoFieldsInner
+ * Cisco product related information.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-04T05:16:26.828393Z[Etc/UTC]", comments = "Generator version: 7.9.0")
-public class ProductDetailResponseCiscoFieldsInner {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-04T09:04:53.013432Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+public class ProductDetailResponseCiscoFields {
   public static final String SERIALIZED_NAME_PRODUCT_SUB_GROUP = "productSubGroup";
   @SerializedName(SERIALIZED_NAME_PRODUCT_SUB_GROUP)
   private String productSubGroup;
@@ -78,10 +78,10 @@ public class ProductDetailResponseCiscoFieldsInner {
   @SerializedName(SERIALIZED_NAME_GLOBAL_LIST_PRICE)
   private String globalListPrice;
 
-  public ProductDetailResponseCiscoFieldsInner() {
+  public ProductDetailResponseCiscoFields() {
   }
 
-  public ProductDetailResponseCiscoFieldsInner productSubGroup(String productSubGroup) {
+  public ProductDetailResponseCiscoFields productSubGroup(String productSubGroup) {
     this.productSubGroup = productSubGroup;
     return this;
   }
@@ -100,7 +100,7 @@ public class ProductDetailResponseCiscoFieldsInner {
   }
 
 
-  public ProductDetailResponseCiscoFieldsInner serviceProgramName(String serviceProgramName) {
+  public ProductDetailResponseCiscoFields serviceProgramName(String serviceProgramName) {
     this.serviceProgramName = serviceProgramName;
     return this;
   }
@@ -119,7 +119,7 @@ public class ProductDetailResponseCiscoFieldsInner {
   }
 
 
-  public ProductDetailResponseCiscoFieldsInner itemCatalogCategory(String itemCatalogCategory) {
+  public ProductDetailResponseCiscoFields itemCatalogCategory(String itemCatalogCategory) {
     this.itemCatalogCategory = itemCatalogCategory;
     return this;
   }
@@ -138,7 +138,7 @@ public class ProductDetailResponseCiscoFieldsInner {
   }
 
 
-  public ProductDetailResponseCiscoFieldsInner configurationIndicator(String configurationIndicator) {
+  public ProductDetailResponseCiscoFields configurationIndicator(String configurationIndicator) {
     this.configurationIndicator = configurationIndicator;
     return this;
   }
@@ -157,7 +157,7 @@ public class ProductDetailResponseCiscoFieldsInner {
   }
 
 
-  public ProductDetailResponseCiscoFieldsInner internalBusinessEntity(String internalBusinessEntity) {
+  public ProductDetailResponseCiscoFields internalBusinessEntity(String internalBusinessEntity) {
     this.internalBusinessEntity = internalBusinessEntity;
     return this;
   }
@@ -176,7 +176,7 @@ public class ProductDetailResponseCiscoFieldsInner {
   }
 
 
-  public ProductDetailResponseCiscoFieldsInner itemType(String itemType) {
+  public ProductDetailResponseCiscoFields itemType(String itemType) {
     this.itemType = itemType;
     return this;
   }
@@ -195,7 +195,7 @@ public class ProductDetailResponseCiscoFieldsInner {
   }
 
 
-  public ProductDetailResponseCiscoFieldsInner globalListPrice(String globalListPrice) {
+  public ProductDetailResponseCiscoFields globalListPrice(String globalListPrice) {
     this.globalListPrice = globalListPrice;
     return this;
   }
@@ -223,14 +223,14 @@ public class ProductDetailResponseCiscoFieldsInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    ProductDetailResponseCiscoFieldsInner productDetailResponseCiscoFieldsInner = (ProductDetailResponseCiscoFieldsInner) o;
-    return Objects.equals(this.productSubGroup, productDetailResponseCiscoFieldsInner.productSubGroup) &&
-        Objects.equals(this.serviceProgramName, productDetailResponseCiscoFieldsInner.serviceProgramName) &&
-        Objects.equals(this.itemCatalogCategory, productDetailResponseCiscoFieldsInner.itemCatalogCategory) &&
-        Objects.equals(this.configurationIndicator, productDetailResponseCiscoFieldsInner.configurationIndicator) &&
-        Objects.equals(this.internalBusinessEntity, productDetailResponseCiscoFieldsInner.internalBusinessEntity) &&
-        Objects.equals(this.itemType, productDetailResponseCiscoFieldsInner.itemType) &&
-        Objects.equals(this.globalListPrice, productDetailResponseCiscoFieldsInner.globalListPrice);
+    ProductDetailResponseCiscoFields productDetailResponseCiscoFields = (ProductDetailResponseCiscoFields) o;
+    return Objects.equals(this.productSubGroup, productDetailResponseCiscoFields.productSubGroup) &&
+        Objects.equals(this.serviceProgramName, productDetailResponseCiscoFields.serviceProgramName) &&
+        Objects.equals(this.itemCatalogCategory, productDetailResponseCiscoFields.itemCatalogCategory) &&
+        Objects.equals(this.configurationIndicator, productDetailResponseCiscoFields.configurationIndicator) &&
+        Objects.equals(this.internalBusinessEntity, productDetailResponseCiscoFields.internalBusinessEntity) &&
+        Objects.equals(this.itemType, productDetailResponseCiscoFields.itemType) &&
+        Objects.equals(this.globalListPrice, productDetailResponseCiscoFields.globalListPrice);
   }
 
   @Override
@@ -241,7 +241,7 @@ public class ProductDetailResponseCiscoFieldsInner {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class ProductDetailResponseCiscoFieldsInner {\n");
+    sb.append("class ProductDetailResponseCiscoFields {\n");
     sb.append("    productSubGroup: ").append(toIndentedString(productSubGroup)).append("\n");
     sb.append("    serviceProgramName: ").append(toIndentedString(serviceProgramName)).append("\n");
     sb.append("    itemCatalogCategory: ").append(toIndentedString(itemCatalogCategory)).append("\n");
@@ -287,20 +287,20 @@ public class ProductDetailResponseCiscoFieldsInner {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseCiscoFieldsInner
+   * @throws IOException if the JSON Element is invalid with respect to ProductDetailResponseCiscoFields
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!ProductDetailResponseCiscoFieldsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ProductDetailResponseCiscoFieldsInner is not found in the empty JSON string", ProductDetailResponseCiscoFieldsInner.openapiRequiredFields.toString()));
+        if (!ProductDetailResponseCiscoFields.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in ProductDetailResponseCiscoFields is not found in the empty JSON string", ProductDetailResponseCiscoFields.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!ProductDetailResponseCiscoFieldsInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ProductDetailResponseCiscoFieldsInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!ProductDetailResponseCiscoFields.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ProductDetailResponseCiscoFields` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -331,22 +331,22 @@ public class ProductDetailResponseCiscoFieldsInner {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!ProductDetailResponseCiscoFieldsInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'ProductDetailResponseCiscoFieldsInner' and its subtypes
+       if (!ProductDetailResponseCiscoFields.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'ProductDetailResponseCiscoFields' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<ProductDetailResponseCiscoFieldsInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(ProductDetailResponseCiscoFieldsInner.class));
+       final TypeAdapter<ProductDetailResponseCiscoFields> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(ProductDetailResponseCiscoFields.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<ProductDetailResponseCiscoFieldsInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<ProductDetailResponseCiscoFields>() {
            @Override
-           public void write(JsonWriter out, ProductDetailResponseCiscoFieldsInner value) throws IOException {
+           public void write(JsonWriter out, ProductDetailResponseCiscoFields value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public ProductDetailResponseCiscoFieldsInner read(JsonReader in) throws IOException {
+           public ProductDetailResponseCiscoFields read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -357,18 +357,18 @@ public class ProductDetailResponseCiscoFieldsInner {
   }
 
   /**
-   * Create an instance of ProductDetailResponseCiscoFieldsInner given an JSON string
+   * Create an instance of ProductDetailResponseCiscoFields given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of ProductDetailResponseCiscoFieldsInner
-   * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseCiscoFieldsInner
+   * @return An instance of ProductDetailResponseCiscoFields
+   * @throws IOException if the JSON string is invalid with respect to ProductDetailResponseCiscoFields
    */
-  public static ProductDetailResponseCiscoFieldsInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, ProductDetailResponseCiscoFieldsInner.class);
+  public static ProductDetailResponseCiscoFields fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, ProductDetailResponseCiscoFields.class);
   }
 
   /**
-   * Convert an instance of ProductDetailResponseCiscoFieldsInner to an JSON string
+   * Convert an instance of ProductDetailResponseCiscoFields to an JSON string
    *
    * @return JSON string
    */

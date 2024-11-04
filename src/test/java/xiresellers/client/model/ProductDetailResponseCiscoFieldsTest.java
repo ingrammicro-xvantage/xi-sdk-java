@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for ProductDetailResponseCiscoFieldsInner
+ * Model tests for ProductDetailResponseCiscoFields
  */
-public class ProductDetailResponseCiscoFieldsInnerTest {
-    private final ProductDetailResponseCiscoFieldsInner model = new ProductDetailResponseCiscoFieldsInner();
+public class ProductDetailResponseCiscoFieldsTest {
+    private final ProductDetailResponseCiscoFields model = new ProductDetailResponseCiscoFields();
 
     /**
-     * Model tests for ProductDetailResponseCiscoFieldsInner
+     * Model tests for ProductDetailResponseCiscoFields
      */
     @Test
-    public void testProductDetailResponseCiscoFieldsInner() {
-        // TODO: test ProductDetailResponseCiscoFieldsInner
+    public void testProductDetailResponseCiscoFields() {
+        // TODO: test ProductDetailResponseCiscoFields
     }
 
     /**
