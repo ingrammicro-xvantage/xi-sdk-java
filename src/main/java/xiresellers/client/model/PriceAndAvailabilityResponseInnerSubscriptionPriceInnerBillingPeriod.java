@@ -47,10 +47,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
+ * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:22:48.202953Z[Etc/UTC]", comments = "Generator version: 7.9.0")
-public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:39:11.793223Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod {
   public static final String SERIALIZED_NAME_BILLING_PERIOD_UNIT = "billingPeriodUnit";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD_UNIT)
   private String billingPeriodUnit;
@@ -59,10 +59,10 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD)
   private BigDecimal billingPeriod;
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner() {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod() {
   }
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner billingPeriodUnit(String billingPeriodUnit) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriodUnit(String billingPeriodUnit) {
     this.billingPeriodUnit = billingPeriodUnit;
     return this;
   }
@@ -81,7 +81,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner billingPeriod(BigDecimal billingPeriod) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod(BigDecimal billingPeriod) {
     this.billingPeriod = billingPeriod;
     return this;
   }
@@ -109,9 +109,9 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner priceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner = (PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner) o;
-    return Objects.equals(this.billingPeriodUnit, priceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.billingPeriodUnit) &&
-        Objects.equals(this.billingPeriod, priceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.billingPeriod);
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod priceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod = (PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod) o;
+    return Objects.equals(this.billingPeriodUnit, priceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.billingPeriodUnit) &&
+        Objects.equals(this.billingPeriod, priceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.billingPeriod);
   }
 
   @Override
@@ -122,7 +122,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner {\n");
+    sb.append("class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod {\n");
     sb.append("    billingPeriodUnit: ").append(toIndentedString(billingPeriodUnit)).append("\n");
     sb.append("    billingPeriod: ").append(toIndentedString(billingPeriod)).append("\n");
     sb.append("}");
@@ -158,20 +158,20 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
+   * @throws IOException if the JSON Element is invalid with respect to PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner is not found in the empty JSON string", PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.openapiRequiredFields.toString()));
+        if (!PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod is not found in the empty JSON string", PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -184,22 +184,22 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner' and its subtypes
+       if (!PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.class));
+       final TypeAdapter<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod>() {
            @Override
-           public void write(JsonWriter out, PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner value) throws IOException {
+           public void write(JsonWriter out, PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner read(JsonReader in) throws IOException {
+           public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -210,18 +210,18 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
   }
 
   /**
-   * Create an instance of PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner given an JSON string
+   * Create an instance of PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
-   * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
+   * @return An instance of PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
+   * @throws IOException if the JSON string is invalid with respect to PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
    */
-  public static PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.class);
+  public static PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.class);
   }
 
   /**
-   * Convert an instance of PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner to an JSON string
+   * Convert an instance of PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod to an JSON string
    *
    * @return JSON string
    */

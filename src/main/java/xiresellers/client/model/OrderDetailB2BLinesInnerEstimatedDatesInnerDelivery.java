@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:22:48.202953Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:39:11.793223Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
   public static final String SERIALIZED_NAME_DELIVERY_DATE_TYPE = "deliveryDateType";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE_TYPE)

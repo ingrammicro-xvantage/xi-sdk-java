@@ -1,6 +1,6 @@
 
 
-# PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
+# PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
 
 
 ## Properties

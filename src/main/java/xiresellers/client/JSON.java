@@ -248,7 +248,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInnerServiceFeesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner.CustomTypeAdapterFactory());

@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-11-05T09:22:48.202953Z[Etc/UTC]
+  - Build date: 2024-11-05T09:39:11.793223Z[Etc/UTC]
   - Generator version: 7.9.0
 
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
@@ -302,7 +302,7 @@ Class | Method | HTTP request | Description
  - [PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner](docs/PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner.md)
  - [PriceAndAvailabilityResponseInnerServiceFeesInner](docs/PriceAndAvailabilityResponseInnerServiceFeesInner.md)
  - [PriceAndAvailabilityResponseInnerSubscriptionPriceInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInner.md)
- - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.md)
+ - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.md)
  - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner.md)
  - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.md)
  - [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner](docs/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner.md)

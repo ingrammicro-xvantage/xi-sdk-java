@@ -14966,7 +14966,7 @@ components:
           description: The description of the group.
           type: string
       type: object
-    PriceAndAvailabilityResponse_inner_subscriptionPrice_inner_billingPeriod_inner:
+    PriceAndAvailabilityResponse_inner_subscriptionPrice_inner_billingPeriod:
       example:
         billingPeriod: 5.025004791520295
         billingPeriodUnit: billingPeriodUnit
@@ -15267,10 +15267,9 @@ components:
         - subscriptionPeriod: subscriptionPeriod
           subscriptionPeriodUnit: subscriptionPeriodUnit
         billingPeriod:
-        - billingPeriod: 5.025004791520295
+          billingPeriod: 5.025004791520295
           billingPeriodUnit: billingPeriodUnit
-        - billingPeriod: 5.025004791520295
-          billingPeriodUnit: billingPeriodUnit
+        planUId: planUId
         options:
         - resourceId: resourceId
           fees:
@@ -15449,6 +15448,8 @@ components:
         planId:
           description: Id of the plan.
           type: string
+        planUId:
+          type: string
         planName:
           description: Name of the plan.
           type: string
@@ -15460,9 +15461,7 @@ components:
             $ref: '#/components/schemas/PriceAndAvailabilityResponse_inner_subscriptionPrice_inner_groups_inner'
           type: array
         billingPeriod:
-          items:
-            $ref: '#/components/schemas/PriceAndAvailabilityResponse_inner_subscriptionPrice_inner_billingPeriod_inner'
-          type: array
+          $ref: '#/components/schemas/PriceAndAvailabilityResponse_inner_subscriptionPrice_inner_billingPeriod'
         subscriptionPeriod:
           items:
             $ref: '#/components/schemas/PriceAndAvailabilityResponse_inner_subscriptionPrice_inner_subscriptionPeriod_inner'
@@ -15618,10 +15617,9 @@ components:
           - subscriptionPeriod: subscriptionPeriod
             subscriptionPeriodUnit: subscriptionPeriodUnit
           billingPeriod:
-          - billingPeriod: 5.025004791520295
+            billingPeriod: 5.025004791520295
             billingPeriodUnit: billingPeriodUnit
-          - billingPeriod: 5.025004791520295
-            billingPeriodUnit: billingPeriodUnit
+          planUId: planUId
           options:
           - resourceId: resourceId
             fees:
@@ -15800,10 +15798,9 @@ components:
           - subscriptionPeriod: subscriptionPeriod
             subscriptionPeriodUnit: subscriptionPeriodUnit
           billingPeriod:
-          - billingPeriod: 5.025004791520295
+            billingPeriod: 5.025004791520295
             billingPeriodUnit: billingPeriodUnit
-          - billingPeriod: 5.025004791520295
-            billingPeriodUnit: billingPeriodUnit
+          planUId: planUId
           options:
           - resourceId: resourceId
             fees:

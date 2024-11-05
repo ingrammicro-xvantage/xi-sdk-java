@@ -23,7 +23,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner;
+import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner;
@@ -58,6 +58,14 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerTest {
     @Test
     public void planIdTest() {
         // TODO: test planId
+    }
+
+    /**
+     * Test the property 'planUId'
+     */
+    @Test
+    public void planUIdTest() {
+        // TODO: test planUId
     }
 
     /**

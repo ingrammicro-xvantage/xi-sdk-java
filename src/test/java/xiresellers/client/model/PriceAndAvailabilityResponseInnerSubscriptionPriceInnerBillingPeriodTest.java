@@ -25,17 +25,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
+ * Model tests for PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
  */
-public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInnerTest {
-    private final PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner model = new PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner();
+public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodTest {
+    private final PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod model = new PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod();
 
     /**
-     * Model tests for PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
+     * Model tests for PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
      */
     @Test
-    public void testPriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner() {
-        // TODO: test PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
+    public void testPriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod() {
+        // TODO: test PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
     }
 
     /**

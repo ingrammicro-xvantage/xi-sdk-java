@@ -24,7 +24,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner;
+import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner;
 import xiresellers.client.model.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner;
@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:22:48.202953Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:39:11.793223Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
   public static final String SERIALIZED_NAME_INDEX = "index";
   @SerializedName(SERIALIZED_NAME_INDEX)
@@ -64,6 +64,10 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
   public static final String SERIALIZED_NAME_PLAN_ID = "planId";
   @SerializedName(SERIALIZED_NAME_PLAN_ID)
   private String planId;
+
+  public static final String SERIALIZED_NAME_PLAN_U_ID = "planUId";
+  @SerializedName(SERIALIZED_NAME_PLAN_U_ID)
+  private String planUId;
 
   public static final String SERIALIZED_NAME_PLAN_NAME = "planName";
   @SerializedName(SERIALIZED_NAME_PLAN_NAME)
@@ -79,7 +83,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
 
   public static final String SERIALIZED_NAME_BILLING_PERIOD = "billingPeriod";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD)
-  private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner> billingPeriod = new ArrayList<>();
+  private PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod;
 
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD = "subscriptionPeriod";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD)
@@ -127,6 +131,25 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
 
   public void setPlanId(String planId) {
     this.planId = planId;
+  }
+
+
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planUId(String planUId) {
+    this.planUId = planUId;
+    return this;
+  }
+
+  /**
+   * Get planUId
+   * @return planUId
+   */
+  @javax.annotation.Nullable
+  public String getPlanUId() {
+    return planUId;
+  }
+
+  public void setPlanUId(String planUId) {
+    this.planUId = planUId;
   }
 
 
@@ -195,16 +218,8 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner billingPeriod(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner> billingPeriod) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner billingPeriod(PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod) {
     this.billingPeriod = billingPeriod;
-    return this;
-  }
-
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner addBillingPeriodItem(PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner billingPeriodItem) {
-    if (this.billingPeriod == null) {
-      this.billingPeriod = new ArrayList<>();
-    }
-    this.billingPeriod.add(billingPeriodItem);
     return this;
   }
 
@@ -213,11 +228,11 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
    * @return billingPeriod
    */
   @javax.annotation.Nullable
-  public List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner> getBillingPeriod() {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod getBillingPeriod() {
     return billingPeriod;
   }
 
-  public void setBillingPeriod(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner> billingPeriod) {
+  public void setBillingPeriod(PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod) {
     this.billingPeriod = billingPeriod;
   }
 
@@ -288,6 +303,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     PriceAndAvailabilityResponseInnerSubscriptionPriceInner priceAndAvailabilityResponseInnerSubscriptionPriceInner = (PriceAndAvailabilityResponseInnerSubscriptionPriceInner) o;
     return Objects.equals(this.index, priceAndAvailabilityResponseInnerSubscriptionPriceInner.index) &&
         Objects.equals(this.planId, priceAndAvailabilityResponseInnerSubscriptionPriceInner.planId) &&
+        Objects.equals(this.planUId, priceAndAvailabilityResponseInnerSubscriptionPriceInner.planUId) &&
         Objects.equals(this.planName, priceAndAvailabilityResponseInnerSubscriptionPriceInner.planName) &&
         Objects.equals(this.planDescription, priceAndAvailabilityResponseInnerSubscriptionPriceInner.planDescription) &&
         Objects.equals(this.groups, priceAndAvailabilityResponseInnerSubscriptionPriceInner.groups) &&
@@ -298,7 +314,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(index, planId, planName, planDescription, groups, billingPeriod, subscriptionPeriod, options);
+    return Objects.hash(index, planId, planUId, planName, planDescription, groups, billingPeriod, subscriptionPeriod, options);
   }
 
   @Override
@@ -307,6 +323,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     sb.append("class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {\n");
     sb.append("    index: ").append(toIndentedString(index)).append("\n");
     sb.append("    planId: ").append(toIndentedString(planId)).append("\n");
+    sb.append("    planUId: ").append(toIndentedString(planUId)).append("\n");
     sb.append("    planName: ").append(toIndentedString(planName)).append("\n");
     sb.append("    planDescription: ").append(toIndentedString(planDescription)).append("\n");
     sb.append("    groups: ").append(toIndentedString(groups)).append("\n");
@@ -337,6 +354,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     openapiFields = new HashSet<String>();
     openapiFields.add("index");
     openapiFields.add("planId");
+    openapiFields.add("planUId");
     openapiFields.add("planName");
     openapiFields.add("planDescription");
     openapiFields.add("groups");
@@ -372,6 +390,9 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
       if ((jsonObj.get("planId") != null && !jsonObj.get("planId").isJsonNull()) && !jsonObj.get("planId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `planId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("planId").toString()));
       }
+      if ((jsonObj.get("planUId") != null && !jsonObj.get("planUId").isJsonNull()) && !jsonObj.get("planUId").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `planUId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("planUId").toString()));
+      }
       if ((jsonObj.get("planName") != null && !jsonObj.get("planName").isJsonNull()) && !jsonObj.get("planName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `planName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("planName").toString()));
       }
@@ -392,19 +413,9 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
           };
         }
       }
+      // validate the optional field `billingPeriod`
       if (jsonObj.get("billingPeriod") != null && !jsonObj.get("billingPeriod").isJsonNull()) {
-        JsonArray jsonArraybillingPeriod = jsonObj.getAsJsonArray("billingPeriod");
-        if (jsonArraybillingPeriod != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("billingPeriod").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `billingPeriod` to be an array in the JSON string but got `%s`", jsonObj.get("billingPeriod").toString()));
-          }
-
-          // validate the optional field `billingPeriod` (array)
-          for (int i = 0; i < jsonArraybillingPeriod.size(); i++) {
-            PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.validateJsonElement(jsonArraybillingPeriod.get(i));
-          };
-        }
+        PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.validateJsonElement(jsonObj.get("billingPeriod"));
       }
       if (jsonObj.get("subscriptionPeriod") != null && !jsonObj.get("subscriptionPeriod").isJsonNull()) {
         JsonArray jsonArraysubscriptionPeriod = jsonObj.getAsJsonArray("subscriptionPeriod");
