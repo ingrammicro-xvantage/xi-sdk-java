@@ -20,8 +20,8 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7Response201
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-04T09:04:53.013432Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T08:54:01.152945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderCreateV7Response201 {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -57,7 +57,7 @@ public class OrderCreateV7Response201 {
 
   public static final String SERIALIZED_NAME_CONFIRMATION_NUMBER = "confirmationNumber";
   @SerializedName(SERIALIZED_NAME_CONFIRMATION_NUMBER)
-  private BigDecimal confirmationNumber;
+  private String confirmationNumber;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
@@ -85,7 +85,7 @@ public class OrderCreateV7Response201 {
   }
 
 
-  public OrderCreateV7Response201 confirmationNumber(BigDecimal confirmationNumber) {
+  public OrderCreateV7Response201 confirmationNumber(String confirmationNumber) {
     this.confirmationNumber = confirmationNumber;
     return this;
   }
@@ -95,11 +95,11 @@ public class OrderCreateV7Response201 {
    * @return confirmationNumber
    */
   @javax.annotation.Nullable
-  public BigDecimal getConfirmationNumber() {
+  public String getConfirmationNumber() {
     return confirmationNumber;
   }
 
-  public void setConfirmationNumber(BigDecimal confirmationNumber) {
+  public void setConfirmationNumber(String confirmationNumber) {
     this.confirmationNumber = confirmationNumber;
   }
 
@@ -138,9 +138,20 @@ public class OrderCreateV7Response201 {
         Objects.equals(this.message, orderCreateV7Response201.message);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(quoteNumber, confirmationNumber, message);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -203,6 +214,9 @@ public class OrderCreateV7Response201 {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("quoteNumber") != null && !jsonObj.get("quoteNumber").isJsonNull()) && !jsonObj.get("quoteNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `quoteNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteNumber").toString()));
+      }
+      if ((jsonObj.get("confirmationNumber") != null && !jsonObj.get("confirmationNumber").isJsonNull()) && !jsonObj.get("confirmationNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `confirmationNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("confirmationNumber").toString()));
       }
       if ((jsonObj.get("message") != null && !jsonObj.get("message").isJsonNull()) && !jsonObj.get("message").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `message` to be a primitive type in the JSON string but got `%s`", jsonObj.get("message").toString()));

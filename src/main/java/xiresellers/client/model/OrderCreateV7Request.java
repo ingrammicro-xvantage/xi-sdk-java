@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.OrderCreateV7RequestAdditionalAttributesInner;
 import xiresellers.client.model.OrderCreateV7RequestEndUserInfo;
 import xiresellers.client.model.OrderCreateV7RequestLinesInner;
@@ -57,7 +58,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7Request
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-04T09:04:53.013432Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T08:54:01.152945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderCreateV7Request {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -458,9 +459,20 @@ public class OrderCreateV7Request {
         Objects.equals(this.lines, orderCreateV7Request.lines);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(quoteNumber, customerOrderNumber, endCustomerOrderNumber, notes, billToAddressId, specialBidNumber, acceptBackOrder, vendAuthNumber, resellerInfo, endUserInfo, shipToInfo, shipmentDetails, additionalAttributes, vmfAdditionalAttributes, lines);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override

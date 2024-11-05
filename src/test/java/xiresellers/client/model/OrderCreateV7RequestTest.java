@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.OrderCreateV7RequestAdditionalAttributesInner;
 import xiresellers.client.model.OrderCreateV7RequestEndUserInfo;
 import xiresellers.client.model.OrderCreateV7RequestLinesInner;

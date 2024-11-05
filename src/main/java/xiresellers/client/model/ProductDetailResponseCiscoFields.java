@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * Cisco product related information.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-04T09:04:53.013432Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T08:54:01.152945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ProductDetailResponseCiscoFields {
   public static final String SERIALIZED_NAME_PRODUCT_SUB_GROUP = "productSubGroup";
   @SerializedName(SERIALIZED_NAME_PRODUCT_SUB_GROUP)
