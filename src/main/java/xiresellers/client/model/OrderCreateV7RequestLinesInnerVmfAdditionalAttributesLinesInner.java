@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * The object containing the list of fields required at a line level by the vendor.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T08:54:01.152945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:22:48.202953Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_NAME = "attributeName";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_NAME)

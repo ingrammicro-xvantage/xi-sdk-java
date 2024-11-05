@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,11 +54,15 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T08:54:01.152945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:22:48.202953Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner {
   public static final String SERIALIZED_NAME_RESOURCE_ID = "resourceId";
   @SerializedName(SERIALIZED_NAME_RESOURCE_ID)
   private String resourceId;
+
+  public static final String SERIALIZED_NAME_RESOURCE_U_ID = "resourceUId";
+  @SerializedName(SERIALIZED_NAME_RESOURCE_U_ID)
+  private String resourceUId;
 
   public static final String SERIALIZED_NAME_RESOURCE_NAME = "resourceName";
   @SerializedName(SERIALIZED_NAME_RESOURCE_NAME)
@@ -69,11 +74,11 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
 
   public static final String SERIALIZED_NAME_MIN_UNITS = "minUnits";
   @SerializedName(SERIALIZED_NAME_MIN_UNITS)
-  private String minUnits;
+  private BigDecimal minUnits;
 
   public static final String SERIALIZED_NAME_MAX_UNITS = "maxUnits";
   @SerializedName(SERIALIZED_NAME_MAX_UNITS)
-  private String maxUnits;
+  private BigDecimal maxUnits;
 
   public static final String SERIALIZED_NAME_RECURRINGPRICEMODEL = "recurringpricemodel";
   @SerializedName(SERIALIZED_NAME_RECURRINGPRICEMODEL)
@@ -104,7 +109,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
   }
 
   /**
-   * The resource id of the subscription product.
+   * Get resourceId
    * @return resourceId
    */
   @javax.annotation.Nullable
@@ -114,6 +119,25 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
 
   public void setResourceId(String resourceId) {
     this.resourceId = resourceId;
+  }
+
+
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner resourceUId(String resourceUId) {
+    this.resourceUId = resourceUId;
+    return this;
+  }
+
+  /**
+   * The resource id of the subscription product.
+   * @return resourceUId
+   */
+  @javax.annotation.Nullable
+  public String getResourceUId() {
+    return resourceUId;
+  }
+
+  public void setResourceUId(String resourceUId) {
+    this.resourceUId = resourceUId;
   }
 
 
@@ -155,7 +179,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner minUnits(String minUnits) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner minUnits(BigDecimal minUnits) {
     this.minUnits = minUnits;
     return this;
   }
@@ -165,16 +189,16 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
    * @return minUnits
    */
   @javax.annotation.Nullable
-  public String getMinUnits() {
+  public BigDecimal getMinUnits() {
     return minUnits;
   }
 
-  public void setMinUnits(String minUnits) {
+  public void setMinUnits(BigDecimal minUnits) {
     this.minUnits = minUnits;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner maxUnits(String maxUnits) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner maxUnits(BigDecimal maxUnits) {
     this.maxUnits = maxUnits;
     return this;
   }
@@ -184,11 +208,11 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
    * @return maxUnits
    */
   @javax.annotation.Nullable
-  public String getMaxUnits() {
+  public BigDecimal getMaxUnits() {
     return maxUnits;
   }
 
-  public void setMaxUnits(String maxUnits) {
+  public void setMaxUnits(BigDecimal maxUnits) {
     this.maxUnits = maxUnits;
   }
 
@@ -323,6 +347,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     }
     PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner = (PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner) o;
     return Objects.equals(this.resourceId, priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.resourceId) &&
+        Objects.equals(this.resourceUId, priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.resourceUId) &&
         Objects.equals(this.resourceName, priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.resourceName) &&
         Objects.equals(this.vendorPartNumber, priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.vendorPartNumber) &&
         Objects.equals(this.minUnits, priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.minUnits) &&
@@ -336,7 +361,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
 
   @Override
   public int hashCode() {
-    return Objects.hash(resourceId, resourceName, vendorPartNumber, minUnits, maxUnits, recurringpricemodel, unitOfMeasure, resourcePricing, discounts, fees);
+    return Objects.hash(resourceId, resourceUId, resourceName, vendorPartNumber, minUnits, maxUnits, recurringpricemodel, unitOfMeasure, resourcePricing, discounts, fees);
   }
 
   @Override
@@ -344,6 +369,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     StringBuilder sb = new StringBuilder();
     sb.append("class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner {\n");
     sb.append("    resourceId: ").append(toIndentedString(resourceId)).append("\n");
+    sb.append("    resourceUId: ").append(toIndentedString(resourceUId)).append("\n");
     sb.append("    resourceName: ").append(toIndentedString(resourceName)).append("\n");
     sb.append("    vendorPartNumber: ").append(toIndentedString(vendorPartNumber)).append("\n");
     sb.append("    minUnits: ").append(toIndentedString(minUnits)).append("\n");
@@ -376,6 +402,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("resourceId");
+    openapiFields.add("resourceUId");
     openapiFields.add("resourceName");
     openapiFields.add("vendorPartNumber");
     openapiFields.add("minUnits");
@@ -414,17 +441,14 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
       if ((jsonObj.get("resourceId") != null && !jsonObj.get("resourceId").isJsonNull()) && !jsonObj.get("resourceId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `resourceId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("resourceId").toString()));
       }
+      if ((jsonObj.get("resourceUId") != null && !jsonObj.get("resourceUId").isJsonNull()) && !jsonObj.get("resourceUId").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `resourceUId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("resourceUId").toString()));
+      }
       if ((jsonObj.get("resourceName") != null && !jsonObj.get("resourceName").isJsonNull()) && !jsonObj.get("resourceName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `resourceName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("resourceName").toString()));
       }
       if ((jsonObj.get("vendorPartNumber") != null && !jsonObj.get("vendorPartNumber").isJsonNull()) && !jsonObj.get("vendorPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorPartNumber").toString()));
-      }
-      if ((jsonObj.get("minUnits") != null && !jsonObj.get("minUnits").isJsonNull()) && !jsonObj.get("minUnits").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `minUnits` to be a primitive type in the JSON string but got `%s`", jsonObj.get("minUnits").toString()));
-      }
-      if ((jsonObj.get("maxUnits") != null && !jsonObj.get("maxUnits").isJsonNull()) && !jsonObj.get("maxUnits").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `maxUnits` to be a primitive type in the JSON string but got `%s`", jsonObj.get("maxUnits").toString()));
       }
       if ((jsonObj.get("recurringpricemodel") != null && !jsonObj.get("recurringpricemodel").isJsonNull()) && !jsonObj.get("recurringpricemodel").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `recurringpricemodel` to be a primitive type in the JSON string but got `%s`", jsonObj.get("recurringpricemodel").toString()));

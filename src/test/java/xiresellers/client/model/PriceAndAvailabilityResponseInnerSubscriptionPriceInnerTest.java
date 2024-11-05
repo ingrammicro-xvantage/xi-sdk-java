@@ -45,6 +45,14 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerTest {
     }
 
     /**
+     * Test the property 'index'
+     */
+    @Test
+    public void indexTest() {
+        // TODO: test index
+    }
+
+    /**
      * Test the property 'planId'
      */
     @Test

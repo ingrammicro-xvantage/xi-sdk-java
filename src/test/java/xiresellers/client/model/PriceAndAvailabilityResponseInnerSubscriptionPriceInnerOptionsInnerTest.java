@@ -19,6 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -48,6 +49,14 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     @Test
     public void resourceIdTest() {
         // TODO: test resourceId
+    }
+
+    /**
+     * Test the property 'resourceUId'
+     */
+    @Test
+    public void resourceUIdTest() {
+        // TODO: test resourceUId
     }
 
     /**

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 
 import com.google.gson.Gson;
@@ -48,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T08:54:01.152945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:22:48.202953Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner {
   public static final String SERIALIZED_NAME_BILLING_PERIOD_UNIT = "billingPeriodUnit";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD_UNIT)
@@ -56,7 +57,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
 
   public static final String SERIALIZED_NAME_BILLING_PERIOD = "billingPeriod";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD)
-  private String billingPeriod;
+  private BigDecimal billingPeriod;
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner() {
   }
@@ -80,7 +81,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner billingPeriod(String billingPeriod) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner billingPeriod(BigDecimal billingPeriod) {
     this.billingPeriod = billingPeriod;
     return this;
   }
@@ -90,11 +91,11 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
    * @return billingPeriod
    */
   @javax.annotation.Nullable
-  public String getBillingPeriod() {
+  public BigDecimal getBillingPeriod() {
     return billingPeriod;
   }
 
-  public void setBillingPeriod(String billingPeriod) {
+  public void setBillingPeriod(BigDecimal billingPeriod) {
     this.billingPeriod = billingPeriod;
   }
 
@@ -176,9 +177,6 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("billingPeriodUnit") != null && !jsonObj.get("billingPeriodUnit").isJsonNull()) && !jsonObj.get("billingPeriodUnit").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `billingPeriodUnit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billingPeriodUnit").toString()));
-      }
-      if ((jsonObj.get("billingPeriod") != null && !jsonObj.get("billingPeriod").isJsonNull()) && !jsonObj.get("billingPeriod").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `billingPeriod` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billingPeriod").toString()));
       }
   }
 

@@ -55,8 +55,12 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T08:54:01.152945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:22:48.202953Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
+  public static final String SERIALIZED_NAME_INDEX = "index";
+  @SerializedName(SERIALIZED_NAME_INDEX)
+  private BigDecimal index;
+
   public static final String SERIALIZED_NAME_PLAN_ID = "planId";
   @SerializedName(SERIALIZED_NAME_PLAN_ID)
   private String planId;
@@ -67,7 +71,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
 
   public static final String SERIALIZED_NAME_PLAN_DESCRIPTION = "planDescription";
   @SerializedName(SERIALIZED_NAME_PLAN_DESCRIPTION)
-  private BigDecimal planDescription;
+  private String planDescription;
 
   public static final String SERIALIZED_NAME_GROUPS = "groups";
   @SerializedName(SERIALIZED_NAME_GROUPS)
@@ -87,6 +91,25 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInner() {
   }
+
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner index(BigDecimal index) {
+    this.index = index;
+    return this;
+  }
+
+  /**
+   * Get index
+   * @return index
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getIndex() {
+    return index;
+  }
+
+  public void setIndex(BigDecimal index) {
+    this.index = index;
+  }
+
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planId(String planId) {
     this.planId = planId;
@@ -126,7 +149,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planDescription(BigDecimal planDescription) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planDescription(String planDescription) {
     this.planDescription = planDescription;
     return this;
   }
@@ -136,11 +159,11 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
    * @return planDescription
    */
   @javax.annotation.Nullable
-  public BigDecimal getPlanDescription() {
+  public String getPlanDescription() {
     return planDescription;
   }
 
-  public void setPlanDescription(BigDecimal planDescription) {
+  public void setPlanDescription(String planDescription) {
     this.planDescription = planDescription;
   }
 
@@ -263,7 +286,8 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
       return false;
     }
     PriceAndAvailabilityResponseInnerSubscriptionPriceInner priceAndAvailabilityResponseInnerSubscriptionPriceInner = (PriceAndAvailabilityResponseInnerSubscriptionPriceInner) o;
-    return Objects.equals(this.planId, priceAndAvailabilityResponseInnerSubscriptionPriceInner.planId) &&
+    return Objects.equals(this.index, priceAndAvailabilityResponseInnerSubscriptionPriceInner.index) &&
+        Objects.equals(this.planId, priceAndAvailabilityResponseInnerSubscriptionPriceInner.planId) &&
         Objects.equals(this.planName, priceAndAvailabilityResponseInnerSubscriptionPriceInner.planName) &&
         Objects.equals(this.planDescription, priceAndAvailabilityResponseInnerSubscriptionPriceInner.planDescription) &&
         Objects.equals(this.groups, priceAndAvailabilityResponseInnerSubscriptionPriceInner.groups) &&
@@ -274,13 +298,14 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(planId, planName, planDescription, groups, billingPeriod, subscriptionPeriod, options);
+    return Objects.hash(index, planId, planName, planDescription, groups, billingPeriod, subscriptionPeriod, options);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {\n");
+    sb.append("    index: ").append(toIndentedString(index)).append("\n");
     sb.append("    planId: ").append(toIndentedString(planId)).append("\n");
     sb.append("    planName: ").append(toIndentedString(planName)).append("\n");
     sb.append("    planDescription: ").append(toIndentedString(planDescription)).append("\n");
@@ -310,6 +335,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
+    openapiFields.add("index");
     openapiFields.add("planId");
     openapiFields.add("planName");
     openapiFields.add("planDescription");
@@ -348,6 +374,9 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
       }
       if ((jsonObj.get("planName") != null && !jsonObj.get("planName").isJsonNull()) && !jsonObj.get("planName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `planName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("planName").toString()));
+      }
+      if ((jsonObj.get("planDescription") != null && !jsonObj.get("planDescription").isJsonNull()) && !jsonObj.get("planDescription").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `planDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("planDescription").toString()));
       }
       if (jsonObj.get("groups") != null && !jsonObj.get("groups").isJsonNull()) {
         JsonArray jsonArraygroups = jsonObj.getAsJsonArray("groups");

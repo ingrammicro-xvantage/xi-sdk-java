@@ -54,4 +54,20 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
         // TODO: test type
     }
 
+    /**
+     * Test the property 'msrp'
+     */
+    @Test
+    public void msrpTest() {
+        // TODO: test msrp
+    }
+
+    /**
+     * Test the property 'code'
+     */
+    @Test
+    public void codeTest() {
+        // TODO: test code
+    }
+
 }

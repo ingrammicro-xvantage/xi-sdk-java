@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T08:54:01.152945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:22:48.202953Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -57,7 +57,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
-  private Integer quantity;
+  private String quantity;
 
   public static final String SERIALIZED_NAME_MSRP = "msrp";
   @SerializedName(SERIALIZED_NAME_MSRP)
@@ -101,7 +101,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner quantity(Integer quantity) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner quantity(String quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -111,11 +111,11 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
    * @return quantity
    */
   @javax.annotation.Nullable
-  public Integer getQuantity() {
+  public String getQuantity() {
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(String quantity) {
     this.quantity = quantity;
   }
 
@@ -307,6 +307,9 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+      }
+      if ((jsonObj.get("quantity") != null && !jsonObj.get("quantity").isJsonNull()) && !jsonObj.get("quantity").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `quantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quantity").toString()));
       }
       if ((jsonObj.get("currencyCode") != null && !jsonObj.get("currencyCode").isJsonNull()) && !jsonObj.get("currencyCode").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `currencyCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyCode").toString()));

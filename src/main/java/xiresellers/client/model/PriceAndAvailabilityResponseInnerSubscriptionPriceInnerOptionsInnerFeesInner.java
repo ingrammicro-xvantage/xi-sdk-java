@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T08:54:01.152945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:22:48.202953Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner {
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
@@ -58,6 +58,14 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
   private String type;
+
+  public static final String SERIALIZED_NAME_MSRP = "msrp";
+  @SerializedName(SERIALIZED_NAME_MSRP)
+  private BigDecimal msrp;
+
+  public static final String SERIALIZED_NAME_CODE = "code";
+  @SerializedName(SERIALIZED_NAME_CODE)
+  private String code;
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner() {
   }
@@ -100,6 +108,44 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
   }
 
 
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner msrp(BigDecimal msrp) {
+    this.msrp = msrp;
+    return this;
+  }
+
+  /**
+   * Get msrp
+   * @return msrp
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getMsrp() {
+    return msrp;
+  }
+
+  public void setMsrp(BigDecimal msrp) {
+    this.msrp = msrp;
+  }
+
+
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner code(String code) {
+    this.code = code;
+    return this;
+  }
+
+  /**
+   * Get code
+   * @return code
+   */
+  @javax.annotation.Nullable
+  public String getCode() {
+    return code;
+  }
+
+  public void setCode(String code) {
+    this.code = code;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -111,12 +157,14 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     }
     PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner = (PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner) o;
     return Objects.equals(this.price, priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner.price) &&
-        Objects.equals(this.type, priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner.type);
+        Objects.equals(this.type, priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner.type) &&
+        Objects.equals(this.msrp, priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner.msrp) &&
+        Objects.equals(this.code, priceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner.code);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(price, type);
+    return Objects.hash(price, type, msrp, code);
   }
 
   @Override
@@ -125,6 +173,8 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     sb.append("class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner {\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    msrp: ").append(toIndentedString(msrp)).append("\n");
+    sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -149,6 +199,8 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     openapiFields = new HashSet<String>();
     openapiFields.add("price");
     openapiFields.add("type");
+    openapiFields.add("msrp");
+    openapiFields.add("code");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -177,6 +229,9 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) && !jsonObj.get("type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
+      }
+      if ((jsonObj.get("code") != null && !jsonObj.get("code").isJsonNull()) && !jsonObj.get("code").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("code").toString()));
       }
   }
 

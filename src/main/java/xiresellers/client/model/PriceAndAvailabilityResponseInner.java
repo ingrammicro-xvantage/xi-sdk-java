@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -57,8 +58,12 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T08:54:01.152945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:22:48.202953Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityResponseInner {
+  public static final String SERIALIZED_NAME_INDEX = "index";
+  @SerializedName(SERIALIZED_NAME_INDEX)
+  private BigDecimal index;
+
   public static final String SERIALIZED_NAME_PRODUCT_STATUS_CODE = "productStatusCode";
   @SerializedName(SERIALIZED_NAME_PRODUCT_STATUS_CODE)
   private String productStatusCode;
@@ -149,7 +154,7 @@ public class PriceAndAvailabilityResponseInner {
 
   public static final String SERIALIZED_NAME_RESERVE_INVENTORY_DETAILS = "reserveInventoryDetails";
   @SerializedName(SERIALIZED_NAME_RESERVE_INVENTORY_DETAILS)
-  private List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails;
+  private List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PRICING = "pricing";
   @SerializedName(SERIALIZED_NAME_PRICING)
@@ -173,6 +178,25 @@ public class PriceAndAvailabilityResponseInner {
 
   public PriceAndAvailabilityResponseInner() {
   }
+
+  public PriceAndAvailabilityResponseInner index(BigDecimal index) {
+    this.index = index;
+    return this;
+  }
+
+  /**
+   * Get index
+   * @return index
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getIndex() {
+    return index;
+  }
+
+  public void setIndex(BigDecimal index) {
+    this.index = index;
+  }
+
 
   public PriceAndAvailabilityResponseInner productStatusCode(String productStatusCode) {
     this.productStatusCode = productStatusCode;
@@ -748,7 +772,8 @@ public class PriceAndAvailabilityResponseInner {
       return false;
     }
     PriceAndAvailabilityResponseInner priceAndAvailabilityResponseInner = (PriceAndAvailabilityResponseInner) o;
-    return Objects.equals(this.productStatusCode, priceAndAvailabilityResponseInner.productStatusCode) &&
+    return Objects.equals(this.index, priceAndAvailabilityResponseInner.index) &&
+        Objects.equals(this.productStatusCode, priceAndAvailabilityResponseInner.productStatusCode) &&
         Objects.equals(this.productStatusMessage, priceAndAvailabilityResponseInner.productStatusMessage) &&
         Objects.equals(this.ingramPartNumber, priceAndAvailabilityResponseInner.ingramPartNumber) &&
         Objects.equals(this.vendorPartNumber, priceAndAvailabilityResponseInner.vendorPartNumber) &&
@@ -784,7 +809,7 @@ public class PriceAndAvailabilityResponseInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(productStatusCode, productStatusMessage, ingramPartNumber, vendorPartNumber, extendedVendorPartNumber, customerPartNumber, upc, partNumberType, vendorNumber, vendorName, description, productClass, uom, productStatus, acceptBackOrder, productAuthorized, returnableProduct, endUserInfoRequired, govtSpecialPriceAvailable, govtProgramType, govtEndUserType, availability, reserveInventoryDetails, pricing, discounts, bundlePartIndicator, serviceFees, subscriptionPrice);
+    return Objects.hash(index, productStatusCode, productStatusMessage, ingramPartNumber, vendorPartNumber, extendedVendorPartNumber, customerPartNumber, upc, partNumberType, vendorNumber, vendorName, description, productClass, uom, productStatus, acceptBackOrder, productAuthorized, returnableProduct, endUserInfoRequired, govtSpecialPriceAvailable, govtProgramType, govtEndUserType, availability, reserveInventoryDetails, pricing, discounts, bundlePartIndicator, serviceFees, subscriptionPrice);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -798,6 +823,7 @@ public class PriceAndAvailabilityResponseInner {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PriceAndAvailabilityResponseInner {\n");
+    sb.append("    index: ").append(toIndentedString(index)).append("\n");
     sb.append("    productStatusCode: ").append(toIndentedString(productStatusCode)).append("\n");
     sb.append("    productStatusMessage: ").append(toIndentedString(productStatusMessage)).append("\n");
     sb.append("    ingramPartNumber: ").append(toIndentedString(ingramPartNumber)).append("\n");
@@ -848,6 +874,7 @@ public class PriceAndAvailabilityResponseInner {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
+    openapiFields.add("index");
     openapiFields.add("productStatusCode");
     openapiFields.add("productStatusMessage");
     openapiFields.add("ingramPartNumber");
