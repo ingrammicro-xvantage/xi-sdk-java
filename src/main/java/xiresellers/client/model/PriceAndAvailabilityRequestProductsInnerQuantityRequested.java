@@ -50,7 +50,7 @@ import com.google.gson.JsonParseException;
 
 import xiresellers.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:39:11.793223Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-07T09:47:59.759396Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityRequestProductsInnerQuantityRequested extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(PriceAndAvailabilityRequestProductsInnerQuantityRequested.class.getName());
 

@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.ProductDetailResponseAdditionalInformation;
 import xiresellers.client.model.ProductDetailResponseCiscoFields;
 import xiresellers.client.model.ProductDetailResponseIndicators;
@@ -54,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-05T09:39:11.793223Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-07T09:47:59.759396Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -495,9 +496,20 @@ public class ProductDetailResponse {
         Objects.equals(this.subscriptionDetails, productDetailResponse.subscriptionDetails);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(ingramPartNumber, vendorPartNumber, productAuthorized, description, upc, productCategory, productSubcategory, vendorName, vendorNumber, productStatusCode, productClass, customerPartNumber, indicators, ciscoFields, warrantyInformation, additionalInformation, subscriptionDetails);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
