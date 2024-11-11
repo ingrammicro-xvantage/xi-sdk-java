@@ -24,8 +24,6 @@ import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner;
-import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerPlanID;
-import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerQuantityRequested;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

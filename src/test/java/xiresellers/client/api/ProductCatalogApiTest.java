@@ -15,7 +15,6 @@ package xiresellers.client.api;
 
 import xiresellers.client.ApiException;
 import xiresellers.client.model.ErrorResponse;
-import xiresellers.client.model.GetResellerV6ProductsearchPlanIDParameter;
 import xiresellers.client.model.PriceAndAvailabilityRequest;
 import xiresellers.client.model.PriceAndAvailabilityResponseInner;
 import xiresellers.client.model.ProductDetailResponse;
@@ -99,7 +98,7 @@ public class ProductCatalogApiTest {
         String category = null;
         String skipAuthorisation = null;
         String groupName = null;
-        GetResellerV6ProductsearchPlanIDParameter planID = null;
+        String planID = null;
         Boolean showGroupInfo = null;
         ProductSearchResponse response = api.getResellerV6Productsearch(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo);
         // TODO: test validations

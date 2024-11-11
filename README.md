@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-11-07T09:47:59.759396Z[Etc/UTC]
+  - Build date: 2024-11-11T09:58:37.670146Z[Etc/UTC]
   - Generator version: 7.9.0
 
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
@@ -173,7 +173,6 @@ Class | Method | HTTP request | Description
  - [GetAccesstoken500Response](docs/GetAccesstoken500Response.md)
  - [GetAccesstoken500ResponseFault](docs/GetAccesstoken500ResponseFault.md)
  - [GetAccesstoken500ResponseFaultDetail](docs/GetAccesstoken500ResponseFaultDetail.md)
- - [GetResellerV6ProductsearchPlanIDParameter](docs/GetResellerV6ProductsearchPlanIDParameter.md)
  - [GetResellerV6ValidateQuote400Response](docs/GetResellerV6ValidateQuote400Response.md)
  - [GetResellerV6ValidateQuote400ResponseFieldsInner](docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md)
  - [InvoiceDetailsv61Response](docs/InvoiceDetailsv61Response.md)
@@ -286,11 +285,8 @@ Class | Method | HTTP request | Description
  - [PriceAndAvailabilityRequest](docs/PriceAndAvailabilityRequest.md)
  - [PriceAndAvailabilityRequestAdditionalAttributesInner](docs/PriceAndAvailabilityRequestAdditionalAttributesInner.md)
  - [PriceAndAvailabilityRequestAvailabilityByWarehouseInner](docs/PriceAndAvailabilityRequestAvailabilityByWarehouseInner.md)
- - [PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId](docs/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.md)
  - [PriceAndAvailabilityRequestProductsInner](docs/PriceAndAvailabilityRequestProductsInner.md)
  - [PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner](docs/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner.md)
- - [PriceAndAvailabilityRequestProductsInnerPlanID](docs/PriceAndAvailabilityRequestProductsInnerPlanID.md)
- - [PriceAndAvailabilityRequestProductsInnerQuantityRequested](docs/PriceAndAvailabilityRequestProductsInnerQuantityRequested.md)
  - [PriceAndAvailabilityResponseInner](docs/PriceAndAvailabilityResponseInner.md)
  - [PriceAndAvailabilityResponseInnerAvailability](docs/PriceAndAvailabilityResponseInnerAvailability.md)
  - [PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner](docs/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.md)

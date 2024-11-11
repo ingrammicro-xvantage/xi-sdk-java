@@ -35,7 +35,6 @@ docs/GetAccesstoken400Response.md
 docs/GetAccesstoken500Response.md
 docs/GetAccesstoken500ResponseFault.md
 docs/GetAccesstoken500ResponseFaultDetail.md
-docs/GetResellerV6ProductsearchPlanIDParameter.md
 docs/GetResellerV6ValidateQuote400Response.md
 docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md
 docs/InvoiceDetailsv61Response.md
@@ -151,11 +150,8 @@ docs/PostRenewalssearch400Response.md
 docs/PriceAndAvailabilityRequest.md
 docs/PriceAndAvailabilityRequestAdditionalAttributesInner.md
 docs/PriceAndAvailabilityRequestAvailabilityByWarehouseInner.md
-docs/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.md
 docs/PriceAndAvailabilityRequestProductsInner.md
 docs/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner.md
-docs/PriceAndAvailabilityRequestProductsInnerPlanID.md
-docs/PriceAndAvailabilityRequestProductsInnerQuantityRequested.md
 docs/PriceAndAvailabilityResponseInner.md
 docs/PriceAndAvailabilityResponseInnerAvailability.md
 docs/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.md
@@ -309,7 +305,6 @@ src/main/java/xiresellers/client/model/GetAccesstoken400Response.java
 src/main/java/xiresellers/client/model/GetAccesstoken500Response.java
 src/main/java/xiresellers/client/model/GetAccesstoken500ResponseFault.java
 src/main/java/xiresellers/client/model/GetAccesstoken500ResponseFaultDetail.java
-src/main/java/xiresellers/client/model/GetResellerV6ProductsearchPlanIDParameter.java
 src/main/java/xiresellers/client/model/GetResellerV6ValidateQuote400Response.java
 src/main/java/xiresellers/client/model/GetResellerV6ValidateQuote400ResponseFieldsInner.java
 src/main/java/xiresellers/client/model/InvoiceDetailsv61Response.java
@@ -422,11 +417,8 @@ src/main/java/xiresellers/client/model/PostRenewalssearch400Response.java
 src/main/java/xiresellers/client/model/PriceAndAvailabilityRequest.java
 src/main/java/xiresellers/client/model/PriceAndAvailabilityRequestAdditionalAttributesInner.java
 src/main/java/xiresellers/client/model/PriceAndAvailabilityRequestAvailabilityByWarehouseInner.java
-src/main/java/xiresellers/client/model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.java
 src/main/java/xiresellers/client/model/PriceAndAvailabilityRequestProductsInner.java
 src/main/java/xiresellers/client/model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner.java
-src/main/java/xiresellers/client/model/PriceAndAvailabilityRequestProductsInnerPlanID.java
-src/main/java/xiresellers/client/model/PriceAndAvailabilityRequestProductsInnerQuantityRequested.java
 src/main/java/xiresellers/client/model/PriceAndAvailabilityResponseInner.java
 src/main/java/xiresellers/client/model/PriceAndAvailabilityResponseInnerAvailability.java
 src/main/java/xiresellers/client/model/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.java
@@ -544,7 +536,6 @@ src/test/java/xiresellers/client/model/GetAccesstoken400ResponseTest.java
 src/test/java/xiresellers/client/model/GetAccesstoken500ResponseFaultDetailTest.java
 src/test/java/xiresellers/client/model/GetAccesstoken500ResponseFaultTest.java
 src/test/java/xiresellers/client/model/GetAccesstoken500ResponseTest.java
-src/test/java/xiresellers/client/model/GetResellerV6ProductsearchPlanIDParameterTest.java
 src/test/java/xiresellers/client/model/GetResellerV6ValidateQuote400ResponseFieldsInnerTest.java
 src/test/java/xiresellers/client/model/GetResellerV6ValidateQuote400ResponseTest.java
 src/test/java/xiresellers/client/model/InvoiceDetailsv61ResponseBillToInfoTest.java
@@ -655,11 +646,8 @@ src/test/java/xiresellers/client/model/PostCreateorderV7400ResponseTest.java
 src/test/java/xiresellers/client/model/PostCreateorderV7500ResponseTest.java
 src/test/java/xiresellers/client/model/PostRenewalssearch400ResponseTest.java
 src/test/java/xiresellers/client/model/PriceAndAvailabilityRequestAdditionalAttributesInnerTest.java
-src/test/java/xiresellers/client/model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseIdTest.java
 src/test/java/xiresellers/client/model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerTest.java
 src/test/java/xiresellers/client/model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInnerTest.java
-src/test/java/xiresellers/client/model/PriceAndAvailabilityRequestProductsInnerPlanIDTest.java
-src/test/java/xiresellers/client/model/PriceAndAvailabilityRequestProductsInnerQuantityRequestedTest.java
 src/test/java/xiresellers/client/model/PriceAndAvailabilityRequestProductsInnerTest.java
 src/test/java/xiresellers/client/model/PriceAndAvailabilityRequestTest.java
 src/test/java/xiresellers/client/model/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInnerTest.java

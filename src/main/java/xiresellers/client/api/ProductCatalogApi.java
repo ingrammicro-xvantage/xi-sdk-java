@@ -28,7 +28,6 @@ import java.io.IOException;
 
 
 import xiresellers.client.model.ErrorResponse;
-import xiresellers.client.model.GetResellerV6ProductsearchPlanIDParameter;
 import xiresellers.client.model.PriceAndAvailabilityRequest;
 import xiresellers.client.model.PriceAndAvailabilityResponseInner;
 import xiresellers.client.model.ProductDetailResponse;
@@ -487,7 +486,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductsearchCall(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, GetResellerV6ProductsearchPlanIDParameter planID, Boolean showGroupInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductsearchCall(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, String planID, Boolean showGroupInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -604,7 +603,7 @@ public class ProductCatalogApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellerV6ProductsearchValidateBeforeCall(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, GetResellerV6ProductsearchPlanIDParameter planID, Boolean showGroupInfo, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellerV6ProductsearchValidateBeforeCall(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, String planID, Boolean showGroupInfo, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellerV6Productsearch(Async)");
@@ -656,7 +655,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public ProductSearchResponse getResellerV6Productsearch(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, GetResellerV6ProductsearchPlanIDParameter planID, Boolean showGroupInfo) throws ApiException {
+    public ProductSearchResponse getResellerV6Productsearch(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, String planID, Boolean showGroupInfo) throws ApiException {
         ApiResponse<ProductSearchResponse> localVarResp = getResellerV6ProductsearchWithHttpInfo(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo);
         return localVarResp.getData();
     }
@@ -693,7 +692,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public ApiResponse<ProductSearchResponse> getResellerV6ProductsearchWithHttpInfo(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, GetResellerV6ProductsearchPlanIDParameter planID, Boolean showGroupInfo) throws ApiException {
+    public ApiResponse<ProductSearchResponse> getResellerV6ProductsearchWithHttpInfo(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, String planID, Boolean showGroupInfo) throws ApiException {
         okhttp3.Call localVarCall = getResellerV6ProductsearchValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo, null);
         Type localVarReturnType = new TypeToken<ProductSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -732,7 +731,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductsearchAsync(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, GetResellerV6ProductsearchPlanIDParameter planID, Boolean showGroupInfo, final ApiCallback<ProductSearchResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductsearchAsync(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, String planID, Boolean showGroupInfo, final ApiCallback<ProductSearchResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getResellerV6ProductsearchValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo, _callback);
         Type localVarReturnType = new TypeToken<ProductSearchResponse>(){}.getType();

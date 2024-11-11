@@ -21,7 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import xiresellers.client.model.PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,11 +48,11 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequestAvailabilityByWarehouseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-07T09:47:59.759396Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-11T09:58:37.670146Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
   public static final String SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE_ID = "availabilityByWarehouseId";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE_ID)
-  private PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId availabilityByWarehouseId;
+  private String availabilityByWarehouseId;
 
   public static final String SERIALIZED_NAME_AVAILABILITY_FOR_ALL_LOCATION = "availabilityForAllLocation";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY_FOR_ALL_LOCATION)
@@ -62,21 +61,21 @@ public class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
   public PriceAndAvailabilityRequestAvailabilityByWarehouseInner() {
   }
 
-  public PriceAndAvailabilityRequestAvailabilityByWarehouseInner availabilityByWarehouseId(PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId availabilityByWarehouseId) {
+  public PriceAndAvailabilityRequestAvailabilityByWarehouseInner availabilityByWarehouseId(String availabilityByWarehouseId) {
     this.availabilityByWarehouseId = availabilityByWarehouseId;
     return this;
   }
 
   /**
-   * Get availabilityByWarehouseId
+   * Plant/warehouse Id of a particular location in order to get just the inventory of that location.
    * @return availabilityByWarehouseId
    */
   @javax.annotation.Nullable
-  public PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId getAvailabilityByWarehouseId() {
+  public String getAvailabilityByWarehouseId() {
     return availabilityByWarehouseId;
   }
 
-  public void setAvailabilityByWarehouseId(PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId availabilityByWarehouseId) {
+  public void setAvailabilityByWarehouseId(String availabilityByWarehouseId) {
     this.availabilityByWarehouseId = availabilityByWarehouseId;
   }
 
@@ -175,9 +174,8 @@ public class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the optional field `availabilityByWarehouseId`
-      if (jsonObj.get("availabilityByWarehouseId") != null && !jsonObj.get("availabilityByWarehouseId").isJsonNull()) {
-        PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.validateJsonElement(jsonObj.get("availabilityByWarehouseId"));
+      if ((jsonObj.get("availabilityByWarehouseId") != null && !jsonObj.get("availabilityByWarehouseId").isJsonNull()) && !jsonObj.get("availabilityByWarehouseId").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `availabilityByWarehouseId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("availabilityByWarehouseId").toString()));
       }
   }
 

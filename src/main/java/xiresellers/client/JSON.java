@@ -119,7 +119,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetAccesstoken500Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetAccesstoken500ResponseFault.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetAccesstoken500ResponseFaultDetail.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetResellerV6ProductsearchPlanIDParameter.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetResellerV6ValidateQuote400Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.GetResellerV6ValidateQuote400ResponseFieldsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.InvoiceDetailsv61Response.CustomTypeAdapterFactory());
@@ -232,11 +231,8 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityRequestAdditionalAttributesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityRequestAvailabilityByWarehouseInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityRequestProductsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerPlanID.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerQuantityRequested.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInnerAvailability.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.CustomTypeAdapterFactory());

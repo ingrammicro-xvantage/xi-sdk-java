@@ -25,8 +25,6 @@ import java.util.Arrays;
 import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner;
-import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerPlanID;
-import xiresellers.client.model.PriceAndAvailabilityRequestProductsInnerQuantityRequested;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -54,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequestProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-07T09:47:59.759396Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-11T09:58:37.670146Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityRequestProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -74,11 +72,11 @@ public class PriceAndAvailabilityRequestProductsInner {
 
   public static final String SERIALIZED_NAME_QUANTITY_REQUESTED = "quantityRequested";
   @SerializedName(SERIALIZED_NAME_QUANTITY_REQUESTED)
-  private PriceAndAvailabilityRequestProductsInnerQuantityRequested quantityRequested;
+  private String quantityRequested;
 
   public static final String SERIALIZED_NAME_PLAN_I_D = "planID";
   @SerializedName(SERIALIZED_NAME_PLAN_I_D)
-  private PriceAndAvailabilityRequestProductsInnerPlanID planID;
+  private String planID;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
@@ -163,40 +161,40 @@ public class PriceAndAvailabilityRequestProductsInner {
   }
 
 
-  public PriceAndAvailabilityRequestProductsInner quantityRequested(PriceAndAvailabilityRequestProductsInnerQuantityRequested quantityRequested) {
+  public PriceAndAvailabilityRequestProductsInner quantityRequested(String quantityRequested) {
     this.quantityRequested = quantityRequested;
     return this;
   }
 
   /**
-   * Get quantityRequested
+   * Number of quantity of the Product.
    * @return quantityRequested
    */
   @javax.annotation.Nullable
-  public PriceAndAvailabilityRequestProductsInnerQuantityRequested getQuantityRequested() {
+  public String getQuantityRequested() {
     return quantityRequested;
   }
 
-  public void setQuantityRequested(PriceAndAvailabilityRequestProductsInnerQuantityRequested quantityRequested) {
+  public void setQuantityRequested(String quantityRequested) {
     this.quantityRequested = quantityRequested;
   }
 
 
-  public PriceAndAvailabilityRequestProductsInner planID(PriceAndAvailabilityRequestProductsInnerPlanID planID) {
+  public PriceAndAvailabilityRequestProductsInner planID(String planID) {
     this.planID = planID;
     return this;
   }
 
   /**
-   * Get planID
+   * Id of the plan
    * @return planID
    */
   @javax.annotation.Nullable
-  public PriceAndAvailabilityRequestProductsInnerPlanID getPlanID() {
+  public String getPlanID() {
     return planID;
   }
 
-  public void setPlanID(PriceAndAvailabilityRequestProductsInnerPlanID planID) {
+  public void setPlanID(String planID) {
     this.planID = planID;
   }
 
@@ -341,13 +339,11 @@ public class PriceAndAvailabilityRequestProductsInner {
       if ((jsonObj.get("upc") != null && !jsonObj.get("upc").isJsonNull()) && !jsonObj.get("upc").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `upc` to be a primitive type in the JSON string but got `%s`", jsonObj.get("upc").toString()));
       }
-      // validate the optional field `quantityRequested`
-      if (jsonObj.get("quantityRequested") != null && !jsonObj.get("quantityRequested").isJsonNull()) {
-        PriceAndAvailabilityRequestProductsInnerQuantityRequested.validateJsonElement(jsonObj.get("quantityRequested"));
+      if ((jsonObj.get("quantityRequested") != null && !jsonObj.get("quantityRequested").isJsonNull()) && !jsonObj.get("quantityRequested").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `quantityRequested` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quantityRequested").toString()));
       }
-      // validate the optional field `planID`
-      if (jsonObj.get("planID") != null && !jsonObj.get("planID").isJsonNull()) {
-        PriceAndAvailabilityRequestProductsInnerPlanID.validateJsonElement(jsonObj.get("planID"));
+      if ((jsonObj.get("planID") != null && !jsonObj.get("planID").isJsonNull()) && !jsonObj.get("planID").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `planID` to be a primitive type in the JSON string but got `%s`", jsonObj.get("planID").toString()));
       }
       if (jsonObj.get("additionalAttributes") != null && !jsonObj.get("additionalAttributes").isJsonNull()) {
         JsonArray jsonArrayadditionalAttributes = jsonObj.getAsJsonArray("additionalAttributes");
