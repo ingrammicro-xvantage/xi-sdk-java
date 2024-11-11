@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.PriceAndAvailabilityRequestAdditionalAttributesInner;
 import xiresellers.client.model.PriceAndAvailabilityRequestAvailabilityByWarehouseInner;
 import xiresellers.client.model.PriceAndAvailabilityRequestProductsInner;
@@ -53,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-11T09:58:37.670146Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-11T10:16:59.765249Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PriceAndAvailabilityRequest {
   public static final String SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS = "showAvailableDiscounts";
   @SerializedName(SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS)
@@ -69,7 +70,7 @@ public class PriceAndAvailabilityRequest {
 
   public static final String SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE = "availabilityByWarehouse";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE)
-  private List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse = new ArrayList<>();
+  private List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse;
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
@@ -77,7 +78,7 @@ public class PriceAndAvailabilityRequest {
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
-  private List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
+  private List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes;
 
   public PriceAndAvailabilityRequest() {
   }
@@ -238,9 +239,20 @@ public class PriceAndAvailabilityRequest {
         Objects.equals(this.additionalAttributes, priceAndAvailabilityRequest.additionalAttributes);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(showAvailableDiscounts, showReserveInventoryDetails, specialBidNumber, availabilityByWarehouse, products, additionalAttributes);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
