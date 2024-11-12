@@ -276,7 +276,7 @@ public class Example {
 
 <a id="postPriceandavailability"></a>
 # **postPriceandavailability**
-> List&lt;PriceAndAvailabilityResponseInner&gt; postPriceandavailability(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, priceAndAvailabilityRequest, includeProductAttributes, imSenderID)
+> List&lt;PriceAndAvailabilityResponseInner&gt; postPriceandavailability(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, includeProductAttributes, imSenderID, priceAndAvailabilityRequest)
 
 Price and Availability
 
@@ -307,11 +307,11 @@ public class Example {
     String imCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
     String imCountryCode = "US"; // String | Two-character ISO country code.
     String imCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
-    PriceAndAvailabilityRequest priceAndAvailabilityRequest = new PriceAndAvailabilityRequest(); // PriceAndAvailabilityRequest | 
     Boolean includeProductAttributes = true; // Boolean | Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details.
     String imSenderID = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+    PriceAndAvailabilityRequest priceAndAvailabilityRequest = new PriceAndAvailabilityRequest(); // PriceAndAvailabilityRequest | 
     try {
-      List<PriceAndAvailabilityResponseInner> result = apiInstance.postPriceandavailability(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, priceAndAvailabilityRequest, includeProductAttributes, imSenderID);
+      List<PriceAndAvailabilityResponseInner> result = apiInstance.postPriceandavailability(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, includeProductAttributes, imSenderID, priceAndAvailabilityRequest);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ProductCatalogApi#postPriceandavailability");
@@ -333,9 +333,9 @@ public class Example {
 | **imCustomerNumber** | **String**| Your unique Ingram Micro customer number. | |
 | **imCountryCode** | **String**| Two-character ISO country code. | |
 | **imCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | |
-| **priceAndAvailabilityRequest** | [**PriceAndAvailabilityRequest**](PriceAndAvailabilityRequest.md)|  | |
 | **includeProductAttributes** | **Boolean**| Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details. | [optional] |
 | **imSenderID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | [optional] |
+| **priceAndAvailabilityRequest** | [**PriceAndAvailabilityRequest**](PriceAndAvailabilityRequest.md)|  | [optional] |
 
 ### Return type
 

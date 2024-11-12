@@ -745,9 +745,9 @@ public class ProductCatalogApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param priceAndAvailabilityRequest  (required)
      * @param includeProductAttributes Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details. (optional)
      * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
+     * @param priceAndAvailabilityRequest  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -761,7 +761,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postPriceandavailabilityCall(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, Boolean includeProductAttributes, String imSenderID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call postPriceandavailabilityCall(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, Boolean includeProductAttributes, String imSenderID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -835,7 +835,7 @@ public class ProductCatalogApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call postPriceandavailabilityValidateBeforeCall(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, Boolean includeProductAttributes, String imSenderID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call postPriceandavailabilityValidateBeforeCall(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, Boolean includeProductAttributes, String imSenderID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'includeAvailability' is set
         if (includeAvailability == null) {
             throw new ApiException("Missing the required parameter 'includeAvailability' when calling postPriceandavailability(Async)");
@@ -861,12 +861,7 @@ public class ProductCatalogApi {
             throw new ApiException("Missing the required parameter 'imCorrelationID' when calling postPriceandavailability(Async)");
         }
 
-        // verify the required parameter 'priceAndAvailabilityRequest' is set
-        if (priceAndAvailabilityRequest == null) {
-            throw new ApiException("Missing the required parameter 'priceAndAvailabilityRequest' when calling postPriceandavailability(Async)");
-        }
-
-        return postPriceandavailabilityCall(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, priceAndAvailabilityRequest, includeProductAttributes, imSenderID, _callback);
+        return postPriceandavailabilityCall(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, includeProductAttributes, imSenderID, priceAndAvailabilityRequest, _callback);
 
     }
 
@@ -878,9 +873,9 @@ public class ProductCatalogApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param priceAndAvailabilityRequest  (required)
      * @param includeProductAttributes Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details. (optional)
      * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
+     * @param priceAndAvailabilityRequest  (optional)
      * @return List&lt;PriceAndAvailabilityResponseInner&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -893,8 +888,8 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public List<PriceAndAvailabilityResponseInner> postPriceandavailability(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, Boolean includeProductAttributes, String imSenderID) throws ApiException {
-        ApiResponse<List<PriceAndAvailabilityResponseInner>> localVarResp = postPriceandavailabilityWithHttpInfo(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, priceAndAvailabilityRequest, includeProductAttributes, imSenderID);
+    public List<PriceAndAvailabilityResponseInner> postPriceandavailability(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, Boolean includeProductAttributes, String imSenderID, PriceAndAvailabilityRequest priceAndAvailabilityRequest) throws ApiException {
+        ApiResponse<List<PriceAndAvailabilityResponseInner>> localVarResp = postPriceandavailabilityWithHttpInfo(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, includeProductAttributes, imSenderID, priceAndAvailabilityRequest);
         return localVarResp.getData();
     }
 
@@ -906,9 +901,9 @@ public class ProductCatalogApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param priceAndAvailabilityRequest  (required)
      * @param includeProductAttributes Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details. (optional)
      * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
+     * @param priceAndAvailabilityRequest  (optional)
      * @return ApiResponse&lt;List&lt;PriceAndAvailabilityResponseInner&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -921,8 +916,8 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<List<PriceAndAvailabilityResponseInner>> postPriceandavailabilityWithHttpInfo(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, Boolean includeProductAttributes, String imSenderID) throws ApiException {
-        okhttp3.Call localVarCall = postPriceandavailabilityValidateBeforeCall(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, priceAndAvailabilityRequest, includeProductAttributes, imSenderID, null);
+    public ApiResponse<List<PriceAndAvailabilityResponseInner>> postPriceandavailabilityWithHttpInfo(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, Boolean includeProductAttributes, String imSenderID, PriceAndAvailabilityRequest priceAndAvailabilityRequest) throws ApiException {
+        okhttp3.Call localVarCall = postPriceandavailabilityValidateBeforeCall(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, includeProductAttributes, imSenderID, priceAndAvailabilityRequest, null);
         Type localVarReturnType = new TypeToken<List<PriceAndAvailabilityResponseInner>>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -935,9 +930,9 @@ public class ProductCatalogApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param priceAndAvailabilityRequest  (required)
      * @param includeProductAttributes Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details. (optional)
      * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
+     * @param priceAndAvailabilityRequest  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -951,9 +946,9 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postPriceandavailabilityAsync(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, Boolean includeProductAttributes, String imSenderID, final ApiCallback<List<PriceAndAvailabilityResponseInner>> _callback) throws ApiException {
+    public okhttp3.Call postPriceandavailabilityAsync(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, Boolean includeProductAttributes, String imSenderID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, final ApiCallback<List<PriceAndAvailabilityResponseInner>> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = postPriceandavailabilityValidateBeforeCall(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, priceAndAvailabilityRequest, includeProductAttributes, imSenderID, _callback);
+        okhttp3.Call localVarCall = postPriceandavailabilityValidateBeforeCall(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, includeProductAttributes, imSenderID, priceAndAvailabilityRequest, _callback);
         Type localVarReturnType = new TypeToken<List<PriceAndAvailabilityResponseInner>>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

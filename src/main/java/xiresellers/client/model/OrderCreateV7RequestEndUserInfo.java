@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-11T10:16:59.765249Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderCreateV7RequestEndUserInfo {
   public static final String SERIALIZED_NAME_END_USER_ID = "endUserId";
   @SerializedName(SERIALIZED_NAME_END_USER_ID)

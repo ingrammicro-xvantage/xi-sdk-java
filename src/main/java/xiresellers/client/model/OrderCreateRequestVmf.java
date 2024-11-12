@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * Vendor mandatory fields, this is required in case of warranty orders.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-11T10:16:59.765249Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderCreateRequestVmf {
   public static final String SERIALIZED_NAME_VEND_AUTH_NUMBER = "vendAuthNumber";
   @SerializedName(SERIALIZED_NAME_VEND_AUTH_NUMBER)

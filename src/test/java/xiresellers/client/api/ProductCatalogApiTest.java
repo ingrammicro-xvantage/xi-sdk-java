@@ -118,10 +118,10 @@ public class ProductCatalogApiTest {
         String imCustomerNumber = null;
         String imCountryCode = null;
         String imCorrelationID = null;
-        PriceAndAvailabilityRequest priceAndAvailabilityRequest = null;
         Boolean includeProductAttributes = null;
         String imSenderID = null;
-        List<PriceAndAvailabilityResponseInner> response = api.postPriceandavailability(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, priceAndAvailabilityRequest, includeProductAttributes, imSenderID);
+        PriceAndAvailabilityRequest priceAndAvailabilityRequest = null;
+        List<PriceAndAvailabilityResponseInner> response = api.postPriceandavailability(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, includeProductAttributes, imSenderID, priceAndAvailabilityRequest);
         // TODO: test validations
     }
 
