@@ -52,28 +52,32 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchRequestDateType
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class RenewalsSearchRequestDateType {
   public static final String SERIALIZED_NAME_START_DATE = "startDate";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private RenewalsSearchRequestDateTypeStartDate startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "endDate";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private RenewalsSearchRequestDateTypeEndDate endDate;
 
   public static final String SERIALIZED_NAME_INVOICE_DATE = "invoiceDate";
   @SerializedName(SERIALIZED_NAME_INVOICE_DATE)
+  @javax.annotation.Nullable
   private RenewalsSearchRequestDateTypeInvoiceDate invoiceDate;
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expirationDate";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
+  @javax.annotation.Nullable
   private RenewalsSearchRequestDateTypeExpirationDate expirationDate;
 
   public RenewalsSearchRequestDateType() {
   }
 
-  public RenewalsSearchRequestDateType startDate(RenewalsSearchRequestDateTypeStartDate startDate) {
+  public RenewalsSearchRequestDateType startDate(@javax.annotation.Nullable RenewalsSearchRequestDateTypeStartDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -87,12 +91,12 @@ public class RenewalsSearchRequestDateType {
     return startDate;
   }
 
-  public void setStartDate(RenewalsSearchRequestDateTypeStartDate startDate) {
+  public void setStartDate(@javax.annotation.Nullable RenewalsSearchRequestDateTypeStartDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public RenewalsSearchRequestDateType endDate(RenewalsSearchRequestDateTypeEndDate endDate) {
+  public RenewalsSearchRequestDateType endDate(@javax.annotation.Nullable RenewalsSearchRequestDateTypeEndDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -106,12 +110,12 @@ public class RenewalsSearchRequestDateType {
     return endDate;
   }
 
-  public void setEndDate(RenewalsSearchRequestDateTypeEndDate endDate) {
+  public void setEndDate(@javax.annotation.Nullable RenewalsSearchRequestDateTypeEndDate endDate) {
     this.endDate = endDate;
   }
 
 
-  public RenewalsSearchRequestDateType invoiceDate(RenewalsSearchRequestDateTypeInvoiceDate invoiceDate) {
+  public RenewalsSearchRequestDateType invoiceDate(@javax.annotation.Nullable RenewalsSearchRequestDateTypeInvoiceDate invoiceDate) {
     this.invoiceDate = invoiceDate;
     return this;
   }
@@ -125,12 +129,12 @@ public class RenewalsSearchRequestDateType {
     return invoiceDate;
   }
 
-  public void setInvoiceDate(RenewalsSearchRequestDateTypeInvoiceDate invoiceDate) {
+  public void setInvoiceDate(@javax.annotation.Nullable RenewalsSearchRequestDateTypeInvoiceDate invoiceDate) {
     this.invoiceDate = invoiceDate;
   }
 
 
-  public RenewalsSearchRequestDateType expirationDate(RenewalsSearchRequestDateTypeExpirationDate expirationDate) {
+  public RenewalsSearchRequestDateType expirationDate(@javax.annotation.Nullable RenewalsSearchRequestDateTypeExpirationDate expirationDate) {
     this.expirationDate = expirationDate;
     return this;
   }
@@ -144,7 +148,7 @@ public class RenewalsSearchRequestDateType {
     return expirationDate;
   }
 
-  public void setExpirationDate(RenewalsSearchRequestDateTypeExpirationDate expirationDate) {
+  public void setExpirationDate(@javax.annotation.Nullable RenewalsSearchRequestDateTypeExpirationDate expirationDate) {
     this.expirationDate = expirationDate;
   }
 

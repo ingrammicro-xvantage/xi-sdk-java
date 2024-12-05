@@ -50,48 +50,57 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner {
   public static final String SERIALIZED_NAME_DISCOUNT_TYPE = "discountType";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_TYPE)
+  @javax.annotation.Nullable
   private String discountType;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_NUMER = "specialBidNumer";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMER)
+  @javax.annotation.Nullable
   private String specialBidNumer;
 
   public static final String SERIALIZED_NAME_SPECIAL_PRICING_DISCOUNT = "specialPricingDiscount";
   @SerializedName(SERIALIZED_NAME_SPECIAL_PRICING_DISCOUNT)
+  @javax.annotation.Nullable
   private BigDecimal specialPricingDiscount;
 
   public static final String SERIALIZED_NAME_SPECIAL_PRICING_EFFECTIVE_DATE = "specialPricingEffectiveDate";
   @SerializedName(SERIALIZED_NAME_SPECIAL_PRICING_EFFECTIVE_DATE)
+  @javax.annotation.Nullable
   private LocalDate specialPricingEffectiveDate;
 
   public static final String SERIALIZED_NAME_SPECIAL_PRICING_EXPIRATION_DATE = "specialPricingExpirationDate";
   @SerializedName(SERIALIZED_NAME_SPECIAL_PRICING_EXPIRATION_DATE)
+  @javax.annotation.Nullable
   private LocalDate specialPricingExpirationDate;
 
   public static final String SERIALIZED_NAME_SPECIAL_PRICING_AVAILABLE_QUANTITY = "specialPricingAvailableQuantity";
   @SerializedName(SERIALIZED_NAME_SPECIAL_PRICING_AVAILABLE_QUANTITY)
+  @javax.annotation.Nullable
   private Integer specialPricingAvailableQuantity;
 
   public static final String SERIALIZED_NAME_SPECIAL_PRICING_MIN_QUANTITY = "specialPricingMinQuantity";
   @SerializedName(SERIALIZED_NAME_SPECIAL_PRICING_MIN_QUANTITY)
+  @javax.annotation.Nullable
   private Integer specialPricingMinQuantity;
 
   public static final String SERIALIZED_NAME_GOVERNMENT_DISCOUNT_TYPE = "governmentDiscountType";
   @SerializedName(SERIALIZED_NAME_GOVERNMENT_DISCOUNT_TYPE)
+  @javax.annotation.Nullable
   private String governmentDiscountType;
 
   public static final String SERIALIZED_NAME_GOVERNMENT_DISCOUNTED_CUSTOMER_PRICE = "governmentDiscountedCustomerPrice";
   @SerializedName(SERIALIZED_NAME_GOVERNMENT_DISCOUNTED_CUSTOMER_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal governmentDiscountedCustomerPrice;
 
   public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner discountType(String discountType) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner discountType(@javax.annotation.Nullable String discountType) {
     this.discountType = discountType;
     return this;
   }
@@ -105,12 +114,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner 
     return discountType;
   }
 
-  public void setDiscountType(String discountType) {
+  public void setDiscountType(@javax.annotation.Nullable String discountType) {
     this.discountType = discountType;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialBidNumer(String specialBidNumer) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialBidNumer(@javax.annotation.Nullable String specialBidNumer) {
     this.specialBidNumer = specialBidNumer;
     return this;
   }
@@ -124,12 +133,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner 
     return specialBidNumer;
   }
 
-  public void setSpecialBidNumer(String specialBidNumer) {
+  public void setSpecialBidNumer(@javax.annotation.Nullable String specialBidNumer) {
     this.specialBidNumer = specialBidNumer;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialPricingDiscount(BigDecimal specialPricingDiscount) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialPricingDiscount(@javax.annotation.Nullable BigDecimal specialPricingDiscount) {
     this.specialPricingDiscount = specialPricingDiscount;
     return this;
   }
@@ -143,12 +152,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner 
     return specialPricingDiscount;
   }
 
-  public void setSpecialPricingDiscount(BigDecimal specialPricingDiscount) {
+  public void setSpecialPricingDiscount(@javax.annotation.Nullable BigDecimal specialPricingDiscount) {
     this.specialPricingDiscount = specialPricingDiscount;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialPricingEffectiveDate(LocalDate specialPricingEffectiveDate) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialPricingEffectiveDate(@javax.annotation.Nullable LocalDate specialPricingEffectiveDate) {
     this.specialPricingEffectiveDate = specialPricingEffectiveDate;
     return this;
   }
@@ -162,12 +171,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner 
     return specialPricingEffectiveDate;
   }
 
-  public void setSpecialPricingEffectiveDate(LocalDate specialPricingEffectiveDate) {
+  public void setSpecialPricingEffectiveDate(@javax.annotation.Nullable LocalDate specialPricingEffectiveDate) {
     this.specialPricingEffectiveDate = specialPricingEffectiveDate;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialPricingExpirationDate(LocalDate specialPricingExpirationDate) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialPricingExpirationDate(@javax.annotation.Nullable LocalDate specialPricingExpirationDate) {
     this.specialPricingExpirationDate = specialPricingExpirationDate;
     return this;
   }
@@ -181,12 +190,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner 
     return specialPricingExpirationDate;
   }
 
-  public void setSpecialPricingExpirationDate(LocalDate specialPricingExpirationDate) {
+  public void setSpecialPricingExpirationDate(@javax.annotation.Nullable LocalDate specialPricingExpirationDate) {
     this.specialPricingExpirationDate = specialPricingExpirationDate;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialPricingAvailableQuantity(Integer specialPricingAvailableQuantity) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialPricingAvailableQuantity(@javax.annotation.Nullable Integer specialPricingAvailableQuantity) {
     this.specialPricingAvailableQuantity = specialPricingAvailableQuantity;
     return this;
   }
@@ -200,12 +209,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner 
     return specialPricingAvailableQuantity;
   }
 
-  public void setSpecialPricingAvailableQuantity(Integer specialPricingAvailableQuantity) {
+  public void setSpecialPricingAvailableQuantity(@javax.annotation.Nullable Integer specialPricingAvailableQuantity) {
     this.specialPricingAvailableQuantity = specialPricingAvailableQuantity;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialPricingMinQuantity(Integer specialPricingMinQuantity) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner specialPricingMinQuantity(@javax.annotation.Nullable Integer specialPricingMinQuantity) {
     this.specialPricingMinQuantity = specialPricingMinQuantity;
     return this;
   }
@@ -219,12 +228,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner 
     return specialPricingMinQuantity;
   }
 
-  public void setSpecialPricingMinQuantity(Integer specialPricingMinQuantity) {
+  public void setSpecialPricingMinQuantity(@javax.annotation.Nullable Integer specialPricingMinQuantity) {
     this.specialPricingMinQuantity = specialPricingMinQuantity;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner governmentDiscountType(String governmentDiscountType) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner governmentDiscountType(@javax.annotation.Nullable String governmentDiscountType) {
     this.governmentDiscountType = governmentDiscountType;
     return this;
   }
@@ -238,12 +247,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner 
     return governmentDiscountType;
   }
 
-  public void setGovernmentDiscountType(String governmentDiscountType) {
+  public void setGovernmentDiscountType(@javax.annotation.Nullable String governmentDiscountType) {
     this.governmentDiscountType = governmentDiscountType;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner governmentDiscountedCustomerPrice(BigDecimal governmentDiscountedCustomerPrice) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner governmentDiscountedCustomerPrice(@javax.annotation.Nullable BigDecimal governmentDiscountedCustomerPrice) {
     this.governmentDiscountedCustomerPrice = governmentDiscountedCustomerPrice;
     return this;
   }
@@ -257,7 +266,7 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner 
     return governmentDiscountedCustomerPrice;
   }
 
-  public void setGovernmentDiscountedCustomerPrice(BigDecimal governmentDiscountedCustomerPrice) {
+  public void setGovernmentDiscountedCustomerPrice(@javax.annotation.Nullable BigDecimal governmentDiscountedCustomerPrice) {
     this.governmentDiscountedCustomerPrice = governmentDiscountedCustomerPrice;
   }
 

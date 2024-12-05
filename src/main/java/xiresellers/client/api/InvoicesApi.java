@@ -87,7 +87,8 @@ public class InvoicesApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -128,22 +129,6 @@ public class InvoicesApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("includeSerialNumbers", includeSerialNumbers));
         }
 
-        if (imCustomerNumber != null) {
-            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
-        }
-
-        if (imCountryCode != null) {
-            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
-        }
-
-        if (imCorrelationID != null) {
-            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
-        }
-
-        if (imApplicationID != null) {
-            localVarHeaderParams.put("IM-ApplicationID", localVarApiClient.parameterToString(imApplicationID));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -158,6 +143,26 @@ public class InvoicesApi {
         if (localVarContentType != null) {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+
+        if (imApplicationID != null) {
+            localVarHeaderParams.put("IM-ApplicationID", localVarApiClient.parameterToString(imApplicationID));
+        }
+
 
         String[] localVarAuthNames = new String[] { "application" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
@@ -207,7 +212,8 @@ public class InvoicesApi {
      * @return InvoiceDetailsv61Response
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -232,7 +238,8 @@ public class InvoicesApi {
      * @return ApiResponse&lt;InvoiceDetailsv61Response&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -259,7 +266,8 @@ public class InvoicesApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -306,7 +314,8 @@ public class InvoicesApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> InvoiceSearchResponse to be returned </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -430,22 +439,6 @@ public class InvoicesApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("serialNumber", serialNumber));
         }
 
-        if (imApplicationID != null) {
-            localVarHeaderParams.put("IM-ApplicationID", localVarApiClient.parameterToString(imApplicationID));
-        }
-
-        if (imCustomerNumber != null) {
-            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
-        }
-
-        if (imCountryCode != null) {
-            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
-        }
-
-        if (imCorrelationID != null) {
-            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -460,6 +453,26 @@ public class InvoicesApi {
         if (localVarContentType != null) {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
+
+        if (imApplicationID != null) {
+            localVarHeaderParams.put("IM-ApplicationID", localVarApiClient.parameterToString(imApplicationID));
+        }
+
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
 
         String[] localVarAuthNames = new String[] { "application" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
@@ -524,7 +537,8 @@ public class InvoicesApi {
      * @return InvoiceSearchResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> InvoiceSearchResponse to be returned </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -569,7 +583,8 @@ public class InvoicesApi {
      * @return ApiResponse&lt;InvoiceSearchResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> InvoiceSearchResponse to be returned </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -616,7 +631,8 @@ public class InvoicesApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> InvoiceSearchResponse to be returned </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>

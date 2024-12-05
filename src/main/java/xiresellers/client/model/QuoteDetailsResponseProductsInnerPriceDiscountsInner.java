@@ -49,56 +49,67 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPriceDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expirationDate";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
+  @javax.annotation.Nullable
   private String expirationDate;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_AVALIABLE_QUNATITY = "avaliableQunatity";
   @SerializedName(SERIALIZED_NAME_AVALIABLE_QUNATITY)
+  @javax.annotation.Nullable
   private Integer avaliableQunatity;
 
   public static final String SERIALIZED_NAME_MINIMUM_QUANTITY = "minimumQuantity";
   @SerializedName(SERIALIZED_NAME_MINIMUM_QUANTITY)
+  @javax.annotation.Nullable
   private Integer minimumQuantity;
 
   public static final String SERIALIZED_NAME_BID_NUMBER = "bidNumber";
   @SerializedName(SERIALIZED_NAME_BID_NUMBER)
+  @javax.annotation.Nullable
   private String bidNumber;
 
   public static final String SERIALIZED_NAME_BID_VERSION = "bidVersion";
   @SerializedName(SERIALIZED_NAME_BID_VERSION)
+  @javax.annotation.Nullable
   private String bidVersion;
 
   public static final String SERIALIZED_NAME_VALID_FROM = "validFrom";
   @SerializedName(SERIALIZED_NAME_VALID_FROM)
+  @javax.annotation.Nullable
   private String validFrom;
 
   public static final String SERIALIZED_NAME_VALID_TO = "validTo";
   @SerializedName(SERIALIZED_NAME_VALID_TO)
+  @javax.annotation.Nullable
   private String validTo;
 
   public static final String SERIALIZED_NAME_DISCOUNT_OFF_LIST = "discountOffList";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_OFF_LIST)
+  @javax.annotation.Nullable
   private BigDecimal discountOffList;
 
   public QuoteDetailsResponseProductsInnerPriceDiscountsInner() {
   }
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner type(String type) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -112,12 +123,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner amount(BigDecimal amount) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -131,12 +142,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner expirationDate(String expirationDate) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner expirationDate(@javax.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
     return this;
   }
@@ -150,12 +161,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return expirationDate;
   }
 
-  public void setExpirationDate(String expirationDate) {
+  public void setExpirationDate(@javax.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner description(String description) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -169,12 +180,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner avaliableQunatity(Integer avaliableQunatity) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner avaliableQunatity(@javax.annotation.Nullable Integer avaliableQunatity) {
     this.avaliableQunatity = avaliableQunatity;
     return this;
   }
@@ -188,12 +199,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return avaliableQunatity;
   }
 
-  public void setAvaliableQunatity(Integer avaliableQunatity) {
+  public void setAvaliableQunatity(@javax.annotation.Nullable Integer avaliableQunatity) {
     this.avaliableQunatity = avaliableQunatity;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner minimumQuantity(Integer minimumQuantity) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner minimumQuantity(@javax.annotation.Nullable Integer minimumQuantity) {
     this.minimumQuantity = minimumQuantity;
     return this;
   }
@@ -207,12 +218,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return minimumQuantity;
   }
 
-  public void setMinimumQuantity(Integer minimumQuantity) {
+  public void setMinimumQuantity(@javax.annotation.Nullable Integer minimumQuantity) {
     this.minimumQuantity = minimumQuantity;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner bidNumber(String bidNumber) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner bidNumber(@javax.annotation.Nullable String bidNumber) {
     this.bidNumber = bidNumber;
     return this;
   }
@@ -226,12 +237,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return bidNumber;
   }
 
-  public void setBidNumber(String bidNumber) {
+  public void setBidNumber(@javax.annotation.Nullable String bidNumber) {
     this.bidNumber = bidNumber;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner bidVersion(String bidVersion) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner bidVersion(@javax.annotation.Nullable String bidVersion) {
     this.bidVersion = bidVersion;
     return this;
   }
@@ -245,12 +256,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return bidVersion;
   }
 
-  public void setBidVersion(String bidVersion) {
+  public void setBidVersion(@javax.annotation.Nullable String bidVersion) {
     this.bidVersion = bidVersion;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner validFrom(String validFrom) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner validFrom(@javax.annotation.Nullable String validFrom) {
     this.validFrom = validFrom;
     return this;
   }
@@ -264,12 +275,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return validFrom;
   }
 
-  public void setValidFrom(String validFrom) {
+  public void setValidFrom(@javax.annotation.Nullable String validFrom) {
     this.validFrom = validFrom;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner validTo(String validTo) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner validTo(@javax.annotation.Nullable String validTo) {
     this.validTo = validTo;
     return this;
   }
@@ -283,12 +294,12 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return validTo;
   }
 
-  public void setValidTo(String validTo) {
+  public void setValidTo(@javax.annotation.Nullable String validTo) {
     this.validTo = validTo;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceDiscountsInner discountOffList(BigDecimal discountOffList) {
+  public QuoteDetailsResponseProductsInnerPriceDiscountsInner discountOffList(@javax.annotation.Nullable BigDecimal discountOffList) {
     this.discountOffList = discountOffList;
     return this;
   }
@@ -302,7 +313,7 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
     return discountOffList;
   }
 
-  public void setDiscountOffList(BigDecimal discountOffList) {
+  public void setDiscountOffList(@javax.annotation.Nullable BigDecimal discountOffList) {
     this.discountOffList = discountOffList;
   }
 

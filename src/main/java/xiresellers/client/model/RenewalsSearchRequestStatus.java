@@ -49,16 +49,17 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchRequestStatus
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class RenewalsSearchRequestStatus {
   public static final String SERIALIZED_NAME_OPPORUTINY_STATUS = "OpporutinyStatus";
   @SerializedName(SERIALIZED_NAME_OPPORUTINY_STATUS)
+  @javax.annotation.Nullable
   private RenewalsSearchRequestStatusOpporutinyStatus opporutinyStatus;
 
   public RenewalsSearchRequestStatus() {
   }
 
-  public RenewalsSearchRequestStatus opporutinyStatus(RenewalsSearchRequestStatusOpporutinyStatus opporutinyStatus) {
+  public RenewalsSearchRequestStatus opporutinyStatus(@javax.annotation.Nullable RenewalsSearchRequestStatusOpporutinyStatus opporutinyStatus) {
     this.opporutinyStatus = opporutinyStatus;
     return this;
   }
@@ -72,7 +73,7 @@ public class RenewalsSearchRequestStatus {
     return opporutinyStatus;
   }
 
-  public void setOpporutinyStatus(RenewalsSearchRequestStatusOpporutinyStatus opporutinyStatus) {
+  public void setOpporutinyStatus(@javax.annotation.Nullable RenewalsSearchRequestStatusOpporutinyStatus opporutinyStatus) {
     this.opporutinyStatus = opporutinyStatus;
   }
 

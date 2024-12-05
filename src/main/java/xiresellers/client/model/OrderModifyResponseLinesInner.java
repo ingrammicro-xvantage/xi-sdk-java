@@ -52,56 +52,67 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderModifyResponseLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String subOrderNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String ingramLineNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String customerLineNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY_ORDERED = "quantityOrdered";
   @SerializedName(SERIALIZED_NAME_QUANTITY_ORDERED)
+  @javax.annotation.Nullable
   private Integer quantityOrdered;
 
   public static final String SERIALIZED_NAME_QUANTITY_CONFIRMED = "quantityConfirmed";
   @SerializedName(SERIALIZED_NAME_QUANTITY_CONFIRMED)
+  @javax.annotation.Nullable
   private Integer quantityConfirmed;
 
   public static final String SERIALIZED_NAME_QUANTITY_BACK_ORDERED = "quantityBackOrdered";
   @SerializedName(SERIALIZED_NAME_QUANTITY_BACK_ORDERED)
+  @javax.annotation.Nullable
   private Integer quantityBackOrdered;
 
   public static final String SERIALIZED_NAME_SHIPMENT_DETAILS = "shipmentDetails";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DETAILS)
+  @javax.annotation.Nullable
   private OrderModifyResponseLinesInnerShipmentDetails shipmentDetails;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderModifyResponseLinesInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public OrderModifyResponseLinesInner() {
   }
 
-  public OrderModifyResponseLinesInner subOrderNumber(String subOrderNumber) {
+  public OrderModifyResponseLinesInner subOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
     return this;
   }
@@ -115,12 +126,12 @@ public class OrderModifyResponseLinesInner {
     return subOrderNumber;
   }
 
-  public void setSubOrderNumber(String subOrderNumber) {
+  public void setSubOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
   }
 
 
-  public OrderModifyResponseLinesInner ingramLineNumber(String ingramLineNumber) {
+  public OrderModifyResponseLinesInner ingramLineNumber(@javax.annotation.Nullable String ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
     return this;
   }
@@ -134,12 +145,12 @@ public class OrderModifyResponseLinesInner {
     return ingramLineNumber;
   }
 
-  public void setIngramLineNumber(String ingramLineNumber) {
+  public void setIngramLineNumber(@javax.annotation.Nullable String ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
   }
 
 
-  public OrderModifyResponseLinesInner customerLineNumber(String customerLineNumber) {
+  public OrderModifyResponseLinesInner customerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
     return this;
   }
@@ -153,12 +164,12 @@ public class OrderModifyResponseLinesInner {
     return customerLineNumber;
   }
 
-  public void setCustomerLineNumber(String customerLineNumber) {
+  public void setCustomerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
   }
 
 
-  public OrderModifyResponseLinesInner ingramPartNumber(String ingramPartNumber) {
+  public OrderModifyResponseLinesInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -172,12 +183,12 @@ public class OrderModifyResponseLinesInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public OrderModifyResponseLinesInner vendorPartNumber(String vendorPartNumber) {
+  public OrderModifyResponseLinesInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -191,12 +202,12 @@ public class OrderModifyResponseLinesInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public OrderModifyResponseLinesInner quantityOrdered(Integer quantityOrdered) {
+  public OrderModifyResponseLinesInner quantityOrdered(@javax.annotation.Nullable Integer quantityOrdered) {
     this.quantityOrdered = quantityOrdered;
     return this;
   }
@@ -210,12 +221,12 @@ public class OrderModifyResponseLinesInner {
     return quantityOrdered;
   }
 
-  public void setQuantityOrdered(Integer quantityOrdered) {
+  public void setQuantityOrdered(@javax.annotation.Nullable Integer quantityOrdered) {
     this.quantityOrdered = quantityOrdered;
   }
 
 
-  public OrderModifyResponseLinesInner quantityConfirmed(Integer quantityConfirmed) {
+  public OrderModifyResponseLinesInner quantityConfirmed(@javax.annotation.Nullable Integer quantityConfirmed) {
     this.quantityConfirmed = quantityConfirmed;
     return this;
   }
@@ -229,12 +240,12 @@ public class OrderModifyResponseLinesInner {
     return quantityConfirmed;
   }
 
-  public void setQuantityConfirmed(Integer quantityConfirmed) {
+  public void setQuantityConfirmed(@javax.annotation.Nullable Integer quantityConfirmed) {
     this.quantityConfirmed = quantityConfirmed;
   }
 
 
-  public OrderModifyResponseLinesInner quantityBackOrdered(Integer quantityBackOrdered) {
+  public OrderModifyResponseLinesInner quantityBackOrdered(@javax.annotation.Nullable Integer quantityBackOrdered) {
     this.quantityBackOrdered = quantityBackOrdered;
     return this;
   }
@@ -248,12 +259,12 @@ public class OrderModifyResponseLinesInner {
     return quantityBackOrdered;
   }
 
-  public void setQuantityBackOrdered(Integer quantityBackOrdered) {
+  public void setQuantityBackOrdered(@javax.annotation.Nullable Integer quantityBackOrdered) {
     this.quantityBackOrdered = quantityBackOrdered;
   }
 
 
-  public OrderModifyResponseLinesInner shipmentDetails(OrderModifyResponseLinesInnerShipmentDetails shipmentDetails) {
+  public OrderModifyResponseLinesInner shipmentDetails(@javax.annotation.Nullable OrderModifyResponseLinesInnerShipmentDetails shipmentDetails) {
     this.shipmentDetails = shipmentDetails;
     return this;
   }
@@ -267,12 +278,12 @@ public class OrderModifyResponseLinesInner {
     return shipmentDetails;
   }
 
-  public void setShipmentDetails(OrderModifyResponseLinesInnerShipmentDetails shipmentDetails) {
+  public void setShipmentDetails(@javax.annotation.Nullable OrderModifyResponseLinesInnerShipmentDetails shipmentDetails) {
     this.shipmentDetails = shipmentDetails;
   }
 
 
-  public OrderModifyResponseLinesInner additionalAttributes(List<OrderModifyResponseLinesInnerAdditionalAttributesInner> additionalAttributes) {
+  public OrderModifyResponseLinesInner additionalAttributes(@javax.annotation.Nullable List<OrderModifyResponseLinesInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -294,12 +305,12 @@ public class OrderModifyResponseLinesInner {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<OrderModifyResponseLinesInnerAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<OrderModifyResponseLinesInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 
 
-  public OrderModifyResponseLinesInner notes(String notes) {
+  public OrderModifyResponseLinesInner notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -313,7 +324,7 @@ public class OrderModifyResponseLinesInner {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 

@@ -53,20 +53,22 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerDiscountsInner {
   public static final String SERIALIZED_NAME_SPECIAL_PRICING = "specialPricing";
   @SerializedName(SERIALIZED_NAME_SPECIAL_PRICING)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner> specialPricing = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_QUANTITY_DISCOUNTS = "quantityDiscounts";
   @SerializedName(SERIALIZED_NAME_QUANTITY_DISCOUNTS)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner> quantityDiscounts;
 
   public PriceAndAvailabilityResponseInnerDiscountsInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerDiscountsInner specialPricing(List<PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner> specialPricing) {
+  public PriceAndAvailabilityResponseInnerDiscountsInner specialPricing(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner> specialPricing) {
     this.specialPricing = specialPricing;
     return this;
   }
@@ -88,12 +90,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInner {
     return specialPricing;
   }
 
-  public void setSpecialPricing(List<PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner> specialPricing) {
+  public void setSpecialPricing(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner> specialPricing) {
     this.specialPricing = specialPricing;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInner quantityDiscounts(List<PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner> quantityDiscounts) {
+  public PriceAndAvailabilityResponseInnerDiscountsInner quantityDiscounts(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner> quantityDiscounts) {
     this.quantityDiscounts = quantityDiscounts;
     return this;
   }
@@ -115,7 +117,7 @@ public class PriceAndAvailabilityResponseInnerDiscountsInner {
     return quantityDiscounts;
   }
 
-  public void setQuantityDiscounts(List<PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner> quantityDiscounts) {
+  public void setQuantityDiscounts(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner> quantityDiscounts) {
     this.quantityDiscounts = quantityDiscounts;
   }
 

@@ -53,44 +53,52 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class FreightResponseFreightEstimateResponse {
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_TOTAL_FREIGHT_AMOUNT = "totalFreightAmount";
   @SerializedName(SERIALIZED_NAME_TOTAL_FREIGHT_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal totalFreightAmount;
 
   public static final String SERIALIZED_NAME_TOTAL_TAX_AMOUNT = "totalTaxAmount";
   @SerializedName(SERIALIZED_NAME_TOTAL_TAX_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal totalTaxAmount;
 
   public static final String SERIALIZED_NAME_TOTAL_FEES = "totalFees";
   @SerializedName(SERIALIZED_NAME_TOTAL_FEES)
+  @javax.annotation.Nullable
   private BigDecimal totalFees;
 
   public static final String SERIALIZED_NAME_TOTAL_NET_AMOUNT = "totalNetAmount";
   @SerializedName(SERIALIZED_NAME_TOTAL_NET_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal totalNetAmount;
 
   public static final String SERIALIZED_NAME_GROSS_AMOUNT = "grossAmount";
   @SerializedName(SERIALIZED_NAME_GROSS_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal grossAmount;
 
   public static final String SERIALIZED_NAME_DISTRIBUTION = "distribution";
   @SerializedName(SERIALIZED_NAME_DISTRIBUTION)
+  @javax.annotation.Nullable
   private List<FreightResponseFreightEstimateResponseDistributionInner> distribution = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<FreightResponseFreightEstimateResponseLinesInner> lines = new ArrayList<>();
 
   public FreightResponseFreightEstimateResponse() {
   }
 
-  public FreightResponseFreightEstimateResponse currencyCode(String currencyCode) {
+  public FreightResponseFreightEstimateResponse currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -104,12 +112,12 @@ public class FreightResponseFreightEstimateResponse {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public FreightResponseFreightEstimateResponse totalFreightAmount(BigDecimal totalFreightAmount) {
+  public FreightResponseFreightEstimateResponse totalFreightAmount(@javax.annotation.Nullable BigDecimal totalFreightAmount) {
     this.totalFreightAmount = totalFreightAmount;
     return this;
   }
@@ -123,12 +131,12 @@ public class FreightResponseFreightEstimateResponse {
     return totalFreightAmount;
   }
 
-  public void setTotalFreightAmount(BigDecimal totalFreightAmount) {
+  public void setTotalFreightAmount(@javax.annotation.Nullable BigDecimal totalFreightAmount) {
     this.totalFreightAmount = totalFreightAmount;
   }
 
 
-  public FreightResponseFreightEstimateResponse totalTaxAmount(BigDecimal totalTaxAmount) {
+  public FreightResponseFreightEstimateResponse totalTaxAmount(@javax.annotation.Nullable BigDecimal totalTaxAmount) {
     this.totalTaxAmount = totalTaxAmount;
     return this;
   }
@@ -142,12 +150,12 @@ public class FreightResponseFreightEstimateResponse {
     return totalTaxAmount;
   }
 
-  public void setTotalTaxAmount(BigDecimal totalTaxAmount) {
+  public void setTotalTaxAmount(@javax.annotation.Nullable BigDecimal totalTaxAmount) {
     this.totalTaxAmount = totalTaxAmount;
   }
 
 
-  public FreightResponseFreightEstimateResponse totalFees(BigDecimal totalFees) {
+  public FreightResponseFreightEstimateResponse totalFees(@javax.annotation.Nullable BigDecimal totalFees) {
     this.totalFees = totalFees;
     return this;
   }
@@ -161,12 +169,12 @@ public class FreightResponseFreightEstimateResponse {
     return totalFees;
   }
 
-  public void setTotalFees(BigDecimal totalFees) {
+  public void setTotalFees(@javax.annotation.Nullable BigDecimal totalFees) {
     this.totalFees = totalFees;
   }
 
 
-  public FreightResponseFreightEstimateResponse totalNetAmount(BigDecimal totalNetAmount) {
+  public FreightResponseFreightEstimateResponse totalNetAmount(@javax.annotation.Nullable BigDecimal totalNetAmount) {
     this.totalNetAmount = totalNetAmount;
     return this;
   }
@@ -180,12 +188,12 @@ public class FreightResponseFreightEstimateResponse {
     return totalNetAmount;
   }
 
-  public void setTotalNetAmount(BigDecimal totalNetAmount) {
+  public void setTotalNetAmount(@javax.annotation.Nullable BigDecimal totalNetAmount) {
     this.totalNetAmount = totalNetAmount;
   }
 
 
-  public FreightResponseFreightEstimateResponse grossAmount(BigDecimal grossAmount) {
+  public FreightResponseFreightEstimateResponse grossAmount(@javax.annotation.Nullable BigDecimal grossAmount) {
     this.grossAmount = grossAmount;
     return this;
   }
@@ -199,12 +207,12 @@ public class FreightResponseFreightEstimateResponse {
     return grossAmount;
   }
 
-  public void setGrossAmount(BigDecimal grossAmount) {
+  public void setGrossAmount(@javax.annotation.Nullable BigDecimal grossAmount) {
     this.grossAmount = grossAmount;
   }
 
 
-  public FreightResponseFreightEstimateResponse distribution(List<FreightResponseFreightEstimateResponseDistributionInner> distribution) {
+  public FreightResponseFreightEstimateResponse distribution(@javax.annotation.Nullable List<FreightResponseFreightEstimateResponseDistributionInner> distribution) {
     this.distribution = distribution;
     return this;
   }
@@ -226,12 +234,12 @@ public class FreightResponseFreightEstimateResponse {
     return distribution;
   }
 
-  public void setDistribution(List<FreightResponseFreightEstimateResponseDistributionInner> distribution) {
+  public void setDistribution(@javax.annotation.Nullable List<FreightResponseFreightEstimateResponseDistributionInner> distribution) {
     this.distribution = distribution;
   }
 
 
-  public FreightResponseFreightEstimateResponse lines(List<FreightResponseFreightEstimateResponseLinesInner> lines) {
+  public FreightResponseFreightEstimateResponse lines(@javax.annotation.Nullable List<FreightResponseFreightEstimateResponseLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -253,7 +261,7 @@ public class FreightResponseFreightEstimateResponse {
     return lines;
   }
 
-  public void setLines(List<FreightResponseFreightEstimateResponseLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<FreightResponseFreightEstimateResponseLinesInner> lines) {
     this.lines = lines;
   }
 

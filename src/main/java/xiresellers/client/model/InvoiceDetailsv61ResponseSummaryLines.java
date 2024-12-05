@@ -48,20 +48,22 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryLines
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceDetailsv61ResponseSummaryLines {
   public static final String SERIALIZED_NAME_PRODUCT_LINE_COUNT = "productLineCount";
   @SerializedName(SERIALIZED_NAME_PRODUCT_LINE_COUNT)
+  @javax.annotation.Nullable
   private Integer productLineCount;
 
   public static final String SERIALIZED_NAME_PRODUCT_LINE_TOTAL_QUANTITY = "productLineTotalQuantity";
   @SerializedName(SERIALIZED_NAME_PRODUCT_LINE_TOTAL_QUANTITY)
+  @javax.annotation.Nullable
   private Integer productLineTotalQuantity;
 
   public InvoiceDetailsv61ResponseSummaryLines() {
   }
 
-  public InvoiceDetailsv61ResponseSummaryLines productLineCount(Integer productLineCount) {
+  public InvoiceDetailsv61ResponseSummaryLines productLineCount(@javax.annotation.Nullable Integer productLineCount) {
     this.productLineCount = productLineCount;
     return this;
   }
@@ -75,12 +77,12 @@ public class InvoiceDetailsv61ResponseSummaryLines {
     return productLineCount;
   }
 
-  public void setProductLineCount(Integer productLineCount) {
+  public void setProductLineCount(@javax.annotation.Nullable Integer productLineCount) {
     this.productLineCount = productLineCount;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryLines productLineTotalQuantity(Integer productLineTotalQuantity) {
+  public InvoiceDetailsv61ResponseSummaryLines productLineTotalQuantity(@javax.annotation.Nullable Integer productLineTotalQuantity) {
     this.productLineTotalQuantity = productLineTotalQuantity;
     return this;
   }
@@ -94,7 +96,7 @@ public class InvoiceDetailsv61ResponseSummaryLines {
     return productLineTotalQuantity;
   }
 
-  public void setProductLineTotalQuantity(Integer productLineTotalQuantity) {
+  public void setProductLineTotalQuantity(@javax.annotation.Nullable Integer productLineTotalQuantity) {
     this.productLineTotalQuantity = productLineTotalQuantity;
   }
 

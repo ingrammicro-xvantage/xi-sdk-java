@@ -55,28 +55,32 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummary
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceDetailsv61ResponseSummary {
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private InvoiceDetailsv61ResponseSummaryLines lines;
 
   public static final String SERIALIZED_NAME_MISC_CHARGES = "miscCharges";
   @SerializedName(SERIALIZED_NAME_MISC_CHARGES)
+  @javax.annotation.Nullable
   private List<InvoiceDetailsv61ResponseSummaryMiscChargesInner> miscCharges;
 
   public static final String SERIALIZED_NAME_TOTALS = "totals";
   @SerializedName(SERIALIZED_NAME_TOTALS)
+  @javax.annotation.Nullable
   private InvoiceDetailsv61ResponseSummaryTotals totals;
 
   public static final String SERIALIZED_NAME_FOREIGN_FX_TOTALS = "foreignFxTotals";
   @SerializedName(SERIALIZED_NAME_FOREIGN_FX_TOTALS)
+  @javax.annotation.Nullable
   private InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignFxTotals;
 
   public InvoiceDetailsv61ResponseSummary() {
   }
 
-  public InvoiceDetailsv61ResponseSummary lines(InvoiceDetailsv61ResponseSummaryLines lines) {
+  public InvoiceDetailsv61ResponseSummary lines(@javax.annotation.Nullable InvoiceDetailsv61ResponseSummaryLines lines) {
     this.lines = lines;
     return this;
   }
@@ -90,12 +94,12 @@ public class InvoiceDetailsv61ResponseSummary {
     return lines;
   }
 
-  public void setLines(InvoiceDetailsv61ResponseSummaryLines lines) {
+  public void setLines(@javax.annotation.Nullable InvoiceDetailsv61ResponseSummaryLines lines) {
     this.lines = lines;
   }
 
 
-  public InvoiceDetailsv61ResponseSummary miscCharges(List<InvoiceDetailsv61ResponseSummaryMiscChargesInner> miscCharges) {
+  public InvoiceDetailsv61ResponseSummary miscCharges(@javax.annotation.Nullable List<InvoiceDetailsv61ResponseSummaryMiscChargesInner> miscCharges) {
     this.miscCharges = miscCharges;
     return this;
   }
@@ -117,12 +121,12 @@ public class InvoiceDetailsv61ResponseSummary {
     return miscCharges;
   }
 
-  public void setMiscCharges(List<InvoiceDetailsv61ResponseSummaryMiscChargesInner> miscCharges) {
+  public void setMiscCharges(@javax.annotation.Nullable List<InvoiceDetailsv61ResponseSummaryMiscChargesInner> miscCharges) {
     this.miscCharges = miscCharges;
   }
 
 
-  public InvoiceDetailsv61ResponseSummary totals(InvoiceDetailsv61ResponseSummaryTotals totals) {
+  public InvoiceDetailsv61ResponseSummary totals(@javax.annotation.Nullable InvoiceDetailsv61ResponseSummaryTotals totals) {
     this.totals = totals;
     return this;
   }
@@ -136,12 +140,12 @@ public class InvoiceDetailsv61ResponseSummary {
     return totals;
   }
 
-  public void setTotals(InvoiceDetailsv61ResponseSummaryTotals totals) {
+  public void setTotals(@javax.annotation.Nullable InvoiceDetailsv61ResponseSummaryTotals totals) {
     this.totals = totals;
   }
 
 
-  public InvoiceDetailsv61ResponseSummary foreignFxTotals(InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignFxTotals) {
+  public InvoiceDetailsv61ResponseSummary foreignFxTotals(@javax.annotation.Nullable InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignFxTotals) {
     this.foreignFxTotals = foreignFxTotals;
     return this;
   }
@@ -155,7 +159,7 @@ public class InvoiceDetailsv61ResponseSummary {
     return foreignFxTotals;
   }
 
-  public void setForeignFxTotals(InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignFxTotals) {
+  public void setForeignFxTotals(@javax.annotation.Nullable InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignFxTotals) {
     this.foreignFxTotals = foreignFxTotals;
   }
 

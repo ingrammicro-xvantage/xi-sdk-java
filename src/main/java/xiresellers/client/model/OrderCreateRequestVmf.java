@@ -48,16 +48,17 @@ import xiresellers.client.JSON;
 /**
  * Vendor mandatory fields, this is required in case of warranty orders.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateRequestVmf {
   public static final String SERIALIZED_NAME_VEND_AUTH_NUMBER = "vendAuthNumber";
   @SerializedName(SERIALIZED_NAME_VEND_AUTH_NUMBER)
+  @javax.annotation.Nullable
   private String vendAuthNumber;
 
   public OrderCreateRequestVmf() {
   }
 
-  public OrderCreateRequestVmf vendAuthNumber(String vendAuthNumber) {
+  public OrderCreateRequestVmf vendAuthNumber(@javax.annotation.Nullable String vendAuthNumber) {
     this.vendAuthNumber = vendAuthNumber;
     return this;
   }
@@ -71,7 +72,7 @@ public class OrderCreateRequestVmf {
     return vendAuthNumber;
   }
 
-  public void setVendAuthNumber(String vendAuthNumber) {
+  public void setVendAuthNumber(@javax.annotation.Nullable String vendAuthNumber) {
     this.vendAuthNumber = vendAuthNumber;
   }
 

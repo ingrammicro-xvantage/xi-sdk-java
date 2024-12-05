@@ -51,28 +51,32 @@ import xiresellers.client.JSON;
 /**
  * ErrorResponseErrorsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ErrorResponseErrorsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public static final String SERIALIZED_NAME_FIELDS = "fields";
   @SerializedName(SERIALIZED_NAME_FIELDS)
+  @javax.annotation.Nullable
   private List<ErrorResponseErrorsInnerFieldsInner> fields = new ArrayList<>();
 
   public ErrorResponseErrorsInner() {
   }
 
-  public ErrorResponseErrorsInner id(String id) {
+  public ErrorResponseErrorsInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -86,12 +90,12 @@ public class ErrorResponseErrorsInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public ErrorResponseErrorsInner type(String type) {
+  public ErrorResponseErrorsInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -105,12 +109,12 @@ public class ErrorResponseErrorsInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public ErrorResponseErrorsInner message(String message) {
+  public ErrorResponseErrorsInner message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -124,12 +128,12 @@ public class ErrorResponseErrorsInner {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 
 
-  public ErrorResponseErrorsInner fields(List<ErrorResponseErrorsInnerFieldsInner> fields) {
+  public ErrorResponseErrorsInner fields(@javax.annotation.Nullable List<ErrorResponseErrorsInnerFieldsInner> fields) {
     this.fields = fields;
     return this;
   }
@@ -151,7 +155,7 @@ public class ErrorResponseErrorsInner {
     return fields;
   }
 
-  public void setFields(List<ErrorResponseErrorsInnerFieldsInner> fields) {
+  public void setFields(@javax.annotation.Nullable List<ErrorResponseErrorsInnerFieldsInner> fields) {
     this.fields = fields;
   }
 

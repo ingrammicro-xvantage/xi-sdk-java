@@ -53,68 +53,82 @@ import xiresellers.client.JSON;
 /**
  * ReturnsCreateResponseReturnsClaimsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ReturnsCreateResponseReturnsClaimsInner {
   public static final String SERIALIZED_NAME_RMA_CLAIM_ID = "rmaClaimId";
   @SerializedName(SERIALIZED_NAME_RMA_CLAIM_ID)
+  @javax.annotation.Nullable
   private String rmaClaimId;
 
   public static final String SERIALIZED_NAME_CASE_REQUEST_NUMBER = "caseRequestNumber";
   @SerializedName(SERIALIZED_NAME_CASE_REQUEST_NUMBER)
+  @javax.annotation.Nullable
   private String caseRequestNumber;
 
   public static final String SERIALIZED_NAME_REFERENCE_NUMBER = "referenceNumber";
   @SerializedName(SERIALIZED_NAME_REFERENCE_NUMBER)
+  @javax.annotation.Nullable
   private String referenceNumber;
 
   public static final String SERIALIZED_NAME_CREATED_ON = "createdOn";
   @SerializedName(SERIALIZED_NAME_CREATED_ON)
+  @javax.annotation.Nullable
   private LocalDate createdOn;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_RETURN_REASON = "returnReason";
   @SerializedName(SERIALIZED_NAME_RETURN_REASON)
+  @javax.annotation.Nullable
   private String returnReason;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private Integer quantity;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_ESTIMATED_TOTAL_VALUE = "estimatedTotalValue";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_TOTAL_VALUE)
+  @javax.annotation.Nullable
   private BigDecimal estimatedTotalValue;
 
   public static final String SERIALIZED_NAME_CREDIT = "credit";
   @SerializedName(SERIALIZED_NAME_CREDIT)
+  @javax.annotation.Nullable
   private BigDecimal credit;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> links = new ArrayList<>();
 
   public ReturnsCreateResponseReturnsClaimsInner() {
   }
 
-  public ReturnsCreateResponseReturnsClaimsInner rmaClaimId(String rmaClaimId) {
+  public ReturnsCreateResponseReturnsClaimsInner rmaClaimId(@javax.annotation.Nullable String rmaClaimId) {
     this.rmaClaimId = rmaClaimId;
     return this;
   }
@@ -128,12 +142,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return rmaClaimId;
   }
 
-  public void setRmaClaimId(String rmaClaimId) {
+  public void setRmaClaimId(@javax.annotation.Nullable String rmaClaimId) {
     this.rmaClaimId = rmaClaimId;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner caseRequestNumber(String caseRequestNumber) {
+  public ReturnsCreateResponseReturnsClaimsInner caseRequestNumber(@javax.annotation.Nullable String caseRequestNumber) {
     this.caseRequestNumber = caseRequestNumber;
     return this;
   }
@@ -147,12 +161,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return caseRequestNumber;
   }
 
-  public void setCaseRequestNumber(String caseRequestNumber) {
+  public void setCaseRequestNumber(@javax.annotation.Nullable String caseRequestNumber) {
     this.caseRequestNumber = caseRequestNumber;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner referenceNumber(String referenceNumber) {
+  public ReturnsCreateResponseReturnsClaimsInner referenceNumber(@javax.annotation.Nullable String referenceNumber) {
     this.referenceNumber = referenceNumber;
     return this;
   }
@@ -166,12 +180,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return referenceNumber;
   }
 
-  public void setReferenceNumber(String referenceNumber) {
+  public void setReferenceNumber(@javax.annotation.Nullable String referenceNumber) {
     this.referenceNumber = referenceNumber;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner createdOn(LocalDate createdOn) {
+  public ReturnsCreateResponseReturnsClaimsInner createdOn(@javax.annotation.Nullable LocalDate createdOn) {
     this.createdOn = createdOn;
     return this;
   }
@@ -185,12 +199,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return createdOn;
   }
 
-  public void setCreatedOn(LocalDate createdOn) {
+  public void setCreatedOn(@javax.annotation.Nullable LocalDate createdOn) {
     this.createdOn = createdOn;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner type(String type) {
+  public ReturnsCreateResponseReturnsClaimsInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -204,12 +218,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner returnReason(String returnReason) {
+  public ReturnsCreateResponseReturnsClaimsInner returnReason(@javax.annotation.Nullable String returnReason) {
     this.returnReason = returnReason;
     return this;
   }
@@ -223,12 +237,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return returnReason;
   }
 
-  public void setReturnReason(String returnReason) {
+  public void setReturnReason(@javax.annotation.Nullable String returnReason) {
     this.returnReason = returnReason;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner ingramPartNumber(String ingramPartNumber) {
+  public ReturnsCreateResponseReturnsClaimsInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -242,12 +256,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner vendorPartNumber(String vendorPartNumber) {
+  public ReturnsCreateResponseReturnsClaimsInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -261,12 +275,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner quantity(Integer quantity) {
+  public ReturnsCreateResponseReturnsClaimsInner quantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -280,12 +294,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner notes(String notes) {
+  public ReturnsCreateResponseReturnsClaimsInner notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -299,12 +313,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner estimatedTotalValue(BigDecimal estimatedTotalValue) {
+  public ReturnsCreateResponseReturnsClaimsInner estimatedTotalValue(@javax.annotation.Nullable BigDecimal estimatedTotalValue) {
     this.estimatedTotalValue = estimatedTotalValue;
     return this;
   }
@@ -318,12 +332,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return estimatedTotalValue;
   }
 
-  public void setEstimatedTotalValue(BigDecimal estimatedTotalValue) {
+  public void setEstimatedTotalValue(@javax.annotation.Nullable BigDecimal estimatedTotalValue) {
     this.estimatedTotalValue = estimatedTotalValue;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner credit(BigDecimal credit) {
+  public ReturnsCreateResponseReturnsClaimsInner credit(@javax.annotation.Nullable BigDecimal credit) {
     this.credit = credit;
     return this;
   }
@@ -337,12 +351,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return credit;
   }
 
-  public void setCredit(BigDecimal credit) {
+  public void setCredit(@javax.annotation.Nullable BigDecimal credit) {
     this.credit = credit;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner status(String status) {
+  public ReturnsCreateResponseReturnsClaimsInner status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -356,12 +370,12 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public ReturnsCreateResponseReturnsClaimsInner links(List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> links) {
+  public ReturnsCreateResponseReturnsClaimsInner links(@javax.annotation.Nullable List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -383,7 +397,7 @@ public class ReturnsCreateResponseReturnsClaimsInner {
     return links;
   }
 
-  public void setLinks(List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> links) {
     this.links = links;
   }
 

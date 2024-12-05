@@ -49,36 +49,42 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7Response {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)
+  @javax.annotation.Nullable
   private String topic;
 
   public static final String SERIALIZED_NAME_EVENT = "event";
   @SerializedName(SERIALIZED_NAME_EVENT)
+  @javax.annotation.Nullable
   private String event;
 
   public static final String SERIALIZED_NAME_EVENT_TIME_STAMP = "eventTimeStamp";
   @SerializedName(SERIALIZED_NAME_EVENT_TIME_STAMP)
+  @javax.annotation.Nullable
   private String eventTimeStamp;
 
   public static final String SERIALIZED_NAME_EVENT_ID = "eventId";
   @SerializedName(SERIALIZED_NAME_EVENT_ID)
+  @javax.annotation.Nullable
   private String eventId;
 
   public static final String SERIALIZED_NAME_EVENT_TYPE = "eventType";
   @SerializedName(SERIALIZED_NAME_EVENT_TYPE)
+  @javax.annotation.Nullable
   private String eventType;
 
   public static final String SERIALIZED_NAME_RESOURCE = "resource";
   @SerializedName(SERIALIZED_NAME_RESOURCE)
+  @javax.annotation.Nullable
   private OrderCreateV7ResponseResource resource;
 
   public OrderCreateV7Response() {
   }
 
-  public OrderCreateV7Response topic(String topic) {
+  public OrderCreateV7Response topic(@javax.annotation.Nullable String topic) {
     this.topic = topic;
     return this;
   }
@@ -92,12 +98,12 @@ public class OrderCreateV7Response {
     return topic;
   }
 
-  public void setTopic(String topic) {
+  public void setTopic(@javax.annotation.Nullable String topic) {
     this.topic = topic;
   }
 
 
-  public OrderCreateV7Response event(String event) {
+  public OrderCreateV7Response event(@javax.annotation.Nullable String event) {
     this.event = event;
     return this;
   }
@@ -111,12 +117,12 @@ public class OrderCreateV7Response {
     return event;
   }
 
-  public void setEvent(String event) {
+  public void setEvent(@javax.annotation.Nullable String event) {
     this.event = event;
   }
 
 
-  public OrderCreateV7Response eventTimeStamp(String eventTimeStamp) {
+  public OrderCreateV7Response eventTimeStamp(@javax.annotation.Nullable String eventTimeStamp) {
     this.eventTimeStamp = eventTimeStamp;
     return this;
   }
@@ -130,12 +136,12 @@ public class OrderCreateV7Response {
     return eventTimeStamp;
   }
 
-  public void setEventTimeStamp(String eventTimeStamp) {
+  public void setEventTimeStamp(@javax.annotation.Nullable String eventTimeStamp) {
     this.eventTimeStamp = eventTimeStamp;
   }
 
 
-  public OrderCreateV7Response eventId(String eventId) {
+  public OrderCreateV7Response eventId(@javax.annotation.Nullable String eventId) {
     this.eventId = eventId;
     return this;
   }
@@ -149,12 +155,12 @@ public class OrderCreateV7Response {
     return eventId;
   }
 
-  public void setEventId(String eventId) {
+  public void setEventId(@javax.annotation.Nullable String eventId) {
     this.eventId = eventId;
   }
 
 
-  public OrderCreateV7Response eventType(String eventType) {
+  public OrderCreateV7Response eventType(@javax.annotation.Nullable String eventType) {
     this.eventType = eventType;
     return this;
   }
@@ -168,12 +174,12 @@ public class OrderCreateV7Response {
     return eventType;
   }
 
-  public void setEventType(String eventType) {
+  public void setEventType(@javax.annotation.Nullable String eventType) {
     this.eventType = eventType;
   }
 
 
-  public OrderCreateV7Response resource(OrderCreateV7ResponseResource resource) {
+  public OrderCreateV7Response resource(@javax.annotation.Nullable OrderCreateV7ResponseResource resource) {
     this.resource = resource;
     return this;
   }
@@ -187,7 +193,7 @@ public class OrderCreateV7Response {
     return resource;
   }
 
-  public void setResource(OrderCreateV7ResponseResource resource) {
+  public void setResource(@javax.annotation.Nullable OrderCreateV7ResponseResource resource) {
     this.resource = resource;
   }
 

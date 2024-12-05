@@ -58,180 +58,222 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
+  @javax.annotation.Nullable
   private String quoteName;
 
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
+  @javax.annotation.Nullable
   private String quoteNumber;
 
   public static final String SERIALIZED_NAME_QUOTE_GUID = "quoteGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_GUID)
+  @javax.annotation.Nullable
   private String quoteGuid;
 
   public static final String SERIALIZED_NAME_REVISION = "revision";
   @SerializedName(SERIALIZED_NAME_REVISION)
+  @javax.annotation.Nullable
   private String revision;
 
   public static final String SERIALIZED_NAME_INGRAM_QUOTE_DATE = "ingramQuoteDate";
   @SerializedName(SERIALIZED_NAME_INGRAM_QUOTE_DATE)
+  @javax.annotation.Nullable
   private String ingramQuoteDate;
 
   public static final String SERIALIZED_NAME_LAST_MODIFIED_DATE = "lastModifiedDate";
   @SerializedName(SERIALIZED_NAME_LAST_MODIFIED_DATE)
+  @javax.annotation.Nullable
   private String lastModifiedDate;
 
   public static final String SERIALIZED_NAME_INGRAM_QUOTE_EXPIRY_DATE = "ingramQuoteExpiryDate";
   @SerializedName(SERIALIZED_NAME_INGRAM_QUOTE_EXPIRY_DATE)
+  @javax.annotation.Nullable
   private String ingramQuoteExpiryDate;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_ID = "specialBidId";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_ID)
+  @javax.annotation.Nullable
   private String specialBidId;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_EFFECTIVE_DATE = "specialBidEffectiveDate";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_EFFECTIVE_DATE)
+  @javax.annotation.Nullable
   private String specialBidEffectiveDate;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_EXPIRATION_DATE = "specialBidExpirationDate";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_EXPIRATION_DATE)
+  @javax.annotation.Nullable
   private String specialBidExpirationDate;
 
   public static final String SERIALIZED_NAME_VENDOR_QUOTE_NUMBER = "vendorQuoteNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_QUOTE_NUMBER)
+  @javax.annotation.Nullable
   private String vendorQuoteNumber;
 
   public static final String SERIALIZED_NAME_IS_PARTIAL_ORDER_ALLOWED = "isPartialOrderAllowed";
   @SerializedName(SERIALIZED_NAME_IS_PARTIAL_ORDER_ALLOWED)
+  @javax.annotation.Nullable
   private Boolean isPartialOrderAllowed;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_STATUS_REASON = "statusReason";
   @SerializedName(SERIALIZED_NAME_STATUS_REASON)
+  @javax.annotation.Nullable
   private String statusReason;
 
   public static final String SERIALIZED_NAME_CLOSING_REASON = "closingReason";
   @SerializedName(SERIALIZED_NAME_CLOSING_REASON)
+  @javax.annotation.Nullable
   private String closingReason;
 
   public static final String SERIALIZED_NAME_DATE_CLOSED = "dateClosed";
   @SerializedName(SERIALIZED_NAME_DATE_CLOSED)
+  @javax.annotation.Nullable
   private String dateClosed;
 
   public static final String SERIALIZED_NAME_CUSTOMER_NEED = "customerNeed";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_NEED)
+  @javax.annotation.Nullable
   private String customerNeed;
 
   public static final String SERIALIZED_NAME_PROPOSED_SOLUTION = "proposedSolution";
   @SerializedName(SERIALIZED_NAME_PROPOSED_SOLUTION)
+  @javax.annotation.Nullable
   private String proposedSolution;
 
   public static final String SERIALIZED_NAME_INTRO_PREAMBLE = "introPreamble";
   @SerializedName(SERIALIZED_NAME_INTRO_PREAMBLE)
+  @javax.annotation.Nullable
   private String introPreamble;
 
   public static final String SERIALIZED_NAME_PURCHASE_INSTRUCTIONS = "purchaseInstructions";
   @SerializedName(SERIALIZED_NAME_PURCHASE_INSTRUCTIONS)
+  @javax.annotation.Nullable
   private String purchaseInstructions;
 
   public static final String SERIALIZED_NAME_LEGAL_TERMS = "legalTerms";
   @SerializedName(SERIALIZED_NAME_LEGAL_TERMS)
+  @javax.annotation.Nullable
   private String legalTerms;
 
   public static final String SERIALIZED_NAME_QUOTE_TYPE = "quoteType";
   @SerializedName(SERIALIZED_NAME_QUOTE_TYPE)
+  @javax.annotation.Nullable
   private String quoteType;
 
   public static final String SERIALIZED_NAME_LEASE_INFO = "leaseInfo";
   @SerializedName(SERIALIZED_NAME_LEASE_INFO)
+  @javax.annotation.Nullable
   private String leaseInfo;
 
   public static final String SERIALIZED_NAME_LEASING_INSTRUCTIONS = "leasingInstructions";
   @SerializedName(SERIALIZED_NAME_LEASING_INSTRUCTIONS)
+  @javax.annotation.Nullable
   private String leasingInstructions;
 
   public static final String SERIALIZED_NAME_IM_WAREHOUSE = "imWarehouse";
   @SerializedName(SERIALIZED_NAME_IM_WAREHOUSE)
+  @javax.annotation.Nullable
   private String imWarehouse;
 
   public static final String SERIALIZED_NAME_IM_WAREHOUSE_GST_NUMBER = "imWarehouseGstNumber";
   @SerializedName(SERIALIZED_NAME_IM_WAREHOUSE_GST_NUMBER)
+  @javax.annotation.Nullable
   private String imWarehouseGstNumber;
 
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_NAME = "paymentTermsName";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_NAME)
+  @javax.annotation.Nullable
   private String paymentTermsName;
 
   public static final String SERIALIZED_NAME_RESELLER_INFO = "resellerInfo";
   @SerializedName(SERIALIZED_NAME_RESELLER_INFO)
+  @javax.annotation.Nullable
   private QuoteDetailsResponseResellerInfo resellerInfo;
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
+  @javax.annotation.Nullable
   private QuoteDetailsResponseEndUserInfo endUserInfo;
 
   public static final String SERIALIZED_NAME_SHIPPING_INFO = "shippingInfo";
   @SerializedName(SERIALIZED_NAME_SHIPPING_INFO)
+  @javax.annotation.Nullable
   private QuoteDetailsResponseShippingInfo shippingInfo;
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
+  @javax.annotation.Nullable
   private List<QuoteDetailsResponseProductsInner> products = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PRODUCTS_COUNT = "productsCount";
   @SerializedName(SERIALIZED_NAME_PRODUCTS_COUNT)
+  @javax.annotation.Nullable
   private Integer productsCount;
 
   public static final String SERIALIZED_NAME_EXTENDED_MSRP_TOTAL = "extendedMsrpTotal";
   @SerializedName(SERIALIZED_NAME_EXTENDED_MSRP_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal extendedMsrpTotal;
 
   public static final String SERIALIZED_NAME_QUANTITY_TOTAL = "quantityTotal";
   @SerializedName(SERIALIZED_NAME_QUANTITY_TOTAL)
+  @javax.annotation.Nullable
   private Integer quantityTotal;
 
   public static final String SERIALIZED_NAME_EXTRA_FEES_TOTAL = "extraFeesTotal";
   @SerializedName(SERIALIZED_NAME_EXTRA_FEES_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal extraFeesTotal;
 
   public static final String SERIALIZED_NAME_EXTRA_FEES_TOTAL_DETAILS = "extraFeesTotalDetails";
   @SerializedName(SERIALIZED_NAME_EXTRA_FEES_TOTAL_DETAILS)
+  @javax.annotation.Nullable
   private List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesTotalDetails = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TAX_TOTAL = "taxTotal";
   @SerializedName(SERIALIZED_NAME_TAX_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal taxTotal;
 
   public static final String SERIALIZED_NAME_EXTENDED_QUOTE_PRICE_TOTAL = "extendedQuotePriceTotal";
   @SerializedName(SERIALIZED_NAME_EXTENDED_QUOTE_PRICE_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal extendedQuotePriceTotal;
 
   public static final String SERIALIZED_NAME_FREIGHT_AMOUNT = "freightAmount";
   @SerializedName(SERIALIZED_NAME_FREIGHT_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal freightAmount;
 
   public static final String SERIALIZED_NAME_TOTAL_QUOTE_AMOUNT = "totalQuoteAmount";
   @SerializedName(SERIALIZED_NAME_TOTAL_QUOTE_AMOUNT)
+  @javax.annotation.Nullable
   private String totalQuoteAmount;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<QuoteDetailsResponseAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public QuoteDetailsResponse() {
   }
 
-  public QuoteDetailsResponse quoteName(String quoteName) {
+  public QuoteDetailsResponse quoteName(@javax.annotation.Nullable String quoteName) {
     this.quoteName = quoteName;
     return this;
   }
@@ -245,12 +287,12 @@ public class QuoteDetailsResponse {
     return quoteName;
   }
 
-  public void setQuoteName(String quoteName) {
+  public void setQuoteName(@javax.annotation.Nullable String quoteName) {
     this.quoteName = quoteName;
   }
 
 
-  public QuoteDetailsResponse quoteNumber(String quoteNumber) {
+  public QuoteDetailsResponse quoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
     return this;
   }
@@ -264,12 +306,12 @@ public class QuoteDetailsResponse {
     return quoteNumber;
   }
 
-  public void setQuoteNumber(String quoteNumber) {
+  public void setQuoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
   }
 
 
-  public QuoteDetailsResponse quoteGuid(String quoteGuid) {
+  public QuoteDetailsResponse quoteGuid(@javax.annotation.Nullable String quoteGuid) {
     this.quoteGuid = quoteGuid;
     return this;
   }
@@ -283,12 +325,12 @@ public class QuoteDetailsResponse {
     return quoteGuid;
   }
 
-  public void setQuoteGuid(String quoteGuid) {
+  public void setQuoteGuid(@javax.annotation.Nullable String quoteGuid) {
     this.quoteGuid = quoteGuid;
   }
 
 
-  public QuoteDetailsResponse revision(String revision) {
+  public QuoteDetailsResponse revision(@javax.annotation.Nullable String revision) {
     this.revision = revision;
     return this;
   }
@@ -302,12 +344,12 @@ public class QuoteDetailsResponse {
     return revision;
   }
 
-  public void setRevision(String revision) {
+  public void setRevision(@javax.annotation.Nullable String revision) {
     this.revision = revision;
   }
 
 
-  public QuoteDetailsResponse ingramQuoteDate(String ingramQuoteDate) {
+  public QuoteDetailsResponse ingramQuoteDate(@javax.annotation.Nullable String ingramQuoteDate) {
     this.ingramQuoteDate = ingramQuoteDate;
     return this;
   }
@@ -321,12 +363,12 @@ public class QuoteDetailsResponse {
     return ingramQuoteDate;
   }
 
-  public void setIngramQuoteDate(String ingramQuoteDate) {
+  public void setIngramQuoteDate(@javax.annotation.Nullable String ingramQuoteDate) {
     this.ingramQuoteDate = ingramQuoteDate;
   }
 
 
-  public QuoteDetailsResponse lastModifiedDate(String lastModifiedDate) {
+  public QuoteDetailsResponse lastModifiedDate(@javax.annotation.Nullable String lastModifiedDate) {
     this.lastModifiedDate = lastModifiedDate;
     return this;
   }
@@ -340,12 +382,12 @@ public class QuoteDetailsResponse {
     return lastModifiedDate;
   }
 
-  public void setLastModifiedDate(String lastModifiedDate) {
+  public void setLastModifiedDate(@javax.annotation.Nullable String lastModifiedDate) {
     this.lastModifiedDate = lastModifiedDate;
   }
 
 
-  public QuoteDetailsResponse ingramQuoteExpiryDate(String ingramQuoteExpiryDate) {
+  public QuoteDetailsResponse ingramQuoteExpiryDate(@javax.annotation.Nullable String ingramQuoteExpiryDate) {
     this.ingramQuoteExpiryDate = ingramQuoteExpiryDate;
     return this;
   }
@@ -359,12 +401,12 @@ public class QuoteDetailsResponse {
     return ingramQuoteExpiryDate;
   }
 
-  public void setIngramQuoteExpiryDate(String ingramQuoteExpiryDate) {
+  public void setIngramQuoteExpiryDate(@javax.annotation.Nullable String ingramQuoteExpiryDate) {
     this.ingramQuoteExpiryDate = ingramQuoteExpiryDate;
   }
 
 
-  public QuoteDetailsResponse currencyCode(String currencyCode) {
+  public QuoteDetailsResponse currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -378,12 +420,12 @@ public class QuoteDetailsResponse {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public QuoteDetailsResponse specialBidId(String specialBidId) {
+  public QuoteDetailsResponse specialBidId(@javax.annotation.Nullable String specialBidId) {
     this.specialBidId = specialBidId;
     return this;
   }
@@ -397,12 +439,12 @@ public class QuoteDetailsResponse {
     return specialBidId;
   }
 
-  public void setSpecialBidId(String specialBidId) {
+  public void setSpecialBidId(@javax.annotation.Nullable String specialBidId) {
     this.specialBidId = specialBidId;
   }
 
 
-  public QuoteDetailsResponse specialBidEffectiveDate(String specialBidEffectiveDate) {
+  public QuoteDetailsResponse specialBidEffectiveDate(@javax.annotation.Nullable String specialBidEffectiveDate) {
     this.specialBidEffectiveDate = specialBidEffectiveDate;
     return this;
   }
@@ -416,12 +458,12 @@ public class QuoteDetailsResponse {
     return specialBidEffectiveDate;
   }
 
-  public void setSpecialBidEffectiveDate(String specialBidEffectiveDate) {
+  public void setSpecialBidEffectiveDate(@javax.annotation.Nullable String specialBidEffectiveDate) {
     this.specialBidEffectiveDate = specialBidEffectiveDate;
   }
 
 
-  public QuoteDetailsResponse specialBidExpirationDate(String specialBidExpirationDate) {
+  public QuoteDetailsResponse specialBidExpirationDate(@javax.annotation.Nullable String specialBidExpirationDate) {
     this.specialBidExpirationDate = specialBidExpirationDate;
     return this;
   }
@@ -435,12 +477,12 @@ public class QuoteDetailsResponse {
     return specialBidExpirationDate;
   }
 
-  public void setSpecialBidExpirationDate(String specialBidExpirationDate) {
+  public void setSpecialBidExpirationDate(@javax.annotation.Nullable String specialBidExpirationDate) {
     this.specialBidExpirationDate = specialBidExpirationDate;
   }
 
 
-  public QuoteDetailsResponse vendorQuoteNumber(String vendorQuoteNumber) {
+  public QuoteDetailsResponse vendorQuoteNumber(@javax.annotation.Nullable String vendorQuoteNumber) {
     this.vendorQuoteNumber = vendorQuoteNumber;
     return this;
   }
@@ -454,12 +496,12 @@ public class QuoteDetailsResponse {
     return vendorQuoteNumber;
   }
 
-  public void setVendorQuoteNumber(String vendorQuoteNumber) {
+  public void setVendorQuoteNumber(@javax.annotation.Nullable String vendorQuoteNumber) {
     this.vendorQuoteNumber = vendorQuoteNumber;
   }
 
 
-  public QuoteDetailsResponse isPartialOrderAllowed(Boolean isPartialOrderAllowed) {
+  public QuoteDetailsResponse isPartialOrderAllowed(@javax.annotation.Nullable Boolean isPartialOrderAllowed) {
     this.isPartialOrderAllowed = isPartialOrderAllowed;
     return this;
   }
@@ -473,12 +515,12 @@ public class QuoteDetailsResponse {
     return isPartialOrderAllowed;
   }
 
-  public void setIsPartialOrderAllowed(Boolean isPartialOrderAllowed) {
+  public void setIsPartialOrderAllowed(@javax.annotation.Nullable Boolean isPartialOrderAllowed) {
     this.isPartialOrderAllowed = isPartialOrderAllowed;
   }
 
 
-  public QuoteDetailsResponse status(String status) {
+  public QuoteDetailsResponse status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -492,12 +534,12 @@ public class QuoteDetailsResponse {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public QuoteDetailsResponse statusReason(String statusReason) {
+  public QuoteDetailsResponse statusReason(@javax.annotation.Nullable String statusReason) {
     this.statusReason = statusReason;
     return this;
   }
@@ -511,12 +553,12 @@ public class QuoteDetailsResponse {
     return statusReason;
   }
 
-  public void setStatusReason(String statusReason) {
+  public void setStatusReason(@javax.annotation.Nullable String statusReason) {
     this.statusReason = statusReason;
   }
 
 
-  public QuoteDetailsResponse closingReason(String closingReason) {
+  public QuoteDetailsResponse closingReason(@javax.annotation.Nullable String closingReason) {
     this.closingReason = closingReason;
     return this;
   }
@@ -530,12 +572,12 @@ public class QuoteDetailsResponse {
     return closingReason;
   }
 
-  public void setClosingReason(String closingReason) {
+  public void setClosingReason(@javax.annotation.Nullable String closingReason) {
     this.closingReason = closingReason;
   }
 
 
-  public QuoteDetailsResponse dateClosed(String dateClosed) {
+  public QuoteDetailsResponse dateClosed(@javax.annotation.Nullable String dateClosed) {
     this.dateClosed = dateClosed;
     return this;
   }
@@ -549,12 +591,12 @@ public class QuoteDetailsResponse {
     return dateClosed;
   }
 
-  public void setDateClosed(String dateClosed) {
+  public void setDateClosed(@javax.annotation.Nullable String dateClosed) {
     this.dateClosed = dateClosed;
   }
 
 
-  public QuoteDetailsResponse customerNeed(String customerNeed) {
+  public QuoteDetailsResponse customerNeed(@javax.annotation.Nullable String customerNeed) {
     this.customerNeed = customerNeed;
     return this;
   }
@@ -568,12 +610,12 @@ public class QuoteDetailsResponse {
     return customerNeed;
   }
 
-  public void setCustomerNeed(String customerNeed) {
+  public void setCustomerNeed(@javax.annotation.Nullable String customerNeed) {
     this.customerNeed = customerNeed;
   }
 
 
-  public QuoteDetailsResponse proposedSolution(String proposedSolution) {
+  public QuoteDetailsResponse proposedSolution(@javax.annotation.Nullable String proposedSolution) {
     this.proposedSolution = proposedSolution;
     return this;
   }
@@ -587,12 +629,12 @@ public class QuoteDetailsResponse {
     return proposedSolution;
   }
 
-  public void setProposedSolution(String proposedSolution) {
+  public void setProposedSolution(@javax.annotation.Nullable String proposedSolution) {
     this.proposedSolution = proposedSolution;
   }
 
 
-  public QuoteDetailsResponse introPreamble(String introPreamble) {
+  public QuoteDetailsResponse introPreamble(@javax.annotation.Nullable String introPreamble) {
     this.introPreamble = introPreamble;
     return this;
   }
@@ -606,12 +648,12 @@ public class QuoteDetailsResponse {
     return introPreamble;
   }
 
-  public void setIntroPreamble(String introPreamble) {
+  public void setIntroPreamble(@javax.annotation.Nullable String introPreamble) {
     this.introPreamble = introPreamble;
   }
 
 
-  public QuoteDetailsResponse purchaseInstructions(String purchaseInstructions) {
+  public QuoteDetailsResponse purchaseInstructions(@javax.annotation.Nullable String purchaseInstructions) {
     this.purchaseInstructions = purchaseInstructions;
     return this;
   }
@@ -625,12 +667,12 @@ public class QuoteDetailsResponse {
     return purchaseInstructions;
   }
 
-  public void setPurchaseInstructions(String purchaseInstructions) {
+  public void setPurchaseInstructions(@javax.annotation.Nullable String purchaseInstructions) {
     this.purchaseInstructions = purchaseInstructions;
   }
 
 
-  public QuoteDetailsResponse legalTerms(String legalTerms) {
+  public QuoteDetailsResponse legalTerms(@javax.annotation.Nullable String legalTerms) {
     this.legalTerms = legalTerms;
     return this;
   }
@@ -644,12 +686,12 @@ public class QuoteDetailsResponse {
     return legalTerms;
   }
 
-  public void setLegalTerms(String legalTerms) {
+  public void setLegalTerms(@javax.annotation.Nullable String legalTerms) {
     this.legalTerms = legalTerms;
   }
 
 
-  public QuoteDetailsResponse quoteType(String quoteType) {
+  public QuoteDetailsResponse quoteType(@javax.annotation.Nullable String quoteType) {
     this.quoteType = quoteType;
     return this;
   }
@@ -663,12 +705,12 @@ public class QuoteDetailsResponse {
     return quoteType;
   }
 
-  public void setQuoteType(String quoteType) {
+  public void setQuoteType(@javax.annotation.Nullable String quoteType) {
     this.quoteType = quoteType;
   }
 
 
-  public QuoteDetailsResponse leaseInfo(String leaseInfo) {
+  public QuoteDetailsResponse leaseInfo(@javax.annotation.Nullable String leaseInfo) {
     this.leaseInfo = leaseInfo;
     return this;
   }
@@ -682,12 +724,12 @@ public class QuoteDetailsResponse {
     return leaseInfo;
   }
 
-  public void setLeaseInfo(String leaseInfo) {
+  public void setLeaseInfo(@javax.annotation.Nullable String leaseInfo) {
     this.leaseInfo = leaseInfo;
   }
 
 
-  public QuoteDetailsResponse leasingInstructions(String leasingInstructions) {
+  public QuoteDetailsResponse leasingInstructions(@javax.annotation.Nullable String leasingInstructions) {
     this.leasingInstructions = leasingInstructions;
     return this;
   }
@@ -701,12 +743,12 @@ public class QuoteDetailsResponse {
     return leasingInstructions;
   }
 
-  public void setLeasingInstructions(String leasingInstructions) {
+  public void setLeasingInstructions(@javax.annotation.Nullable String leasingInstructions) {
     this.leasingInstructions = leasingInstructions;
   }
 
 
-  public QuoteDetailsResponse imWarehouse(String imWarehouse) {
+  public QuoteDetailsResponse imWarehouse(@javax.annotation.Nullable String imWarehouse) {
     this.imWarehouse = imWarehouse;
     return this;
   }
@@ -720,12 +762,12 @@ public class QuoteDetailsResponse {
     return imWarehouse;
   }
 
-  public void setImWarehouse(String imWarehouse) {
+  public void setImWarehouse(@javax.annotation.Nullable String imWarehouse) {
     this.imWarehouse = imWarehouse;
   }
 
 
-  public QuoteDetailsResponse imWarehouseGstNumber(String imWarehouseGstNumber) {
+  public QuoteDetailsResponse imWarehouseGstNumber(@javax.annotation.Nullable String imWarehouseGstNumber) {
     this.imWarehouseGstNumber = imWarehouseGstNumber;
     return this;
   }
@@ -739,12 +781,12 @@ public class QuoteDetailsResponse {
     return imWarehouseGstNumber;
   }
 
-  public void setImWarehouseGstNumber(String imWarehouseGstNumber) {
+  public void setImWarehouseGstNumber(@javax.annotation.Nullable String imWarehouseGstNumber) {
     this.imWarehouseGstNumber = imWarehouseGstNumber;
   }
 
 
-  public QuoteDetailsResponse paymentTermsName(String paymentTermsName) {
+  public QuoteDetailsResponse paymentTermsName(@javax.annotation.Nullable String paymentTermsName) {
     this.paymentTermsName = paymentTermsName;
     return this;
   }
@@ -758,12 +800,12 @@ public class QuoteDetailsResponse {
     return paymentTermsName;
   }
 
-  public void setPaymentTermsName(String paymentTermsName) {
+  public void setPaymentTermsName(@javax.annotation.Nullable String paymentTermsName) {
     this.paymentTermsName = paymentTermsName;
   }
 
 
-  public QuoteDetailsResponse resellerInfo(QuoteDetailsResponseResellerInfo resellerInfo) {
+  public QuoteDetailsResponse resellerInfo(@javax.annotation.Nullable QuoteDetailsResponseResellerInfo resellerInfo) {
     this.resellerInfo = resellerInfo;
     return this;
   }
@@ -777,12 +819,12 @@ public class QuoteDetailsResponse {
     return resellerInfo;
   }
 
-  public void setResellerInfo(QuoteDetailsResponseResellerInfo resellerInfo) {
+  public void setResellerInfo(@javax.annotation.Nullable QuoteDetailsResponseResellerInfo resellerInfo) {
     this.resellerInfo = resellerInfo;
   }
 
 
-  public QuoteDetailsResponse endUserInfo(QuoteDetailsResponseEndUserInfo endUserInfo) {
+  public QuoteDetailsResponse endUserInfo(@javax.annotation.Nullable QuoteDetailsResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
     return this;
   }
@@ -796,12 +838,12 @@ public class QuoteDetailsResponse {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(QuoteDetailsResponseEndUserInfo endUserInfo) {
+  public void setEndUserInfo(@javax.annotation.Nullable QuoteDetailsResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 
 
-  public QuoteDetailsResponse shippingInfo(QuoteDetailsResponseShippingInfo shippingInfo) {
+  public QuoteDetailsResponse shippingInfo(@javax.annotation.Nullable QuoteDetailsResponseShippingInfo shippingInfo) {
     this.shippingInfo = shippingInfo;
     return this;
   }
@@ -815,12 +857,12 @@ public class QuoteDetailsResponse {
     return shippingInfo;
   }
 
-  public void setShippingInfo(QuoteDetailsResponseShippingInfo shippingInfo) {
+  public void setShippingInfo(@javax.annotation.Nullable QuoteDetailsResponseShippingInfo shippingInfo) {
     this.shippingInfo = shippingInfo;
   }
 
 
-  public QuoteDetailsResponse products(List<QuoteDetailsResponseProductsInner> products) {
+  public QuoteDetailsResponse products(@javax.annotation.Nullable List<QuoteDetailsResponseProductsInner> products) {
     this.products = products;
     return this;
   }
@@ -842,12 +884,12 @@ public class QuoteDetailsResponse {
     return products;
   }
 
-  public void setProducts(List<QuoteDetailsResponseProductsInner> products) {
+  public void setProducts(@javax.annotation.Nullable List<QuoteDetailsResponseProductsInner> products) {
     this.products = products;
   }
 
 
-  public QuoteDetailsResponse productsCount(Integer productsCount) {
+  public QuoteDetailsResponse productsCount(@javax.annotation.Nullable Integer productsCount) {
     this.productsCount = productsCount;
     return this;
   }
@@ -861,12 +903,12 @@ public class QuoteDetailsResponse {
     return productsCount;
   }
 
-  public void setProductsCount(Integer productsCount) {
+  public void setProductsCount(@javax.annotation.Nullable Integer productsCount) {
     this.productsCount = productsCount;
   }
 
 
-  public QuoteDetailsResponse extendedMsrpTotal(BigDecimal extendedMsrpTotal) {
+  public QuoteDetailsResponse extendedMsrpTotal(@javax.annotation.Nullable BigDecimal extendedMsrpTotal) {
     this.extendedMsrpTotal = extendedMsrpTotal;
     return this;
   }
@@ -880,12 +922,12 @@ public class QuoteDetailsResponse {
     return extendedMsrpTotal;
   }
 
-  public void setExtendedMsrpTotal(BigDecimal extendedMsrpTotal) {
+  public void setExtendedMsrpTotal(@javax.annotation.Nullable BigDecimal extendedMsrpTotal) {
     this.extendedMsrpTotal = extendedMsrpTotal;
   }
 
 
-  public QuoteDetailsResponse quantityTotal(Integer quantityTotal) {
+  public QuoteDetailsResponse quantityTotal(@javax.annotation.Nullable Integer quantityTotal) {
     this.quantityTotal = quantityTotal;
     return this;
   }
@@ -899,12 +941,12 @@ public class QuoteDetailsResponse {
     return quantityTotal;
   }
 
-  public void setQuantityTotal(Integer quantityTotal) {
+  public void setQuantityTotal(@javax.annotation.Nullable Integer quantityTotal) {
     this.quantityTotal = quantityTotal;
   }
 
 
-  public QuoteDetailsResponse extraFeesTotal(BigDecimal extraFeesTotal) {
+  public QuoteDetailsResponse extraFeesTotal(@javax.annotation.Nullable BigDecimal extraFeesTotal) {
     this.extraFeesTotal = extraFeesTotal;
     return this;
   }
@@ -918,12 +960,12 @@ public class QuoteDetailsResponse {
     return extraFeesTotal;
   }
 
-  public void setExtraFeesTotal(BigDecimal extraFeesTotal) {
+  public void setExtraFeesTotal(@javax.annotation.Nullable BigDecimal extraFeesTotal) {
     this.extraFeesTotal = extraFeesTotal;
   }
 
 
-  public QuoteDetailsResponse extraFeesTotalDetails(List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesTotalDetails) {
+  public QuoteDetailsResponse extraFeesTotalDetails(@javax.annotation.Nullable List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesTotalDetails) {
     this.extraFeesTotalDetails = extraFeesTotalDetails;
     return this;
   }
@@ -945,12 +987,12 @@ public class QuoteDetailsResponse {
     return extraFeesTotalDetails;
   }
 
-  public void setExtraFeesTotalDetails(List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesTotalDetails) {
+  public void setExtraFeesTotalDetails(@javax.annotation.Nullable List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesTotalDetails) {
     this.extraFeesTotalDetails = extraFeesTotalDetails;
   }
 
 
-  public QuoteDetailsResponse taxTotal(BigDecimal taxTotal) {
+  public QuoteDetailsResponse taxTotal(@javax.annotation.Nullable BigDecimal taxTotal) {
     this.taxTotal = taxTotal;
     return this;
   }
@@ -964,12 +1006,12 @@ public class QuoteDetailsResponse {
     return taxTotal;
   }
 
-  public void setTaxTotal(BigDecimal taxTotal) {
+  public void setTaxTotal(@javax.annotation.Nullable BigDecimal taxTotal) {
     this.taxTotal = taxTotal;
   }
 
 
-  public QuoteDetailsResponse extendedQuotePriceTotal(BigDecimal extendedQuotePriceTotal) {
+  public QuoteDetailsResponse extendedQuotePriceTotal(@javax.annotation.Nullable BigDecimal extendedQuotePriceTotal) {
     this.extendedQuotePriceTotal = extendedQuotePriceTotal;
     return this;
   }
@@ -983,12 +1025,12 @@ public class QuoteDetailsResponse {
     return extendedQuotePriceTotal;
   }
 
-  public void setExtendedQuotePriceTotal(BigDecimal extendedQuotePriceTotal) {
+  public void setExtendedQuotePriceTotal(@javax.annotation.Nullable BigDecimal extendedQuotePriceTotal) {
     this.extendedQuotePriceTotal = extendedQuotePriceTotal;
   }
 
 
-  public QuoteDetailsResponse freightAmount(BigDecimal freightAmount) {
+  public QuoteDetailsResponse freightAmount(@javax.annotation.Nullable BigDecimal freightAmount) {
     this.freightAmount = freightAmount;
     return this;
   }
@@ -1002,12 +1044,12 @@ public class QuoteDetailsResponse {
     return freightAmount;
   }
 
-  public void setFreightAmount(BigDecimal freightAmount) {
+  public void setFreightAmount(@javax.annotation.Nullable BigDecimal freightAmount) {
     this.freightAmount = freightAmount;
   }
 
 
-  public QuoteDetailsResponse totalQuoteAmount(String totalQuoteAmount) {
+  public QuoteDetailsResponse totalQuoteAmount(@javax.annotation.Nullable String totalQuoteAmount) {
     this.totalQuoteAmount = totalQuoteAmount;
     return this;
   }
@@ -1021,12 +1063,12 @@ public class QuoteDetailsResponse {
     return totalQuoteAmount;
   }
 
-  public void setTotalQuoteAmount(String totalQuoteAmount) {
+  public void setTotalQuoteAmount(@javax.annotation.Nullable String totalQuoteAmount) {
     this.totalQuoteAmount = totalQuoteAmount;
   }
 
 
-  public QuoteDetailsResponse additionalAttributes(List<QuoteDetailsResponseAdditionalAttributesInner> additionalAttributes) {
+  public QuoteDetailsResponse additionalAttributes(@javax.annotation.Nullable List<QuoteDetailsResponseAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -1048,7 +1090,7 @@ public class QuoteDetailsResponse {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<QuoteDetailsResponseAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<QuoteDetailsResponseAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 

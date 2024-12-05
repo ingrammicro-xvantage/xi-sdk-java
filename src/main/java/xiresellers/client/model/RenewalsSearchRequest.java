@@ -50,28 +50,32 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class RenewalsSearchRequest {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private RenewalsSearchRequestStatus status;
 
   public static final String SERIALIZED_NAME_DATE_TYPE = "dateType";
   @SerializedName(SERIALIZED_NAME_DATE_TYPE)
+  @javax.annotation.Nullable
   private RenewalsSearchRequestDateType dateType;
 
   public static final String SERIALIZED_NAME_VENDOR = "vendor";
   @SerializedName(SERIALIZED_NAME_VENDOR)
+  @javax.annotation.Nullable
   private String vendor;
 
   public static final String SERIALIZED_NAME_END_USER = "endUser";
   @SerializedName(SERIALIZED_NAME_END_USER)
+  @javax.annotation.Nullable
   private String endUser;
 
   public RenewalsSearchRequest() {
   }
 
-  public RenewalsSearchRequest status(RenewalsSearchRequestStatus status) {
+  public RenewalsSearchRequest status(@javax.annotation.Nullable RenewalsSearchRequestStatus status) {
     this.status = status;
     return this;
   }
@@ -85,12 +89,12 @@ public class RenewalsSearchRequest {
     return status;
   }
 
-  public void setStatus(RenewalsSearchRequestStatus status) {
+  public void setStatus(@javax.annotation.Nullable RenewalsSearchRequestStatus status) {
     this.status = status;
   }
 
 
-  public RenewalsSearchRequest dateType(RenewalsSearchRequestDateType dateType) {
+  public RenewalsSearchRequest dateType(@javax.annotation.Nullable RenewalsSearchRequestDateType dateType) {
     this.dateType = dateType;
     return this;
   }
@@ -104,12 +108,12 @@ public class RenewalsSearchRequest {
     return dateType;
   }
 
-  public void setDateType(RenewalsSearchRequestDateType dateType) {
+  public void setDateType(@javax.annotation.Nullable RenewalsSearchRequestDateType dateType) {
     this.dateType = dateType;
   }
 
 
-  public RenewalsSearchRequest vendor(String vendor) {
+  public RenewalsSearchRequest vendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
     return this;
   }
@@ -123,12 +127,12 @@ public class RenewalsSearchRequest {
     return vendor;
   }
 
-  public void setVendor(String vendor) {
+  public void setVendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
   }
 
 
-  public RenewalsSearchRequest endUser(String endUser) {
+  public RenewalsSearchRequest endUser(@javax.annotation.Nullable String endUser) {
     this.endUser = endUser;
     return this;
   }
@@ -142,7 +146,7 @@ public class RenewalsSearchRequest {
     return endUser;
   }
 
-  public void setEndUser(String endUser) {
+  public void setEndUser(@javax.annotation.Nullable String endUser) {
     this.endUser = endUser;
   }
 

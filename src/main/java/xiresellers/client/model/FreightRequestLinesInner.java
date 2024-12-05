@@ -48,32 +48,37 @@ import xiresellers.client.JSON;
 /**
  * FreightRequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class FreightRequestLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String customerLineNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private String quantity;
 
   public static final String SERIALIZED_NAME_WAREHOUSE_ID = "warehouseId";
   @SerializedName(SERIALIZED_NAME_WAREHOUSE_ID)
+  @javax.annotation.Nullable
   private String warehouseId;
 
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
+  @javax.annotation.Nullable
   private String carrierCode;
 
   public FreightRequestLinesInner() {
   }
 
-  public FreightRequestLinesInner customerLineNumber(String customerLineNumber) {
+  public FreightRequestLinesInner customerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
     return this;
   }
@@ -87,12 +92,12 @@ public class FreightRequestLinesInner {
     return customerLineNumber;
   }
 
-  public void setCustomerLineNumber(String customerLineNumber) {
+  public void setCustomerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
   }
 
 
-  public FreightRequestLinesInner ingramPartNumber(String ingramPartNumber) {
+  public FreightRequestLinesInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -106,12 +111,12 @@ public class FreightRequestLinesInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public FreightRequestLinesInner quantity(String quantity) {
+  public FreightRequestLinesInner quantity(@javax.annotation.Nullable String quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -125,12 +130,12 @@ public class FreightRequestLinesInner {
     return quantity;
   }
 
-  public void setQuantity(String quantity) {
+  public void setQuantity(@javax.annotation.Nullable String quantity) {
     this.quantity = quantity;
   }
 
 
-  public FreightRequestLinesInner warehouseId(String warehouseId) {
+  public FreightRequestLinesInner warehouseId(@javax.annotation.Nullable String warehouseId) {
     this.warehouseId = warehouseId;
     return this;
   }
@@ -144,12 +149,12 @@ public class FreightRequestLinesInner {
     return warehouseId;
   }
 
-  public void setWarehouseId(String warehouseId) {
+  public void setWarehouseId(@javax.annotation.Nullable String warehouseId) {
     this.warehouseId = warehouseId;
   }
 
 
-  public FreightRequestLinesInner carrierCode(String carrierCode) {
+  public FreightRequestLinesInner carrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
     return this;
   }
@@ -163,7 +168,7 @@ public class FreightRequestLinesInner {
     return carrierCode;
   }
 
-  public void setCarrierCode(String carrierCode) {
+  public void setCarrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
   }
 

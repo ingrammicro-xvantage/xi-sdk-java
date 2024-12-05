@@ -48,60 +48,72 @@ import xiresellers.client.JSON;
 /**
  * The shipping information provided by the reseller.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7RequestShipToInfo {
   public static final String SERIALIZED_NAME_ADDRESS_ID = "addressId";
   @SerializedName(SERIALIZED_NAME_ADDRESS_ID)
+  @javax.annotation.Nullable
   private String addressId;
 
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
+  @javax.annotation.Nullable
   private String contact;
 
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
+  @javax.annotation.Nullable
   private String companyName;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE1 = "addressLine1";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE1)
+  @javax.annotation.Nullable
   private String addressLine1;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE2 = "addressLine2";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE2)
+  @javax.annotation.Nullable
   private String addressLine2;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_POSTAL_CODE = "postalCode";
   @SerializedName(SERIALIZED_NAME_POSTAL_CODE)
+  @javax.annotation.Nullable
   private String postalCode;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "countryCode";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_SHIPPING_NOTES = "shippingNotes";
   @SerializedName(SERIALIZED_NAME_SHIPPING_NOTES)
+  @javax.annotation.Nullable
   private String shippingNotes;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBER = "phoneNumber";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
+  @javax.annotation.Nullable
   private String phoneNumber;
 
   public OrderCreateV7RequestShipToInfo() {
   }
 
-  public OrderCreateV7RequestShipToInfo addressId(String addressId) {
+  public OrderCreateV7RequestShipToInfo addressId(@javax.annotation.Nullable String addressId) {
     this.addressId = addressId;
     return this;
   }
@@ -115,12 +127,12 @@ public class OrderCreateV7RequestShipToInfo {
     return addressId;
   }
 
-  public void setAddressId(String addressId) {
+  public void setAddressId(@javax.annotation.Nullable String addressId) {
     this.addressId = addressId;
   }
 
 
-  public OrderCreateV7RequestShipToInfo contact(String contact) {
+  public OrderCreateV7RequestShipToInfo contact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
     return this;
   }
@@ -134,12 +146,12 @@ public class OrderCreateV7RequestShipToInfo {
     return contact;
   }
 
-  public void setContact(String contact) {
+  public void setContact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
   }
 
 
-  public OrderCreateV7RequestShipToInfo companyName(String companyName) {
+  public OrderCreateV7RequestShipToInfo companyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
     return this;
   }
@@ -153,12 +165,12 @@ public class OrderCreateV7RequestShipToInfo {
     return companyName;
   }
 
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
 
-  public OrderCreateV7RequestShipToInfo addressLine1(String addressLine1) {
+  public OrderCreateV7RequestShipToInfo addressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
@@ -172,12 +184,12 @@ public class OrderCreateV7RequestShipToInfo {
     return addressLine1;
   }
 
-  public void setAddressLine1(String addressLine1) {
+  public void setAddressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
   }
 
 
-  public OrderCreateV7RequestShipToInfo addressLine2(String addressLine2) {
+  public OrderCreateV7RequestShipToInfo addressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
@@ -191,12 +203,12 @@ public class OrderCreateV7RequestShipToInfo {
     return addressLine2;
   }
 
-  public void setAddressLine2(String addressLine2) {
+  public void setAddressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
   }
 
 
-  public OrderCreateV7RequestShipToInfo city(String city) {
+  public OrderCreateV7RequestShipToInfo city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -210,12 +222,12 @@ public class OrderCreateV7RequestShipToInfo {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public OrderCreateV7RequestShipToInfo state(String state) {
+  public OrderCreateV7RequestShipToInfo state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -229,12 +241,12 @@ public class OrderCreateV7RequestShipToInfo {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public OrderCreateV7RequestShipToInfo postalCode(String postalCode) {
+  public OrderCreateV7RequestShipToInfo postalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
@@ -248,12 +260,12 @@ public class OrderCreateV7RequestShipToInfo {
     return postalCode;
   }
 
-  public void setPostalCode(String postalCode) {
+  public void setPostalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
   }
 
 
-  public OrderCreateV7RequestShipToInfo countryCode(String countryCode) {
+  public OrderCreateV7RequestShipToInfo countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -267,12 +279,12 @@ public class OrderCreateV7RequestShipToInfo {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 
 
-  public OrderCreateV7RequestShipToInfo email(String email) {
+  public OrderCreateV7RequestShipToInfo email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -286,12 +298,12 @@ public class OrderCreateV7RequestShipToInfo {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public OrderCreateV7RequestShipToInfo shippingNotes(String shippingNotes) {
+  public OrderCreateV7RequestShipToInfo shippingNotes(@javax.annotation.Nullable String shippingNotes) {
     this.shippingNotes = shippingNotes;
     return this;
   }
@@ -305,12 +317,12 @@ public class OrderCreateV7RequestShipToInfo {
     return shippingNotes;
   }
 
-  public void setShippingNotes(String shippingNotes) {
+  public void setShippingNotes(@javax.annotation.Nullable String shippingNotes) {
     this.shippingNotes = shippingNotes;
   }
 
 
-  public OrderCreateV7RequestShipToInfo phoneNumber(String phoneNumber) {
+  public OrderCreateV7RequestShipToInfo phoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
@@ -324,7 +336,7 @@ public class OrderCreateV7RequestShipToInfo {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 

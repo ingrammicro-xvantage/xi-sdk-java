@@ -48,40 +48,47 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyResponseRejectedLineItemsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderModifyResponseRejectedLineItemsInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String ingramLineNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String customerLineNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY_ORDERED = "quantityOrdered";
   @SerializedName(SERIALIZED_NAME_QUANTITY_ORDERED)
+  @javax.annotation.Nullable
   private Integer quantityOrdered;
 
   public static final String SERIALIZED_NAME_REJECT_CODE = "rejectCode";
   @SerializedName(SERIALIZED_NAME_REJECT_CODE)
+  @javax.annotation.Nullable
   private String rejectCode;
 
   public static final String SERIALIZED_NAME_REJECT_REASON = "rejectReason";
   @SerializedName(SERIALIZED_NAME_REJECT_REASON)
+  @javax.annotation.Nullable
   private String rejectReason;
 
   public OrderModifyResponseRejectedLineItemsInner() {
   }
 
-  public OrderModifyResponseRejectedLineItemsInner ingramLineNumber(String ingramLineNumber) {
+  public OrderModifyResponseRejectedLineItemsInner ingramLineNumber(@javax.annotation.Nullable String ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
     return this;
   }
@@ -95,12 +102,12 @@ public class OrderModifyResponseRejectedLineItemsInner {
     return ingramLineNumber;
   }
 
-  public void setIngramLineNumber(String ingramLineNumber) {
+  public void setIngramLineNumber(@javax.annotation.Nullable String ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
   }
 
 
-  public OrderModifyResponseRejectedLineItemsInner customerLineNumber(String customerLineNumber) {
+  public OrderModifyResponseRejectedLineItemsInner customerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
     return this;
   }
@@ -114,12 +121,12 @@ public class OrderModifyResponseRejectedLineItemsInner {
     return customerLineNumber;
   }
 
-  public void setCustomerLineNumber(String customerLineNumber) {
+  public void setCustomerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
   }
 
 
-  public OrderModifyResponseRejectedLineItemsInner ingramPartNumber(String ingramPartNumber) {
+  public OrderModifyResponseRejectedLineItemsInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -133,12 +140,12 @@ public class OrderModifyResponseRejectedLineItemsInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public OrderModifyResponseRejectedLineItemsInner vendorPartNumber(String vendorPartNumber) {
+  public OrderModifyResponseRejectedLineItemsInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -152,12 +159,12 @@ public class OrderModifyResponseRejectedLineItemsInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public OrderModifyResponseRejectedLineItemsInner quantityOrdered(Integer quantityOrdered) {
+  public OrderModifyResponseRejectedLineItemsInner quantityOrdered(@javax.annotation.Nullable Integer quantityOrdered) {
     this.quantityOrdered = quantityOrdered;
     return this;
   }
@@ -171,12 +178,12 @@ public class OrderModifyResponseRejectedLineItemsInner {
     return quantityOrdered;
   }
 
-  public void setQuantityOrdered(Integer quantityOrdered) {
+  public void setQuantityOrdered(@javax.annotation.Nullable Integer quantityOrdered) {
     this.quantityOrdered = quantityOrdered;
   }
 
 
-  public OrderModifyResponseRejectedLineItemsInner rejectCode(String rejectCode) {
+  public OrderModifyResponseRejectedLineItemsInner rejectCode(@javax.annotation.Nullable String rejectCode) {
     this.rejectCode = rejectCode;
     return this;
   }
@@ -190,12 +197,12 @@ public class OrderModifyResponseRejectedLineItemsInner {
     return rejectCode;
   }
 
-  public void setRejectCode(String rejectCode) {
+  public void setRejectCode(@javax.annotation.Nullable String rejectCode) {
     this.rejectCode = rejectCode;
   }
 
 
-  public OrderModifyResponseRejectedLineItemsInner rejectReason(String rejectReason) {
+  public OrderModifyResponseRejectedLineItemsInner rejectReason(@javax.annotation.Nullable String rejectReason) {
     this.rejectReason = rejectReason;
     return this;
   }
@@ -209,7 +216,7 @@ public class OrderModifyResponseRejectedLineItemsInner {
     return rejectReason;
   }
 
-  public void setRejectReason(String rejectReason) {
+  public void setRejectReason(@javax.annotation.Nullable String rejectReason) {
     this.rejectReason = rejectReason;
   }
 

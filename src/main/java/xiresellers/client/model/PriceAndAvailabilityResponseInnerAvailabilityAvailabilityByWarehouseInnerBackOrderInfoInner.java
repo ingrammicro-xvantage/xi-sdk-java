@@ -48,20 +48,22 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner {
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private Integer quantity;
 
   public static final String SERIALIZED_NAME_ETA_DATE = "etaDate";
   @SerializedName(SERIALIZED_NAME_ETA_DATE)
+  @javax.annotation.Nullable
   private String etaDate;
 
   public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner quantity(Integer quantity) {
+  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner quantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -75,12 +77,12 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner etaDate(String etaDate) {
+  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner etaDate(@javax.annotation.Nullable String etaDate) {
     this.etaDate = etaDate;
     return this;
   }
@@ -94,7 +96,7 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     return etaDate;
   }
 
-  public void setEtaDate(String etaDate) {
+  public void setEtaDate(@javax.annotation.Nullable String etaDate) {
     this.etaDate = etaDate;
   }
 

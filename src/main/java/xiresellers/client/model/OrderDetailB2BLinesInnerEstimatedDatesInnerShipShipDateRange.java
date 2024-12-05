@@ -48,20 +48,22 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange {
   public static final String SERIALIZED_NAME_START_DATE = "startDate";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private String startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "endDate";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private String endDate;
 
   public OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange() {
   }
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange startDate(String startDate) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange startDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -75,12 +77,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange {
     return startDate;
   }
 
-  public void setStartDate(String startDate) {
+  public void setStartDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange endDate(String endDate) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange endDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -94,7 +96,7 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange {
     return endDate;
   }
 
-  public void setEndDate(String endDate) {
+  public void setEndDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 

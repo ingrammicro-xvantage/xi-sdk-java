@@ -48,60 +48,72 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7RequestLinesInnerEndUserInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
   public static final String SERIALIZED_NAME_END_USER_ID = "endUserId";
   @SerializedName(SERIALIZED_NAME_END_USER_ID)
+  @javax.annotation.Nullable
   private String endUserId;
 
   public static final String SERIALIZED_NAME_END_USER_TYPE = "endUserType";
   @SerializedName(SERIALIZED_NAME_END_USER_TYPE)
+  @javax.annotation.Nullable
   private String endUserType;
 
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
+  @javax.annotation.Nullable
   private String companyName;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE1 = "addressLine1";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE1)
+  @javax.annotation.Nullable
   private String addressLine1;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE2 = "addressLine2";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE2)
+  @javax.annotation.Nullable
   private String addressLine2;
 
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
+  @javax.annotation.Nullable
   private String contact;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_POSTAL_CODE = "postalCode";
   @SerializedName(SERIALIZED_NAME_POSTAL_CODE)
+  @javax.annotation.Nullable
   private String postalCode;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "countryCode";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBER = "phoneNumber";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
+  @javax.annotation.Nullable
   private String phoneNumber;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public OrderCreateV7RequestLinesInnerEndUserInfoInner() {
   }
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner endUserId(String endUserId) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner endUserId(@javax.annotation.Nullable String endUserId) {
     this.endUserId = endUserId;
     return this;
   }
@@ -115,12 +127,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return endUserId;
   }
 
-  public void setEndUserId(String endUserId) {
+  public void setEndUserId(@javax.annotation.Nullable String endUserId) {
     this.endUserId = endUserId;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner endUserType(String endUserType) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner endUserType(@javax.annotation.Nullable String endUserType) {
     this.endUserType = endUserType;
     return this;
   }
@@ -134,12 +146,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return endUserType;
   }
 
-  public void setEndUserType(String endUserType) {
+  public void setEndUserType(@javax.annotation.Nullable String endUserType) {
     this.endUserType = endUserType;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner companyName(String companyName) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner companyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
     return this;
   }
@@ -153,12 +165,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return companyName;
   }
 
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner addressLine1(String addressLine1) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner addressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
@@ -172,12 +184,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return addressLine1;
   }
 
-  public void setAddressLine1(String addressLine1) {
+  public void setAddressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner addressLine2(String addressLine2) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner addressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
@@ -191,12 +203,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return addressLine2;
   }
 
-  public void setAddressLine2(String addressLine2) {
+  public void setAddressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner contact(String contact) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner contact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
     return this;
   }
@@ -210,12 +222,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return contact;
   }
 
-  public void setContact(String contact) {
+  public void setContact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner city(String city) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -229,12 +241,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner state(String state) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -248,12 +260,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner postalCode(String postalCode) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner postalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
@@ -267,12 +279,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return postalCode;
   }
 
-  public void setPostalCode(String postalCode) {
+  public void setPostalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner countryCode(String countryCode) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -286,12 +298,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner phoneNumber(String phoneNumber) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner phoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
@@ -305,12 +317,12 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
 
-  public OrderCreateV7RequestLinesInnerEndUserInfoInner email(String email) {
+  public OrderCreateV7RequestLinesInnerEndUserInfoInner email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -324,7 +336,7 @@ public class OrderCreateV7RequestLinesInnerEndUserInfoInner {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 

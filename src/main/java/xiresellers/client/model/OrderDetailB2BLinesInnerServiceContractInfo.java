@@ -51,24 +51,27 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerServiceContractInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerServiceContractInfo {
   public static final String SERIALIZED_NAME_CONTRACT_INFO = "contractInfo";
   @SerializedName(SERIALIZED_NAME_CONTRACT_INFO)
+  @javax.annotation.Nullable
   private OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractInfo;
 
   public static final String SERIALIZED_NAME_SUBSCRIPTIONS = "subscriptions";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTIONS)
+  @javax.annotation.Nullable
   private OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subscriptions;
 
   public static final String SERIALIZED_NAME_LICENSE_INFO = "licenseInfo";
   @SerializedName(SERIALIZED_NAME_LICENSE_INFO)
+  @javax.annotation.Nullable
   private OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseInfo;
 
   public OrderDetailB2BLinesInnerServiceContractInfo() {
   }
 
-  public OrderDetailB2BLinesInnerServiceContractInfo contractInfo(OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractInfo) {
+  public OrderDetailB2BLinesInnerServiceContractInfo contractInfo(@javax.annotation.Nullable OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractInfo) {
     this.contractInfo = contractInfo;
     return this;
   }
@@ -82,12 +85,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfo {
     return contractInfo;
   }
 
-  public void setContractInfo(OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractInfo) {
+  public void setContractInfo(@javax.annotation.Nullable OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractInfo) {
     this.contractInfo = contractInfo;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfo subscriptions(OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subscriptions) {
+  public OrderDetailB2BLinesInnerServiceContractInfo subscriptions(@javax.annotation.Nullable OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subscriptions) {
     this.subscriptions = subscriptions;
     return this;
   }
@@ -101,12 +104,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfo {
     return subscriptions;
   }
 
-  public void setSubscriptions(OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subscriptions) {
+  public void setSubscriptions(@javax.annotation.Nullable OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subscriptions) {
     this.subscriptions = subscriptions;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfo licenseInfo(OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseInfo) {
+  public OrderDetailB2BLinesInnerServiceContractInfo licenseInfo(@javax.annotation.Nullable OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseInfo) {
     this.licenseInfo = licenseInfo;
     return this;
   }
@@ -120,7 +123,7 @@ public class OrderDetailB2BLinesInnerServiceContractInfo {
     return licenseInfo;
   }
 
-  public void setLicenseInfo(OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseInfo) {
+  public void setLicenseInfo(@javax.annotation.Nullable OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseInfo) {
     this.licenseInfo = licenseInfo;
   }
 

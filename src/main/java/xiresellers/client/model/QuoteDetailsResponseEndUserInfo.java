@@ -48,56 +48,67 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseEndUserInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class QuoteDetailsResponseEndUserInfo {
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
+  @javax.annotation.Nullable
   private String contact;
 
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
+  @javax.annotation.Nullable
   private String companyName;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE1 = "addressLine1";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE1)
+  @javax.annotation.Nullable
   private String addressLine1;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE2 = "addressLine2";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE2)
+  @javax.annotation.Nullable
   private String addressLine2;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE3 = "addressLine3";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE3)
+  @javax.annotation.Nullable
   private String addressLine3;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBER = "phoneNumber";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
+  @javax.annotation.Nullable
   private String phoneNumber;
 
   public static final String SERIALIZED_NAME_POSTAL_CODE = "postalCode";
   @SerializedName(SERIALIZED_NAME_POSTAL_CODE)
+  @javax.annotation.Nullable
   private String postalCode;
 
   public static final String SERIALIZED_NAME_MARKET_SEGMENT = "marketSegment";
   @SerializedName(SERIALIZED_NAME_MARKET_SEGMENT)
+  @javax.annotation.Nullable
   private String marketSegment;
 
   public QuoteDetailsResponseEndUserInfo() {
   }
 
-  public QuoteDetailsResponseEndUserInfo contact(String contact) {
+  public QuoteDetailsResponseEndUserInfo contact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
     return this;
   }
@@ -111,12 +122,12 @@ public class QuoteDetailsResponseEndUserInfo {
     return contact;
   }
 
-  public void setContact(String contact) {
+  public void setContact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
   }
 
 
-  public QuoteDetailsResponseEndUserInfo companyName(String companyName) {
+  public QuoteDetailsResponseEndUserInfo companyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
     return this;
   }
@@ -130,12 +141,12 @@ public class QuoteDetailsResponseEndUserInfo {
     return companyName;
   }
 
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
 
-  public QuoteDetailsResponseEndUserInfo addressLine1(String addressLine1) {
+  public QuoteDetailsResponseEndUserInfo addressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
@@ -149,12 +160,12 @@ public class QuoteDetailsResponseEndUserInfo {
     return addressLine1;
   }
 
-  public void setAddressLine1(String addressLine1) {
+  public void setAddressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
   }
 
 
-  public QuoteDetailsResponseEndUserInfo addressLine2(String addressLine2) {
+  public QuoteDetailsResponseEndUserInfo addressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
@@ -168,12 +179,12 @@ public class QuoteDetailsResponseEndUserInfo {
     return addressLine2;
   }
 
-  public void setAddressLine2(String addressLine2) {
+  public void setAddressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
   }
 
 
-  public QuoteDetailsResponseEndUserInfo addressLine3(String addressLine3) {
+  public QuoteDetailsResponseEndUserInfo addressLine3(@javax.annotation.Nullable String addressLine3) {
     this.addressLine3 = addressLine3;
     return this;
   }
@@ -187,12 +198,12 @@ public class QuoteDetailsResponseEndUserInfo {
     return addressLine3;
   }
 
-  public void setAddressLine3(String addressLine3) {
+  public void setAddressLine3(@javax.annotation.Nullable String addressLine3) {
     this.addressLine3 = addressLine3;
   }
 
 
-  public QuoteDetailsResponseEndUserInfo city(String city) {
+  public QuoteDetailsResponseEndUserInfo city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -206,12 +217,12 @@ public class QuoteDetailsResponseEndUserInfo {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public QuoteDetailsResponseEndUserInfo state(String state) {
+  public QuoteDetailsResponseEndUserInfo state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -225,12 +236,12 @@ public class QuoteDetailsResponseEndUserInfo {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public QuoteDetailsResponseEndUserInfo email(String email) {
+  public QuoteDetailsResponseEndUserInfo email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -244,12 +255,12 @@ public class QuoteDetailsResponseEndUserInfo {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public QuoteDetailsResponseEndUserInfo phoneNumber(String phoneNumber) {
+  public QuoteDetailsResponseEndUserInfo phoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
@@ -263,12 +274,12 @@ public class QuoteDetailsResponseEndUserInfo {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
 
-  public QuoteDetailsResponseEndUserInfo postalCode(String postalCode) {
+  public QuoteDetailsResponseEndUserInfo postalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
@@ -282,12 +293,12 @@ public class QuoteDetailsResponseEndUserInfo {
     return postalCode;
   }
 
-  public void setPostalCode(String postalCode) {
+  public void setPostalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
   }
 
 
-  public QuoteDetailsResponseEndUserInfo marketSegment(String marketSegment) {
+  public QuoteDetailsResponseEndUserInfo marketSegment(@javax.annotation.Nullable String marketSegment) {
     this.marketSegment = marketSegment;
     return this;
   }
@@ -301,7 +312,7 @@ public class QuoteDetailsResponseEndUserInfo {
     return marketSegment;
   }
 
-  public void setMarketSegment(String marketSegment) {
+  public void setMarketSegment(@javax.annotation.Nullable String marketSegment) {
     this.marketSegment = marketSegment;
   }
 

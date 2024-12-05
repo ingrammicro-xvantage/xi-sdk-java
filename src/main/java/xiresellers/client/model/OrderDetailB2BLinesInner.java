@@ -58,140 +58,172 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String subOrderNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_LINE_NUMBER = "ingramOrderLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String ingramOrderLineNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_SALES_ORDER_LINE_NUMBER = "vendorSalesOrderLineNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_SALES_ORDER_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String vendorSalesOrderLineNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String customerLineNumber;
 
   public static final String SERIALIZED_NAME_LINE_STATUS = "lineStatus";
   @SerializedName(SERIALIZED_NAME_LINE_STATUS)
+  @javax.annotation.Nullable
   private String lineStatus;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
+  @javax.annotation.Nullable
   private String vendorName;
 
   public static final String SERIALIZED_NAME_PART_DESCRIPTION = "partDescription";
   @SerializedName(SERIALIZED_NAME_PART_DESCRIPTION)
+  @javax.annotation.Nullable
   private String partDescription;
 
   public static final String SERIALIZED_NAME_UNIT_WEIGHT = "unitWeight";
   @SerializedName(SERIALIZED_NAME_UNIT_WEIGHT)
+  @javax.annotation.Nullable
   private Double unitWeight;
 
   public static final String SERIALIZED_NAME_WEIGHT_UOM = "weightUom";
   @SerializedName(SERIALIZED_NAME_WEIGHT_UOM)
+  @javax.annotation.Nullable
   private String weightUom;
 
   public static final String SERIALIZED_NAME_UNIT_PRICE = "unitPrice";
   @SerializedName(SERIALIZED_NAME_UNIT_PRICE)
+  @javax.annotation.Nullable
   private Double unitPrice;
 
   public static final String SERIALIZED_NAME_UPC_CODE = "upcCode";
   @SerializedName(SERIALIZED_NAME_UPC_CODE)
+  @javax.annotation.Nullable
   private String upcCode;
 
   public static final String SERIALIZED_NAME_EXTENDED_PRICE = "extendedPrice";
   @SerializedName(SERIALIZED_NAME_EXTENDED_PRICE)
+  @javax.annotation.Nullable
   private Double extendedPrice;
 
   public static final String SERIALIZED_NAME_TAX_AMOUNT = "taxAmount";
   @SerializedName(SERIALIZED_NAME_TAX_AMOUNT)
+  @javax.annotation.Nullable
   private Double taxAmount;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_QUANTITY_ORDERED = "quantityOrdered";
   @SerializedName(SERIALIZED_NAME_QUANTITY_ORDERED)
+  @javax.annotation.Nullable
   private Integer quantityOrdered;
 
   public static final String SERIALIZED_NAME_QUANTITY_CONFIRMED = "quantityConfirmed";
   @SerializedName(SERIALIZED_NAME_QUANTITY_CONFIRMED)
+  @javax.annotation.Nullable
   private Integer quantityConfirmed;
 
   public static final String SERIALIZED_NAME_QUANTITY_BACK_ORDERED = "quantityBackOrdered";
   @SerializedName(SERIALIZED_NAME_QUANTITY_BACK_ORDERED)
+  @javax.annotation.Nullable
   private Integer quantityBackOrdered;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBER = "specialBidNumber";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBER)
+  @javax.annotation.Nullable
   private String specialBidNumber;
 
   public static final String SERIALIZED_NAME_REQUESTED_DELIVERYDATE = "requestedDeliverydate";
   @SerializedName(SERIALIZED_NAME_REQUESTED_DELIVERYDATE)
+  @javax.annotation.Nullable
   private String requestedDeliverydate;
 
   public static final String SERIALIZED_NAME_PROMISED_DELIVERY_DATE = "promisedDeliveryDate";
   @SerializedName(SERIALIZED_NAME_PROMISED_DELIVERY_DATE)
+  @javax.annotation.Nullable
   private String promisedDeliveryDate;
 
   public static final String SERIALIZED_NAME_BACK_ORDER_E_T_A_DATE = "backOrderETADate";
   @SerializedName(SERIALIZED_NAME_BACK_ORDER_E_T_A_DATE)
+  @javax.annotation.Nullable
   private String backOrderETADate;
 
   public static final String SERIALIZED_NAME_LINE_NOTES = "lineNotes";
   @SerializedName(SERIALIZED_NAME_LINE_NOTES)
+  @javax.annotation.Nullable
   private String lineNotes;
 
   public static final String SERIALIZED_NAME_SHIPMENT_DETAILS = "shipmentDetails";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DETAILS)
+  @javax.annotation.Nullable
   private List<OrderDetailB2BLinesInnerShipmentDetailsInner> shipmentDetails;
 
   public static final String SERIALIZED_NAME_SERVICE_CONTRACT_INFO = "serviceContractInfo";
   @SerializedName(SERIALIZED_NAME_SERVICE_CONTRACT_INFO)
+  @javax.annotation.Nullable
   private OrderDetailB2BLinesInnerServiceContractInfo serviceContractInfo;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderDetailB2BLinesInnerAdditionalAttributesInner> additionalAttributes;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<OrderDetailB2BLinesInnerLinksInner> links;
 
   public static final String SERIALIZED_NAME_ESTIMATED_DATES = "estimatedDates";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_DATES)
+  @javax.annotation.Nullable
   private List<OrderDetailB2BLinesInnerEstimatedDatesInner> estimatedDates = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SCHEDULE_LINES = "scheduleLines";
   @SerializedName(SERIALIZED_NAME_SCHEDULE_LINES)
+  @javax.annotation.Nullable
   private List<OrderDetailB2BLinesInnerScheduleLinesInner> scheduleLines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_MULTIPLE_SHIPMENTS = "multipleShipments";
   @SerializedName(SERIALIZED_NAME_MULTIPLE_SHIPMENTS)
+  @javax.annotation.Nullable
   private List<OrderDetailB2BLinesInnerMultipleShipmentsInner> multipleShipments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DEFAULT_CARRIER_NAME = "defaultCarrierName";
   @SerializedName(SERIALIZED_NAME_DEFAULT_CARRIER_NAME)
+  @javax.annotation.Nullable
   private String defaultCarrierName;
 
   public OrderDetailB2BLinesInner() {
   }
 
-  public OrderDetailB2BLinesInner subOrderNumber(String subOrderNumber) {
+  public OrderDetailB2BLinesInner subOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
     return this;
   }
@@ -205,12 +237,12 @@ public class OrderDetailB2BLinesInner {
     return subOrderNumber;
   }
 
-  public void setSubOrderNumber(String subOrderNumber) {
+  public void setSubOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
   }
 
 
-  public OrderDetailB2BLinesInner ingramOrderLineNumber(String ingramOrderLineNumber) {
+  public OrderDetailB2BLinesInner ingramOrderLineNumber(@javax.annotation.Nullable String ingramOrderLineNumber) {
     this.ingramOrderLineNumber = ingramOrderLineNumber;
     return this;
   }
@@ -224,12 +256,12 @@ public class OrderDetailB2BLinesInner {
     return ingramOrderLineNumber;
   }
 
-  public void setIngramOrderLineNumber(String ingramOrderLineNumber) {
+  public void setIngramOrderLineNumber(@javax.annotation.Nullable String ingramOrderLineNumber) {
     this.ingramOrderLineNumber = ingramOrderLineNumber;
   }
 
 
-  public OrderDetailB2BLinesInner vendorSalesOrderLineNumber(String vendorSalesOrderLineNumber) {
+  public OrderDetailB2BLinesInner vendorSalesOrderLineNumber(@javax.annotation.Nullable String vendorSalesOrderLineNumber) {
     this.vendorSalesOrderLineNumber = vendorSalesOrderLineNumber;
     return this;
   }
@@ -243,12 +275,12 @@ public class OrderDetailB2BLinesInner {
     return vendorSalesOrderLineNumber;
   }
 
-  public void setVendorSalesOrderLineNumber(String vendorSalesOrderLineNumber) {
+  public void setVendorSalesOrderLineNumber(@javax.annotation.Nullable String vendorSalesOrderLineNumber) {
     this.vendorSalesOrderLineNumber = vendorSalesOrderLineNumber;
   }
 
 
-  public OrderDetailB2BLinesInner customerLineNumber(String customerLineNumber) {
+  public OrderDetailB2BLinesInner customerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
     return this;
   }
@@ -262,12 +294,12 @@ public class OrderDetailB2BLinesInner {
     return customerLineNumber;
   }
 
-  public void setCustomerLineNumber(String customerLineNumber) {
+  public void setCustomerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
   }
 
 
-  public OrderDetailB2BLinesInner lineStatus(String lineStatus) {
+  public OrderDetailB2BLinesInner lineStatus(@javax.annotation.Nullable String lineStatus) {
     this.lineStatus = lineStatus;
     return this;
   }
@@ -281,12 +313,12 @@ public class OrderDetailB2BLinesInner {
     return lineStatus;
   }
 
-  public void setLineStatus(String lineStatus) {
+  public void setLineStatus(@javax.annotation.Nullable String lineStatus) {
     this.lineStatus = lineStatus;
   }
 
 
-  public OrderDetailB2BLinesInner ingramPartNumber(String ingramPartNumber) {
+  public OrderDetailB2BLinesInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -300,12 +332,12 @@ public class OrderDetailB2BLinesInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public OrderDetailB2BLinesInner vendorPartNumber(String vendorPartNumber) {
+  public OrderDetailB2BLinesInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -319,12 +351,12 @@ public class OrderDetailB2BLinesInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public OrderDetailB2BLinesInner vendorName(String vendorName) {
+  public OrderDetailB2BLinesInner vendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
     return this;
   }
@@ -338,12 +370,12 @@ public class OrderDetailB2BLinesInner {
     return vendorName;
   }
 
-  public void setVendorName(String vendorName) {
+  public void setVendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
   }
 
 
-  public OrderDetailB2BLinesInner partDescription(String partDescription) {
+  public OrderDetailB2BLinesInner partDescription(@javax.annotation.Nullable String partDescription) {
     this.partDescription = partDescription;
     return this;
   }
@@ -357,12 +389,12 @@ public class OrderDetailB2BLinesInner {
     return partDescription;
   }
 
-  public void setPartDescription(String partDescription) {
+  public void setPartDescription(@javax.annotation.Nullable String partDescription) {
     this.partDescription = partDescription;
   }
 
 
-  public OrderDetailB2BLinesInner unitWeight(Double unitWeight) {
+  public OrderDetailB2BLinesInner unitWeight(@javax.annotation.Nullable Double unitWeight) {
     this.unitWeight = unitWeight;
     return this;
   }
@@ -376,12 +408,12 @@ public class OrderDetailB2BLinesInner {
     return unitWeight;
   }
 
-  public void setUnitWeight(Double unitWeight) {
+  public void setUnitWeight(@javax.annotation.Nullable Double unitWeight) {
     this.unitWeight = unitWeight;
   }
 
 
-  public OrderDetailB2BLinesInner weightUom(String weightUom) {
+  public OrderDetailB2BLinesInner weightUom(@javax.annotation.Nullable String weightUom) {
     this.weightUom = weightUom;
     return this;
   }
@@ -395,12 +427,12 @@ public class OrderDetailB2BLinesInner {
     return weightUom;
   }
 
-  public void setWeightUom(String weightUom) {
+  public void setWeightUom(@javax.annotation.Nullable String weightUom) {
     this.weightUom = weightUom;
   }
 
 
-  public OrderDetailB2BLinesInner unitPrice(Double unitPrice) {
+  public OrderDetailB2BLinesInner unitPrice(@javax.annotation.Nullable Double unitPrice) {
     this.unitPrice = unitPrice;
     return this;
   }
@@ -414,12 +446,12 @@ public class OrderDetailB2BLinesInner {
     return unitPrice;
   }
 
-  public void setUnitPrice(Double unitPrice) {
+  public void setUnitPrice(@javax.annotation.Nullable Double unitPrice) {
     this.unitPrice = unitPrice;
   }
 
 
-  public OrderDetailB2BLinesInner upcCode(String upcCode) {
+  public OrderDetailB2BLinesInner upcCode(@javax.annotation.Nullable String upcCode) {
     this.upcCode = upcCode;
     return this;
   }
@@ -433,12 +465,12 @@ public class OrderDetailB2BLinesInner {
     return upcCode;
   }
 
-  public void setUpcCode(String upcCode) {
+  public void setUpcCode(@javax.annotation.Nullable String upcCode) {
     this.upcCode = upcCode;
   }
 
 
-  public OrderDetailB2BLinesInner extendedPrice(Double extendedPrice) {
+  public OrderDetailB2BLinesInner extendedPrice(@javax.annotation.Nullable Double extendedPrice) {
     this.extendedPrice = extendedPrice;
     return this;
   }
@@ -452,12 +484,12 @@ public class OrderDetailB2BLinesInner {
     return extendedPrice;
   }
 
-  public void setExtendedPrice(Double extendedPrice) {
+  public void setExtendedPrice(@javax.annotation.Nullable Double extendedPrice) {
     this.extendedPrice = extendedPrice;
   }
 
 
-  public OrderDetailB2BLinesInner taxAmount(Double taxAmount) {
+  public OrderDetailB2BLinesInner taxAmount(@javax.annotation.Nullable Double taxAmount) {
     this.taxAmount = taxAmount;
     return this;
   }
@@ -471,12 +503,12 @@ public class OrderDetailB2BLinesInner {
     return taxAmount;
   }
 
-  public void setTaxAmount(Double taxAmount) {
+  public void setTaxAmount(@javax.annotation.Nullable Double taxAmount) {
     this.taxAmount = taxAmount;
   }
 
 
-  public OrderDetailB2BLinesInner currencyCode(String currencyCode) {
+  public OrderDetailB2BLinesInner currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -490,12 +522,12 @@ public class OrderDetailB2BLinesInner {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public OrderDetailB2BLinesInner quantityOrdered(Integer quantityOrdered) {
+  public OrderDetailB2BLinesInner quantityOrdered(@javax.annotation.Nullable Integer quantityOrdered) {
     this.quantityOrdered = quantityOrdered;
     return this;
   }
@@ -509,12 +541,12 @@ public class OrderDetailB2BLinesInner {
     return quantityOrdered;
   }
 
-  public void setQuantityOrdered(Integer quantityOrdered) {
+  public void setQuantityOrdered(@javax.annotation.Nullable Integer quantityOrdered) {
     this.quantityOrdered = quantityOrdered;
   }
 
 
-  public OrderDetailB2BLinesInner quantityConfirmed(Integer quantityConfirmed) {
+  public OrderDetailB2BLinesInner quantityConfirmed(@javax.annotation.Nullable Integer quantityConfirmed) {
     this.quantityConfirmed = quantityConfirmed;
     return this;
   }
@@ -528,12 +560,12 @@ public class OrderDetailB2BLinesInner {
     return quantityConfirmed;
   }
 
-  public void setQuantityConfirmed(Integer quantityConfirmed) {
+  public void setQuantityConfirmed(@javax.annotation.Nullable Integer quantityConfirmed) {
     this.quantityConfirmed = quantityConfirmed;
   }
 
 
-  public OrderDetailB2BLinesInner quantityBackOrdered(Integer quantityBackOrdered) {
+  public OrderDetailB2BLinesInner quantityBackOrdered(@javax.annotation.Nullable Integer quantityBackOrdered) {
     this.quantityBackOrdered = quantityBackOrdered;
     return this;
   }
@@ -547,12 +579,12 @@ public class OrderDetailB2BLinesInner {
     return quantityBackOrdered;
   }
 
-  public void setQuantityBackOrdered(Integer quantityBackOrdered) {
+  public void setQuantityBackOrdered(@javax.annotation.Nullable Integer quantityBackOrdered) {
     this.quantityBackOrdered = quantityBackOrdered;
   }
 
 
-  public OrderDetailB2BLinesInner specialBidNumber(String specialBidNumber) {
+  public OrderDetailB2BLinesInner specialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
     return this;
   }
@@ -566,12 +598,12 @@ public class OrderDetailB2BLinesInner {
     return specialBidNumber;
   }
 
-  public void setSpecialBidNumber(String specialBidNumber) {
+  public void setSpecialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
   }
 
 
-  public OrderDetailB2BLinesInner requestedDeliverydate(String requestedDeliverydate) {
+  public OrderDetailB2BLinesInner requestedDeliverydate(@javax.annotation.Nullable String requestedDeliverydate) {
     this.requestedDeliverydate = requestedDeliverydate;
     return this;
   }
@@ -585,12 +617,12 @@ public class OrderDetailB2BLinesInner {
     return requestedDeliverydate;
   }
 
-  public void setRequestedDeliverydate(String requestedDeliverydate) {
+  public void setRequestedDeliverydate(@javax.annotation.Nullable String requestedDeliverydate) {
     this.requestedDeliverydate = requestedDeliverydate;
   }
 
 
-  public OrderDetailB2BLinesInner promisedDeliveryDate(String promisedDeliveryDate) {
+  public OrderDetailB2BLinesInner promisedDeliveryDate(@javax.annotation.Nullable String promisedDeliveryDate) {
     this.promisedDeliveryDate = promisedDeliveryDate;
     return this;
   }
@@ -604,12 +636,12 @@ public class OrderDetailB2BLinesInner {
     return promisedDeliveryDate;
   }
 
-  public void setPromisedDeliveryDate(String promisedDeliveryDate) {
+  public void setPromisedDeliveryDate(@javax.annotation.Nullable String promisedDeliveryDate) {
     this.promisedDeliveryDate = promisedDeliveryDate;
   }
 
 
-  public OrderDetailB2BLinesInner backOrderETADate(String backOrderETADate) {
+  public OrderDetailB2BLinesInner backOrderETADate(@javax.annotation.Nullable String backOrderETADate) {
     this.backOrderETADate = backOrderETADate;
     return this;
   }
@@ -623,12 +655,12 @@ public class OrderDetailB2BLinesInner {
     return backOrderETADate;
   }
 
-  public void setBackOrderETADate(String backOrderETADate) {
+  public void setBackOrderETADate(@javax.annotation.Nullable String backOrderETADate) {
     this.backOrderETADate = backOrderETADate;
   }
 
 
-  public OrderDetailB2BLinesInner lineNotes(String lineNotes) {
+  public OrderDetailB2BLinesInner lineNotes(@javax.annotation.Nullable String lineNotes) {
     this.lineNotes = lineNotes;
     return this;
   }
@@ -642,12 +674,12 @@ public class OrderDetailB2BLinesInner {
     return lineNotes;
   }
 
-  public void setLineNotes(String lineNotes) {
+  public void setLineNotes(@javax.annotation.Nullable String lineNotes) {
     this.lineNotes = lineNotes;
   }
 
 
-  public OrderDetailB2BLinesInner shipmentDetails(List<OrderDetailB2BLinesInnerShipmentDetailsInner> shipmentDetails) {
+  public OrderDetailB2BLinesInner shipmentDetails(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerShipmentDetailsInner> shipmentDetails) {
     this.shipmentDetails = shipmentDetails;
     return this;
   }
@@ -669,12 +701,12 @@ public class OrderDetailB2BLinesInner {
     return shipmentDetails;
   }
 
-  public void setShipmentDetails(List<OrderDetailB2BLinesInnerShipmentDetailsInner> shipmentDetails) {
+  public void setShipmentDetails(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerShipmentDetailsInner> shipmentDetails) {
     this.shipmentDetails = shipmentDetails;
   }
 
 
-  public OrderDetailB2BLinesInner serviceContractInfo(OrderDetailB2BLinesInnerServiceContractInfo serviceContractInfo) {
+  public OrderDetailB2BLinesInner serviceContractInfo(@javax.annotation.Nullable OrderDetailB2BLinesInnerServiceContractInfo serviceContractInfo) {
     this.serviceContractInfo = serviceContractInfo;
     return this;
   }
@@ -688,12 +720,12 @@ public class OrderDetailB2BLinesInner {
     return serviceContractInfo;
   }
 
-  public void setServiceContractInfo(OrderDetailB2BLinesInnerServiceContractInfo serviceContractInfo) {
+  public void setServiceContractInfo(@javax.annotation.Nullable OrderDetailB2BLinesInnerServiceContractInfo serviceContractInfo) {
     this.serviceContractInfo = serviceContractInfo;
   }
 
 
-  public OrderDetailB2BLinesInner additionalAttributes(List<OrderDetailB2BLinesInnerAdditionalAttributesInner> additionalAttributes) {
+  public OrderDetailB2BLinesInner additionalAttributes(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -715,12 +747,12 @@ public class OrderDetailB2BLinesInner {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<OrderDetailB2BLinesInnerAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 
 
-  public OrderDetailB2BLinesInner links(List<OrderDetailB2BLinesInnerLinksInner> links) {
+  public OrderDetailB2BLinesInner links(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -742,12 +774,12 @@ public class OrderDetailB2BLinesInner {
     return links;
   }
 
-  public void setLinks(List<OrderDetailB2BLinesInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerLinksInner> links) {
     this.links = links;
   }
 
 
-  public OrderDetailB2BLinesInner estimatedDates(List<OrderDetailB2BLinesInnerEstimatedDatesInner> estimatedDates) {
+  public OrderDetailB2BLinesInner estimatedDates(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerEstimatedDatesInner> estimatedDates) {
     this.estimatedDates = estimatedDates;
     return this;
   }
@@ -769,12 +801,12 @@ public class OrderDetailB2BLinesInner {
     return estimatedDates;
   }
 
-  public void setEstimatedDates(List<OrderDetailB2BLinesInnerEstimatedDatesInner> estimatedDates) {
+  public void setEstimatedDates(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerEstimatedDatesInner> estimatedDates) {
     this.estimatedDates = estimatedDates;
   }
 
 
-  public OrderDetailB2BLinesInner scheduleLines(List<OrderDetailB2BLinesInnerScheduleLinesInner> scheduleLines) {
+  public OrderDetailB2BLinesInner scheduleLines(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerScheduleLinesInner> scheduleLines) {
     this.scheduleLines = scheduleLines;
     return this;
   }
@@ -796,12 +828,12 @@ public class OrderDetailB2BLinesInner {
     return scheduleLines;
   }
 
-  public void setScheduleLines(List<OrderDetailB2BLinesInnerScheduleLinesInner> scheduleLines) {
+  public void setScheduleLines(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerScheduleLinesInner> scheduleLines) {
     this.scheduleLines = scheduleLines;
   }
 
 
-  public OrderDetailB2BLinesInner multipleShipments(List<OrderDetailB2BLinesInnerMultipleShipmentsInner> multipleShipments) {
+  public OrderDetailB2BLinesInner multipleShipments(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerMultipleShipmentsInner> multipleShipments) {
     this.multipleShipments = multipleShipments;
     return this;
   }
@@ -823,12 +855,12 @@ public class OrderDetailB2BLinesInner {
     return multipleShipments;
   }
 
-  public void setMultipleShipments(List<OrderDetailB2BLinesInnerMultipleShipmentsInner> multipleShipments) {
+  public void setMultipleShipments(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerMultipleShipmentsInner> multipleShipments) {
     this.multipleShipments = multipleShipments;
   }
 
 
-  public OrderDetailB2BLinesInner defaultCarrierName(String defaultCarrierName) {
+  public OrderDetailB2BLinesInner defaultCarrierName(@javax.annotation.Nullable String defaultCarrierName) {
     this.defaultCarrierName = defaultCarrierName;
     return this;
   }
@@ -842,7 +874,7 @@ public class OrderDetailB2BLinesInner {
     return defaultCarrierName;
   }
 
-  public void setDefaultCarrierName(String defaultCarrierName) {
+  public void setDefaultCarrierName(@javax.annotation.Nullable String defaultCarrierName) {
     this.defaultCarrierName = defaultCarrierName;
   }
 

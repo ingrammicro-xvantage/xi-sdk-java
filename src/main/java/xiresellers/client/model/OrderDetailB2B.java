@@ -57,108 +57,132 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2B
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2B {
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String ingramOrderNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_DATE = "ingramOrderDate";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_DATE)
+  @javax.annotation.Nullable
   private String ingramOrderDate;
 
   public static final String SERIALIZED_NAME_ORDER_TYPE = "orderType";
   @SerializedName(SERIALIZED_NAME_ORDER_TYPE)
+  @javax.annotation.Nullable
   private String orderType;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
   @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String endCustomerOrderNumber;
 
   public static final String SERIALIZED_NAME_WEB_ORDER_ID = "webOrderId";
   @SerializedName(SERIALIZED_NAME_WEB_ORDER_ID)
+  @javax.annotation.Nullable
   private String webOrderId;
 
   public static final String SERIALIZED_NAME_VENDOR_SALES_ORDER_NUMBER = "vendorSalesOrderNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_SALES_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String vendorSalesOrderNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_PURCHASE_ORDER_NUMBER = "ingramPurchaseOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PURCHASE_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPurchaseOrderNumber;
 
   public static final String SERIALIZED_NAME_ORDER_STATUS = "orderStatus";
   @SerializedName(SERIALIZED_NAME_ORDER_STATUS)
+  @javax.annotation.Nullable
   private String orderStatus;
 
   public static final String SERIALIZED_NAME_ORDER_TOTAL = "orderTotal";
   @SerializedName(SERIALIZED_NAME_ORDER_TOTAL)
+  @javax.annotation.Nullable
   private Double orderTotal;
 
   public static final String SERIALIZED_NAME_ORDER_SUB_TOTAL = "orderSubTotal";
   @SerializedName(SERIALIZED_NAME_ORDER_SUB_TOTAL)
+  @javax.annotation.Nullable
   private Double orderSubTotal;
 
   public static final String SERIALIZED_NAME_FREIGHT_CHARGES = "freightCharges";
   @SerializedName(SERIALIZED_NAME_FREIGHT_CHARGES)
+  @javax.annotation.Nullable
   private Double freightCharges;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_TOTAL_WEIGHT = "totalWeight";
   @SerializedName(SERIALIZED_NAME_TOTAL_WEIGHT)
+  @javax.annotation.Nullable
   private Double totalWeight;
 
   public static final String SERIALIZED_NAME_TOTAL_TAX = "totalTax";
   @SerializedName(SERIALIZED_NAME_TOTAL_TAX)
+  @javax.annotation.Nullable
   private Double totalTax;
 
   public static final String SERIALIZED_NAME_TOTAL_FEES = "totalFees";
   @SerializedName(SERIALIZED_NAME_TOTAL_FEES)
+  @javax.annotation.Nullable
   private Double totalFees;
 
   public static final String SERIALIZED_NAME_PAYMENT_TERMS = "paymentTerms";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS)
+  @javax.annotation.Nullable
   private String paymentTerms;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_BILL_TO_INFO = "billToInfo";
   @SerializedName(SERIALIZED_NAME_BILL_TO_INFO)
+  @javax.annotation.Nullable
   private OrderDetailB2BBillToInfo billToInfo;
 
   public static final String SERIALIZED_NAME_SHIP_TO_INFO = "shipToInfo";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_INFO)
+  @javax.annotation.Nullable
   private OrderDetailB2BShipToInfo shipToInfo;
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
+  @javax.annotation.Nullable
   private OrderDetailB2BEndUserInfo endUserInfo;
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<OrderDetailB2BLinesInner> lines;
 
   public static final String SERIALIZED_NAME_MISCELLANEOUS_CHARGES = "miscellaneousCharges";
   @SerializedName(SERIALIZED_NAME_MISCELLANEOUS_CHARGES)
+  @javax.annotation.Nullable
   private List<OrderDetailB2BMiscellaneousChargesInner> miscellaneousCharges;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderDetailB2BAdditionalAttributesInner> additionalAttributes;
 
   public OrderDetailB2B() {
   }
 
-  public OrderDetailB2B ingramOrderNumber(String ingramOrderNumber) {
+  public OrderDetailB2B ingramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
     return this;
   }
@@ -172,12 +196,12 @@ public class OrderDetailB2B {
     return ingramOrderNumber;
   }
 
-  public void setIngramOrderNumber(String ingramOrderNumber) {
+  public void setIngramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
   }
 
 
-  public OrderDetailB2B ingramOrderDate(String ingramOrderDate) {
+  public OrderDetailB2B ingramOrderDate(@javax.annotation.Nullable String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
     return this;
   }
@@ -191,12 +215,12 @@ public class OrderDetailB2B {
     return ingramOrderDate;
   }
 
-  public void setIngramOrderDate(String ingramOrderDate) {
+  public void setIngramOrderDate(@javax.annotation.Nullable String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
   }
 
 
-  public OrderDetailB2B orderType(String orderType) {
+  public OrderDetailB2B orderType(@javax.annotation.Nullable String orderType) {
     this.orderType = orderType;
     return this;
   }
@@ -210,12 +234,12 @@ public class OrderDetailB2B {
     return orderType;
   }
 
-  public void setOrderType(String orderType) {
+  public void setOrderType(@javax.annotation.Nullable String orderType) {
     this.orderType = orderType;
   }
 
 
-  public OrderDetailB2B customerOrderNumber(String customerOrderNumber) {
+  public OrderDetailB2B customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -229,12 +253,12 @@ public class OrderDetailB2B {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public OrderDetailB2B endCustomerOrderNumber(String endCustomerOrderNumber) {
+  public OrderDetailB2B endCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
     return this;
   }
@@ -248,12 +272,12 @@ public class OrderDetailB2B {
     return endCustomerOrderNumber;
   }
 
-  public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
+  public void setEndCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
   }
 
 
-  public OrderDetailB2B webOrderId(String webOrderId) {
+  public OrderDetailB2B webOrderId(@javax.annotation.Nullable String webOrderId) {
     this.webOrderId = webOrderId;
     return this;
   }
@@ -267,12 +291,12 @@ public class OrderDetailB2B {
     return webOrderId;
   }
 
-  public void setWebOrderId(String webOrderId) {
+  public void setWebOrderId(@javax.annotation.Nullable String webOrderId) {
     this.webOrderId = webOrderId;
   }
 
 
-  public OrderDetailB2B vendorSalesOrderNumber(String vendorSalesOrderNumber) {
+  public OrderDetailB2B vendorSalesOrderNumber(@javax.annotation.Nullable String vendorSalesOrderNumber) {
     this.vendorSalesOrderNumber = vendorSalesOrderNumber;
     return this;
   }
@@ -286,12 +310,12 @@ public class OrderDetailB2B {
     return vendorSalesOrderNumber;
   }
 
-  public void setVendorSalesOrderNumber(String vendorSalesOrderNumber) {
+  public void setVendorSalesOrderNumber(@javax.annotation.Nullable String vendorSalesOrderNumber) {
     this.vendorSalesOrderNumber = vendorSalesOrderNumber;
   }
 
 
-  public OrderDetailB2B ingramPurchaseOrderNumber(String ingramPurchaseOrderNumber) {
+  public OrderDetailB2B ingramPurchaseOrderNumber(@javax.annotation.Nullable String ingramPurchaseOrderNumber) {
     this.ingramPurchaseOrderNumber = ingramPurchaseOrderNumber;
     return this;
   }
@@ -305,12 +329,12 @@ public class OrderDetailB2B {
     return ingramPurchaseOrderNumber;
   }
 
-  public void setIngramPurchaseOrderNumber(String ingramPurchaseOrderNumber) {
+  public void setIngramPurchaseOrderNumber(@javax.annotation.Nullable String ingramPurchaseOrderNumber) {
     this.ingramPurchaseOrderNumber = ingramPurchaseOrderNumber;
   }
 
 
-  public OrderDetailB2B orderStatus(String orderStatus) {
+  public OrderDetailB2B orderStatus(@javax.annotation.Nullable String orderStatus) {
     this.orderStatus = orderStatus;
     return this;
   }
@@ -324,12 +348,12 @@ public class OrderDetailB2B {
     return orderStatus;
   }
 
-  public void setOrderStatus(String orderStatus) {
+  public void setOrderStatus(@javax.annotation.Nullable String orderStatus) {
     this.orderStatus = orderStatus;
   }
 
 
-  public OrderDetailB2B orderTotal(Double orderTotal) {
+  public OrderDetailB2B orderTotal(@javax.annotation.Nullable Double orderTotal) {
     this.orderTotal = orderTotal;
     return this;
   }
@@ -343,12 +367,12 @@ public class OrderDetailB2B {
     return orderTotal;
   }
 
-  public void setOrderTotal(Double orderTotal) {
+  public void setOrderTotal(@javax.annotation.Nullable Double orderTotal) {
     this.orderTotal = orderTotal;
   }
 
 
-  public OrderDetailB2B orderSubTotal(Double orderSubTotal) {
+  public OrderDetailB2B orderSubTotal(@javax.annotation.Nullable Double orderSubTotal) {
     this.orderSubTotal = orderSubTotal;
     return this;
   }
@@ -362,12 +386,12 @@ public class OrderDetailB2B {
     return orderSubTotal;
   }
 
-  public void setOrderSubTotal(Double orderSubTotal) {
+  public void setOrderSubTotal(@javax.annotation.Nullable Double orderSubTotal) {
     this.orderSubTotal = orderSubTotal;
   }
 
 
-  public OrderDetailB2B freightCharges(Double freightCharges) {
+  public OrderDetailB2B freightCharges(@javax.annotation.Nullable Double freightCharges) {
     this.freightCharges = freightCharges;
     return this;
   }
@@ -381,12 +405,12 @@ public class OrderDetailB2B {
     return freightCharges;
   }
 
-  public void setFreightCharges(Double freightCharges) {
+  public void setFreightCharges(@javax.annotation.Nullable Double freightCharges) {
     this.freightCharges = freightCharges;
   }
 
 
-  public OrderDetailB2B currencyCode(String currencyCode) {
+  public OrderDetailB2B currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -400,12 +424,12 @@ public class OrderDetailB2B {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public OrderDetailB2B totalWeight(Double totalWeight) {
+  public OrderDetailB2B totalWeight(@javax.annotation.Nullable Double totalWeight) {
     this.totalWeight = totalWeight;
     return this;
   }
@@ -419,12 +443,12 @@ public class OrderDetailB2B {
     return totalWeight;
   }
 
-  public void setTotalWeight(Double totalWeight) {
+  public void setTotalWeight(@javax.annotation.Nullable Double totalWeight) {
     this.totalWeight = totalWeight;
   }
 
 
-  public OrderDetailB2B totalTax(Double totalTax) {
+  public OrderDetailB2B totalTax(@javax.annotation.Nullable Double totalTax) {
     this.totalTax = totalTax;
     return this;
   }
@@ -438,12 +462,12 @@ public class OrderDetailB2B {
     return totalTax;
   }
 
-  public void setTotalTax(Double totalTax) {
+  public void setTotalTax(@javax.annotation.Nullable Double totalTax) {
     this.totalTax = totalTax;
   }
 
 
-  public OrderDetailB2B totalFees(Double totalFees) {
+  public OrderDetailB2B totalFees(@javax.annotation.Nullable Double totalFees) {
     this.totalFees = totalFees;
     return this;
   }
@@ -457,12 +481,12 @@ public class OrderDetailB2B {
     return totalFees;
   }
 
-  public void setTotalFees(Double totalFees) {
+  public void setTotalFees(@javax.annotation.Nullable Double totalFees) {
     this.totalFees = totalFees;
   }
 
 
-  public OrderDetailB2B paymentTerms(String paymentTerms) {
+  public OrderDetailB2B paymentTerms(@javax.annotation.Nullable String paymentTerms) {
     this.paymentTerms = paymentTerms;
     return this;
   }
@@ -476,12 +500,12 @@ public class OrderDetailB2B {
     return paymentTerms;
   }
 
-  public void setPaymentTerms(String paymentTerms) {
+  public void setPaymentTerms(@javax.annotation.Nullable String paymentTerms) {
     this.paymentTerms = paymentTerms;
   }
 
 
-  public OrderDetailB2B notes(String notes) {
+  public OrderDetailB2B notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -495,12 +519,12 @@ public class OrderDetailB2B {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public OrderDetailB2B billToInfo(OrderDetailB2BBillToInfo billToInfo) {
+  public OrderDetailB2B billToInfo(@javax.annotation.Nullable OrderDetailB2BBillToInfo billToInfo) {
     this.billToInfo = billToInfo;
     return this;
   }
@@ -514,12 +538,12 @@ public class OrderDetailB2B {
     return billToInfo;
   }
 
-  public void setBillToInfo(OrderDetailB2BBillToInfo billToInfo) {
+  public void setBillToInfo(@javax.annotation.Nullable OrderDetailB2BBillToInfo billToInfo) {
     this.billToInfo = billToInfo;
   }
 
 
-  public OrderDetailB2B shipToInfo(OrderDetailB2BShipToInfo shipToInfo) {
+  public OrderDetailB2B shipToInfo(@javax.annotation.Nullable OrderDetailB2BShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
     return this;
   }
@@ -533,12 +557,12 @@ public class OrderDetailB2B {
     return shipToInfo;
   }
 
-  public void setShipToInfo(OrderDetailB2BShipToInfo shipToInfo) {
+  public void setShipToInfo(@javax.annotation.Nullable OrderDetailB2BShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
   }
 
 
-  public OrderDetailB2B endUserInfo(OrderDetailB2BEndUserInfo endUserInfo) {
+  public OrderDetailB2B endUserInfo(@javax.annotation.Nullable OrderDetailB2BEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
     return this;
   }
@@ -552,12 +576,12 @@ public class OrderDetailB2B {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(OrderDetailB2BEndUserInfo endUserInfo) {
+  public void setEndUserInfo(@javax.annotation.Nullable OrderDetailB2BEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 
 
-  public OrderDetailB2B lines(List<OrderDetailB2BLinesInner> lines) {
+  public OrderDetailB2B lines(@javax.annotation.Nullable List<OrderDetailB2BLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -579,12 +603,12 @@ public class OrderDetailB2B {
     return lines;
   }
 
-  public void setLines(List<OrderDetailB2BLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<OrderDetailB2BLinesInner> lines) {
     this.lines = lines;
   }
 
 
-  public OrderDetailB2B miscellaneousCharges(List<OrderDetailB2BMiscellaneousChargesInner> miscellaneousCharges) {
+  public OrderDetailB2B miscellaneousCharges(@javax.annotation.Nullable List<OrderDetailB2BMiscellaneousChargesInner> miscellaneousCharges) {
     this.miscellaneousCharges = miscellaneousCharges;
     return this;
   }
@@ -606,12 +630,12 @@ public class OrderDetailB2B {
     return miscellaneousCharges;
   }
 
-  public void setMiscellaneousCharges(List<OrderDetailB2BMiscellaneousChargesInner> miscellaneousCharges) {
+  public void setMiscellaneousCharges(@javax.annotation.Nullable List<OrderDetailB2BMiscellaneousChargesInner> miscellaneousCharges) {
     this.miscellaneousCharges = miscellaneousCharges;
   }
 
 
-  public OrderDetailB2B additionalAttributes(List<OrderDetailB2BAdditionalAttributesInner> additionalAttributes) {
+  public OrderDetailB2B additionalAttributes(@javax.annotation.Nullable List<OrderDetailB2BAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -633,7 +657,7 @@ public class OrderDetailB2B {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<OrderDetailB2BAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<OrderDetailB2BAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 

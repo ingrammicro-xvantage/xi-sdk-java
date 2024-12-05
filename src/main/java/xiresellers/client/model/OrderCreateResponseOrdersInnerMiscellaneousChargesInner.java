@@ -49,28 +49,32 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInnerMiscellaneousChargesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateResponseOrdersInnerMiscellaneousChargesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String subOrderNumber;
 
   public static final String SERIALIZED_NAME_CHARGE_LINE_REFERENCE = "chargeLineReference";
   @SerializedName(SERIALIZED_NAME_CHARGE_LINE_REFERENCE)
+  @javax.annotation.Nullable
   private String chargeLineReference;
 
   public static final String SERIALIZED_NAME_CHARGE_DESCRIPTION = "chargeDescription";
   @SerializedName(SERIALIZED_NAME_CHARGE_DESCRIPTION)
+  @javax.annotation.Nullable
   private String chargeDescription;
 
   public static final String SERIALIZED_NAME_CHARGE_AMOUNT = "chargeAmount";
   @SerializedName(SERIALIZED_NAME_CHARGE_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal chargeAmount;
 
   public OrderCreateResponseOrdersInnerMiscellaneousChargesInner() {
   }
 
-  public OrderCreateResponseOrdersInnerMiscellaneousChargesInner subOrderNumber(String subOrderNumber) {
+  public OrderCreateResponseOrdersInnerMiscellaneousChargesInner subOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
     return this;
   }
@@ -84,12 +88,12 @@ public class OrderCreateResponseOrdersInnerMiscellaneousChargesInner {
     return subOrderNumber;
   }
 
-  public void setSubOrderNumber(String subOrderNumber) {
+  public void setSubOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
   }
 
 
-  public OrderCreateResponseOrdersInnerMiscellaneousChargesInner chargeLineReference(String chargeLineReference) {
+  public OrderCreateResponseOrdersInnerMiscellaneousChargesInner chargeLineReference(@javax.annotation.Nullable String chargeLineReference) {
     this.chargeLineReference = chargeLineReference;
     return this;
   }
@@ -103,12 +107,12 @@ public class OrderCreateResponseOrdersInnerMiscellaneousChargesInner {
     return chargeLineReference;
   }
 
-  public void setChargeLineReference(String chargeLineReference) {
+  public void setChargeLineReference(@javax.annotation.Nullable String chargeLineReference) {
     this.chargeLineReference = chargeLineReference;
   }
 
 
-  public OrderCreateResponseOrdersInnerMiscellaneousChargesInner chargeDescription(String chargeDescription) {
+  public OrderCreateResponseOrdersInnerMiscellaneousChargesInner chargeDescription(@javax.annotation.Nullable String chargeDescription) {
     this.chargeDescription = chargeDescription;
     return this;
   }
@@ -122,12 +126,12 @@ public class OrderCreateResponseOrdersInnerMiscellaneousChargesInner {
     return chargeDescription;
   }
 
-  public void setChargeDescription(String chargeDescription) {
+  public void setChargeDescription(@javax.annotation.Nullable String chargeDescription) {
     this.chargeDescription = chargeDescription;
   }
 
 
-  public OrderCreateResponseOrdersInnerMiscellaneousChargesInner chargeAmount(BigDecimal chargeAmount) {
+  public OrderCreateResponseOrdersInnerMiscellaneousChargesInner chargeAmount(@javax.annotation.Nullable BigDecimal chargeAmount) {
     this.chargeAmount = chargeAmount;
     return this;
   }
@@ -141,7 +145,7 @@ public class OrderCreateResponseOrdersInnerMiscellaneousChargesInner {
     return chargeAmount;
   }
 
-  public void setChargeAmount(BigDecimal chargeAmount) {
+  public void setChargeAmount(@javax.annotation.Nullable BigDecimal chargeAmount) {
     this.chargeAmount = chargeAmount;
   }
 

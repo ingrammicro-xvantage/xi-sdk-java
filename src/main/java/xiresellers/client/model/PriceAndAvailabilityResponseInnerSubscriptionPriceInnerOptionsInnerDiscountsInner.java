@@ -52,20 +52,22 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner {
   public static final String SERIALIZED_NAME_VOLUME_DISCOUNTS = "volumeDiscounts";
   @SerializedName(SERIALIZED_NAME_VOLUME_DISCOUNTS)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner> volumeDiscounts = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SPECIAL_PRICING = "specialPricing";
   @SerializedName(SERIALIZED_NAME_SPECIAL_PRICING)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner> specialPricing = new ArrayList<>();
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner volumeDiscounts(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner> volumeDiscounts) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner volumeDiscounts(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner> volumeDiscounts) {
     this.volumeDiscounts = volumeDiscounts;
     return this;
   }
@@ -87,12 +89,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return volumeDiscounts;
   }
 
-  public void setVolumeDiscounts(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner> volumeDiscounts) {
+  public void setVolumeDiscounts(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner> volumeDiscounts) {
     this.volumeDiscounts = volumeDiscounts;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner specialPricing(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner> specialPricing) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner specialPricing(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner> specialPricing) {
     this.specialPricing = specialPricing;
     return this;
   }
@@ -114,7 +116,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return specialPricing;
   }
 
-  public void setSpecialPricing(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner> specialPricing) {
+  public void setSpecialPricing(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner> specialPricing) {
     this.specialPricing = specialPricing;
   }
 

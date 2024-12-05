@@ -48,20 +48,22 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseSubscriptionDetailsInnerGroupsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductDetailResponseSubscriptionDetailsInnerGroupsInner {
   public static final String SERIALIZED_NAME_GROUP_NAME = "groupName";
   @SerializedName(SERIALIZED_NAME_GROUP_NAME)
+  @javax.annotation.Nullable
   private String groupName;
 
   public static final String SERIALIZED_NAME_GROUP_DESCRIPTION = "groupDescription";
   @SerializedName(SERIALIZED_NAME_GROUP_DESCRIPTION)
+  @javax.annotation.Nullable
   private String groupDescription;
 
   public ProductDetailResponseSubscriptionDetailsInnerGroupsInner() {
   }
 
-  public ProductDetailResponseSubscriptionDetailsInnerGroupsInner groupName(String groupName) {
+  public ProductDetailResponseSubscriptionDetailsInnerGroupsInner groupName(@javax.annotation.Nullable String groupName) {
     this.groupName = groupName;
     return this;
   }
@@ -75,12 +77,12 @@ public class ProductDetailResponseSubscriptionDetailsInnerGroupsInner {
     return groupName;
   }
 
-  public void setGroupName(String groupName) {
+  public void setGroupName(@javax.annotation.Nullable String groupName) {
     this.groupName = groupName;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerGroupsInner groupDescription(String groupDescription) {
+  public ProductDetailResponseSubscriptionDetailsInnerGroupsInner groupDescription(@javax.annotation.Nullable String groupDescription) {
     this.groupDescription = groupDescription;
     return this;
   }
@@ -94,7 +96,7 @@ public class ProductDetailResponseSubscriptionDetailsInnerGroupsInner {
     return groupDescription;
   }
 
-  public void setGroupDescription(String groupDescription) {
+  public void setGroupDescription(@javax.annotation.Nullable String groupDescription) {
     this.groupDescription = groupDescription;
   }
 

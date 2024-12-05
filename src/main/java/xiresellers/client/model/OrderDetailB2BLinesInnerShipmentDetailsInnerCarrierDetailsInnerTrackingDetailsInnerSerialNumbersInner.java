@@ -48,16 +48,17 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner {
   public static final String SERIALIZED_NAME_SERIAL_NUMBER = "serialNumber";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBER)
+  @javax.annotation.Nullable
   private String serialNumber;
 
   public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner() {
   }
 
-  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner serialNumber(String serialNumber) {
+  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner serialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
     return this;
   }
@@ -71,7 +72,7 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return serialNumber;
   }
 
-  public void setSerialNumber(String serialNumber) {
+  public void setSerialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
   }
 

@@ -49,36 +49,42 @@ import xiresellers.client.JSON;
 /**
  * Shipping details for the order provided by the customer.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateRequestShipmentDetails {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
+  @javax.annotation.Nullable
   private String carrierCode;
 
   public static final String SERIALIZED_NAME_FREIGHT_ACCOUNT_NUMBER = "freightAccountNumber";
   @SerializedName(SERIALIZED_NAME_FREIGHT_ACCOUNT_NUMBER)
+  @javax.annotation.Nullable
   private String freightAccountNumber;
 
   public static final String SERIALIZED_NAME_SHIP_COMPLETE = "shipComplete";
   @SerializedName(SERIALIZED_NAME_SHIP_COMPLETE)
+  @javax.annotation.Nullable
   private String shipComplete;
 
   public static final String SERIALIZED_NAME_REQUESTED_DELIVERY_DATE = "requestedDeliveryDate";
   @SerializedName(SERIALIZED_NAME_REQUESTED_DELIVERY_DATE)
+  @javax.annotation.Nullable
   private LocalDate requestedDeliveryDate;
 
   public static final String SERIALIZED_NAME_SIGNATURE_REQUIRED = "signatureRequired";
   @SerializedName(SERIALIZED_NAME_SIGNATURE_REQUIRED)
+  @javax.annotation.Nullable
   private Boolean signatureRequired;
 
   public static final String SERIALIZED_NAME_SHIPPING_INSTRUCTIONS = "shippingInstructions";
   @SerializedName(SERIALIZED_NAME_SHIPPING_INSTRUCTIONS)
+  @javax.annotation.Nullable
   private String shippingInstructions;
 
   public OrderCreateRequestShipmentDetails() {
   }
 
-  public OrderCreateRequestShipmentDetails carrierCode(String carrierCode) {
+  public OrderCreateRequestShipmentDetails carrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
     return this;
   }
@@ -92,12 +98,12 @@ public class OrderCreateRequestShipmentDetails {
     return carrierCode;
   }
 
-  public void setCarrierCode(String carrierCode) {
+  public void setCarrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
   }
 
 
-  public OrderCreateRequestShipmentDetails freightAccountNumber(String freightAccountNumber) {
+  public OrderCreateRequestShipmentDetails freightAccountNumber(@javax.annotation.Nullable String freightAccountNumber) {
     this.freightAccountNumber = freightAccountNumber;
     return this;
   }
@@ -111,12 +117,12 @@ public class OrderCreateRequestShipmentDetails {
     return freightAccountNumber;
   }
 
-  public void setFreightAccountNumber(String freightAccountNumber) {
+  public void setFreightAccountNumber(@javax.annotation.Nullable String freightAccountNumber) {
     this.freightAccountNumber = freightAccountNumber;
   }
 
 
-  public OrderCreateRequestShipmentDetails shipComplete(String shipComplete) {
+  public OrderCreateRequestShipmentDetails shipComplete(@javax.annotation.Nullable String shipComplete) {
     this.shipComplete = shipComplete;
     return this;
   }
@@ -130,12 +136,12 @@ public class OrderCreateRequestShipmentDetails {
     return shipComplete;
   }
 
-  public void setShipComplete(String shipComplete) {
+  public void setShipComplete(@javax.annotation.Nullable String shipComplete) {
     this.shipComplete = shipComplete;
   }
 
 
-  public OrderCreateRequestShipmentDetails requestedDeliveryDate(LocalDate requestedDeliveryDate) {
+  public OrderCreateRequestShipmentDetails requestedDeliveryDate(@javax.annotation.Nullable LocalDate requestedDeliveryDate) {
     this.requestedDeliveryDate = requestedDeliveryDate;
     return this;
   }
@@ -149,12 +155,12 @@ public class OrderCreateRequestShipmentDetails {
     return requestedDeliveryDate;
   }
 
-  public void setRequestedDeliveryDate(LocalDate requestedDeliveryDate) {
+  public void setRequestedDeliveryDate(@javax.annotation.Nullable LocalDate requestedDeliveryDate) {
     this.requestedDeliveryDate = requestedDeliveryDate;
   }
 
 
-  public OrderCreateRequestShipmentDetails signatureRequired(Boolean signatureRequired) {
+  public OrderCreateRequestShipmentDetails signatureRequired(@javax.annotation.Nullable Boolean signatureRequired) {
     this.signatureRequired = signatureRequired;
     return this;
   }
@@ -168,12 +174,12 @@ public class OrderCreateRequestShipmentDetails {
     return signatureRequired;
   }
 
-  public void setSignatureRequired(Boolean signatureRequired) {
+  public void setSignatureRequired(@javax.annotation.Nullable Boolean signatureRequired) {
     this.signatureRequired = signatureRequired;
   }
 
 
-  public OrderCreateRequestShipmentDetails shippingInstructions(String shippingInstructions) {
+  public OrderCreateRequestShipmentDetails shippingInstructions(@javax.annotation.Nullable String shippingInstructions) {
     this.shippingInstructions = shippingInstructions;
     return this;
   }
@@ -187,7 +193,7 @@ public class OrderCreateRequestShipmentDetails {
     return shippingInstructions;
   }
 
-  public void setShippingInstructions(String shippingInstructions) {
+  public void setShippingInstructions(@javax.annotation.Nullable String shippingInstructions) {
     this.shippingInstructions = shippingInstructions;
   }
 

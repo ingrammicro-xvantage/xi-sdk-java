@@ -52,64 +52,77 @@ import xiresellers.client.JSON;
 /**
  * ReturnsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ReturnsDetailsResponse {
   public static final String SERIALIZED_NAME_TYPE_OF_DETAILS = "typeOfDetails";
   @SerializedName(SERIALIZED_NAME_TYPE_OF_DETAILS)
+  @javax.annotation.Nullable
   private String typeOfDetails;
 
   public static final String SERIALIZED_NAME_RMA_CLAIM_ID = "rmaClaimId";
   @SerializedName(SERIALIZED_NAME_RMA_CLAIM_ID)
+  @javax.annotation.Nullable
   private String rmaClaimId;
 
   public static final String SERIALIZED_NAME_CASE_REQUEST_NUMBER = "caseRequestNumber";
   @SerializedName(SERIALIZED_NAME_CASE_REQUEST_NUMBER)
+  @javax.annotation.Nullable
   private String caseRequestNumber;
 
   public static final String SERIALIZED_NAME_CREATED_ON = "createdOn";
   @SerializedName(SERIALIZED_NAME_CREATED_ON)
+  @javax.annotation.Nullable
   private String createdOn;
 
   public static final String SERIALIZED_NAME_RETURN_REASON = "returnReason";
   @SerializedName(SERIALIZED_NAME_RETURN_REASON)
+  @javax.annotation.Nullable
   private String returnReason;
 
   public static final String SERIALIZED_NAME_REFERENCE_NUMBER = "referenceNumber";
   @SerializedName(SERIALIZED_NAME_REFERENCE_NUMBER)
+  @javax.annotation.Nullable
   private String referenceNumber;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_RETURN_WAREHOUSE_ADDRESS = "returnWarehouseAddress";
   @SerializedName(SERIALIZED_NAME_RETURN_WAREHOUSE_ADDRESS)
+  @javax.annotation.Nullable
   private String returnWarehouseAddress;
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
+  @javax.annotation.Nullable
   private List<ReturnsDetailsResponseProductsInner> products = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SUB_TOTAL = "subTotal";
   @SerializedName(SERIALIZED_NAME_SUB_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal subTotal;
 
   public static final String SERIALIZED_NAME_TAX = "tax";
   @SerializedName(SERIALIZED_NAME_TAX)
+  @javax.annotation.Nullable
   private BigDecimal tax;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_FEES = "additionalFees";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_FEES)
+  @javax.annotation.Nullable
   private BigDecimal additionalFees;
 
   public static final String SERIALIZED_NAME_ESTIMATED_TOTAL = "estimatedTotal";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal estimatedTotal;
 
   public ReturnsDetailsResponse() {
   }
 
-  public ReturnsDetailsResponse typeOfDetails(String typeOfDetails) {
+  public ReturnsDetailsResponse typeOfDetails(@javax.annotation.Nullable String typeOfDetails) {
     this.typeOfDetails = typeOfDetails;
     return this;
   }
@@ -123,12 +136,12 @@ public class ReturnsDetailsResponse {
     return typeOfDetails;
   }
 
-  public void setTypeOfDetails(String typeOfDetails) {
+  public void setTypeOfDetails(@javax.annotation.Nullable String typeOfDetails) {
     this.typeOfDetails = typeOfDetails;
   }
 
 
-  public ReturnsDetailsResponse rmaClaimId(String rmaClaimId) {
+  public ReturnsDetailsResponse rmaClaimId(@javax.annotation.Nullable String rmaClaimId) {
     this.rmaClaimId = rmaClaimId;
     return this;
   }
@@ -142,12 +155,12 @@ public class ReturnsDetailsResponse {
     return rmaClaimId;
   }
 
-  public void setRmaClaimId(String rmaClaimId) {
+  public void setRmaClaimId(@javax.annotation.Nullable String rmaClaimId) {
     this.rmaClaimId = rmaClaimId;
   }
 
 
-  public ReturnsDetailsResponse caseRequestNumber(String caseRequestNumber) {
+  public ReturnsDetailsResponse caseRequestNumber(@javax.annotation.Nullable String caseRequestNumber) {
     this.caseRequestNumber = caseRequestNumber;
     return this;
   }
@@ -161,12 +174,12 @@ public class ReturnsDetailsResponse {
     return caseRequestNumber;
   }
 
-  public void setCaseRequestNumber(String caseRequestNumber) {
+  public void setCaseRequestNumber(@javax.annotation.Nullable String caseRequestNumber) {
     this.caseRequestNumber = caseRequestNumber;
   }
 
 
-  public ReturnsDetailsResponse createdOn(String createdOn) {
+  public ReturnsDetailsResponse createdOn(@javax.annotation.Nullable String createdOn) {
     this.createdOn = createdOn;
     return this;
   }
@@ -180,12 +193,12 @@ public class ReturnsDetailsResponse {
     return createdOn;
   }
 
-  public void setCreatedOn(String createdOn) {
+  public void setCreatedOn(@javax.annotation.Nullable String createdOn) {
     this.createdOn = createdOn;
   }
 
 
-  public ReturnsDetailsResponse returnReason(String returnReason) {
+  public ReturnsDetailsResponse returnReason(@javax.annotation.Nullable String returnReason) {
     this.returnReason = returnReason;
     return this;
   }
@@ -199,12 +212,12 @@ public class ReturnsDetailsResponse {
     return returnReason;
   }
 
-  public void setReturnReason(String returnReason) {
+  public void setReturnReason(@javax.annotation.Nullable String returnReason) {
     this.returnReason = returnReason;
   }
 
 
-  public ReturnsDetailsResponse referenceNumber(String referenceNumber) {
+  public ReturnsDetailsResponse referenceNumber(@javax.annotation.Nullable String referenceNumber) {
     this.referenceNumber = referenceNumber;
     return this;
   }
@@ -218,12 +231,12 @@ public class ReturnsDetailsResponse {
     return referenceNumber;
   }
 
-  public void setReferenceNumber(String referenceNumber) {
+  public void setReferenceNumber(@javax.annotation.Nullable String referenceNumber) {
     this.referenceNumber = referenceNumber;
   }
 
 
-  public ReturnsDetailsResponse status(String status) {
+  public ReturnsDetailsResponse status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -237,12 +250,12 @@ public class ReturnsDetailsResponse {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public ReturnsDetailsResponse returnWarehouseAddress(String returnWarehouseAddress) {
+  public ReturnsDetailsResponse returnWarehouseAddress(@javax.annotation.Nullable String returnWarehouseAddress) {
     this.returnWarehouseAddress = returnWarehouseAddress;
     return this;
   }
@@ -256,12 +269,12 @@ public class ReturnsDetailsResponse {
     return returnWarehouseAddress;
   }
 
-  public void setReturnWarehouseAddress(String returnWarehouseAddress) {
+  public void setReturnWarehouseAddress(@javax.annotation.Nullable String returnWarehouseAddress) {
     this.returnWarehouseAddress = returnWarehouseAddress;
   }
 
 
-  public ReturnsDetailsResponse products(List<ReturnsDetailsResponseProductsInner> products) {
+  public ReturnsDetailsResponse products(@javax.annotation.Nullable List<ReturnsDetailsResponseProductsInner> products) {
     this.products = products;
     return this;
   }
@@ -283,12 +296,12 @@ public class ReturnsDetailsResponse {
     return products;
   }
 
-  public void setProducts(List<ReturnsDetailsResponseProductsInner> products) {
+  public void setProducts(@javax.annotation.Nullable List<ReturnsDetailsResponseProductsInner> products) {
     this.products = products;
   }
 
 
-  public ReturnsDetailsResponse subTotal(BigDecimal subTotal) {
+  public ReturnsDetailsResponse subTotal(@javax.annotation.Nullable BigDecimal subTotal) {
     this.subTotal = subTotal;
     return this;
   }
@@ -302,12 +315,12 @@ public class ReturnsDetailsResponse {
     return subTotal;
   }
 
-  public void setSubTotal(BigDecimal subTotal) {
+  public void setSubTotal(@javax.annotation.Nullable BigDecimal subTotal) {
     this.subTotal = subTotal;
   }
 
 
-  public ReturnsDetailsResponse tax(BigDecimal tax) {
+  public ReturnsDetailsResponse tax(@javax.annotation.Nullable BigDecimal tax) {
     this.tax = tax;
     return this;
   }
@@ -321,12 +334,12 @@ public class ReturnsDetailsResponse {
     return tax;
   }
 
-  public void setTax(BigDecimal tax) {
+  public void setTax(@javax.annotation.Nullable BigDecimal tax) {
     this.tax = tax;
   }
 
 
-  public ReturnsDetailsResponse additionalFees(BigDecimal additionalFees) {
+  public ReturnsDetailsResponse additionalFees(@javax.annotation.Nullable BigDecimal additionalFees) {
     this.additionalFees = additionalFees;
     return this;
   }
@@ -340,12 +353,12 @@ public class ReturnsDetailsResponse {
     return additionalFees;
   }
 
-  public void setAdditionalFees(BigDecimal additionalFees) {
+  public void setAdditionalFees(@javax.annotation.Nullable BigDecimal additionalFees) {
     this.additionalFees = additionalFees;
   }
 
 
-  public ReturnsDetailsResponse estimatedTotal(BigDecimal estimatedTotal) {
+  public ReturnsDetailsResponse estimatedTotal(@javax.annotation.Nullable BigDecimal estimatedTotal) {
     this.estimatedTotal = estimatedTotal;
     return this;
   }
@@ -359,7 +372,7 @@ public class ReturnsDetailsResponse {
     return estimatedTotal;
   }
 
-  public void setEstimatedTotal(BigDecimal estimatedTotal) {
+  public void setEstimatedTotal(@javax.annotation.Nullable BigDecimal estimatedTotal) {
     this.estimatedTotal = estimatedTotal;
   }
 

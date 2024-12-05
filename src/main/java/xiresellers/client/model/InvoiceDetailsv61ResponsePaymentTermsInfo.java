@@ -48,24 +48,27 @@ import xiresellers.client.JSON;
 /**
  * Payment terms is the agreement between Ingram and the customer by what period they should pay the invoice by
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceDetailsv61ResponsePaymentTermsInfo {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_CODE = "paymentTermsCode";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_CODE)
+  @javax.annotation.Nullable
   private String paymentTermsCode;
 
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_DESCRIPTION = "paymentTermsDescription";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_DESCRIPTION)
+  @javax.annotation.Nullable
   private String paymentTermsDescription;
 
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE = "paymentTermsDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE)
+  @javax.annotation.Nullable
   private String paymentTermsDueDate;
 
   public InvoiceDetailsv61ResponsePaymentTermsInfo() {
   }
 
-  public InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsCode(String paymentTermsCode) {
+  public InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsCode(@javax.annotation.Nullable String paymentTermsCode) {
     this.paymentTermsCode = paymentTermsCode;
     return this;
   }
@@ -79,12 +82,12 @@ public class InvoiceDetailsv61ResponsePaymentTermsInfo {
     return paymentTermsCode;
   }
 
-  public void setPaymentTermsCode(String paymentTermsCode) {
+  public void setPaymentTermsCode(@javax.annotation.Nullable String paymentTermsCode) {
     this.paymentTermsCode = paymentTermsCode;
   }
 
 
-  public InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsDescription(String paymentTermsDescription) {
+  public InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsDescription(@javax.annotation.Nullable String paymentTermsDescription) {
     this.paymentTermsDescription = paymentTermsDescription;
     return this;
   }
@@ -98,12 +101,12 @@ public class InvoiceDetailsv61ResponsePaymentTermsInfo {
     return paymentTermsDescription;
   }
 
-  public void setPaymentTermsDescription(String paymentTermsDescription) {
+  public void setPaymentTermsDescription(@javax.annotation.Nullable String paymentTermsDescription) {
     this.paymentTermsDescription = paymentTermsDescription;
   }
 
 
-  public InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsDueDate(String paymentTermsDueDate) {
+  public InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsDueDate(@javax.annotation.Nullable String paymentTermsDueDate) {
     this.paymentTermsDueDate = paymentTermsDueDate;
     return this;
   }
@@ -117,7 +120,7 @@ public class InvoiceDetailsv61ResponsePaymentTermsInfo {
     return paymentTermsDueDate;
   }
 
-  public void setPaymentTermsDueDate(String paymentTermsDueDate) {
+  public void setPaymentTermsDueDate(@javax.annotation.Nullable String paymentTermsDueDate) {
     this.paymentTermsDueDate = paymentTermsDueDate;
   }
 

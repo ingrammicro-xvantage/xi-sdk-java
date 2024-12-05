@@ -49,16 +49,17 @@ import xiresellers.client.JSON;
 /**
  * FreightResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class FreightResponse {
   public static final String SERIALIZED_NAME_FREIGHT_ESTIMATE_RESPONSE = "freightEstimateResponse";
   @SerializedName(SERIALIZED_NAME_FREIGHT_ESTIMATE_RESPONSE)
+  @javax.annotation.Nullable
   private FreightResponseFreightEstimateResponse freightEstimateResponse;
 
   public FreightResponse() {
   }
 
-  public FreightResponse freightEstimateResponse(FreightResponseFreightEstimateResponse freightEstimateResponse) {
+  public FreightResponse freightEstimateResponse(@javax.annotation.Nullable FreightResponseFreightEstimateResponse freightEstimateResponse) {
     this.freightEstimateResponse = freightEstimateResponse;
     return this;
   }
@@ -72,7 +73,7 @@ public class FreightResponse {
     return freightEstimateResponse;
   }
 
-  public void setFreightEstimateResponse(FreightResponseFreightEstimateResponse freightEstimateResponse) {
+  public void setFreightEstimateResponse(@javax.annotation.Nullable FreightResponseFreightEstimateResponse freightEstimateResponse) {
     this.freightEstimateResponse = freightEstimateResponse;
   }
 

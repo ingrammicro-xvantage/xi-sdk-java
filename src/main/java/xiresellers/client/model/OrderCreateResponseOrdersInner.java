@@ -56,76 +56,92 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateResponseOrdersInner {
   public static final String SERIALIZED_NAME_NUMBER_OF_LINES_WITH_SUCCESS = "numberOfLinesWithSuccess";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_LINES_WITH_SUCCESS)
+  @javax.annotation.Nullable
   private Integer numberOfLinesWithSuccess;
 
   public static final String SERIALIZED_NAME_NUMBER_OF_LINES_WITH_ERROR = "numberOfLinesWithError";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_LINES_WITH_ERROR)
+  @javax.annotation.Nullable
   private Integer numberOfLinesWithError;
 
   public static final String SERIALIZED_NAME_NUMBER_OF_LINES_WITH_WARNING = "numberOfLinesWithWarning";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_LINES_WITH_WARNING)
+  @javax.annotation.Nullable
   private Integer numberOfLinesWithWarning;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String ingramOrderNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_DATE = "ingramOrderDate";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_DATE)
+  @javax.annotation.Nullable
   private String ingramOrderDate;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_ORDER_TYPE = "orderType";
   @SerializedName(SERIALIZED_NAME_ORDER_TYPE)
+  @javax.annotation.Nullable
   private String orderType;
 
   public static final String SERIALIZED_NAME_ORDER_TOTAL = "orderTotal";
   @SerializedName(SERIALIZED_NAME_ORDER_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal orderTotal;
 
   public static final String SERIALIZED_NAME_FREIGHT_CHARGES = "freightCharges";
   @SerializedName(SERIALIZED_NAME_FREIGHT_CHARGES)
+  @javax.annotation.Nullable
   private BigDecimal freightCharges;
 
   public static final String SERIALIZED_NAME_TOTAL_TAX = "totalTax";
   @SerializedName(SERIALIZED_NAME_TOTAL_TAX)
+  @javax.annotation.Nullable
   private BigDecimal totalTax;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<OrderCreateResponseOrdersInnerLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_MISCELLANEOUS_CHARGES = "miscellaneousCharges";
   @SerializedName(SERIALIZED_NAME_MISCELLANEOUS_CHARGES)
+  @javax.annotation.Nullable
   private List<OrderCreateResponseOrdersInnerMiscellaneousChargesInner> miscellaneousCharges = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<OrderCreateResponseOrdersInnerLinksInner> links = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_REJECTED_LINE_ITEMS = "rejectedLineItems";
   @SerializedName(SERIALIZED_NAME_REJECTED_LINE_ITEMS)
+  @javax.annotation.Nullable
   private List<OrderCreateResponseOrdersInnerRejectedLineItemsInner> rejectedLineItems = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderCreateResponseOrdersInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public OrderCreateResponseOrdersInner() {
   }
 
-  public OrderCreateResponseOrdersInner numberOfLinesWithSuccess(Integer numberOfLinesWithSuccess) {
+  public OrderCreateResponseOrdersInner numberOfLinesWithSuccess(@javax.annotation.Nullable Integer numberOfLinesWithSuccess) {
     this.numberOfLinesWithSuccess = numberOfLinesWithSuccess;
     return this;
   }
@@ -139,12 +155,12 @@ public class OrderCreateResponseOrdersInner {
     return numberOfLinesWithSuccess;
   }
 
-  public void setNumberOfLinesWithSuccess(Integer numberOfLinesWithSuccess) {
+  public void setNumberOfLinesWithSuccess(@javax.annotation.Nullable Integer numberOfLinesWithSuccess) {
     this.numberOfLinesWithSuccess = numberOfLinesWithSuccess;
   }
 
 
-  public OrderCreateResponseOrdersInner numberOfLinesWithError(Integer numberOfLinesWithError) {
+  public OrderCreateResponseOrdersInner numberOfLinesWithError(@javax.annotation.Nullable Integer numberOfLinesWithError) {
     this.numberOfLinesWithError = numberOfLinesWithError;
     return this;
   }
@@ -158,12 +174,12 @@ public class OrderCreateResponseOrdersInner {
     return numberOfLinesWithError;
   }
 
-  public void setNumberOfLinesWithError(Integer numberOfLinesWithError) {
+  public void setNumberOfLinesWithError(@javax.annotation.Nullable Integer numberOfLinesWithError) {
     this.numberOfLinesWithError = numberOfLinesWithError;
   }
 
 
-  public OrderCreateResponseOrdersInner numberOfLinesWithWarning(Integer numberOfLinesWithWarning) {
+  public OrderCreateResponseOrdersInner numberOfLinesWithWarning(@javax.annotation.Nullable Integer numberOfLinesWithWarning) {
     this.numberOfLinesWithWarning = numberOfLinesWithWarning;
     return this;
   }
@@ -177,12 +193,12 @@ public class OrderCreateResponseOrdersInner {
     return numberOfLinesWithWarning;
   }
 
-  public void setNumberOfLinesWithWarning(Integer numberOfLinesWithWarning) {
+  public void setNumberOfLinesWithWarning(@javax.annotation.Nullable Integer numberOfLinesWithWarning) {
     this.numberOfLinesWithWarning = numberOfLinesWithWarning;
   }
 
 
-  public OrderCreateResponseOrdersInner ingramOrderNumber(String ingramOrderNumber) {
+  public OrderCreateResponseOrdersInner ingramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
     return this;
   }
@@ -196,12 +212,12 @@ public class OrderCreateResponseOrdersInner {
     return ingramOrderNumber;
   }
 
-  public void setIngramOrderNumber(String ingramOrderNumber) {
+  public void setIngramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
   }
 
 
-  public OrderCreateResponseOrdersInner ingramOrderDate(String ingramOrderDate) {
+  public OrderCreateResponseOrdersInner ingramOrderDate(@javax.annotation.Nullable String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
     return this;
   }
@@ -215,12 +231,12 @@ public class OrderCreateResponseOrdersInner {
     return ingramOrderDate;
   }
 
-  public void setIngramOrderDate(String ingramOrderDate) {
+  public void setIngramOrderDate(@javax.annotation.Nullable String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
   }
 
 
-  public OrderCreateResponseOrdersInner notes(String notes) {
+  public OrderCreateResponseOrdersInner notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -234,12 +250,12 @@ public class OrderCreateResponseOrdersInner {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public OrderCreateResponseOrdersInner orderType(String orderType) {
+  public OrderCreateResponseOrdersInner orderType(@javax.annotation.Nullable String orderType) {
     this.orderType = orderType;
     return this;
   }
@@ -253,12 +269,12 @@ public class OrderCreateResponseOrdersInner {
     return orderType;
   }
 
-  public void setOrderType(String orderType) {
+  public void setOrderType(@javax.annotation.Nullable String orderType) {
     this.orderType = orderType;
   }
 
 
-  public OrderCreateResponseOrdersInner orderTotal(BigDecimal orderTotal) {
+  public OrderCreateResponseOrdersInner orderTotal(@javax.annotation.Nullable BigDecimal orderTotal) {
     this.orderTotal = orderTotal;
     return this;
   }
@@ -272,12 +288,12 @@ public class OrderCreateResponseOrdersInner {
     return orderTotal;
   }
 
-  public void setOrderTotal(BigDecimal orderTotal) {
+  public void setOrderTotal(@javax.annotation.Nullable BigDecimal orderTotal) {
     this.orderTotal = orderTotal;
   }
 
 
-  public OrderCreateResponseOrdersInner freightCharges(BigDecimal freightCharges) {
+  public OrderCreateResponseOrdersInner freightCharges(@javax.annotation.Nullable BigDecimal freightCharges) {
     this.freightCharges = freightCharges;
     return this;
   }
@@ -291,12 +307,12 @@ public class OrderCreateResponseOrdersInner {
     return freightCharges;
   }
 
-  public void setFreightCharges(BigDecimal freightCharges) {
+  public void setFreightCharges(@javax.annotation.Nullable BigDecimal freightCharges) {
     this.freightCharges = freightCharges;
   }
 
 
-  public OrderCreateResponseOrdersInner totalTax(BigDecimal totalTax) {
+  public OrderCreateResponseOrdersInner totalTax(@javax.annotation.Nullable BigDecimal totalTax) {
     this.totalTax = totalTax;
     return this;
   }
@@ -310,12 +326,12 @@ public class OrderCreateResponseOrdersInner {
     return totalTax;
   }
 
-  public void setTotalTax(BigDecimal totalTax) {
+  public void setTotalTax(@javax.annotation.Nullable BigDecimal totalTax) {
     this.totalTax = totalTax;
   }
 
 
-  public OrderCreateResponseOrdersInner currencyCode(String currencyCode) {
+  public OrderCreateResponseOrdersInner currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -329,12 +345,12 @@ public class OrderCreateResponseOrdersInner {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public OrderCreateResponseOrdersInner lines(List<OrderCreateResponseOrdersInnerLinesInner> lines) {
+  public OrderCreateResponseOrdersInner lines(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -356,12 +372,12 @@ public class OrderCreateResponseOrdersInner {
     return lines;
   }
 
-  public void setLines(List<OrderCreateResponseOrdersInnerLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerLinesInner> lines) {
     this.lines = lines;
   }
 
 
-  public OrderCreateResponseOrdersInner miscellaneousCharges(List<OrderCreateResponseOrdersInnerMiscellaneousChargesInner> miscellaneousCharges) {
+  public OrderCreateResponseOrdersInner miscellaneousCharges(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerMiscellaneousChargesInner> miscellaneousCharges) {
     this.miscellaneousCharges = miscellaneousCharges;
     return this;
   }
@@ -383,12 +399,12 @@ public class OrderCreateResponseOrdersInner {
     return miscellaneousCharges;
   }
 
-  public void setMiscellaneousCharges(List<OrderCreateResponseOrdersInnerMiscellaneousChargesInner> miscellaneousCharges) {
+  public void setMiscellaneousCharges(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerMiscellaneousChargesInner> miscellaneousCharges) {
     this.miscellaneousCharges = miscellaneousCharges;
   }
 
 
-  public OrderCreateResponseOrdersInner links(List<OrderCreateResponseOrdersInnerLinksInner> links) {
+  public OrderCreateResponseOrdersInner links(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -410,12 +426,12 @@ public class OrderCreateResponseOrdersInner {
     return links;
   }
 
-  public void setLinks(List<OrderCreateResponseOrdersInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerLinksInner> links) {
     this.links = links;
   }
 
 
-  public OrderCreateResponseOrdersInner rejectedLineItems(List<OrderCreateResponseOrdersInnerRejectedLineItemsInner> rejectedLineItems) {
+  public OrderCreateResponseOrdersInner rejectedLineItems(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerRejectedLineItemsInner> rejectedLineItems) {
     this.rejectedLineItems = rejectedLineItems;
     return this;
   }
@@ -437,12 +453,12 @@ public class OrderCreateResponseOrdersInner {
     return rejectedLineItems;
   }
 
-  public void setRejectedLineItems(List<OrderCreateResponseOrdersInnerRejectedLineItemsInner> rejectedLineItems) {
+  public void setRejectedLineItems(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerRejectedLineItemsInner> rejectedLineItems) {
     this.rejectedLineItems = rejectedLineItems;
   }
 
 
-  public OrderCreateResponseOrdersInner additionalAttributes(List<OrderCreateResponseOrdersInnerAdditionalAttributesInner> additionalAttributes) {
+  public OrderCreateResponseOrdersInner additionalAttributes(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -464,7 +480,7 @@ public class OrderCreateResponseOrdersInner {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<OrderCreateResponseOrdersInnerAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 

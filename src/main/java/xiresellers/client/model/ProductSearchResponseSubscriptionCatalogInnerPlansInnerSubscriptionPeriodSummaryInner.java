@@ -48,20 +48,22 @@ import xiresellers.client.JSON;
 /**
  * ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner {
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD_UNIT = "subscriptionPeriodUnit";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD_UNIT)
+  @javax.annotation.Nullable
   private String subscriptionPeriodUnit;
 
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD = "subscriptionPeriod";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD)
+  @javax.annotation.Nullable
   private String subscriptionPeriod;
 
   public ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner() {
   }
 
-  public ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner subscriptionPeriodUnit(String subscriptionPeriodUnit) {
+  public ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner subscriptionPeriodUnit(@javax.annotation.Nullable String subscriptionPeriodUnit) {
     this.subscriptionPeriodUnit = subscriptionPeriodUnit;
     return this;
   }
@@ -75,12 +77,12 @@ public class ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscription
     return subscriptionPeriodUnit;
   }
 
-  public void setSubscriptionPeriodUnit(String subscriptionPeriodUnit) {
+  public void setSubscriptionPeriodUnit(@javax.annotation.Nullable String subscriptionPeriodUnit) {
     this.subscriptionPeriodUnit = subscriptionPeriodUnit;
   }
 
 
-  public ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner subscriptionPeriod(String subscriptionPeriod) {
+  public ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner subscriptionPeriod(@javax.annotation.Nullable String subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
     return this;
   }
@@ -94,7 +96,7 @@ public class ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscription
     return subscriptionPeriod;
   }
 
-  public void setSubscriptionPeriod(String subscriptionPeriod) {
+  public void setSubscriptionPeriod(@javax.annotation.Nullable String subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
   }
 

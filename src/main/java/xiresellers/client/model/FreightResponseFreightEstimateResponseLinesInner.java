@@ -49,36 +49,42 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class FreightResponseFreightEstimateResponseLinesInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_WAREHOUSE_ID = "warehouseId";
   @SerializedName(SERIALIZED_NAME_WAREHOUSE_ID)
+  @javax.annotation.Nullable
   private String warehouseId;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private Integer quantity;
 
   public static final String SERIALIZED_NAME_UNIT_PRICE = "unitPrice";
   @SerializedName(SERIALIZED_NAME_UNIT_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal unitPrice;
 
   public static final String SERIALIZED_NAME_NET_AMOUNT = "netAmount";
   @SerializedName(SERIALIZED_NAME_NET_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal netAmount;
 
   public FreightResponseFreightEstimateResponseLinesInner() {
   }
 
-  public FreightResponseFreightEstimateResponseLinesInner ingramPartNumber(String ingramPartNumber) {
+  public FreightResponseFreightEstimateResponseLinesInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -92,12 +98,12 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public FreightResponseFreightEstimateResponseLinesInner vendorPartNumber(String vendorPartNumber) {
+  public FreightResponseFreightEstimateResponseLinesInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -111,12 +117,12 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public FreightResponseFreightEstimateResponseLinesInner warehouseId(String warehouseId) {
+  public FreightResponseFreightEstimateResponseLinesInner warehouseId(@javax.annotation.Nullable String warehouseId) {
     this.warehouseId = warehouseId;
     return this;
   }
@@ -130,12 +136,12 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return warehouseId;
   }
 
-  public void setWarehouseId(String warehouseId) {
+  public void setWarehouseId(@javax.annotation.Nullable String warehouseId) {
     this.warehouseId = warehouseId;
   }
 
 
-  public FreightResponseFreightEstimateResponseLinesInner quantity(Integer quantity) {
+  public FreightResponseFreightEstimateResponseLinesInner quantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -149,12 +155,12 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public FreightResponseFreightEstimateResponseLinesInner unitPrice(BigDecimal unitPrice) {
+  public FreightResponseFreightEstimateResponseLinesInner unitPrice(@javax.annotation.Nullable BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
     return this;
   }
@@ -168,12 +174,12 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return unitPrice;
   }
 
-  public void setUnitPrice(BigDecimal unitPrice) {
+  public void setUnitPrice(@javax.annotation.Nullable BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
   }
 
 
-  public FreightResponseFreightEstimateResponseLinesInner netAmount(BigDecimal netAmount) {
+  public FreightResponseFreightEstimateResponseLinesInner netAmount(@javax.annotation.Nullable BigDecimal netAmount) {
     this.netAmount = netAmount;
     return this;
   }
@@ -187,7 +193,7 @@ public class FreightResponseFreightEstimateResponseLinesInner {
     return netAmount;
   }
 
-  public void setNetAmount(BigDecimal netAmount) {
+  public void setNetAmount(@javax.annotation.Nullable BigDecimal netAmount) {
     this.netAmount = netAmount;
   }
 

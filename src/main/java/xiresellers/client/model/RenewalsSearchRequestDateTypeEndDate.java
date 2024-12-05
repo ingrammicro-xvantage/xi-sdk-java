@@ -48,20 +48,22 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchRequestDateTypeEndDate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class RenewalsSearchRequestDateTypeEndDate {
   public static final String SERIALIZED_NAME_CUSTOM_START_DATE = "customStartDate";
   @SerializedName(SERIALIZED_NAME_CUSTOM_START_DATE)
+  @javax.annotation.Nullable
   private String customStartDate;
 
   public static final String SERIALIZED_NAME_CUSTOM_END_DATE = "customEndDate";
   @SerializedName(SERIALIZED_NAME_CUSTOM_END_DATE)
+  @javax.annotation.Nullable
   private String customEndDate;
 
   public RenewalsSearchRequestDateTypeEndDate() {
   }
 
-  public RenewalsSearchRequestDateTypeEndDate customStartDate(String customStartDate) {
+  public RenewalsSearchRequestDateTypeEndDate customStartDate(@javax.annotation.Nullable String customStartDate) {
     this.customStartDate = customStartDate;
     return this;
   }
@@ -75,12 +77,12 @@ public class RenewalsSearchRequestDateTypeEndDate {
     return customStartDate;
   }
 
-  public void setCustomStartDate(String customStartDate) {
+  public void setCustomStartDate(@javax.annotation.Nullable String customStartDate) {
     this.customStartDate = customStartDate;
   }
 
 
-  public RenewalsSearchRequestDateTypeEndDate customEndDate(String customEndDate) {
+  public RenewalsSearchRequestDateTypeEndDate customEndDate(@javax.annotation.Nullable String customEndDate) {
     this.customEndDate = customEndDate;
     return this;
   }
@@ -94,7 +96,7 @@ public class RenewalsSearchRequestDateTypeEndDate {
     return customEndDate;
   }
 
-  public void setCustomEndDate(String customEndDate) {
+  public void setCustomEndDate(@javax.annotation.Nullable String customEndDate) {
     this.customEndDate = customEndDate;
   }
 

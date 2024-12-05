@@ -55,52 +55,62 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseSubscriptionDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductDetailResponseSubscriptionDetailsInner {
   public static final String SERIALIZED_NAME_PLAN_ID = "planId";
   @SerializedName(SERIALIZED_NAME_PLAN_ID)
+  @javax.annotation.Nullable
   private String planId;
 
   public static final String SERIALIZED_NAME_PLAN_NAME = "planName";
   @SerializedName(SERIALIZED_NAME_PLAN_NAME)
+  @javax.annotation.Nullable
   private String planName;
 
   public static final String SERIALIZED_NAME_PLAN_DESCRIPTION = "planDescription";
   @SerializedName(SERIALIZED_NAME_PLAN_DESCRIPTION)
+  @javax.annotation.Nullable
   private String planDescription;
 
   public static final String SERIALIZED_NAME_GROUPS = "groups";
   @SerializedName(SERIALIZED_NAME_GROUPS)
+  @javax.annotation.Nullable
   private List<ProductDetailResponseSubscriptionDetailsInnerGroupsInner> groups = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD = "subscriptionPeriod";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD)
+  @javax.annotation.Nullable
   private List<ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner> subscriptionPeriod = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_BILLING_PERIOD = "billingPeriod";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD)
+  @javax.annotation.Nullable
   private ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriod;
 
   public static final String SERIALIZED_NAME_OPTIONS = "options";
   @SerializedName(SERIALIZED_NAME_OPTIONS)
+  @javax.annotation.Nullable
   private List<ProductDetailResponseSubscriptionDetailsInnerOptionsInner> options = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner> links = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT_PAGE = "nextPage";
   @SerializedName(SERIALIZED_NAME_NEXT_PAGE)
+  @javax.annotation.Nullable
   private String nextPage;
 
   public static final String SERIALIZED_NAME_PREVIOUS_PAGE = "previousPage";
   @SerializedName(SERIALIZED_NAME_PREVIOUS_PAGE)
+  @javax.annotation.Nullable
   private String previousPage;
 
   public ProductDetailResponseSubscriptionDetailsInner() {
   }
 
-  public ProductDetailResponseSubscriptionDetailsInner planId(String planId) {
+  public ProductDetailResponseSubscriptionDetailsInner planId(@javax.annotation.Nullable String planId) {
     this.planId = planId;
     return this;
   }
@@ -114,12 +124,12 @@ public class ProductDetailResponseSubscriptionDetailsInner {
     return planId;
   }
 
-  public void setPlanId(String planId) {
+  public void setPlanId(@javax.annotation.Nullable String planId) {
     this.planId = planId;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInner planName(String planName) {
+  public ProductDetailResponseSubscriptionDetailsInner planName(@javax.annotation.Nullable String planName) {
     this.planName = planName;
     return this;
   }
@@ -133,12 +143,12 @@ public class ProductDetailResponseSubscriptionDetailsInner {
     return planName;
   }
 
-  public void setPlanName(String planName) {
+  public void setPlanName(@javax.annotation.Nullable String planName) {
     this.planName = planName;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInner planDescription(String planDescription) {
+  public ProductDetailResponseSubscriptionDetailsInner planDescription(@javax.annotation.Nullable String planDescription) {
     this.planDescription = planDescription;
     return this;
   }
@@ -152,12 +162,12 @@ public class ProductDetailResponseSubscriptionDetailsInner {
     return planDescription;
   }
 
-  public void setPlanDescription(String planDescription) {
+  public void setPlanDescription(@javax.annotation.Nullable String planDescription) {
     this.planDescription = planDescription;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInner groups(List<ProductDetailResponseSubscriptionDetailsInnerGroupsInner> groups) {
+  public ProductDetailResponseSubscriptionDetailsInner groups(@javax.annotation.Nullable List<ProductDetailResponseSubscriptionDetailsInnerGroupsInner> groups) {
     this.groups = groups;
     return this;
   }
@@ -179,12 +189,12 @@ public class ProductDetailResponseSubscriptionDetailsInner {
     return groups;
   }
 
-  public void setGroups(List<ProductDetailResponseSubscriptionDetailsInnerGroupsInner> groups) {
+  public void setGroups(@javax.annotation.Nullable List<ProductDetailResponseSubscriptionDetailsInnerGroupsInner> groups) {
     this.groups = groups;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInner subscriptionPeriod(List<ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner> subscriptionPeriod) {
+  public ProductDetailResponseSubscriptionDetailsInner subscriptionPeriod(@javax.annotation.Nullable List<ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner> subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
     return this;
   }
@@ -206,12 +216,12 @@ public class ProductDetailResponseSubscriptionDetailsInner {
     return subscriptionPeriod;
   }
 
-  public void setSubscriptionPeriod(List<ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner> subscriptionPeriod) {
+  public void setSubscriptionPeriod(@javax.annotation.Nullable List<ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner> subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInner billingPeriod(ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriod) {
+  public ProductDetailResponseSubscriptionDetailsInner billingPeriod(@javax.annotation.Nullable ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriod) {
     this.billingPeriod = billingPeriod;
     return this;
   }
@@ -225,12 +235,12 @@ public class ProductDetailResponseSubscriptionDetailsInner {
     return billingPeriod;
   }
 
-  public void setBillingPeriod(ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriod) {
+  public void setBillingPeriod(@javax.annotation.Nullable ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriod) {
     this.billingPeriod = billingPeriod;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInner options(List<ProductDetailResponseSubscriptionDetailsInnerOptionsInner> options) {
+  public ProductDetailResponseSubscriptionDetailsInner options(@javax.annotation.Nullable List<ProductDetailResponseSubscriptionDetailsInnerOptionsInner> options) {
     this.options = options;
     return this;
   }
@@ -252,12 +262,12 @@ public class ProductDetailResponseSubscriptionDetailsInner {
     return options;
   }
 
-  public void setOptions(List<ProductDetailResponseSubscriptionDetailsInnerOptionsInner> options) {
+  public void setOptions(@javax.annotation.Nullable List<ProductDetailResponseSubscriptionDetailsInnerOptionsInner> options) {
     this.options = options;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInner links(List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner> links) {
+  public ProductDetailResponseSubscriptionDetailsInner links(@javax.annotation.Nullable List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -279,12 +289,12 @@ public class ProductDetailResponseSubscriptionDetailsInner {
     return links;
   }
 
-  public void setLinks(List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner> links) {
     this.links = links;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInner nextPage(String nextPage) {
+  public ProductDetailResponseSubscriptionDetailsInner nextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
     return this;
   }
@@ -298,12 +308,12 @@ public class ProductDetailResponseSubscriptionDetailsInner {
     return nextPage;
   }
 
-  public void setNextPage(String nextPage) {
+  public void setNextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInner previousPage(String previousPage) {
+  public ProductDetailResponseSubscriptionDetailsInner previousPage(@javax.annotation.Nullable String previousPage) {
     this.previousPage = previousPage;
     return this;
   }
@@ -317,7 +327,7 @@ public class ProductDetailResponseSubscriptionDetailsInner {
     return previousPage;
   }
 
-  public void setPreviousPage(String previousPage) {
+  public void setPreviousPage(@javax.annotation.Nullable String previousPage) {
     this.previousPage = previousPage;
   }
 

@@ -52,52 +52,62 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
   public static final String SERIALIZED_NAME_LINE_NUMBER = "LineNumber";
   @SerializedName(SERIALIZED_NAME_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String lineNumber;
 
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String subOrderNumber;
 
   public static final String SERIALIZED_NAME_LINE_STATUS = "lineStatus";
   @SerializedName(SERIALIZED_NAME_LINE_STATUS)
+  @javax.annotation.Nullable
   private String lineStatus;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_REQUESTED_QUANTITY = "requestedQuantity";
   @SerializedName(SERIALIZED_NAME_REQUESTED_QUANTITY)
+  @javax.annotation.Nullable
   private String requestedQuantity;
 
   public static final String SERIALIZED_NAME_SHIPPED_QUANTITY = "shippedQuantity";
   @SerializedName(SERIALIZED_NAME_SHIPPED_QUANTITY)
+  @javax.annotation.Nullable
   private String shippedQuantity;
 
   public static final String SERIALIZED_NAME_BACKORDERED_QUANTITY = "backorderedQuantity";
   @SerializedName(SERIALIZED_NAME_BACKORDERED_QUANTITY)
+  @javax.annotation.Nullable
   private String backorderedQuantity;
 
   public static final String SERIALIZED_NAME_SHIPMENT_DETAILS = "shipmentDetails";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DETAILS)
+  @javax.annotation.Nullable
   private List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner> shipmentDetails = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SERIAL_NUMBER_DETAILS = "serialNumberDetails";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBER_DETAILS)
+  @javax.annotation.Nullable
   private List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerSerialNumberDetailsInner> serialNumberDetails = new ArrayList<>();
 
   public OrderStatusAsyncNotificationRequestResourceInnerLinesInner() {
   }
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner lineNumber(String lineNumber) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner lineNumber(@javax.annotation.Nullable String lineNumber) {
     this.lineNumber = lineNumber;
     return this;
   }
@@ -111,12 +121,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
     return lineNumber;
   }
 
-  public void setLineNumber(String lineNumber) {
+  public void setLineNumber(@javax.annotation.Nullable String lineNumber) {
     this.lineNumber = lineNumber;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner subOrderNumber(String subOrderNumber) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner subOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
     return this;
   }
@@ -130,12 +140,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
     return subOrderNumber;
   }
 
-  public void setSubOrderNumber(String subOrderNumber) {
+  public void setSubOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner lineStatus(String lineStatus) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner lineStatus(@javax.annotation.Nullable String lineStatus) {
     this.lineStatus = lineStatus;
     return this;
   }
@@ -149,12 +159,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
     return lineStatus;
   }
 
-  public void setLineStatus(String lineStatus) {
+  public void setLineStatus(@javax.annotation.Nullable String lineStatus) {
     this.lineStatus = lineStatus;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner ingramPartNumber(String ingramPartNumber) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -168,12 +178,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner vendorPartNumber(String vendorPartNumber) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -187,12 +197,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner requestedQuantity(String requestedQuantity) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner requestedQuantity(@javax.annotation.Nullable String requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
     return this;
   }
@@ -206,12 +216,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
     return requestedQuantity;
   }
 
-  public void setRequestedQuantity(String requestedQuantity) {
+  public void setRequestedQuantity(@javax.annotation.Nullable String requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner shippedQuantity(String shippedQuantity) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner shippedQuantity(@javax.annotation.Nullable String shippedQuantity) {
     this.shippedQuantity = shippedQuantity;
     return this;
   }
@@ -225,12 +235,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
     return shippedQuantity;
   }
 
-  public void setShippedQuantity(String shippedQuantity) {
+  public void setShippedQuantity(@javax.annotation.Nullable String shippedQuantity) {
     this.shippedQuantity = shippedQuantity;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner backorderedQuantity(String backorderedQuantity) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner backorderedQuantity(@javax.annotation.Nullable String backorderedQuantity) {
     this.backorderedQuantity = backorderedQuantity;
     return this;
   }
@@ -244,12 +254,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
     return backorderedQuantity;
   }
 
-  public void setBackorderedQuantity(String backorderedQuantity) {
+  public void setBackorderedQuantity(@javax.annotation.Nullable String backorderedQuantity) {
     this.backorderedQuantity = backorderedQuantity;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner shipmentDetails(List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner> shipmentDetails) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner shipmentDetails(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner> shipmentDetails) {
     this.shipmentDetails = shipmentDetails;
     return this;
   }
@@ -271,12 +281,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
     return shipmentDetails;
   }
 
-  public void setShipmentDetails(List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner> shipmentDetails) {
+  public void setShipmentDetails(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner> shipmentDetails) {
     this.shipmentDetails = shipmentDetails;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner serialNumberDetails(List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerSerialNumberDetailsInner> serialNumberDetails) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInner serialNumberDetails(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerSerialNumberDetailsInner> serialNumberDetails) {
     this.serialNumberDetails = serialNumberDetails;
     return this;
   }
@@ -298,7 +308,7 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
     return serialNumberDetails;
   }
 
-  public void setSerialNumberDetails(List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerSerialNumberDetailsInner> serialNumberDetails) {
+  public void setSerialNumberDetails(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerSerialNumberDetailsInner> serialNumberDetails) {
     this.serialNumberDetails = serialNumberDetails;
   }
 

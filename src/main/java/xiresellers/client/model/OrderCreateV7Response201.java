@@ -49,24 +49,27 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7Response201
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7Response201 {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
+  @javax.annotation.Nullable
   private String quoteNumber;
 
   public static final String SERIALIZED_NAME_CONFIRMATION_NUMBER = "confirmationNumber";
   @SerializedName(SERIALIZED_NAME_CONFIRMATION_NUMBER)
+  @javax.annotation.Nullable
   private String confirmationNumber;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public OrderCreateV7Response201() {
   }
 
-  public OrderCreateV7Response201 quoteNumber(String quoteNumber) {
+  public OrderCreateV7Response201 quoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
     return this;
   }
@@ -80,12 +83,12 @@ public class OrderCreateV7Response201 {
     return quoteNumber;
   }
 
-  public void setQuoteNumber(String quoteNumber) {
+  public void setQuoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
   }
 
 
-  public OrderCreateV7Response201 confirmationNumber(String confirmationNumber) {
+  public OrderCreateV7Response201 confirmationNumber(@javax.annotation.Nullable String confirmationNumber) {
     this.confirmationNumber = confirmationNumber;
     return this;
   }
@@ -99,12 +102,12 @@ public class OrderCreateV7Response201 {
     return confirmationNumber;
   }
 
-  public void setConfirmationNumber(String confirmationNumber) {
+  public void setConfirmationNumber(@javax.annotation.Nullable String confirmationNumber) {
     this.confirmationNumber = confirmationNumber;
   }
 
 
-  public OrderCreateV7Response201 message(String message) {
+  public OrderCreateV7Response201 message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -118,7 +121,7 @@ public class OrderCreateV7Response201 {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 

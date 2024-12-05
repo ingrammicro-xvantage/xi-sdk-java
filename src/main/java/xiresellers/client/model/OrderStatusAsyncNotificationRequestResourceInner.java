@@ -52,36 +52,42 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderStatusAsyncNotificationRequestResourceInner {
   public static final String SERIALIZED_NAME_EVENT_TYPE = "eventType";
   @SerializedName(SERIALIZED_NAME_EVENT_TYPE)
+  @javax.annotation.Nullable
   private String eventType;
 
   public static final String SERIALIZED_NAME_ORDER_NUMBER = "orderNumber";
   @SerializedName(SERIALIZED_NAME_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String orderNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_ORDER_ENTRY_TIME_STAMP = "orderEntryTimeStamp";
   @SerializedName(SERIALIZED_NAME_ORDER_ENTRY_TIME_STAMP)
+  @javax.annotation.Nullable
   private String orderEntryTimeStamp;
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<OrderStatusAsyncNotificationRequestResourceInnerLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<OrderStatusAsyncNotificationRequestResourceInnerLinksInner> links = new ArrayList<>();
 
   public OrderStatusAsyncNotificationRequestResourceInner() {
   }
 
-  public OrderStatusAsyncNotificationRequestResourceInner eventType(String eventType) {
+  public OrderStatusAsyncNotificationRequestResourceInner eventType(@javax.annotation.Nullable String eventType) {
     this.eventType = eventType;
     return this;
   }
@@ -95,12 +101,12 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return eventType;
   }
 
-  public void setEventType(String eventType) {
+  public void setEventType(@javax.annotation.Nullable String eventType) {
     this.eventType = eventType;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInner orderNumber(String orderNumber) {
+  public OrderStatusAsyncNotificationRequestResourceInner orderNumber(@javax.annotation.Nullable String orderNumber) {
     this.orderNumber = orderNumber;
     return this;
   }
@@ -114,12 +120,12 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return orderNumber;
   }
 
-  public void setOrderNumber(String orderNumber) {
+  public void setOrderNumber(@javax.annotation.Nullable String orderNumber) {
     this.orderNumber = orderNumber;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInner customerOrderNumber(String customerOrderNumber) {
+  public OrderStatusAsyncNotificationRequestResourceInner customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -133,12 +139,12 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInner orderEntryTimeStamp(String orderEntryTimeStamp) {
+  public OrderStatusAsyncNotificationRequestResourceInner orderEntryTimeStamp(@javax.annotation.Nullable String orderEntryTimeStamp) {
     this.orderEntryTimeStamp = orderEntryTimeStamp;
     return this;
   }
@@ -152,12 +158,12 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return orderEntryTimeStamp;
   }
 
-  public void setOrderEntryTimeStamp(String orderEntryTimeStamp) {
+  public void setOrderEntryTimeStamp(@javax.annotation.Nullable String orderEntryTimeStamp) {
     this.orderEntryTimeStamp = orderEntryTimeStamp;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInner lines(List<OrderStatusAsyncNotificationRequestResourceInnerLinesInner> lines) {
+  public OrderStatusAsyncNotificationRequestResourceInner lines(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInnerLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -179,12 +185,12 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return lines;
   }
 
-  public void setLines(List<OrderStatusAsyncNotificationRequestResourceInnerLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInnerLinesInner> lines) {
     this.lines = lines;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInner links(List<OrderStatusAsyncNotificationRequestResourceInnerLinksInner> links) {
+  public OrderStatusAsyncNotificationRequestResourceInner links(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -206,7 +212,7 @@ public class OrderStatusAsyncNotificationRequestResourceInner {
     return links;
   }
 
-  public void setLinks(List<OrderStatusAsyncNotificationRequestResourceInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInnerLinksInner> links) {
     this.links = links;
   }
 

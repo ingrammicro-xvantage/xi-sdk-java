@@ -49,68 +49,82 @@ import xiresellers.client.JSON;
 /**
  * DealsDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class DealsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_UPC = "upc";
   @SerializedName(SERIALIZED_NAME_UPC)
+  @javax.annotation.Nullable
   private String upc;
 
   public static final String SERIALIZED_NAME_PRODUCT_DESCRIPTION = "productDescription";
   @SerializedName(SERIALIZED_NAME_PRODUCT_DESCRIPTION)
+  @javax.annotation.Nullable
   private String productDescription;
 
   public static final String SERIALIZED_NAME_MSRP = "msrp";
   @SerializedName(SERIALIZED_NAME_MSRP)
+  @javax.annotation.Nullable
   private BigDecimal msrp;
 
   public static final String SERIALIZED_NAME_EXTENDED_M_S_R_P = "extendedMSRP";
   @SerializedName(SERIALIZED_NAME_EXTENDED_M_S_R_P)
+  @javax.annotation.Nullable
   private BigDecimal extendedMSRP;
 
   public static final String SERIALIZED_NAME_STANDARD_PRICE = "standardPrice";
   @SerializedName(SERIALIZED_NAME_STANDARD_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal standardPrice;
 
   public static final String SERIALIZED_NAME_APPROVED_QUANTITY = "approvedQuantity";
   @SerializedName(SERIALIZED_NAME_APPROVED_QUANTITY)
+  @javax.annotation.Nullable
   private Integer approvedQuantity;
 
   public static final String SERIALIZED_NAME_REMAINING_QUANTITY = "remainingQuantity";
   @SerializedName(SERIALIZED_NAME_REMAINING_QUANTITY)
+  @javax.annotation.Nullable
   private Integer remainingQuantity;
 
   public static final String SERIALIZED_NAME_COMMENTS = "comments";
   @SerializedName(SERIALIZED_NAME_COMMENTS)
+  @javax.annotation.Nullable
   private String comments;
 
   public static final String SERIALIZED_NAME_SPECIAL_CONDITIONS = "specialConditions";
   @SerializedName(SERIALIZED_NAME_SPECIAL_CONDITIONS)
+  @javax.annotation.Nullable
   private String specialConditions;
 
   public static final String SERIALIZED_NAME_START_DATE = "startDate";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private String startDate;
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expirationDate";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
+  @javax.annotation.Nullable
   private String expirationDate;
 
   public static final String SERIALIZED_NAME_DAYS_REMAINING = "daysRemaining";
   @SerializedName(SERIALIZED_NAME_DAYS_REMAINING)
+  @javax.annotation.Nullable
   private Integer daysRemaining;
 
   public DealsDetailsResponseProductsInner() {
   }
 
-  public DealsDetailsResponseProductsInner ingramPartNumber(String ingramPartNumber) {
+  public DealsDetailsResponseProductsInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -124,12 +138,12 @@ public class DealsDetailsResponseProductsInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public DealsDetailsResponseProductsInner vendorPartNumber(String vendorPartNumber) {
+  public DealsDetailsResponseProductsInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -143,12 +157,12 @@ public class DealsDetailsResponseProductsInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public DealsDetailsResponseProductsInner upc(String upc) {
+  public DealsDetailsResponseProductsInner upc(@javax.annotation.Nullable String upc) {
     this.upc = upc;
     return this;
   }
@@ -162,12 +176,12 @@ public class DealsDetailsResponseProductsInner {
     return upc;
   }
 
-  public void setUpc(String upc) {
+  public void setUpc(@javax.annotation.Nullable String upc) {
     this.upc = upc;
   }
 
 
-  public DealsDetailsResponseProductsInner productDescription(String productDescription) {
+  public DealsDetailsResponseProductsInner productDescription(@javax.annotation.Nullable String productDescription) {
     this.productDescription = productDescription;
     return this;
   }
@@ -181,12 +195,12 @@ public class DealsDetailsResponseProductsInner {
     return productDescription;
   }
 
-  public void setProductDescription(String productDescription) {
+  public void setProductDescription(@javax.annotation.Nullable String productDescription) {
     this.productDescription = productDescription;
   }
 
 
-  public DealsDetailsResponseProductsInner msrp(BigDecimal msrp) {
+  public DealsDetailsResponseProductsInner msrp(@javax.annotation.Nullable BigDecimal msrp) {
     this.msrp = msrp;
     return this;
   }
@@ -200,12 +214,12 @@ public class DealsDetailsResponseProductsInner {
     return msrp;
   }
 
-  public void setMsrp(BigDecimal msrp) {
+  public void setMsrp(@javax.annotation.Nullable BigDecimal msrp) {
     this.msrp = msrp;
   }
 
 
-  public DealsDetailsResponseProductsInner extendedMSRP(BigDecimal extendedMSRP) {
+  public DealsDetailsResponseProductsInner extendedMSRP(@javax.annotation.Nullable BigDecimal extendedMSRP) {
     this.extendedMSRP = extendedMSRP;
     return this;
   }
@@ -219,12 +233,12 @@ public class DealsDetailsResponseProductsInner {
     return extendedMSRP;
   }
 
-  public void setExtendedMSRP(BigDecimal extendedMSRP) {
+  public void setExtendedMSRP(@javax.annotation.Nullable BigDecimal extendedMSRP) {
     this.extendedMSRP = extendedMSRP;
   }
 
 
-  public DealsDetailsResponseProductsInner standardPrice(BigDecimal standardPrice) {
+  public DealsDetailsResponseProductsInner standardPrice(@javax.annotation.Nullable BigDecimal standardPrice) {
     this.standardPrice = standardPrice;
     return this;
   }
@@ -238,12 +252,12 @@ public class DealsDetailsResponseProductsInner {
     return standardPrice;
   }
 
-  public void setStandardPrice(BigDecimal standardPrice) {
+  public void setStandardPrice(@javax.annotation.Nullable BigDecimal standardPrice) {
     this.standardPrice = standardPrice;
   }
 
 
-  public DealsDetailsResponseProductsInner approvedQuantity(Integer approvedQuantity) {
+  public DealsDetailsResponseProductsInner approvedQuantity(@javax.annotation.Nullable Integer approvedQuantity) {
     this.approvedQuantity = approvedQuantity;
     return this;
   }
@@ -257,12 +271,12 @@ public class DealsDetailsResponseProductsInner {
     return approvedQuantity;
   }
 
-  public void setApprovedQuantity(Integer approvedQuantity) {
+  public void setApprovedQuantity(@javax.annotation.Nullable Integer approvedQuantity) {
     this.approvedQuantity = approvedQuantity;
   }
 
 
-  public DealsDetailsResponseProductsInner remainingQuantity(Integer remainingQuantity) {
+  public DealsDetailsResponseProductsInner remainingQuantity(@javax.annotation.Nullable Integer remainingQuantity) {
     this.remainingQuantity = remainingQuantity;
     return this;
   }
@@ -276,12 +290,12 @@ public class DealsDetailsResponseProductsInner {
     return remainingQuantity;
   }
 
-  public void setRemainingQuantity(Integer remainingQuantity) {
+  public void setRemainingQuantity(@javax.annotation.Nullable Integer remainingQuantity) {
     this.remainingQuantity = remainingQuantity;
   }
 
 
-  public DealsDetailsResponseProductsInner comments(String comments) {
+  public DealsDetailsResponseProductsInner comments(@javax.annotation.Nullable String comments) {
     this.comments = comments;
     return this;
   }
@@ -295,12 +309,12 @@ public class DealsDetailsResponseProductsInner {
     return comments;
   }
 
-  public void setComments(String comments) {
+  public void setComments(@javax.annotation.Nullable String comments) {
     this.comments = comments;
   }
 
 
-  public DealsDetailsResponseProductsInner specialConditions(String specialConditions) {
+  public DealsDetailsResponseProductsInner specialConditions(@javax.annotation.Nullable String specialConditions) {
     this.specialConditions = specialConditions;
     return this;
   }
@@ -314,12 +328,12 @@ public class DealsDetailsResponseProductsInner {
     return specialConditions;
   }
 
-  public void setSpecialConditions(String specialConditions) {
+  public void setSpecialConditions(@javax.annotation.Nullable String specialConditions) {
     this.specialConditions = specialConditions;
   }
 
 
-  public DealsDetailsResponseProductsInner startDate(String startDate) {
+  public DealsDetailsResponseProductsInner startDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -333,12 +347,12 @@ public class DealsDetailsResponseProductsInner {
     return startDate;
   }
 
-  public void setStartDate(String startDate) {
+  public void setStartDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
 
-  public DealsDetailsResponseProductsInner expirationDate(String expirationDate) {
+  public DealsDetailsResponseProductsInner expirationDate(@javax.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
     return this;
   }
@@ -352,12 +366,12 @@ public class DealsDetailsResponseProductsInner {
     return expirationDate;
   }
 
-  public void setExpirationDate(String expirationDate) {
+  public void setExpirationDate(@javax.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
   }
 
 
-  public DealsDetailsResponseProductsInner daysRemaining(Integer daysRemaining) {
+  public DealsDetailsResponseProductsInner daysRemaining(@javax.annotation.Nullable Integer daysRemaining) {
     this.daysRemaining = daysRemaining;
     return this;
   }
@@ -371,7 +385,7 @@ public class DealsDetailsResponseProductsInner {
     return daysRemaining;
   }
 
-  public void setDaysRemaining(Integer daysRemaining) {
+  public void setDaysRemaining(@javax.annotation.Nullable Integer daysRemaining) {
     this.daysRemaining = daysRemaining;
   }
 

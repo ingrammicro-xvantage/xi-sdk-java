@@ -49,48 +49,57 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerMultipleShipmentsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
   public static final String SERIALIZED_NAME_LINE_NUMBER = "lineNumber";
   @SerializedName(SERIALIZED_NAME_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String lineNumber;
 
   public static final String SERIALIZED_NAME_REQUESTED_QUANTITY = "requestedQuantity";
   @SerializedName(SERIALIZED_NAME_REQUESTED_QUANTITY)
+  @javax.annotation.Nullable
   private Integer requestedQuantity;
 
   public static final String SERIALIZED_NAME_CONFIRMED_QUANTITY = "confirmedQuantity";
   @SerializedName(SERIALIZED_NAME_CONFIRMED_QUANTITY)
+  @javax.annotation.Nullable
   private Integer confirmedQuantity;
 
   public static final String SERIALIZED_NAME_DATE_TYPE = "dateType";
   @SerializedName(SERIALIZED_NAME_DATE_TYPE)
+  @javax.annotation.Nullable
   private String dateType;
 
   public static final String SERIALIZED_NAME_DATE_RANGE = "dateRange";
   @SerializedName(SERIALIZED_NAME_DATE_RANGE)
+  @javax.annotation.Nullable
   private OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange dateRange;
 
   public static final String SERIALIZED_NAME_SOURCE = "source";
   @SerializedName(SERIALIZED_NAME_SOURCE)
+  @javax.annotation.Nullable
   private String source;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
+  @javax.annotation.Nullable
   private String date;
 
   public static final String SERIALIZED_NAME_DELIVERY_DATE = "deliveryDate";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE)
+  @javax.annotation.Nullable
   private String deliveryDate;
 
   public OrderDetailB2BLinesInnerMultipleShipmentsInner() {
   }
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner lineNumber(String lineNumber) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner lineNumber(@javax.annotation.Nullable String lineNumber) {
     this.lineNumber = lineNumber;
     return this;
   }
@@ -104,12 +113,12 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return lineNumber;
   }
 
-  public void setLineNumber(String lineNumber) {
+  public void setLineNumber(@javax.annotation.Nullable String lineNumber) {
     this.lineNumber = lineNumber;
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner requestedQuantity(Integer requestedQuantity) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner requestedQuantity(@javax.annotation.Nullable Integer requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
     return this;
   }
@@ -123,12 +132,12 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return requestedQuantity;
   }
 
-  public void setRequestedQuantity(Integer requestedQuantity) {
+  public void setRequestedQuantity(@javax.annotation.Nullable Integer requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner confirmedQuantity(Integer confirmedQuantity) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner confirmedQuantity(@javax.annotation.Nullable Integer confirmedQuantity) {
     this.confirmedQuantity = confirmedQuantity;
     return this;
   }
@@ -142,12 +151,12 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return confirmedQuantity;
   }
 
-  public void setConfirmedQuantity(Integer confirmedQuantity) {
+  public void setConfirmedQuantity(@javax.annotation.Nullable Integer confirmedQuantity) {
     this.confirmedQuantity = confirmedQuantity;
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner dateType(String dateType) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner dateType(@javax.annotation.Nullable String dateType) {
     this.dateType = dateType;
     return this;
   }
@@ -161,12 +170,12 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return dateType;
   }
 
-  public void setDateType(String dateType) {
+  public void setDateType(@javax.annotation.Nullable String dateType) {
     this.dateType = dateType;
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner dateRange(OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange dateRange) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner dateRange(@javax.annotation.Nullable OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange dateRange) {
     this.dateRange = dateRange;
     return this;
   }
@@ -180,12 +189,12 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return dateRange;
   }
 
-  public void setDateRange(OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange dateRange) {
+  public void setDateRange(@javax.annotation.Nullable OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange dateRange) {
     this.dateRange = dateRange;
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner source(String source) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner source(@javax.annotation.Nullable String source) {
     this.source = source;
     return this;
   }
@@ -199,12 +208,12 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return source;
   }
 
-  public void setSource(String source) {
+  public void setSource(@javax.annotation.Nullable String source) {
     this.source = source;
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner description(String description) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -218,12 +227,12 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner date(String date) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner date(@javax.annotation.Nullable String date) {
     this.date = date;
     return this;
   }
@@ -237,12 +246,12 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return date;
   }
 
-  public void setDate(String date) {
+  public void setDate(@javax.annotation.Nullable String date) {
     this.date = date;
   }
 
 
-  public OrderDetailB2BLinesInnerMultipleShipmentsInner deliveryDate(String deliveryDate) {
+  public OrderDetailB2BLinesInnerMultipleShipmentsInner deliveryDate(@javax.annotation.Nullable String deliveryDate) {
     this.deliveryDate = deliveryDate;
     return this;
   }
@@ -256,7 +265,7 @@ public class OrderDetailB2BLinesInnerMultipleShipmentsInner {
     return deliveryDate;
   }
 
-  public void setDeliveryDate(String deliveryDate) {
+  public void setDeliveryDate(@javax.annotation.Nullable String deliveryDate) {
     this.deliveryDate = deliveryDate;
   }
 

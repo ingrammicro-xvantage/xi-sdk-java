@@ -58,72 +58,87 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7Request
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7Request {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
+  @javax.annotation.Nullable
   private String quoteNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
   @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String endCustomerOrderNumber;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_BILL_TO_ADDRESS_ID = "billToAddressId";
   @SerializedName(SERIALIZED_NAME_BILL_TO_ADDRESS_ID)
+  @javax.annotation.Nullable
   private String billToAddressId;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBER = "specialBidNumber";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBER)
+  @javax.annotation.Nullable
   private String specialBidNumber;
 
   public static final String SERIALIZED_NAME_ACCEPT_BACK_ORDER = "acceptBackOrder";
   @SerializedName(SERIALIZED_NAME_ACCEPT_BACK_ORDER)
+  @javax.annotation.Nullable
   private Boolean acceptBackOrder;
 
   public static final String SERIALIZED_NAME_VEND_AUTH_NUMBER = "vendAuthNumber";
   @SerializedName(SERIALIZED_NAME_VEND_AUTH_NUMBER)
+  @javax.annotation.Nullable
   private String vendAuthNumber;
 
   public static final String SERIALIZED_NAME_RESELLER_INFO = "resellerInfo";
   @SerializedName(SERIALIZED_NAME_RESELLER_INFO)
+  @javax.annotation.Nullable
   private OrderCreateV7RequestResellerInfo resellerInfo;
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
+  @javax.annotation.Nullable
   private OrderCreateV7RequestEndUserInfo endUserInfo;
 
   public static final String SERIALIZED_NAME_SHIP_TO_INFO = "shipToInfo";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_INFO)
+  @javax.annotation.Nullable
   private OrderCreateV7RequestShipToInfo shipToInfo;
 
   public static final String SERIALIZED_NAME_SHIPMENT_DETAILS = "shipmentDetails";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DETAILS)
+  @javax.annotation.Nullable
   private OrderCreateV7RequestShipmentDetails shipmentDetails;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderCreateV7RequestAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES = "vmfAdditionalAttributes";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderCreateV7RequestVmfAdditionalAttributesInner> vmfAdditionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<OrderCreateV7RequestLinesInner> lines = new ArrayList<>();
 
   public OrderCreateV7Request() {
   }
 
-  public OrderCreateV7Request quoteNumber(String quoteNumber) {
+  public OrderCreateV7Request quoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
     return this;
   }
@@ -137,12 +152,12 @@ public class OrderCreateV7Request {
     return quoteNumber;
   }
 
-  public void setQuoteNumber(String quoteNumber) {
+  public void setQuoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
   }
 
 
-  public OrderCreateV7Request customerOrderNumber(String customerOrderNumber) {
+  public OrderCreateV7Request customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -156,12 +171,12 @@ public class OrderCreateV7Request {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public OrderCreateV7Request endCustomerOrderNumber(String endCustomerOrderNumber) {
+  public OrderCreateV7Request endCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
     return this;
   }
@@ -175,12 +190,12 @@ public class OrderCreateV7Request {
     return endCustomerOrderNumber;
   }
 
-  public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
+  public void setEndCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
   }
 
 
-  public OrderCreateV7Request notes(String notes) {
+  public OrderCreateV7Request notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -194,12 +209,12 @@ public class OrderCreateV7Request {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public OrderCreateV7Request billToAddressId(String billToAddressId) {
+  public OrderCreateV7Request billToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
     return this;
   }
@@ -213,12 +228,12 @@ public class OrderCreateV7Request {
     return billToAddressId;
   }
 
-  public void setBillToAddressId(String billToAddressId) {
+  public void setBillToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
   }
 
 
-  public OrderCreateV7Request specialBidNumber(String specialBidNumber) {
+  public OrderCreateV7Request specialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
     return this;
   }
@@ -232,12 +247,12 @@ public class OrderCreateV7Request {
     return specialBidNumber;
   }
 
-  public void setSpecialBidNumber(String specialBidNumber) {
+  public void setSpecialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
   }
 
 
-  public OrderCreateV7Request acceptBackOrder(Boolean acceptBackOrder) {
+  public OrderCreateV7Request acceptBackOrder(@javax.annotation.Nullable Boolean acceptBackOrder) {
     this.acceptBackOrder = acceptBackOrder;
     return this;
   }
@@ -251,12 +266,12 @@ public class OrderCreateV7Request {
     return acceptBackOrder;
   }
 
-  public void setAcceptBackOrder(Boolean acceptBackOrder) {
+  public void setAcceptBackOrder(@javax.annotation.Nullable Boolean acceptBackOrder) {
     this.acceptBackOrder = acceptBackOrder;
   }
 
 
-  public OrderCreateV7Request vendAuthNumber(String vendAuthNumber) {
+  public OrderCreateV7Request vendAuthNumber(@javax.annotation.Nullable String vendAuthNumber) {
     this.vendAuthNumber = vendAuthNumber;
     return this;
   }
@@ -270,12 +285,12 @@ public class OrderCreateV7Request {
     return vendAuthNumber;
   }
 
-  public void setVendAuthNumber(String vendAuthNumber) {
+  public void setVendAuthNumber(@javax.annotation.Nullable String vendAuthNumber) {
     this.vendAuthNumber = vendAuthNumber;
   }
 
 
-  public OrderCreateV7Request resellerInfo(OrderCreateV7RequestResellerInfo resellerInfo) {
+  public OrderCreateV7Request resellerInfo(@javax.annotation.Nullable OrderCreateV7RequestResellerInfo resellerInfo) {
     this.resellerInfo = resellerInfo;
     return this;
   }
@@ -289,12 +304,12 @@ public class OrderCreateV7Request {
     return resellerInfo;
   }
 
-  public void setResellerInfo(OrderCreateV7RequestResellerInfo resellerInfo) {
+  public void setResellerInfo(@javax.annotation.Nullable OrderCreateV7RequestResellerInfo resellerInfo) {
     this.resellerInfo = resellerInfo;
   }
 
 
-  public OrderCreateV7Request endUserInfo(OrderCreateV7RequestEndUserInfo endUserInfo) {
+  public OrderCreateV7Request endUserInfo(@javax.annotation.Nullable OrderCreateV7RequestEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
     return this;
   }
@@ -308,12 +323,12 @@ public class OrderCreateV7Request {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(OrderCreateV7RequestEndUserInfo endUserInfo) {
+  public void setEndUserInfo(@javax.annotation.Nullable OrderCreateV7RequestEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 
 
-  public OrderCreateV7Request shipToInfo(OrderCreateV7RequestShipToInfo shipToInfo) {
+  public OrderCreateV7Request shipToInfo(@javax.annotation.Nullable OrderCreateV7RequestShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
     return this;
   }
@@ -327,12 +342,12 @@ public class OrderCreateV7Request {
     return shipToInfo;
   }
 
-  public void setShipToInfo(OrderCreateV7RequestShipToInfo shipToInfo) {
+  public void setShipToInfo(@javax.annotation.Nullable OrderCreateV7RequestShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
   }
 
 
-  public OrderCreateV7Request shipmentDetails(OrderCreateV7RequestShipmentDetails shipmentDetails) {
+  public OrderCreateV7Request shipmentDetails(@javax.annotation.Nullable OrderCreateV7RequestShipmentDetails shipmentDetails) {
     this.shipmentDetails = shipmentDetails;
     return this;
   }
@@ -346,12 +361,12 @@ public class OrderCreateV7Request {
     return shipmentDetails;
   }
 
-  public void setShipmentDetails(OrderCreateV7RequestShipmentDetails shipmentDetails) {
+  public void setShipmentDetails(@javax.annotation.Nullable OrderCreateV7RequestShipmentDetails shipmentDetails) {
     this.shipmentDetails = shipmentDetails;
   }
 
 
-  public OrderCreateV7Request additionalAttributes(List<OrderCreateV7RequestAdditionalAttributesInner> additionalAttributes) {
+  public OrderCreateV7Request additionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -373,12 +388,12 @@ public class OrderCreateV7Request {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<OrderCreateV7RequestAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 
 
-  public OrderCreateV7Request vmfAdditionalAttributes(List<OrderCreateV7RequestVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
+  public OrderCreateV7Request vmfAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
     this.vmfAdditionalAttributes = vmfAdditionalAttributes;
     return this;
   }
@@ -400,12 +415,12 @@ public class OrderCreateV7Request {
     return vmfAdditionalAttributes;
   }
 
-  public void setVmfAdditionalAttributes(List<OrderCreateV7RequestVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
+  public void setVmfAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
     this.vmfAdditionalAttributes = vmfAdditionalAttributes;
   }
 
 
-  public OrderCreateV7Request lines(List<OrderCreateV7RequestLinesInner> lines) {
+  public OrderCreateV7Request lines(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -427,7 +442,7 @@ public class OrderCreateV7Request {
     return lines;
   }
 
-  public void setLines(List<OrderCreateV7RequestLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInner> lines) {
     this.lines = lines;
   }
 

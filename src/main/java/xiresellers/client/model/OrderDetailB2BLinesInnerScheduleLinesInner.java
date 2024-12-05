@@ -48,32 +48,37 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerScheduleLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerScheduleLinesInner {
   public static final String SERIALIZED_NAME_LINE_NUMBER = "lineNumber";
   @SerializedName(SERIALIZED_NAME_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String lineNumber;
 
   public static final String SERIALIZED_NAME_SCHEDULE_LINE_DATE = "scheduleLineDate";
   @SerializedName(SERIALIZED_NAME_SCHEDULE_LINE_DATE)
+  @javax.annotation.Nullable
   private String scheduleLineDate;
 
   public static final String SERIALIZED_NAME_REQUESTED_QUANTITY = "requestedQuantity";
   @SerializedName(SERIALIZED_NAME_REQUESTED_QUANTITY)
+  @javax.annotation.Nullable
   private String requestedQuantity;
 
   public static final String SERIALIZED_NAME_CONFIRMED_QUANTITY = "confirmedQuantity";
   @SerializedName(SERIALIZED_NAME_CONFIRMED_QUANTITY)
+  @javax.annotation.Nullable
   private String confirmedQuantity;
 
   public static final String SERIALIZED_NAME_GOODS_ISSUE_DATE = "goodsIssueDate";
   @SerializedName(SERIALIZED_NAME_GOODS_ISSUE_DATE)
+  @javax.annotation.Nullable
   private String goodsIssueDate;
 
   public OrderDetailB2BLinesInnerScheduleLinesInner() {
   }
 
-  public OrderDetailB2BLinesInnerScheduleLinesInner lineNumber(String lineNumber) {
+  public OrderDetailB2BLinesInnerScheduleLinesInner lineNumber(@javax.annotation.Nullable String lineNumber) {
     this.lineNumber = lineNumber;
     return this;
   }
@@ -87,12 +92,12 @@ public class OrderDetailB2BLinesInnerScheduleLinesInner {
     return lineNumber;
   }
 
-  public void setLineNumber(String lineNumber) {
+  public void setLineNumber(@javax.annotation.Nullable String lineNumber) {
     this.lineNumber = lineNumber;
   }
 
 
-  public OrderDetailB2BLinesInnerScheduleLinesInner scheduleLineDate(String scheduleLineDate) {
+  public OrderDetailB2BLinesInnerScheduleLinesInner scheduleLineDate(@javax.annotation.Nullable String scheduleLineDate) {
     this.scheduleLineDate = scheduleLineDate;
     return this;
   }
@@ -106,12 +111,12 @@ public class OrderDetailB2BLinesInnerScheduleLinesInner {
     return scheduleLineDate;
   }
 
-  public void setScheduleLineDate(String scheduleLineDate) {
+  public void setScheduleLineDate(@javax.annotation.Nullable String scheduleLineDate) {
     this.scheduleLineDate = scheduleLineDate;
   }
 
 
-  public OrderDetailB2BLinesInnerScheduleLinesInner requestedQuantity(String requestedQuantity) {
+  public OrderDetailB2BLinesInnerScheduleLinesInner requestedQuantity(@javax.annotation.Nullable String requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
     return this;
   }
@@ -125,12 +130,12 @@ public class OrderDetailB2BLinesInnerScheduleLinesInner {
     return requestedQuantity;
   }
 
-  public void setRequestedQuantity(String requestedQuantity) {
+  public void setRequestedQuantity(@javax.annotation.Nullable String requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
   }
 
 
-  public OrderDetailB2BLinesInnerScheduleLinesInner confirmedQuantity(String confirmedQuantity) {
+  public OrderDetailB2BLinesInnerScheduleLinesInner confirmedQuantity(@javax.annotation.Nullable String confirmedQuantity) {
     this.confirmedQuantity = confirmedQuantity;
     return this;
   }
@@ -144,12 +149,12 @@ public class OrderDetailB2BLinesInnerScheduleLinesInner {
     return confirmedQuantity;
   }
 
-  public void setConfirmedQuantity(String confirmedQuantity) {
+  public void setConfirmedQuantity(@javax.annotation.Nullable String confirmedQuantity) {
     this.confirmedQuantity = confirmedQuantity;
   }
 
 
-  public OrderDetailB2BLinesInnerScheduleLinesInner goodsIssueDate(String goodsIssueDate) {
+  public OrderDetailB2BLinesInnerScheduleLinesInner goodsIssueDate(@javax.annotation.Nullable String goodsIssueDate) {
     this.goodsIssueDate = goodsIssueDate;
     return this;
   }
@@ -163,7 +168,7 @@ public class OrderDetailB2BLinesInnerScheduleLinesInner {
     return goodsIssueDate;
   }
 
-  public void setGoodsIssueDate(String goodsIssueDate) {
+  public void setGoodsIssueDate(@javax.annotation.Nullable String goodsIssueDate) {
     this.goodsIssueDate = goodsIssueDate;
   }
 

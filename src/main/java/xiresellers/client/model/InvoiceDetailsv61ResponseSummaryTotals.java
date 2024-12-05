@@ -48,36 +48,42 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryTotals
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceDetailsv61ResponseSummaryTotals {
   public static final String SERIALIZED_NAME_NET_INVOICE_AMOUNT = "netInvoiceAmount";
   @SerializedName(SERIALIZED_NAME_NET_INVOICE_AMOUNT)
+  @javax.annotation.Nullable
   private Double netInvoiceAmount;
 
   public static final String SERIALIZED_NAME_DISCOUNT_AMOUNT = "discountAmount";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_AMOUNT)
+  @javax.annotation.Nullable
   private Double discountAmount;
 
   public static final String SERIALIZED_NAME_DISCOUNT_TYPE = "discountType";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_TYPE)
+  @javax.annotation.Nullable
   private String discountType;
 
   public static final String SERIALIZED_NAME_TOTAL_TAX_AMOUNT = "totalTaxAmount";
   @SerializedName(SERIALIZED_NAME_TOTAL_TAX_AMOUNT)
+  @javax.annotation.Nullable
   private Double totalTaxAmount;
 
   public static final String SERIALIZED_NAME_INVOICED_AMOUNT_DUE = "invoicedAmountDue";
   @SerializedName(SERIALIZED_NAME_INVOICED_AMOUNT_DUE)
+  @javax.annotation.Nullable
   private Double invoicedAmountDue;
 
   public static final String SERIALIZED_NAME_FREIGHT_AMOUNT = "freightAmount";
   @SerializedName(SERIALIZED_NAME_FREIGHT_AMOUNT)
+  @javax.annotation.Nullable
   private Double freightAmount;
 
   public InvoiceDetailsv61ResponseSummaryTotals() {
   }
 
-  public InvoiceDetailsv61ResponseSummaryTotals netInvoiceAmount(Double netInvoiceAmount) {
+  public InvoiceDetailsv61ResponseSummaryTotals netInvoiceAmount(@javax.annotation.Nullable Double netInvoiceAmount) {
     this.netInvoiceAmount = netInvoiceAmount;
     return this;
   }
@@ -91,12 +97,12 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
     return netInvoiceAmount;
   }
 
-  public void setNetInvoiceAmount(Double netInvoiceAmount) {
+  public void setNetInvoiceAmount(@javax.annotation.Nullable Double netInvoiceAmount) {
     this.netInvoiceAmount = netInvoiceAmount;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryTotals discountAmount(Double discountAmount) {
+  public InvoiceDetailsv61ResponseSummaryTotals discountAmount(@javax.annotation.Nullable Double discountAmount) {
     this.discountAmount = discountAmount;
     return this;
   }
@@ -110,12 +116,12 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
     return discountAmount;
   }
 
-  public void setDiscountAmount(Double discountAmount) {
+  public void setDiscountAmount(@javax.annotation.Nullable Double discountAmount) {
     this.discountAmount = discountAmount;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryTotals discountType(String discountType) {
+  public InvoiceDetailsv61ResponseSummaryTotals discountType(@javax.annotation.Nullable String discountType) {
     this.discountType = discountType;
     return this;
   }
@@ -129,12 +135,12 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
     return discountType;
   }
 
-  public void setDiscountType(String discountType) {
+  public void setDiscountType(@javax.annotation.Nullable String discountType) {
     this.discountType = discountType;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryTotals totalTaxAmount(Double totalTaxAmount) {
+  public InvoiceDetailsv61ResponseSummaryTotals totalTaxAmount(@javax.annotation.Nullable Double totalTaxAmount) {
     this.totalTaxAmount = totalTaxAmount;
     return this;
   }
@@ -148,12 +154,12 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
     return totalTaxAmount;
   }
 
-  public void setTotalTaxAmount(Double totalTaxAmount) {
+  public void setTotalTaxAmount(@javax.annotation.Nullable Double totalTaxAmount) {
     this.totalTaxAmount = totalTaxAmount;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryTotals invoicedAmountDue(Double invoicedAmountDue) {
+  public InvoiceDetailsv61ResponseSummaryTotals invoicedAmountDue(@javax.annotation.Nullable Double invoicedAmountDue) {
     this.invoicedAmountDue = invoicedAmountDue;
     return this;
   }
@@ -167,12 +173,12 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
     return invoicedAmountDue;
   }
 
-  public void setInvoicedAmountDue(Double invoicedAmountDue) {
+  public void setInvoicedAmountDue(@javax.annotation.Nullable Double invoicedAmountDue) {
     this.invoicedAmountDue = invoicedAmountDue;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryTotals freightAmount(Double freightAmount) {
+  public InvoiceDetailsv61ResponseSummaryTotals freightAmount(@javax.annotation.Nullable Double freightAmount) {
     this.freightAmount = freightAmount;
     return this;
   }
@@ -186,7 +192,7 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
     return freightAmount;
   }
 
-  public void setFreightAmount(Double freightAmount) {
+  public void setFreightAmount(@javax.annotation.Nullable Double freightAmount) {
     this.freightAmount = freightAmount;
   }
 

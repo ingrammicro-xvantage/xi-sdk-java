@@ -51,36 +51,42 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_SHIPMENT_DATE = "shipmentDate";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DATE)
+  @javax.annotation.Nullable
   private String shipmentDate;
 
   public static final String SERIALIZED_NAME_SHIP_FROM_WAREHOUSE_ID = "shipFromWarehouseId";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_WAREHOUSE_ID)
+  @javax.annotation.Nullable
   private String shipFromWarehouseId;
 
   public static final String SERIALIZED_NAME_WAREHOUSE_NAME = "warehouseName";
   @SerializedName(SERIALIZED_NAME_WAREHOUSE_NAME)
+  @javax.annotation.Nullable
   private String warehouseName;
 
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
+  @javax.annotation.Nullable
   private String carrierCode;
 
   public static final String SERIALIZED_NAME_CARRIER_NAME = "carrierName";
   @SerializedName(SERIALIZED_NAME_CARRIER_NAME)
+  @javax.annotation.Nullable
   private String carrierName;
 
   public static final String SERIALIZED_NAME_PACKAGE_DETAILS = "packageDetails";
   @SerializedName(SERIALIZED_NAME_PACKAGE_DETAILS)
+  @javax.annotation.Nullable
   private List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner> packageDetails = new ArrayList<>();
 
   public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner() {
   }
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner shipmentDate(String shipmentDate) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner shipmentDate(@javax.annotation.Nullable String shipmentDate) {
     this.shipmentDate = shipmentDate;
     return this;
   }
@@ -94,12 +100,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return shipmentDate;
   }
 
-  public void setShipmentDate(String shipmentDate) {
+  public void setShipmentDate(@javax.annotation.Nullable String shipmentDate) {
     this.shipmentDate = shipmentDate;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner shipFromWarehouseId(String shipFromWarehouseId) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner shipFromWarehouseId(@javax.annotation.Nullable String shipFromWarehouseId) {
     this.shipFromWarehouseId = shipFromWarehouseId;
     return this;
   }
@@ -113,12 +119,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return shipFromWarehouseId;
   }
 
-  public void setShipFromWarehouseId(String shipFromWarehouseId) {
+  public void setShipFromWarehouseId(@javax.annotation.Nullable String shipFromWarehouseId) {
     this.shipFromWarehouseId = shipFromWarehouseId;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner warehouseName(String warehouseName) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner warehouseName(@javax.annotation.Nullable String warehouseName) {
     this.warehouseName = warehouseName;
     return this;
   }
@@ -132,12 +138,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return warehouseName;
   }
 
-  public void setWarehouseName(String warehouseName) {
+  public void setWarehouseName(@javax.annotation.Nullable String warehouseName) {
     this.warehouseName = warehouseName;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner carrierCode(String carrierCode) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner carrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
     return this;
   }
@@ -151,12 +157,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return carrierCode;
   }
 
-  public void setCarrierCode(String carrierCode) {
+  public void setCarrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner carrierName(String carrierName) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner carrierName(@javax.annotation.Nullable String carrierName) {
     this.carrierName = carrierName;
     return this;
   }
@@ -170,12 +176,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return carrierName;
   }
 
-  public void setCarrierName(String carrierName) {
+  public void setCarrierName(@javax.annotation.Nullable String carrierName) {
     this.carrierName = carrierName;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner packageDetails(List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner> packageDetails) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner packageDetails(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner> packageDetails) {
     this.packageDetails = packageDetails;
     return this;
   }
@@ -197,7 +203,7 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return packageDetails;
   }
 
-  public void setPackageDetails(List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner> packageDetails) {
+  public void setPackageDetails(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner> packageDetails) {
     this.packageDetails = packageDetails;
   }
 

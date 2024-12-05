@@ -51,28 +51,32 @@ import xiresellers.client.JSON;
 /**
  * GetResellerV6ValidateQuote400Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class GetResellerV6ValidateQuote400Response {
   public static final String SERIALIZED_NAME_TRACEID = "traceid";
   @SerializedName(SERIALIZED_NAME_TRACEID)
+  @javax.annotation.Nullable
   private String traceid;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public static final String SERIALIZED_NAME_FIELDS = "fields";
   @SerializedName(SERIALIZED_NAME_FIELDS)
+  @javax.annotation.Nullable
   private List<GetResellerV6ValidateQuote400ResponseFieldsInner> fields = new ArrayList<>();
 
   public GetResellerV6ValidateQuote400Response() {
   }
 
-  public GetResellerV6ValidateQuote400Response traceid(String traceid) {
+  public GetResellerV6ValidateQuote400Response traceid(@javax.annotation.Nullable String traceid) {
     this.traceid = traceid;
     return this;
   }
@@ -86,12 +90,12 @@ public class GetResellerV6ValidateQuote400Response {
     return traceid;
   }
 
-  public void setTraceid(String traceid) {
+  public void setTraceid(@javax.annotation.Nullable String traceid) {
     this.traceid = traceid;
   }
 
 
-  public GetResellerV6ValidateQuote400Response type(String type) {
+  public GetResellerV6ValidateQuote400Response type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -105,12 +109,12 @@ public class GetResellerV6ValidateQuote400Response {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public GetResellerV6ValidateQuote400Response message(String message) {
+  public GetResellerV6ValidateQuote400Response message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -124,12 +128,12 @@ public class GetResellerV6ValidateQuote400Response {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 
 
-  public GetResellerV6ValidateQuote400Response fields(List<GetResellerV6ValidateQuote400ResponseFieldsInner> fields) {
+  public GetResellerV6ValidateQuote400Response fields(@javax.annotation.Nullable List<GetResellerV6ValidateQuote400ResponseFieldsInner> fields) {
     this.fields = fields;
     return this;
   }
@@ -151,7 +155,7 @@ public class GetResellerV6ValidateQuote400Response {
     return fields;
   }
 
-  public void setFields(List<GetResellerV6ValidateQuote400ResponseFieldsInner> fields) {
+  public void setFields(@javax.annotation.Nullable List<GetResellerV6ValidateQuote400ResponseFieldsInner> fields) {
     this.fields = fields;
   }
 

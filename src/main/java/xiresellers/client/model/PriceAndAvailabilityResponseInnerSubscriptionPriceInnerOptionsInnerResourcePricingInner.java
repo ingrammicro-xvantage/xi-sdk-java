@@ -49,40 +49,47 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private String quantity;
 
   public static final String SERIALIZED_NAME_MSRP = "msrp";
   @SerializedName(SERIALIZED_NAME_MSRP)
+  @javax.annotation.Nullable
   private BigDecimal msrp;
 
   public static final String SERIALIZED_NAME_UNIT_PRICE = "unitPrice";
   @SerializedName(SERIALIZED_NAME_UNIT_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal unitPrice;
 
   public static final String SERIALIZED_NAME_MARGIN = "margin";
   @SerializedName(SERIALIZED_NAME_MARGIN)
+  @javax.annotation.Nullable
   private BigDecimal margin;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD = "subscriptionPeriod";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD)
+  @javax.annotation.Nullable
   private String subscriptionPeriod;
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner name(String name) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -96,12 +103,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner quantity(String quantity) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner quantity(@javax.annotation.Nullable String quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -115,12 +122,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return quantity;
   }
 
-  public void setQuantity(String quantity) {
+  public void setQuantity(@javax.annotation.Nullable String quantity) {
     this.quantity = quantity;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner msrp(BigDecimal msrp) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner msrp(@javax.annotation.Nullable BigDecimal msrp) {
     this.msrp = msrp;
     return this;
   }
@@ -134,12 +141,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return msrp;
   }
 
-  public void setMsrp(BigDecimal msrp) {
+  public void setMsrp(@javax.annotation.Nullable BigDecimal msrp) {
     this.msrp = msrp;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner unitPrice(BigDecimal unitPrice) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner unitPrice(@javax.annotation.Nullable BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
     return this;
   }
@@ -153,12 +160,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return unitPrice;
   }
 
-  public void setUnitPrice(BigDecimal unitPrice) {
+  public void setUnitPrice(@javax.annotation.Nullable BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner margin(BigDecimal margin) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner margin(@javax.annotation.Nullable BigDecimal margin) {
     this.margin = margin;
     return this;
   }
@@ -172,12 +179,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return margin;
   }
 
-  public void setMargin(BigDecimal margin) {
+  public void setMargin(@javax.annotation.Nullable BigDecimal margin) {
     this.margin = margin;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner currencyCode(String currencyCode) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -191,12 +198,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner subscriptionPeriod(String subscriptionPeriod) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner subscriptionPeriod(@javax.annotation.Nullable String subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
     return this;
   }
@@ -210,7 +217,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return subscriptionPeriod;
   }
 
-  public void setSubscriptionPeriod(String subscriptionPeriod) {
+  public void setSubscriptionPeriod(@javax.annotation.Nullable String subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
   }
 

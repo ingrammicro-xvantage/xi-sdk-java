@@ -51,28 +51,32 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInnerWarrantyInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateRequestLinesInnerWarrantyInfoInner {
   public static final String SERIALIZED_NAME_DIRECT_LINE_LINK = "directLineLink";
   @SerializedName(SERIALIZED_NAME_DIRECT_LINE_LINK)
+  @javax.annotation.Nullable
   private String directLineLink;
 
   public static final String SERIALIZED_NAME_WARRANTY_LINE_LINK = "warrantyLineLink";
   @SerializedName(SERIALIZED_NAME_WARRANTY_LINE_LINK)
+  @javax.annotation.Nullable
   private String warrantyLineLink;
 
   public static final String SERIALIZED_NAME_HARDWARE_LINE_LINK = "hardwareLineLink";
   @SerializedName(SERIALIZED_NAME_HARDWARE_LINE_LINK)
+  @javax.annotation.Nullable
   private String hardwareLineLink;
 
   public static final String SERIALIZED_NAME_SERIAL_INFO = "serialInfo";
   @SerializedName(SERIALIZED_NAME_SERIAL_INFO)
+  @javax.annotation.Nullable
   private List<OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner> serialInfo = new ArrayList<>();
 
   public OrderCreateRequestLinesInnerWarrantyInfoInner() {
   }
 
-  public OrderCreateRequestLinesInnerWarrantyInfoInner directLineLink(String directLineLink) {
+  public OrderCreateRequestLinesInnerWarrantyInfoInner directLineLink(@javax.annotation.Nullable String directLineLink) {
     this.directLineLink = directLineLink;
     return this;
   }
@@ -86,12 +90,12 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
     return directLineLink;
   }
 
-  public void setDirectLineLink(String directLineLink) {
+  public void setDirectLineLink(@javax.annotation.Nullable String directLineLink) {
     this.directLineLink = directLineLink;
   }
 
 
-  public OrderCreateRequestLinesInnerWarrantyInfoInner warrantyLineLink(String warrantyLineLink) {
+  public OrderCreateRequestLinesInnerWarrantyInfoInner warrantyLineLink(@javax.annotation.Nullable String warrantyLineLink) {
     this.warrantyLineLink = warrantyLineLink;
     return this;
   }
@@ -105,12 +109,12 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
     return warrantyLineLink;
   }
 
-  public void setWarrantyLineLink(String warrantyLineLink) {
+  public void setWarrantyLineLink(@javax.annotation.Nullable String warrantyLineLink) {
     this.warrantyLineLink = warrantyLineLink;
   }
 
 
-  public OrderCreateRequestLinesInnerWarrantyInfoInner hardwareLineLink(String hardwareLineLink) {
+  public OrderCreateRequestLinesInnerWarrantyInfoInner hardwareLineLink(@javax.annotation.Nullable String hardwareLineLink) {
     this.hardwareLineLink = hardwareLineLink;
     return this;
   }
@@ -124,12 +128,12 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
     return hardwareLineLink;
   }
 
-  public void setHardwareLineLink(String hardwareLineLink) {
+  public void setHardwareLineLink(@javax.annotation.Nullable String hardwareLineLink) {
     this.hardwareLineLink = hardwareLineLink;
   }
 
 
-  public OrderCreateRequestLinesInnerWarrantyInfoInner serialInfo(List<OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner> serialInfo) {
+  public OrderCreateRequestLinesInnerWarrantyInfoInner serialInfo(@javax.annotation.Nullable List<OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner> serialInfo) {
     this.serialInfo = serialInfo;
     return this;
   }
@@ -151,7 +155,7 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
     return serialInfo;
   }
 
-  public void setSerialInfo(List<OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner> serialInfo) {
+  public void setSerialInfo(@javax.annotation.Nullable List<OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner> serialInfo) {
     this.serialInfo = serialInfo;
   }
 

@@ -48,28 +48,32 @@ import xiresellers.client.JSON;
 /**
  * Serial information of the hardware to be associated with the warranty, applicable on post sale orders.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner {
   public static final String SERIALIZED_NAME_DATE_OF_PURCHASE = "dateOfPurchase";
   @SerializedName(SERIALIZED_NAME_DATE_OF_PURCHASE)
+  @javax.annotation.Nullable
   private String dateOfPurchase;
 
   public static final String SERIALIZED_NAME_SHIP_DATE = "shipDate";
   @SerializedName(SERIALIZED_NAME_SHIP_DATE)
+  @javax.annotation.Nullable
   private String shipDate;
 
   public static final String SERIALIZED_NAME_PRIMARY_SERIAL_NUMBER = "primarySerialNumber";
   @SerializedName(SERIALIZED_NAME_PRIMARY_SERIAL_NUMBER)
+  @javax.annotation.Nullable
   private String primarySerialNumber;
 
   public static final String SERIALIZED_NAME_SECONDARY_SERIAL_NUMBER = "secondarySerialNumber";
   @SerializedName(SERIALIZED_NAME_SECONDARY_SERIAL_NUMBER)
+  @javax.annotation.Nullable
   private String secondarySerialNumber;
 
   public OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner() {
   }
 
-  public OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner dateOfPurchase(String dateOfPurchase) {
+  public OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner dateOfPurchase(@javax.annotation.Nullable String dateOfPurchase) {
     this.dateOfPurchase = dateOfPurchase;
     return this;
   }
@@ -83,12 +87,12 @@ public class OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner {
     return dateOfPurchase;
   }
 
-  public void setDateOfPurchase(String dateOfPurchase) {
+  public void setDateOfPurchase(@javax.annotation.Nullable String dateOfPurchase) {
     this.dateOfPurchase = dateOfPurchase;
   }
 
 
-  public OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner shipDate(String shipDate) {
+  public OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner shipDate(@javax.annotation.Nullable String shipDate) {
     this.shipDate = shipDate;
     return this;
   }
@@ -102,12 +106,12 @@ public class OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner {
     return shipDate;
   }
 
-  public void setShipDate(String shipDate) {
+  public void setShipDate(@javax.annotation.Nullable String shipDate) {
     this.shipDate = shipDate;
   }
 
 
-  public OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner primarySerialNumber(String primarySerialNumber) {
+  public OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner primarySerialNumber(@javax.annotation.Nullable String primarySerialNumber) {
     this.primarySerialNumber = primarySerialNumber;
     return this;
   }
@@ -121,12 +125,12 @@ public class OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner {
     return primarySerialNumber;
   }
 
-  public void setPrimarySerialNumber(String primarySerialNumber) {
+  public void setPrimarySerialNumber(@javax.annotation.Nullable String primarySerialNumber) {
     this.primarySerialNumber = primarySerialNumber;
   }
 
 
-  public OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner secondarySerialNumber(String secondarySerialNumber) {
+  public OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner secondarySerialNumber(@javax.annotation.Nullable String secondarySerialNumber) {
     this.secondarySerialNumber = secondarySerialNumber;
     return this;
   }
@@ -140,7 +144,7 @@ public class OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner {
     return secondarySerialNumber;
   }
 
-  public void setSecondarySerialNumber(String secondarySerialNumber) {
+  public void setSecondarySerialNumber(@javax.annotation.Nullable String secondarySerialNumber) {
     this.secondarySerialNumber = secondarySerialNumber;
   }
 

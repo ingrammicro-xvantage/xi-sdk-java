@@ -51,32 +51,37 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo {
   public static final String SERIALIZED_NAME_LICENSE_NUMBER = "licenseNumber";
   @SerializedName(SERIALIZED_NAME_LICENSE_NUMBER)
+  @javax.annotation.Nullable
   private List<String> licenseNumber;
 
   public static final String SERIALIZED_NAME_LICENSE_START_DATE = "licenseStartDate";
   @SerializedName(SERIALIZED_NAME_LICENSE_START_DATE)
+  @javax.annotation.Nullable
   private String licenseStartDate;
 
   public static final String SERIALIZED_NAME_LICENSE_END_DATE = "licenseEndDate";
   @SerializedName(SERIALIZED_NAME_LICENSE_END_DATE)
+  @javax.annotation.Nullable
   private String licenseEndDate;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private String quantity;
 
   public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo() {
   }
 
-  public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseNumber(List<String> licenseNumber) {
+  public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseNumber(@javax.annotation.Nullable List<String> licenseNumber) {
     this.licenseNumber = licenseNumber;
     return this;
   }
@@ -98,12 +103,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo {
     return licenseNumber;
   }
 
-  public void setLicenseNumber(List<String> licenseNumber) {
+  public void setLicenseNumber(@javax.annotation.Nullable List<String> licenseNumber) {
     this.licenseNumber = licenseNumber;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseStartDate(String licenseStartDate) {
+  public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseStartDate(@javax.annotation.Nullable String licenseStartDate) {
     this.licenseStartDate = licenseStartDate;
     return this;
   }
@@ -117,12 +122,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo {
     return licenseStartDate;
   }
 
-  public void setLicenseStartDate(String licenseStartDate) {
+  public void setLicenseStartDate(@javax.annotation.Nullable String licenseStartDate) {
     this.licenseStartDate = licenseStartDate;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseEndDate(String licenseEndDate) {
+  public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo licenseEndDate(@javax.annotation.Nullable String licenseEndDate) {
     this.licenseEndDate = licenseEndDate;
     return this;
   }
@@ -136,12 +141,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo {
     return licenseEndDate;
   }
 
-  public void setLicenseEndDate(String licenseEndDate) {
+  public void setLicenseEndDate(@javax.annotation.Nullable String licenseEndDate) {
     this.licenseEndDate = licenseEndDate;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo description(String description) {
+  public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -155,12 +160,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo quantity(String quantity) {
+  public OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo quantity(@javax.annotation.Nullable String quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -174,7 +179,7 @@ public class OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo {
     return quantity;
   }
 
-  public void setQuantity(String quantity) {
+  public void setQuantity(@javax.annotation.Nullable String quantity) {
     this.quantity = quantity;
   }
 

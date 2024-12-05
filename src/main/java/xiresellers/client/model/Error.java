@@ -52,28 +52,32 @@ import xiresellers.client.JSON;
 /**
  * Error
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class Error {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public static final String SERIALIZED_NAME_FIELDS = "fields";
   @SerializedName(SERIALIZED_NAME_FIELDS)
+  @javax.annotation.Nullable
   private List<Fields> fields;
 
   public Error() {
   }
 
-  public Error id(String id) {
+  public Error id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -87,12 +91,12 @@ public class Error {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public Error type(String type) {
+  public Error type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -106,12 +110,12 @@ public class Error {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public Error message(String message) {
+  public Error message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -125,12 +129,12 @@ public class Error {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 
 
-  public Error fields(List<Fields> fields) {
+  public Error fields(@javax.annotation.Nullable List<Fields> fields) {
     this.fields = fields;
     return this;
   }
@@ -152,7 +156,7 @@ public class Error {
     return fields;
   }
 
-  public void setFields(List<Fields> fields) {
+  public void setFields(@javax.annotation.Nullable List<Fields> fields) {
     this.fields = fields;
   }
 

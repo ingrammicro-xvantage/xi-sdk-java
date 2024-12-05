@@ -48,32 +48,37 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseResellerInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class QuoteDetailsResponseResellerInfo {
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
+  @javax.annotation.Nullable
   private String contact;
 
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
+  @javax.annotation.Nullable
   private String companyName;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBER = "phoneNumber";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
+  @javax.annotation.Nullable
   private String phoneNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_NUMBER = "customerNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_NUMBER)
+  @javax.annotation.Nullable
   private String customerNumber;
 
   public QuoteDetailsResponseResellerInfo() {
   }
 
-  public QuoteDetailsResponseResellerInfo contact(String contact) {
+  public QuoteDetailsResponseResellerInfo contact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
     return this;
   }
@@ -87,12 +92,12 @@ public class QuoteDetailsResponseResellerInfo {
     return contact;
   }
 
-  public void setContact(String contact) {
+  public void setContact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
   }
 
 
-  public QuoteDetailsResponseResellerInfo companyName(String companyName) {
+  public QuoteDetailsResponseResellerInfo companyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
     return this;
   }
@@ -106,12 +111,12 @@ public class QuoteDetailsResponseResellerInfo {
     return companyName;
   }
 
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
 
-  public QuoteDetailsResponseResellerInfo email(String email) {
+  public QuoteDetailsResponseResellerInfo email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -125,12 +130,12 @@ public class QuoteDetailsResponseResellerInfo {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public QuoteDetailsResponseResellerInfo phoneNumber(String phoneNumber) {
+  public QuoteDetailsResponseResellerInfo phoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
@@ -144,12 +149,12 @@ public class QuoteDetailsResponseResellerInfo {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
 
-  public QuoteDetailsResponseResellerInfo customerNumber(String customerNumber) {
+  public QuoteDetailsResponseResellerInfo customerNumber(@javax.annotation.Nullable String customerNumber) {
     this.customerNumber = customerNumber;
     return this;
   }
@@ -163,7 +168,7 @@ public class QuoteDetailsResponseResellerInfo {
     return customerNumber;
   }
 
-  public void setCustomerNumber(String customerNumber) {
+  public void setCustomerNumber(@javax.annotation.Nullable String customerNumber) {
     this.customerNumber = customerNumber;
   }
 

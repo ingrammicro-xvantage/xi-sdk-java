@@ -86,7 +86,8 @@ public class DealsApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -119,22 +120,6 @@ public class DealsApi {
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
 
-        if (imCustomerNumber != null) {
-            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
-        }
-
-        if (imCountryCode != null) {
-            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
-        }
-
-        if (imCorrelationID != null) {
-            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
-        }
-
-        if (imApplicationId != null) {
-            localVarHeaderParams.put("IM-ApplicationId", localVarApiClient.parameterToString(imApplicationId));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -149,6 +134,26 @@ public class DealsApi {
         if (localVarContentType != null) {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+
+        if (imApplicationId != null) {
+            localVarHeaderParams.put("IM-ApplicationId", localVarApiClient.parameterToString(imApplicationId));
+        }
+
 
         String[] localVarAuthNames = new String[] { "application" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
@@ -196,7 +201,8 @@ public class DealsApi {
      * @return DealsDetailsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -219,7 +225,8 @@ public class DealsApi {
      * @return ApiResponse&lt;DealsDetailsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -244,7 +251,8 @@ public class DealsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -273,7 +281,8 @@ public class DealsApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -325,22 +334,6 @@ public class DealsApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("Page", page));
         }
 
-        if (imCustomerNumber != null) {
-            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
-        }
-
-        if (imCountryCode != null) {
-            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
-        }
-
-        if (imCorrelationID != null) {
-            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
-        }
-
-        if (imSenderID != null) {
-            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -355,6 +348,26 @@ public class DealsApi {
         if (localVarContentType != null) {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
 
         String[] localVarAuthNames = new String[] { "application" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
@@ -396,7 +409,8 @@ public class DealsApi {
      * @return DealsSearchResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -423,7 +437,8 @@ public class DealsApi {
      * @return ApiResponse&lt;DealsSearchResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
@@ -452,7 +467,8 @@ public class DealsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>

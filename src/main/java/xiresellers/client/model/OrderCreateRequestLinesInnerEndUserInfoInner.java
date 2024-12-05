@@ -49,76 +49,92 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInnerEndUserInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateRequestLinesInnerEndUserInfoInner {
   public static final String SERIALIZED_NAME_END_USER_TYPE = "endUserType";
   @SerializedName(SERIALIZED_NAME_END_USER_TYPE)
+  @javax.annotation.Nullable
   private String endUserType;
 
   public static final String SERIALIZED_NAME_END_USER_ID = "endUserId";
   @SerializedName(SERIALIZED_NAME_END_USER_ID)
+  @javax.annotation.Nullable
   private String endUserId;
 
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
+  @javax.annotation.Nullable
   private String contact;
 
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
+  @javax.annotation.Nullable
   private String companyName;
 
   public static final String SERIALIZED_NAME_NAME1 = "name1";
   @SerializedName(SERIALIZED_NAME_NAME1)
+  @javax.annotation.Nullable
   private String name1;
 
   public static final String SERIALIZED_NAME_NAME2 = "name2";
   @SerializedName(SERIALIZED_NAME_NAME2)
+  @javax.annotation.Nullable
   private String name2;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE1 = "addressLine1";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE1)
+  @javax.annotation.Nullable
   private String addressLine1;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE2 = "addressLine2";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE2)
+  @javax.annotation.Nullable
   private String addressLine2;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE3 = "addressLine3";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE3)
+  @javax.annotation.Nullable
   private String addressLine3;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE4 = "addressLine4";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE4)
+  @javax.annotation.Nullable
   private String addressLine4;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_POSTAL_CODE = "postalCode";
   @SerializedName(SERIALIZED_NAME_POSTAL_CODE)
+  @javax.annotation.Nullable
   private String postalCode;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "countryCode";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBER = "phoneNumber";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
+  @javax.annotation.Nullable
   private BigDecimal phoneNumber;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public OrderCreateRequestLinesInnerEndUserInfoInner() {
   }
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner endUserType(String endUserType) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner endUserType(@javax.annotation.Nullable String endUserType) {
     this.endUserType = endUserType;
     return this;
   }
@@ -132,12 +148,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return endUserType;
   }
 
-  public void setEndUserType(String endUserType) {
+  public void setEndUserType(@javax.annotation.Nullable String endUserType) {
     this.endUserType = endUserType;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner endUserId(String endUserId) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner endUserId(@javax.annotation.Nullable String endUserId) {
     this.endUserId = endUserId;
     return this;
   }
@@ -151,12 +167,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return endUserId;
   }
 
-  public void setEndUserId(String endUserId) {
+  public void setEndUserId(@javax.annotation.Nullable String endUserId) {
     this.endUserId = endUserId;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner contact(String contact) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner contact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
     return this;
   }
@@ -170,12 +186,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return contact;
   }
 
-  public void setContact(String contact) {
+  public void setContact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner companyName(String companyName) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner companyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
     return this;
   }
@@ -189,12 +205,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return companyName;
   }
 
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner name1(String name1) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner name1(@javax.annotation.Nullable String name1) {
     this.name1 = name1;
     return this;
   }
@@ -208,12 +224,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return name1;
   }
 
-  public void setName1(String name1) {
+  public void setName1(@javax.annotation.Nullable String name1) {
     this.name1 = name1;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner name2(String name2) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner name2(@javax.annotation.Nullable String name2) {
     this.name2 = name2;
     return this;
   }
@@ -227,12 +243,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return name2;
   }
 
-  public void setName2(String name2) {
+  public void setName2(@javax.annotation.Nullable String name2) {
     this.name2 = name2;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner addressLine1(String addressLine1) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner addressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
@@ -246,12 +262,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return addressLine1;
   }
 
-  public void setAddressLine1(String addressLine1) {
+  public void setAddressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner addressLine2(String addressLine2) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner addressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
@@ -265,12 +281,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return addressLine2;
   }
 
-  public void setAddressLine2(String addressLine2) {
+  public void setAddressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner addressLine3(String addressLine3) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner addressLine3(@javax.annotation.Nullable String addressLine3) {
     this.addressLine3 = addressLine3;
     return this;
   }
@@ -284,12 +300,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return addressLine3;
   }
 
-  public void setAddressLine3(String addressLine3) {
+  public void setAddressLine3(@javax.annotation.Nullable String addressLine3) {
     this.addressLine3 = addressLine3;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner addressLine4(String addressLine4) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner addressLine4(@javax.annotation.Nullable String addressLine4) {
     this.addressLine4 = addressLine4;
     return this;
   }
@@ -303,12 +319,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return addressLine4;
   }
 
-  public void setAddressLine4(String addressLine4) {
+  public void setAddressLine4(@javax.annotation.Nullable String addressLine4) {
     this.addressLine4 = addressLine4;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner city(String city) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -322,12 +338,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner state(String state) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -341,12 +357,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner postalCode(String postalCode) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner postalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
@@ -360,12 +376,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return postalCode;
   }
 
-  public void setPostalCode(String postalCode) {
+  public void setPostalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner countryCode(String countryCode) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -379,12 +395,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner phoneNumber(BigDecimal phoneNumber) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner phoneNumber(@javax.annotation.Nullable BigDecimal phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
@@ -398,12 +414,12 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(BigDecimal phoneNumber) {
+  public void setPhoneNumber(@javax.annotation.Nullable BigDecimal phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
 
-  public OrderCreateRequestLinesInnerEndUserInfoInner email(String email) {
+  public OrderCreateRequestLinesInnerEndUserInfoInner email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -417,7 +433,7 @@ public class OrderCreateRequestLinesInnerEndUserInfoInner {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 

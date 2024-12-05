@@ -54,56 +54,67 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner {
   public static final String SERIALIZED_NAME_RESOURCE_ID = "resourceId";
   @SerializedName(SERIALIZED_NAME_RESOURCE_ID)
+  @javax.annotation.Nullable
   private String resourceId;
 
   public static final String SERIALIZED_NAME_RESOURCE_U_ID = "resourceUId";
   @SerializedName(SERIALIZED_NAME_RESOURCE_U_ID)
+  @javax.annotation.Nullable
   private String resourceUId;
 
   public static final String SERIALIZED_NAME_RESOURCE_NAME = "resourceName";
   @SerializedName(SERIALIZED_NAME_RESOURCE_NAME)
+  @javax.annotation.Nullable
   private String resourceName;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_MIN_UNITS = "minUnits";
   @SerializedName(SERIALIZED_NAME_MIN_UNITS)
+  @javax.annotation.Nullable
   private BigDecimal minUnits;
 
   public static final String SERIALIZED_NAME_MAX_UNITS = "maxUnits";
   @SerializedName(SERIALIZED_NAME_MAX_UNITS)
+  @javax.annotation.Nullable
   private BigDecimal maxUnits;
 
   public static final String SERIALIZED_NAME_RECURRINGPRICEMODEL = "recurringpricemodel";
   @SerializedName(SERIALIZED_NAME_RECURRINGPRICEMODEL)
+  @javax.annotation.Nullable
   private String recurringpricemodel;
 
   public static final String SERIALIZED_NAME_UNIT_OF_MEASURE = "unitOfMeasure";
   @SerializedName(SERIALIZED_NAME_UNIT_OF_MEASURE)
+  @javax.annotation.Nullable
   private String unitOfMeasure;
 
   public static final String SERIALIZED_NAME_RESOURCE_PRICING = "resourcePricing";
   @SerializedName(SERIALIZED_NAME_RESOURCE_PRICING)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner> resourcePricing = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DISCOUNTS = "discounts";
   @SerializedName(SERIALIZED_NAME_DISCOUNTS)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner> discounts = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_FEES = "fees";
   @SerializedName(SERIALIZED_NAME_FEES)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner> fees = new ArrayList<>();
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner resourceId(String resourceId) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner resourceId(@javax.annotation.Nullable String resourceId) {
     this.resourceId = resourceId;
     return this;
   }
@@ -117,12 +128,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return resourceId;
   }
 
-  public void setResourceId(String resourceId) {
+  public void setResourceId(@javax.annotation.Nullable String resourceId) {
     this.resourceId = resourceId;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner resourceUId(String resourceUId) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner resourceUId(@javax.annotation.Nullable String resourceUId) {
     this.resourceUId = resourceUId;
     return this;
   }
@@ -136,12 +147,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return resourceUId;
   }
 
-  public void setResourceUId(String resourceUId) {
+  public void setResourceUId(@javax.annotation.Nullable String resourceUId) {
     this.resourceUId = resourceUId;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner resourceName(String resourceName) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner resourceName(@javax.annotation.Nullable String resourceName) {
     this.resourceName = resourceName;
     return this;
   }
@@ -155,12 +166,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return resourceName;
   }
 
-  public void setResourceName(String resourceName) {
+  public void setResourceName(@javax.annotation.Nullable String resourceName) {
     this.resourceName = resourceName;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner vendorPartNumber(String vendorPartNumber) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -174,12 +185,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner minUnits(BigDecimal minUnits) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner minUnits(@javax.annotation.Nullable BigDecimal minUnits) {
     this.minUnits = minUnits;
     return this;
   }
@@ -193,12 +204,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return minUnits;
   }
 
-  public void setMinUnits(BigDecimal minUnits) {
+  public void setMinUnits(@javax.annotation.Nullable BigDecimal minUnits) {
     this.minUnits = minUnits;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner maxUnits(BigDecimal maxUnits) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner maxUnits(@javax.annotation.Nullable BigDecimal maxUnits) {
     this.maxUnits = maxUnits;
     return this;
   }
@@ -212,12 +223,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return maxUnits;
   }
 
-  public void setMaxUnits(BigDecimal maxUnits) {
+  public void setMaxUnits(@javax.annotation.Nullable BigDecimal maxUnits) {
     this.maxUnits = maxUnits;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner recurringpricemodel(String recurringpricemodel) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner recurringpricemodel(@javax.annotation.Nullable String recurringpricemodel) {
     this.recurringpricemodel = recurringpricemodel;
     return this;
   }
@@ -231,12 +242,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return recurringpricemodel;
   }
 
-  public void setRecurringpricemodel(String recurringpricemodel) {
+  public void setRecurringpricemodel(@javax.annotation.Nullable String recurringpricemodel) {
     this.recurringpricemodel = recurringpricemodel;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner unitOfMeasure(String unitOfMeasure) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner unitOfMeasure(@javax.annotation.Nullable String unitOfMeasure) {
     this.unitOfMeasure = unitOfMeasure;
     return this;
   }
@@ -250,12 +261,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return unitOfMeasure;
   }
 
-  public void setUnitOfMeasure(String unitOfMeasure) {
+  public void setUnitOfMeasure(@javax.annotation.Nullable String unitOfMeasure) {
     this.unitOfMeasure = unitOfMeasure;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner resourcePricing(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner> resourcePricing) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner resourcePricing(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner> resourcePricing) {
     this.resourcePricing = resourcePricing;
     return this;
   }
@@ -277,12 +288,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return resourcePricing;
   }
 
-  public void setResourcePricing(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner> resourcePricing) {
+  public void setResourcePricing(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner> resourcePricing) {
     this.resourcePricing = resourcePricing;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner discounts(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner> discounts) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner discounts(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner> discounts) {
     this.discounts = discounts;
     return this;
   }
@@ -304,12 +315,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return discounts;
   }
 
-  public void setDiscounts(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner> discounts) {
+  public void setDiscounts(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner> discounts) {
     this.discounts = discounts;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner fees(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner> fees) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner fees(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner> fees) {
     this.fees = fees;
     return this;
   }
@@ -331,7 +342,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return fees;
   }
 
-  public void setFees(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner> fees) {
+  public void setFees(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner> fees) {
     this.fees = fees;
   }
 

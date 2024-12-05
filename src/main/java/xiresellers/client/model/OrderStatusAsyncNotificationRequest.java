@@ -51,32 +51,37 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderStatusAsyncNotificationRequest {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)
+  @javax.annotation.Nullable
   private String topic;
 
   public static final String SERIALIZED_NAME_EVENT = "event";
   @SerializedName(SERIALIZED_NAME_EVENT)
+  @javax.annotation.Nullable
   private String event;
 
   public static final String SERIALIZED_NAME_EVENT_TIME_STAMP = "eventTimeStamp";
   @SerializedName(SERIALIZED_NAME_EVENT_TIME_STAMP)
+  @javax.annotation.Nullable
   private String eventTimeStamp;
 
   public static final String SERIALIZED_NAME_EVENT_ID = "eventId";
   @SerializedName(SERIALIZED_NAME_EVENT_ID)
+  @javax.annotation.Nullable
   private String eventId;
 
   public static final String SERIALIZED_NAME_RESOURCE = "resource";
   @SerializedName(SERIALIZED_NAME_RESOURCE)
+  @javax.annotation.Nullable
   private List<OrderStatusAsyncNotificationRequestResourceInner> resource = new ArrayList<>();
 
   public OrderStatusAsyncNotificationRequest() {
   }
 
-  public OrderStatusAsyncNotificationRequest topic(String topic) {
+  public OrderStatusAsyncNotificationRequest topic(@javax.annotation.Nullable String topic) {
     this.topic = topic;
     return this;
   }
@@ -90,12 +95,12 @@ public class OrderStatusAsyncNotificationRequest {
     return topic;
   }
 
-  public void setTopic(String topic) {
+  public void setTopic(@javax.annotation.Nullable String topic) {
     this.topic = topic;
   }
 
 
-  public OrderStatusAsyncNotificationRequest event(String event) {
+  public OrderStatusAsyncNotificationRequest event(@javax.annotation.Nullable String event) {
     this.event = event;
     return this;
   }
@@ -109,12 +114,12 @@ public class OrderStatusAsyncNotificationRequest {
     return event;
   }
 
-  public void setEvent(String event) {
+  public void setEvent(@javax.annotation.Nullable String event) {
     this.event = event;
   }
 
 
-  public OrderStatusAsyncNotificationRequest eventTimeStamp(String eventTimeStamp) {
+  public OrderStatusAsyncNotificationRequest eventTimeStamp(@javax.annotation.Nullable String eventTimeStamp) {
     this.eventTimeStamp = eventTimeStamp;
     return this;
   }
@@ -128,12 +133,12 @@ public class OrderStatusAsyncNotificationRequest {
     return eventTimeStamp;
   }
 
-  public void setEventTimeStamp(String eventTimeStamp) {
+  public void setEventTimeStamp(@javax.annotation.Nullable String eventTimeStamp) {
     this.eventTimeStamp = eventTimeStamp;
   }
 
 
-  public OrderStatusAsyncNotificationRequest eventId(String eventId) {
+  public OrderStatusAsyncNotificationRequest eventId(@javax.annotation.Nullable String eventId) {
     this.eventId = eventId;
     return this;
   }
@@ -147,12 +152,12 @@ public class OrderStatusAsyncNotificationRequest {
     return eventId;
   }
 
-  public void setEventId(String eventId) {
+  public void setEventId(@javax.annotation.Nullable String eventId) {
     this.eventId = eventId;
   }
 
 
-  public OrderStatusAsyncNotificationRequest resource(List<OrderStatusAsyncNotificationRequestResourceInner> resource) {
+  public OrderStatusAsyncNotificationRequest resource(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInner> resource) {
     this.resource = resource;
     return this;
   }
@@ -174,7 +179,7 @@ public class OrderStatusAsyncNotificationRequest {
     return resource;
   }
 
-  public void setResource(List<OrderStatusAsyncNotificationRequestResourceInner> resource) {
+  public void setResource(@javax.annotation.Nullable List<OrderStatusAsyncNotificationRequestResourceInner> resource) {
     this.resource = resource;
   }
 

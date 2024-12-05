@@ -49,32 +49,37 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerEstimatedDatesInnerShip
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerEstimatedDatesInnerShip {
   public static final String SERIALIZED_NAME_SHIP_DATE_TYPE = "shipDateType";
   @SerializedName(SERIALIZED_NAME_SHIP_DATE_TYPE)
+  @javax.annotation.Nullable
   private String shipDateType;
 
   public static final String SERIALIZED_NAME_SHIP_DATE_RANGE = "shipDateRange";
   @SerializedName(SERIALIZED_NAME_SHIP_DATE_RANGE)
+  @javax.annotation.Nullable
   private OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange shipDateRange;
 
   public static final String SERIALIZED_NAME_SHIP_SOURCE = "shipSource";
   @SerializedName(SERIALIZED_NAME_SHIP_SOURCE)
+  @javax.annotation.Nullable
   private String shipSource;
 
   public static final String SERIALIZED_NAME_SHIP_DESCRIPTION = "shipDescription";
   @SerializedName(SERIALIZED_NAME_SHIP_DESCRIPTION)
+  @javax.annotation.Nullable
   private String shipDescription;
 
   public static final String SERIALIZED_NAME_SHIP_DATE = "shipDate";
   @SerializedName(SERIALIZED_NAME_SHIP_DATE)
+  @javax.annotation.Nullable
   private String shipDate;
 
   public OrderDetailB2BLinesInnerEstimatedDatesInnerShip() {
   }
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerShip shipDateType(String shipDateType) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerShip shipDateType(@javax.annotation.Nullable String shipDateType) {
     this.shipDateType = shipDateType;
     return this;
   }
@@ -88,12 +93,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShip {
     return shipDateType;
   }
 
-  public void setShipDateType(String shipDateType) {
+  public void setShipDateType(@javax.annotation.Nullable String shipDateType) {
     this.shipDateType = shipDateType;
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerShip shipDateRange(OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange shipDateRange) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerShip shipDateRange(@javax.annotation.Nullable OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange shipDateRange) {
     this.shipDateRange = shipDateRange;
     return this;
   }
@@ -107,12 +112,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShip {
     return shipDateRange;
   }
 
-  public void setShipDateRange(OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange shipDateRange) {
+  public void setShipDateRange(@javax.annotation.Nullable OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange shipDateRange) {
     this.shipDateRange = shipDateRange;
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerShip shipSource(String shipSource) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerShip shipSource(@javax.annotation.Nullable String shipSource) {
     this.shipSource = shipSource;
     return this;
   }
@@ -126,12 +131,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShip {
     return shipSource;
   }
 
-  public void setShipSource(String shipSource) {
+  public void setShipSource(@javax.annotation.Nullable String shipSource) {
     this.shipSource = shipSource;
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerShip shipDescription(String shipDescription) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerShip shipDescription(@javax.annotation.Nullable String shipDescription) {
     this.shipDescription = shipDescription;
     return this;
   }
@@ -145,12 +150,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShip {
     return shipDescription;
   }
 
-  public void setShipDescription(String shipDescription) {
+  public void setShipDescription(@javax.annotation.Nullable String shipDescription) {
     this.shipDescription = shipDescription;
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerShip shipDate(String shipDate) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerShip shipDate(@javax.annotation.Nullable String shipDate) {
     this.shipDate = shipDate;
     return this;
   }
@@ -164,7 +169,7 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerShip {
     return shipDate;
   }
 
-  public void setShipDate(String shipDate) {
+  public void setShipDate(@javax.annotation.Nullable String shipDate) {
     this.shipDate = shipDate;
   }
 

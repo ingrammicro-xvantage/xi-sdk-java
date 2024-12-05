@@ -54,52 +54,62 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateRequestLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String customerLineNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private Integer quantity;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBER = "specialBidNumber";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBER)
+  @javax.annotation.Nullable
   private String specialBidNumber;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_UNIT_PRICE = "unitPrice";
   @SerializedName(SERIALIZED_NAME_UNIT_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal unitPrice;
 
   public static final String SERIALIZED_NAME_END_USER_PRICE = "endUserPrice";
   @SerializedName(SERIALIZED_NAME_END_USER_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal endUserPrice;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderCreateRequestLinesInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_WARRANTY_INFO = "warrantyInfo";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFO)
+  @javax.annotation.Nullable
   private List<OrderCreateRequestLinesInnerWarrantyInfoInner> warrantyInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
+  @javax.annotation.Nullable
   private List<OrderCreateRequestLinesInnerEndUserInfoInner> endUserInfo = new ArrayList<>();
 
   public OrderCreateRequestLinesInner() {
   }
 
-  public OrderCreateRequestLinesInner customerLineNumber(String customerLineNumber) {
+  public OrderCreateRequestLinesInner customerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
     return this;
   }
@@ -113,12 +123,12 @@ public class OrderCreateRequestLinesInner {
     return customerLineNumber;
   }
 
-  public void setCustomerLineNumber(String customerLineNumber) {
+  public void setCustomerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
   }
 
 
-  public OrderCreateRequestLinesInner ingramPartNumber(String ingramPartNumber) {
+  public OrderCreateRequestLinesInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -132,12 +142,12 @@ public class OrderCreateRequestLinesInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public OrderCreateRequestLinesInner quantity(Integer quantity) {
+  public OrderCreateRequestLinesInner quantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -151,12 +161,12 @@ public class OrderCreateRequestLinesInner {
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public OrderCreateRequestLinesInner specialBidNumber(String specialBidNumber) {
+  public OrderCreateRequestLinesInner specialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
     return this;
   }
@@ -170,12 +180,12 @@ public class OrderCreateRequestLinesInner {
     return specialBidNumber;
   }
 
-  public void setSpecialBidNumber(String specialBidNumber) {
+  public void setSpecialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
   }
 
 
-  public OrderCreateRequestLinesInner notes(String notes) {
+  public OrderCreateRequestLinesInner notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -189,12 +199,12 @@ public class OrderCreateRequestLinesInner {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public OrderCreateRequestLinesInner unitPrice(BigDecimal unitPrice) {
+  public OrderCreateRequestLinesInner unitPrice(@javax.annotation.Nullable BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
     return this;
   }
@@ -208,12 +218,12 @@ public class OrderCreateRequestLinesInner {
     return unitPrice;
   }
 
-  public void setUnitPrice(BigDecimal unitPrice) {
+  public void setUnitPrice(@javax.annotation.Nullable BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
   }
 
 
-  public OrderCreateRequestLinesInner endUserPrice(BigDecimal endUserPrice) {
+  public OrderCreateRequestLinesInner endUserPrice(@javax.annotation.Nullable BigDecimal endUserPrice) {
     this.endUserPrice = endUserPrice;
     return this;
   }
@@ -227,12 +237,12 @@ public class OrderCreateRequestLinesInner {
     return endUserPrice;
   }
 
-  public void setEndUserPrice(BigDecimal endUserPrice) {
+  public void setEndUserPrice(@javax.annotation.Nullable BigDecimal endUserPrice) {
     this.endUserPrice = endUserPrice;
   }
 
 
-  public OrderCreateRequestLinesInner additionalAttributes(List<OrderCreateRequestLinesInnerAdditionalAttributesInner> additionalAttributes) {
+  public OrderCreateRequestLinesInner additionalAttributes(@javax.annotation.Nullable List<OrderCreateRequestLinesInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -254,12 +264,12 @@ public class OrderCreateRequestLinesInner {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<OrderCreateRequestLinesInnerAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateRequestLinesInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 
 
-  public OrderCreateRequestLinesInner warrantyInfo(List<OrderCreateRequestLinesInnerWarrantyInfoInner> warrantyInfo) {
+  public OrderCreateRequestLinesInner warrantyInfo(@javax.annotation.Nullable List<OrderCreateRequestLinesInnerWarrantyInfoInner> warrantyInfo) {
     this.warrantyInfo = warrantyInfo;
     return this;
   }
@@ -281,12 +291,12 @@ public class OrderCreateRequestLinesInner {
     return warrantyInfo;
   }
 
-  public void setWarrantyInfo(List<OrderCreateRequestLinesInnerWarrantyInfoInner> warrantyInfo) {
+  public void setWarrantyInfo(@javax.annotation.Nullable List<OrderCreateRequestLinesInnerWarrantyInfoInner> warrantyInfo) {
     this.warrantyInfo = warrantyInfo;
   }
 
 
-  public OrderCreateRequestLinesInner endUserInfo(List<OrderCreateRequestLinesInnerEndUserInfoInner> endUserInfo) {
+  public OrderCreateRequestLinesInner endUserInfo(@javax.annotation.Nullable List<OrderCreateRequestLinesInnerEndUserInfoInner> endUserInfo) {
     this.endUserInfo = endUserInfo;
     return this;
   }
@@ -308,7 +318,7 @@ public class OrderCreateRequestLinesInner {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(List<OrderCreateRequestLinesInnerEndUserInfoInner> endUserInfo) {
+  public void setEndUserInfo(@javax.annotation.Nullable List<OrderCreateRequestLinesInnerEndUserInfoInner> endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 

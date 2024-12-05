@@ -53,56 +53,67 @@ import xiresellers.client.JSON;
 /**
  * DealsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class DealsDetailsResponse {
   public static final String SERIALIZED_NAME_DEAL_ID = "dealId";
   @SerializedName(SERIALIZED_NAME_DEAL_ID)
+  @javax.annotation.Nullable
   private String dealId;
 
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
+  @javax.annotation.Nullable
   private String version;
 
   public static final String SERIALIZED_NAME_END_USER = "endUser";
   @SerializedName(SERIALIZED_NAME_END_USER)
+  @javax.annotation.Nullable
   private String endUser;
 
   public static final String SERIALIZED_NAME_EXTENDED_MSRP = "extendedMsrp";
   @SerializedName(SERIALIZED_NAME_EXTENDED_MSRP)
+  @javax.annotation.Nullable
   private BigDecimal extendedMsrp;
 
   public static final String SERIALIZED_NAME_VENDOR = "vendor";
   @SerializedName(SERIALIZED_NAME_VENDOR)
+  @javax.annotation.Nullable
   private String vendor;
 
   public static final String SERIALIZED_NAME_DEAL_RECEIVED_ON = "dealReceivedOn";
   @SerializedName(SERIALIZED_NAME_DEAL_RECEIVED_ON)
+  @javax.annotation.Nullable
   private String dealReceivedOn;
 
   public static final String SERIALIZED_NAME_DEAL_EXPIRY_DATE = "dealExpiryDate";
   @SerializedName(SERIALIZED_NAME_DEAL_EXPIRY_DATE)
+  @javax.annotation.Nullable
   private String dealExpiryDate;
 
   public static final String SERIALIZED_NAME_PRICE_PROTECTION_END_DATE = "priceProtectionEndDate";
   @SerializedName(SERIALIZED_NAME_PRICE_PROTECTION_END_DATE)
+  @javax.annotation.Nullable
   private String priceProtectionEndDate;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
+  @javax.annotation.Nullable
   private RenewalsDetailsResponseEndUserInfo endUserInfo;
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
+  @javax.annotation.Nullable
   private List<DealsDetailsResponseProductsInner> products = new ArrayList<>();
 
   public DealsDetailsResponse() {
   }
 
-  public DealsDetailsResponse dealId(String dealId) {
+  public DealsDetailsResponse dealId(@javax.annotation.Nullable String dealId) {
     this.dealId = dealId;
     return this;
   }
@@ -116,12 +127,12 @@ public class DealsDetailsResponse {
     return dealId;
   }
 
-  public void setDealId(String dealId) {
+  public void setDealId(@javax.annotation.Nullable String dealId) {
     this.dealId = dealId;
   }
 
 
-  public DealsDetailsResponse version(String version) {
+  public DealsDetailsResponse version(@javax.annotation.Nullable String version) {
     this.version = version;
     return this;
   }
@@ -135,12 +146,12 @@ public class DealsDetailsResponse {
     return version;
   }
 
-  public void setVersion(String version) {
+  public void setVersion(@javax.annotation.Nullable String version) {
     this.version = version;
   }
 
 
-  public DealsDetailsResponse endUser(String endUser) {
+  public DealsDetailsResponse endUser(@javax.annotation.Nullable String endUser) {
     this.endUser = endUser;
     return this;
   }
@@ -154,12 +165,12 @@ public class DealsDetailsResponse {
     return endUser;
   }
 
-  public void setEndUser(String endUser) {
+  public void setEndUser(@javax.annotation.Nullable String endUser) {
     this.endUser = endUser;
   }
 
 
-  public DealsDetailsResponse extendedMsrp(BigDecimal extendedMsrp) {
+  public DealsDetailsResponse extendedMsrp(@javax.annotation.Nullable BigDecimal extendedMsrp) {
     this.extendedMsrp = extendedMsrp;
     return this;
   }
@@ -173,12 +184,12 @@ public class DealsDetailsResponse {
     return extendedMsrp;
   }
 
-  public void setExtendedMsrp(BigDecimal extendedMsrp) {
+  public void setExtendedMsrp(@javax.annotation.Nullable BigDecimal extendedMsrp) {
     this.extendedMsrp = extendedMsrp;
   }
 
 
-  public DealsDetailsResponse vendor(String vendor) {
+  public DealsDetailsResponse vendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
     return this;
   }
@@ -192,12 +203,12 @@ public class DealsDetailsResponse {
     return vendor;
   }
 
-  public void setVendor(String vendor) {
+  public void setVendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
   }
 
 
-  public DealsDetailsResponse dealReceivedOn(String dealReceivedOn) {
+  public DealsDetailsResponse dealReceivedOn(@javax.annotation.Nullable String dealReceivedOn) {
     this.dealReceivedOn = dealReceivedOn;
     return this;
   }
@@ -211,12 +222,12 @@ public class DealsDetailsResponse {
     return dealReceivedOn;
   }
 
-  public void setDealReceivedOn(String dealReceivedOn) {
+  public void setDealReceivedOn(@javax.annotation.Nullable String dealReceivedOn) {
     this.dealReceivedOn = dealReceivedOn;
   }
 
 
-  public DealsDetailsResponse dealExpiryDate(String dealExpiryDate) {
+  public DealsDetailsResponse dealExpiryDate(@javax.annotation.Nullable String dealExpiryDate) {
     this.dealExpiryDate = dealExpiryDate;
     return this;
   }
@@ -230,12 +241,12 @@ public class DealsDetailsResponse {
     return dealExpiryDate;
   }
 
-  public void setDealExpiryDate(String dealExpiryDate) {
+  public void setDealExpiryDate(@javax.annotation.Nullable String dealExpiryDate) {
     this.dealExpiryDate = dealExpiryDate;
   }
 
 
-  public DealsDetailsResponse priceProtectionEndDate(String priceProtectionEndDate) {
+  public DealsDetailsResponse priceProtectionEndDate(@javax.annotation.Nullable String priceProtectionEndDate) {
     this.priceProtectionEndDate = priceProtectionEndDate;
     return this;
   }
@@ -249,12 +260,12 @@ public class DealsDetailsResponse {
     return priceProtectionEndDate;
   }
 
-  public void setPriceProtectionEndDate(String priceProtectionEndDate) {
+  public void setPriceProtectionEndDate(@javax.annotation.Nullable String priceProtectionEndDate) {
     this.priceProtectionEndDate = priceProtectionEndDate;
   }
 
 
-  public DealsDetailsResponse currencyCode(String currencyCode) {
+  public DealsDetailsResponse currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -268,12 +279,12 @@ public class DealsDetailsResponse {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public DealsDetailsResponse endUserInfo(RenewalsDetailsResponseEndUserInfo endUserInfo) {
+  public DealsDetailsResponse endUserInfo(@javax.annotation.Nullable RenewalsDetailsResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
     return this;
   }
@@ -287,12 +298,12 @@ public class DealsDetailsResponse {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(RenewalsDetailsResponseEndUserInfo endUserInfo) {
+  public void setEndUserInfo(@javax.annotation.Nullable RenewalsDetailsResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 
 
-  public DealsDetailsResponse products(List<DealsDetailsResponseProductsInner> products) {
+  public DealsDetailsResponse products(@javax.annotation.Nullable List<DealsDetailsResponseProductsInner> products) {
     this.products = products;
     return this;
   }
@@ -314,7 +325,7 @@ public class DealsDetailsResponse {
     return products;
   }
 
-  public void setProducts(List<DealsDetailsResponseProductsInner> products) {
+  public void setProducts(@javax.annotation.Nullable List<DealsDetailsResponseProductsInner> products) {
     this.products = products;
   }
 

@@ -48,24 +48,27 @@ import xiresellers.client.JSON;
 /**
  * Link to Order Details for the order(s).
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderSearchResponseOrdersInnerLinks {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)
+  @javax.annotation.Nullable
   private String topic;
 
   public static final String SERIALIZED_NAME_HREF = "href";
   @SerializedName(SERIALIZED_NAME_HREF)
+  @javax.annotation.Nullable
   private String href;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public OrderSearchResponseOrdersInnerLinks() {
   }
 
-  public OrderSearchResponseOrdersInnerLinks topic(String topic) {
+  public OrderSearchResponseOrdersInnerLinks topic(@javax.annotation.Nullable String topic) {
     this.topic = topic;
     return this;
   }
@@ -79,12 +82,12 @@ public class OrderSearchResponseOrdersInnerLinks {
     return topic;
   }
 
-  public void setTopic(String topic) {
+  public void setTopic(@javax.annotation.Nullable String topic) {
     this.topic = topic;
   }
 
 
-  public OrderSearchResponseOrdersInnerLinks href(String href) {
+  public OrderSearchResponseOrdersInnerLinks href(@javax.annotation.Nullable String href) {
     this.href = href;
     return this;
   }
@@ -98,12 +101,12 @@ public class OrderSearchResponseOrdersInnerLinks {
     return href;
   }
 
-  public void setHref(String href) {
+  public void setHref(@javax.annotation.Nullable String href) {
     this.href = href;
   }
 
 
-  public OrderSearchResponseOrdersInnerLinks type(String type) {
+  public OrderSearchResponseOrdersInnerLinks type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -117,7 +120,7 @@ public class OrderSearchResponseOrdersInnerLinks {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 

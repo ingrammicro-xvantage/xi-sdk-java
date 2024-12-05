@@ -53,28 +53,32 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderModifyRequest {
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_SHIP_TO_INFO = "shipToInfo";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_INFO)
+  @javax.annotation.Nullable
   private OrderModifyRequestShipToInfo shipToInfo;
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<OrderModifyRequestLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderModifyRequestAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public OrderModifyRequest() {
   }
 
-  public OrderModifyRequest notes(String notes) {
+  public OrderModifyRequest notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -88,12 +92,12 @@ public class OrderModifyRequest {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public OrderModifyRequest shipToInfo(OrderModifyRequestShipToInfo shipToInfo) {
+  public OrderModifyRequest shipToInfo(@javax.annotation.Nullable OrderModifyRequestShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
     return this;
   }
@@ -107,12 +111,12 @@ public class OrderModifyRequest {
     return shipToInfo;
   }
 
-  public void setShipToInfo(OrderModifyRequestShipToInfo shipToInfo) {
+  public void setShipToInfo(@javax.annotation.Nullable OrderModifyRequestShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
   }
 
 
-  public OrderModifyRequest lines(List<OrderModifyRequestLinesInner> lines) {
+  public OrderModifyRequest lines(@javax.annotation.Nullable List<OrderModifyRequestLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -134,12 +138,12 @@ public class OrderModifyRequest {
     return lines;
   }
 
-  public void setLines(List<OrderModifyRequestLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<OrderModifyRequestLinesInner> lines) {
     this.lines = lines;
   }
 
 
-  public OrderModifyRequest additionalAttributes(List<OrderModifyRequestAdditionalAttributesInner> additionalAttributes) {
+  public OrderModifyRequest additionalAttributes(@javax.annotation.Nullable List<OrderModifyRequestAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -161,7 +165,7 @@ public class OrderModifyRequest {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<OrderModifyRequestAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<OrderModifyRequestAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 

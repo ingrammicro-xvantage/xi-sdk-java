@@ -49,24 +49,27 @@ import xiresellers.client.JSON;
 /**
  * Fields
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class Fields {
   public static final String SERIALIZED_NAME_FIELD = "field";
   @SerializedName(SERIALIZED_NAME_FIELD)
+  @javax.annotation.Nullable
   private String field;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private String value;
 
   public Fields() {
   }
 
-  public Fields field(String field) {
+  public Fields field(@javax.annotation.Nullable String field) {
     this.field = field;
     return this;
   }
@@ -80,12 +83,12 @@ public class Fields {
     return field;
   }
 
-  public void setField(String field) {
+  public void setField(@javax.annotation.Nullable String field) {
     this.field = field;
   }
 
 
-  public Fields message(String message) {
+  public Fields message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -99,12 +102,12 @@ public class Fields {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 
 
-  public Fields value(String value) {
+  public Fields value(@javax.annotation.Nullable String value) {
     this.value = value;
     return this;
   }
@@ -118,7 +121,7 @@ public class Fields {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nullable String value) {
     this.value = value;
   }
 

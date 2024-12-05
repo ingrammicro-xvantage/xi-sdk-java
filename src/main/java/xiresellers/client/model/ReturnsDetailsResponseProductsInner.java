@@ -49,76 +49,92 @@ import xiresellers.client.JSON;
 /**
  * ReturnsDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ReturnsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
+  @javax.annotation.Nullable
   private Integer ingramLineNumber;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_UPC = "upc";
   @SerializedName(SERIALIZED_NAME_UPC)
+  @javax.annotation.Nullable
   private String upc;
 
   public static final String SERIALIZED_NAME_INVOICE_DATE = "invoiceDate";
   @SerializedName(SERIALIZED_NAME_INVOICE_DATE)
+  @javax.annotation.Nullable
   private String invoiceDate;
 
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
+  @javax.annotation.Nullable
   private String invoiceNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private BigDecimal quantity;
 
   public static final String SERIALIZED_NAME_UNIT_PRICE = "unitPrice";
   @SerializedName(SERIALIZED_NAME_UNIT_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal unitPrice;
 
   public static final String SERIALIZED_NAME_EXTENDED_PRICE = "extendedPrice";
   @SerializedName(SERIALIZED_NAME_EXTENDED_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal extendedPrice;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_RETURN_BRANCH = "returnBranch";
   @SerializedName(SERIALIZED_NAME_RETURN_BRANCH)
+  @javax.annotation.Nullable
   private String returnBranch;
 
   public static final String SERIALIZED_NAME_SHIP_FROM_BRANCH = "shipFromBranch";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_BRANCH)
+  @javax.annotation.Nullable
   private String shipFromBranch;
 
   public static final String SERIALIZED_NAME_REQUEST_DETAILS = "requestDetails";
   @SerializedName(SERIALIZED_NAME_REQUEST_DETAILS)
+  @javax.annotation.Nullable
   private String requestDetails;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_DETAILS = "additionalDetails";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_DETAILS)
+  @javax.annotation.Nullable
   private String additionalDetails;
 
   public ReturnsDetailsResponseProductsInner() {
   }
 
-  public ReturnsDetailsResponseProductsInner ingramLineNumber(Integer ingramLineNumber) {
+  public ReturnsDetailsResponseProductsInner ingramLineNumber(@javax.annotation.Nullable Integer ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
     return this;
   }
@@ -132,12 +148,12 @@ public class ReturnsDetailsResponseProductsInner {
     return ingramLineNumber;
   }
 
-  public void setIngramLineNumber(Integer ingramLineNumber) {
+  public void setIngramLineNumber(@javax.annotation.Nullable Integer ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
   }
 
 
-  public ReturnsDetailsResponseProductsInner description(String description) {
+  public ReturnsDetailsResponseProductsInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -151,12 +167,12 @@ public class ReturnsDetailsResponseProductsInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public ReturnsDetailsResponseProductsInner ingramPartNumber(String ingramPartNumber) {
+  public ReturnsDetailsResponseProductsInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -170,12 +186,12 @@ public class ReturnsDetailsResponseProductsInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public ReturnsDetailsResponseProductsInner vendorPartNumber(String vendorPartNumber) {
+  public ReturnsDetailsResponseProductsInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -189,12 +205,12 @@ public class ReturnsDetailsResponseProductsInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public ReturnsDetailsResponseProductsInner upc(String upc) {
+  public ReturnsDetailsResponseProductsInner upc(@javax.annotation.Nullable String upc) {
     this.upc = upc;
     return this;
   }
@@ -208,12 +224,12 @@ public class ReturnsDetailsResponseProductsInner {
     return upc;
   }
 
-  public void setUpc(String upc) {
+  public void setUpc(@javax.annotation.Nullable String upc) {
     this.upc = upc;
   }
 
 
-  public ReturnsDetailsResponseProductsInner invoiceDate(String invoiceDate) {
+  public ReturnsDetailsResponseProductsInner invoiceDate(@javax.annotation.Nullable String invoiceDate) {
     this.invoiceDate = invoiceDate;
     return this;
   }
@@ -227,12 +243,12 @@ public class ReturnsDetailsResponseProductsInner {
     return invoiceDate;
   }
 
-  public void setInvoiceDate(String invoiceDate) {
+  public void setInvoiceDate(@javax.annotation.Nullable String invoiceDate) {
     this.invoiceDate = invoiceDate;
   }
 
 
-  public ReturnsDetailsResponseProductsInner invoiceNumber(String invoiceNumber) {
+  public ReturnsDetailsResponseProductsInner invoiceNumber(@javax.annotation.Nullable String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
     return this;
   }
@@ -246,12 +262,12 @@ public class ReturnsDetailsResponseProductsInner {
     return invoiceNumber;
   }
 
-  public void setInvoiceNumber(String invoiceNumber) {
+  public void setInvoiceNumber(@javax.annotation.Nullable String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
   }
 
 
-  public ReturnsDetailsResponseProductsInner customerOrderNumber(String customerOrderNumber) {
+  public ReturnsDetailsResponseProductsInner customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -265,12 +281,12 @@ public class ReturnsDetailsResponseProductsInner {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public ReturnsDetailsResponseProductsInner quantity(BigDecimal quantity) {
+  public ReturnsDetailsResponseProductsInner quantity(@javax.annotation.Nullable BigDecimal quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -284,12 +300,12 @@ public class ReturnsDetailsResponseProductsInner {
     return quantity;
   }
 
-  public void setQuantity(BigDecimal quantity) {
+  public void setQuantity(@javax.annotation.Nullable BigDecimal quantity) {
     this.quantity = quantity;
   }
 
 
-  public ReturnsDetailsResponseProductsInner unitPrice(BigDecimal unitPrice) {
+  public ReturnsDetailsResponseProductsInner unitPrice(@javax.annotation.Nullable BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
     return this;
   }
@@ -303,12 +319,12 @@ public class ReturnsDetailsResponseProductsInner {
     return unitPrice;
   }
 
-  public void setUnitPrice(BigDecimal unitPrice) {
+  public void setUnitPrice(@javax.annotation.Nullable BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
   }
 
 
-  public ReturnsDetailsResponseProductsInner extendedPrice(BigDecimal extendedPrice) {
+  public ReturnsDetailsResponseProductsInner extendedPrice(@javax.annotation.Nullable BigDecimal extendedPrice) {
     this.extendedPrice = extendedPrice;
     return this;
   }
@@ -322,12 +338,12 @@ public class ReturnsDetailsResponseProductsInner {
     return extendedPrice;
   }
 
-  public void setExtendedPrice(BigDecimal extendedPrice) {
+  public void setExtendedPrice(@javax.annotation.Nullable BigDecimal extendedPrice) {
     this.extendedPrice = extendedPrice;
   }
 
 
-  public ReturnsDetailsResponseProductsInner status(String status) {
+  public ReturnsDetailsResponseProductsInner status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -341,12 +357,12 @@ public class ReturnsDetailsResponseProductsInner {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public ReturnsDetailsResponseProductsInner returnBranch(String returnBranch) {
+  public ReturnsDetailsResponseProductsInner returnBranch(@javax.annotation.Nullable String returnBranch) {
     this.returnBranch = returnBranch;
     return this;
   }
@@ -360,12 +376,12 @@ public class ReturnsDetailsResponseProductsInner {
     return returnBranch;
   }
 
-  public void setReturnBranch(String returnBranch) {
+  public void setReturnBranch(@javax.annotation.Nullable String returnBranch) {
     this.returnBranch = returnBranch;
   }
 
 
-  public ReturnsDetailsResponseProductsInner shipFromBranch(String shipFromBranch) {
+  public ReturnsDetailsResponseProductsInner shipFromBranch(@javax.annotation.Nullable String shipFromBranch) {
     this.shipFromBranch = shipFromBranch;
     return this;
   }
@@ -379,12 +395,12 @@ public class ReturnsDetailsResponseProductsInner {
     return shipFromBranch;
   }
 
-  public void setShipFromBranch(String shipFromBranch) {
+  public void setShipFromBranch(@javax.annotation.Nullable String shipFromBranch) {
     this.shipFromBranch = shipFromBranch;
   }
 
 
-  public ReturnsDetailsResponseProductsInner requestDetails(String requestDetails) {
+  public ReturnsDetailsResponseProductsInner requestDetails(@javax.annotation.Nullable String requestDetails) {
     this.requestDetails = requestDetails;
     return this;
   }
@@ -398,12 +414,12 @@ public class ReturnsDetailsResponseProductsInner {
     return requestDetails;
   }
 
-  public void setRequestDetails(String requestDetails) {
+  public void setRequestDetails(@javax.annotation.Nullable String requestDetails) {
     this.requestDetails = requestDetails;
   }
 
 
-  public ReturnsDetailsResponseProductsInner additionalDetails(String additionalDetails) {
+  public ReturnsDetailsResponseProductsInner additionalDetails(@javax.annotation.Nullable String additionalDetails) {
     this.additionalDetails = additionalDetails;
     return this;
   }
@@ -417,7 +433,7 @@ public class ReturnsDetailsResponseProductsInner {
     return additionalDetails;
   }
 
-  public void setAdditionalDetails(String additionalDetails) {
+  public void setAdditionalDetails(@javax.annotation.Nullable String additionalDetails) {
     this.additionalDetails = additionalDetails;
   }
 

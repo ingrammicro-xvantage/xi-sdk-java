@@ -48,36 +48,42 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseSubscriptionDetailsInnerOptionsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
   public static final String SERIALIZED_NAME_RESOURCE_ID = "resourceId";
   @SerializedName(SERIALIZED_NAME_RESOURCE_ID)
+  @javax.annotation.Nullable
   private String resourceId;
 
   public static final String SERIALIZED_NAME_RESOURCE_NAME = "resourceName";
   @SerializedName(SERIALIZED_NAME_RESOURCE_NAME)
+  @javax.annotation.Nullable
   private String resourceName;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_MIN_UNITS = "minUnits";
   @SerializedName(SERIALIZED_NAME_MIN_UNITS)
+  @javax.annotation.Nullable
   private Integer minUnits;
 
   public static final String SERIALIZED_NAME_MAX_UNITS = "maxUnits";
   @SerializedName(SERIALIZED_NAME_MAX_UNITS)
+  @javax.annotation.Nullable
   private Integer maxUnits;
 
   public static final String SERIALIZED_NAME_DEPENDS_ON = "dependsOn";
   @SerializedName(SERIALIZED_NAME_DEPENDS_ON)
+  @javax.annotation.Nullable
   private String dependsOn;
 
   public ProductDetailResponseSubscriptionDetailsInnerOptionsInner() {
   }
 
-  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner resourceId(String resourceId) {
+  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner resourceId(@javax.annotation.Nullable String resourceId) {
     this.resourceId = resourceId;
     return this;
   }
@@ -91,12 +97,12 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
     return resourceId;
   }
 
-  public void setResourceId(String resourceId) {
+  public void setResourceId(@javax.annotation.Nullable String resourceId) {
     this.resourceId = resourceId;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner resourceName(String resourceName) {
+  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner resourceName(@javax.annotation.Nullable String resourceName) {
     this.resourceName = resourceName;
     return this;
   }
@@ -110,12 +116,12 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
     return resourceName;
   }
 
-  public void setResourceName(String resourceName) {
+  public void setResourceName(@javax.annotation.Nullable String resourceName) {
     this.resourceName = resourceName;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner vendorPartNumber(String vendorPartNumber) {
+  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -129,12 +135,12 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner minUnits(Integer minUnits) {
+  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner minUnits(@javax.annotation.Nullable Integer minUnits) {
     this.minUnits = minUnits;
     return this;
   }
@@ -148,12 +154,12 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
     return minUnits;
   }
 
-  public void setMinUnits(Integer minUnits) {
+  public void setMinUnits(@javax.annotation.Nullable Integer minUnits) {
     this.minUnits = minUnits;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner maxUnits(Integer maxUnits) {
+  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner maxUnits(@javax.annotation.Nullable Integer maxUnits) {
     this.maxUnits = maxUnits;
     return this;
   }
@@ -167,12 +173,12 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
     return maxUnits;
   }
 
-  public void setMaxUnits(Integer maxUnits) {
+  public void setMaxUnits(@javax.annotation.Nullable Integer maxUnits) {
     this.maxUnits = maxUnits;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner dependsOn(String dependsOn) {
+  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner dependsOn(@javax.annotation.Nullable String dependsOn) {
     this.dependsOn = dependsOn;
     return this;
   }
@@ -186,7 +192,7 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
     return dependsOn;
   }
 
-  public void setDependsOn(String dependsOn) {
+  public void setDependsOn(@javax.annotation.Nullable String dependsOn) {
     this.dependsOn = dependsOn;
   }
 

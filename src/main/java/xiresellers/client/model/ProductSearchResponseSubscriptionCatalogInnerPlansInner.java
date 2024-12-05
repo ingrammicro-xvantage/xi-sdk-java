@@ -52,32 +52,37 @@ import xiresellers.client.JSON;
 /**
  * ProductSearchResponseSubscriptionCatalogInnerPlansInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductSearchResponseSubscriptionCatalogInnerPlansInner {
   public static final String SERIALIZED_NAME_PLAN_ID = "planId";
   @SerializedName(SERIALIZED_NAME_PLAN_ID)
+  @javax.annotation.Nullable
   private String planId;
 
   public static final String SERIALIZED_NAME_PLAN_NAME = "planName";
   @SerializedName(SERIALIZED_NAME_PLAN_NAME)
+  @javax.annotation.Nullable
   private String planName;
 
   public static final String SERIALIZED_NAME_PLAN_DESCRIPTION = "planDescription";
   @SerializedName(SERIALIZED_NAME_PLAN_DESCRIPTION)
+  @javax.annotation.Nullable
   private String planDescription;
 
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD_SUMMARY = "subscriptionPeriodSummary";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD_SUMMARY)
+  @javax.annotation.Nullable
   private List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner> subscriptionPeriodSummary = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner> links = new ArrayList<>();
 
   public ProductSearchResponseSubscriptionCatalogInnerPlansInner() {
   }
 
-  public ProductSearchResponseSubscriptionCatalogInnerPlansInner planId(String planId) {
+  public ProductSearchResponseSubscriptionCatalogInnerPlansInner planId(@javax.annotation.Nullable String planId) {
     this.planId = planId;
     return this;
   }
@@ -91,12 +96,12 @@ public class ProductSearchResponseSubscriptionCatalogInnerPlansInner {
     return planId;
   }
 
-  public void setPlanId(String planId) {
+  public void setPlanId(@javax.annotation.Nullable String planId) {
     this.planId = planId;
   }
 
 
-  public ProductSearchResponseSubscriptionCatalogInnerPlansInner planName(String planName) {
+  public ProductSearchResponseSubscriptionCatalogInnerPlansInner planName(@javax.annotation.Nullable String planName) {
     this.planName = planName;
     return this;
   }
@@ -110,12 +115,12 @@ public class ProductSearchResponseSubscriptionCatalogInnerPlansInner {
     return planName;
   }
 
-  public void setPlanName(String planName) {
+  public void setPlanName(@javax.annotation.Nullable String planName) {
     this.planName = planName;
   }
 
 
-  public ProductSearchResponseSubscriptionCatalogInnerPlansInner planDescription(String planDescription) {
+  public ProductSearchResponseSubscriptionCatalogInnerPlansInner planDescription(@javax.annotation.Nullable String planDescription) {
     this.planDescription = planDescription;
     return this;
   }
@@ -129,12 +134,12 @@ public class ProductSearchResponseSubscriptionCatalogInnerPlansInner {
     return planDescription;
   }
 
-  public void setPlanDescription(String planDescription) {
+  public void setPlanDescription(@javax.annotation.Nullable String planDescription) {
     this.planDescription = planDescription;
   }
 
 
-  public ProductSearchResponseSubscriptionCatalogInnerPlansInner subscriptionPeriodSummary(List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner> subscriptionPeriodSummary) {
+  public ProductSearchResponseSubscriptionCatalogInnerPlansInner subscriptionPeriodSummary(@javax.annotation.Nullable List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner> subscriptionPeriodSummary) {
     this.subscriptionPeriodSummary = subscriptionPeriodSummary;
     return this;
   }
@@ -156,12 +161,12 @@ public class ProductSearchResponseSubscriptionCatalogInnerPlansInner {
     return subscriptionPeriodSummary;
   }
 
-  public void setSubscriptionPeriodSummary(List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner> subscriptionPeriodSummary) {
+  public void setSubscriptionPeriodSummary(@javax.annotation.Nullable List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner> subscriptionPeriodSummary) {
     this.subscriptionPeriodSummary = subscriptionPeriodSummary;
   }
 
 
-  public ProductSearchResponseSubscriptionCatalogInnerPlansInner links(List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner> links) {
+  public ProductSearchResponseSubscriptionCatalogInnerPlansInner links(@javax.annotation.Nullable List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -183,7 +188,7 @@ public class ProductSearchResponseSubscriptionCatalogInnerPlansInner {
     return links;
   }
 
-  public void setLinks(List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner> links) {
     this.links = links;
   }
 

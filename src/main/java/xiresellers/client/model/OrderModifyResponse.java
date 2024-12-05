@@ -55,76 +55,92 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderModifyResponse {
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String ingramOrderNumber;
 
   public static final String SERIALIZED_NAME_CHANGE_DESCRIPTION = "changeDescription";
   @SerializedName(SERIALIZED_NAME_CHANGE_DESCRIPTION)
+  @javax.annotation.Nullable
   private String changeDescription;
 
   public static final String SERIALIZED_NAME_ORDER_MODIFIED_DATE = "orderModifiedDate";
   @SerializedName(SERIALIZED_NAME_ORDER_MODIFIED_DATE)
+  @javax.annotation.Nullable
   private String orderModifiedDate;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
   @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String endCustomerOrderNumber;
 
   public static final String SERIALIZED_NAME_ORDER_TOTAL = "orderTotal";
   @SerializedName(SERIALIZED_NAME_ORDER_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal orderTotal;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_ORDER_SUB_TOTAL = "orderSubTotal";
   @SerializedName(SERIALIZED_NAME_ORDER_SUB_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal orderSubTotal;
 
   public static final String SERIALIZED_NAME_FREIGHT_CHARGES = "freightCharges";
   @SerializedName(SERIALIZED_NAME_FREIGHT_CHARGES)
+  @javax.annotation.Nullable
   private BigDecimal freightCharges;
 
   public static final String SERIALIZED_NAME_TOTAL_TAX = "totalTax";
   @SerializedName(SERIALIZED_NAME_TOTAL_TAX)
+  @javax.annotation.Nullable
   private BigDecimal totalTax;
 
   public static final String SERIALIZED_NAME_ORDER_STATUS = "orderStatus";
   @SerializedName(SERIALIZED_NAME_ORDER_STATUS)
+  @javax.annotation.Nullable
   private String orderStatus;
 
   public static final String SERIALIZED_NAME_BILL_TO_ADDRESS_ID = "billToAddressId";
   @SerializedName(SERIALIZED_NAME_BILL_TO_ADDRESS_ID)
+  @javax.annotation.Nullable
   private String billToAddressId;
 
   public static final String SERIALIZED_NAME_SHIP_TO_INFO = "shipToInfo";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_INFO)
+  @javax.annotation.Nullable
   private OrderModifyResponseShipToInfo shipToInfo;
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<OrderModifyResponseLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_REJECTED_LINE_ITEMS = "rejectedLineItems";
   @SerializedName(SERIALIZED_NAME_REJECTED_LINE_ITEMS)
+  @javax.annotation.Nullable
   private List<OrderModifyResponseRejectedLineItemsInner> rejectedLineItems = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderModifyResponseLinesInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public OrderModifyResponse() {
   }
 
-  public OrderModifyResponse ingramOrderNumber(String ingramOrderNumber) {
+  public OrderModifyResponse ingramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
     return this;
   }
@@ -138,12 +154,12 @@ public class OrderModifyResponse {
     return ingramOrderNumber;
   }
 
-  public void setIngramOrderNumber(String ingramOrderNumber) {
+  public void setIngramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
   }
 
 
-  public OrderModifyResponse changeDescription(String changeDescription) {
+  public OrderModifyResponse changeDescription(@javax.annotation.Nullable String changeDescription) {
     this.changeDescription = changeDescription;
     return this;
   }
@@ -157,12 +173,12 @@ public class OrderModifyResponse {
     return changeDescription;
   }
 
-  public void setChangeDescription(String changeDescription) {
+  public void setChangeDescription(@javax.annotation.Nullable String changeDescription) {
     this.changeDescription = changeDescription;
   }
 
 
-  public OrderModifyResponse orderModifiedDate(String orderModifiedDate) {
+  public OrderModifyResponse orderModifiedDate(@javax.annotation.Nullable String orderModifiedDate) {
     this.orderModifiedDate = orderModifiedDate;
     return this;
   }
@@ -176,12 +192,12 @@ public class OrderModifyResponse {
     return orderModifiedDate;
   }
 
-  public void setOrderModifiedDate(String orderModifiedDate) {
+  public void setOrderModifiedDate(@javax.annotation.Nullable String orderModifiedDate) {
     this.orderModifiedDate = orderModifiedDate;
   }
 
 
-  public OrderModifyResponse customerOrderNumber(String customerOrderNumber) {
+  public OrderModifyResponse customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -195,12 +211,12 @@ public class OrderModifyResponse {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public OrderModifyResponse endCustomerOrderNumber(String endCustomerOrderNumber) {
+  public OrderModifyResponse endCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
     return this;
   }
@@ -214,12 +230,12 @@ public class OrderModifyResponse {
     return endCustomerOrderNumber;
   }
 
-  public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
+  public void setEndCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
   }
 
 
-  public OrderModifyResponse orderTotal(BigDecimal orderTotal) {
+  public OrderModifyResponse orderTotal(@javax.annotation.Nullable BigDecimal orderTotal) {
     this.orderTotal = orderTotal;
     return this;
   }
@@ -233,12 +249,12 @@ public class OrderModifyResponse {
     return orderTotal;
   }
 
-  public void setOrderTotal(BigDecimal orderTotal) {
+  public void setOrderTotal(@javax.annotation.Nullable BigDecimal orderTotal) {
     this.orderTotal = orderTotal;
   }
 
 
-  public OrderModifyResponse notes(String notes) {
+  public OrderModifyResponse notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -252,12 +268,12 @@ public class OrderModifyResponse {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public OrderModifyResponse orderSubTotal(BigDecimal orderSubTotal) {
+  public OrderModifyResponse orderSubTotal(@javax.annotation.Nullable BigDecimal orderSubTotal) {
     this.orderSubTotal = orderSubTotal;
     return this;
   }
@@ -271,12 +287,12 @@ public class OrderModifyResponse {
     return orderSubTotal;
   }
 
-  public void setOrderSubTotal(BigDecimal orderSubTotal) {
+  public void setOrderSubTotal(@javax.annotation.Nullable BigDecimal orderSubTotal) {
     this.orderSubTotal = orderSubTotal;
   }
 
 
-  public OrderModifyResponse freightCharges(BigDecimal freightCharges) {
+  public OrderModifyResponse freightCharges(@javax.annotation.Nullable BigDecimal freightCharges) {
     this.freightCharges = freightCharges;
     return this;
   }
@@ -290,12 +306,12 @@ public class OrderModifyResponse {
     return freightCharges;
   }
 
-  public void setFreightCharges(BigDecimal freightCharges) {
+  public void setFreightCharges(@javax.annotation.Nullable BigDecimal freightCharges) {
     this.freightCharges = freightCharges;
   }
 
 
-  public OrderModifyResponse totalTax(BigDecimal totalTax) {
+  public OrderModifyResponse totalTax(@javax.annotation.Nullable BigDecimal totalTax) {
     this.totalTax = totalTax;
     return this;
   }
@@ -309,12 +325,12 @@ public class OrderModifyResponse {
     return totalTax;
   }
 
-  public void setTotalTax(BigDecimal totalTax) {
+  public void setTotalTax(@javax.annotation.Nullable BigDecimal totalTax) {
     this.totalTax = totalTax;
   }
 
 
-  public OrderModifyResponse orderStatus(String orderStatus) {
+  public OrderModifyResponse orderStatus(@javax.annotation.Nullable String orderStatus) {
     this.orderStatus = orderStatus;
     return this;
   }
@@ -328,12 +344,12 @@ public class OrderModifyResponse {
     return orderStatus;
   }
 
-  public void setOrderStatus(String orderStatus) {
+  public void setOrderStatus(@javax.annotation.Nullable String orderStatus) {
     this.orderStatus = orderStatus;
   }
 
 
-  public OrderModifyResponse billToAddressId(String billToAddressId) {
+  public OrderModifyResponse billToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
     return this;
   }
@@ -347,12 +363,12 @@ public class OrderModifyResponse {
     return billToAddressId;
   }
 
-  public void setBillToAddressId(String billToAddressId) {
+  public void setBillToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
   }
 
 
-  public OrderModifyResponse shipToInfo(OrderModifyResponseShipToInfo shipToInfo) {
+  public OrderModifyResponse shipToInfo(@javax.annotation.Nullable OrderModifyResponseShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
     return this;
   }
@@ -366,12 +382,12 @@ public class OrderModifyResponse {
     return shipToInfo;
   }
 
-  public void setShipToInfo(OrderModifyResponseShipToInfo shipToInfo) {
+  public void setShipToInfo(@javax.annotation.Nullable OrderModifyResponseShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
   }
 
 
-  public OrderModifyResponse lines(List<OrderModifyResponseLinesInner> lines) {
+  public OrderModifyResponse lines(@javax.annotation.Nullable List<OrderModifyResponseLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -393,12 +409,12 @@ public class OrderModifyResponse {
     return lines;
   }
 
-  public void setLines(List<OrderModifyResponseLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<OrderModifyResponseLinesInner> lines) {
     this.lines = lines;
   }
 
 
-  public OrderModifyResponse rejectedLineItems(List<OrderModifyResponseRejectedLineItemsInner> rejectedLineItems) {
+  public OrderModifyResponse rejectedLineItems(@javax.annotation.Nullable List<OrderModifyResponseRejectedLineItemsInner> rejectedLineItems) {
     this.rejectedLineItems = rejectedLineItems;
     return this;
   }
@@ -420,12 +436,12 @@ public class OrderModifyResponse {
     return rejectedLineItems;
   }
 
-  public void setRejectedLineItems(List<OrderModifyResponseRejectedLineItemsInner> rejectedLineItems) {
+  public void setRejectedLineItems(@javax.annotation.Nullable List<OrderModifyResponseRejectedLineItemsInner> rejectedLineItems) {
     this.rejectedLineItems = rejectedLineItems;
   }
 
 
-  public OrderModifyResponse additionalAttributes(List<OrderModifyResponseLinesInnerAdditionalAttributesInner> additionalAttributes) {
+  public OrderModifyResponse additionalAttributes(@javax.annotation.Nullable List<OrderModifyResponseLinesInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -447,7 +463,7 @@ public class OrderModifyResponse {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<OrderModifyResponseLinesInnerAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<OrderModifyResponseLinesInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 

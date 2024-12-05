@@ -51,36 +51,42 @@ import xiresellers.client.JSON;
 /**
  * QuoteSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class QuoteSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
+  @javax.annotation.Nullable
   private Integer recordsFound;
 
   public static final String SERIALIZED_NAME_PAGE_SIZE = "pageSize";
   @SerializedName(SERIALIZED_NAME_PAGE_SIZE)
+  @javax.annotation.Nullable
   private Integer pageSize;
 
   public static final String SERIALIZED_NAME_PAGE_NUMBER = "pageNumber";
   @SerializedName(SERIALIZED_NAME_PAGE_NUMBER)
+  @javax.annotation.Nullable
   private Integer pageNumber;
 
   public static final String SERIALIZED_NAME_QUOTES = "quotes";
   @SerializedName(SERIALIZED_NAME_QUOTES)
+  @javax.annotation.Nullable
   private List<QuoteSearchResponseQuotesInner> quotes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT_PAGE = "nextPage";
   @SerializedName(SERIALIZED_NAME_NEXT_PAGE)
+  @javax.annotation.Nullable
   private String nextPage;
 
   public static final String SERIALIZED_NAME_PREV_PAGE = "prevPage";
   @SerializedName(SERIALIZED_NAME_PREV_PAGE)
+  @javax.annotation.Nullable
   private String prevPage;
 
   public QuoteSearchResponse() {
   }
 
-  public QuoteSearchResponse recordsFound(Integer recordsFound) {
+  public QuoteSearchResponse recordsFound(@javax.annotation.Nullable Integer recordsFound) {
     this.recordsFound = recordsFound;
     return this;
   }
@@ -94,12 +100,12 @@ public class QuoteSearchResponse {
     return recordsFound;
   }
 
-  public void setRecordsFound(Integer recordsFound) {
+  public void setRecordsFound(@javax.annotation.Nullable Integer recordsFound) {
     this.recordsFound = recordsFound;
   }
 
 
-  public QuoteSearchResponse pageSize(Integer pageSize) {
+  public QuoteSearchResponse pageSize(@javax.annotation.Nullable Integer pageSize) {
     this.pageSize = pageSize;
     return this;
   }
@@ -113,12 +119,12 @@ public class QuoteSearchResponse {
     return pageSize;
   }
 
-  public void setPageSize(Integer pageSize) {
+  public void setPageSize(@javax.annotation.Nullable Integer pageSize) {
     this.pageSize = pageSize;
   }
 
 
-  public QuoteSearchResponse pageNumber(Integer pageNumber) {
+  public QuoteSearchResponse pageNumber(@javax.annotation.Nullable Integer pageNumber) {
     this.pageNumber = pageNumber;
     return this;
   }
@@ -132,12 +138,12 @@ public class QuoteSearchResponse {
     return pageNumber;
   }
 
-  public void setPageNumber(Integer pageNumber) {
+  public void setPageNumber(@javax.annotation.Nullable Integer pageNumber) {
     this.pageNumber = pageNumber;
   }
 
 
-  public QuoteSearchResponse quotes(List<QuoteSearchResponseQuotesInner> quotes) {
+  public QuoteSearchResponse quotes(@javax.annotation.Nullable List<QuoteSearchResponseQuotesInner> quotes) {
     this.quotes = quotes;
     return this;
   }
@@ -159,12 +165,12 @@ public class QuoteSearchResponse {
     return quotes;
   }
 
-  public void setQuotes(List<QuoteSearchResponseQuotesInner> quotes) {
+  public void setQuotes(@javax.annotation.Nullable List<QuoteSearchResponseQuotesInner> quotes) {
     this.quotes = quotes;
   }
 
 
-  public QuoteSearchResponse nextPage(String nextPage) {
+  public QuoteSearchResponse nextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
     return this;
   }
@@ -178,12 +184,12 @@ public class QuoteSearchResponse {
     return nextPage;
   }
 
-  public void setNextPage(String nextPage) {
+  public void setNextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
   }
 
 
-  public QuoteSearchResponse prevPage(String prevPage) {
+  public QuoteSearchResponse prevPage(@javax.annotation.Nullable String prevPage) {
     this.prevPage = prevPage;
     return this;
   }
@@ -197,7 +203,7 @@ public class QuoteSearchResponse {
     return prevPage;
   }
 
-  public void setPrevPage(String prevPage) {
+  public void setPrevPage(@javax.annotation.Nullable String prevPage) {
     this.prevPage = prevPage;
   }
 

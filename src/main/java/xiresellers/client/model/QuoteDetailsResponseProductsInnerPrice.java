@@ -54,68 +54,82 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPrice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class QuoteDetailsResponseProductsInnerPrice {
   public static final String SERIALIZED_NAME_QUOTE_PRICE = "quotePrice";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal quotePrice;
 
   public static final String SERIALIZED_NAME_MSRP = "msrp";
   @SerializedName(SERIALIZED_NAME_MSRP)
+  @javax.annotation.Nullable
   private BigDecimal msrp;
 
   public static final String SERIALIZED_NAME_EXTENDED_MSRP = "extendedMsrp";
   @SerializedName(SERIALIZED_NAME_EXTENDED_MSRP)
+  @javax.annotation.Nullable
   private BigDecimal extendedMsrp;
 
   public static final String SERIALIZED_NAME_EXTENDED_QUOTE_PRICE = "extendedQuotePrice";
   @SerializedName(SERIALIZED_NAME_EXTENDED_QUOTE_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal extendedQuotePrice;
 
   public static final String SERIALIZED_NAME_REMAINING_QUANTITY_EXTENDED_MSRP = "remainingQuantityExtendedMsrp";
   @SerializedName(SERIALIZED_NAME_REMAINING_QUANTITY_EXTENDED_MSRP)
+  @javax.annotation.Nullable
   private BigDecimal remainingQuantityExtendedMsrp;
 
   public static final String SERIALIZED_NAME_REMAINING_QUANTITY_EXTENDED_QUOTE_PRICE = "remainingQuantityExtendedQuotePrice";
   @SerializedName(SERIALIZED_NAME_REMAINING_QUANTITY_EXTENDED_QUOTE_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal remainingQuantityExtendedQuotePrice;
 
   public static final String SERIALIZED_NAME_DISCOUNT_OFF_LIST = "discountOffList";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_OFF_LIST)
+  @javax.annotation.Nullable
   private String discountOffList;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_RECURRING_PRICE_MODEL = "recurringPriceModel";
   @SerializedName(SERIALIZED_NAME_RECURRING_PRICE_MODEL)
+  @javax.annotation.Nullable
   private String recurringPriceModel;
 
   public static final String SERIALIZED_NAME_UNIT_OF_MEASURE = "unitOfMeasure";
   @SerializedName(SERIALIZED_NAME_UNIT_OF_MEASURE)
+  @javax.annotation.Nullable
   private String unitOfMeasure;
 
   public static final String SERIALIZED_NAME_TAX = "tax";
   @SerializedName(SERIALIZED_NAME_TAX)
+  @javax.annotation.Nullable
   private BigDecimal tax;
 
   public static final String SERIALIZED_NAME_EXTRAFEES = "extrafees";
   @SerializedName(SERIALIZED_NAME_EXTRAFEES)
+  @javax.annotation.Nullable
   private BigDecimal extrafees;
 
   public static final String SERIALIZED_NAME_EXTRA_FEES_DETAILS = "extraFeesDetails";
   @SerializedName(SERIALIZED_NAME_EXTRA_FEES_DETAILS)
+  @javax.annotation.Nullable
   private List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesDetails = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DISCOUNTS = "discounts";
   @SerializedName(SERIALIZED_NAME_DISCOUNTS)
+  @javax.annotation.Nullable
   private List<QuoteDetailsResponseProductsInnerPriceDiscountsInner> discounts = new ArrayList<>();
 
   public QuoteDetailsResponseProductsInnerPrice() {
   }
 
-  public QuoteDetailsResponseProductsInnerPrice quotePrice(BigDecimal quotePrice) {
+  public QuoteDetailsResponseProductsInnerPrice quotePrice(@javax.annotation.Nullable BigDecimal quotePrice) {
     this.quotePrice = quotePrice;
     return this;
   }
@@ -129,12 +143,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return quotePrice;
   }
 
-  public void setQuotePrice(BigDecimal quotePrice) {
+  public void setQuotePrice(@javax.annotation.Nullable BigDecimal quotePrice) {
     this.quotePrice = quotePrice;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice msrp(BigDecimal msrp) {
+  public QuoteDetailsResponseProductsInnerPrice msrp(@javax.annotation.Nullable BigDecimal msrp) {
     this.msrp = msrp;
     return this;
   }
@@ -148,12 +162,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return msrp;
   }
 
-  public void setMsrp(BigDecimal msrp) {
+  public void setMsrp(@javax.annotation.Nullable BigDecimal msrp) {
     this.msrp = msrp;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice extendedMsrp(BigDecimal extendedMsrp) {
+  public QuoteDetailsResponseProductsInnerPrice extendedMsrp(@javax.annotation.Nullable BigDecimal extendedMsrp) {
     this.extendedMsrp = extendedMsrp;
     return this;
   }
@@ -167,12 +181,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return extendedMsrp;
   }
 
-  public void setExtendedMsrp(BigDecimal extendedMsrp) {
+  public void setExtendedMsrp(@javax.annotation.Nullable BigDecimal extendedMsrp) {
     this.extendedMsrp = extendedMsrp;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice extendedQuotePrice(BigDecimal extendedQuotePrice) {
+  public QuoteDetailsResponseProductsInnerPrice extendedQuotePrice(@javax.annotation.Nullable BigDecimal extendedQuotePrice) {
     this.extendedQuotePrice = extendedQuotePrice;
     return this;
   }
@@ -186,12 +200,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return extendedQuotePrice;
   }
 
-  public void setExtendedQuotePrice(BigDecimal extendedQuotePrice) {
+  public void setExtendedQuotePrice(@javax.annotation.Nullable BigDecimal extendedQuotePrice) {
     this.extendedQuotePrice = extendedQuotePrice;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice remainingQuantityExtendedMsrp(BigDecimal remainingQuantityExtendedMsrp) {
+  public QuoteDetailsResponseProductsInnerPrice remainingQuantityExtendedMsrp(@javax.annotation.Nullable BigDecimal remainingQuantityExtendedMsrp) {
     this.remainingQuantityExtendedMsrp = remainingQuantityExtendedMsrp;
     return this;
   }
@@ -205,12 +219,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return remainingQuantityExtendedMsrp;
   }
 
-  public void setRemainingQuantityExtendedMsrp(BigDecimal remainingQuantityExtendedMsrp) {
+  public void setRemainingQuantityExtendedMsrp(@javax.annotation.Nullable BigDecimal remainingQuantityExtendedMsrp) {
     this.remainingQuantityExtendedMsrp = remainingQuantityExtendedMsrp;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice remainingQuantityExtendedQuotePrice(BigDecimal remainingQuantityExtendedQuotePrice) {
+  public QuoteDetailsResponseProductsInnerPrice remainingQuantityExtendedQuotePrice(@javax.annotation.Nullable BigDecimal remainingQuantityExtendedQuotePrice) {
     this.remainingQuantityExtendedQuotePrice = remainingQuantityExtendedQuotePrice;
     return this;
   }
@@ -224,12 +238,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return remainingQuantityExtendedQuotePrice;
   }
 
-  public void setRemainingQuantityExtendedQuotePrice(BigDecimal remainingQuantityExtendedQuotePrice) {
+  public void setRemainingQuantityExtendedQuotePrice(@javax.annotation.Nullable BigDecimal remainingQuantityExtendedQuotePrice) {
     this.remainingQuantityExtendedQuotePrice = remainingQuantityExtendedQuotePrice;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice discountOffList(String discountOffList) {
+  public QuoteDetailsResponseProductsInnerPrice discountOffList(@javax.annotation.Nullable String discountOffList) {
     this.discountOffList = discountOffList;
     return this;
   }
@@ -243,12 +257,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return discountOffList;
   }
 
-  public void setDiscountOffList(String discountOffList) {
+  public void setDiscountOffList(@javax.annotation.Nullable String discountOffList) {
     this.discountOffList = discountOffList;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice type(String type) {
+  public QuoteDetailsResponseProductsInnerPrice type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -262,12 +276,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice recurringPriceModel(String recurringPriceModel) {
+  public QuoteDetailsResponseProductsInnerPrice recurringPriceModel(@javax.annotation.Nullable String recurringPriceModel) {
     this.recurringPriceModel = recurringPriceModel;
     return this;
   }
@@ -281,12 +295,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return recurringPriceModel;
   }
 
-  public void setRecurringPriceModel(String recurringPriceModel) {
+  public void setRecurringPriceModel(@javax.annotation.Nullable String recurringPriceModel) {
     this.recurringPriceModel = recurringPriceModel;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice unitOfMeasure(String unitOfMeasure) {
+  public QuoteDetailsResponseProductsInnerPrice unitOfMeasure(@javax.annotation.Nullable String unitOfMeasure) {
     this.unitOfMeasure = unitOfMeasure;
     return this;
   }
@@ -300,12 +314,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return unitOfMeasure;
   }
 
-  public void setUnitOfMeasure(String unitOfMeasure) {
+  public void setUnitOfMeasure(@javax.annotation.Nullable String unitOfMeasure) {
     this.unitOfMeasure = unitOfMeasure;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice tax(BigDecimal tax) {
+  public QuoteDetailsResponseProductsInnerPrice tax(@javax.annotation.Nullable BigDecimal tax) {
     this.tax = tax;
     return this;
   }
@@ -319,12 +333,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return tax;
   }
 
-  public void setTax(BigDecimal tax) {
+  public void setTax(@javax.annotation.Nullable BigDecimal tax) {
     this.tax = tax;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice extrafees(BigDecimal extrafees) {
+  public QuoteDetailsResponseProductsInnerPrice extrafees(@javax.annotation.Nullable BigDecimal extrafees) {
     this.extrafees = extrafees;
     return this;
   }
@@ -338,12 +352,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return extrafees;
   }
 
-  public void setExtrafees(BigDecimal extrafees) {
+  public void setExtrafees(@javax.annotation.Nullable BigDecimal extrafees) {
     this.extrafees = extrafees;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice extraFeesDetails(List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesDetails) {
+  public QuoteDetailsResponseProductsInnerPrice extraFeesDetails(@javax.annotation.Nullable List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesDetails) {
     this.extraFeesDetails = extraFeesDetails;
     return this;
   }
@@ -365,12 +379,12 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return extraFeesDetails;
   }
 
-  public void setExtraFeesDetails(List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesDetails) {
+  public void setExtraFeesDetails(@javax.annotation.Nullable List<QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner> extraFeesDetails) {
     this.extraFeesDetails = extraFeesDetails;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPrice discounts(List<QuoteDetailsResponseProductsInnerPriceDiscountsInner> discounts) {
+  public QuoteDetailsResponseProductsInnerPrice discounts(@javax.annotation.Nullable List<QuoteDetailsResponseProductsInnerPriceDiscountsInner> discounts) {
     this.discounts = discounts;
     return this;
   }
@@ -392,7 +406,7 @@ public class QuoteDetailsResponseProductsInnerPrice {
     return discounts;
   }
 
-  public void setDiscounts(List<QuoteDetailsResponseProductsInnerPriceDiscountsInner> discounts) {
+  public void setDiscounts(@javax.annotation.Nullable List<QuoteDetailsResponseProductsInnerPriceDiscountsInner> discounts) {
     this.discounts = discounts;
   }
 

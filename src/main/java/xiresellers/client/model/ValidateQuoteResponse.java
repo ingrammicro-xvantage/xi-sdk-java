@@ -52,44 +52,52 @@ import xiresellers.client.JSON;
 /**
  * ValidateQuoteResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ValidateQuoteResponse {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
+  @javax.annotation.Nullable
   private String quoteNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
+  @javax.annotation.Nullable
   private String vendorName;
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES = "vmfAdditionalAttributes";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<ValidateQuoteResponseVmfAdditionalAttributesInner> vmfAdditionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<ValidateQuoteResponseLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_QUOTE_TYPE = "quoteType";
   @SerializedName(SERIALIZED_NAME_QUOTE_TYPE)
+  @javax.annotation.Nullable
   private Integer quoteType;
 
   public static final String SERIALIZED_NAME_VENDOR_GROUP_NAME = "vendorGroupName";
   @SerializedName(SERIALIZED_NAME_VENDOR_GROUP_NAME)
+  @javax.annotation.Nullable
   private String vendorGroupName;
 
   public static final String SERIALIZED_NAME_VENDOR_QUOTE_NUMBER = "vendorQuoteNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_QUOTE_NUMBER)
+  @javax.annotation.Nullable
   private String vendorQuoteNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_MASTER_NUMBER = "vendorMasterNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_MASTER_NUMBER)
+  @javax.annotation.Nullable
   private String vendorMasterNumber;
 
   public ValidateQuoteResponse() {
   }
 
-  public ValidateQuoteResponse quoteNumber(String quoteNumber) {
+  public ValidateQuoteResponse quoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
     return this;
   }
@@ -103,12 +111,12 @@ public class ValidateQuoteResponse {
     return quoteNumber;
   }
 
-  public void setQuoteNumber(String quoteNumber) {
+  public void setQuoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
   }
 
 
-  public ValidateQuoteResponse vendorName(String vendorName) {
+  public ValidateQuoteResponse vendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
     return this;
   }
@@ -122,12 +130,12 @@ public class ValidateQuoteResponse {
     return vendorName;
   }
 
-  public void setVendorName(String vendorName) {
+  public void setVendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
   }
 
 
-  public ValidateQuoteResponse vmfAdditionalAttributes(List<ValidateQuoteResponseVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
+  public ValidateQuoteResponse vmfAdditionalAttributes(@javax.annotation.Nullable List<ValidateQuoteResponseVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
     this.vmfAdditionalAttributes = vmfAdditionalAttributes;
     return this;
   }
@@ -149,12 +157,12 @@ public class ValidateQuoteResponse {
     return vmfAdditionalAttributes;
   }
 
-  public void setVmfAdditionalAttributes(List<ValidateQuoteResponseVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
+  public void setVmfAdditionalAttributes(@javax.annotation.Nullable List<ValidateQuoteResponseVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
     this.vmfAdditionalAttributes = vmfAdditionalAttributes;
   }
 
 
-  public ValidateQuoteResponse lines(List<ValidateQuoteResponseLinesInner> lines) {
+  public ValidateQuoteResponse lines(@javax.annotation.Nullable List<ValidateQuoteResponseLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -176,12 +184,12 @@ public class ValidateQuoteResponse {
     return lines;
   }
 
-  public void setLines(List<ValidateQuoteResponseLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<ValidateQuoteResponseLinesInner> lines) {
     this.lines = lines;
   }
 
 
-  public ValidateQuoteResponse quoteType(Integer quoteType) {
+  public ValidateQuoteResponse quoteType(@javax.annotation.Nullable Integer quoteType) {
     this.quoteType = quoteType;
     return this;
   }
@@ -195,12 +203,12 @@ public class ValidateQuoteResponse {
     return quoteType;
   }
 
-  public void setQuoteType(Integer quoteType) {
+  public void setQuoteType(@javax.annotation.Nullable Integer quoteType) {
     this.quoteType = quoteType;
   }
 
 
-  public ValidateQuoteResponse vendorGroupName(String vendorGroupName) {
+  public ValidateQuoteResponse vendorGroupName(@javax.annotation.Nullable String vendorGroupName) {
     this.vendorGroupName = vendorGroupName;
     return this;
   }
@@ -214,12 +222,12 @@ public class ValidateQuoteResponse {
     return vendorGroupName;
   }
 
-  public void setVendorGroupName(String vendorGroupName) {
+  public void setVendorGroupName(@javax.annotation.Nullable String vendorGroupName) {
     this.vendorGroupName = vendorGroupName;
   }
 
 
-  public ValidateQuoteResponse vendorQuoteNumber(String vendorQuoteNumber) {
+  public ValidateQuoteResponse vendorQuoteNumber(@javax.annotation.Nullable String vendorQuoteNumber) {
     this.vendorQuoteNumber = vendorQuoteNumber;
     return this;
   }
@@ -233,12 +241,12 @@ public class ValidateQuoteResponse {
     return vendorQuoteNumber;
   }
 
-  public void setVendorQuoteNumber(String vendorQuoteNumber) {
+  public void setVendorQuoteNumber(@javax.annotation.Nullable String vendorQuoteNumber) {
     this.vendorQuoteNumber = vendorQuoteNumber;
   }
 
 
-  public ValidateQuoteResponse vendorMasterNumber(String vendorMasterNumber) {
+  public ValidateQuoteResponse vendorMasterNumber(@javax.annotation.Nullable String vendorMasterNumber) {
     this.vendorMasterNumber = vendorMasterNumber;
     return this;
   }
@@ -252,7 +260,7 @@ public class ValidateQuoteResponse {
     return vendorMasterNumber;
   }
 
-  public void setVendorMasterNumber(String vendorMasterNumber) {
+  public void setVendorMasterNumber(@javax.annotation.Nullable String vendorMasterNumber) {
     this.vendorMasterNumber = vendorMasterNumber;
   }
 

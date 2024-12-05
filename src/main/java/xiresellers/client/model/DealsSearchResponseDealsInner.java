@@ -49,36 +49,42 @@ import xiresellers.client.JSON;
 /**
  * DealsSearchResponseDealsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class DealsSearchResponseDealsInner {
   public static final String SERIALIZED_NAME_DEAL_ID = "dealId";
   @SerializedName(SERIALIZED_NAME_DEAL_ID)
+  @javax.annotation.Nullable
   private String dealId;
 
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
+  @javax.annotation.Nullable
   private String version;
 
   public static final String SERIALIZED_NAME_END_USER = "endUser";
   @SerializedName(SERIALIZED_NAME_END_USER)
+  @javax.annotation.Nullable
   private String endUser;
 
   public static final String SERIALIZED_NAME_VENDOR = "vendor";
   @SerializedName(SERIALIZED_NAME_VENDOR)
+  @javax.annotation.Nullable
   private String vendor;
 
   public static final String SERIALIZED_NAME_DEAL_EXPIRY_DATE = "dealExpiryDate";
   @SerializedName(SERIALIZED_NAME_DEAL_EXPIRY_DATE)
+  @javax.annotation.Nullable
   private String dealExpiryDate;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private RenewalsSearchResponseRenewalsInnerLinksInner links;
 
   public DealsSearchResponseDealsInner() {
   }
 
-  public DealsSearchResponseDealsInner dealId(String dealId) {
+  public DealsSearchResponseDealsInner dealId(@javax.annotation.Nullable String dealId) {
     this.dealId = dealId;
     return this;
   }
@@ -92,12 +98,12 @@ public class DealsSearchResponseDealsInner {
     return dealId;
   }
 
-  public void setDealId(String dealId) {
+  public void setDealId(@javax.annotation.Nullable String dealId) {
     this.dealId = dealId;
   }
 
 
-  public DealsSearchResponseDealsInner version(String version) {
+  public DealsSearchResponseDealsInner version(@javax.annotation.Nullable String version) {
     this.version = version;
     return this;
   }
@@ -111,12 +117,12 @@ public class DealsSearchResponseDealsInner {
     return version;
   }
 
-  public void setVersion(String version) {
+  public void setVersion(@javax.annotation.Nullable String version) {
     this.version = version;
   }
 
 
-  public DealsSearchResponseDealsInner endUser(String endUser) {
+  public DealsSearchResponseDealsInner endUser(@javax.annotation.Nullable String endUser) {
     this.endUser = endUser;
     return this;
   }
@@ -130,12 +136,12 @@ public class DealsSearchResponseDealsInner {
     return endUser;
   }
 
-  public void setEndUser(String endUser) {
+  public void setEndUser(@javax.annotation.Nullable String endUser) {
     this.endUser = endUser;
   }
 
 
-  public DealsSearchResponseDealsInner vendor(String vendor) {
+  public DealsSearchResponseDealsInner vendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
     return this;
   }
@@ -149,12 +155,12 @@ public class DealsSearchResponseDealsInner {
     return vendor;
   }
 
-  public void setVendor(String vendor) {
+  public void setVendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
   }
 
 
-  public DealsSearchResponseDealsInner dealExpiryDate(String dealExpiryDate) {
+  public DealsSearchResponseDealsInner dealExpiryDate(@javax.annotation.Nullable String dealExpiryDate) {
     this.dealExpiryDate = dealExpiryDate;
     return this;
   }
@@ -168,12 +174,12 @@ public class DealsSearchResponseDealsInner {
     return dealExpiryDate;
   }
 
-  public void setDealExpiryDate(String dealExpiryDate) {
+  public void setDealExpiryDate(@javax.annotation.Nullable String dealExpiryDate) {
     this.dealExpiryDate = dealExpiryDate;
   }
 
 
-  public DealsSearchResponseDealsInner links(RenewalsSearchResponseRenewalsInnerLinksInner links) {
+  public DealsSearchResponseDealsInner links(@javax.annotation.Nullable RenewalsSearchResponseRenewalsInnerLinksInner links) {
     this.links = links;
     return this;
   }
@@ -187,7 +193,7 @@ public class DealsSearchResponseDealsInner {
     return links;
   }
 
-  public void setLinks(RenewalsSearchResponseRenewalsInnerLinksInner links) {
+  public void setLinks(@javax.annotation.Nullable RenewalsSearchResponseRenewalsInnerLinksInner links) {
     this.links = links;
   }
 

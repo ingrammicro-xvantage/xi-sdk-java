@@ -51,36 +51,42 @@ import xiresellers.client.JSON;
 /**
  * DealsSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class DealsSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
+  @javax.annotation.Nullable
   private Integer recordsFound;
 
   public static final String SERIALIZED_NAME_PAGE_SIZE = "pageSize";
   @SerializedName(SERIALIZED_NAME_PAGE_SIZE)
+  @javax.annotation.Nullable
   private Integer pageSize;
 
   public static final String SERIALIZED_NAME_PAGE_NUMBER = "pageNumber";
   @SerializedName(SERIALIZED_NAME_PAGE_NUMBER)
+  @javax.annotation.Nullable
   private Integer pageNumber;
 
   public static final String SERIALIZED_NAME_DEALS = "deals";
   @SerializedName(SERIALIZED_NAME_DEALS)
+  @javax.annotation.Nullable
   private List<DealsSearchResponseDealsInner> deals = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT_PAGE = "nextPage";
   @SerializedName(SERIALIZED_NAME_NEXT_PAGE)
+  @javax.annotation.Nullable
   private String nextPage;
 
   public static final String SERIALIZED_NAME_PREVIOUS_PAGE = "previousPage";
   @SerializedName(SERIALIZED_NAME_PREVIOUS_PAGE)
+  @javax.annotation.Nullable
   private String previousPage;
 
   public DealsSearchResponse() {
   }
 
-  public DealsSearchResponse recordsFound(Integer recordsFound) {
+  public DealsSearchResponse recordsFound(@javax.annotation.Nullable Integer recordsFound) {
     this.recordsFound = recordsFound;
     return this;
   }
@@ -94,12 +100,12 @@ public class DealsSearchResponse {
     return recordsFound;
   }
 
-  public void setRecordsFound(Integer recordsFound) {
+  public void setRecordsFound(@javax.annotation.Nullable Integer recordsFound) {
     this.recordsFound = recordsFound;
   }
 
 
-  public DealsSearchResponse pageSize(Integer pageSize) {
+  public DealsSearchResponse pageSize(@javax.annotation.Nullable Integer pageSize) {
     this.pageSize = pageSize;
     return this;
   }
@@ -113,12 +119,12 @@ public class DealsSearchResponse {
     return pageSize;
   }
 
-  public void setPageSize(Integer pageSize) {
+  public void setPageSize(@javax.annotation.Nullable Integer pageSize) {
     this.pageSize = pageSize;
   }
 
 
-  public DealsSearchResponse pageNumber(Integer pageNumber) {
+  public DealsSearchResponse pageNumber(@javax.annotation.Nullable Integer pageNumber) {
     this.pageNumber = pageNumber;
     return this;
   }
@@ -132,12 +138,12 @@ public class DealsSearchResponse {
     return pageNumber;
   }
 
-  public void setPageNumber(Integer pageNumber) {
+  public void setPageNumber(@javax.annotation.Nullable Integer pageNumber) {
     this.pageNumber = pageNumber;
   }
 
 
-  public DealsSearchResponse deals(List<DealsSearchResponseDealsInner> deals) {
+  public DealsSearchResponse deals(@javax.annotation.Nullable List<DealsSearchResponseDealsInner> deals) {
     this.deals = deals;
     return this;
   }
@@ -159,12 +165,12 @@ public class DealsSearchResponse {
     return deals;
   }
 
-  public void setDeals(List<DealsSearchResponseDealsInner> deals) {
+  public void setDeals(@javax.annotation.Nullable List<DealsSearchResponseDealsInner> deals) {
     this.deals = deals;
   }
 
 
-  public DealsSearchResponse nextPage(String nextPage) {
+  public DealsSearchResponse nextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
     return this;
   }
@@ -178,12 +184,12 @@ public class DealsSearchResponse {
     return nextPage;
   }
 
-  public void setNextPage(String nextPage) {
+  public void setNextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
   }
 
 
-  public DealsSearchResponse previousPage(String previousPage) {
+  public DealsSearchResponse previousPage(@javax.annotation.Nullable String previousPage) {
     this.previousPage = previousPage;
     return this;
   }
@@ -197,7 +203,7 @@ public class DealsSearchResponse {
     return previousPage;
   }
 
-  public void setPreviousPage(String previousPage) {
+  public void setPreviousPage(@javax.annotation.Nullable String previousPage) {
     this.previousPage = previousPage;
   }
 

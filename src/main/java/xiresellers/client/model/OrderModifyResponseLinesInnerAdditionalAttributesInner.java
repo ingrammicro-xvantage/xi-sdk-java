@@ -48,20 +48,22 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyResponseLinesInnerAdditionalAttributesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderModifyResponseLinesInnerAdditionalAttributesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_NAME = "attributeName";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_NAME)
+  @javax.annotation.Nullable
   private String attributeName;
 
   public static final String SERIALIZED_NAME_ATTRIBUTE_VALUE = "attributeValue";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_VALUE)
+  @javax.annotation.Nullable
   private String attributeValue;
 
   public OrderModifyResponseLinesInnerAdditionalAttributesInner() {
   }
 
-  public OrderModifyResponseLinesInnerAdditionalAttributesInner attributeName(String attributeName) {
+  public OrderModifyResponseLinesInnerAdditionalAttributesInner attributeName(@javax.annotation.Nullable String attributeName) {
     this.attributeName = attributeName;
     return this;
   }
@@ -75,12 +77,12 @@ public class OrderModifyResponseLinesInnerAdditionalAttributesInner {
     return attributeName;
   }
 
-  public void setAttributeName(String attributeName) {
+  public void setAttributeName(@javax.annotation.Nullable String attributeName) {
     this.attributeName = attributeName;
   }
 
 
-  public OrderModifyResponseLinesInnerAdditionalAttributesInner attributeValue(String attributeValue) {
+  public OrderModifyResponseLinesInnerAdditionalAttributesInner attributeValue(@javax.annotation.Nullable String attributeValue) {
     this.attributeValue = attributeValue;
     return this;
   }
@@ -94,7 +96,7 @@ public class OrderModifyResponseLinesInnerAdditionalAttributesInner {
     return attributeValue;
   }
 
-  public void setAttributeValue(String attributeValue) {
+  public void setAttributeValue(@javax.annotation.Nullable String attributeValue) {
     this.attributeValue = attributeValue;
   }
 

@@ -48,28 +48,32 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseFxRateInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceDetailsv61ResponseFxRateInfo {
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_COMPANY_CURRENCY = "companyCurrency";
   @SerializedName(SERIALIZED_NAME_COMPANY_CURRENCY)
+  @javax.annotation.Nullable
   private String companyCurrency;
 
   public static final String SERIALIZED_NAME_INVOICE_CURRENCY = "invoiceCurrency";
   @SerializedName(SERIALIZED_NAME_INVOICE_CURRENCY)
+  @javax.annotation.Nullable
   private String invoiceCurrency;
 
   public static final String SERIALIZED_NAME_CURRENCY_FX_RATE = "currencyFxRate";
   @SerializedName(SERIALIZED_NAME_CURRENCY_FX_RATE)
+  @javax.annotation.Nullable
   private Double currencyFxRate;
 
   public InvoiceDetailsv61ResponseFxRateInfo() {
   }
 
-  public InvoiceDetailsv61ResponseFxRateInfo currencyCode(String currencyCode) {
+  public InvoiceDetailsv61ResponseFxRateInfo currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -83,12 +87,12 @@ public class InvoiceDetailsv61ResponseFxRateInfo {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public InvoiceDetailsv61ResponseFxRateInfo companyCurrency(String companyCurrency) {
+  public InvoiceDetailsv61ResponseFxRateInfo companyCurrency(@javax.annotation.Nullable String companyCurrency) {
     this.companyCurrency = companyCurrency;
     return this;
   }
@@ -102,12 +106,12 @@ public class InvoiceDetailsv61ResponseFxRateInfo {
     return companyCurrency;
   }
 
-  public void setCompanyCurrency(String companyCurrency) {
+  public void setCompanyCurrency(@javax.annotation.Nullable String companyCurrency) {
     this.companyCurrency = companyCurrency;
   }
 
 
-  public InvoiceDetailsv61ResponseFxRateInfo invoiceCurrency(String invoiceCurrency) {
+  public InvoiceDetailsv61ResponseFxRateInfo invoiceCurrency(@javax.annotation.Nullable String invoiceCurrency) {
     this.invoiceCurrency = invoiceCurrency;
     return this;
   }
@@ -121,12 +125,12 @@ public class InvoiceDetailsv61ResponseFxRateInfo {
     return invoiceCurrency;
   }
 
-  public void setInvoiceCurrency(String invoiceCurrency) {
+  public void setInvoiceCurrency(@javax.annotation.Nullable String invoiceCurrency) {
     this.invoiceCurrency = invoiceCurrency;
   }
 
 
-  public InvoiceDetailsv61ResponseFxRateInfo currencyFxRate(Double currencyFxRate) {
+  public InvoiceDetailsv61ResponseFxRateInfo currencyFxRate(@javax.annotation.Nullable Double currencyFxRate) {
     this.currencyFxRate = currencyFxRate;
     return this;
   }
@@ -140,7 +144,7 @@ public class InvoiceDetailsv61ResponseFxRateInfo {
     return currencyFxRate;
   }
 
-  public void setCurrencyFxRate(Double currencyFxRate) {
+  public void setCurrencyFxRate(@javax.annotation.Nullable Double currencyFxRate) {
     this.currencyFxRate = currencyFxRate;
   }
 

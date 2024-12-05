@@ -51,40 +51,47 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner {
   public static final String SERIALIZED_NAME_LOCATION = "location";
   @SerializedName(SERIALIZED_NAME_LOCATION)
+  @javax.annotation.Nullable
   private String location;
 
   public static final String SERIALIZED_NAME_WAREHOUSE_ID = "warehouseId";
   @SerializedName(SERIALIZED_NAME_WAREHOUSE_ID)
+  @javax.annotation.Nullable
   private String warehouseId;
 
   public static final String SERIALIZED_NAME_QUANTITY_AVAILABLE = "quantityAvailable";
   @SerializedName(SERIALIZED_NAME_QUANTITY_AVAILABLE)
+  @javax.annotation.Nullable
   private Integer quantityAvailable;
 
   public static final String SERIALIZED_NAME_QUANTITY_BACKORDERED = "quantityBackordered";
   @SerializedName(SERIALIZED_NAME_QUANTITY_BACKORDERED)
+  @javax.annotation.Nullable
   private Integer quantityBackordered;
 
   public static final String SERIALIZED_NAME_QUANTITY_BACKORDERED_ETA = "quantityBackorderedEta";
   @SerializedName(SERIALIZED_NAME_QUANTITY_BACKORDERED_ETA)
+  @javax.annotation.Nullable
   private String quantityBackorderedEta;
 
   public static final String SERIALIZED_NAME_QUANTITY_ON_ORDER = "quantityOnOrder";
   @SerializedName(SERIALIZED_NAME_QUANTITY_ON_ORDER)
+  @javax.annotation.Nullable
   private Integer quantityOnOrder;
 
   public static final String SERIALIZED_NAME_BACK_ORDER_INFO = "backOrderInfo";
   @SerializedName(SERIALIZED_NAME_BACK_ORDER_INFO)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner> backOrderInfo = new ArrayList<>();
 
   public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner location(String location) {
+  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner location(@javax.annotation.Nullable String location) {
     this.location = location;
     return this;
   }
@@ -98,12 +105,12 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     return location;
   }
 
-  public void setLocation(String location) {
+  public void setLocation(@javax.annotation.Nullable String location) {
     this.location = location;
   }
 
 
-  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner warehouseId(String warehouseId) {
+  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner warehouseId(@javax.annotation.Nullable String warehouseId) {
     this.warehouseId = warehouseId;
     return this;
   }
@@ -117,12 +124,12 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     return warehouseId;
   }
 
-  public void setWarehouseId(String warehouseId) {
+  public void setWarehouseId(@javax.annotation.Nullable String warehouseId) {
     this.warehouseId = warehouseId;
   }
 
 
-  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner quantityAvailable(Integer quantityAvailable) {
+  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner quantityAvailable(@javax.annotation.Nullable Integer quantityAvailable) {
     this.quantityAvailable = quantityAvailable;
     return this;
   }
@@ -136,12 +143,12 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     return quantityAvailable;
   }
 
-  public void setQuantityAvailable(Integer quantityAvailable) {
+  public void setQuantityAvailable(@javax.annotation.Nullable Integer quantityAvailable) {
     this.quantityAvailable = quantityAvailable;
   }
 
 
-  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner quantityBackordered(Integer quantityBackordered) {
+  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner quantityBackordered(@javax.annotation.Nullable Integer quantityBackordered) {
     this.quantityBackordered = quantityBackordered;
     return this;
   }
@@ -155,12 +162,12 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     return quantityBackordered;
   }
 
-  public void setQuantityBackordered(Integer quantityBackordered) {
+  public void setQuantityBackordered(@javax.annotation.Nullable Integer quantityBackordered) {
     this.quantityBackordered = quantityBackordered;
   }
 
 
-  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner quantityBackorderedEta(String quantityBackorderedEta) {
+  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner quantityBackorderedEta(@javax.annotation.Nullable String quantityBackorderedEta) {
     this.quantityBackorderedEta = quantityBackorderedEta;
     return this;
   }
@@ -174,12 +181,12 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     return quantityBackorderedEta;
   }
 
-  public void setQuantityBackorderedEta(String quantityBackorderedEta) {
+  public void setQuantityBackorderedEta(@javax.annotation.Nullable String quantityBackorderedEta) {
     this.quantityBackorderedEta = quantityBackorderedEta;
   }
 
 
-  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner quantityOnOrder(Integer quantityOnOrder) {
+  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner quantityOnOrder(@javax.annotation.Nullable Integer quantityOnOrder) {
     this.quantityOnOrder = quantityOnOrder;
     return this;
   }
@@ -193,12 +200,12 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     return quantityOnOrder;
   }
 
-  public void setQuantityOnOrder(Integer quantityOnOrder) {
+  public void setQuantityOnOrder(@javax.annotation.Nullable Integer quantityOnOrder) {
     this.quantityOnOrder = quantityOnOrder;
   }
 
 
-  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner backOrderInfo(List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner> backOrderInfo) {
+  public PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner backOrderInfo(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner> backOrderInfo) {
     this.backOrderInfo = backOrderInfo;
     return this;
   }
@@ -220,7 +227,7 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
     return backOrderInfo;
   }
 
-  public void setBackOrderInfo(List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner> backOrderInfo) {
+  public void setBackOrderInfo(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner> backOrderInfo) {
     this.backOrderInfo = backOrderInfo;
   }
 

@@ -48,32 +48,37 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
+  @javax.annotation.Nullable
   private String carrierCode;
 
   public static final String SERIALIZED_NAME_SHIP_VIA = "shipVia";
   @SerializedName(SERIALIZED_NAME_SHIP_VIA)
+  @javax.annotation.Nullable
   private String shipVia;
 
   public static final String SERIALIZED_NAME_CARRIER_MODE = "carrierMode";
   @SerializedName(SERIALIZED_NAME_CARRIER_MODE)
+  @javax.annotation.Nullable
   private String carrierMode;
 
   public static final String SERIALIZED_NAME_ESTIMATED_FREIGHT_CHARGE = "estimatedFreightCharge";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_FREIGHT_CHARGE)
+  @javax.annotation.Nullable
   private String estimatedFreightCharge;
 
   public static final String SERIALIZED_NAME_DAYS_IN_TRANSIT = "daysInTransit";
   @SerializedName(SERIALIZED_NAME_DAYS_IN_TRANSIT)
+  @javax.annotation.Nullable
   private String daysInTransit;
 
   public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner() {
   }
 
-  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner carrierCode(String carrierCode) {
+  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner carrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
     return this;
   }
@@ -87,12 +92,12 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
     return carrierCode;
   }
 
-  public void setCarrierCode(String carrierCode) {
+  public void setCarrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner shipVia(String shipVia) {
+  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner shipVia(@javax.annotation.Nullable String shipVia) {
     this.shipVia = shipVia;
     return this;
   }
@@ -106,12 +111,12 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
     return shipVia;
   }
 
-  public void setShipVia(String shipVia) {
+  public void setShipVia(@javax.annotation.Nullable String shipVia) {
     this.shipVia = shipVia;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner carrierMode(String carrierMode) {
+  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner carrierMode(@javax.annotation.Nullable String carrierMode) {
     this.carrierMode = carrierMode;
     return this;
   }
@@ -125,12 +130,12 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
     return carrierMode;
   }
 
-  public void setCarrierMode(String carrierMode) {
+  public void setCarrierMode(@javax.annotation.Nullable String carrierMode) {
     this.carrierMode = carrierMode;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner estimatedFreightCharge(String estimatedFreightCharge) {
+  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner estimatedFreightCharge(@javax.annotation.Nullable String estimatedFreightCharge) {
     this.estimatedFreightCharge = estimatedFreightCharge;
     return this;
   }
@@ -144,12 +149,12 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
     return estimatedFreightCharge;
   }
 
-  public void setEstimatedFreightCharge(String estimatedFreightCharge) {
+  public void setEstimatedFreightCharge(@javax.annotation.Nullable String estimatedFreightCharge) {
     this.estimatedFreightCharge = estimatedFreightCharge;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner daysInTransit(String daysInTransit) {
+  public FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner daysInTransit(@javax.annotation.Nullable String daysInTransit) {
     this.daysInTransit = daysInTransit;
     return this;
   }
@@ -163,7 +168,7 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
     return daysInTransit;
   }
 
-  public void setDaysInTransit(String daysInTransit) {
+  public void setDaysInTransit(@javax.annotation.Nullable String daysInTransit) {
     this.daysInTransit = daysInTransit;
   }
 

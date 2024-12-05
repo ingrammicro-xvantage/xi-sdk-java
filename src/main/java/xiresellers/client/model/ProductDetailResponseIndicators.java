@@ -48,136 +48,167 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseIndicators
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductDetailResponseIndicators {
   public static final String SERIALIZED_NAME_HAS_WARRANTY = "hasWarranty";
   @SerializedName(SERIALIZED_NAME_HAS_WARRANTY)
+  @javax.annotation.Nullable
   private Boolean hasWarranty;
 
   public static final String SERIALIZED_NAME_IS_NEW_PRODUCT = "isNewProduct";
   @SerializedName(SERIALIZED_NAME_IS_NEW_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean isNewProduct;
 
   public static final String SERIALIZED_NAME_HAS_RETURN_LIMITS = "HasReturnLimits";
   @SerializedName(SERIALIZED_NAME_HAS_RETURN_LIMITS)
+  @javax.annotation.Nullable
   private Boolean hasReturnLimits;
 
   public static final String SERIALIZED_NAME_IS_BACK_ORDER_ALLOWED = "IsBackOrderAllowed";
   @SerializedName(SERIALIZED_NAME_IS_BACK_ORDER_ALLOWED)
+  @javax.annotation.Nullable
   private Boolean isBackOrderAllowed;
 
   public static final String SERIALIZED_NAME_IS_SHIPPED_FROM_PARTNER = "isShippedFromPartner";
   @SerializedName(SERIALIZED_NAME_IS_SHIPPED_FROM_PARTNER)
+  @javax.annotation.Nullable
   private Boolean isShippedFromPartner;
 
   public static final String SERIALIZED_NAME_IS_REPLACEMENT_PRODUCT = "isReplacementProduct";
   @SerializedName(SERIALIZED_NAME_IS_REPLACEMENT_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean isReplacementProduct;
 
   public static final String SERIALIZED_NAME_IS_DIRECTSHIP = "isDirectship";
   @SerializedName(SERIALIZED_NAME_IS_DIRECTSHIP)
+  @javax.annotation.Nullable
   private Boolean isDirectship;
 
   public static final String SERIALIZED_NAME_IS_DOWNLOADABLE = "isDownloadable";
   @SerializedName(SERIALIZED_NAME_IS_DOWNLOADABLE)
+  @javax.annotation.Nullable
   private Boolean isDownloadable;
 
   public static final String SERIALIZED_NAME_IS_DIGITAL_TYPE = "isDigitalType";
   @SerializedName(SERIALIZED_NAME_IS_DIGITAL_TYPE)
+  @javax.annotation.Nullable
   private Boolean isDigitalType;
 
   public static final String SERIALIZED_NAME_SKU_TYPE = "skuType";
   @SerializedName(SERIALIZED_NAME_SKU_TYPE)
+  @javax.annotation.Nullable
   private String skuType;
 
   public static final String SERIALIZED_NAME_HAS_STD_SPECIAL_PRICE = "hasStdSpecialPrice";
   @SerializedName(SERIALIZED_NAME_HAS_STD_SPECIAL_PRICE)
+  @javax.annotation.Nullable
   private Boolean hasStdSpecialPrice;
 
   public static final String SERIALIZED_NAME_HAS_ACOP_SPECIAL_PRICE = "hasAcopSpecialPrice";
   @SerializedName(SERIALIZED_NAME_HAS_ACOP_SPECIAL_PRICE)
+  @javax.annotation.Nullable
   private Boolean hasAcopSpecialPrice;
 
   public static final String SERIALIZED_NAME_HAS_ACOP_QUANTITY_BREAK = "hasAcopQuantityBreak";
   @SerializedName(SERIALIZED_NAME_HAS_ACOP_QUANTITY_BREAK)
+  @javax.annotation.Nullable
   private Boolean hasAcopQuantityBreak;
 
   public static final String SERIALIZED_NAME_HAS_STD_WEB_DISCOUNT = "hasStdWebDiscount";
   @SerializedName(SERIALIZED_NAME_HAS_STD_WEB_DISCOUNT)
+  @javax.annotation.Nullable
   private Boolean hasStdWebDiscount;
 
   public static final String SERIALIZED_NAME_HAS_SPECIAL_BID = "hasSpecialBid";
   @SerializedName(SERIALIZED_NAME_HAS_SPECIAL_BID)
+  @javax.annotation.Nullable
   private Boolean hasSpecialBid;
 
   public static final String SERIALIZED_NAME_IS_EXPORTABLE_TO_COUNTRY = "isExportableToCountry";
   @SerializedName(SERIALIZED_NAME_IS_EXPORTABLE_TO_COUNTRY)
+  @javax.annotation.Nullable
   private Boolean isExportableToCountry;
 
   public static final String SERIALIZED_NAME_IS_DISCONTINUED_PRODUCT = "isDiscontinuedProduct";
   @SerializedName(SERIALIZED_NAME_IS_DISCONTINUED_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean isDiscontinuedProduct;
 
   public static final String SERIALIZED_NAME_IS_REFURBISHED_PRODUCT = "isRefurbishedProduct";
   @SerializedName(SERIALIZED_NAME_IS_REFURBISHED_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean isRefurbishedProduct;
 
   public static final String SERIALIZED_NAME_IS_RETURNABLE_PRODUCT = "isReturnableProduct";
   @SerializedName(SERIALIZED_NAME_IS_RETURNABLE_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean isReturnableProduct;
 
   public static final String SERIALIZED_NAME_IS_INGRAM_SHIP = "isIngramShip";
   @SerializedName(SERIALIZED_NAME_IS_INGRAM_SHIP)
+  @javax.annotation.Nullable
   private Boolean isIngramShip;
 
   public static final String SERIALIZED_NAME_IS_ENDUSER_REQUIRED = "isEnduserRequired";
   @SerializedName(SERIALIZED_NAME_IS_ENDUSER_REQUIRED)
+  @javax.annotation.Nullable
   private Boolean isEnduserRequired;
 
   public static final String SERIALIZED_NAME_IS_HEAVY_WEIGHT = "isHeavyWeight";
   @SerializedName(SERIALIZED_NAME_IS_HEAVY_WEIGHT)
+  @javax.annotation.Nullable
   private Boolean isHeavyWeight;
 
   public static final String SERIALIZED_NAME_HAS_LTL = "hasLtl";
   @SerializedName(SERIALIZED_NAME_HAS_LTL)
+  @javax.annotation.Nullable
   private Boolean hasLtl;
 
   public static final String SERIALIZED_NAME_IS_CLEARANCE_PRODUCT = "isClearanceProduct";
   @SerializedName(SERIALIZED_NAME_IS_CLEARANCE_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean isClearanceProduct;
 
   public static final String SERIALIZED_NAME_HAS_BUNDLE = "hasBundle";
   @SerializedName(SERIALIZED_NAME_HAS_BUNDLE)
+  @javax.annotation.Nullable
   private Boolean hasBundle;
 
   public static final String SERIALIZED_NAME_IS_OVERSIZE_PRODUCT = "isOversizeProduct";
   @SerializedName(SERIALIZED_NAME_IS_OVERSIZE_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean isOversizeProduct;
 
   public static final String SERIALIZED_NAME_IS_PREORDER_PRODUCT = "isPreorderProduct";
   @SerializedName(SERIALIZED_NAME_IS_PREORDER_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean isPreorderProduct;
 
   public static final String SERIALIZED_NAME_IS_LICENSE_PRODUCT = "isLicenseProduct";
   @SerializedName(SERIALIZED_NAME_IS_LICENSE_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean isLicenseProduct;
 
   public static final String SERIALIZED_NAME_IS_DIRECTSHIP_ORDERABLE = "isDirectshipOrderable";
   @SerializedName(SERIALIZED_NAME_IS_DIRECTSHIP_ORDERABLE)
+  @javax.annotation.Nullable
   private Boolean isDirectshipOrderable;
 
   public static final String SERIALIZED_NAME_IS_SERVICE_SKU = "isServiceSku";
   @SerializedName(SERIALIZED_NAME_IS_SERVICE_SKU)
+  @javax.annotation.Nullable
   private Boolean isServiceSku;
 
   public static final String SERIALIZED_NAME_IS_CONFIGURABLE = "isConfigurable";
   @SerializedName(SERIALIZED_NAME_IS_CONFIGURABLE)
+  @javax.annotation.Nullable
   private Boolean isConfigurable;
 
   public ProductDetailResponseIndicators() {
   }
 
-  public ProductDetailResponseIndicators hasWarranty(Boolean hasWarranty) {
+  public ProductDetailResponseIndicators hasWarranty(@javax.annotation.Nullable Boolean hasWarranty) {
     this.hasWarranty = hasWarranty;
     return this;
   }
@@ -191,12 +222,12 @@ public class ProductDetailResponseIndicators {
     return hasWarranty;
   }
 
-  public void setHasWarranty(Boolean hasWarranty) {
+  public void setHasWarranty(@javax.annotation.Nullable Boolean hasWarranty) {
     this.hasWarranty = hasWarranty;
   }
 
 
-  public ProductDetailResponseIndicators isNewProduct(Boolean isNewProduct) {
+  public ProductDetailResponseIndicators isNewProduct(@javax.annotation.Nullable Boolean isNewProduct) {
     this.isNewProduct = isNewProduct;
     return this;
   }
@@ -210,12 +241,12 @@ public class ProductDetailResponseIndicators {
     return isNewProduct;
   }
 
-  public void setIsNewProduct(Boolean isNewProduct) {
+  public void setIsNewProduct(@javax.annotation.Nullable Boolean isNewProduct) {
     this.isNewProduct = isNewProduct;
   }
 
 
-  public ProductDetailResponseIndicators hasReturnLimits(Boolean hasReturnLimits) {
+  public ProductDetailResponseIndicators hasReturnLimits(@javax.annotation.Nullable Boolean hasReturnLimits) {
     this.hasReturnLimits = hasReturnLimits;
     return this;
   }
@@ -229,12 +260,12 @@ public class ProductDetailResponseIndicators {
     return hasReturnLimits;
   }
 
-  public void setHasReturnLimits(Boolean hasReturnLimits) {
+  public void setHasReturnLimits(@javax.annotation.Nullable Boolean hasReturnLimits) {
     this.hasReturnLimits = hasReturnLimits;
   }
 
 
-  public ProductDetailResponseIndicators isBackOrderAllowed(Boolean isBackOrderAllowed) {
+  public ProductDetailResponseIndicators isBackOrderAllowed(@javax.annotation.Nullable Boolean isBackOrderAllowed) {
     this.isBackOrderAllowed = isBackOrderAllowed;
     return this;
   }
@@ -248,12 +279,12 @@ public class ProductDetailResponseIndicators {
     return isBackOrderAllowed;
   }
 
-  public void setIsBackOrderAllowed(Boolean isBackOrderAllowed) {
+  public void setIsBackOrderAllowed(@javax.annotation.Nullable Boolean isBackOrderAllowed) {
     this.isBackOrderAllowed = isBackOrderAllowed;
   }
 
 
-  public ProductDetailResponseIndicators isShippedFromPartner(Boolean isShippedFromPartner) {
+  public ProductDetailResponseIndicators isShippedFromPartner(@javax.annotation.Nullable Boolean isShippedFromPartner) {
     this.isShippedFromPartner = isShippedFromPartner;
     return this;
   }
@@ -267,12 +298,12 @@ public class ProductDetailResponseIndicators {
     return isShippedFromPartner;
   }
 
-  public void setIsShippedFromPartner(Boolean isShippedFromPartner) {
+  public void setIsShippedFromPartner(@javax.annotation.Nullable Boolean isShippedFromPartner) {
     this.isShippedFromPartner = isShippedFromPartner;
   }
 
 
-  public ProductDetailResponseIndicators isReplacementProduct(Boolean isReplacementProduct) {
+  public ProductDetailResponseIndicators isReplacementProduct(@javax.annotation.Nullable Boolean isReplacementProduct) {
     this.isReplacementProduct = isReplacementProduct;
     return this;
   }
@@ -286,12 +317,12 @@ public class ProductDetailResponseIndicators {
     return isReplacementProduct;
   }
 
-  public void setIsReplacementProduct(Boolean isReplacementProduct) {
+  public void setIsReplacementProduct(@javax.annotation.Nullable Boolean isReplacementProduct) {
     this.isReplacementProduct = isReplacementProduct;
   }
 
 
-  public ProductDetailResponseIndicators isDirectship(Boolean isDirectship) {
+  public ProductDetailResponseIndicators isDirectship(@javax.annotation.Nullable Boolean isDirectship) {
     this.isDirectship = isDirectship;
     return this;
   }
@@ -305,12 +336,12 @@ public class ProductDetailResponseIndicators {
     return isDirectship;
   }
 
-  public void setIsDirectship(Boolean isDirectship) {
+  public void setIsDirectship(@javax.annotation.Nullable Boolean isDirectship) {
     this.isDirectship = isDirectship;
   }
 
 
-  public ProductDetailResponseIndicators isDownloadable(Boolean isDownloadable) {
+  public ProductDetailResponseIndicators isDownloadable(@javax.annotation.Nullable Boolean isDownloadable) {
     this.isDownloadable = isDownloadable;
     return this;
   }
@@ -324,12 +355,12 @@ public class ProductDetailResponseIndicators {
     return isDownloadable;
   }
 
-  public void setIsDownloadable(Boolean isDownloadable) {
+  public void setIsDownloadable(@javax.annotation.Nullable Boolean isDownloadable) {
     this.isDownloadable = isDownloadable;
   }
 
 
-  public ProductDetailResponseIndicators isDigitalType(Boolean isDigitalType) {
+  public ProductDetailResponseIndicators isDigitalType(@javax.annotation.Nullable Boolean isDigitalType) {
     this.isDigitalType = isDigitalType;
     return this;
   }
@@ -343,12 +374,12 @@ public class ProductDetailResponseIndicators {
     return isDigitalType;
   }
 
-  public void setIsDigitalType(Boolean isDigitalType) {
+  public void setIsDigitalType(@javax.annotation.Nullable Boolean isDigitalType) {
     this.isDigitalType = isDigitalType;
   }
 
 
-  public ProductDetailResponseIndicators skuType(String skuType) {
+  public ProductDetailResponseIndicators skuType(@javax.annotation.Nullable String skuType) {
     this.skuType = skuType;
     return this;
   }
@@ -362,12 +393,12 @@ public class ProductDetailResponseIndicators {
     return skuType;
   }
 
-  public void setSkuType(String skuType) {
+  public void setSkuType(@javax.annotation.Nullable String skuType) {
     this.skuType = skuType;
   }
 
 
-  public ProductDetailResponseIndicators hasStdSpecialPrice(Boolean hasStdSpecialPrice) {
+  public ProductDetailResponseIndicators hasStdSpecialPrice(@javax.annotation.Nullable Boolean hasStdSpecialPrice) {
     this.hasStdSpecialPrice = hasStdSpecialPrice;
     return this;
   }
@@ -381,12 +412,12 @@ public class ProductDetailResponseIndicators {
     return hasStdSpecialPrice;
   }
 
-  public void setHasStdSpecialPrice(Boolean hasStdSpecialPrice) {
+  public void setHasStdSpecialPrice(@javax.annotation.Nullable Boolean hasStdSpecialPrice) {
     this.hasStdSpecialPrice = hasStdSpecialPrice;
   }
 
 
-  public ProductDetailResponseIndicators hasAcopSpecialPrice(Boolean hasAcopSpecialPrice) {
+  public ProductDetailResponseIndicators hasAcopSpecialPrice(@javax.annotation.Nullable Boolean hasAcopSpecialPrice) {
     this.hasAcopSpecialPrice = hasAcopSpecialPrice;
     return this;
   }
@@ -400,12 +431,12 @@ public class ProductDetailResponseIndicators {
     return hasAcopSpecialPrice;
   }
 
-  public void setHasAcopSpecialPrice(Boolean hasAcopSpecialPrice) {
+  public void setHasAcopSpecialPrice(@javax.annotation.Nullable Boolean hasAcopSpecialPrice) {
     this.hasAcopSpecialPrice = hasAcopSpecialPrice;
   }
 
 
-  public ProductDetailResponseIndicators hasAcopQuantityBreak(Boolean hasAcopQuantityBreak) {
+  public ProductDetailResponseIndicators hasAcopQuantityBreak(@javax.annotation.Nullable Boolean hasAcopQuantityBreak) {
     this.hasAcopQuantityBreak = hasAcopQuantityBreak;
     return this;
   }
@@ -419,12 +450,12 @@ public class ProductDetailResponseIndicators {
     return hasAcopQuantityBreak;
   }
 
-  public void setHasAcopQuantityBreak(Boolean hasAcopQuantityBreak) {
+  public void setHasAcopQuantityBreak(@javax.annotation.Nullable Boolean hasAcopQuantityBreak) {
     this.hasAcopQuantityBreak = hasAcopQuantityBreak;
   }
 
 
-  public ProductDetailResponseIndicators hasStdWebDiscount(Boolean hasStdWebDiscount) {
+  public ProductDetailResponseIndicators hasStdWebDiscount(@javax.annotation.Nullable Boolean hasStdWebDiscount) {
     this.hasStdWebDiscount = hasStdWebDiscount;
     return this;
   }
@@ -438,12 +469,12 @@ public class ProductDetailResponseIndicators {
     return hasStdWebDiscount;
   }
 
-  public void setHasStdWebDiscount(Boolean hasStdWebDiscount) {
+  public void setHasStdWebDiscount(@javax.annotation.Nullable Boolean hasStdWebDiscount) {
     this.hasStdWebDiscount = hasStdWebDiscount;
   }
 
 
-  public ProductDetailResponseIndicators hasSpecialBid(Boolean hasSpecialBid) {
+  public ProductDetailResponseIndicators hasSpecialBid(@javax.annotation.Nullable Boolean hasSpecialBid) {
     this.hasSpecialBid = hasSpecialBid;
     return this;
   }
@@ -457,12 +488,12 @@ public class ProductDetailResponseIndicators {
     return hasSpecialBid;
   }
 
-  public void setHasSpecialBid(Boolean hasSpecialBid) {
+  public void setHasSpecialBid(@javax.annotation.Nullable Boolean hasSpecialBid) {
     this.hasSpecialBid = hasSpecialBid;
   }
 
 
-  public ProductDetailResponseIndicators isExportableToCountry(Boolean isExportableToCountry) {
+  public ProductDetailResponseIndicators isExportableToCountry(@javax.annotation.Nullable Boolean isExportableToCountry) {
     this.isExportableToCountry = isExportableToCountry;
     return this;
   }
@@ -476,12 +507,12 @@ public class ProductDetailResponseIndicators {
     return isExportableToCountry;
   }
 
-  public void setIsExportableToCountry(Boolean isExportableToCountry) {
+  public void setIsExportableToCountry(@javax.annotation.Nullable Boolean isExportableToCountry) {
     this.isExportableToCountry = isExportableToCountry;
   }
 
 
-  public ProductDetailResponseIndicators isDiscontinuedProduct(Boolean isDiscontinuedProduct) {
+  public ProductDetailResponseIndicators isDiscontinuedProduct(@javax.annotation.Nullable Boolean isDiscontinuedProduct) {
     this.isDiscontinuedProduct = isDiscontinuedProduct;
     return this;
   }
@@ -495,12 +526,12 @@ public class ProductDetailResponseIndicators {
     return isDiscontinuedProduct;
   }
 
-  public void setIsDiscontinuedProduct(Boolean isDiscontinuedProduct) {
+  public void setIsDiscontinuedProduct(@javax.annotation.Nullable Boolean isDiscontinuedProduct) {
     this.isDiscontinuedProduct = isDiscontinuedProduct;
   }
 
 
-  public ProductDetailResponseIndicators isRefurbishedProduct(Boolean isRefurbishedProduct) {
+  public ProductDetailResponseIndicators isRefurbishedProduct(@javax.annotation.Nullable Boolean isRefurbishedProduct) {
     this.isRefurbishedProduct = isRefurbishedProduct;
     return this;
   }
@@ -514,12 +545,12 @@ public class ProductDetailResponseIndicators {
     return isRefurbishedProduct;
   }
 
-  public void setIsRefurbishedProduct(Boolean isRefurbishedProduct) {
+  public void setIsRefurbishedProduct(@javax.annotation.Nullable Boolean isRefurbishedProduct) {
     this.isRefurbishedProduct = isRefurbishedProduct;
   }
 
 
-  public ProductDetailResponseIndicators isReturnableProduct(Boolean isReturnableProduct) {
+  public ProductDetailResponseIndicators isReturnableProduct(@javax.annotation.Nullable Boolean isReturnableProduct) {
     this.isReturnableProduct = isReturnableProduct;
     return this;
   }
@@ -533,12 +564,12 @@ public class ProductDetailResponseIndicators {
     return isReturnableProduct;
   }
 
-  public void setIsReturnableProduct(Boolean isReturnableProduct) {
+  public void setIsReturnableProduct(@javax.annotation.Nullable Boolean isReturnableProduct) {
     this.isReturnableProduct = isReturnableProduct;
   }
 
 
-  public ProductDetailResponseIndicators isIngramShip(Boolean isIngramShip) {
+  public ProductDetailResponseIndicators isIngramShip(@javax.annotation.Nullable Boolean isIngramShip) {
     this.isIngramShip = isIngramShip;
     return this;
   }
@@ -552,12 +583,12 @@ public class ProductDetailResponseIndicators {
     return isIngramShip;
   }
 
-  public void setIsIngramShip(Boolean isIngramShip) {
+  public void setIsIngramShip(@javax.annotation.Nullable Boolean isIngramShip) {
     this.isIngramShip = isIngramShip;
   }
 
 
-  public ProductDetailResponseIndicators isEnduserRequired(Boolean isEnduserRequired) {
+  public ProductDetailResponseIndicators isEnduserRequired(@javax.annotation.Nullable Boolean isEnduserRequired) {
     this.isEnduserRequired = isEnduserRequired;
     return this;
   }
@@ -571,12 +602,12 @@ public class ProductDetailResponseIndicators {
     return isEnduserRequired;
   }
 
-  public void setIsEnduserRequired(Boolean isEnduserRequired) {
+  public void setIsEnduserRequired(@javax.annotation.Nullable Boolean isEnduserRequired) {
     this.isEnduserRequired = isEnduserRequired;
   }
 
 
-  public ProductDetailResponseIndicators isHeavyWeight(Boolean isHeavyWeight) {
+  public ProductDetailResponseIndicators isHeavyWeight(@javax.annotation.Nullable Boolean isHeavyWeight) {
     this.isHeavyWeight = isHeavyWeight;
     return this;
   }
@@ -590,12 +621,12 @@ public class ProductDetailResponseIndicators {
     return isHeavyWeight;
   }
 
-  public void setIsHeavyWeight(Boolean isHeavyWeight) {
+  public void setIsHeavyWeight(@javax.annotation.Nullable Boolean isHeavyWeight) {
     this.isHeavyWeight = isHeavyWeight;
   }
 
 
-  public ProductDetailResponseIndicators hasLtl(Boolean hasLtl) {
+  public ProductDetailResponseIndicators hasLtl(@javax.annotation.Nullable Boolean hasLtl) {
     this.hasLtl = hasLtl;
     return this;
   }
@@ -609,12 +640,12 @@ public class ProductDetailResponseIndicators {
     return hasLtl;
   }
 
-  public void setHasLtl(Boolean hasLtl) {
+  public void setHasLtl(@javax.annotation.Nullable Boolean hasLtl) {
     this.hasLtl = hasLtl;
   }
 
 
-  public ProductDetailResponseIndicators isClearanceProduct(Boolean isClearanceProduct) {
+  public ProductDetailResponseIndicators isClearanceProduct(@javax.annotation.Nullable Boolean isClearanceProduct) {
     this.isClearanceProduct = isClearanceProduct;
     return this;
   }
@@ -628,12 +659,12 @@ public class ProductDetailResponseIndicators {
     return isClearanceProduct;
   }
 
-  public void setIsClearanceProduct(Boolean isClearanceProduct) {
+  public void setIsClearanceProduct(@javax.annotation.Nullable Boolean isClearanceProduct) {
     this.isClearanceProduct = isClearanceProduct;
   }
 
 
-  public ProductDetailResponseIndicators hasBundle(Boolean hasBundle) {
+  public ProductDetailResponseIndicators hasBundle(@javax.annotation.Nullable Boolean hasBundle) {
     this.hasBundle = hasBundle;
     return this;
   }
@@ -647,12 +678,12 @@ public class ProductDetailResponseIndicators {
     return hasBundle;
   }
 
-  public void setHasBundle(Boolean hasBundle) {
+  public void setHasBundle(@javax.annotation.Nullable Boolean hasBundle) {
     this.hasBundle = hasBundle;
   }
 
 
-  public ProductDetailResponseIndicators isOversizeProduct(Boolean isOversizeProduct) {
+  public ProductDetailResponseIndicators isOversizeProduct(@javax.annotation.Nullable Boolean isOversizeProduct) {
     this.isOversizeProduct = isOversizeProduct;
     return this;
   }
@@ -666,12 +697,12 @@ public class ProductDetailResponseIndicators {
     return isOversizeProduct;
   }
 
-  public void setIsOversizeProduct(Boolean isOversizeProduct) {
+  public void setIsOversizeProduct(@javax.annotation.Nullable Boolean isOversizeProduct) {
     this.isOversizeProduct = isOversizeProduct;
   }
 
 
-  public ProductDetailResponseIndicators isPreorderProduct(Boolean isPreorderProduct) {
+  public ProductDetailResponseIndicators isPreorderProduct(@javax.annotation.Nullable Boolean isPreorderProduct) {
     this.isPreorderProduct = isPreorderProduct;
     return this;
   }
@@ -685,12 +716,12 @@ public class ProductDetailResponseIndicators {
     return isPreorderProduct;
   }
 
-  public void setIsPreorderProduct(Boolean isPreorderProduct) {
+  public void setIsPreorderProduct(@javax.annotation.Nullable Boolean isPreorderProduct) {
     this.isPreorderProduct = isPreorderProduct;
   }
 
 
-  public ProductDetailResponseIndicators isLicenseProduct(Boolean isLicenseProduct) {
+  public ProductDetailResponseIndicators isLicenseProduct(@javax.annotation.Nullable Boolean isLicenseProduct) {
     this.isLicenseProduct = isLicenseProduct;
     return this;
   }
@@ -704,12 +735,12 @@ public class ProductDetailResponseIndicators {
     return isLicenseProduct;
   }
 
-  public void setIsLicenseProduct(Boolean isLicenseProduct) {
+  public void setIsLicenseProduct(@javax.annotation.Nullable Boolean isLicenseProduct) {
     this.isLicenseProduct = isLicenseProduct;
   }
 
 
-  public ProductDetailResponseIndicators isDirectshipOrderable(Boolean isDirectshipOrderable) {
+  public ProductDetailResponseIndicators isDirectshipOrderable(@javax.annotation.Nullable Boolean isDirectshipOrderable) {
     this.isDirectshipOrderable = isDirectshipOrderable;
     return this;
   }
@@ -723,12 +754,12 @@ public class ProductDetailResponseIndicators {
     return isDirectshipOrderable;
   }
 
-  public void setIsDirectshipOrderable(Boolean isDirectshipOrderable) {
+  public void setIsDirectshipOrderable(@javax.annotation.Nullable Boolean isDirectshipOrderable) {
     this.isDirectshipOrderable = isDirectshipOrderable;
   }
 
 
-  public ProductDetailResponseIndicators isServiceSku(Boolean isServiceSku) {
+  public ProductDetailResponseIndicators isServiceSku(@javax.annotation.Nullable Boolean isServiceSku) {
     this.isServiceSku = isServiceSku;
     return this;
   }
@@ -742,12 +773,12 @@ public class ProductDetailResponseIndicators {
     return isServiceSku;
   }
 
-  public void setIsServiceSku(Boolean isServiceSku) {
+  public void setIsServiceSku(@javax.annotation.Nullable Boolean isServiceSku) {
     this.isServiceSku = isServiceSku;
   }
 
 
-  public ProductDetailResponseIndicators isConfigurable(Boolean isConfigurable) {
+  public ProductDetailResponseIndicators isConfigurable(@javax.annotation.Nullable Boolean isConfigurable) {
     this.isConfigurable = isConfigurable;
     return this;
   }
@@ -761,7 +792,7 @@ public class ProductDetailResponseIndicators {
     return isConfigurable;
   }
 
-  public void setIsConfigurable(Boolean isConfigurable) {
+  public void setIsConfigurable(@javax.annotation.Nullable Boolean isConfigurable) {
     this.isConfigurable = isConfigurable;
   }
 

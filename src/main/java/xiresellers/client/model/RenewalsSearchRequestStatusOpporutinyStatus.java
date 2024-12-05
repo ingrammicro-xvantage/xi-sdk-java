@@ -48,20 +48,22 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchRequestStatusOpporutinyStatus
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class RenewalsSearchRequestStatusOpporutinyStatus {
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private String value;
 
   public static final String SERIALIZED_NAME_SUB_STATUS = "subStatus";
   @SerializedName(SERIALIZED_NAME_SUB_STATUS)
+  @javax.annotation.Nullable
   private String subStatus;
 
   public RenewalsSearchRequestStatusOpporutinyStatus() {
   }
 
-  public RenewalsSearchRequestStatusOpporutinyStatus value(String value) {
+  public RenewalsSearchRequestStatusOpporutinyStatus value(@javax.annotation.Nullable String value) {
     this.value = value;
     return this;
   }
@@ -75,12 +77,12 @@ public class RenewalsSearchRequestStatusOpporutinyStatus {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nullable String value) {
     this.value = value;
   }
 
 
-  public RenewalsSearchRequestStatusOpporutinyStatus subStatus(String subStatus) {
+  public RenewalsSearchRequestStatusOpporutinyStatus subStatus(@javax.annotation.Nullable String subStatus) {
     this.subStatus = subStatus;
     return this;
   }
@@ -94,7 +96,7 @@ public class RenewalsSearchRequestStatusOpporutinyStatus {
     return subStatus;
   }
 
-  public void setSubStatus(String subStatus) {
+  public void setSubStatus(@javax.annotation.Nullable String subStatus) {
     this.subStatus = subStatus;
   }
 

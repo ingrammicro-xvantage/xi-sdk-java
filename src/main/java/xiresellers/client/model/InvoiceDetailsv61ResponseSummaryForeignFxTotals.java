@@ -48,32 +48,37 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryForeignFxTotals
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceDetailsv61ResponseSummaryForeignFxTotals {
   public static final String SERIALIZED_NAME_FOREIGN_CURRENCY_CODE = "foreignCurrencyCode";
   @SerializedName(SERIALIZED_NAME_FOREIGN_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String foreignCurrencyCode;
 
   public static final String SERIALIZED_NAME_FOREIGN_CURRENCY_FX_RATE = "foreignCurrencyFxRate";
   @SerializedName(SERIALIZED_NAME_FOREIGN_CURRENCY_FX_RATE)
+  @javax.annotation.Nullable
   private Double foreignCurrencyFxRate;
 
   public static final String SERIALIZED_NAME_FOREIGN_TOTAL_TAXABLE_AMOUNT = "foreignTotalTaxableAmount";
   @SerializedName(SERIALIZED_NAME_FOREIGN_TOTAL_TAXABLE_AMOUNT)
+  @javax.annotation.Nullable
   private String foreignTotalTaxableAmount;
 
   public static final String SERIALIZED_NAME_FOREIGN_TOTAL_TAX_AMOUNT = "foreignTotalTaxAmount";
   @SerializedName(SERIALIZED_NAME_FOREIGN_TOTAL_TAX_AMOUNT)
+  @javax.annotation.Nullable
   private Double foreignTotalTaxAmount;
 
   public static final String SERIALIZED_NAME_FOREIGN_INVOICE_AMOUNT_DUE = "foreignInvoiceAmountDue";
   @SerializedName(SERIALIZED_NAME_FOREIGN_INVOICE_AMOUNT_DUE)
+  @javax.annotation.Nullable
   private String foreignInvoiceAmountDue;
 
   public InvoiceDetailsv61ResponseSummaryForeignFxTotals() {
   }
 
-  public InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignCurrencyCode(String foreignCurrencyCode) {
+  public InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignCurrencyCode(@javax.annotation.Nullable String foreignCurrencyCode) {
     this.foreignCurrencyCode = foreignCurrencyCode;
     return this;
   }
@@ -87,12 +92,12 @@ public class InvoiceDetailsv61ResponseSummaryForeignFxTotals {
     return foreignCurrencyCode;
   }
 
-  public void setForeignCurrencyCode(String foreignCurrencyCode) {
+  public void setForeignCurrencyCode(@javax.annotation.Nullable String foreignCurrencyCode) {
     this.foreignCurrencyCode = foreignCurrencyCode;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignCurrencyFxRate(Double foreignCurrencyFxRate) {
+  public InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignCurrencyFxRate(@javax.annotation.Nullable Double foreignCurrencyFxRate) {
     this.foreignCurrencyFxRate = foreignCurrencyFxRate;
     return this;
   }
@@ -106,12 +111,12 @@ public class InvoiceDetailsv61ResponseSummaryForeignFxTotals {
     return foreignCurrencyFxRate;
   }
 
-  public void setForeignCurrencyFxRate(Double foreignCurrencyFxRate) {
+  public void setForeignCurrencyFxRate(@javax.annotation.Nullable Double foreignCurrencyFxRate) {
     this.foreignCurrencyFxRate = foreignCurrencyFxRate;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignTotalTaxableAmount(String foreignTotalTaxableAmount) {
+  public InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignTotalTaxableAmount(@javax.annotation.Nullable String foreignTotalTaxableAmount) {
     this.foreignTotalTaxableAmount = foreignTotalTaxableAmount;
     return this;
   }
@@ -125,12 +130,12 @@ public class InvoiceDetailsv61ResponseSummaryForeignFxTotals {
     return foreignTotalTaxableAmount;
   }
 
-  public void setForeignTotalTaxableAmount(String foreignTotalTaxableAmount) {
+  public void setForeignTotalTaxableAmount(@javax.annotation.Nullable String foreignTotalTaxableAmount) {
     this.foreignTotalTaxableAmount = foreignTotalTaxableAmount;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignTotalTaxAmount(Double foreignTotalTaxAmount) {
+  public InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignTotalTaxAmount(@javax.annotation.Nullable Double foreignTotalTaxAmount) {
     this.foreignTotalTaxAmount = foreignTotalTaxAmount;
     return this;
   }
@@ -144,12 +149,12 @@ public class InvoiceDetailsv61ResponseSummaryForeignFxTotals {
     return foreignTotalTaxAmount;
   }
 
-  public void setForeignTotalTaxAmount(Double foreignTotalTaxAmount) {
+  public void setForeignTotalTaxAmount(@javax.annotation.Nullable Double foreignTotalTaxAmount) {
     this.foreignTotalTaxAmount = foreignTotalTaxAmount;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignInvoiceAmountDue(String foreignInvoiceAmountDue) {
+  public InvoiceDetailsv61ResponseSummaryForeignFxTotals foreignInvoiceAmountDue(@javax.annotation.Nullable String foreignInvoiceAmountDue) {
     this.foreignInvoiceAmountDue = foreignInvoiceAmountDue;
     return this;
   }
@@ -163,7 +168,7 @@ public class InvoiceDetailsv61ResponseSummaryForeignFxTotals {
     return foreignInvoiceAmountDue;
   }
 
-  public void setForeignInvoiceAmountDue(String foreignInvoiceAmountDue) {
+  public void setForeignInvoiceAmountDue(@javax.annotation.Nullable String foreignInvoiceAmountDue) {
     this.foreignInvoiceAmountDue = foreignInvoiceAmountDue;
   }
 

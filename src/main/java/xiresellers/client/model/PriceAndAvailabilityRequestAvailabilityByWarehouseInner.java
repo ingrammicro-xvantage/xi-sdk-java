@@ -49,20 +49,22 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequestAvailabilityByWarehouseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
   public static final String SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE_ID = "availabilityByWarehouseId";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE_ID)
+  @javax.annotation.Nullable
   private String availabilityByWarehouseId;
 
   public static final String SERIALIZED_NAME_AVAILABILITY_FOR_ALL_LOCATION = "availabilityForAllLocation";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY_FOR_ALL_LOCATION)
+  @javax.annotation.Nullable
   private Boolean availabilityForAllLocation;
 
   public PriceAndAvailabilityRequestAvailabilityByWarehouseInner() {
   }
 
-  public PriceAndAvailabilityRequestAvailabilityByWarehouseInner availabilityByWarehouseId(String availabilityByWarehouseId) {
+  public PriceAndAvailabilityRequestAvailabilityByWarehouseInner availabilityByWarehouseId(@javax.annotation.Nullable String availabilityByWarehouseId) {
     this.availabilityByWarehouseId = availabilityByWarehouseId;
     return this;
   }
@@ -76,12 +78,12 @@ public class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
     return availabilityByWarehouseId;
   }
 
-  public void setAvailabilityByWarehouseId(String availabilityByWarehouseId) {
+  public void setAvailabilityByWarehouseId(@javax.annotation.Nullable String availabilityByWarehouseId) {
     this.availabilityByWarehouseId = availabilityByWarehouseId;
   }
 
 
-  public PriceAndAvailabilityRequestAvailabilityByWarehouseInner availabilityForAllLocation(Boolean availabilityForAllLocation) {
+  public PriceAndAvailabilityRequestAvailabilityByWarehouseInner availabilityForAllLocation(@javax.annotation.Nullable Boolean availabilityForAllLocation) {
     this.availabilityForAllLocation = availabilityForAllLocation;
     return this;
   }
@@ -95,7 +97,7 @@ public class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
     return availabilityForAllLocation;
   }
 
-  public void setAvailabilityForAllLocation(Boolean availabilityForAllLocation) {
+  public void setAvailabilityForAllLocation(@javax.annotation.Nullable Boolean availabilityForAllLocation) {
     this.availabilityForAllLocation = availabilityForAllLocation;
   }
 

@@ -49,28 +49,32 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner {
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal price;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_MSRP = "msrp";
   @SerializedName(SERIALIZED_NAME_MSRP)
+  @javax.annotation.Nullable
   private BigDecimal msrp;
 
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nullable
   private String code;
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner price(BigDecimal price) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner price(@javax.annotation.Nullable BigDecimal price) {
     this.price = price;
     return this;
   }
@@ -84,12 +88,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return price;
   }
 
-  public void setPrice(BigDecimal price) {
+  public void setPrice(@javax.annotation.Nullable BigDecimal price) {
     this.price = price;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner type(String type) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -103,12 +107,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner msrp(BigDecimal msrp) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner msrp(@javax.annotation.Nullable BigDecimal msrp) {
     this.msrp = msrp;
     return this;
   }
@@ -122,12 +126,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return msrp;
   }
 
-  public void setMsrp(BigDecimal msrp) {
+  public void setMsrp(@javax.annotation.Nullable BigDecimal msrp) {
     this.msrp = msrp;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner code(String code) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner code(@javax.annotation.Nullable String code) {
     this.code = code;
     return this;
   }
@@ -141,7 +145,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return code;
   }
 
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nullable String code) {
     this.code = code;
   }
 

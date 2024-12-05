@@ -54,52 +54,62 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateResponse {
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
   @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String endCustomerOrderNumber;
 
   public static final String SERIALIZED_NAME_BILL_TO_ADDRESS_ID = "billToAddressId";
   @SerializedName(SERIALIZED_NAME_BILL_TO_ADDRESS_ID)
+  @javax.annotation.Nullable
   private String billToAddressId;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBER = "specialBidNumber";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBER)
+  @javax.annotation.Nullable
   private String specialBidNumber;
 
   public static final String SERIALIZED_NAME_ORDER_SPLIT = "orderSplit";
   @SerializedName(SERIALIZED_NAME_ORDER_SPLIT)
+  @javax.annotation.Nullable
   private Boolean orderSplit;
 
   public static final String SERIALIZED_NAME_PROCESSED_PARTIALLY = "processedPartially";
   @SerializedName(SERIALIZED_NAME_PROCESSED_PARTIALLY)
+  @javax.annotation.Nullable
   private Boolean processedPartially;
 
   public static final String SERIALIZED_NAME_PURCHASE_ORDER_TOTAL = "purchaseOrderTotal";
   @SerializedName(SERIALIZED_NAME_PURCHASE_ORDER_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal purchaseOrderTotal;
 
   public static final String SERIALIZED_NAME_SHIP_TO_INFO = "shipToInfo";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_INFO)
+  @javax.annotation.Nullable
   private OrderCreateResponseShipToInfo shipToInfo;
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
+  @javax.annotation.Nullable
   private OrderCreateResponseEndUserInfo endUserInfo;
 
   public static final String SERIALIZED_NAME_ORDERS = "orders";
   @SerializedName(SERIALIZED_NAME_ORDERS)
+  @javax.annotation.Nullable
   private List<OrderCreateResponseOrdersInner> orders = new ArrayList<>();
 
   public OrderCreateResponse() {
   }
 
-  public OrderCreateResponse customerOrderNumber(String customerOrderNumber) {
+  public OrderCreateResponse customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -113,12 +123,12 @@ public class OrderCreateResponse {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public OrderCreateResponse endCustomerOrderNumber(String endCustomerOrderNumber) {
+  public OrderCreateResponse endCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
     return this;
   }
@@ -132,12 +142,12 @@ public class OrderCreateResponse {
     return endCustomerOrderNumber;
   }
 
-  public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
+  public void setEndCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
   }
 
 
-  public OrderCreateResponse billToAddressId(String billToAddressId) {
+  public OrderCreateResponse billToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
     return this;
   }
@@ -151,12 +161,12 @@ public class OrderCreateResponse {
     return billToAddressId;
   }
 
-  public void setBillToAddressId(String billToAddressId) {
+  public void setBillToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
   }
 
 
-  public OrderCreateResponse specialBidNumber(String specialBidNumber) {
+  public OrderCreateResponse specialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
     return this;
   }
@@ -170,12 +180,12 @@ public class OrderCreateResponse {
     return specialBidNumber;
   }
 
-  public void setSpecialBidNumber(String specialBidNumber) {
+  public void setSpecialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
   }
 
 
-  public OrderCreateResponse orderSplit(Boolean orderSplit) {
+  public OrderCreateResponse orderSplit(@javax.annotation.Nullable Boolean orderSplit) {
     this.orderSplit = orderSplit;
     return this;
   }
@@ -189,12 +199,12 @@ public class OrderCreateResponse {
     return orderSplit;
   }
 
-  public void setOrderSplit(Boolean orderSplit) {
+  public void setOrderSplit(@javax.annotation.Nullable Boolean orderSplit) {
     this.orderSplit = orderSplit;
   }
 
 
-  public OrderCreateResponse processedPartially(Boolean processedPartially) {
+  public OrderCreateResponse processedPartially(@javax.annotation.Nullable Boolean processedPartially) {
     this.processedPartially = processedPartially;
     return this;
   }
@@ -208,12 +218,12 @@ public class OrderCreateResponse {
     return processedPartially;
   }
 
-  public void setProcessedPartially(Boolean processedPartially) {
+  public void setProcessedPartially(@javax.annotation.Nullable Boolean processedPartially) {
     this.processedPartially = processedPartially;
   }
 
 
-  public OrderCreateResponse purchaseOrderTotal(BigDecimal purchaseOrderTotal) {
+  public OrderCreateResponse purchaseOrderTotal(@javax.annotation.Nullable BigDecimal purchaseOrderTotal) {
     this.purchaseOrderTotal = purchaseOrderTotal;
     return this;
   }
@@ -227,12 +237,12 @@ public class OrderCreateResponse {
     return purchaseOrderTotal;
   }
 
-  public void setPurchaseOrderTotal(BigDecimal purchaseOrderTotal) {
+  public void setPurchaseOrderTotal(@javax.annotation.Nullable BigDecimal purchaseOrderTotal) {
     this.purchaseOrderTotal = purchaseOrderTotal;
   }
 
 
-  public OrderCreateResponse shipToInfo(OrderCreateResponseShipToInfo shipToInfo) {
+  public OrderCreateResponse shipToInfo(@javax.annotation.Nullable OrderCreateResponseShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
     return this;
   }
@@ -246,12 +256,12 @@ public class OrderCreateResponse {
     return shipToInfo;
   }
 
-  public void setShipToInfo(OrderCreateResponseShipToInfo shipToInfo) {
+  public void setShipToInfo(@javax.annotation.Nullable OrderCreateResponseShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
   }
 
 
-  public OrderCreateResponse endUserInfo(OrderCreateResponseEndUserInfo endUserInfo) {
+  public OrderCreateResponse endUserInfo(@javax.annotation.Nullable OrderCreateResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
     return this;
   }
@@ -265,12 +275,12 @@ public class OrderCreateResponse {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(OrderCreateResponseEndUserInfo endUserInfo) {
+  public void setEndUserInfo(@javax.annotation.Nullable OrderCreateResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 
 
-  public OrderCreateResponse orders(List<OrderCreateResponseOrdersInner> orders) {
+  public OrderCreateResponse orders(@javax.annotation.Nullable List<OrderCreateResponseOrdersInner> orders) {
     this.orders = orders;
     return this;
   }
@@ -292,7 +302,7 @@ public class OrderCreateResponse {
     return orders;
   }
 
-  public void setOrders(List<OrderCreateResponseOrdersInner> orders) {
+  public void setOrders(@javax.annotation.Nullable List<OrderCreateResponseOrdersInner> orders) {
     this.orders = orders;
   }
 

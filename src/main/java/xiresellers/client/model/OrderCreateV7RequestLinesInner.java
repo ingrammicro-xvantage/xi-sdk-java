@@ -55,60 +55,72 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7RequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7RequestLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String customerLineNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private Integer quantity;
 
   public static final String SERIALIZED_NAME_UNIT_PRICE = "unitPrice";
   @SerializedName(SERIALIZED_NAME_UNIT_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal unitPrice;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBER = "specialBidNumber";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBER)
+  @javax.annotation.Nullable
   private String specialBidNumber;
 
   public static final String SERIALIZED_NAME_END_USER_PRICE = "endUserPrice";
   @SerializedName(SERIALIZED_NAME_END_USER_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal endUserPrice;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
+  @javax.annotation.Nullable
   private List<OrderCreateV7RequestLinesInnerEndUserInfoInner> endUserInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderCreateV7RequestLinesInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_WARRANTY_INFO = "warrantyInfo";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFO)
+  @javax.annotation.Nullable
   private List<OrderCreateV7RequestLinesInnerWarrantyInfoInner> warrantyInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES = "vmfAdditionalAttributesLines";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES)
+  @javax.annotation.Nullable
   private List<OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines = new ArrayList<>();
 
   public OrderCreateV7RequestLinesInner() {
   }
 
-  public OrderCreateV7RequestLinesInner customerLineNumber(String customerLineNumber) {
+  public OrderCreateV7RequestLinesInner customerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
     return this;
   }
@@ -122,12 +134,12 @@ public class OrderCreateV7RequestLinesInner {
     return customerLineNumber;
   }
 
-  public void setCustomerLineNumber(String customerLineNumber) {
+  public void setCustomerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
   }
 
 
-  public OrderCreateV7RequestLinesInner ingramPartNumber(String ingramPartNumber) {
+  public OrderCreateV7RequestLinesInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -141,12 +153,12 @@ public class OrderCreateV7RequestLinesInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public OrderCreateV7RequestLinesInner vendorPartNumber(String vendorPartNumber) {
+  public OrderCreateV7RequestLinesInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -160,12 +172,12 @@ public class OrderCreateV7RequestLinesInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public OrderCreateV7RequestLinesInner quantity(Integer quantity) {
+  public OrderCreateV7RequestLinesInner quantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -179,12 +191,12 @@ public class OrderCreateV7RequestLinesInner {
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public OrderCreateV7RequestLinesInner unitPrice(BigDecimal unitPrice) {
+  public OrderCreateV7RequestLinesInner unitPrice(@javax.annotation.Nullable BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
     return this;
   }
@@ -198,12 +210,12 @@ public class OrderCreateV7RequestLinesInner {
     return unitPrice;
   }
 
-  public void setUnitPrice(BigDecimal unitPrice) {
+  public void setUnitPrice(@javax.annotation.Nullable BigDecimal unitPrice) {
     this.unitPrice = unitPrice;
   }
 
 
-  public OrderCreateV7RequestLinesInner specialBidNumber(String specialBidNumber) {
+  public OrderCreateV7RequestLinesInner specialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
     return this;
   }
@@ -217,12 +229,12 @@ public class OrderCreateV7RequestLinesInner {
     return specialBidNumber;
   }
 
-  public void setSpecialBidNumber(String specialBidNumber) {
+  public void setSpecialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
   }
 
 
-  public OrderCreateV7RequestLinesInner endUserPrice(BigDecimal endUserPrice) {
+  public OrderCreateV7RequestLinesInner endUserPrice(@javax.annotation.Nullable BigDecimal endUserPrice) {
     this.endUserPrice = endUserPrice;
     return this;
   }
@@ -236,12 +248,12 @@ public class OrderCreateV7RequestLinesInner {
     return endUserPrice;
   }
 
-  public void setEndUserPrice(BigDecimal endUserPrice) {
+  public void setEndUserPrice(@javax.annotation.Nullable BigDecimal endUserPrice) {
     this.endUserPrice = endUserPrice;
   }
 
 
-  public OrderCreateV7RequestLinesInner notes(String notes) {
+  public OrderCreateV7RequestLinesInner notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -255,12 +267,12 @@ public class OrderCreateV7RequestLinesInner {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public OrderCreateV7RequestLinesInner endUserInfo(List<OrderCreateV7RequestLinesInnerEndUserInfoInner> endUserInfo) {
+  public OrderCreateV7RequestLinesInner endUserInfo(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerEndUserInfoInner> endUserInfo) {
     this.endUserInfo = endUserInfo;
     return this;
   }
@@ -282,12 +294,12 @@ public class OrderCreateV7RequestLinesInner {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(List<OrderCreateV7RequestLinesInnerEndUserInfoInner> endUserInfo) {
+  public void setEndUserInfo(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerEndUserInfoInner> endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 
 
-  public OrderCreateV7RequestLinesInner additionalAttributes(List<OrderCreateV7RequestLinesInnerAdditionalAttributesInner> additionalAttributes) {
+  public OrderCreateV7RequestLinesInner additionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -309,12 +321,12 @@ public class OrderCreateV7RequestLinesInner {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<OrderCreateV7RequestLinesInnerAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 
 
-  public OrderCreateV7RequestLinesInner warrantyInfo(List<OrderCreateV7RequestLinesInnerWarrantyInfoInner> warrantyInfo) {
+  public OrderCreateV7RequestLinesInner warrantyInfo(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerWarrantyInfoInner> warrantyInfo) {
     this.warrantyInfo = warrantyInfo;
     return this;
   }
@@ -336,12 +348,12 @@ public class OrderCreateV7RequestLinesInner {
     return warrantyInfo;
   }
 
-  public void setWarrantyInfo(List<OrderCreateV7RequestLinesInnerWarrantyInfoInner> warrantyInfo) {
+  public void setWarrantyInfo(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerWarrantyInfoInner> warrantyInfo) {
     this.warrantyInfo = warrantyInfo;
   }
 
 
-  public OrderCreateV7RequestLinesInner vmfAdditionalAttributesLines(List<OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
+  public OrderCreateV7RequestLinesInner vmfAdditionalAttributesLines(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
     this.vmfAdditionalAttributesLines = vmfAdditionalAttributesLines;
     return this;
   }
@@ -363,7 +375,7 @@ public class OrderCreateV7RequestLinesInner {
     return vmfAdditionalAttributesLines;
   }
 
-  public void setVmfAdditionalAttributesLines(List<OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
+  public void setVmfAdditionalAttributesLines(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
     this.vmfAdditionalAttributesLines = vmfAdditionalAttributesLines;
   }
 

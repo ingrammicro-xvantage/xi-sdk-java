@@ -49,32 +49,37 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner {
   public static final String SERIALIZED_NAME_CONDITION_TYPE = "conditionType";
   @SerializedName(SERIALIZED_NAME_CONDITION_TYPE)
+  @javax.annotation.Nullable
   private String conditionType;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_CURRENCY_TYPE = "currencyType";
   @SerializedName(SERIALIZED_NAME_CURRENCY_TYPE)
+  @javax.annotation.Nullable
   private String currencyType;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private Integer quantity;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner conditionType(String conditionType) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner conditionType(@javax.annotation.Nullable String conditionType) {
     this.conditionType = conditionType;
     return this;
   }
@@ -88,12 +93,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInn
     return conditionType;
   }
 
-  public void setConditionType(String conditionType) {
+  public void setConditionType(@javax.annotation.Nullable String conditionType) {
     this.conditionType = conditionType;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner currencyCode(String currencyCode) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -107,12 +112,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInn
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner currencyType(String currencyType) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner currencyType(@javax.annotation.Nullable String currencyType) {
     this.currencyType = currencyType;
     return this;
   }
@@ -126,12 +131,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInn
     return currencyType;
   }
 
-  public void setCurrencyType(String currencyType) {
+  public void setCurrencyType(@javax.annotation.Nullable String currencyType) {
     this.currencyType = currencyType;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner quantity(Integer quantity) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner quantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -145,12 +150,12 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInn
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner amount(BigDecimal amount) {
+  public PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -164,7 +169,7 @@ public class PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInn
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 

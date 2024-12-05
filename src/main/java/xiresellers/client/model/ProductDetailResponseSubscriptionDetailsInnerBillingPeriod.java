@@ -48,20 +48,22 @@ import xiresellers.client.JSON;
 /**
  * Details of the subscription billing period. 
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductDetailResponseSubscriptionDetailsInnerBillingPeriod {
   public static final String SERIALIZED_NAME_BILLING_PERIOD_UNIT = "billingPeriodUnit";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD_UNIT)
+  @javax.annotation.Nullable
   private String billingPeriodUnit;
 
   public static final String SERIALIZED_NAME_BILLING_PERIOD = "billingPeriod";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD)
+  @javax.annotation.Nullable
   private Integer billingPeriod;
 
   public ProductDetailResponseSubscriptionDetailsInnerBillingPeriod() {
   }
 
-  public ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriodUnit(String billingPeriodUnit) {
+  public ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriodUnit(@javax.annotation.Nullable String billingPeriodUnit) {
     this.billingPeriodUnit = billingPeriodUnit;
     return this;
   }
@@ -75,12 +77,12 @@ public class ProductDetailResponseSubscriptionDetailsInnerBillingPeriod {
     return billingPeriodUnit;
   }
 
-  public void setBillingPeriodUnit(String billingPeriodUnit) {
+  public void setBillingPeriodUnit(@javax.annotation.Nullable String billingPeriodUnit) {
     this.billingPeriodUnit = billingPeriodUnit;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriod(Integer billingPeriod) {
+  public ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriod(@javax.annotation.Nullable Integer billingPeriod) {
     this.billingPeriod = billingPeriod;
     return this;
   }
@@ -94,7 +96,7 @@ public class ProductDetailResponseSubscriptionDetailsInnerBillingPeriod {
     return billingPeriod;
   }
 
-  public void setBillingPeriod(Integer billingPeriod) {
+  public void setBillingPeriod(@javax.annotation.Nullable Integer billingPeriod) {
     this.billingPeriod = billingPeriod;
   }
 

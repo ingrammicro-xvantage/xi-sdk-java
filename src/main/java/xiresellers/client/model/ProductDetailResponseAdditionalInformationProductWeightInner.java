@@ -49,24 +49,27 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseAdditionalInformationProductWeightInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductDetailResponseAdditionalInformationProductWeightInner {
   public static final String SERIALIZED_NAME_PLANT_ID = "plantId";
   @SerializedName(SERIALIZED_NAME_PLANT_ID)
+  @javax.annotation.Nullable
   private String plantId;
 
   public static final String SERIALIZED_NAME_WEIGHT = "weight";
   @SerializedName(SERIALIZED_NAME_WEIGHT)
+  @javax.annotation.Nullable
   private BigDecimal weight;
 
   public static final String SERIALIZED_NAME_WEIGHT_UNIT = "weightUnit";
   @SerializedName(SERIALIZED_NAME_WEIGHT_UNIT)
+  @javax.annotation.Nullable
   private String weightUnit;
 
   public ProductDetailResponseAdditionalInformationProductWeightInner() {
   }
 
-  public ProductDetailResponseAdditionalInformationProductWeightInner plantId(String plantId) {
+  public ProductDetailResponseAdditionalInformationProductWeightInner plantId(@javax.annotation.Nullable String plantId) {
     this.plantId = plantId;
     return this;
   }
@@ -80,12 +83,12 @@ public class ProductDetailResponseAdditionalInformationProductWeightInner {
     return plantId;
   }
 
-  public void setPlantId(String plantId) {
+  public void setPlantId(@javax.annotation.Nullable String plantId) {
     this.plantId = plantId;
   }
 
 
-  public ProductDetailResponseAdditionalInformationProductWeightInner weight(BigDecimal weight) {
+  public ProductDetailResponseAdditionalInformationProductWeightInner weight(@javax.annotation.Nullable BigDecimal weight) {
     this.weight = weight;
     return this;
   }
@@ -99,12 +102,12 @@ public class ProductDetailResponseAdditionalInformationProductWeightInner {
     return weight;
   }
 
-  public void setWeight(BigDecimal weight) {
+  public void setWeight(@javax.annotation.Nullable BigDecimal weight) {
     this.weight = weight;
   }
 
 
-  public ProductDetailResponseAdditionalInformationProductWeightInner weightUnit(String weightUnit) {
+  public ProductDetailResponseAdditionalInformationProductWeightInner weightUnit(@javax.annotation.Nullable String weightUnit) {
     this.weightUnit = weightUnit;
     return this;
   }
@@ -118,7 +121,7 @@ public class ProductDetailResponseAdditionalInformationProductWeightInner {
     return weightUnit;
   }
 
-  public void setWeightUnit(String weightUnit) {
+  public void setWeightUnit(@javax.annotation.Nullable String weightUnit) {
     this.weightUnit = weightUnit;
   }
 

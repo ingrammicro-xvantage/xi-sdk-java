@@ -56,92 +56,112 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceDetailsv61Response {
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
+  @javax.annotation.Nullable
   private String invoiceNumber;
 
   public static final String SERIALIZED_NAME_INVOICE_STATUS = "invoiceStatus";
   @SerializedName(SERIALIZED_NAME_INVOICE_STATUS)
+  @javax.annotation.Nullable
   private String invoiceStatus;
 
   public static final String SERIALIZED_NAME_INVOICE_DATE = "invoiceDate";
   @SerializedName(SERIALIZED_NAME_INVOICE_DATE)
+  @javax.annotation.Nullable
   private String invoiceDate;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
   @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String endCustomerOrderNumber;
 
   public static final String SERIALIZED_NAME_ORDER_NUMBER = "orderNumber";
   @SerializedName(SERIALIZED_NAME_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String orderNumber;
 
   public static final String SERIALIZED_NAME_ORDER_DATE = "orderDate";
   @SerializedName(SERIALIZED_NAME_ORDER_DATE)
+  @javax.annotation.Nullable
   private String orderDate;
 
   public static final String SERIALIZED_NAME_BILL_TO_I_D = "billToID";
   @SerializedName(SERIALIZED_NAME_BILL_TO_I_D)
+  @javax.annotation.Nullable
   private String billToID;
 
   public static final String SERIALIZED_NAME_INVOICE_TYPE = "invoiceType";
   @SerializedName(SERIALIZED_NAME_INVOICE_TYPE)
+  @javax.annotation.Nullable
   private String invoiceType;
 
   public static final String SERIALIZED_NAME_INVOICE_DUE_DATE = "invoiceDueDate";
   @SerializedName(SERIALIZED_NAME_INVOICE_DUE_DATE)
+  @javax.annotation.Nullable
   private String invoiceDueDate;
 
   public static final String SERIALIZED_NAME_CUSTOMER_COUNTRY_CODE = "customerCountryCode";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String customerCountryCode;
 
   public static final String SERIALIZED_NAME_CUSTOMER_NUMBER = "customerNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_NUMBER)
+  @javax.annotation.Nullable
   private String customerNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String ingramOrderNumber;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_INFO = "paymentTermsInfo";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_INFO)
+  @javax.annotation.Nullable
   private InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsInfo;
 
   public static final String SERIALIZED_NAME_BILL_TO_INFO = "billToInfo";
   @SerializedName(SERIALIZED_NAME_BILL_TO_INFO)
+  @javax.annotation.Nullable
   private InvoiceDetailsv61ResponseBillToInfo billToInfo;
 
   public static final String SERIALIZED_NAME_SHIP_TO_INFO = "shipToInfo";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_INFO)
+  @javax.annotation.Nullable
   private InvoiceDetailsv61ResponseShipToInfo shipToInfo;
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<InvoiceDetailsv61ResponseLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_FX_RATE_INFO = "fxRateInfo";
   @SerializedName(SERIALIZED_NAME_FX_RATE_INFO)
+  @javax.annotation.Nullable
   private InvoiceDetailsv61ResponseFxRateInfo fxRateInfo;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
+  @javax.annotation.Nullable
   private InvoiceDetailsv61ResponseSummary summary;
 
   public InvoiceDetailsv61Response() {
   }
 
-  public InvoiceDetailsv61Response invoiceNumber(String invoiceNumber) {
+  public InvoiceDetailsv61Response invoiceNumber(@javax.annotation.Nullable String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
     return this;
   }
@@ -155,12 +175,12 @@ public class InvoiceDetailsv61Response {
     return invoiceNumber;
   }
 
-  public void setInvoiceNumber(String invoiceNumber) {
+  public void setInvoiceNumber(@javax.annotation.Nullable String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
   }
 
 
-  public InvoiceDetailsv61Response invoiceStatus(String invoiceStatus) {
+  public InvoiceDetailsv61Response invoiceStatus(@javax.annotation.Nullable String invoiceStatus) {
     this.invoiceStatus = invoiceStatus;
     return this;
   }
@@ -174,12 +194,12 @@ public class InvoiceDetailsv61Response {
     return invoiceStatus;
   }
 
-  public void setInvoiceStatus(String invoiceStatus) {
+  public void setInvoiceStatus(@javax.annotation.Nullable String invoiceStatus) {
     this.invoiceStatus = invoiceStatus;
   }
 
 
-  public InvoiceDetailsv61Response invoiceDate(String invoiceDate) {
+  public InvoiceDetailsv61Response invoiceDate(@javax.annotation.Nullable String invoiceDate) {
     this.invoiceDate = invoiceDate;
     return this;
   }
@@ -193,12 +213,12 @@ public class InvoiceDetailsv61Response {
     return invoiceDate;
   }
 
-  public void setInvoiceDate(String invoiceDate) {
+  public void setInvoiceDate(@javax.annotation.Nullable String invoiceDate) {
     this.invoiceDate = invoiceDate;
   }
 
 
-  public InvoiceDetailsv61Response customerOrderNumber(String customerOrderNumber) {
+  public InvoiceDetailsv61Response customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -212,12 +232,12 @@ public class InvoiceDetailsv61Response {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public InvoiceDetailsv61Response endCustomerOrderNumber(String endCustomerOrderNumber) {
+  public InvoiceDetailsv61Response endCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
     return this;
   }
@@ -231,12 +251,12 @@ public class InvoiceDetailsv61Response {
     return endCustomerOrderNumber;
   }
 
-  public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
+  public void setEndCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
   }
 
 
-  public InvoiceDetailsv61Response orderNumber(String orderNumber) {
+  public InvoiceDetailsv61Response orderNumber(@javax.annotation.Nullable String orderNumber) {
     this.orderNumber = orderNumber;
     return this;
   }
@@ -250,12 +270,12 @@ public class InvoiceDetailsv61Response {
     return orderNumber;
   }
 
-  public void setOrderNumber(String orderNumber) {
+  public void setOrderNumber(@javax.annotation.Nullable String orderNumber) {
     this.orderNumber = orderNumber;
   }
 
 
-  public InvoiceDetailsv61Response orderDate(String orderDate) {
+  public InvoiceDetailsv61Response orderDate(@javax.annotation.Nullable String orderDate) {
     this.orderDate = orderDate;
     return this;
   }
@@ -269,12 +289,12 @@ public class InvoiceDetailsv61Response {
     return orderDate;
   }
 
-  public void setOrderDate(String orderDate) {
+  public void setOrderDate(@javax.annotation.Nullable String orderDate) {
     this.orderDate = orderDate;
   }
 
 
-  public InvoiceDetailsv61Response billToID(String billToID) {
+  public InvoiceDetailsv61Response billToID(@javax.annotation.Nullable String billToID) {
     this.billToID = billToID;
     return this;
   }
@@ -288,12 +308,12 @@ public class InvoiceDetailsv61Response {
     return billToID;
   }
 
-  public void setBillToID(String billToID) {
+  public void setBillToID(@javax.annotation.Nullable String billToID) {
     this.billToID = billToID;
   }
 
 
-  public InvoiceDetailsv61Response invoiceType(String invoiceType) {
+  public InvoiceDetailsv61Response invoiceType(@javax.annotation.Nullable String invoiceType) {
     this.invoiceType = invoiceType;
     return this;
   }
@@ -307,12 +327,12 @@ public class InvoiceDetailsv61Response {
     return invoiceType;
   }
 
-  public void setInvoiceType(String invoiceType) {
+  public void setInvoiceType(@javax.annotation.Nullable String invoiceType) {
     this.invoiceType = invoiceType;
   }
 
 
-  public InvoiceDetailsv61Response invoiceDueDate(String invoiceDueDate) {
+  public InvoiceDetailsv61Response invoiceDueDate(@javax.annotation.Nullable String invoiceDueDate) {
     this.invoiceDueDate = invoiceDueDate;
     return this;
   }
@@ -326,12 +346,12 @@ public class InvoiceDetailsv61Response {
     return invoiceDueDate;
   }
 
-  public void setInvoiceDueDate(String invoiceDueDate) {
+  public void setInvoiceDueDate(@javax.annotation.Nullable String invoiceDueDate) {
     this.invoiceDueDate = invoiceDueDate;
   }
 
 
-  public InvoiceDetailsv61Response customerCountryCode(String customerCountryCode) {
+  public InvoiceDetailsv61Response customerCountryCode(@javax.annotation.Nullable String customerCountryCode) {
     this.customerCountryCode = customerCountryCode;
     return this;
   }
@@ -345,12 +365,12 @@ public class InvoiceDetailsv61Response {
     return customerCountryCode;
   }
 
-  public void setCustomerCountryCode(String customerCountryCode) {
+  public void setCustomerCountryCode(@javax.annotation.Nullable String customerCountryCode) {
     this.customerCountryCode = customerCountryCode;
   }
 
 
-  public InvoiceDetailsv61Response customerNumber(String customerNumber) {
+  public InvoiceDetailsv61Response customerNumber(@javax.annotation.Nullable String customerNumber) {
     this.customerNumber = customerNumber;
     return this;
   }
@@ -364,12 +384,12 @@ public class InvoiceDetailsv61Response {
     return customerNumber;
   }
 
-  public void setCustomerNumber(String customerNumber) {
+  public void setCustomerNumber(@javax.annotation.Nullable String customerNumber) {
     this.customerNumber = customerNumber;
   }
 
 
-  public InvoiceDetailsv61Response ingramOrderNumber(String ingramOrderNumber) {
+  public InvoiceDetailsv61Response ingramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
     return this;
   }
@@ -383,12 +403,12 @@ public class InvoiceDetailsv61Response {
     return ingramOrderNumber;
   }
 
-  public void setIngramOrderNumber(String ingramOrderNumber) {
+  public void setIngramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
   }
 
 
-  public InvoiceDetailsv61Response notes(String notes) {
+  public InvoiceDetailsv61Response notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -402,12 +422,12 @@ public class InvoiceDetailsv61Response {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public InvoiceDetailsv61Response paymentTermsInfo(InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsInfo) {
+  public InvoiceDetailsv61Response paymentTermsInfo(@javax.annotation.Nullable InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsInfo) {
     this.paymentTermsInfo = paymentTermsInfo;
     return this;
   }
@@ -421,12 +441,12 @@ public class InvoiceDetailsv61Response {
     return paymentTermsInfo;
   }
 
-  public void setPaymentTermsInfo(InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsInfo) {
+  public void setPaymentTermsInfo(@javax.annotation.Nullable InvoiceDetailsv61ResponsePaymentTermsInfo paymentTermsInfo) {
     this.paymentTermsInfo = paymentTermsInfo;
   }
 
 
-  public InvoiceDetailsv61Response billToInfo(InvoiceDetailsv61ResponseBillToInfo billToInfo) {
+  public InvoiceDetailsv61Response billToInfo(@javax.annotation.Nullable InvoiceDetailsv61ResponseBillToInfo billToInfo) {
     this.billToInfo = billToInfo;
     return this;
   }
@@ -440,12 +460,12 @@ public class InvoiceDetailsv61Response {
     return billToInfo;
   }
 
-  public void setBillToInfo(InvoiceDetailsv61ResponseBillToInfo billToInfo) {
+  public void setBillToInfo(@javax.annotation.Nullable InvoiceDetailsv61ResponseBillToInfo billToInfo) {
     this.billToInfo = billToInfo;
   }
 
 
-  public InvoiceDetailsv61Response shipToInfo(InvoiceDetailsv61ResponseShipToInfo shipToInfo) {
+  public InvoiceDetailsv61Response shipToInfo(@javax.annotation.Nullable InvoiceDetailsv61ResponseShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
     return this;
   }
@@ -459,12 +479,12 @@ public class InvoiceDetailsv61Response {
     return shipToInfo;
   }
 
-  public void setShipToInfo(InvoiceDetailsv61ResponseShipToInfo shipToInfo) {
+  public void setShipToInfo(@javax.annotation.Nullable InvoiceDetailsv61ResponseShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
   }
 
 
-  public InvoiceDetailsv61Response lines(List<InvoiceDetailsv61ResponseLinesInner> lines) {
+  public InvoiceDetailsv61Response lines(@javax.annotation.Nullable List<InvoiceDetailsv61ResponseLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -486,12 +506,12 @@ public class InvoiceDetailsv61Response {
     return lines;
   }
 
-  public void setLines(List<InvoiceDetailsv61ResponseLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<InvoiceDetailsv61ResponseLinesInner> lines) {
     this.lines = lines;
   }
 
 
-  public InvoiceDetailsv61Response fxRateInfo(InvoiceDetailsv61ResponseFxRateInfo fxRateInfo) {
+  public InvoiceDetailsv61Response fxRateInfo(@javax.annotation.Nullable InvoiceDetailsv61ResponseFxRateInfo fxRateInfo) {
     this.fxRateInfo = fxRateInfo;
     return this;
   }
@@ -505,12 +525,12 @@ public class InvoiceDetailsv61Response {
     return fxRateInfo;
   }
 
-  public void setFxRateInfo(InvoiceDetailsv61ResponseFxRateInfo fxRateInfo) {
+  public void setFxRateInfo(@javax.annotation.Nullable InvoiceDetailsv61ResponseFxRateInfo fxRateInfo) {
     this.fxRateInfo = fxRateInfo;
   }
 
 
-  public InvoiceDetailsv61Response summary(InvoiceDetailsv61ResponseSummary summary) {
+  public InvoiceDetailsv61Response summary(@javax.annotation.Nullable InvoiceDetailsv61ResponseSummary summary) {
     this.summary = summary;
     return this;
   }
@@ -524,7 +544,7 @@ public class InvoiceDetailsv61Response {
     return summary;
   }
 
-  public void setSummary(InvoiceDetailsv61ResponseSummary summary) {
+  public void setSummary(@javax.annotation.Nullable InvoiceDetailsv61ResponseSummary summary) {
     this.summary = summary;
   }
 

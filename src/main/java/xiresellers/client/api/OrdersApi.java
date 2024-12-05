@@ -97,7 +97,8 @@ public class OrdersApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Ok </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -136,22 +137,6 @@ public class OrdersApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("regionCode", regionCode));
         }
 
-        if (imCustomerNumber != null) {
-            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
-        }
-
-        if (imCountryCode != null) {
-            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
-        }
-
-        if (imCorrelationID != null) {
-            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
-        }
-
-        if (imSenderID != null) {
-            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -166,6 +151,26 @@ public class OrdersApi {
         if (localVarContentType != null) {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
 
         String[] localVarAuthNames = new String[] { "application" };
         return localVarApiClient.buildCall(basePath, localVarPath, "DELETE", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
@@ -208,7 +213,8 @@ public class OrdersApi {
      * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Ok </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -233,7 +239,8 @@ public class OrdersApi {
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Ok </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -260,7 +267,8 @@ public class OrdersApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Ok </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -291,7 +299,8 @@ public class OrdersApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
@@ -343,22 +352,6 @@ public class OrdersApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("regionCode", regionCode));
         }
 
-        if (imCustomerNumber != null) {
-            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
-        }
-
-        if (imCountryCode != null) {
-            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
-        }
-
-        if (imCorrelationID != null) {
-            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
-        }
-
-        if (imSenderID != null) {
-            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -373,6 +366,26 @@ public class OrdersApi {
         if (localVarContentType != null) {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
 
         String[] localVarAuthNames = new String[] { "application" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
@@ -420,7 +433,8 @@ public class OrdersApi {
      * @return OrderDetailB2B
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
@@ -447,7 +461,8 @@ public class OrdersApi {
      * @return ApiResponse&lt;OrderDetailB2B&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
@@ -476,7 +491,8 @@ public class OrdersApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
@@ -517,7 +533,8 @@ public class OrdersApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OrderSearch_Response to be returned </td><td>  -  </td></tr>
         <tr><td> 204 </td><td> No Content </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -622,22 +639,6 @@ public class OrdersApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("specialBidNumber", specialBidNumber));
         }
 
-        if (imCustomerNumber != null) {
-            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
-        }
-
-        if (imCountryCode != null) {
-            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
-        }
-
-        if (imCorrelationID != null) {
-            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
-        }
-
-        if (imSenderID != null) {
-            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -652,6 +653,26 @@ public class OrdersApi {
         if (localVarContentType != null) {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
 
         String[] localVarAuthNames = new String[] { "application" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
@@ -706,7 +727,8 @@ public class OrdersApi {
      * @return OrderSearchResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OrderSearch_Response to be returned </td><td>  -  </td></tr>
         <tr><td> 204 </td><td> No Content </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -747,7 +769,8 @@ public class OrdersApi {
      * @return ApiResponse&lt;OrderSearchResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OrderSearch_Response to be returned </td><td>  -  </td></tr>
         <tr><td> 204 </td><td> No Content </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -790,7 +813,8 @@ public class OrdersApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OrderSearch_Response to be returned </td><td>  -  </td></tr>
         <tr><td> 204 </td><td> No Content </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -816,7 +840,8 @@ public class OrdersApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Created </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 207 </td><td> Multi-Status </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -849,22 +874,6 @@ public class OrdersApi {
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
 
-        if (imCustomerNumber != null) {
-            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
-        }
-
-        if (imCountryCode != null) {
-            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
-        }
-
-        if (imSenderID != null) {
-            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
-        }
-
-        if (imCorrelationID != null) {
-            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -880,6 +889,26 @@ public class OrdersApi {
         if (localVarContentType != null) {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
 
         String[] localVarAuthNames = new String[] { "application" };
         return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
@@ -922,7 +951,8 @@ public class OrdersApi {
      * @return OrderCreateResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Created </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 207 </td><td> Multi-Status </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -946,7 +976,8 @@ public class OrdersApi {
      * @return ApiResponse&lt;OrderCreateResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Created </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 207 </td><td> Multi-Status </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -972,7 +1003,8 @@ public class OrdersApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Created </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 207 </td><td> Multi-Status </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -998,7 +1030,8 @@ public class OrdersApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Confirmation response </td><td>  -  </td></tr>
         <tr><td> 201 </td><td> Webhook Response </td><td>  -  </td></tr>
@@ -1031,22 +1064,6 @@ public class OrdersApi {
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
 
-        if (imCustomerNumber != null) {
-            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
-        }
-
-        if (imCountryCode != null) {
-            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
-        }
-
-        if (imSenderID != null) {
-            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
-        }
-
-        if (imCorrelationID != null) {
-            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -1062,6 +1079,26 @@ public class OrdersApi {
         if (localVarContentType != null) {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
 
         String[] localVarAuthNames = new String[] { "application" };
         return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
@@ -1104,7 +1141,8 @@ public class OrdersApi {
      * @return OrderCreateV7Response201
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Confirmation response </td><td>  -  </td></tr>
         <tr><td> 201 </td><td> Webhook Response </td><td>  -  </td></tr>
@@ -1128,7 +1166,8 @@ public class OrdersApi {
      * @return ApiResponse&lt;OrderCreateV7Response201&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Confirmation response </td><td>  -  </td></tr>
         <tr><td> 201 </td><td> Webhook Response </td><td>  -  </td></tr>
@@ -1154,7 +1193,8 @@ public class OrdersApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Confirmation response </td><td>  -  </td></tr>
         <tr><td> 201 </td><td> Webhook Response </td><td>  -  </td></tr>
@@ -1183,7 +1223,8 @@ public class OrdersApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 201 </td><td> Created </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -1228,22 +1269,6 @@ public class OrdersApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("regionCode", regionCode));
         }
 
-        if (imCustomerNumber != null) {
-            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
-        }
-
-        if (imCountryCode != null) {
-            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
-        }
-
-        if (imCorrelationID != null) {
-            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
-        }
-
-        if (imSenderID != null) {
-            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
-        }
-
         final String[] localVarAccepts = {
             "application/json"
         };
@@ -1259,6 +1284,26 @@ public class OrdersApi {
         if (localVarContentType != null) {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
 
         String[] localVarAuthNames = new String[] { "application" };
         return localVarApiClient.buildCall(basePath, localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
@@ -1309,7 +1354,8 @@ public class OrdersApi {
      * @return OrderModifyResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 201 </td><td> Created </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -1339,7 +1385,8 @@ public class OrdersApi {
      * @return ApiResponse&lt;OrderModifyResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 201 </td><td> Created </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
@@ -1371,7 +1418,8 @@ public class OrdersApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> OK </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
         <tr><td> 201 </td><td> Created </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>

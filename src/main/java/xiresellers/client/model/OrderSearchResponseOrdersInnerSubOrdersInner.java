@@ -52,28 +52,32 @@ import xiresellers.client.JSON;
 /**
  * OrderSearchResponseOrdersInnerSubOrdersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderSearchResponseOrdersInnerSubOrdersInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String subOrderNumber;
 
   public static final String SERIALIZED_NAME_SUB_ORDER_TOTAL = "subOrderTotal";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal subOrderTotal;
 
   public static final String SERIALIZED_NAME_SUB_ORDER_STATUS = "subOrderStatus";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_STATUS)
+  @javax.annotation.Nullable
   private String subOrderStatus;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner> links = new ArrayList<>();
 
   public OrderSearchResponseOrdersInnerSubOrdersInner() {
   }
 
-  public OrderSearchResponseOrdersInnerSubOrdersInner subOrderNumber(String subOrderNumber) {
+  public OrderSearchResponseOrdersInnerSubOrdersInner subOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
     return this;
   }
@@ -87,12 +91,12 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
     return subOrderNumber;
   }
 
-  public void setSubOrderNumber(String subOrderNumber) {
+  public void setSubOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
   }
 
 
-  public OrderSearchResponseOrdersInnerSubOrdersInner subOrderTotal(BigDecimal subOrderTotal) {
+  public OrderSearchResponseOrdersInnerSubOrdersInner subOrderTotal(@javax.annotation.Nullable BigDecimal subOrderTotal) {
     this.subOrderTotal = subOrderTotal;
     return this;
   }
@@ -106,12 +110,12 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
     return subOrderTotal;
   }
 
-  public void setSubOrderTotal(BigDecimal subOrderTotal) {
+  public void setSubOrderTotal(@javax.annotation.Nullable BigDecimal subOrderTotal) {
     this.subOrderTotal = subOrderTotal;
   }
 
 
-  public OrderSearchResponseOrdersInnerSubOrdersInner subOrderStatus(String subOrderStatus) {
+  public OrderSearchResponseOrdersInnerSubOrdersInner subOrderStatus(@javax.annotation.Nullable String subOrderStatus) {
     this.subOrderStatus = subOrderStatus;
     return this;
   }
@@ -125,12 +129,12 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
     return subOrderStatus;
   }
 
-  public void setSubOrderStatus(String subOrderStatus) {
+  public void setSubOrderStatus(@javax.annotation.Nullable String subOrderStatus) {
     this.subOrderStatus = subOrderStatus;
   }
 
 
-  public OrderSearchResponseOrdersInnerSubOrdersInner links(List<OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner> links) {
+  public OrderSearchResponseOrdersInnerSubOrdersInner links(@javax.annotation.Nullable List<OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -152,7 +156,7 @@ public class OrderSearchResponseOrdersInnerSubOrdersInner {
     return links;
   }
 
-  public void setLinks(List<OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner> links) {
     this.links = links;
   }
 

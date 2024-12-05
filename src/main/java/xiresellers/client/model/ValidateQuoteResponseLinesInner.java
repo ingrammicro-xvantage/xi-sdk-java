@@ -51,28 +51,32 @@ import xiresellers.client.JSON;
 /**
  * ValidateQuoteResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ValidateQuoteResponseLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String customerLineNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private Integer quantity;
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES = "vmfAdditionalAttributesLines";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES)
+  @javax.annotation.Nullable
   private List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines = new ArrayList<>();
 
   public ValidateQuoteResponseLinesInner() {
   }
 
-  public ValidateQuoteResponseLinesInner customerLineNumber(String customerLineNumber) {
+  public ValidateQuoteResponseLinesInner customerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
     return this;
   }
@@ -86,12 +90,12 @@ public class ValidateQuoteResponseLinesInner {
     return customerLineNumber;
   }
 
-  public void setCustomerLineNumber(String customerLineNumber) {
+  public void setCustomerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
   }
 
 
-  public ValidateQuoteResponseLinesInner ingramPartNumber(String ingramPartNumber) {
+  public ValidateQuoteResponseLinesInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -105,12 +109,12 @@ public class ValidateQuoteResponseLinesInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public ValidateQuoteResponseLinesInner quantity(Integer quantity) {
+  public ValidateQuoteResponseLinesInner quantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -124,12 +128,12 @@ public class ValidateQuoteResponseLinesInner {
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public ValidateQuoteResponseLinesInner vmfAdditionalAttributesLines(List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
+  public ValidateQuoteResponseLinesInner vmfAdditionalAttributesLines(@javax.annotation.Nullable List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
     this.vmfAdditionalAttributesLines = vmfAdditionalAttributesLines;
     return this;
   }
@@ -151,7 +155,7 @@ public class ValidateQuoteResponseLinesInner {
     return vmfAdditionalAttributesLines;
   }
 
-  public void setVmfAdditionalAttributesLines(List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
+  public void setVmfAdditionalAttributesLines(@javax.annotation.Nullable List<ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
     this.vmfAdditionalAttributesLines = vmfAdditionalAttributesLines;
   }
 

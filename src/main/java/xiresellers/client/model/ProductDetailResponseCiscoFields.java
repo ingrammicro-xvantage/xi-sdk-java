@@ -48,40 +48,47 @@ import xiresellers.client.JSON;
 /**
  * Cisco product related information.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductDetailResponseCiscoFields {
   public static final String SERIALIZED_NAME_PRODUCT_SUB_GROUP = "productSubGroup";
   @SerializedName(SERIALIZED_NAME_PRODUCT_SUB_GROUP)
+  @javax.annotation.Nullable
   private String productSubGroup;
 
   public static final String SERIALIZED_NAME_SERVICE_PROGRAM_NAME = "serviceProgramName";
   @SerializedName(SERIALIZED_NAME_SERVICE_PROGRAM_NAME)
+  @javax.annotation.Nullable
   private String serviceProgramName;
 
   public static final String SERIALIZED_NAME_ITEM_CATALOG_CATEGORY = "itemCatalogCategory";
   @SerializedName(SERIALIZED_NAME_ITEM_CATALOG_CATEGORY)
+  @javax.annotation.Nullable
   private String itemCatalogCategory;
 
   public static final String SERIALIZED_NAME_CONFIGURATION_INDICATOR = "configurationIndicator";
   @SerializedName(SERIALIZED_NAME_CONFIGURATION_INDICATOR)
+  @javax.annotation.Nullable
   private String configurationIndicator;
 
   public static final String SERIALIZED_NAME_INTERNAL_BUSINESS_ENTITY = "internalBusinessEntity";
   @SerializedName(SERIALIZED_NAME_INTERNAL_BUSINESS_ENTITY)
+  @javax.annotation.Nullable
   private String internalBusinessEntity;
 
   public static final String SERIALIZED_NAME_ITEM_TYPE = "itemType";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPE)
+  @javax.annotation.Nullable
   private String itemType;
 
   public static final String SERIALIZED_NAME_GLOBAL_LIST_PRICE = "globalListPrice";
   @SerializedName(SERIALIZED_NAME_GLOBAL_LIST_PRICE)
+  @javax.annotation.Nullable
   private String globalListPrice;
 
   public ProductDetailResponseCiscoFields() {
   }
 
-  public ProductDetailResponseCiscoFields productSubGroup(String productSubGroup) {
+  public ProductDetailResponseCiscoFields productSubGroup(@javax.annotation.Nullable String productSubGroup) {
     this.productSubGroup = productSubGroup;
     return this;
   }
@@ -95,12 +102,12 @@ public class ProductDetailResponseCiscoFields {
     return productSubGroup;
   }
 
-  public void setProductSubGroup(String productSubGroup) {
+  public void setProductSubGroup(@javax.annotation.Nullable String productSubGroup) {
     this.productSubGroup = productSubGroup;
   }
 
 
-  public ProductDetailResponseCiscoFields serviceProgramName(String serviceProgramName) {
+  public ProductDetailResponseCiscoFields serviceProgramName(@javax.annotation.Nullable String serviceProgramName) {
     this.serviceProgramName = serviceProgramName;
     return this;
   }
@@ -114,12 +121,12 @@ public class ProductDetailResponseCiscoFields {
     return serviceProgramName;
   }
 
-  public void setServiceProgramName(String serviceProgramName) {
+  public void setServiceProgramName(@javax.annotation.Nullable String serviceProgramName) {
     this.serviceProgramName = serviceProgramName;
   }
 
 
-  public ProductDetailResponseCiscoFields itemCatalogCategory(String itemCatalogCategory) {
+  public ProductDetailResponseCiscoFields itemCatalogCategory(@javax.annotation.Nullable String itemCatalogCategory) {
     this.itemCatalogCategory = itemCatalogCategory;
     return this;
   }
@@ -133,12 +140,12 @@ public class ProductDetailResponseCiscoFields {
     return itemCatalogCategory;
   }
 
-  public void setItemCatalogCategory(String itemCatalogCategory) {
+  public void setItemCatalogCategory(@javax.annotation.Nullable String itemCatalogCategory) {
     this.itemCatalogCategory = itemCatalogCategory;
   }
 
 
-  public ProductDetailResponseCiscoFields configurationIndicator(String configurationIndicator) {
+  public ProductDetailResponseCiscoFields configurationIndicator(@javax.annotation.Nullable String configurationIndicator) {
     this.configurationIndicator = configurationIndicator;
     return this;
   }
@@ -152,12 +159,12 @@ public class ProductDetailResponseCiscoFields {
     return configurationIndicator;
   }
 
-  public void setConfigurationIndicator(String configurationIndicator) {
+  public void setConfigurationIndicator(@javax.annotation.Nullable String configurationIndicator) {
     this.configurationIndicator = configurationIndicator;
   }
 
 
-  public ProductDetailResponseCiscoFields internalBusinessEntity(String internalBusinessEntity) {
+  public ProductDetailResponseCiscoFields internalBusinessEntity(@javax.annotation.Nullable String internalBusinessEntity) {
     this.internalBusinessEntity = internalBusinessEntity;
     return this;
   }
@@ -171,12 +178,12 @@ public class ProductDetailResponseCiscoFields {
     return internalBusinessEntity;
   }
 
-  public void setInternalBusinessEntity(String internalBusinessEntity) {
+  public void setInternalBusinessEntity(@javax.annotation.Nullable String internalBusinessEntity) {
     this.internalBusinessEntity = internalBusinessEntity;
   }
 
 
-  public ProductDetailResponseCiscoFields itemType(String itemType) {
+  public ProductDetailResponseCiscoFields itemType(@javax.annotation.Nullable String itemType) {
     this.itemType = itemType;
     return this;
   }
@@ -190,12 +197,12 @@ public class ProductDetailResponseCiscoFields {
     return itemType;
   }
 
-  public void setItemType(String itemType) {
+  public void setItemType(@javax.annotation.Nullable String itemType) {
     this.itemType = itemType;
   }
 
 
-  public ProductDetailResponseCiscoFields globalListPrice(String globalListPrice) {
+  public ProductDetailResponseCiscoFields globalListPrice(@javax.annotation.Nullable String globalListPrice) {
     this.globalListPrice = globalListPrice;
     return this;
   }
@@ -209,7 +216,7 @@ public class ProductDetailResponseCiscoFields {
     return globalListPrice;
   }
 
-  public void setGlobalListPrice(String globalListPrice) {
+  public void setGlobalListPrice(@javax.annotation.Nullable String globalListPrice) {
     this.globalListPrice = globalListPrice;
   }
 

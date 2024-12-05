@@ -52,28 +52,32 @@ import xiresellers.client.JSON;
 /**
  * FreightRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class FreightRequest {
   public static final String SERIALIZED_NAME_BILL_TO_ADDRESS_ID = "billToAddressId";
   @SerializedName(SERIALIZED_NAME_BILL_TO_ADDRESS_ID)
+  @javax.annotation.Nullable
   private String billToAddressId;
 
   public static final String SERIALIZED_NAME_SHIP_TO_ADDRESS_ID = "shipToAddressId";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_ADDRESS_ID)
+  @javax.annotation.Nullable
   private String shipToAddressId;
 
   public static final String SERIALIZED_NAME_SHIP_TO_ADDRESS = "shipToAddress";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_ADDRESS)
+  @javax.annotation.Nullable
   private List<FreightRequestShipToAddressInner> shipToAddress = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<FreightRequestLinesInner> lines = new ArrayList<>();
 
   public FreightRequest() {
   }
 
-  public FreightRequest billToAddressId(String billToAddressId) {
+  public FreightRequest billToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
     return this;
   }
@@ -87,12 +91,12 @@ public class FreightRequest {
     return billToAddressId;
   }
 
-  public void setBillToAddressId(String billToAddressId) {
+  public void setBillToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
   }
 
 
-  public FreightRequest shipToAddressId(String shipToAddressId) {
+  public FreightRequest shipToAddressId(@javax.annotation.Nullable String shipToAddressId) {
     this.shipToAddressId = shipToAddressId;
     return this;
   }
@@ -106,12 +110,12 @@ public class FreightRequest {
     return shipToAddressId;
   }
 
-  public void setShipToAddressId(String shipToAddressId) {
+  public void setShipToAddressId(@javax.annotation.Nullable String shipToAddressId) {
     this.shipToAddressId = shipToAddressId;
   }
 
 
-  public FreightRequest shipToAddress(List<FreightRequestShipToAddressInner> shipToAddress) {
+  public FreightRequest shipToAddress(@javax.annotation.Nullable List<FreightRequestShipToAddressInner> shipToAddress) {
     this.shipToAddress = shipToAddress;
     return this;
   }
@@ -133,12 +137,12 @@ public class FreightRequest {
     return shipToAddress;
   }
 
-  public void setShipToAddress(List<FreightRequestShipToAddressInner> shipToAddress) {
+  public void setShipToAddress(@javax.annotation.Nullable List<FreightRequestShipToAddressInner> shipToAddress) {
     this.shipToAddress = shipToAddress;
   }
 
 
-  public FreightRequest lines(List<FreightRequestLinesInner> lines) {
+  public FreightRequest lines(@javax.annotation.Nullable List<FreightRequestLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -160,7 +164,7 @@ public class FreightRequest {
     return lines;
   }
 
-  public void setLines(List<FreightRequestLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<FreightRequestLinesInner> lines) {
     this.lines = lines;
   }
 

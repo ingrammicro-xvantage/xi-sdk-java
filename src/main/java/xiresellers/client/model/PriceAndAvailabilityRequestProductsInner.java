@@ -52,40 +52,47 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequestProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityRequestProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_PART_NUMBER = "customerPartNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_PART_NUMBER)
+  @javax.annotation.Nullable
   private String customerPartNumber;
 
   public static final String SERIALIZED_NAME_UPC = "upc";
   @SerializedName(SERIALIZED_NAME_UPC)
+  @javax.annotation.Nullable
   private String upc;
 
   public static final String SERIALIZED_NAME_QUANTITY_REQUESTED = "quantityRequested";
   @SerializedName(SERIALIZED_NAME_QUANTITY_REQUESTED)
+  @javax.annotation.Nullable
   private String quantityRequested;
 
   public static final String SERIALIZED_NAME_PLAN_I_D = "planID";
   @SerializedName(SERIALIZED_NAME_PLAN_I_D)
+  @javax.annotation.Nullable
   private String planID;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner> additionalAttributes;
 
   public PriceAndAvailabilityRequestProductsInner() {
   }
 
-  public PriceAndAvailabilityRequestProductsInner ingramPartNumber(String ingramPartNumber) {
+  public PriceAndAvailabilityRequestProductsInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -99,12 +106,12 @@ public class PriceAndAvailabilityRequestProductsInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public PriceAndAvailabilityRequestProductsInner vendorPartNumber(String vendorPartNumber) {
+  public PriceAndAvailabilityRequestProductsInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -118,12 +125,12 @@ public class PriceAndAvailabilityRequestProductsInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public PriceAndAvailabilityRequestProductsInner customerPartNumber(String customerPartNumber) {
+  public PriceAndAvailabilityRequestProductsInner customerPartNumber(@javax.annotation.Nullable String customerPartNumber) {
     this.customerPartNumber = customerPartNumber;
     return this;
   }
@@ -137,12 +144,12 @@ public class PriceAndAvailabilityRequestProductsInner {
     return customerPartNumber;
   }
 
-  public void setCustomerPartNumber(String customerPartNumber) {
+  public void setCustomerPartNumber(@javax.annotation.Nullable String customerPartNumber) {
     this.customerPartNumber = customerPartNumber;
   }
 
 
-  public PriceAndAvailabilityRequestProductsInner upc(String upc) {
+  public PriceAndAvailabilityRequestProductsInner upc(@javax.annotation.Nullable String upc) {
     this.upc = upc;
     return this;
   }
@@ -156,12 +163,12 @@ public class PriceAndAvailabilityRequestProductsInner {
     return upc;
   }
 
-  public void setUpc(String upc) {
+  public void setUpc(@javax.annotation.Nullable String upc) {
     this.upc = upc;
   }
 
 
-  public PriceAndAvailabilityRequestProductsInner quantityRequested(String quantityRequested) {
+  public PriceAndAvailabilityRequestProductsInner quantityRequested(@javax.annotation.Nullable String quantityRequested) {
     this.quantityRequested = quantityRequested;
     return this;
   }
@@ -175,12 +182,12 @@ public class PriceAndAvailabilityRequestProductsInner {
     return quantityRequested;
   }
 
-  public void setQuantityRequested(String quantityRequested) {
+  public void setQuantityRequested(@javax.annotation.Nullable String quantityRequested) {
     this.quantityRequested = quantityRequested;
   }
 
 
-  public PriceAndAvailabilityRequestProductsInner planID(String planID) {
+  public PriceAndAvailabilityRequestProductsInner planID(@javax.annotation.Nullable String planID) {
     this.planID = planID;
     return this;
   }
@@ -194,12 +201,12 @@ public class PriceAndAvailabilityRequestProductsInner {
     return planID;
   }
 
-  public void setPlanID(String planID) {
+  public void setPlanID(@javax.annotation.Nullable String planID) {
     this.planID = planID;
   }
 
 
-  public PriceAndAvailabilityRequestProductsInner additionalAttributes(List<PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner> additionalAttributes) {
+  public PriceAndAvailabilityRequestProductsInner additionalAttributes(@javax.annotation.Nullable List<PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -221,7 +228,7 @@ public class PriceAndAvailabilityRequestProductsInner {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 

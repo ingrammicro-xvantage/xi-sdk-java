@@ -48,24 +48,27 @@ import xiresellers.client.JSON;
 /**
  * AccesstokenResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class AccesstokenResponse {
   public static final String SERIALIZED_NAME_ACCESS_TOKEN = "access_token";
   @SerializedName(SERIALIZED_NAME_ACCESS_TOKEN)
+  @javax.annotation.Nullable
   private String accessToken;
 
   public static final String SERIALIZED_NAME_TOKEN_TYPE = "token_type";
   @SerializedName(SERIALIZED_NAME_TOKEN_TYPE)
+  @javax.annotation.Nullable
   private String tokenType;
 
   public static final String SERIALIZED_NAME_EXPIRES_IN = "expires_in";
   @SerializedName(SERIALIZED_NAME_EXPIRES_IN)
+  @javax.annotation.Nullable
   private String expiresIn;
 
   public AccesstokenResponse() {
   }
 
-  public AccesstokenResponse accessToken(String accessToken) {
+  public AccesstokenResponse accessToken(@javax.annotation.Nullable String accessToken) {
     this.accessToken = accessToken;
     return this;
   }
@@ -79,12 +82,12 @@ public class AccesstokenResponse {
     return accessToken;
   }
 
-  public void setAccessToken(String accessToken) {
+  public void setAccessToken(@javax.annotation.Nullable String accessToken) {
     this.accessToken = accessToken;
   }
 
 
-  public AccesstokenResponse tokenType(String tokenType) {
+  public AccesstokenResponse tokenType(@javax.annotation.Nullable String tokenType) {
     this.tokenType = tokenType;
     return this;
   }
@@ -98,12 +101,12 @@ public class AccesstokenResponse {
     return tokenType;
   }
 
-  public void setTokenType(String tokenType) {
+  public void setTokenType(@javax.annotation.Nullable String tokenType) {
     this.tokenType = tokenType;
   }
 
 
-  public AccesstokenResponse expiresIn(String expiresIn) {
+  public AccesstokenResponse expiresIn(@javax.annotation.Nullable String expiresIn) {
     this.expiresIn = expiresIn;
     return this;
   }
@@ -117,7 +120,7 @@ public class AccesstokenResponse {
     return expiresIn;
   }
 
-  public void setExpiresIn(String expiresIn) {
+  public void setExpiresIn(@javax.annotation.Nullable String expiresIn) {
     this.expiresIn = expiresIn;
   }
 

@@ -49,36 +49,42 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner {
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_DISCOUNT = "discount";
   @SerializedName(SERIALIZED_NAME_DISCOUNT)
+  @javax.annotation.Nullable
   private BigDecimal discount;
 
   public static final String SERIALIZED_NAME_DISCOUNT_TYPE = "discountType";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_TYPE)
+  @javax.annotation.Nullable
   private String discountType;
 
   public static final String SERIALIZED_NAME_DISCOUNT_QTY_LIMIT = "discountQtyLimit";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_QTY_LIMIT)
+  @javax.annotation.Nullable
   private Integer discountQtyLimit;
 
   public static final String SERIALIZED_NAME_DISCOUNT_EXPIRY_DATE = "discountExpiryDate";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_EXPIRY_DATE)
+  @javax.annotation.Nullable
   private String discountExpiryDate;
 
   public static final String SERIALIZED_NAME_VENDOR_PROGRAM_NAME = "vendorProgramName";
   @SerializedName(SERIALIZED_NAME_VENDOR_PROGRAM_NAME)
+  @javax.annotation.Nullable
   private String vendorProgramName;
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner currencyCode(String currencyCode) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -92,12 +98,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner discount(BigDecimal discount) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner discount(@javax.annotation.Nullable BigDecimal discount) {
     this.discount = discount;
     return this;
   }
@@ -111,12 +117,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return discount;
   }
 
-  public void setDiscount(BigDecimal discount) {
+  public void setDiscount(@javax.annotation.Nullable BigDecimal discount) {
     this.discount = discount;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner discountType(String discountType) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner discountType(@javax.annotation.Nullable String discountType) {
     this.discountType = discountType;
     return this;
   }
@@ -130,12 +136,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return discountType;
   }
 
-  public void setDiscountType(String discountType) {
+  public void setDiscountType(@javax.annotation.Nullable String discountType) {
     this.discountType = discountType;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner discountQtyLimit(Integer discountQtyLimit) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner discountQtyLimit(@javax.annotation.Nullable Integer discountQtyLimit) {
     this.discountQtyLimit = discountQtyLimit;
     return this;
   }
@@ -149,12 +155,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return discountQtyLimit;
   }
 
-  public void setDiscountQtyLimit(Integer discountQtyLimit) {
+  public void setDiscountQtyLimit(@javax.annotation.Nullable Integer discountQtyLimit) {
     this.discountQtyLimit = discountQtyLimit;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner discountExpiryDate(String discountExpiryDate) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner discountExpiryDate(@javax.annotation.Nullable String discountExpiryDate) {
     this.discountExpiryDate = discountExpiryDate;
     return this;
   }
@@ -168,12 +174,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return discountExpiryDate;
   }
 
-  public void setDiscountExpiryDate(String discountExpiryDate) {
+  public void setDiscountExpiryDate(@javax.annotation.Nullable String discountExpiryDate) {
     this.discountExpiryDate = discountExpiryDate;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner vendorProgramName(String vendorProgramName) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner vendorProgramName(@javax.annotation.Nullable String vendorProgramName) {
     this.vendorProgramName = vendorProgramName;
     return this;
   }
@@ -187,7 +193,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
     return vendorProgramName;
   }
 
-  public void setVendorProgramName(String vendorProgramName) {
+  public void setVendorProgramName(@javax.annotation.Nullable String vendorProgramName) {
     this.vendorProgramName = vendorProgramName;
   }
 

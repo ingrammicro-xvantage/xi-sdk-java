@@ -50,20 +50,22 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerEstimatedDatesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerEstimatedDatesInner {
   public static final String SERIALIZED_NAME_SHIP = "ship";
   @SerializedName(SERIALIZED_NAME_SHIP)
+  @javax.annotation.Nullable
   private OrderDetailB2BLinesInnerEstimatedDatesInnerShip ship;
 
   public static final String SERIALIZED_NAME_DELIVERY = "delivery";
   @SerializedName(SERIALIZED_NAME_DELIVERY)
+  @javax.annotation.Nullable
   private OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery delivery;
 
   public OrderDetailB2BLinesInnerEstimatedDatesInner() {
   }
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInner ship(OrderDetailB2BLinesInnerEstimatedDatesInnerShip ship) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInner ship(@javax.annotation.Nullable OrderDetailB2BLinesInnerEstimatedDatesInnerShip ship) {
     this.ship = ship;
     return this;
   }
@@ -77,12 +79,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInner {
     return ship;
   }
 
-  public void setShip(OrderDetailB2BLinesInnerEstimatedDatesInnerShip ship) {
+  public void setShip(@javax.annotation.Nullable OrderDetailB2BLinesInnerEstimatedDatesInnerShip ship) {
     this.ship = ship;
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInner delivery(OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery delivery) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInner delivery(@javax.annotation.Nullable OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery delivery) {
     this.delivery = delivery;
     return this;
   }
@@ -96,7 +98,7 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInner {
     return delivery;
   }
 
-  public void setDelivery(OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery delivery) {
+  public void setDelivery(@javax.annotation.Nullable OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery delivery) {
     this.delivery = delivery;
   }
 

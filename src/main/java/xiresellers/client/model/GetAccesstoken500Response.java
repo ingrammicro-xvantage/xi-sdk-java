@@ -49,16 +49,17 @@ import xiresellers.client.JSON;
 /**
  * GetAccesstoken500Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class GetAccesstoken500Response {
   public static final String SERIALIZED_NAME_FAULT = "fault";
   @SerializedName(SERIALIZED_NAME_FAULT)
+  @javax.annotation.Nullable
   private GetAccesstoken500ResponseFault fault;
 
   public GetAccesstoken500Response() {
   }
 
-  public GetAccesstoken500Response fault(GetAccesstoken500ResponseFault fault) {
+  public GetAccesstoken500Response fault(@javax.annotation.Nullable GetAccesstoken500ResponseFault fault) {
     this.fault = fault;
     return this;
   }
@@ -72,7 +73,7 @@ public class GetAccesstoken500Response {
     return fault;
   }
 
-  public void setFault(GetAccesstoken500ResponseFault fault) {
+  public void setFault(@javax.annotation.Nullable GetAccesstoken500ResponseFault fault) {
     this.fault = fault;
   }
 

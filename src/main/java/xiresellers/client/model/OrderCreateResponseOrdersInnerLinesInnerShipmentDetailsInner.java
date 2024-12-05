@@ -48,40 +48,47 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
+  @javax.annotation.Nullable
   private String carrierCode;
 
   public static final String SERIALIZED_NAME_CARRIER_NAME = "carrierName";
   @SerializedName(SERIALIZED_NAME_CARRIER_NAME)
+  @javax.annotation.Nullable
   private String carrierName;
 
   public static final String SERIALIZED_NAME_SHIP_FROM_WAREHOUSE_ID = "shipFromWarehouseId";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_WAREHOUSE_ID)
+  @javax.annotation.Nullable
   private String shipFromWarehouseId;
 
   public static final String SERIALIZED_NAME_SHIP_FROM_LOCATION = "shipFromLocation";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_LOCATION)
+  @javax.annotation.Nullable
   private String shipFromLocation;
 
   public static final String SERIALIZED_NAME_FREIGHT_ACCOUNT_NUMBER = "freightAccountNumber";
   @SerializedName(SERIALIZED_NAME_FREIGHT_ACCOUNT_NUMBER)
+  @javax.annotation.Nullable
   private String freightAccountNumber;
 
   public static final String SERIALIZED_NAME_SIGNATURE_REQUIRED = "signatureRequired";
   @SerializedName(SERIALIZED_NAME_SIGNATURE_REQUIRED)
+  @javax.annotation.Nullable
   private String signatureRequired;
 
   public static final String SERIALIZED_NAME_SHIPPING_INSTRUCTIONS = "shippingInstructions";
   @SerializedName(SERIALIZED_NAME_SHIPPING_INSTRUCTIONS)
+  @javax.annotation.Nullable
   private String shippingInstructions;
 
   public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner() {
   }
 
-  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner carrierCode(String carrierCode) {
+  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner carrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
     return this;
   }
@@ -95,12 +102,12 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return carrierCode;
   }
 
-  public void setCarrierCode(String carrierCode) {
+  public void setCarrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
   }
 
 
-  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner carrierName(String carrierName) {
+  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner carrierName(@javax.annotation.Nullable String carrierName) {
     this.carrierName = carrierName;
     return this;
   }
@@ -114,12 +121,12 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return carrierName;
   }
 
-  public void setCarrierName(String carrierName) {
+  public void setCarrierName(@javax.annotation.Nullable String carrierName) {
     this.carrierName = carrierName;
   }
 
 
-  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner shipFromWarehouseId(String shipFromWarehouseId) {
+  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner shipFromWarehouseId(@javax.annotation.Nullable String shipFromWarehouseId) {
     this.shipFromWarehouseId = shipFromWarehouseId;
     return this;
   }
@@ -133,12 +140,12 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return shipFromWarehouseId;
   }
 
-  public void setShipFromWarehouseId(String shipFromWarehouseId) {
+  public void setShipFromWarehouseId(@javax.annotation.Nullable String shipFromWarehouseId) {
     this.shipFromWarehouseId = shipFromWarehouseId;
   }
 
 
-  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner shipFromLocation(String shipFromLocation) {
+  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner shipFromLocation(@javax.annotation.Nullable String shipFromLocation) {
     this.shipFromLocation = shipFromLocation;
     return this;
   }
@@ -152,12 +159,12 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return shipFromLocation;
   }
 
-  public void setShipFromLocation(String shipFromLocation) {
+  public void setShipFromLocation(@javax.annotation.Nullable String shipFromLocation) {
     this.shipFromLocation = shipFromLocation;
   }
 
 
-  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner freightAccountNumber(String freightAccountNumber) {
+  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner freightAccountNumber(@javax.annotation.Nullable String freightAccountNumber) {
     this.freightAccountNumber = freightAccountNumber;
     return this;
   }
@@ -171,12 +178,12 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return freightAccountNumber;
   }
 
-  public void setFreightAccountNumber(String freightAccountNumber) {
+  public void setFreightAccountNumber(@javax.annotation.Nullable String freightAccountNumber) {
     this.freightAccountNumber = freightAccountNumber;
   }
 
 
-  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner signatureRequired(String signatureRequired) {
+  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner signatureRequired(@javax.annotation.Nullable String signatureRequired) {
     this.signatureRequired = signatureRequired;
     return this;
   }
@@ -190,12 +197,12 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return signatureRequired;
   }
 
-  public void setSignatureRequired(String signatureRequired) {
+  public void setSignatureRequired(@javax.annotation.Nullable String signatureRequired) {
     this.signatureRequired = signatureRequired;
   }
 
 
-  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner shippingInstructions(String shippingInstructions) {
+  public OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner shippingInstructions(@javax.annotation.Nullable String shippingInstructions) {
     this.shippingInstructions = shippingInstructions;
     return this;
   }
@@ -209,7 +216,7 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
     return shippingInstructions;
   }
 
-  public void setShippingInstructions(String shippingInstructions) {
+  public void setShippingInstructions(@javax.annotation.Nullable String shippingInstructions) {
     this.shippingInstructions = shippingInstructions;
   }
 

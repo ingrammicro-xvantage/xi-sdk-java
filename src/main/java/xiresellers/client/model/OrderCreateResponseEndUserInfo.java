@@ -48,72 +48,87 @@ import xiresellers.client.JSON;
 /**
  * The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateResponseEndUserInfo {
   public static final String SERIALIZED_NAME_END_USER_ID = "endUserId";
   @SerializedName(SERIALIZED_NAME_END_USER_ID)
+  @javax.annotation.Nullable
   private String endUserId;
 
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
+  @javax.annotation.Nullable
   private String contact;
 
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
+  @javax.annotation.Nullable
   private String companyName;
 
   public static final String SERIALIZED_NAME_NAME1 = "name1";
   @SerializedName(SERIALIZED_NAME_NAME1)
+  @javax.annotation.Nullable
   private String name1;
 
   public static final String SERIALIZED_NAME_NAME2 = "name2";
   @SerializedName(SERIALIZED_NAME_NAME2)
+  @javax.annotation.Nullable
   private String name2;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE1 = "addressLine1";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE1)
+  @javax.annotation.Nullable
   private String addressLine1;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE2 = "addressLine2";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE2)
+  @javax.annotation.Nullable
   private String addressLine2;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE3 = "addressLine3";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE3)
+  @javax.annotation.Nullable
   private String addressLine3;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE4 = "addressLine4";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE4)
+  @javax.annotation.Nullable
   private String addressLine4;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_POSTAL_CODE = "postalCode";
   @SerializedName(SERIALIZED_NAME_POSTAL_CODE)
+  @javax.annotation.Nullable
   private String postalCode;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "countryCode";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBER = "phoneNumber";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
+  @javax.annotation.Nullable
   private String phoneNumber;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public OrderCreateResponseEndUserInfo() {
   }
 
-  public OrderCreateResponseEndUserInfo endUserId(String endUserId) {
+  public OrderCreateResponseEndUserInfo endUserId(@javax.annotation.Nullable String endUserId) {
     this.endUserId = endUserId;
     return this;
   }
@@ -127,12 +142,12 @@ public class OrderCreateResponseEndUserInfo {
     return endUserId;
   }
 
-  public void setEndUserId(String endUserId) {
+  public void setEndUserId(@javax.annotation.Nullable String endUserId) {
     this.endUserId = endUserId;
   }
 
 
-  public OrderCreateResponseEndUserInfo contact(String contact) {
+  public OrderCreateResponseEndUserInfo contact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
     return this;
   }
@@ -146,12 +161,12 @@ public class OrderCreateResponseEndUserInfo {
     return contact;
   }
 
-  public void setContact(String contact) {
+  public void setContact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
   }
 
 
-  public OrderCreateResponseEndUserInfo companyName(String companyName) {
+  public OrderCreateResponseEndUserInfo companyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
     return this;
   }
@@ -165,12 +180,12 @@ public class OrderCreateResponseEndUserInfo {
     return companyName;
   }
 
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
 
-  public OrderCreateResponseEndUserInfo name1(String name1) {
+  public OrderCreateResponseEndUserInfo name1(@javax.annotation.Nullable String name1) {
     this.name1 = name1;
     return this;
   }
@@ -184,12 +199,12 @@ public class OrderCreateResponseEndUserInfo {
     return name1;
   }
 
-  public void setName1(String name1) {
+  public void setName1(@javax.annotation.Nullable String name1) {
     this.name1 = name1;
   }
 
 
-  public OrderCreateResponseEndUserInfo name2(String name2) {
+  public OrderCreateResponseEndUserInfo name2(@javax.annotation.Nullable String name2) {
     this.name2 = name2;
     return this;
   }
@@ -203,12 +218,12 @@ public class OrderCreateResponseEndUserInfo {
     return name2;
   }
 
-  public void setName2(String name2) {
+  public void setName2(@javax.annotation.Nullable String name2) {
     this.name2 = name2;
   }
 
 
-  public OrderCreateResponseEndUserInfo addressLine1(String addressLine1) {
+  public OrderCreateResponseEndUserInfo addressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
@@ -222,12 +237,12 @@ public class OrderCreateResponseEndUserInfo {
     return addressLine1;
   }
 
-  public void setAddressLine1(String addressLine1) {
+  public void setAddressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
   }
 
 
-  public OrderCreateResponseEndUserInfo addressLine2(String addressLine2) {
+  public OrderCreateResponseEndUserInfo addressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
@@ -241,12 +256,12 @@ public class OrderCreateResponseEndUserInfo {
     return addressLine2;
   }
 
-  public void setAddressLine2(String addressLine2) {
+  public void setAddressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
   }
 
 
-  public OrderCreateResponseEndUserInfo addressLine3(String addressLine3) {
+  public OrderCreateResponseEndUserInfo addressLine3(@javax.annotation.Nullable String addressLine3) {
     this.addressLine3 = addressLine3;
     return this;
   }
@@ -260,12 +275,12 @@ public class OrderCreateResponseEndUserInfo {
     return addressLine3;
   }
 
-  public void setAddressLine3(String addressLine3) {
+  public void setAddressLine3(@javax.annotation.Nullable String addressLine3) {
     this.addressLine3 = addressLine3;
   }
 
 
-  public OrderCreateResponseEndUserInfo addressLine4(String addressLine4) {
+  public OrderCreateResponseEndUserInfo addressLine4(@javax.annotation.Nullable String addressLine4) {
     this.addressLine4 = addressLine4;
     return this;
   }
@@ -279,12 +294,12 @@ public class OrderCreateResponseEndUserInfo {
     return addressLine4;
   }
 
-  public void setAddressLine4(String addressLine4) {
+  public void setAddressLine4(@javax.annotation.Nullable String addressLine4) {
     this.addressLine4 = addressLine4;
   }
 
 
-  public OrderCreateResponseEndUserInfo city(String city) {
+  public OrderCreateResponseEndUserInfo city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -298,12 +313,12 @@ public class OrderCreateResponseEndUserInfo {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public OrderCreateResponseEndUserInfo state(String state) {
+  public OrderCreateResponseEndUserInfo state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -317,12 +332,12 @@ public class OrderCreateResponseEndUserInfo {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public OrderCreateResponseEndUserInfo postalCode(String postalCode) {
+  public OrderCreateResponseEndUserInfo postalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
@@ -336,12 +351,12 @@ public class OrderCreateResponseEndUserInfo {
     return postalCode;
   }
 
-  public void setPostalCode(String postalCode) {
+  public void setPostalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
   }
 
 
-  public OrderCreateResponseEndUserInfo countryCode(String countryCode) {
+  public OrderCreateResponseEndUserInfo countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -355,12 +370,12 @@ public class OrderCreateResponseEndUserInfo {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 
 
-  public OrderCreateResponseEndUserInfo phoneNumber(String phoneNumber) {
+  public OrderCreateResponseEndUserInfo phoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
@@ -374,12 +389,12 @@ public class OrderCreateResponseEndUserInfo {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
 
-  public OrderCreateResponseEndUserInfo email(String email) {
+  public OrderCreateResponseEndUserInfo email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -393,7 +408,7 @@ public class OrderCreateResponseEndUserInfo {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 

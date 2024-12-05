@@ -53,64 +53,77 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7ResponseResourceOrdersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7ResponseResourceOrdersInner {
   public static final String SERIALIZED_NAME_NUMBER_OF_LINES_WITH_SUCCESS = "numberOfLinesWithSuccess";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_LINES_WITH_SUCCESS)
+  @javax.annotation.Nullable
   private Integer numberOfLinesWithSuccess;
 
   public static final String SERIALIZED_NAME_NUMBER_OF_LINES_WITH_ERROR = "numberOfLinesWithError";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_LINES_WITH_ERROR)
+  @javax.annotation.Nullable
   private Integer numberOfLinesWithError;
 
   public static final String SERIALIZED_NAME_NUMBER_OF_LINES_WITH_WARNING = "numberOfLinesWithWarning";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_LINES_WITH_WARNING)
+  @javax.annotation.Nullable
   private Integer numberOfLinesWithWarning;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String ingramOrderNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_DATE = "ingramOrderDate";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_DATE)
+  @javax.annotation.Nullable
   private String ingramOrderDate;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_ORDER_TYPE = "orderType";
   @SerializedName(SERIALIZED_NAME_ORDER_TYPE)
+  @javax.annotation.Nullable
   private String orderType;
 
   public static final String SERIALIZED_NAME_ORDER_TOTAL = "orderTotal";
   @SerializedName(SERIALIZED_NAME_ORDER_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal orderTotal;
 
   public static final String SERIALIZED_NAME_FREIGHT_CHARGES = "freightCharges";
   @SerializedName(SERIALIZED_NAME_FREIGHT_CHARGES)
+  @javax.annotation.Nullable
   private BigDecimal freightCharges;
 
   public static final String SERIALIZED_NAME_TOTAL_TAX = "totalTax";
   @SerializedName(SERIALIZED_NAME_TOTAL_TAX)
+  @javax.annotation.Nullable
   private BigDecimal totalTax;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<OrderCreateV7ResponseResourceOrdersInnerLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<OrderCreateResponseOrdersInnerLinksInner> links = new ArrayList<>();
 
   public OrderCreateV7ResponseResourceOrdersInner() {
   }
 
-  public OrderCreateV7ResponseResourceOrdersInner numberOfLinesWithSuccess(Integer numberOfLinesWithSuccess) {
+  public OrderCreateV7ResponseResourceOrdersInner numberOfLinesWithSuccess(@javax.annotation.Nullable Integer numberOfLinesWithSuccess) {
     this.numberOfLinesWithSuccess = numberOfLinesWithSuccess;
     return this;
   }
@@ -124,12 +137,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return numberOfLinesWithSuccess;
   }
 
-  public void setNumberOfLinesWithSuccess(Integer numberOfLinesWithSuccess) {
+  public void setNumberOfLinesWithSuccess(@javax.annotation.Nullable Integer numberOfLinesWithSuccess) {
     this.numberOfLinesWithSuccess = numberOfLinesWithSuccess;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner numberOfLinesWithError(Integer numberOfLinesWithError) {
+  public OrderCreateV7ResponseResourceOrdersInner numberOfLinesWithError(@javax.annotation.Nullable Integer numberOfLinesWithError) {
     this.numberOfLinesWithError = numberOfLinesWithError;
     return this;
   }
@@ -143,12 +156,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return numberOfLinesWithError;
   }
 
-  public void setNumberOfLinesWithError(Integer numberOfLinesWithError) {
+  public void setNumberOfLinesWithError(@javax.annotation.Nullable Integer numberOfLinesWithError) {
     this.numberOfLinesWithError = numberOfLinesWithError;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner numberOfLinesWithWarning(Integer numberOfLinesWithWarning) {
+  public OrderCreateV7ResponseResourceOrdersInner numberOfLinesWithWarning(@javax.annotation.Nullable Integer numberOfLinesWithWarning) {
     this.numberOfLinesWithWarning = numberOfLinesWithWarning;
     return this;
   }
@@ -162,12 +175,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return numberOfLinesWithWarning;
   }
 
-  public void setNumberOfLinesWithWarning(Integer numberOfLinesWithWarning) {
+  public void setNumberOfLinesWithWarning(@javax.annotation.Nullable Integer numberOfLinesWithWarning) {
     this.numberOfLinesWithWarning = numberOfLinesWithWarning;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner ingramOrderNumber(String ingramOrderNumber) {
+  public OrderCreateV7ResponseResourceOrdersInner ingramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
     return this;
   }
@@ -181,12 +194,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return ingramOrderNumber;
   }
 
-  public void setIngramOrderNumber(String ingramOrderNumber) {
+  public void setIngramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner ingramOrderDate(String ingramOrderDate) {
+  public OrderCreateV7ResponseResourceOrdersInner ingramOrderDate(@javax.annotation.Nullable String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
     return this;
   }
@@ -200,12 +213,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return ingramOrderDate;
   }
 
-  public void setIngramOrderDate(String ingramOrderDate) {
+  public void setIngramOrderDate(@javax.annotation.Nullable String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner notes(String notes) {
+  public OrderCreateV7ResponseResourceOrdersInner notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -219,12 +232,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner orderType(String orderType) {
+  public OrderCreateV7ResponseResourceOrdersInner orderType(@javax.annotation.Nullable String orderType) {
     this.orderType = orderType;
     return this;
   }
@@ -238,12 +251,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return orderType;
   }
 
-  public void setOrderType(String orderType) {
+  public void setOrderType(@javax.annotation.Nullable String orderType) {
     this.orderType = orderType;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner orderTotal(BigDecimal orderTotal) {
+  public OrderCreateV7ResponseResourceOrdersInner orderTotal(@javax.annotation.Nullable BigDecimal orderTotal) {
     this.orderTotal = orderTotal;
     return this;
   }
@@ -257,12 +270,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return orderTotal;
   }
 
-  public void setOrderTotal(BigDecimal orderTotal) {
+  public void setOrderTotal(@javax.annotation.Nullable BigDecimal orderTotal) {
     this.orderTotal = orderTotal;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner freightCharges(BigDecimal freightCharges) {
+  public OrderCreateV7ResponseResourceOrdersInner freightCharges(@javax.annotation.Nullable BigDecimal freightCharges) {
     this.freightCharges = freightCharges;
     return this;
   }
@@ -276,12 +289,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return freightCharges;
   }
 
-  public void setFreightCharges(BigDecimal freightCharges) {
+  public void setFreightCharges(@javax.annotation.Nullable BigDecimal freightCharges) {
     this.freightCharges = freightCharges;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner totalTax(BigDecimal totalTax) {
+  public OrderCreateV7ResponseResourceOrdersInner totalTax(@javax.annotation.Nullable BigDecimal totalTax) {
     this.totalTax = totalTax;
     return this;
   }
@@ -295,12 +308,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return totalTax;
   }
 
-  public void setTotalTax(BigDecimal totalTax) {
+  public void setTotalTax(@javax.annotation.Nullable BigDecimal totalTax) {
     this.totalTax = totalTax;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner currencyCode(String currencyCode) {
+  public OrderCreateV7ResponseResourceOrdersInner currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -314,12 +327,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner lines(List<OrderCreateV7ResponseResourceOrdersInnerLinesInner> lines) {
+  public OrderCreateV7ResponseResourceOrdersInner lines(@javax.annotation.Nullable List<OrderCreateV7ResponseResourceOrdersInnerLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -341,12 +354,12 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return lines;
   }
 
-  public void setLines(List<OrderCreateV7ResponseResourceOrdersInnerLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<OrderCreateV7ResponseResourceOrdersInnerLinesInner> lines) {
     this.lines = lines;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInner links(List<OrderCreateResponseOrdersInnerLinksInner> links) {
+  public OrderCreateV7ResponseResourceOrdersInner links(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -368,7 +381,7 @@ public class OrderCreateV7ResponseResourceOrdersInner {
     return links;
   }
 
-  public void setLinks(List<OrderCreateResponseOrdersInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<OrderCreateResponseOrdersInnerLinksInner> links) {
     this.links = links;
   }
 

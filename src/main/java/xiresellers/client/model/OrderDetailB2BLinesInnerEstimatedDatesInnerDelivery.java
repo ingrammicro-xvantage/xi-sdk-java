@@ -49,32 +49,37 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
   public static final String SERIALIZED_NAME_DELIVERY_DATE_TYPE = "deliveryDateType";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE_TYPE)
+  @javax.annotation.Nullable
   private String deliveryDateType;
 
   public static final String SERIALIZED_NAME_DELIVERY_DATE_RANGE = "deliveryDateRange";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE_RANGE)
+  @javax.annotation.Nullable
   private OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange deliveryDateRange;
 
   public static final String SERIALIZED_NAME_DELIVERY_SOURCE = "deliverySource";
   @SerializedName(SERIALIZED_NAME_DELIVERY_SOURCE)
+  @javax.annotation.Nullable
   private String deliverySource;
 
   public static final String SERIALIZED_NAME_DELIVERY_DESCRIPTION = "deliveryDescription";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DESCRIPTION)
+  @javax.annotation.Nullable
   private String deliveryDescription;
 
   public static final String SERIALIZED_NAME_DELIVERY_DATE = "deliveryDate";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE)
+  @javax.annotation.Nullable
   private String deliveryDate;
 
   public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery() {
   }
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliveryDateType(String deliveryDateType) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliveryDateType(@javax.annotation.Nullable String deliveryDateType) {
     this.deliveryDateType = deliveryDateType;
     return this;
   }
@@ -88,12 +93,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     return deliveryDateType;
   }
 
-  public void setDeliveryDateType(String deliveryDateType) {
+  public void setDeliveryDateType(@javax.annotation.Nullable String deliveryDateType) {
     this.deliveryDateType = deliveryDateType;
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliveryDateRange(OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange deliveryDateRange) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliveryDateRange(@javax.annotation.Nullable OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange deliveryDateRange) {
     this.deliveryDateRange = deliveryDateRange;
     return this;
   }
@@ -107,12 +112,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     return deliveryDateRange;
   }
 
-  public void setDeliveryDateRange(OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange deliveryDateRange) {
+  public void setDeliveryDateRange(@javax.annotation.Nullable OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange deliveryDateRange) {
     this.deliveryDateRange = deliveryDateRange;
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliverySource(String deliverySource) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliverySource(@javax.annotation.Nullable String deliverySource) {
     this.deliverySource = deliverySource;
     return this;
   }
@@ -126,12 +131,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     return deliverySource;
   }
 
-  public void setDeliverySource(String deliverySource) {
+  public void setDeliverySource(@javax.annotation.Nullable String deliverySource) {
     this.deliverySource = deliverySource;
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliveryDescription(String deliveryDescription) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliveryDescription(@javax.annotation.Nullable String deliveryDescription) {
     this.deliveryDescription = deliveryDescription;
     return this;
   }
@@ -145,12 +150,12 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     return deliveryDescription;
   }
 
-  public void setDeliveryDescription(String deliveryDescription) {
+  public void setDeliveryDescription(@javax.annotation.Nullable String deliveryDescription) {
     this.deliveryDescription = deliveryDescription;
   }
 
 
-  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliveryDate(String deliveryDate) {
+  public OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery deliveryDate(@javax.annotation.Nullable String deliveryDate) {
     this.deliveryDate = deliveryDate;
     return this;
   }
@@ -164,7 +169,7 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
     return deliveryDate;
   }
 
-  public void setDeliveryDate(String deliveryDate) {
+  public void setDeliveryDate(@javax.annotation.Nullable String deliveryDate) {
     this.deliveryDate = deliveryDate;
   }
 

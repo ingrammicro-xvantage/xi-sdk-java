@@ -49,20 +49,22 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner {
   public static final String SERIALIZED_NAME_EXTRA_FEES_DESCRIPTION = "extraFeesDescription";
   @SerializedName(SERIALIZED_NAME_EXTRA_FEES_DESCRIPTION)
+  @javax.annotation.Nullable
   private String extraFeesDescription;
 
   public static final String SERIALIZED_NAME_EXTRA_FEES_AMOUNT = "extraFeesAmount";
   @SerializedName(SERIALIZED_NAME_EXTRA_FEES_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal extraFeesAmount;
 
   public QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner() {
   }
 
-  public QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner extraFeesDescription(String extraFeesDescription) {
+  public QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner extraFeesDescription(@javax.annotation.Nullable String extraFeesDescription) {
     this.extraFeesDescription = extraFeesDescription;
     return this;
   }
@@ -76,12 +78,12 @@ public class QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner {
     return extraFeesDescription;
   }
 
-  public void setExtraFeesDescription(String extraFeesDescription) {
+  public void setExtraFeesDescription(@javax.annotation.Nullable String extraFeesDescription) {
     this.extraFeesDescription = extraFeesDescription;
   }
 
 
-  public QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner extraFeesAmount(BigDecimal extraFeesAmount) {
+  public QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner extraFeesAmount(@javax.annotation.Nullable BigDecimal extraFeesAmount) {
     this.extraFeesAmount = extraFeesAmount;
     return this;
   }
@@ -95,7 +97,7 @@ public class QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner {
     return extraFeesAmount;
   }
 
-  public void setExtraFeesAmount(BigDecimal extraFeesAmount) {
+  public void setExtraFeesAmount(@javax.annotation.Nullable BigDecimal extraFeesAmount) {
     this.extraFeesAmount = extraFeesAmount;
   }
 

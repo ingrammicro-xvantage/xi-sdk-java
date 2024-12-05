@@ -51,32 +51,37 @@ import xiresellers.client.JSON;
 /**
  * InvoiceSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
+  @javax.annotation.Nullable
   private Integer recordsFound;
 
   public static final String SERIALIZED_NAME_PAGE_SIZE = "pageSize";
   @SerializedName(SERIALIZED_NAME_PAGE_SIZE)
+  @javax.annotation.Nullable
   private Integer pageSize;
 
   public static final String SERIALIZED_NAME_PAGE_NUMBER = "pageNumber";
   @SerializedName(SERIALIZED_NAME_PAGE_NUMBER)
+  @javax.annotation.Nullable
   private Integer pageNumber;
 
   public static final String SERIALIZED_NAME_INVOICES = "invoices";
   @SerializedName(SERIALIZED_NAME_INVOICES)
+  @javax.annotation.Nullable
   private List<InvoiceSearchResponseInvoicesInner> invoices = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT_PAGE = "nextPage";
   @SerializedName(SERIALIZED_NAME_NEXT_PAGE)
+  @javax.annotation.Nullable
   private String nextPage;
 
   public InvoiceSearchResponse() {
   }
 
-  public InvoiceSearchResponse recordsFound(Integer recordsFound) {
+  public InvoiceSearchResponse recordsFound(@javax.annotation.Nullable Integer recordsFound) {
     this.recordsFound = recordsFound;
     return this;
   }
@@ -90,12 +95,12 @@ public class InvoiceSearchResponse {
     return recordsFound;
   }
 
-  public void setRecordsFound(Integer recordsFound) {
+  public void setRecordsFound(@javax.annotation.Nullable Integer recordsFound) {
     this.recordsFound = recordsFound;
   }
 
 
-  public InvoiceSearchResponse pageSize(Integer pageSize) {
+  public InvoiceSearchResponse pageSize(@javax.annotation.Nullable Integer pageSize) {
     this.pageSize = pageSize;
     return this;
   }
@@ -109,12 +114,12 @@ public class InvoiceSearchResponse {
     return pageSize;
   }
 
-  public void setPageSize(Integer pageSize) {
+  public void setPageSize(@javax.annotation.Nullable Integer pageSize) {
     this.pageSize = pageSize;
   }
 
 
-  public InvoiceSearchResponse pageNumber(Integer pageNumber) {
+  public InvoiceSearchResponse pageNumber(@javax.annotation.Nullable Integer pageNumber) {
     this.pageNumber = pageNumber;
     return this;
   }
@@ -128,12 +133,12 @@ public class InvoiceSearchResponse {
     return pageNumber;
   }
 
-  public void setPageNumber(Integer pageNumber) {
+  public void setPageNumber(@javax.annotation.Nullable Integer pageNumber) {
     this.pageNumber = pageNumber;
   }
 
 
-  public InvoiceSearchResponse invoices(List<InvoiceSearchResponseInvoicesInner> invoices) {
+  public InvoiceSearchResponse invoices(@javax.annotation.Nullable List<InvoiceSearchResponseInvoicesInner> invoices) {
     this.invoices = invoices;
     return this;
   }
@@ -155,12 +160,12 @@ public class InvoiceSearchResponse {
     return invoices;
   }
 
-  public void setInvoices(List<InvoiceSearchResponseInvoicesInner> invoices) {
+  public void setInvoices(@javax.annotation.Nullable List<InvoiceSearchResponseInvoicesInner> invoices) {
     this.invoices = invoices;
   }
 
 
-  public InvoiceSearchResponse nextPage(String nextPage) {
+  public InvoiceSearchResponse nextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
     return this;
   }
@@ -174,7 +179,7 @@ public class InvoiceSearchResponse {
     return nextPage;
   }
 
-  public void setNextPage(String nextPage) {
+  public void setNextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
   }
 

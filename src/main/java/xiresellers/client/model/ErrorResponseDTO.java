@@ -52,16 +52,17 @@ import xiresellers.client.JSON;
 /**
  * ErrorResponseDTO
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ErrorResponseDTO {
   public static final String SERIALIZED_NAME_ERRORS = "errors";
   @SerializedName(SERIALIZED_NAME_ERRORS)
+  @javax.annotation.Nullable
   private List<Error> errors;
 
   public ErrorResponseDTO() {
   }
 
-  public ErrorResponseDTO errors(List<Error> errors) {
+  public ErrorResponseDTO errors(@javax.annotation.Nullable List<Error> errors) {
     this.errors = errors;
     return this;
   }
@@ -83,7 +84,7 @@ public class ErrorResponseDTO {
     return errors;
   }
 
-  public void setErrors(List<Error> errors) {
+  public void setErrors(@javax.annotation.Nullable List<Error> errors) {
     this.errors = errors;
   }
 

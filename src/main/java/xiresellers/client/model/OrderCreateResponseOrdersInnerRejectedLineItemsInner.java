@@ -48,36 +48,42 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInnerRejectedLineItemsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINENUMBER = "customerLinenumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINENUMBER)
+  @javax.annotation.Nullable
   private String customerLinenumber;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY_ORDERED = "quantityOrdered";
   @SerializedName(SERIALIZED_NAME_QUANTITY_ORDERED)
+  @javax.annotation.Nullable
   private Integer quantityOrdered;
 
   public static final String SERIALIZED_NAME_REJECT_CODE = "rejectCode";
   @SerializedName(SERIALIZED_NAME_REJECT_CODE)
+  @javax.annotation.Nullable
   private String rejectCode;
 
   public static final String SERIALIZED_NAME_REJECT_REASON = "rejectReason";
   @SerializedName(SERIALIZED_NAME_REJECT_REASON)
+  @javax.annotation.Nullable
   private String rejectReason;
 
   public OrderCreateResponseOrdersInnerRejectedLineItemsInner() {
   }
 
-  public OrderCreateResponseOrdersInnerRejectedLineItemsInner customerLinenumber(String customerLinenumber) {
+  public OrderCreateResponseOrdersInnerRejectedLineItemsInner customerLinenumber(@javax.annotation.Nullable String customerLinenumber) {
     this.customerLinenumber = customerLinenumber;
     return this;
   }
@@ -91,12 +97,12 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return customerLinenumber;
   }
 
-  public void setCustomerLinenumber(String customerLinenumber) {
+  public void setCustomerLinenumber(@javax.annotation.Nullable String customerLinenumber) {
     this.customerLinenumber = customerLinenumber;
   }
 
 
-  public OrderCreateResponseOrdersInnerRejectedLineItemsInner ingramPartNumber(String ingramPartNumber) {
+  public OrderCreateResponseOrdersInnerRejectedLineItemsInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -110,12 +116,12 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public OrderCreateResponseOrdersInnerRejectedLineItemsInner vendorPartNumber(String vendorPartNumber) {
+  public OrderCreateResponseOrdersInnerRejectedLineItemsInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -129,12 +135,12 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public OrderCreateResponseOrdersInnerRejectedLineItemsInner quantityOrdered(Integer quantityOrdered) {
+  public OrderCreateResponseOrdersInnerRejectedLineItemsInner quantityOrdered(@javax.annotation.Nullable Integer quantityOrdered) {
     this.quantityOrdered = quantityOrdered;
     return this;
   }
@@ -148,12 +154,12 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return quantityOrdered;
   }
 
-  public void setQuantityOrdered(Integer quantityOrdered) {
+  public void setQuantityOrdered(@javax.annotation.Nullable Integer quantityOrdered) {
     this.quantityOrdered = quantityOrdered;
   }
 
 
-  public OrderCreateResponseOrdersInnerRejectedLineItemsInner rejectCode(String rejectCode) {
+  public OrderCreateResponseOrdersInnerRejectedLineItemsInner rejectCode(@javax.annotation.Nullable String rejectCode) {
     this.rejectCode = rejectCode;
     return this;
   }
@@ -167,12 +173,12 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return rejectCode;
   }
 
-  public void setRejectCode(String rejectCode) {
+  public void setRejectCode(@javax.annotation.Nullable String rejectCode) {
     this.rejectCode = rejectCode;
   }
 
 
-  public OrderCreateResponseOrdersInnerRejectedLineItemsInner rejectReason(String rejectReason) {
+  public OrderCreateResponseOrdersInnerRejectedLineItemsInner rejectReason(@javax.annotation.Nullable String rejectReason) {
     this.rejectReason = rejectReason;
     return this;
   }
@@ -186,7 +192,7 @@ public class OrderCreateResponseOrdersInnerRejectedLineItemsInner {
     return rejectReason;
   }
 
-  public void setRejectReason(String rejectReason) {
+  public void setRejectReason(@javax.annotation.Nullable String rejectReason) {
     this.rejectReason = rejectReason;
   }
 

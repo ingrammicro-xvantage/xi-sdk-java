@@ -48,24 +48,27 @@ import xiresellers.client.JSON;
 /**
  * Shipping details for the order provided by the reseller.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderModifyResponseLinesInnerShipmentDetails {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
+  @javax.annotation.Nullable
   private String carrierCode;
 
   public static final String SERIALIZED_NAME_CARRIER_NAME = "carrierName";
   @SerializedName(SERIALIZED_NAME_CARRIER_NAME)
+  @javax.annotation.Nullable
   private String carrierName;
 
   public static final String SERIALIZED_NAME_FREIGHT_ACCOUNT_NUMBER = "freightAccountNumber";
   @SerializedName(SERIALIZED_NAME_FREIGHT_ACCOUNT_NUMBER)
+  @javax.annotation.Nullable
   private String freightAccountNumber;
 
   public OrderModifyResponseLinesInnerShipmentDetails() {
   }
 
-  public OrderModifyResponseLinesInnerShipmentDetails carrierCode(String carrierCode) {
+  public OrderModifyResponseLinesInnerShipmentDetails carrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
     return this;
   }
@@ -79,12 +82,12 @@ public class OrderModifyResponseLinesInnerShipmentDetails {
     return carrierCode;
   }
 
-  public void setCarrierCode(String carrierCode) {
+  public void setCarrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
   }
 
 
-  public OrderModifyResponseLinesInnerShipmentDetails carrierName(String carrierName) {
+  public OrderModifyResponseLinesInnerShipmentDetails carrierName(@javax.annotation.Nullable String carrierName) {
     this.carrierName = carrierName;
     return this;
   }
@@ -98,12 +101,12 @@ public class OrderModifyResponseLinesInnerShipmentDetails {
     return carrierName;
   }
 
-  public void setCarrierName(String carrierName) {
+  public void setCarrierName(@javax.annotation.Nullable String carrierName) {
     this.carrierName = carrierName;
   }
 
 
-  public OrderModifyResponseLinesInnerShipmentDetails freightAccountNumber(String freightAccountNumber) {
+  public OrderModifyResponseLinesInnerShipmentDetails freightAccountNumber(@javax.annotation.Nullable String freightAccountNumber) {
     this.freightAccountNumber = freightAccountNumber;
     return this;
   }
@@ -117,7 +120,7 @@ public class OrderModifyResponseLinesInnerShipmentDetails {
     return freightAccountNumber;
   }
 
-  public void setFreightAccountNumber(String freightAccountNumber) {
+  public void setFreightAccountNumber(@javax.annotation.Nullable String freightAccountNumber) {
     this.freightAccountNumber = freightAccountNumber;
   }
 

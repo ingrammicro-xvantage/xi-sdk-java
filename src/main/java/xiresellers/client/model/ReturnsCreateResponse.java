@@ -51,16 +51,17 @@ import xiresellers.client.JSON;
 /**
  * ReturnsCreateResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ReturnsCreateResponse {
   public static final String SERIALIZED_NAME_RETURNS_CLAIMS = "returnsClaims";
   @SerializedName(SERIALIZED_NAME_RETURNS_CLAIMS)
+  @javax.annotation.Nullable
   private List<ReturnsCreateResponseReturnsClaimsInner> returnsClaims = new ArrayList<>();
 
   public ReturnsCreateResponse() {
   }
 
-  public ReturnsCreateResponse returnsClaims(List<ReturnsCreateResponseReturnsClaimsInner> returnsClaims) {
+  public ReturnsCreateResponse returnsClaims(@javax.annotation.Nullable List<ReturnsCreateResponseReturnsClaimsInner> returnsClaims) {
     this.returnsClaims = returnsClaims;
     return this;
   }
@@ -82,7 +83,7 @@ public class ReturnsCreateResponse {
     return returnsClaims;
   }
 
-  public void setReturnsClaims(List<ReturnsCreateResponseReturnsClaimsInner> returnsClaims) {
+  public void setReturnsClaims(@javax.annotation.Nullable List<ReturnsCreateResponseReturnsClaimsInner> returnsClaims) {
     this.returnsClaims = returnsClaims;
   }
 

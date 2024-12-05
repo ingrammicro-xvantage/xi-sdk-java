@@ -48,56 +48,67 @@ import xiresellers.client.JSON;
 /**
  * The billing information provided by the reseller.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BBillToInfo {
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
+  @javax.annotation.Nullable
   private String contact;
 
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
+  @javax.annotation.Nullable
   private String companyName;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE1 = "addressLine1";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE1)
+  @javax.annotation.Nullable
   private String addressLine1;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE2 = "addressLine2";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE2)
+  @javax.annotation.Nullable
   private String addressLine2;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE3 = "addressLine3";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE3)
+  @javax.annotation.Nullable
   private String addressLine3;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_POSTAL_CODE = "postalCode";
   @SerializedName(SERIALIZED_NAME_POSTAL_CODE)
+  @javax.annotation.Nullable
   private String postalCode;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "countryCode";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBER = "phoneNumber";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
+  @javax.annotation.Nullable
   private String phoneNumber;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public OrderDetailB2BBillToInfo() {
   }
 
-  public OrderDetailB2BBillToInfo contact(String contact) {
+  public OrderDetailB2BBillToInfo contact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
     return this;
   }
@@ -111,12 +122,12 @@ public class OrderDetailB2BBillToInfo {
     return contact;
   }
 
-  public void setContact(String contact) {
+  public void setContact(@javax.annotation.Nullable String contact) {
     this.contact = contact;
   }
 
 
-  public OrderDetailB2BBillToInfo companyName(String companyName) {
+  public OrderDetailB2BBillToInfo companyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
     return this;
   }
@@ -130,12 +141,12 @@ public class OrderDetailB2BBillToInfo {
     return companyName;
   }
 
-  public void setCompanyName(String companyName) {
+  public void setCompanyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
   }
 
 
-  public OrderDetailB2BBillToInfo addressLine1(String addressLine1) {
+  public OrderDetailB2BBillToInfo addressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
@@ -149,12 +160,12 @@ public class OrderDetailB2BBillToInfo {
     return addressLine1;
   }
 
-  public void setAddressLine1(String addressLine1) {
+  public void setAddressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
   }
 
 
-  public OrderDetailB2BBillToInfo addressLine2(String addressLine2) {
+  public OrderDetailB2BBillToInfo addressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
@@ -168,12 +179,12 @@ public class OrderDetailB2BBillToInfo {
     return addressLine2;
   }
 
-  public void setAddressLine2(String addressLine2) {
+  public void setAddressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
   }
 
 
-  public OrderDetailB2BBillToInfo addressLine3(String addressLine3) {
+  public OrderDetailB2BBillToInfo addressLine3(@javax.annotation.Nullable String addressLine3) {
     this.addressLine3 = addressLine3;
     return this;
   }
@@ -187,12 +198,12 @@ public class OrderDetailB2BBillToInfo {
     return addressLine3;
   }
 
-  public void setAddressLine3(String addressLine3) {
+  public void setAddressLine3(@javax.annotation.Nullable String addressLine3) {
     this.addressLine3 = addressLine3;
   }
 
 
-  public OrderDetailB2BBillToInfo city(String city) {
+  public OrderDetailB2BBillToInfo city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -206,12 +217,12 @@ public class OrderDetailB2BBillToInfo {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public OrderDetailB2BBillToInfo state(String state) {
+  public OrderDetailB2BBillToInfo state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -225,12 +236,12 @@ public class OrderDetailB2BBillToInfo {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public OrderDetailB2BBillToInfo postalCode(String postalCode) {
+  public OrderDetailB2BBillToInfo postalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
@@ -244,12 +255,12 @@ public class OrderDetailB2BBillToInfo {
     return postalCode;
   }
 
-  public void setPostalCode(String postalCode) {
+  public void setPostalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
   }
 
 
-  public OrderDetailB2BBillToInfo countryCode(String countryCode) {
+  public OrderDetailB2BBillToInfo countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -263,12 +274,12 @@ public class OrderDetailB2BBillToInfo {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 
 
-  public OrderDetailB2BBillToInfo phoneNumber(String phoneNumber) {
+  public OrderDetailB2BBillToInfo phoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
@@ -282,12 +293,12 @@ public class OrderDetailB2BBillToInfo {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
 
-  public OrderDetailB2BBillToInfo email(String email) {
+  public OrderDetailB2BBillToInfo email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -301,7 +312,7 @@ public class OrderDetailB2BBillToInfo {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 

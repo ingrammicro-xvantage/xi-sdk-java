@@ -50,28 +50,32 @@ import xiresellers.client.JSON;
 /**
  * PostCreateorderV7500Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PostCreateorderV7500Response {
   public static final String SERIALIZED_NAME_TRACEID = "traceid";
   @SerializedName(SERIALIZED_NAME_TRACEID)
+  @javax.annotation.Nullable
   private String traceid;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public static final String SERIALIZED_NAME_FIELDS = "fields";
   @SerializedName(SERIALIZED_NAME_FIELDS)
+  @javax.annotation.Nullable
   private List<Object> fields = new ArrayList<>();
 
   public PostCreateorderV7500Response() {
   }
 
-  public PostCreateorderV7500Response traceid(String traceid) {
+  public PostCreateorderV7500Response traceid(@javax.annotation.Nullable String traceid) {
     this.traceid = traceid;
     return this;
   }
@@ -85,12 +89,12 @@ public class PostCreateorderV7500Response {
     return traceid;
   }
 
-  public void setTraceid(String traceid) {
+  public void setTraceid(@javax.annotation.Nullable String traceid) {
     this.traceid = traceid;
   }
 
 
-  public PostCreateorderV7500Response type(String type) {
+  public PostCreateorderV7500Response type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -104,12 +108,12 @@ public class PostCreateorderV7500Response {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public PostCreateorderV7500Response message(String message) {
+  public PostCreateorderV7500Response message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -123,12 +127,12 @@ public class PostCreateorderV7500Response {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 
 
-  public PostCreateorderV7500Response fields(List<Object> fields) {
+  public PostCreateorderV7500Response fields(@javax.annotation.Nullable List<Object> fields) {
     this.fields = fields;
     return this;
   }
@@ -150,7 +154,7 @@ public class PostCreateorderV7500Response {
     return fields;
   }
 
-  public void setFields(List<Object> fields) {
+  public void setFields(@javax.annotation.Nullable List<Object> fields) {
     this.fields = fields;
   }
 

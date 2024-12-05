@@ -48,24 +48,27 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner {
   public static final String SERIALIZED_NAME_CARTON_NUMBER = "cartonNumber";
   @SerializedName(SERIALIZED_NAME_CARTON_NUMBER)
+  @javax.annotation.Nullable
   private String cartonNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY_INBOX = "quantityInbox";
   @SerializedName(SERIALIZED_NAME_QUANTITY_INBOX)
+  @javax.annotation.Nullable
   private String quantityInbox;
 
   public static final String SERIALIZED_NAME_TRACKING_NUMBER = "trackingNumber";
   @SerializedName(SERIALIZED_NAME_TRACKING_NUMBER)
+  @javax.annotation.Nullable
   private String trackingNumber;
 
   public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner() {
   }
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner cartonNumber(String cartonNumber) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner cartonNumber(@javax.annotation.Nullable String cartonNumber) {
     this.cartonNumber = cartonNumber;
     return this;
   }
@@ -79,12 +82,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return cartonNumber;
   }
 
-  public void setCartonNumber(String cartonNumber) {
+  public void setCartonNumber(@javax.annotation.Nullable String cartonNumber) {
     this.cartonNumber = cartonNumber;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner quantityInbox(String quantityInbox) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner quantityInbox(@javax.annotation.Nullable String quantityInbox) {
     this.quantityInbox = quantityInbox;
     return this;
   }
@@ -98,12 +101,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return quantityInbox;
   }
 
-  public void setQuantityInbox(String quantityInbox) {
+  public void setQuantityInbox(@javax.annotation.Nullable String quantityInbox) {
     this.quantityInbox = quantityInbox;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner trackingNumber(String trackingNumber) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner trackingNumber(@javax.annotation.Nullable String trackingNumber) {
     this.trackingNumber = trackingNumber;
     return this;
   }
@@ -117,7 +120,7 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
     return trackingNumber;
   }
 
-  public void setTrackingNumber(String trackingNumber) {
+  public void setTrackingNumber(@javax.annotation.Nullable String trackingNumber) {
     this.trackingNumber = trackingNumber;
   }
 

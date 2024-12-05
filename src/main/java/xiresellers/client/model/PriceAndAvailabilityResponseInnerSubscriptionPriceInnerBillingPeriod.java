@@ -49,20 +49,22 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod {
   public static final String SERIALIZED_NAME_BILLING_PERIOD_UNIT = "billingPeriodUnit";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD_UNIT)
+  @javax.annotation.Nullable
   private String billingPeriodUnit;
 
   public static final String SERIALIZED_NAME_BILLING_PERIOD = "billingPeriod";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD)
+  @javax.annotation.Nullable
   private BigDecimal billingPeriod;
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod() {
   }
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriodUnit(String billingPeriodUnit) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriodUnit(@javax.annotation.Nullable String billingPeriodUnit) {
     this.billingPeriodUnit = billingPeriodUnit;
     return this;
   }
@@ -76,12 +78,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
     return billingPeriodUnit;
   }
 
-  public void setBillingPeriodUnit(String billingPeriodUnit) {
+  public void setBillingPeriodUnit(@javax.annotation.Nullable String billingPeriodUnit) {
     this.billingPeriodUnit = billingPeriodUnit;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod(BigDecimal billingPeriod) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod(@javax.annotation.Nullable BigDecimal billingPeriod) {
     this.billingPeriod = billingPeriod;
     return this;
   }
@@ -95,7 +97,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPerio
     return billingPeriod;
   }
 
-  public void setBillingPeriod(BigDecimal billingPeriod) {
+  public void setBillingPeriod(@javax.annotation.Nullable BigDecimal billingPeriod) {
     this.billingPeriod = billingPeriod;
   }
 

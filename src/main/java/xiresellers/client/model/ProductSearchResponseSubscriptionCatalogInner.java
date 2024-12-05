@@ -51,32 +51,37 @@ import xiresellers.client.JSON;
 /**
  * ProductSearchResponseSubscriptionCatalogInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductSearchResponseSubscriptionCatalogInner {
   public static final String SERIALIZED_NAME_GROUP_NAME = "groupName";
   @SerializedName(SERIALIZED_NAME_GROUP_NAME)
+  @javax.annotation.Nullable
   private String groupName;
 
   public static final String SERIALIZED_NAME_GROUP_DESCRIPTION = "groupDescription";
   @SerializedName(SERIALIZED_NAME_GROUP_DESCRIPTION)
+  @javax.annotation.Nullable
   private String groupDescription;
 
   public static final String SERIALIZED_NAME_NUMBER_OF_PLANS = "numberOfPlans";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_PLANS)
+  @javax.annotation.Nullable
   private String numberOfPlans;
 
   public static final String SERIALIZED_NAME_LINK = "link";
   @SerializedName(SERIALIZED_NAME_LINK)
+  @javax.annotation.Nullable
   private String link;
 
   public static final String SERIALIZED_NAME_PLANS = "plans";
   @SerializedName(SERIALIZED_NAME_PLANS)
+  @javax.annotation.Nullable
   private List<ProductSearchResponseSubscriptionCatalogInnerPlansInner> plans = new ArrayList<>();
 
   public ProductSearchResponseSubscriptionCatalogInner() {
   }
 
-  public ProductSearchResponseSubscriptionCatalogInner groupName(String groupName) {
+  public ProductSearchResponseSubscriptionCatalogInner groupName(@javax.annotation.Nullable String groupName) {
     this.groupName = groupName;
     return this;
   }
@@ -90,12 +95,12 @@ public class ProductSearchResponseSubscriptionCatalogInner {
     return groupName;
   }
 
-  public void setGroupName(String groupName) {
+  public void setGroupName(@javax.annotation.Nullable String groupName) {
     this.groupName = groupName;
   }
 
 
-  public ProductSearchResponseSubscriptionCatalogInner groupDescription(String groupDescription) {
+  public ProductSearchResponseSubscriptionCatalogInner groupDescription(@javax.annotation.Nullable String groupDescription) {
     this.groupDescription = groupDescription;
     return this;
   }
@@ -109,12 +114,12 @@ public class ProductSearchResponseSubscriptionCatalogInner {
     return groupDescription;
   }
 
-  public void setGroupDescription(String groupDescription) {
+  public void setGroupDescription(@javax.annotation.Nullable String groupDescription) {
     this.groupDescription = groupDescription;
   }
 
 
-  public ProductSearchResponseSubscriptionCatalogInner numberOfPlans(String numberOfPlans) {
+  public ProductSearchResponseSubscriptionCatalogInner numberOfPlans(@javax.annotation.Nullable String numberOfPlans) {
     this.numberOfPlans = numberOfPlans;
     return this;
   }
@@ -128,12 +133,12 @@ public class ProductSearchResponseSubscriptionCatalogInner {
     return numberOfPlans;
   }
 
-  public void setNumberOfPlans(String numberOfPlans) {
+  public void setNumberOfPlans(@javax.annotation.Nullable String numberOfPlans) {
     this.numberOfPlans = numberOfPlans;
   }
 
 
-  public ProductSearchResponseSubscriptionCatalogInner link(String link) {
+  public ProductSearchResponseSubscriptionCatalogInner link(@javax.annotation.Nullable String link) {
     this.link = link;
     return this;
   }
@@ -147,12 +152,12 @@ public class ProductSearchResponseSubscriptionCatalogInner {
     return link;
   }
 
-  public void setLink(String link) {
+  public void setLink(@javax.annotation.Nullable String link) {
     this.link = link;
   }
 
 
-  public ProductSearchResponseSubscriptionCatalogInner plans(List<ProductSearchResponseSubscriptionCatalogInnerPlansInner> plans) {
+  public ProductSearchResponseSubscriptionCatalogInner plans(@javax.annotation.Nullable List<ProductSearchResponseSubscriptionCatalogInnerPlansInner> plans) {
     this.plans = plans;
     return this;
   }
@@ -174,7 +179,7 @@ public class ProductSearchResponseSubscriptionCatalogInner {
     return plans;
   }
 
-  public void setPlans(List<ProductSearchResponseSubscriptionCatalogInnerPlansInner> plans) {
+  public void setPlans(@javax.annotation.Nullable List<ProductSearchResponseSubscriptionCatalogInnerPlansInner> plans) {
     this.plans = plans;
   }
 

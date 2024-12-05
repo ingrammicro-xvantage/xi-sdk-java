@@ -48,16 +48,17 @@ import xiresellers.client.JSON;
 /**
  * GetAccesstoken400Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class GetAccesstoken400Response {
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public GetAccesstoken400Response() {
   }
 
-  public GetAccesstoken400Response message(String message) {
+  public GetAccesstoken400Response message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -71,7 +72,7 @@ public class GetAccesstoken400Response {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 

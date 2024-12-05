@@ -57,64 +57,77 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateRequest {
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nonnull
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
   @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String endCustomerOrderNumber;
 
   public static final String SERIALIZED_NAME_BILL_TO_ADDRESS_ID = "billToAddressId";
   @SerializedName(SERIALIZED_NAME_BILL_TO_ADDRESS_ID)
+  @javax.annotation.Nullable
   private String billToAddressId;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBER = "specialBidNumber";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBER)
+  @javax.annotation.Nullable
   private String specialBidNumber;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_ACCEPT_BACK_ORDER = "acceptBackOrder";
   @SerializedName(SERIALIZED_NAME_ACCEPT_BACK_ORDER)
+  @javax.annotation.Nullable
   private Boolean acceptBackOrder;
 
   public static final String SERIALIZED_NAME_RESELLER_INFO = "resellerInfo";
   @SerializedName(SERIALIZED_NAME_RESELLER_INFO)
+  @javax.annotation.Nullable
   private OrderCreateRequestResellerInfo resellerInfo;
 
   public static final String SERIALIZED_NAME_VMF = "vmf";
   @SerializedName(SERIALIZED_NAME_VMF)
+  @javax.annotation.Nullable
   private OrderCreateRequestVmf vmf;
 
   public static final String SERIALIZED_NAME_SHIP_TO_INFO = "shipToInfo";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_INFO)
+  @javax.annotation.Nullable
   private OrderCreateRequestShipToInfo shipToInfo;
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
+  @javax.annotation.Nullable
   private OrderCreateRequestEndUserInfo endUserInfo;
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
+  @javax.annotation.Nullable
   private List<OrderCreateRequestLinesInner> lines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SHIPMENT_DETAILS = "shipmentDetails";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DETAILS)
+  @javax.annotation.Nullable
   private OrderCreateRequestShipmentDetails shipmentDetails;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<OrderCreateRequestAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public OrderCreateRequest() {
   }
 
-  public OrderCreateRequest customerOrderNumber(String customerOrderNumber) {
+  public OrderCreateRequest customerOrderNumber(@javax.annotation.Nonnull String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -128,12 +141,12 @@ public class OrderCreateRequest {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nonnull String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public OrderCreateRequest endCustomerOrderNumber(String endCustomerOrderNumber) {
+  public OrderCreateRequest endCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
     return this;
   }
@@ -147,12 +160,12 @@ public class OrderCreateRequest {
     return endCustomerOrderNumber;
   }
 
-  public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
+  public void setEndCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
   }
 
 
-  public OrderCreateRequest billToAddressId(String billToAddressId) {
+  public OrderCreateRequest billToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
     return this;
   }
@@ -166,12 +179,12 @@ public class OrderCreateRequest {
     return billToAddressId;
   }
 
-  public void setBillToAddressId(String billToAddressId) {
+  public void setBillToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
   }
 
 
-  public OrderCreateRequest specialBidNumber(String specialBidNumber) {
+  public OrderCreateRequest specialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
     return this;
   }
@@ -185,12 +198,12 @@ public class OrderCreateRequest {
     return specialBidNumber;
   }
 
-  public void setSpecialBidNumber(String specialBidNumber) {
+  public void setSpecialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
   }
 
 
-  public OrderCreateRequest notes(String notes) {
+  public OrderCreateRequest notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -204,12 +217,12 @@ public class OrderCreateRequest {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public OrderCreateRequest acceptBackOrder(Boolean acceptBackOrder) {
+  public OrderCreateRequest acceptBackOrder(@javax.annotation.Nullable Boolean acceptBackOrder) {
     this.acceptBackOrder = acceptBackOrder;
     return this;
   }
@@ -223,12 +236,12 @@ public class OrderCreateRequest {
     return acceptBackOrder;
   }
 
-  public void setAcceptBackOrder(Boolean acceptBackOrder) {
+  public void setAcceptBackOrder(@javax.annotation.Nullable Boolean acceptBackOrder) {
     this.acceptBackOrder = acceptBackOrder;
   }
 
 
-  public OrderCreateRequest resellerInfo(OrderCreateRequestResellerInfo resellerInfo) {
+  public OrderCreateRequest resellerInfo(@javax.annotation.Nullable OrderCreateRequestResellerInfo resellerInfo) {
     this.resellerInfo = resellerInfo;
     return this;
   }
@@ -242,12 +255,12 @@ public class OrderCreateRequest {
     return resellerInfo;
   }
 
-  public void setResellerInfo(OrderCreateRequestResellerInfo resellerInfo) {
+  public void setResellerInfo(@javax.annotation.Nullable OrderCreateRequestResellerInfo resellerInfo) {
     this.resellerInfo = resellerInfo;
   }
 
 
-  public OrderCreateRequest vmf(OrderCreateRequestVmf vmf) {
+  public OrderCreateRequest vmf(@javax.annotation.Nullable OrderCreateRequestVmf vmf) {
     this.vmf = vmf;
     return this;
   }
@@ -261,12 +274,12 @@ public class OrderCreateRequest {
     return vmf;
   }
 
-  public void setVmf(OrderCreateRequestVmf vmf) {
+  public void setVmf(@javax.annotation.Nullable OrderCreateRequestVmf vmf) {
     this.vmf = vmf;
   }
 
 
-  public OrderCreateRequest shipToInfo(OrderCreateRequestShipToInfo shipToInfo) {
+  public OrderCreateRequest shipToInfo(@javax.annotation.Nullable OrderCreateRequestShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
     return this;
   }
@@ -280,12 +293,12 @@ public class OrderCreateRequest {
     return shipToInfo;
   }
 
-  public void setShipToInfo(OrderCreateRequestShipToInfo shipToInfo) {
+  public void setShipToInfo(@javax.annotation.Nullable OrderCreateRequestShipToInfo shipToInfo) {
     this.shipToInfo = shipToInfo;
   }
 
 
-  public OrderCreateRequest endUserInfo(OrderCreateRequestEndUserInfo endUserInfo) {
+  public OrderCreateRequest endUserInfo(@javax.annotation.Nullable OrderCreateRequestEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
     return this;
   }
@@ -299,12 +312,12 @@ public class OrderCreateRequest {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(OrderCreateRequestEndUserInfo endUserInfo) {
+  public void setEndUserInfo(@javax.annotation.Nullable OrderCreateRequestEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 
 
-  public OrderCreateRequest lines(List<OrderCreateRequestLinesInner> lines) {
+  public OrderCreateRequest lines(@javax.annotation.Nullable List<OrderCreateRequestLinesInner> lines) {
     this.lines = lines;
     return this;
   }
@@ -326,12 +339,12 @@ public class OrderCreateRequest {
     return lines;
   }
 
-  public void setLines(List<OrderCreateRequestLinesInner> lines) {
+  public void setLines(@javax.annotation.Nullable List<OrderCreateRequestLinesInner> lines) {
     this.lines = lines;
   }
 
 
-  public OrderCreateRequest shipmentDetails(OrderCreateRequestShipmentDetails shipmentDetails) {
+  public OrderCreateRequest shipmentDetails(@javax.annotation.Nullable OrderCreateRequestShipmentDetails shipmentDetails) {
     this.shipmentDetails = shipmentDetails;
     return this;
   }
@@ -345,12 +358,12 @@ public class OrderCreateRequest {
     return shipmentDetails;
   }
 
-  public void setShipmentDetails(OrderCreateRequestShipmentDetails shipmentDetails) {
+  public void setShipmentDetails(@javax.annotation.Nullable OrderCreateRequestShipmentDetails shipmentDetails) {
     this.shipmentDetails = shipmentDetails;
   }
 
 
-  public OrderCreateRequest additionalAttributes(List<OrderCreateRequestAdditionalAttributesInner> additionalAttributes) {
+  public OrderCreateRequest additionalAttributes(@javax.annotation.Nullable List<OrderCreateRequestAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -372,7 +385,7 @@ public class OrderCreateRequest {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<OrderCreateRequestAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateRequestAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 

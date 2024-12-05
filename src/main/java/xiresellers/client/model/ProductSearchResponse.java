@@ -52,40 +52,47 @@ import xiresellers.client.JSON;
 /**
  * ProductSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
+  @javax.annotation.Nullable
   private Integer recordsFound;
 
   public static final String SERIALIZED_NAME_PAGE_SIZE = "pageSize";
   @SerializedName(SERIALIZED_NAME_PAGE_SIZE)
+  @javax.annotation.Nullable
   private Integer pageSize;
 
   public static final String SERIALIZED_NAME_PAGE_NUMBER = "pageNumber";
   @SerializedName(SERIALIZED_NAME_PAGE_NUMBER)
+  @javax.annotation.Nullable
   private Integer pageNumber;
 
   public static final String SERIALIZED_NAME_CATALOG = "catalog";
   @SerializedName(SERIALIZED_NAME_CATALOG)
+  @javax.annotation.Nullable
   private List<ProductSearchResponseCatalogInner> catalog = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SUBSCRIPTION_CATALOG = "subscriptionCatalog";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_CATALOG)
+  @javax.annotation.Nullable
   private List<ProductSearchResponseSubscriptionCatalogInner> subscriptionCatalog = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT_PAGE = "nextPage";
   @SerializedName(SERIALIZED_NAME_NEXT_PAGE)
+  @javax.annotation.Nullable
   private String nextPage;
 
   public static final String SERIALIZED_NAME_PREVIOUS_PAGE = "previousPage";
   @SerializedName(SERIALIZED_NAME_PREVIOUS_PAGE)
+  @javax.annotation.Nullable
   private String previousPage;
 
   public ProductSearchResponse() {
   }
 
-  public ProductSearchResponse recordsFound(Integer recordsFound) {
+  public ProductSearchResponse recordsFound(@javax.annotation.Nullable Integer recordsFound) {
     this.recordsFound = recordsFound;
     return this;
   }
@@ -99,12 +106,12 @@ public class ProductSearchResponse {
     return recordsFound;
   }
 
-  public void setRecordsFound(Integer recordsFound) {
+  public void setRecordsFound(@javax.annotation.Nullable Integer recordsFound) {
     this.recordsFound = recordsFound;
   }
 
 
-  public ProductSearchResponse pageSize(Integer pageSize) {
+  public ProductSearchResponse pageSize(@javax.annotation.Nullable Integer pageSize) {
     this.pageSize = pageSize;
     return this;
   }
@@ -118,12 +125,12 @@ public class ProductSearchResponse {
     return pageSize;
   }
 
-  public void setPageSize(Integer pageSize) {
+  public void setPageSize(@javax.annotation.Nullable Integer pageSize) {
     this.pageSize = pageSize;
   }
 
 
-  public ProductSearchResponse pageNumber(Integer pageNumber) {
+  public ProductSearchResponse pageNumber(@javax.annotation.Nullable Integer pageNumber) {
     this.pageNumber = pageNumber;
     return this;
   }
@@ -137,12 +144,12 @@ public class ProductSearchResponse {
     return pageNumber;
   }
 
-  public void setPageNumber(Integer pageNumber) {
+  public void setPageNumber(@javax.annotation.Nullable Integer pageNumber) {
     this.pageNumber = pageNumber;
   }
 
 
-  public ProductSearchResponse catalog(List<ProductSearchResponseCatalogInner> catalog) {
+  public ProductSearchResponse catalog(@javax.annotation.Nullable List<ProductSearchResponseCatalogInner> catalog) {
     this.catalog = catalog;
     return this;
   }
@@ -164,12 +171,12 @@ public class ProductSearchResponse {
     return catalog;
   }
 
-  public void setCatalog(List<ProductSearchResponseCatalogInner> catalog) {
+  public void setCatalog(@javax.annotation.Nullable List<ProductSearchResponseCatalogInner> catalog) {
     this.catalog = catalog;
   }
 
 
-  public ProductSearchResponse subscriptionCatalog(List<ProductSearchResponseSubscriptionCatalogInner> subscriptionCatalog) {
+  public ProductSearchResponse subscriptionCatalog(@javax.annotation.Nullable List<ProductSearchResponseSubscriptionCatalogInner> subscriptionCatalog) {
     this.subscriptionCatalog = subscriptionCatalog;
     return this;
   }
@@ -191,12 +198,12 @@ public class ProductSearchResponse {
     return subscriptionCatalog;
   }
 
-  public void setSubscriptionCatalog(List<ProductSearchResponseSubscriptionCatalogInner> subscriptionCatalog) {
+  public void setSubscriptionCatalog(@javax.annotation.Nullable List<ProductSearchResponseSubscriptionCatalogInner> subscriptionCatalog) {
     this.subscriptionCatalog = subscriptionCatalog;
   }
 
 
-  public ProductSearchResponse nextPage(String nextPage) {
+  public ProductSearchResponse nextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
     return this;
   }
@@ -210,12 +217,12 @@ public class ProductSearchResponse {
     return nextPage;
   }
 
-  public void setNextPage(String nextPage) {
+  public void setNextPage(@javax.annotation.Nullable String nextPage) {
     this.nextPage = nextPage;
   }
 
 
-  public ProductSearchResponse previousPage(String previousPage) {
+  public ProductSearchResponse previousPage(@javax.annotation.Nullable String previousPage) {
     this.previousPage = previousPage;
     return this;
   }
@@ -229,7 +236,7 @@ public class ProductSearchResponse {
     return previousPage;
   }
 
-  public void setPreviousPage(String previousPage) {
+  public void setPreviousPage(@javax.annotation.Nullable String previousPage) {
     this.previousPage = previousPage;
   }
 

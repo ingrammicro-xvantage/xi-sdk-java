@@ -51,72 +51,87 @@ import xiresellers.client.JSON;
 /**
  * InvoiceSearchResponseInvoicesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceSearchResponseInvoicesInner {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE = "paymentTermsDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE)
+  @javax.annotation.Nullable
   private String paymentTermsDueDate;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBERS = "specialBidNumbers";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBERS)
+  @javax.annotation.Nullable
   private List<String> specialBidNumbers = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ERP_ORDER_NUMBER = "erpOrderNumber";
   @SerializedName(SERIALIZED_NAME_ERP_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String erpOrderNumber;
 
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
+  @javax.annotation.Nullable
   private String invoiceNumber;
 
   public static final String SERIALIZED_NAME_INVOICE_STATUS = "invoiceStatus";
   @SerializedName(SERIALIZED_NAME_INVOICE_STATUS)
+  @javax.annotation.Nullable
   private String invoiceStatus;
 
   public static final String SERIALIZED_NAME_INVOICE_DATE = "invoiceDate";
   @SerializedName(SERIALIZED_NAME_INVOICE_DATE)
+  @javax.annotation.Nullable
   private String invoiceDate;
 
   public static final String SERIALIZED_NAME_INVOICE_DUE_DATE = "invoiceDueDate";
   @SerializedName(SERIALIZED_NAME_INVOICE_DUE_DATE)
+  @javax.annotation.Nullable
   private String invoiceDueDate;
 
   public static final String SERIALIZED_NAME_INVOICED_AMOUNT_DUE = "invoicedAmountDue";
   @SerializedName(SERIALIZED_NAME_INVOICED_AMOUNT_DUE)
+  @javax.annotation.Nullable
   private BigDecimal invoicedAmountDue;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
   @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String endCustomerOrderNumber;
 
   public static final String SERIALIZED_NAME_ORDER_CREATE_DATE = "orderCreateDate";
   @SerializedName(SERIALIZED_NAME_ORDER_CREATE_DATE)
+  @javax.annotation.Nullable
   private String orderCreateDate;
 
   public static final String SERIALIZED_NAME_INVOICE_AMOUNT_INCL_TAX = "invoiceAmountInclTax";
   @SerializedName(SERIALIZED_NAME_INVOICE_AMOUNT_INCL_TAX)
+  @javax.annotation.Nullable
   private BigDecimal invoiceAmountInclTax;
 
   public static final String SERIALIZED_NAME_FORGNTOTALAMOUNT = "forgntotalamount";
   @SerializedName(SERIALIZED_NAME_FORGNTOTALAMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal forgntotalamount;
 
   public static final String SERIALIZED_NAME_GST_INVOICE_NUMBER = "gstInvoiceNumber";
   @SerializedName(SERIALIZED_NAME_GST_INVOICE_NUMBER)
+  @javax.annotation.Nullable
   private String gstInvoiceNumber;
 
   public static final String SERIALIZED_NAME_ISFSECCENABLED = "isfseccenabled";
   @SerializedName(SERIALIZED_NAME_ISFSECCENABLED)
+  @javax.annotation.Nullable
   private Boolean isfseccenabled;
 
   public InvoiceSearchResponseInvoicesInner() {
   }
 
-  public InvoiceSearchResponseInvoicesInner paymentTermsDueDate(String paymentTermsDueDate) {
+  public InvoiceSearchResponseInvoicesInner paymentTermsDueDate(@javax.annotation.Nullable String paymentTermsDueDate) {
     this.paymentTermsDueDate = paymentTermsDueDate;
     return this;
   }
@@ -130,12 +145,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return paymentTermsDueDate;
   }
 
-  public void setPaymentTermsDueDate(String paymentTermsDueDate) {
+  public void setPaymentTermsDueDate(@javax.annotation.Nullable String paymentTermsDueDate) {
     this.paymentTermsDueDate = paymentTermsDueDate;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner specialBidNumbers(List<String> specialBidNumbers) {
+  public InvoiceSearchResponseInvoicesInner specialBidNumbers(@javax.annotation.Nullable List<String> specialBidNumbers) {
     this.specialBidNumbers = specialBidNumbers;
     return this;
   }
@@ -157,12 +172,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return specialBidNumbers;
   }
 
-  public void setSpecialBidNumbers(List<String> specialBidNumbers) {
+  public void setSpecialBidNumbers(@javax.annotation.Nullable List<String> specialBidNumbers) {
     this.specialBidNumbers = specialBidNumbers;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner erpOrderNumber(String erpOrderNumber) {
+  public InvoiceSearchResponseInvoicesInner erpOrderNumber(@javax.annotation.Nullable String erpOrderNumber) {
     this.erpOrderNumber = erpOrderNumber;
     return this;
   }
@@ -176,12 +191,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return erpOrderNumber;
   }
 
-  public void setErpOrderNumber(String erpOrderNumber) {
+  public void setErpOrderNumber(@javax.annotation.Nullable String erpOrderNumber) {
     this.erpOrderNumber = erpOrderNumber;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner invoiceNumber(String invoiceNumber) {
+  public InvoiceSearchResponseInvoicesInner invoiceNumber(@javax.annotation.Nullable String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
     return this;
   }
@@ -195,12 +210,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return invoiceNumber;
   }
 
-  public void setInvoiceNumber(String invoiceNumber) {
+  public void setInvoiceNumber(@javax.annotation.Nullable String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner invoiceStatus(String invoiceStatus) {
+  public InvoiceSearchResponseInvoicesInner invoiceStatus(@javax.annotation.Nullable String invoiceStatus) {
     this.invoiceStatus = invoiceStatus;
     return this;
   }
@@ -214,12 +229,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return invoiceStatus;
   }
 
-  public void setInvoiceStatus(String invoiceStatus) {
+  public void setInvoiceStatus(@javax.annotation.Nullable String invoiceStatus) {
     this.invoiceStatus = invoiceStatus;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner invoiceDate(String invoiceDate) {
+  public InvoiceSearchResponseInvoicesInner invoiceDate(@javax.annotation.Nullable String invoiceDate) {
     this.invoiceDate = invoiceDate;
     return this;
   }
@@ -233,12 +248,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return invoiceDate;
   }
 
-  public void setInvoiceDate(String invoiceDate) {
+  public void setInvoiceDate(@javax.annotation.Nullable String invoiceDate) {
     this.invoiceDate = invoiceDate;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner invoiceDueDate(String invoiceDueDate) {
+  public InvoiceSearchResponseInvoicesInner invoiceDueDate(@javax.annotation.Nullable String invoiceDueDate) {
     this.invoiceDueDate = invoiceDueDate;
     return this;
   }
@@ -252,12 +267,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return invoiceDueDate;
   }
 
-  public void setInvoiceDueDate(String invoiceDueDate) {
+  public void setInvoiceDueDate(@javax.annotation.Nullable String invoiceDueDate) {
     this.invoiceDueDate = invoiceDueDate;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner invoicedAmountDue(BigDecimal invoicedAmountDue) {
+  public InvoiceSearchResponseInvoicesInner invoicedAmountDue(@javax.annotation.Nullable BigDecimal invoicedAmountDue) {
     this.invoicedAmountDue = invoicedAmountDue;
     return this;
   }
@@ -271,12 +286,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return invoicedAmountDue;
   }
 
-  public void setInvoicedAmountDue(BigDecimal invoicedAmountDue) {
+  public void setInvoicedAmountDue(@javax.annotation.Nullable BigDecimal invoicedAmountDue) {
     this.invoicedAmountDue = invoicedAmountDue;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner customerOrderNumber(String customerOrderNumber) {
+  public InvoiceSearchResponseInvoicesInner customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -290,12 +305,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner endCustomerOrderNumber(String endCustomerOrderNumber) {
+  public InvoiceSearchResponseInvoicesInner endCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
     return this;
   }
@@ -309,12 +324,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return endCustomerOrderNumber;
   }
 
-  public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
+  public void setEndCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner orderCreateDate(String orderCreateDate) {
+  public InvoiceSearchResponseInvoicesInner orderCreateDate(@javax.annotation.Nullable String orderCreateDate) {
     this.orderCreateDate = orderCreateDate;
     return this;
   }
@@ -328,12 +343,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return orderCreateDate;
   }
 
-  public void setOrderCreateDate(String orderCreateDate) {
+  public void setOrderCreateDate(@javax.annotation.Nullable String orderCreateDate) {
     this.orderCreateDate = orderCreateDate;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner invoiceAmountInclTax(BigDecimal invoiceAmountInclTax) {
+  public InvoiceSearchResponseInvoicesInner invoiceAmountInclTax(@javax.annotation.Nullable BigDecimal invoiceAmountInclTax) {
     this.invoiceAmountInclTax = invoiceAmountInclTax;
     return this;
   }
@@ -347,12 +362,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return invoiceAmountInclTax;
   }
 
-  public void setInvoiceAmountInclTax(BigDecimal invoiceAmountInclTax) {
+  public void setInvoiceAmountInclTax(@javax.annotation.Nullable BigDecimal invoiceAmountInclTax) {
     this.invoiceAmountInclTax = invoiceAmountInclTax;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner forgntotalamount(BigDecimal forgntotalamount) {
+  public InvoiceSearchResponseInvoicesInner forgntotalamount(@javax.annotation.Nullable BigDecimal forgntotalamount) {
     this.forgntotalamount = forgntotalamount;
     return this;
   }
@@ -366,12 +381,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return forgntotalamount;
   }
 
-  public void setForgntotalamount(BigDecimal forgntotalamount) {
+  public void setForgntotalamount(@javax.annotation.Nullable BigDecimal forgntotalamount) {
     this.forgntotalamount = forgntotalamount;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner gstInvoiceNumber(String gstInvoiceNumber) {
+  public InvoiceSearchResponseInvoicesInner gstInvoiceNumber(@javax.annotation.Nullable String gstInvoiceNumber) {
     this.gstInvoiceNumber = gstInvoiceNumber;
     return this;
   }
@@ -385,12 +400,12 @@ public class InvoiceSearchResponseInvoicesInner {
     return gstInvoiceNumber;
   }
 
-  public void setGstInvoiceNumber(String gstInvoiceNumber) {
+  public void setGstInvoiceNumber(@javax.annotation.Nullable String gstInvoiceNumber) {
     this.gstInvoiceNumber = gstInvoiceNumber;
   }
 
 
-  public InvoiceSearchResponseInvoicesInner isfseccenabled(Boolean isfseccenabled) {
+  public InvoiceSearchResponseInvoicesInner isfseccenabled(@javax.annotation.Nullable Boolean isfseccenabled) {
     this.isfseccenabled = isfseccenabled;
     return this;
   }
@@ -404,7 +419,7 @@ public class InvoiceSearchResponseInvoicesInner {
     return isfseccenabled;
   }
 
-  public void setIsfseccenabled(Boolean isfseccenabled) {
+  public void setIsfseccenabled(@javax.annotation.Nullable Boolean isfseccenabled) {
     this.isfseccenabled = isfseccenabled;
   }
 

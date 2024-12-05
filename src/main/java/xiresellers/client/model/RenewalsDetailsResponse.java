@@ -54,72 +54,87 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class RenewalsDetailsResponse {
   public static final String SERIALIZED_NAME_RENEWAL_ID = "renewalId";
   @SerializedName(SERIALIZED_NAME_RENEWAL_ID)
+  @javax.annotation.Nullable
   private String renewalId;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String ingramOrderNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_DATE = "ingramOrderDate";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_DATE)
+  @javax.annotation.Nullable
   private String ingramOrderDate;
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expirationDate";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
+  @javax.annotation.Nullable
   private String expirationDate;
 
   public static final String SERIALIZED_NAME_INGRAM_PURCHASE_ORDER_NUMBER = "ingramPurchaseOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PURCHASE_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPurchaseOrderNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER = "endCustomerOrderNumber";
   @SerializedName(SERIALIZED_NAME_END_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String endCustomerOrderNumber;
 
   public static final String SERIALIZED_NAME_RENEWAL_VALUE = "renewalValue";
   @SerializedName(SERIALIZED_NAME_RENEWAL_VALUE)
+  @javax.annotation.Nullable
   private String renewalValue;
 
   public static final String SERIALIZED_NAME_END_USER = "endUser";
   @SerializedName(SERIALIZED_NAME_END_USER)
+  @javax.annotation.Nullable
   private String endUser;
 
   public static final String SERIALIZED_NAME_VENDOR = "vendor";
   @SerializedName(SERIALIZED_NAME_VENDOR)
+  @javax.annotation.Nullable
   private String vendor;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
+  @javax.annotation.Nullable
   private RenewalsDetailsResponseEndUserInfo endUserInfo;
 
   public static final String SERIALIZED_NAME_REFERENCE_NUMBER = "referenceNumber";
   @SerializedName(SERIALIZED_NAME_REFERENCE_NUMBER)
+  @javax.annotation.Nullable
   private RenewalsDetailsResponseReferenceNumber referenceNumber;
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
+  @javax.annotation.Nullable
   private List<RenewalsDetailsResponseProductsInner> products = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<RenewalsDetailsResponseAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
 
   public RenewalsDetailsResponse() {
   }
 
-  public RenewalsDetailsResponse renewalId(String renewalId) {
+  public RenewalsDetailsResponse renewalId(@javax.annotation.Nullable String renewalId) {
     this.renewalId = renewalId;
     return this;
   }
@@ -133,12 +148,12 @@ public class RenewalsDetailsResponse {
     return renewalId;
   }
 
-  public void setRenewalId(String renewalId) {
+  public void setRenewalId(@javax.annotation.Nullable String renewalId) {
     this.renewalId = renewalId;
   }
 
 
-  public RenewalsDetailsResponse ingramOrderNumber(String ingramOrderNumber) {
+  public RenewalsDetailsResponse ingramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
     return this;
   }
@@ -152,12 +167,12 @@ public class RenewalsDetailsResponse {
     return ingramOrderNumber;
   }
 
-  public void setIngramOrderNumber(String ingramOrderNumber) {
+  public void setIngramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
   }
 
 
-  public RenewalsDetailsResponse ingramOrderDate(String ingramOrderDate) {
+  public RenewalsDetailsResponse ingramOrderDate(@javax.annotation.Nullable String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
     return this;
   }
@@ -171,12 +186,12 @@ public class RenewalsDetailsResponse {
     return ingramOrderDate;
   }
 
-  public void setIngramOrderDate(String ingramOrderDate) {
+  public void setIngramOrderDate(@javax.annotation.Nullable String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
   }
 
 
-  public RenewalsDetailsResponse expirationDate(String expirationDate) {
+  public RenewalsDetailsResponse expirationDate(@javax.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
     return this;
   }
@@ -190,12 +205,12 @@ public class RenewalsDetailsResponse {
     return expirationDate;
   }
 
-  public void setExpirationDate(String expirationDate) {
+  public void setExpirationDate(@javax.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
   }
 
 
-  public RenewalsDetailsResponse ingramPurchaseOrderNumber(String ingramPurchaseOrderNumber) {
+  public RenewalsDetailsResponse ingramPurchaseOrderNumber(@javax.annotation.Nullable String ingramPurchaseOrderNumber) {
     this.ingramPurchaseOrderNumber = ingramPurchaseOrderNumber;
     return this;
   }
@@ -209,12 +224,12 @@ public class RenewalsDetailsResponse {
     return ingramPurchaseOrderNumber;
   }
 
-  public void setIngramPurchaseOrderNumber(String ingramPurchaseOrderNumber) {
+  public void setIngramPurchaseOrderNumber(@javax.annotation.Nullable String ingramPurchaseOrderNumber) {
     this.ingramPurchaseOrderNumber = ingramPurchaseOrderNumber;
   }
 
 
-  public RenewalsDetailsResponse customerOrderNumber(String customerOrderNumber) {
+  public RenewalsDetailsResponse customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -228,12 +243,12 @@ public class RenewalsDetailsResponse {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public RenewalsDetailsResponse endCustomerOrderNumber(String endCustomerOrderNumber) {
+  public RenewalsDetailsResponse endCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
     return this;
   }
@@ -247,12 +262,12 @@ public class RenewalsDetailsResponse {
     return endCustomerOrderNumber;
   }
 
-  public void setEndCustomerOrderNumber(String endCustomerOrderNumber) {
+  public void setEndCustomerOrderNumber(@javax.annotation.Nullable String endCustomerOrderNumber) {
     this.endCustomerOrderNumber = endCustomerOrderNumber;
   }
 
 
-  public RenewalsDetailsResponse renewalValue(String renewalValue) {
+  public RenewalsDetailsResponse renewalValue(@javax.annotation.Nullable String renewalValue) {
     this.renewalValue = renewalValue;
     return this;
   }
@@ -266,12 +281,12 @@ public class RenewalsDetailsResponse {
     return renewalValue;
   }
 
-  public void setRenewalValue(String renewalValue) {
+  public void setRenewalValue(@javax.annotation.Nullable String renewalValue) {
     this.renewalValue = renewalValue;
   }
 
 
-  public RenewalsDetailsResponse endUser(String endUser) {
+  public RenewalsDetailsResponse endUser(@javax.annotation.Nullable String endUser) {
     this.endUser = endUser;
     return this;
   }
@@ -285,12 +300,12 @@ public class RenewalsDetailsResponse {
     return endUser;
   }
 
-  public void setEndUser(String endUser) {
+  public void setEndUser(@javax.annotation.Nullable String endUser) {
     this.endUser = endUser;
   }
 
 
-  public RenewalsDetailsResponse vendor(String vendor) {
+  public RenewalsDetailsResponse vendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
     return this;
   }
@@ -304,12 +319,12 @@ public class RenewalsDetailsResponse {
     return vendor;
   }
 
-  public void setVendor(String vendor) {
+  public void setVendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
   }
 
 
-  public RenewalsDetailsResponse status(String status) {
+  public RenewalsDetailsResponse status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -323,12 +338,12 @@ public class RenewalsDetailsResponse {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public RenewalsDetailsResponse endUserInfo(RenewalsDetailsResponseEndUserInfo endUserInfo) {
+  public RenewalsDetailsResponse endUserInfo(@javax.annotation.Nullable RenewalsDetailsResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
     return this;
   }
@@ -342,12 +357,12 @@ public class RenewalsDetailsResponse {
     return endUserInfo;
   }
 
-  public void setEndUserInfo(RenewalsDetailsResponseEndUserInfo endUserInfo) {
+  public void setEndUserInfo(@javax.annotation.Nullable RenewalsDetailsResponseEndUserInfo endUserInfo) {
     this.endUserInfo = endUserInfo;
   }
 
 
-  public RenewalsDetailsResponse referenceNumber(RenewalsDetailsResponseReferenceNumber referenceNumber) {
+  public RenewalsDetailsResponse referenceNumber(@javax.annotation.Nullable RenewalsDetailsResponseReferenceNumber referenceNumber) {
     this.referenceNumber = referenceNumber;
     return this;
   }
@@ -361,12 +376,12 @@ public class RenewalsDetailsResponse {
     return referenceNumber;
   }
 
-  public void setReferenceNumber(RenewalsDetailsResponseReferenceNumber referenceNumber) {
+  public void setReferenceNumber(@javax.annotation.Nullable RenewalsDetailsResponseReferenceNumber referenceNumber) {
     this.referenceNumber = referenceNumber;
   }
 
 
-  public RenewalsDetailsResponse products(List<RenewalsDetailsResponseProductsInner> products) {
+  public RenewalsDetailsResponse products(@javax.annotation.Nullable List<RenewalsDetailsResponseProductsInner> products) {
     this.products = products;
     return this;
   }
@@ -388,12 +403,12 @@ public class RenewalsDetailsResponse {
     return products;
   }
 
-  public void setProducts(List<RenewalsDetailsResponseProductsInner> products) {
+  public void setProducts(@javax.annotation.Nullable List<RenewalsDetailsResponseProductsInner> products) {
     this.products = products;
   }
 
 
-  public RenewalsDetailsResponse additionalAttributes(List<RenewalsDetailsResponseAdditionalAttributesInner> additionalAttributes) {
+  public RenewalsDetailsResponse additionalAttributes(@javax.annotation.Nullable List<RenewalsDetailsResponseAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -415,7 +430,7 @@ public class RenewalsDetailsResponse {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<RenewalsDetailsResponseAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<RenewalsDetailsResponseAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 

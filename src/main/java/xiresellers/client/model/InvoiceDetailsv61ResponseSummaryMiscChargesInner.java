@@ -48,32 +48,37 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryMiscChargesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
   public static final String SERIALIZED_NAME_CHARGE_DESCRIPTION = "chargeDescription";
   @SerializedName(SERIALIZED_NAME_CHARGE_DESCRIPTION)
+  @javax.annotation.Nullable
   private String chargeDescription;
 
   public static final String SERIALIZED_NAME_MISC_CHARGE_LINE_COUNT = "miscChargeLineCount";
   @SerializedName(SERIALIZED_NAME_MISC_CHARGE_LINE_COUNT)
+  @javax.annotation.Nullable
   private Integer miscChargeLineCount;
 
   public static final String SERIALIZED_NAME_MISC_CHARGE_LINE_TOTAL = "miscChargeLineTotal";
   @SerializedName(SERIALIZED_NAME_MISC_CHARGE_LINE_TOTAL)
+  @javax.annotation.Nullable
   private Double miscChargeLineTotal;
 
   public static final String SERIALIZED_NAME_CHARGE_LINE_REFERENCE = "chargeLineReference";
   @SerializedName(SERIALIZED_NAME_CHARGE_LINE_REFERENCE)
+  @javax.annotation.Nullable
   private String chargeLineReference;
 
   public static final String SERIALIZED_NAME_IS_NON_MISC = "isNonMisc";
   @SerializedName(SERIALIZED_NAME_IS_NON_MISC)
+  @javax.annotation.Nullable
   private String isNonMisc;
 
   public InvoiceDetailsv61ResponseSummaryMiscChargesInner() {
   }
 
-  public InvoiceDetailsv61ResponseSummaryMiscChargesInner chargeDescription(String chargeDescription) {
+  public InvoiceDetailsv61ResponseSummaryMiscChargesInner chargeDescription(@javax.annotation.Nullable String chargeDescription) {
     this.chargeDescription = chargeDescription;
     return this;
   }
@@ -87,12 +92,12 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     return chargeDescription;
   }
 
-  public void setChargeDescription(String chargeDescription) {
+  public void setChargeDescription(@javax.annotation.Nullable String chargeDescription) {
     this.chargeDescription = chargeDescription;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryMiscChargesInner miscChargeLineCount(Integer miscChargeLineCount) {
+  public InvoiceDetailsv61ResponseSummaryMiscChargesInner miscChargeLineCount(@javax.annotation.Nullable Integer miscChargeLineCount) {
     this.miscChargeLineCount = miscChargeLineCount;
     return this;
   }
@@ -106,12 +111,12 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     return miscChargeLineCount;
   }
 
-  public void setMiscChargeLineCount(Integer miscChargeLineCount) {
+  public void setMiscChargeLineCount(@javax.annotation.Nullable Integer miscChargeLineCount) {
     this.miscChargeLineCount = miscChargeLineCount;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryMiscChargesInner miscChargeLineTotal(Double miscChargeLineTotal) {
+  public InvoiceDetailsv61ResponseSummaryMiscChargesInner miscChargeLineTotal(@javax.annotation.Nullable Double miscChargeLineTotal) {
     this.miscChargeLineTotal = miscChargeLineTotal;
     return this;
   }
@@ -125,12 +130,12 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     return miscChargeLineTotal;
   }
 
-  public void setMiscChargeLineTotal(Double miscChargeLineTotal) {
+  public void setMiscChargeLineTotal(@javax.annotation.Nullable Double miscChargeLineTotal) {
     this.miscChargeLineTotal = miscChargeLineTotal;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryMiscChargesInner chargeLineReference(String chargeLineReference) {
+  public InvoiceDetailsv61ResponseSummaryMiscChargesInner chargeLineReference(@javax.annotation.Nullable String chargeLineReference) {
     this.chargeLineReference = chargeLineReference;
     return this;
   }
@@ -144,12 +149,12 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     return chargeLineReference;
   }
 
-  public void setChargeLineReference(String chargeLineReference) {
+  public void setChargeLineReference(@javax.annotation.Nullable String chargeLineReference) {
     this.chargeLineReference = chargeLineReference;
   }
 
 
-  public InvoiceDetailsv61ResponseSummaryMiscChargesInner isNonMisc(String isNonMisc) {
+  public InvoiceDetailsv61ResponseSummaryMiscChargesInner isNonMisc(@javax.annotation.Nullable String isNonMisc) {
     this.isNonMisc = isNonMisc;
     return this;
   }
@@ -163,7 +168,7 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
     return isNonMisc;
   }
 
-  public void setIsNonMisc(String isNonMisc) {
+  public void setIsNonMisc(@javax.annotation.Nullable String isNonMisc) {
     this.isNonMisc = isNonMisc;
   }
 

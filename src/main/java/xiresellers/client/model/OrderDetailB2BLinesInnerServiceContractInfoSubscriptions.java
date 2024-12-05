@@ -48,36 +48,42 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerServiceContractInfoSubscriptions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerServiceContractInfoSubscriptions {
   public static final String SERIALIZED_NAME_SUBSCRIPTION_ID = "subscriptionId";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_ID)
+  @javax.annotation.Nullable
   private String subscriptionId;
 
   public static final String SERIALIZED_NAME_SUBSCRIPTION_TERM = "subscriptionTerm";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_TERM)
+  @javax.annotation.Nullable
   private String subscriptionTerm;
 
   public static final String SERIALIZED_NAME_RENEWAL_TERM = "renewalTerm";
   @SerializedName(SERIALIZED_NAME_RENEWAL_TERM)
+  @javax.annotation.Nullable
   private String renewalTerm;
 
   public static final String SERIALIZED_NAME_BILLING_MODEL = "billingModel";
   @SerializedName(SERIALIZED_NAME_BILLING_MODEL)
+  @javax.annotation.Nullable
   private String billingModel;
 
   public static final String SERIALIZED_NAME_SUBCRIPTION_START_DATE = "subcriptionStartDate";
   @SerializedName(SERIALIZED_NAME_SUBCRIPTION_START_DATE)
+  @javax.annotation.Nullable
   private String subcriptionStartDate;
 
   public static final String SERIALIZED_NAME_SUBCRIPTION_END_DATE = "subcriptionEndDate";
   @SerializedName(SERIALIZED_NAME_SUBCRIPTION_END_DATE)
+  @javax.annotation.Nullable
   private String subcriptionEndDate;
 
   public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions() {
   }
 
-  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subscriptionId(String subscriptionId) {
+  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subscriptionId(@javax.annotation.Nullable String subscriptionId) {
     this.subscriptionId = subscriptionId;
     return this;
   }
@@ -91,12 +97,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoSubscriptions {
     return subscriptionId;
   }
 
-  public void setSubscriptionId(String subscriptionId) {
+  public void setSubscriptionId(@javax.annotation.Nullable String subscriptionId) {
     this.subscriptionId = subscriptionId;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subscriptionTerm(String subscriptionTerm) {
+  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subscriptionTerm(@javax.annotation.Nullable String subscriptionTerm) {
     this.subscriptionTerm = subscriptionTerm;
     return this;
   }
@@ -110,12 +116,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoSubscriptions {
     return subscriptionTerm;
   }
 
-  public void setSubscriptionTerm(String subscriptionTerm) {
+  public void setSubscriptionTerm(@javax.annotation.Nullable String subscriptionTerm) {
     this.subscriptionTerm = subscriptionTerm;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions renewalTerm(String renewalTerm) {
+  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions renewalTerm(@javax.annotation.Nullable String renewalTerm) {
     this.renewalTerm = renewalTerm;
     return this;
   }
@@ -129,12 +135,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoSubscriptions {
     return renewalTerm;
   }
 
-  public void setRenewalTerm(String renewalTerm) {
+  public void setRenewalTerm(@javax.annotation.Nullable String renewalTerm) {
     this.renewalTerm = renewalTerm;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions billingModel(String billingModel) {
+  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions billingModel(@javax.annotation.Nullable String billingModel) {
     this.billingModel = billingModel;
     return this;
   }
@@ -148,12 +154,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoSubscriptions {
     return billingModel;
   }
 
-  public void setBillingModel(String billingModel) {
+  public void setBillingModel(@javax.annotation.Nullable String billingModel) {
     this.billingModel = billingModel;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subcriptionStartDate(String subcriptionStartDate) {
+  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subcriptionStartDate(@javax.annotation.Nullable String subcriptionStartDate) {
     this.subcriptionStartDate = subcriptionStartDate;
     return this;
   }
@@ -167,12 +173,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoSubscriptions {
     return subcriptionStartDate;
   }
 
-  public void setSubcriptionStartDate(String subcriptionStartDate) {
+  public void setSubcriptionStartDate(@javax.annotation.Nullable String subcriptionStartDate) {
     this.subcriptionStartDate = subcriptionStartDate;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subcriptionEndDate(String subcriptionEndDate) {
+  public OrderDetailB2BLinesInnerServiceContractInfoSubscriptions subcriptionEndDate(@javax.annotation.Nullable String subcriptionEndDate) {
     this.subcriptionEndDate = subcriptionEndDate;
     return this;
   }
@@ -186,7 +192,7 @@ public class OrderDetailB2BLinesInnerServiceContractInfoSubscriptions {
     return subcriptionEndDate;
   }
 
-  public void setSubcriptionEndDate(String subcriptionEndDate) {
+  public void setSubcriptionEndDate(@javax.annotation.Nullable String subcriptionEndDate) {
     this.subcriptionEndDate = subcriptionEndDate;
   }
 

@@ -50,80 +50,97 @@ import xiresellers.client.JSON;
 /**
  * QuoteSearchResponseQuotesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class QuoteSearchResponseQuotesInner {
   public static final String SERIALIZED_NAME_QUOTE_GUID = "quoteGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_GUID)
+  @javax.annotation.Nullable
   private String quoteGuid;
 
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
+  @javax.annotation.Nullable
   private String quoteName;
 
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
+  @javax.annotation.Nullable
   private String quoteNumber;
 
   public static final String SERIALIZED_NAME_REVISION = "revision";
   @SerializedName(SERIALIZED_NAME_REVISION)
+  @javax.annotation.Nullable
   private String revision;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_END_USER_CONTACT = "endUserContact";
   @SerializedName(SERIALIZED_NAME_END_USER_CONTACT)
+  @javax.annotation.Nullable
   private String endUserContact;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBER = "specialBidNumber";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBER)
+  @javax.annotation.Nullable
   private String specialBidNumber;
 
   public static final String SERIALIZED_NAME_QUOTE_TOTAL = "quoteTotal";
   @SerializedName(SERIALIZED_NAME_QUOTE_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal quoteTotal;
 
   public static final String SERIALIZED_NAME_QUOTE_STATUS = "quoteStatus";
   @SerializedName(SERIALIZED_NAME_QUOTE_STATUS)
+  @javax.annotation.Nullable
   private String quoteStatus;
 
   public static final String SERIALIZED_NAME_INGRAM_QUOTE_DATE = "ingramQuoteDate";
   @SerializedName(SERIALIZED_NAME_INGRAM_QUOTE_DATE)
+  @javax.annotation.Nullable
   private String ingramQuoteDate;
 
   public static final String SERIALIZED_NAME_LAST_MODIFIED_DATE = "lastModifiedDate";
   @SerializedName(SERIALIZED_NAME_LAST_MODIFIED_DATE)
+  @javax.annotation.Nullable
   private String lastModifiedDate;
 
   public static final String SERIALIZED_NAME_INGRAM_QUOTE_EXPIRY_DATE = "ingramQuoteExpiryDate";
   @SerializedName(SERIALIZED_NAME_INGRAM_QUOTE_EXPIRY_DATE)
+  @javax.annotation.Nullable
   private String ingramQuoteExpiryDate;
 
   public static final String SERIALIZED_NAME_END_USER_NAME = "endUserName";
   @SerializedName(SERIALIZED_NAME_END_USER_NAME)
+  @javax.annotation.Nullable
   private String endUserName;
 
   public static final String SERIALIZED_NAME_VENDOR = "vendor";
   @SerializedName(SERIALIZED_NAME_VENDOR)
+  @javax.annotation.Nullable
   private String vendor;
 
   public static final String SERIALIZED_NAME_CREATED_BY = "createdBy";
   @SerializedName(SERIALIZED_NAME_CREATED_BY)
+  @javax.annotation.Nullable
   private String createdBy;
 
   public static final String SERIALIZED_NAME_QUOTE_TYPE = "quoteType";
   @SerializedName(SERIALIZED_NAME_QUOTE_TYPE)
+  @javax.annotation.Nullable
   private String quoteType;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private QuoteSearchResponseQuotesInnerLinks links;
 
   public QuoteSearchResponseQuotesInner() {
   }
 
-  public QuoteSearchResponseQuotesInner quoteGuid(String quoteGuid) {
+  public QuoteSearchResponseQuotesInner quoteGuid(@javax.annotation.Nullable String quoteGuid) {
     this.quoteGuid = quoteGuid;
     return this;
   }
@@ -137,12 +154,12 @@ public class QuoteSearchResponseQuotesInner {
     return quoteGuid;
   }
 
-  public void setQuoteGuid(String quoteGuid) {
+  public void setQuoteGuid(@javax.annotation.Nullable String quoteGuid) {
     this.quoteGuid = quoteGuid;
   }
 
 
-  public QuoteSearchResponseQuotesInner quoteName(String quoteName) {
+  public QuoteSearchResponseQuotesInner quoteName(@javax.annotation.Nullable String quoteName) {
     this.quoteName = quoteName;
     return this;
   }
@@ -156,12 +173,12 @@ public class QuoteSearchResponseQuotesInner {
     return quoteName;
   }
 
-  public void setQuoteName(String quoteName) {
+  public void setQuoteName(@javax.annotation.Nullable String quoteName) {
     this.quoteName = quoteName;
   }
 
 
-  public QuoteSearchResponseQuotesInner quoteNumber(String quoteNumber) {
+  public QuoteSearchResponseQuotesInner quoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
     return this;
   }
@@ -175,12 +192,12 @@ public class QuoteSearchResponseQuotesInner {
     return quoteNumber;
   }
 
-  public void setQuoteNumber(String quoteNumber) {
+  public void setQuoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
   }
 
 
-  public QuoteSearchResponseQuotesInner revision(String revision) {
+  public QuoteSearchResponseQuotesInner revision(@javax.annotation.Nullable String revision) {
     this.revision = revision;
     return this;
   }
@@ -194,12 +211,12 @@ public class QuoteSearchResponseQuotesInner {
     return revision;
   }
 
-  public void setRevision(String revision) {
+  public void setRevision(@javax.annotation.Nullable String revision) {
     this.revision = revision;
   }
 
 
-  public QuoteSearchResponseQuotesInner currencyCode(String currencyCode) {
+  public QuoteSearchResponseQuotesInner currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -213,12 +230,12 @@ public class QuoteSearchResponseQuotesInner {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public QuoteSearchResponseQuotesInner endUserContact(String endUserContact) {
+  public QuoteSearchResponseQuotesInner endUserContact(@javax.annotation.Nullable String endUserContact) {
     this.endUserContact = endUserContact;
     return this;
   }
@@ -232,12 +249,12 @@ public class QuoteSearchResponseQuotesInner {
     return endUserContact;
   }
 
-  public void setEndUserContact(String endUserContact) {
+  public void setEndUserContact(@javax.annotation.Nullable String endUserContact) {
     this.endUserContact = endUserContact;
   }
 
 
-  public QuoteSearchResponseQuotesInner specialBidNumber(String specialBidNumber) {
+  public QuoteSearchResponseQuotesInner specialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
     return this;
   }
@@ -251,12 +268,12 @@ public class QuoteSearchResponseQuotesInner {
     return specialBidNumber;
   }
 
-  public void setSpecialBidNumber(String specialBidNumber) {
+  public void setSpecialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
   }
 
 
-  public QuoteSearchResponseQuotesInner quoteTotal(BigDecimal quoteTotal) {
+  public QuoteSearchResponseQuotesInner quoteTotal(@javax.annotation.Nullable BigDecimal quoteTotal) {
     this.quoteTotal = quoteTotal;
     return this;
   }
@@ -270,12 +287,12 @@ public class QuoteSearchResponseQuotesInner {
     return quoteTotal;
   }
 
-  public void setQuoteTotal(BigDecimal quoteTotal) {
+  public void setQuoteTotal(@javax.annotation.Nullable BigDecimal quoteTotal) {
     this.quoteTotal = quoteTotal;
   }
 
 
-  public QuoteSearchResponseQuotesInner quoteStatus(String quoteStatus) {
+  public QuoteSearchResponseQuotesInner quoteStatus(@javax.annotation.Nullable String quoteStatus) {
     this.quoteStatus = quoteStatus;
     return this;
   }
@@ -289,12 +306,12 @@ public class QuoteSearchResponseQuotesInner {
     return quoteStatus;
   }
 
-  public void setQuoteStatus(String quoteStatus) {
+  public void setQuoteStatus(@javax.annotation.Nullable String quoteStatus) {
     this.quoteStatus = quoteStatus;
   }
 
 
-  public QuoteSearchResponseQuotesInner ingramQuoteDate(String ingramQuoteDate) {
+  public QuoteSearchResponseQuotesInner ingramQuoteDate(@javax.annotation.Nullable String ingramQuoteDate) {
     this.ingramQuoteDate = ingramQuoteDate;
     return this;
   }
@@ -308,12 +325,12 @@ public class QuoteSearchResponseQuotesInner {
     return ingramQuoteDate;
   }
 
-  public void setIngramQuoteDate(String ingramQuoteDate) {
+  public void setIngramQuoteDate(@javax.annotation.Nullable String ingramQuoteDate) {
     this.ingramQuoteDate = ingramQuoteDate;
   }
 
 
-  public QuoteSearchResponseQuotesInner lastModifiedDate(String lastModifiedDate) {
+  public QuoteSearchResponseQuotesInner lastModifiedDate(@javax.annotation.Nullable String lastModifiedDate) {
     this.lastModifiedDate = lastModifiedDate;
     return this;
   }
@@ -327,12 +344,12 @@ public class QuoteSearchResponseQuotesInner {
     return lastModifiedDate;
   }
 
-  public void setLastModifiedDate(String lastModifiedDate) {
+  public void setLastModifiedDate(@javax.annotation.Nullable String lastModifiedDate) {
     this.lastModifiedDate = lastModifiedDate;
   }
 
 
-  public QuoteSearchResponseQuotesInner ingramQuoteExpiryDate(String ingramQuoteExpiryDate) {
+  public QuoteSearchResponseQuotesInner ingramQuoteExpiryDate(@javax.annotation.Nullable String ingramQuoteExpiryDate) {
     this.ingramQuoteExpiryDate = ingramQuoteExpiryDate;
     return this;
   }
@@ -346,12 +363,12 @@ public class QuoteSearchResponseQuotesInner {
     return ingramQuoteExpiryDate;
   }
 
-  public void setIngramQuoteExpiryDate(String ingramQuoteExpiryDate) {
+  public void setIngramQuoteExpiryDate(@javax.annotation.Nullable String ingramQuoteExpiryDate) {
     this.ingramQuoteExpiryDate = ingramQuoteExpiryDate;
   }
 
 
-  public QuoteSearchResponseQuotesInner endUserName(String endUserName) {
+  public QuoteSearchResponseQuotesInner endUserName(@javax.annotation.Nullable String endUserName) {
     this.endUserName = endUserName;
     return this;
   }
@@ -365,12 +382,12 @@ public class QuoteSearchResponseQuotesInner {
     return endUserName;
   }
 
-  public void setEndUserName(String endUserName) {
+  public void setEndUserName(@javax.annotation.Nullable String endUserName) {
     this.endUserName = endUserName;
   }
 
 
-  public QuoteSearchResponseQuotesInner vendor(String vendor) {
+  public QuoteSearchResponseQuotesInner vendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
     return this;
   }
@@ -384,12 +401,12 @@ public class QuoteSearchResponseQuotesInner {
     return vendor;
   }
 
-  public void setVendor(String vendor) {
+  public void setVendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
   }
 
 
-  public QuoteSearchResponseQuotesInner createdBy(String createdBy) {
+  public QuoteSearchResponseQuotesInner createdBy(@javax.annotation.Nullable String createdBy) {
     this.createdBy = createdBy;
     return this;
   }
@@ -403,12 +420,12 @@ public class QuoteSearchResponseQuotesInner {
     return createdBy;
   }
 
-  public void setCreatedBy(String createdBy) {
+  public void setCreatedBy(@javax.annotation.Nullable String createdBy) {
     this.createdBy = createdBy;
   }
 
 
-  public QuoteSearchResponseQuotesInner quoteType(String quoteType) {
+  public QuoteSearchResponseQuotesInner quoteType(@javax.annotation.Nullable String quoteType) {
     this.quoteType = quoteType;
     return this;
   }
@@ -422,12 +439,12 @@ public class QuoteSearchResponseQuotesInner {
     return quoteType;
   }
 
-  public void setQuoteType(String quoteType) {
+  public void setQuoteType(@javax.annotation.Nullable String quoteType) {
     this.quoteType = quoteType;
   }
 
 
-  public QuoteSearchResponseQuotesInner links(QuoteSearchResponseQuotesInnerLinks links) {
+  public QuoteSearchResponseQuotesInner links(@javax.annotation.Nullable QuoteSearchResponseQuotesInnerLinks links) {
     this.links = links;
     return this;
   }
@@ -441,7 +458,7 @@ public class QuoteSearchResponseQuotesInner {
     return links;
   }
 
-  public void setLinks(QuoteSearchResponseQuotesInnerLinks links) {
+  public void setLinks(@javax.annotation.Nullable QuoteSearchResponseQuotesInnerLinks links) {
     this.links = links;
   }
 

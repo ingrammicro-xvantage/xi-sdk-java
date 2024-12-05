@@ -55,48 +55,57 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
   public static final String SERIALIZED_NAME_INDEX = "index";
   @SerializedName(SERIALIZED_NAME_INDEX)
+  @javax.annotation.Nullable
   private BigDecimal index;
 
   public static final String SERIALIZED_NAME_PLAN_ID = "planId";
   @SerializedName(SERIALIZED_NAME_PLAN_ID)
+  @javax.annotation.Nullable
   private String planId;
 
   public static final String SERIALIZED_NAME_PLAN_U_ID = "planUId";
   @SerializedName(SERIALIZED_NAME_PLAN_U_ID)
+  @javax.annotation.Nullable
   private String planUId;
 
   public static final String SERIALIZED_NAME_PLAN_NAME = "planName";
   @SerializedName(SERIALIZED_NAME_PLAN_NAME)
+  @javax.annotation.Nullable
   private String planName;
 
   public static final String SERIALIZED_NAME_PLAN_DESCRIPTION = "planDescription";
   @SerializedName(SERIALIZED_NAME_PLAN_DESCRIPTION)
+  @javax.annotation.Nullable
   private String planDescription;
 
   public static final String SERIALIZED_NAME_GROUPS = "groups";
   @SerializedName(SERIALIZED_NAME_GROUPS)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner> groups = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_BILLING_PERIOD = "billingPeriod";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD)
+  @javax.annotation.Nullable
   private PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod;
 
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD = "subscriptionPeriod";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner> subscriptionPeriod = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_OPTIONS = "options";
   @SerializedName(SERIALIZED_NAME_OPTIONS)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner> options = new ArrayList<>();
 
   public PriceAndAvailabilityResponseInnerSubscriptionPriceInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner index(BigDecimal index) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner index(@javax.annotation.Nullable BigDecimal index) {
     this.index = index;
     return this;
   }
@@ -110,12 +119,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     return index;
   }
 
-  public void setIndex(BigDecimal index) {
+  public void setIndex(@javax.annotation.Nullable BigDecimal index) {
     this.index = index;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planId(String planId) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planId(@javax.annotation.Nullable String planId) {
     this.planId = planId;
     return this;
   }
@@ -129,12 +138,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     return planId;
   }
 
-  public void setPlanId(String planId) {
+  public void setPlanId(@javax.annotation.Nullable String planId) {
     this.planId = planId;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planUId(String planUId) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planUId(@javax.annotation.Nullable String planUId) {
     this.planUId = planUId;
     return this;
   }
@@ -148,12 +157,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     return planUId;
   }
 
-  public void setPlanUId(String planUId) {
+  public void setPlanUId(@javax.annotation.Nullable String planUId) {
     this.planUId = planUId;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planName(String planName) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planName(@javax.annotation.Nullable String planName) {
     this.planName = planName;
     return this;
   }
@@ -167,12 +176,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     return planName;
   }
 
-  public void setPlanName(String planName) {
+  public void setPlanName(@javax.annotation.Nullable String planName) {
     this.planName = planName;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planDescription(String planDescription) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner planDescription(@javax.annotation.Nullable String planDescription) {
     this.planDescription = planDescription;
     return this;
   }
@@ -186,12 +195,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     return planDescription;
   }
 
-  public void setPlanDescription(String planDescription) {
+  public void setPlanDescription(@javax.annotation.Nullable String planDescription) {
     this.planDescription = planDescription;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner groups(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner> groups) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner groups(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner> groups) {
     this.groups = groups;
     return this;
   }
@@ -213,12 +222,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     return groups;
   }
 
-  public void setGroups(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner> groups) {
+  public void setGroups(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner> groups) {
     this.groups = groups;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner billingPeriod(PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner billingPeriod(@javax.annotation.Nullable PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod) {
     this.billingPeriod = billingPeriod;
     return this;
   }
@@ -232,12 +241,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     return billingPeriod;
   }
 
-  public void setBillingPeriod(PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod) {
+  public void setBillingPeriod(@javax.annotation.Nullable PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod billingPeriod) {
     this.billingPeriod = billingPeriod;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner subscriptionPeriod(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner> subscriptionPeriod) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner subscriptionPeriod(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner> subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
     return this;
   }
@@ -259,12 +268,12 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     return subscriptionPeriod;
   }
 
-  public void setSubscriptionPeriod(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner> subscriptionPeriod) {
+  public void setSubscriptionPeriod(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner> subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner options(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner> options) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInner options(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner> options) {
     this.options = options;
     return this;
   }
@@ -286,7 +295,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
     return options;
   }
 
-  public void setOptions(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner> options) {
+  public void setOptions(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner> options) {
     this.options = options;
   }
 

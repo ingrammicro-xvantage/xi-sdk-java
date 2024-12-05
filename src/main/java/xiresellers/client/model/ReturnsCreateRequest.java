@@ -51,16 +51,17 @@ import xiresellers.client.JSON;
 /**
  * ReturnsCreateRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ReturnsCreateRequest {
   public static final String SERIALIZED_NAME_LIST = "list";
   @SerializedName(SERIALIZED_NAME_LIST)
+  @javax.annotation.Nullable
   private List<ReturnsCreateRequestListInner> _list = new ArrayList<>();
 
   public ReturnsCreateRequest() {
   }
 
-  public ReturnsCreateRequest _list(List<ReturnsCreateRequestListInner> _list) {
+  public ReturnsCreateRequest _list(@javax.annotation.Nullable List<ReturnsCreateRequestListInner> _list) {
     this._list = _list;
     return this;
   }
@@ -82,7 +83,7 @@ public class ReturnsCreateRequest {
     return _list;
   }
 
-  public void setList(List<ReturnsCreateRequestListInner> _list) {
+  public void setList(@javax.annotation.Nullable List<ReturnsCreateRequestListInner> _list) {
     this._list = _list;
   }
 

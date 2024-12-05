@@ -48,32 +48,37 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponseAdditionalAttributesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class RenewalsDetailsResponseAdditionalAttributesInner {
   public static final String SERIALIZED_NAME_ATTRIBUTE_DESCRIPTION = "attributeDescription";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_DESCRIPTION)
+  @javax.annotation.Nullable
   private String attributeDescription;
 
   public static final String SERIALIZED_NAME_ATTRIBUTE_VALUE = "attributeValue";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_VALUE)
+  @javax.annotation.Nullable
   private String attributeValue;
 
   public static final String SERIALIZED_NAME_START_DATE = "startDate";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private String startDate;
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expirationDate";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
+  @javax.annotation.Nullable
   private String expirationDate;
 
   public static final String SERIALIZED_NAME_IS_CONSOLIDATED = "isConsolidated";
   @SerializedName(SERIALIZED_NAME_IS_CONSOLIDATED)
+  @javax.annotation.Nullable
   private String isConsolidated;
 
   public RenewalsDetailsResponseAdditionalAttributesInner() {
   }
 
-  public RenewalsDetailsResponseAdditionalAttributesInner attributeDescription(String attributeDescription) {
+  public RenewalsDetailsResponseAdditionalAttributesInner attributeDescription(@javax.annotation.Nullable String attributeDescription) {
     this.attributeDescription = attributeDescription;
     return this;
   }
@@ -87,12 +92,12 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
     return attributeDescription;
   }
 
-  public void setAttributeDescription(String attributeDescription) {
+  public void setAttributeDescription(@javax.annotation.Nullable String attributeDescription) {
     this.attributeDescription = attributeDescription;
   }
 
 
-  public RenewalsDetailsResponseAdditionalAttributesInner attributeValue(String attributeValue) {
+  public RenewalsDetailsResponseAdditionalAttributesInner attributeValue(@javax.annotation.Nullable String attributeValue) {
     this.attributeValue = attributeValue;
     return this;
   }
@@ -106,12 +111,12 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
     return attributeValue;
   }
 
-  public void setAttributeValue(String attributeValue) {
+  public void setAttributeValue(@javax.annotation.Nullable String attributeValue) {
     this.attributeValue = attributeValue;
   }
 
 
-  public RenewalsDetailsResponseAdditionalAttributesInner startDate(String startDate) {
+  public RenewalsDetailsResponseAdditionalAttributesInner startDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -125,12 +130,12 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
     return startDate;
   }
 
-  public void setStartDate(String startDate) {
+  public void setStartDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
 
-  public RenewalsDetailsResponseAdditionalAttributesInner expirationDate(String expirationDate) {
+  public RenewalsDetailsResponseAdditionalAttributesInner expirationDate(@javax.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
     return this;
   }
@@ -144,12 +149,12 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
     return expirationDate;
   }
 
-  public void setExpirationDate(String expirationDate) {
+  public void setExpirationDate(@javax.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
   }
 
 
-  public RenewalsDetailsResponseAdditionalAttributesInner isConsolidated(String isConsolidated) {
+  public RenewalsDetailsResponseAdditionalAttributesInner isConsolidated(@javax.annotation.Nullable String isConsolidated) {
     this.isConsolidated = isConsolidated;
     return this;
   }
@@ -163,7 +168,7 @@ public class RenewalsDetailsResponseAdditionalAttributesInner {
     return isConsolidated;
   }
 
-  public void setIsConsolidated(String isConsolidated) {
+  public void setIsConsolidated(@javax.annotation.Nullable String isConsolidated) {
     this.isConsolidated = isConsolidated;
   }
 

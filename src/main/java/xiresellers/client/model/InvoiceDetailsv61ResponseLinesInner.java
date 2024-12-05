@@ -53,92 +53,112 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceDetailsv61ResponseLinesInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String ingramLineNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String customerLineNumber = "0";
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_UPC = "upc";
   @SerializedName(SERIALIZED_NAME_UPC)
+  @javax.annotation.Nullable
   private String upc;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_PART_NUMBER = "customerPartNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_PART_NUMBER)
+  @javax.annotation.Nullable
   private String customerPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
+  @javax.annotation.Nullable
   private String vendorName;
 
   public static final String SERIALIZED_NAME_PRODUCT_DESCRIPTION = "productDescription";
   @SerializedName(SERIALIZED_NAME_PRODUCT_DESCRIPTION)
+  @javax.annotation.Nullable
   private String productDescription;
 
   public static final String SERIALIZED_NAME_UNIT_WEIGHT = "unitWeight";
   @SerializedName(SERIALIZED_NAME_UNIT_WEIGHT)
+  @javax.annotation.Nullable
   private BigDecimal unitWeight;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private Integer quantity;
 
   public static final String SERIALIZED_NAME_UNIT_PRICE = "unitPrice";
   @SerializedName(SERIALIZED_NAME_UNIT_PRICE)
+  @javax.annotation.Nullable
   private Double unitPrice;
 
   public static final String SERIALIZED_NAME_UNIT_OF_MEASURE = "unitOfMeasure";
   @SerializedName(SERIALIZED_NAME_UNIT_OF_MEASURE)
+  @javax.annotation.Nullable
   private String unitOfMeasure;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_EXTENDED_PRICE = "extendedPrice";
   @SerializedName(SERIALIZED_NAME_EXTENDED_PRICE)
+  @javax.annotation.Nullable
   private Double extendedPrice;
 
   public static final String SERIALIZED_NAME_TAX_PERCENTAGE = "taxPercentage";
   @SerializedName(SERIALIZED_NAME_TAX_PERCENTAGE)
+  @javax.annotation.Nullable
   private Double taxPercentage;
 
   public static final String SERIALIZED_NAME_TAX_RATE = "taxRate";
   @SerializedName(SERIALIZED_NAME_TAX_RATE)
+  @javax.annotation.Nullable
   private Double taxRate;
 
   public static final String SERIALIZED_NAME_TAX_AMOUNT = "taxAmount";
   @SerializedName(SERIALIZED_NAME_TAX_AMOUNT)
+  @javax.annotation.Nullable
   private Double taxAmount;
 
   public static final String SERIALIZED_NAME_SERIAL_NUMBERS = "serialNumbers";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBERS)
+  @javax.annotation.Nullable
   private List<InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner> serialNumbers;
 
   public static final String SERIALIZED_NAME_QUANTITY_ORDERED = "quantityOrdered";
   @SerializedName(SERIALIZED_NAME_QUANTITY_ORDERED)
+  @javax.annotation.Nullable
   private Integer quantityOrdered;
 
   public static final String SERIALIZED_NAME_QUANTITY_SHIPPED = "quantityShipped";
   @SerializedName(SERIALIZED_NAME_QUANTITY_SHIPPED)
+  @javax.annotation.Nullable
   private Integer quantityShipped;
 
   public InvoiceDetailsv61ResponseLinesInner() {
   }
 
-  public InvoiceDetailsv61ResponseLinesInner ingramLineNumber(String ingramLineNumber) {
+  public InvoiceDetailsv61ResponseLinesInner ingramLineNumber(@javax.annotation.Nullable String ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
     return this;
   }
@@ -152,12 +172,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return ingramLineNumber;
   }
 
-  public void setIngramLineNumber(String ingramLineNumber) {
+  public void setIngramLineNumber(@javax.annotation.Nullable String ingramLineNumber) {
     this.ingramLineNumber = ingramLineNumber;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner customerLineNumber(String customerLineNumber) {
+  public InvoiceDetailsv61ResponseLinesInner customerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
     return this;
   }
@@ -171,12 +191,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return customerLineNumber;
   }
 
-  public void setCustomerLineNumber(String customerLineNumber) {
+  public void setCustomerLineNumber(@javax.annotation.Nullable String customerLineNumber) {
     this.customerLineNumber = customerLineNumber;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner ingramPartNumber(String ingramPartNumber) {
+  public InvoiceDetailsv61ResponseLinesInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -190,12 +210,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner upc(String upc) {
+  public InvoiceDetailsv61ResponseLinesInner upc(@javax.annotation.Nullable String upc) {
     this.upc = upc;
     return this;
   }
@@ -209,12 +229,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return upc;
   }
 
-  public void setUpc(String upc) {
+  public void setUpc(@javax.annotation.Nullable String upc) {
     this.upc = upc;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner vendorPartNumber(String vendorPartNumber) {
+  public InvoiceDetailsv61ResponseLinesInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -228,12 +248,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner customerPartNumber(String customerPartNumber) {
+  public InvoiceDetailsv61ResponseLinesInner customerPartNumber(@javax.annotation.Nullable String customerPartNumber) {
     this.customerPartNumber = customerPartNumber;
     return this;
   }
@@ -247,12 +267,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return customerPartNumber;
   }
 
-  public void setCustomerPartNumber(String customerPartNumber) {
+  public void setCustomerPartNumber(@javax.annotation.Nullable String customerPartNumber) {
     this.customerPartNumber = customerPartNumber;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner vendorName(String vendorName) {
+  public InvoiceDetailsv61ResponseLinesInner vendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
     return this;
   }
@@ -266,12 +286,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return vendorName;
   }
 
-  public void setVendorName(String vendorName) {
+  public void setVendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner productDescription(String productDescription) {
+  public InvoiceDetailsv61ResponseLinesInner productDescription(@javax.annotation.Nullable String productDescription) {
     this.productDescription = productDescription;
     return this;
   }
@@ -285,12 +305,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return productDescription;
   }
 
-  public void setProductDescription(String productDescription) {
+  public void setProductDescription(@javax.annotation.Nullable String productDescription) {
     this.productDescription = productDescription;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner unitWeight(BigDecimal unitWeight) {
+  public InvoiceDetailsv61ResponseLinesInner unitWeight(@javax.annotation.Nullable BigDecimal unitWeight) {
     this.unitWeight = unitWeight;
     return this;
   }
@@ -304,12 +324,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return unitWeight;
   }
 
-  public void setUnitWeight(BigDecimal unitWeight) {
+  public void setUnitWeight(@javax.annotation.Nullable BigDecimal unitWeight) {
     this.unitWeight = unitWeight;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner quantity(Integer quantity) {
+  public InvoiceDetailsv61ResponseLinesInner quantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -323,12 +343,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner unitPrice(Double unitPrice) {
+  public InvoiceDetailsv61ResponseLinesInner unitPrice(@javax.annotation.Nullable Double unitPrice) {
     this.unitPrice = unitPrice;
     return this;
   }
@@ -342,12 +362,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return unitPrice;
   }
 
-  public void setUnitPrice(Double unitPrice) {
+  public void setUnitPrice(@javax.annotation.Nullable Double unitPrice) {
     this.unitPrice = unitPrice;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner unitOfMeasure(String unitOfMeasure) {
+  public InvoiceDetailsv61ResponseLinesInner unitOfMeasure(@javax.annotation.Nullable String unitOfMeasure) {
     this.unitOfMeasure = unitOfMeasure;
     return this;
   }
@@ -361,12 +381,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return unitOfMeasure;
   }
 
-  public void setUnitOfMeasure(String unitOfMeasure) {
+  public void setUnitOfMeasure(@javax.annotation.Nullable String unitOfMeasure) {
     this.unitOfMeasure = unitOfMeasure;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner currencyCode(String currencyCode) {
+  public InvoiceDetailsv61ResponseLinesInner currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -380,12 +400,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner extendedPrice(Double extendedPrice) {
+  public InvoiceDetailsv61ResponseLinesInner extendedPrice(@javax.annotation.Nullable Double extendedPrice) {
     this.extendedPrice = extendedPrice;
     return this;
   }
@@ -399,12 +419,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return extendedPrice;
   }
 
-  public void setExtendedPrice(Double extendedPrice) {
+  public void setExtendedPrice(@javax.annotation.Nullable Double extendedPrice) {
     this.extendedPrice = extendedPrice;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner taxPercentage(Double taxPercentage) {
+  public InvoiceDetailsv61ResponseLinesInner taxPercentage(@javax.annotation.Nullable Double taxPercentage) {
     this.taxPercentage = taxPercentage;
     return this;
   }
@@ -418,12 +438,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return taxPercentage;
   }
 
-  public void setTaxPercentage(Double taxPercentage) {
+  public void setTaxPercentage(@javax.annotation.Nullable Double taxPercentage) {
     this.taxPercentage = taxPercentage;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner taxRate(Double taxRate) {
+  public InvoiceDetailsv61ResponseLinesInner taxRate(@javax.annotation.Nullable Double taxRate) {
     this.taxRate = taxRate;
     return this;
   }
@@ -437,12 +457,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return taxRate;
   }
 
-  public void setTaxRate(Double taxRate) {
+  public void setTaxRate(@javax.annotation.Nullable Double taxRate) {
     this.taxRate = taxRate;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner taxAmount(Double taxAmount) {
+  public InvoiceDetailsv61ResponseLinesInner taxAmount(@javax.annotation.Nullable Double taxAmount) {
     this.taxAmount = taxAmount;
     return this;
   }
@@ -456,12 +476,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return taxAmount;
   }
 
-  public void setTaxAmount(Double taxAmount) {
+  public void setTaxAmount(@javax.annotation.Nullable Double taxAmount) {
     this.taxAmount = taxAmount;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner serialNumbers(List<InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner> serialNumbers) {
+  public InvoiceDetailsv61ResponseLinesInner serialNumbers(@javax.annotation.Nullable List<InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner> serialNumbers) {
     this.serialNumbers = serialNumbers;
     return this;
   }
@@ -483,12 +503,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return serialNumbers;
   }
 
-  public void setSerialNumbers(List<InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner> serialNumbers) {
+  public void setSerialNumbers(@javax.annotation.Nullable List<InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner> serialNumbers) {
     this.serialNumbers = serialNumbers;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner quantityOrdered(Integer quantityOrdered) {
+  public InvoiceDetailsv61ResponseLinesInner quantityOrdered(@javax.annotation.Nullable Integer quantityOrdered) {
     this.quantityOrdered = quantityOrdered;
     return this;
   }
@@ -502,12 +522,12 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return quantityOrdered;
   }
 
-  public void setQuantityOrdered(Integer quantityOrdered) {
+  public void setQuantityOrdered(@javax.annotation.Nullable Integer quantityOrdered) {
     this.quantityOrdered = quantityOrdered;
   }
 
 
-  public InvoiceDetailsv61ResponseLinesInner quantityShipped(Integer quantityShipped) {
+  public InvoiceDetailsv61ResponseLinesInner quantityShipped(@javax.annotation.Nullable Integer quantityShipped) {
     this.quantityShipped = quantityShipped;
     return this;
   }
@@ -521,7 +541,7 @@ public class InvoiceDetailsv61ResponseLinesInner {
     return quantityShipped;
   }
 
-  public void setQuantityShipped(Integer quantityShipped) {
+  public void setQuantityShipped(@javax.annotation.Nullable Integer quantityShipped) {
     this.quantityShipped = quantityShipped;
   }
 

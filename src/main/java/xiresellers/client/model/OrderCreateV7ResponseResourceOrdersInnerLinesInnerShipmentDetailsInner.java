@@ -48,28 +48,32 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
+  @javax.annotation.Nullable
   private String carrierCode;
 
   public static final String SERIALIZED_NAME_CARRIER_NAME = "carrierName";
   @SerializedName(SERIALIZED_NAME_CARRIER_NAME)
+  @javax.annotation.Nullable
   private String carrierName;
 
   public static final String SERIALIZED_NAME_SHIP_FROM_WAREHOUSE_ID = "shipFromWarehouseId";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_WAREHOUSE_ID)
+  @javax.annotation.Nullable
   private String shipFromWarehouseId;
 
   public static final String SERIALIZED_NAME_SHIP_FROM_LOCATION = "shipFromLocation";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_LOCATION)
+  @javax.annotation.Nullable
   private String shipFromLocation;
 
   public OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner() {
   }
 
-  public OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner carrierCode(String carrierCode) {
+  public OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner carrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
     return this;
   }
@@ -83,12 +87,12 @@ public class OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsIn
     return carrierCode;
   }
 
-  public void setCarrierCode(String carrierCode) {
+  public void setCarrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner carrierName(String carrierName) {
+  public OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner carrierName(@javax.annotation.Nullable String carrierName) {
     this.carrierName = carrierName;
     return this;
   }
@@ -102,12 +106,12 @@ public class OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsIn
     return carrierName;
   }
 
-  public void setCarrierName(String carrierName) {
+  public void setCarrierName(@javax.annotation.Nullable String carrierName) {
     this.carrierName = carrierName;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner shipFromWarehouseId(String shipFromWarehouseId) {
+  public OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner shipFromWarehouseId(@javax.annotation.Nullable String shipFromWarehouseId) {
     this.shipFromWarehouseId = shipFromWarehouseId;
     return this;
   }
@@ -121,12 +125,12 @@ public class OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsIn
     return shipFromWarehouseId;
   }
 
-  public void setShipFromWarehouseId(String shipFromWarehouseId) {
+  public void setShipFromWarehouseId(@javax.annotation.Nullable String shipFromWarehouseId) {
     this.shipFromWarehouseId = shipFromWarehouseId;
   }
 
 
-  public OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner shipFromLocation(String shipFromLocation) {
+  public OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner shipFromLocation(@javax.annotation.Nullable String shipFromLocation) {
     this.shipFromLocation = shipFromLocation;
     return this;
   }
@@ -140,7 +144,7 @@ public class OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsIn
     return shipFromLocation;
   }
 
-  public void setShipFromLocation(String shipFromLocation) {
+  public void setShipFromLocation(@javax.annotation.Nullable String shipFromLocation) {
     this.shipFromLocation = shipFromLocation;
   }
 

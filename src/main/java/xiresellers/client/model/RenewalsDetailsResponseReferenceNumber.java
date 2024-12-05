@@ -48,20 +48,22 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponseReferenceNumber
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class RenewalsDetailsResponseReferenceNumber {
   public static final String SERIALIZED_NAME_NOTIFICATION_ID = "notificationId";
   @SerializedName(SERIALIZED_NAME_NOTIFICATION_ID)
+  @javax.annotation.Nullable
   private String notificationId;
 
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
+  @javax.annotation.Nullable
   private String quoteNumber;
 
   public RenewalsDetailsResponseReferenceNumber() {
   }
 
-  public RenewalsDetailsResponseReferenceNumber notificationId(String notificationId) {
+  public RenewalsDetailsResponseReferenceNumber notificationId(@javax.annotation.Nullable String notificationId) {
     this.notificationId = notificationId;
     return this;
   }
@@ -75,12 +77,12 @@ public class RenewalsDetailsResponseReferenceNumber {
     return notificationId;
   }
 
-  public void setNotificationId(String notificationId) {
+  public void setNotificationId(@javax.annotation.Nullable String notificationId) {
     this.notificationId = notificationId;
   }
 
 
-  public RenewalsDetailsResponseReferenceNumber quoteNumber(String quoteNumber) {
+  public RenewalsDetailsResponseReferenceNumber quoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
     return this;
   }
@@ -94,7 +96,7 @@ public class RenewalsDetailsResponseReferenceNumber {
     return quoteNumber;
   }
 
-  public void setQuoteNumber(String quoteNumber) {
+  public void setQuoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
   }
 

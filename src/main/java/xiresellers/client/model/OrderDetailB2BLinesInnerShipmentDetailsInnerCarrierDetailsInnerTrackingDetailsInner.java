@@ -52,36 +52,42 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner {
   public static final String SERIALIZED_NAME_TRACKING_NUMBER = "trackingNumber";
   @SerializedName(SERIALIZED_NAME_TRACKING_NUMBER)
+  @javax.annotation.Nullable
   private String trackingNumber;
 
   public static final String SERIALIZED_NAME_TRACKING_URL = "trackingUrl";
   @SerializedName(SERIALIZED_NAME_TRACKING_URL)
+  @javax.annotation.Nullable
   private String trackingUrl;
 
   public static final String SERIALIZED_NAME_PACKAGE_WEIGHT = "packageWeight";
   @SerializedName(SERIALIZED_NAME_PACKAGE_WEIGHT)
+  @javax.annotation.Nullable
   private String packageWeight;
 
   public static final String SERIALIZED_NAME_CARTON_NUMBER = "cartonNumber";
   @SerializedName(SERIALIZED_NAME_CARTON_NUMBER)
+  @javax.annotation.Nullable
   private String cartonNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY_IN_BOX = "quantityInBox";
   @SerializedName(SERIALIZED_NAME_QUANTITY_IN_BOX)
+  @javax.annotation.Nullable
   private String quantityInBox;
 
   public static final String SERIALIZED_NAME_SERIAL_NUMBERS = "serialNumbers";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBERS)
+  @javax.annotation.Nullable
   private List<OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner> serialNumbers;
 
   public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner() {
   }
 
-  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner trackingNumber(String trackingNumber) {
+  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner trackingNumber(@javax.annotation.Nullable String trackingNumber) {
     this.trackingNumber = trackingNumber;
     return this;
   }
@@ -95,12 +101,12 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return trackingNumber;
   }
 
-  public void setTrackingNumber(String trackingNumber) {
+  public void setTrackingNumber(@javax.annotation.Nullable String trackingNumber) {
     this.trackingNumber = trackingNumber;
   }
 
 
-  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner trackingUrl(String trackingUrl) {
+  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner trackingUrl(@javax.annotation.Nullable String trackingUrl) {
     this.trackingUrl = trackingUrl;
     return this;
   }
@@ -114,12 +120,12 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return trackingUrl;
   }
 
-  public void setTrackingUrl(String trackingUrl) {
+  public void setTrackingUrl(@javax.annotation.Nullable String trackingUrl) {
     this.trackingUrl = trackingUrl;
   }
 
 
-  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner packageWeight(String packageWeight) {
+  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner packageWeight(@javax.annotation.Nullable String packageWeight) {
     this.packageWeight = packageWeight;
     return this;
   }
@@ -133,12 +139,12 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return packageWeight;
   }
 
-  public void setPackageWeight(String packageWeight) {
+  public void setPackageWeight(@javax.annotation.Nullable String packageWeight) {
     this.packageWeight = packageWeight;
   }
 
 
-  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner cartonNumber(String cartonNumber) {
+  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner cartonNumber(@javax.annotation.Nullable String cartonNumber) {
     this.cartonNumber = cartonNumber;
     return this;
   }
@@ -152,12 +158,12 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return cartonNumber;
   }
 
-  public void setCartonNumber(String cartonNumber) {
+  public void setCartonNumber(@javax.annotation.Nullable String cartonNumber) {
     this.cartonNumber = cartonNumber;
   }
 
 
-  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner quantityInBox(String quantityInBox) {
+  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner quantityInBox(@javax.annotation.Nullable String quantityInBox) {
     this.quantityInBox = quantityInBox;
     return this;
   }
@@ -171,12 +177,12 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return quantityInBox;
   }
 
-  public void setQuantityInBox(String quantityInBox) {
+  public void setQuantityInBox(@javax.annotation.Nullable String quantityInBox) {
     this.quantityInBox = quantityInBox;
   }
 
 
-  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner serialNumbers(List<OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner> serialNumbers) {
+  public OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInner serialNumbers(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner> serialNumbers) {
     this.serialNumbers = serialNumbers;
     return this;
   }
@@ -198,7 +204,7 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrac
     return serialNumbers;
   }
 
-  public void setSerialNumbers(List<OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner> serialNumbers) {
+  public void setSerialNumbers(@javax.annotation.Nullable List<OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner> serialNumbers) {
     this.serialNumbers = serialNumbers;
   }
 

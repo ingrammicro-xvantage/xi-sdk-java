@@ -48,36 +48,42 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerServiceContractInfoContractInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
   public static final String SERIALIZED_NAME_CONTRACT_DESCRIPTION = "contractDescription";
   @SerializedName(SERIALIZED_NAME_CONTRACT_DESCRIPTION)
+  @javax.annotation.Nullable
   private String contractDescription;
 
   public static final String SERIALIZED_NAME_CONTRACT_NUMBER = "contractNumber";
   @SerializedName(SERIALIZED_NAME_CONTRACT_NUMBER)
+  @javax.annotation.Nullable
   private String contractNumber;
 
   public static final String SERIALIZED_NAME_CONTRACT_STATUS = "contractStatus";
   @SerializedName(SERIALIZED_NAME_CONTRACT_STATUS)
+  @javax.annotation.Nullable
   private String contractStatus;
 
   public static final String SERIALIZED_NAME_CONTRACT_START_DATE = "contractStartDate";
   @SerializedName(SERIALIZED_NAME_CONTRACT_START_DATE)
+  @javax.annotation.Nullable
   private String contractStartDate;
 
   public static final String SERIALIZED_NAME_CONTRACT_END_DATE = "contractEndDate";
   @SerializedName(SERIALIZED_NAME_CONTRACT_END_DATE)
+  @javax.annotation.Nullable
   private String contractEndDate;
 
   public static final String SERIALIZED_NAME_CONTRACT_DURATION = "contractDuration";
   @SerializedName(SERIALIZED_NAME_CONTRACT_DURATION)
+  @javax.annotation.Nullable
   private String contractDuration;
 
   public OrderDetailB2BLinesInnerServiceContractInfoContractInfo() {
   }
 
-  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractDescription(String contractDescription) {
+  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractDescription(@javax.annotation.Nullable String contractDescription) {
     this.contractDescription = contractDescription;
     return this;
   }
@@ -91,12 +97,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return contractDescription;
   }
 
-  public void setContractDescription(String contractDescription) {
+  public void setContractDescription(@javax.annotation.Nullable String contractDescription) {
     this.contractDescription = contractDescription;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractNumber(String contractNumber) {
+  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractNumber(@javax.annotation.Nullable String contractNumber) {
     this.contractNumber = contractNumber;
     return this;
   }
@@ -110,12 +116,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return contractNumber;
   }
 
-  public void setContractNumber(String contractNumber) {
+  public void setContractNumber(@javax.annotation.Nullable String contractNumber) {
     this.contractNumber = contractNumber;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractStatus(String contractStatus) {
+  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractStatus(@javax.annotation.Nullable String contractStatus) {
     this.contractStatus = contractStatus;
     return this;
   }
@@ -129,12 +135,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return contractStatus;
   }
 
-  public void setContractStatus(String contractStatus) {
+  public void setContractStatus(@javax.annotation.Nullable String contractStatus) {
     this.contractStatus = contractStatus;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractStartDate(String contractStartDate) {
+  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractStartDate(@javax.annotation.Nullable String contractStartDate) {
     this.contractStartDate = contractStartDate;
     return this;
   }
@@ -148,12 +154,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return contractStartDate;
   }
 
-  public void setContractStartDate(String contractStartDate) {
+  public void setContractStartDate(@javax.annotation.Nullable String contractStartDate) {
     this.contractStartDate = contractStartDate;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractEndDate(String contractEndDate) {
+  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractEndDate(@javax.annotation.Nullable String contractEndDate) {
     this.contractEndDate = contractEndDate;
     return this;
   }
@@ -167,12 +173,12 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return contractEndDate;
   }
 
-  public void setContractEndDate(String contractEndDate) {
+  public void setContractEndDate(@javax.annotation.Nullable String contractEndDate) {
     this.contractEndDate = contractEndDate;
   }
 
 
-  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractDuration(String contractDuration) {
+  public OrderDetailB2BLinesInnerServiceContractInfoContractInfo contractDuration(@javax.annotation.Nullable String contractDuration) {
     this.contractDuration = contractDuration;
     return this;
   }
@@ -186,7 +192,7 @@ public class OrderDetailB2BLinesInnerServiceContractInfoContractInfo {
     return contractDuration;
   }
 
-  public void setContractDuration(String contractDuration) {
+  public void setContractDuration(@javax.annotation.Nullable String contractDuration) {
     this.contractDuration = contractDuration;
   }
 

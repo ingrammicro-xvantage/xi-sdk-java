@@ -51,88 +51,107 @@ import xiresellers.client.JSON;
 /**
  * ProductSearchResponseCatalogInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductSearchResponseCatalogInner {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_CATEGORY = "category";
   @SerializedName(SERIALIZED_NAME_CATEGORY)
+  @javax.annotation.Nullable
   private String category;
 
   public static final String SERIALIZED_NAME_SUB_CATEGORY = "subCategory";
   @SerializedName(SERIALIZED_NAME_SUB_CATEGORY)
+  @javax.annotation.Nullable
   private String subCategory;
 
   public static final String SERIALIZED_NAME_PRODUCT_TYPE = "productType";
   @SerializedName(SERIALIZED_NAME_PRODUCT_TYPE)
+  @javax.annotation.Nullable
   private String productType;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_UPC_CODE = "upcCode";
   @SerializedName(SERIALIZED_NAME_UPC_CODE)
+  @javax.annotation.Nullable
   private String upcCode;
 
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
+  @javax.annotation.Nullable
   private String vendorName;
 
   public static final String SERIALIZED_NAME_END_USER_REQUIRED = "endUserRequired";
   @SerializedName(SERIALIZED_NAME_END_USER_REQUIRED)
+  @javax.annotation.Nullable
   private String endUserRequired;
 
   public static final String SERIALIZED_NAME_HAS_DISCOUNTS = "hasDiscounts";
   @SerializedName(SERIALIZED_NAME_HAS_DISCOUNTS)
+  @javax.annotation.Nullable
   private String hasDiscounts;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_DISCONTINUED = "discontinued";
   @SerializedName(SERIALIZED_NAME_DISCONTINUED)
+  @javax.annotation.Nullable
   private String discontinued;
 
   public static final String SERIALIZED_NAME_NEW_PRODUCT = "newProduct";
   @SerializedName(SERIALIZED_NAME_NEW_PRODUCT)
+  @javax.annotation.Nullable
   private String newProduct;
 
   public static final String SERIALIZED_NAME_DIRECT_SHIP = "directShip";
   @SerializedName(SERIALIZED_NAME_DIRECT_SHIP)
+  @javax.annotation.Nullable
   private String directShip;
 
   public static final String SERIALIZED_NAME_HAS_WARRANTY = "hasWarranty";
   @SerializedName(SERIALIZED_NAME_HAS_WARRANTY)
+  @javax.annotation.Nullable
   private String hasWarranty;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<ProductSearchResponseCatalogInnerLinksInner> links = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EXTRA_DESCRIPTION = "extraDescription";
   @SerializedName(SERIALIZED_NAME_EXTRA_DESCRIPTION)
+  @javax.annotation.Nullable
   private String extraDescription;
 
   public static final String SERIALIZED_NAME_REPLACEMENT_SKU = "replacementSku";
   @SerializedName(SERIALIZED_NAME_REPLACEMENT_SKU)
+  @javax.annotation.Nullable
   private String replacementSku;
 
   public static final String SERIALIZED_NAME_AUTHORIZED_TO_PURCHASE = "authorizedToPurchase";
   @SerializedName(SERIALIZED_NAME_AUTHORIZED_TO_PURCHASE)
+  @javax.annotation.Nullable
   private String authorizedToPurchase;
 
   public ProductSearchResponseCatalogInner() {
   }
 
-  public ProductSearchResponseCatalogInner description(String description) {
+  public ProductSearchResponseCatalogInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -146,12 +165,12 @@ public class ProductSearchResponseCatalogInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public ProductSearchResponseCatalogInner category(String category) {
+  public ProductSearchResponseCatalogInner category(@javax.annotation.Nullable String category) {
     this.category = category;
     return this;
   }
@@ -165,12 +184,12 @@ public class ProductSearchResponseCatalogInner {
     return category;
   }
 
-  public void setCategory(String category) {
+  public void setCategory(@javax.annotation.Nullable String category) {
     this.category = category;
   }
 
 
-  public ProductSearchResponseCatalogInner subCategory(String subCategory) {
+  public ProductSearchResponseCatalogInner subCategory(@javax.annotation.Nullable String subCategory) {
     this.subCategory = subCategory;
     return this;
   }
@@ -184,12 +203,12 @@ public class ProductSearchResponseCatalogInner {
     return subCategory;
   }
 
-  public void setSubCategory(String subCategory) {
+  public void setSubCategory(@javax.annotation.Nullable String subCategory) {
     this.subCategory = subCategory;
   }
 
 
-  public ProductSearchResponseCatalogInner productType(String productType) {
+  public ProductSearchResponseCatalogInner productType(@javax.annotation.Nullable String productType) {
     this.productType = productType;
     return this;
   }
@@ -203,12 +222,12 @@ public class ProductSearchResponseCatalogInner {
     return productType;
   }
 
-  public void setProductType(String productType) {
+  public void setProductType(@javax.annotation.Nullable String productType) {
     this.productType = productType;
   }
 
 
-  public ProductSearchResponseCatalogInner ingramPartNumber(String ingramPartNumber) {
+  public ProductSearchResponseCatalogInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -222,12 +241,12 @@ public class ProductSearchResponseCatalogInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public ProductSearchResponseCatalogInner vendorPartNumber(String vendorPartNumber) {
+  public ProductSearchResponseCatalogInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -241,12 +260,12 @@ public class ProductSearchResponseCatalogInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public ProductSearchResponseCatalogInner upcCode(String upcCode) {
+  public ProductSearchResponseCatalogInner upcCode(@javax.annotation.Nullable String upcCode) {
     this.upcCode = upcCode;
     return this;
   }
@@ -260,12 +279,12 @@ public class ProductSearchResponseCatalogInner {
     return upcCode;
   }
 
-  public void setUpcCode(String upcCode) {
+  public void setUpcCode(@javax.annotation.Nullable String upcCode) {
     this.upcCode = upcCode;
   }
 
 
-  public ProductSearchResponseCatalogInner vendorName(String vendorName) {
+  public ProductSearchResponseCatalogInner vendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
     return this;
   }
@@ -279,12 +298,12 @@ public class ProductSearchResponseCatalogInner {
     return vendorName;
   }
 
-  public void setVendorName(String vendorName) {
+  public void setVendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
   }
 
 
-  public ProductSearchResponseCatalogInner endUserRequired(String endUserRequired) {
+  public ProductSearchResponseCatalogInner endUserRequired(@javax.annotation.Nullable String endUserRequired) {
     this.endUserRequired = endUserRequired;
     return this;
   }
@@ -298,12 +317,12 @@ public class ProductSearchResponseCatalogInner {
     return endUserRequired;
   }
 
-  public void setEndUserRequired(String endUserRequired) {
+  public void setEndUserRequired(@javax.annotation.Nullable String endUserRequired) {
     this.endUserRequired = endUserRequired;
   }
 
 
-  public ProductSearchResponseCatalogInner hasDiscounts(String hasDiscounts) {
+  public ProductSearchResponseCatalogInner hasDiscounts(@javax.annotation.Nullable String hasDiscounts) {
     this.hasDiscounts = hasDiscounts;
     return this;
   }
@@ -317,12 +336,12 @@ public class ProductSearchResponseCatalogInner {
     return hasDiscounts;
   }
 
-  public void setHasDiscounts(String hasDiscounts) {
+  public void setHasDiscounts(@javax.annotation.Nullable String hasDiscounts) {
     this.hasDiscounts = hasDiscounts;
   }
 
 
-  public ProductSearchResponseCatalogInner type(String type) {
+  public ProductSearchResponseCatalogInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -336,12 +355,12 @@ public class ProductSearchResponseCatalogInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public ProductSearchResponseCatalogInner discontinued(String discontinued) {
+  public ProductSearchResponseCatalogInner discontinued(@javax.annotation.Nullable String discontinued) {
     this.discontinued = discontinued;
     return this;
   }
@@ -355,12 +374,12 @@ public class ProductSearchResponseCatalogInner {
     return discontinued;
   }
 
-  public void setDiscontinued(String discontinued) {
+  public void setDiscontinued(@javax.annotation.Nullable String discontinued) {
     this.discontinued = discontinued;
   }
 
 
-  public ProductSearchResponseCatalogInner newProduct(String newProduct) {
+  public ProductSearchResponseCatalogInner newProduct(@javax.annotation.Nullable String newProduct) {
     this.newProduct = newProduct;
     return this;
   }
@@ -374,12 +393,12 @@ public class ProductSearchResponseCatalogInner {
     return newProduct;
   }
 
-  public void setNewProduct(String newProduct) {
+  public void setNewProduct(@javax.annotation.Nullable String newProduct) {
     this.newProduct = newProduct;
   }
 
 
-  public ProductSearchResponseCatalogInner directShip(String directShip) {
+  public ProductSearchResponseCatalogInner directShip(@javax.annotation.Nullable String directShip) {
     this.directShip = directShip;
     return this;
   }
@@ -393,12 +412,12 @@ public class ProductSearchResponseCatalogInner {
     return directShip;
   }
 
-  public void setDirectShip(String directShip) {
+  public void setDirectShip(@javax.annotation.Nullable String directShip) {
     this.directShip = directShip;
   }
 
 
-  public ProductSearchResponseCatalogInner hasWarranty(String hasWarranty) {
+  public ProductSearchResponseCatalogInner hasWarranty(@javax.annotation.Nullable String hasWarranty) {
     this.hasWarranty = hasWarranty;
     return this;
   }
@@ -412,12 +431,12 @@ public class ProductSearchResponseCatalogInner {
     return hasWarranty;
   }
 
-  public void setHasWarranty(String hasWarranty) {
+  public void setHasWarranty(@javax.annotation.Nullable String hasWarranty) {
     this.hasWarranty = hasWarranty;
   }
 
 
-  public ProductSearchResponseCatalogInner links(List<ProductSearchResponseCatalogInnerLinksInner> links) {
+  public ProductSearchResponseCatalogInner links(@javax.annotation.Nullable List<ProductSearchResponseCatalogInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -439,12 +458,12 @@ public class ProductSearchResponseCatalogInner {
     return links;
   }
 
-  public void setLinks(List<ProductSearchResponseCatalogInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<ProductSearchResponseCatalogInnerLinksInner> links) {
     this.links = links;
   }
 
 
-  public ProductSearchResponseCatalogInner extraDescription(String extraDescription) {
+  public ProductSearchResponseCatalogInner extraDescription(@javax.annotation.Nullable String extraDescription) {
     this.extraDescription = extraDescription;
     return this;
   }
@@ -458,12 +477,12 @@ public class ProductSearchResponseCatalogInner {
     return extraDescription;
   }
 
-  public void setExtraDescription(String extraDescription) {
+  public void setExtraDescription(@javax.annotation.Nullable String extraDescription) {
     this.extraDescription = extraDescription;
   }
 
 
-  public ProductSearchResponseCatalogInner replacementSku(String replacementSku) {
+  public ProductSearchResponseCatalogInner replacementSku(@javax.annotation.Nullable String replacementSku) {
     this.replacementSku = replacementSku;
     return this;
   }
@@ -477,12 +496,12 @@ public class ProductSearchResponseCatalogInner {
     return replacementSku;
   }
 
-  public void setReplacementSku(String replacementSku) {
+  public void setReplacementSku(@javax.annotation.Nullable String replacementSku) {
     this.replacementSku = replacementSku;
   }
 
 
-  public ProductSearchResponseCatalogInner authorizedToPurchase(String authorizedToPurchase) {
+  public ProductSearchResponseCatalogInner authorizedToPurchase(@javax.annotation.Nullable String authorizedToPurchase) {
     this.authorizedToPurchase = authorizedToPurchase;
     return this;
   }
@@ -496,7 +515,7 @@ public class ProductSearchResponseCatalogInner {
     return authorizedToPurchase;
   }
 
-  public void setAuthorizedToPurchase(String authorizedToPurchase) {
+  public void setAuthorizedToPurchase(@javax.annotation.Nullable String authorizedToPurchase) {
     this.authorizedToPurchase = authorizedToPurchase;
   }
 

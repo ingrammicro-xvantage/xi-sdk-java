@@ -48,28 +48,32 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BMiscellaneousChargesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderDetailB2BMiscellaneousChargesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String subOrderNumber;
 
   public static final String SERIALIZED_NAME_CHARGE_LINE_REFERENCE = "chargeLineReference";
   @SerializedName(SERIALIZED_NAME_CHARGE_LINE_REFERENCE)
+  @javax.annotation.Nullable
   private String chargeLineReference;
 
   public static final String SERIALIZED_NAME_CHARGE_DESCRIPTION = "chargeDescription";
   @SerializedName(SERIALIZED_NAME_CHARGE_DESCRIPTION)
+  @javax.annotation.Nullable
   private String chargeDescription;
 
   public static final String SERIALIZED_NAME_CHARGE_AMOUNT = "chargeAmount";
   @SerializedName(SERIALIZED_NAME_CHARGE_AMOUNT)
+  @javax.annotation.Nullable
   private String chargeAmount;
 
   public OrderDetailB2BMiscellaneousChargesInner() {
   }
 
-  public OrderDetailB2BMiscellaneousChargesInner subOrderNumber(String subOrderNumber) {
+  public OrderDetailB2BMiscellaneousChargesInner subOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
     return this;
   }
@@ -83,12 +87,12 @@ public class OrderDetailB2BMiscellaneousChargesInner {
     return subOrderNumber;
   }
 
-  public void setSubOrderNumber(String subOrderNumber) {
+  public void setSubOrderNumber(@javax.annotation.Nullable String subOrderNumber) {
     this.subOrderNumber = subOrderNumber;
   }
 
 
-  public OrderDetailB2BMiscellaneousChargesInner chargeLineReference(String chargeLineReference) {
+  public OrderDetailB2BMiscellaneousChargesInner chargeLineReference(@javax.annotation.Nullable String chargeLineReference) {
     this.chargeLineReference = chargeLineReference;
     return this;
   }
@@ -102,12 +106,12 @@ public class OrderDetailB2BMiscellaneousChargesInner {
     return chargeLineReference;
   }
 
-  public void setChargeLineReference(String chargeLineReference) {
+  public void setChargeLineReference(@javax.annotation.Nullable String chargeLineReference) {
     this.chargeLineReference = chargeLineReference;
   }
 
 
-  public OrderDetailB2BMiscellaneousChargesInner chargeDescription(String chargeDescription) {
+  public OrderDetailB2BMiscellaneousChargesInner chargeDescription(@javax.annotation.Nullable String chargeDescription) {
     this.chargeDescription = chargeDescription;
     return this;
   }
@@ -121,12 +125,12 @@ public class OrderDetailB2BMiscellaneousChargesInner {
     return chargeDescription;
   }
 
-  public void setChargeDescription(String chargeDescription) {
+  public void setChargeDescription(@javax.annotation.Nullable String chargeDescription) {
     this.chargeDescription = chargeDescription;
   }
 
 
-  public OrderDetailB2BMiscellaneousChargesInner chargeAmount(String chargeAmount) {
+  public OrderDetailB2BMiscellaneousChargesInner chargeAmount(@javax.annotation.Nullable String chargeAmount) {
     this.chargeAmount = chargeAmount;
     return this;
   }
@@ -140,7 +144,7 @@ public class OrderDetailB2BMiscellaneousChargesInner {
     return chargeAmount;
   }
 
-  public void setChargeAmount(String chargeAmount) {
+  public void setChargeAmount(@javax.annotation.Nullable String chargeAmount) {
     this.chargeAmount = chargeAmount;
   }
 

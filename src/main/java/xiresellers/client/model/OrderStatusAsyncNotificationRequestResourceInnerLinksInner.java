@@ -48,24 +48,27 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinksInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinksInner {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)
+  @javax.annotation.Nullable
   private String topic;
 
   public static final String SERIALIZED_NAME_HREF = "href";
   @SerializedName(SERIALIZED_NAME_HREF)
+  @javax.annotation.Nullable
   private String href;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public OrderStatusAsyncNotificationRequestResourceInnerLinksInner() {
   }
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinksInner topic(String topic) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinksInner topic(@javax.annotation.Nullable String topic) {
     this.topic = topic;
     return this;
   }
@@ -79,12 +82,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinksInner {
     return topic;
   }
 
-  public void setTopic(String topic) {
+  public void setTopic(@javax.annotation.Nullable String topic) {
     this.topic = topic;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinksInner href(String href) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinksInner href(@javax.annotation.Nullable String href) {
     this.href = href;
     return this;
   }
@@ -98,12 +101,12 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinksInner {
     return href;
   }
 
-  public void setHref(String href) {
+  public void setHref(@javax.annotation.Nullable String href) {
     this.href = href;
   }
 
 
-  public OrderStatusAsyncNotificationRequestResourceInnerLinksInner type(String type) {
+  public OrderStatusAsyncNotificationRequestResourceInnerLinksInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -117,7 +120,7 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinksInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 

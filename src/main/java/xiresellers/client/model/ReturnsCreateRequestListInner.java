@@ -52,68 +52,82 @@ import xiresellers.client.JSON;
 /**
  * ReturnsCreateRequestListInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ReturnsCreateRequestListInner {
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
+  @javax.annotation.Nonnull
   private String invoiceNumber;
 
   public static final String SERIALIZED_NAME_INVOICE_DATE = "invoiceDate";
   @SerializedName(SERIALIZED_NAME_INVOICE_DATE)
+  @javax.annotation.Nonnull
   private LocalDate invoiceDate;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_SERIAL_NUMBER = "serialNumber";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBER)
+  @javax.annotation.Nullable
   private String serialNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nonnull
   private Integer quantity;
 
   public static final String SERIALIZED_NAME_PRIMARY_REASON = "primaryReason";
   @SerializedName(SERIALIZED_NAME_PRIMARY_REASON)
+  @javax.annotation.Nonnull
   private String primaryReason;
 
   public static final String SERIALIZED_NAME_SECONDARY_REASON = "secondaryReason";
   @SerializedName(SERIALIZED_NAME_SECONDARY_REASON)
+  @javax.annotation.Nonnull
   private String secondaryReason;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_REFERENCE_NUMBER = "referenceNumber";
   @SerializedName(SERIALIZED_NAME_REFERENCE_NUMBER)
+  @javax.annotation.Nullable
   private String referenceNumber;
 
   public static final String SERIALIZED_NAME_BILL_TO_ADDRESS_ID = "billToAddressId";
   @SerializedName(SERIALIZED_NAME_BILL_TO_ADDRESS_ID)
+  @javax.annotation.Nullable
   private String billToAddressId;
 
   public static final String SERIALIZED_NAME_SHIP_FROM_INFO = "shipFromInfo";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_INFO)
+  @javax.annotation.Nonnull
   private List<ReturnsCreateRequestListInnerShipFromInfoInner> shipFromInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NUMBER_OF_BOXES = "numberOfBoxes";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_BOXES)
+  @javax.annotation.Nonnull
   private Integer numberOfBoxes;
 
   public ReturnsCreateRequestListInner() {
   }
 
-  public ReturnsCreateRequestListInner invoiceNumber(String invoiceNumber) {
+  public ReturnsCreateRequestListInner invoiceNumber(@javax.annotation.Nonnull String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
     return this;
   }
@@ -127,12 +141,12 @@ public class ReturnsCreateRequestListInner {
     return invoiceNumber;
   }
 
-  public void setInvoiceNumber(String invoiceNumber) {
+  public void setInvoiceNumber(@javax.annotation.Nonnull String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
   }
 
 
-  public ReturnsCreateRequestListInner invoiceDate(LocalDate invoiceDate) {
+  public ReturnsCreateRequestListInner invoiceDate(@javax.annotation.Nonnull LocalDate invoiceDate) {
     this.invoiceDate = invoiceDate;
     return this;
   }
@@ -146,12 +160,12 @@ public class ReturnsCreateRequestListInner {
     return invoiceDate;
   }
 
-  public void setInvoiceDate(LocalDate invoiceDate) {
+  public void setInvoiceDate(@javax.annotation.Nonnull LocalDate invoiceDate) {
     this.invoiceDate = invoiceDate;
   }
 
 
-  public ReturnsCreateRequestListInner customerOrderNumber(String customerOrderNumber) {
+  public ReturnsCreateRequestListInner customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -165,12 +179,12 @@ public class ReturnsCreateRequestListInner {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public ReturnsCreateRequestListInner ingramPartNumber(String ingramPartNumber) {
+  public ReturnsCreateRequestListInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -184,12 +198,12 @@ public class ReturnsCreateRequestListInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public ReturnsCreateRequestListInner vendorPartNumber(String vendorPartNumber) {
+  public ReturnsCreateRequestListInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -203,12 +217,12 @@ public class ReturnsCreateRequestListInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public ReturnsCreateRequestListInner serialNumber(String serialNumber) {
+  public ReturnsCreateRequestListInner serialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
     return this;
   }
@@ -222,12 +236,12 @@ public class ReturnsCreateRequestListInner {
     return serialNumber;
   }
 
-  public void setSerialNumber(String serialNumber) {
+  public void setSerialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
   }
 
 
-  public ReturnsCreateRequestListInner quantity(Integer quantity) {
+  public ReturnsCreateRequestListInner quantity(@javax.annotation.Nonnull Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -241,12 +255,12 @@ public class ReturnsCreateRequestListInner {
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nonnull Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public ReturnsCreateRequestListInner primaryReason(String primaryReason) {
+  public ReturnsCreateRequestListInner primaryReason(@javax.annotation.Nonnull String primaryReason) {
     this.primaryReason = primaryReason;
     return this;
   }
@@ -260,12 +274,12 @@ public class ReturnsCreateRequestListInner {
     return primaryReason;
   }
 
-  public void setPrimaryReason(String primaryReason) {
+  public void setPrimaryReason(@javax.annotation.Nonnull String primaryReason) {
     this.primaryReason = primaryReason;
   }
 
 
-  public ReturnsCreateRequestListInner secondaryReason(String secondaryReason) {
+  public ReturnsCreateRequestListInner secondaryReason(@javax.annotation.Nonnull String secondaryReason) {
     this.secondaryReason = secondaryReason;
     return this;
   }
@@ -279,12 +293,12 @@ public class ReturnsCreateRequestListInner {
     return secondaryReason;
   }
 
-  public void setSecondaryReason(String secondaryReason) {
+  public void setSecondaryReason(@javax.annotation.Nonnull String secondaryReason) {
     this.secondaryReason = secondaryReason;
   }
 
 
-  public ReturnsCreateRequestListInner notes(String notes) {
+  public ReturnsCreateRequestListInner notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -298,12 +312,12 @@ public class ReturnsCreateRequestListInner {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public ReturnsCreateRequestListInner referenceNumber(String referenceNumber) {
+  public ReturnsCreateRequestListInner referenceNumber(@javax.annotation.Nullable String referenceNumber) {
     this.referenceNumber = referenceNumber;
     return this;
   }
@@ -317,12 +331,12 @@ public class ReturnsCreateRequestListInner {
     return referenceNumber;
   }
 
-  public void setReferenceNumber(String referenceNumber) {
+  public void setReferenceNumber(@javax.annotation.Nullable String referenceNumber) {
     this.referenceNumber = referenceNumber;
   }
 
 
-  public ReturnsCreateRequestListInner billToAddressId(String billToAddressId) {
+  public ReturnsCreateRequestListInner billToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
     return this;
   }
@@ -336,12 +350,12 @@ public class ReturnsCreateRequestListInner {
     return billToAddressId;
   }
 
-  public void setBillToAddressId(String billToAddressId) {
+  public void setBillToAddressId(@javax.annotation.Nullable String billToAddressId) {
     this.billToAddressId = billToAddressId;
   }
 
 
-  public ReturnsCreateRequestListInner shipFromInfo(List<ReturnsCreateRequestListInnerShipFromInfoInner> shipFromInfo) {
+  public ReturnsCreateRequestListInner shipFromInfo(@javax.annotation.Nonnull List<ReturnsCreateRequestListInnerShipFromInfoInner> shipFromInfo) {
     this.shipFromInfo = shipFromInfo;
     return this;
   }
@@ -363,12 +377,12 @@ public class ReturnsCreateRequestListInner {
     return shipFromInfo;
   }
 
-  public void setShipFromInfo(List<ReturnsCreateRequestListInnerShipFromInfoInner> shipFromInfo) {
+  public void setShipFromInfo(@javax.annotation.Nonnull List<ReturnsCreateRequestListInnerShipFromInfoInner> shipFromInfo) {
     this.shipFromInfo = shipFromInfo;
   }
 
 
-  public ReturnsCreateRequestListInner numberOfBoxes(Integer numberOfBoxes) {
+  public ReturnsCreateRequestListInner numberOfBoxes(@javax.annotation.Nonnull Integer numberOfBoxes) {
     this.numberOfBoxes = numberOfBoxes;
     return this;
   }
@@ -382,7 +396,7 @@ public class ReturnsCreateRequestListInner {
     return numberOfBoxes;
   }
 
-  public void setNumberOfBoxes(Integer numberOfBoxes) {
+  public void setNumberOfBoxes(@javax.annotation.Nonnull Integer numberOfBoxes) {
     this.numberOfBoxes = numberOfBoxes;
   }
 

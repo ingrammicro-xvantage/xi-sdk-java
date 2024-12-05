@@ -51,48 +51,57 @@ import xiresellers.client.JSON;
 /**
  * AvailabilityAsyncNotificationRequestResourceInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class AvailabilityAsyncNotificationRequestResourceInner {
   public static final String SERIALIZED_NAME_EVENT_TYPE = "eventType";
   @SerializedName(SERIALIZED_NAME_EVENT_TYPE)
+  @javax.annotation.Nullable
   private String eventType;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
+  @javax.annotation.Nullable
   private String vendorName;
 
   public static final String SERIALIZED_NAME_UPC_CODE = "upcCode";
   @SerializedName(SERIALIZED_NAME_UPC_CODE)
+  @javax.annotation.Nullable
   private String upcCode;
 
   public static final String SERIALIZED_NAME_SKU_STATUS = "skuStatus";
   @SerializedName(SERIALIZED_NAME_SKU_STATUS)
+  @javax.annotation.Nullable
   private String skuStatus;
 
   public static final String SERIALIZED_NAME_BACK_ORDER_FLAG = "backOrderFlag";
   @SerializedName(SERIALIZED_NAME_BACK_ORDER_FLAG)
+  @javax.annotation.Nullable
   private String backOrderFlag;
 
   public static final String SERIALIZED_NAME_TOTAL_AVAILABILITY = "totalAvailability";
   @SerializedName(SERIALIZED_NAME_TOTAL_AVAILABILITY)
+  @javax.annotation.Nullable
   private String totalAvailability;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<AvailabilityAsyncNotificationRequestResourceInnerLinksInner> links = new ArrayList<>();
 
   public AvailabilityAsyncNotificationRequestResourceInner() {
   }
 
-  public AvailabilityAsyncNotificationRequestResourceInner eventType(String eventType) {
+  public AvailabilityAsyncNotificationRequestResourceInner eventType(@javax.annotation.Nullable String eventType) {
     this.eventType = eventType;
     return this;
   }
@@ -106,12 +115,12 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return eventType;
   }
 
-  public void setEventType(String eventType) {
+  public void setEventType(@javax.annotation.Nullable String eventType) {
     this.eventType = eventType;
   }
 
 
-  public AvailabilityAsyncNotificationRequestResourceInner ingramPartNumber(String ingramPartNumber) {
+  public AvailabilityAsyncNotificationRequestResourceInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -125,12 +134,12 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public AvailabilityAsyncNotificationRequestResourceInner vendorPartNumber(String vendorPartNumber) {
+  public AvailabilityAsyncNotificationRequestResourceInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -144,12 +153,12 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public AvailabilityAsyncNotificationRequestResourceInner vendorName(String vendorName) {
+  public AvailabilityAsyncNotificationRequestResourceInner vendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
     return this;
   }
@@ -163,12 +172,12 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return vendorName;
   }
 
-  public void setVendorName(String vendorName) {
+  public void setVendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
   }
 
 
-  public AvailabilityAsyncNotificationRequestResourceInner upcCode(String upcCode) {
+  public AvailabilityAsyncNotificationRequestResourceInner upcCode(@javax.annotation.Nullable String upcCode) {
     this.upcCode = upcCode;
     return this;
   }
@@ -182,12 +191,12 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return upcCode;
   }
 
-  public void setUpcCode(String upcCode) {
+  public void setUpcCode(@javax.annotation.Nullable String upcCode) {
     this.upcCode = upcCode;
   }
 
 
-  public AvailabilityAsyncNotificationRequestResourceInner skuStatus(String skuStatus) {
+  public AvailabilityAsyncNotificationRequestResourceInner skuStatus(@javax.annotation.Nullable String skuStatus) {
     this.skuStatus = skuStatus;
     return this;
   }
@@ -201,12 +210,12 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return skuStatus;
   }
 
-  public void setSkuStatus(String skuStatus) {
+  public void setSkuStatus(@javax.annotation.Nullable String skuStatus) {
     this.skuStatus = skuStatus;
   }
 
 
-  public AvailabilityAsyncNotificationRequestResourceInner backOrderFlag(String backOrderFlag) {
+  public AvailabilityAsyncNotificationRequestResourceInner backOrderFlag(@javax.annotation.Nullable String backOrderFlag) {
     this.backOrderFlag = backOrderFlag;
     return this;
   }
@@ -220,12 +229,12 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return backOrderFlag;
   }
 
-  public void setBackOrderFlag(String backOrderFlag) {
+  public void setBackOrderFlag(@javax.annotation.Nullable String backOrderFlag) {
     this.backOrderFlag = backOrderFlag;
   }
 
 
-  public AvailabilityAsyncNotificationRequestResourceInner totalAvailability(String totalAvailability) {
+  public AvailabilityAsyncNotificationRequestResourceInner totalAvailability(@javax.annotation.Nullable String totalAvailability) {
     this.totalAvailability = totalAvailability;
     return this;
   }
@@ -239,12 +248,12 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return totalAvailability;
   }
 
-  public void setTotalAvailability(String totalAvailability) {
+  public void setTotalAvailability(@javax.annotation.Nullable String totalAvailability) {
     this.totalAvailability = totalAvailability;
   }
 
 
-  public AvailabilityAsyncNotificationRequestResourceInner links(List<AvailabilityAsyncNotificationRequestResourceInnerLinksInner> links) {
+  public AvailabilityAsyncNotificationRequestResourceInner links(@javax.annotation.Nullable List<AvailabilityAsyncNotificationRequestResourceInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -266,7 +275,7 @@ public class AvailabilityAsyncNotificationRequestResourceInner {
     return links;
   }
 
-  public void setLinks(List<AvailabilityAsyncNotificationRequestResourceInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<AvailabilityAsyncNotificationRequestResourceInnerLinksInner> links) {
     this.links = links;
   }
 

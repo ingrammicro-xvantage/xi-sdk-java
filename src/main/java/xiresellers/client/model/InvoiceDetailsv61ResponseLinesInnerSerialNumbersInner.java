@@ -49,16 +49,17 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner {
   public static final String SERIALIZED_NAME_SERIAL_NUMBER = "serialNumber";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBER)
+  @javax.annotation.Nullable
   private String serialNumber;
 
   public InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner() {
   }
 
-  public InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner serialNumber(String serialNumber) {
+  public InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner serialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
     return this;
   }
@@ -72,7 +73,7 @@ public class InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner {
     return serialNumber;
   }
 
-  public void setSerialNumber(String serialNumber) {
+  public void setSerialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
   }
 

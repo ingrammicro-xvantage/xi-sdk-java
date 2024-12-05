@@ -48,28 +48,32 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerBillDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class QuoteDetailsResponseProductsInnerBillDetailsInner {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_UNIT = "unit";
   @SerializedName(SERIALIZED_NAME_UNIT)
+  @javax.annotation.Nullable
   private String unit;
 
   public static final String SERIALIZED_NAME_FREQUENCY = "frequency";
   @SerializedName(SERIALIZED_NAME_FREQUENCY)
+  @javax.annotation.Nullable
   private Integer frequency;
 
   public static final String SERIALIZED_NAME_UNIT_VALUE = "unitValue";
   @SerializedName(SERIALIZED_NAME_UNIT_VALUE)
+  @javax.annotation.Nullable
   private String unitValue;
 
   public QuoteDetailsResponseProductsInnerBillDetailsInner() {
   }
 
-  public QuoteDetailsResponseProductsInnerBillDetailsInner type(String type) {
+  public QuoteDetailsResponseProductsInnerBillDetailsInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -83,12 +87,12 @@ public class QuoteDetailsResponseProductsInnerBillDetailsInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public QuoteDetailsResponseProductsInnerBillDetailsInner unit(String unit) {
+  public QuoteDetailsResponseProductsInnerBillDetailsInner unit(@javax.annotation.Nullable String unit) {
     this.unit = unit;
     return this;
   }
@@ -102,12 +106,12 @@ public class QuoteDetailsResponseProductsInnerBillDetailsInner {
     return unit;
   }
 
-  public void setUnit(String unit) {
+  public void setUnit(@javax.annotation.Nullable String unit) {
     this.unit = unit;
   }
 
 
-  public QuoteDetailsResponseProductsInnerBillDetailsInner frequency(Integer frequency) {
+  public QuoteDetailsResponseProductsInnerBillDetailsInner frequency(@javax.annotation.Nullable Integer frequency) {
     this.frequency = frequency;
     return this;
   }
@@ -121,12 +125,12 @@ public class QuoteDetailsResponseProductsInnerBillDetailsInner {
     return frequency;
   }
 
-  public void setFrequency(Integer frequency) {
+  public void setFrequency(@javax.annotation.Nullable Integer frequency) {
     this.frequency = frequency;
   }
 
 
-  public QuoteDetailsResponseProductsInnerBillDetailsInner unitValue(String unitValue) {
+  public QuoteDetailsResponseProductsInnerBillDetailsInner unitValue(@javax.annotation.Nullable String unitValue) {
     this.unitValue = unitValue;
     return this;
   }
@@ -140,7 +144,7 @@ public class QuoteDetailsResponseProductsInnerBillDetailsInner {
     return unitValue;
   }
 
-  public void setUnitValue(String unitValue) {
+  public void setUnitValue(@javax.annotation.Nullable String unitValue) {
     this.unitValue = unitValue;
   }
 

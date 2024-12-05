@@ -54,120 +54,147 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class QuoteDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_QUOTE_PRODUCT_GUID = "quoteProductGuid";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRODUCT_GUID)
+  @javax.annotation.Nullable
   private String quoteProductGuid;
 
   public static final String SERIALIZED_NAME_LINE_NUMBER = "lineNumber";
   @SerializedName(SERIALIZED_NAME_LINE_NUMBER)
+  @javax.annotation.Nullable
   private String lineNumber;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private Integer quantity;
 
   public static final String SERIALIZED_NAME_REMAINING_QUOTE_QTY = "remainingQuoteQty";
   @SerializedName(SERIALIZED_NAME_REMAINING_QUOTE_QTY)
+  @javax.annotation.Nullable
   private Integer remainingQuoteQty;
 
   public static final String SERIALIZED_NAME_MINIMUM_ORDER_ALLOWED_QTY = "minimumOrderAllowedQty";
   @SerializedName(SERIALIZED_NAME_MINIMUM_ORDER_ALLOWED_QTY)
+  @javax.annotation.Nullable
   private Integer minimumOrderAllowedQty;
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
+  @javax.annotation.Nullable
   private String notes;
 
   public static final String SERIALIZED_NAME_EAN = "ean";
   @SerializedName(SERIALIZED_NAME_EAN)
+  @javax.annotation.Nullable
   private String ean;
 
   public static final String SERIALIZED_NAME_COO = "coo";
   @SerializedName(SERIALIZED_NAME_COO)
+  @javax.annotation.Nullable
   private String coo;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_WEIGHT = "weight";
   @SerializedName(SERIALIZED_NAME_WEIGHT)
+  @javax.annotation.Nullable
   private BigDecimal weight;
 
   public static final String SERIALIZED_NAME_WEIGHT_UOM = "weightUom";
   @SerializedName(SERIALIZED_NAME_WEIGHT_UOM)
+  @javax.annotation.Nullable
   private String weightUom;
 
   public static final String SERIALIZED_NAME_IS_SUGGESTION_PRODUCT = "isSuggestionProduct";
   @SerializedName(SERIALIZED_NAME_IS_SUGGESTION_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean isSuggestionProduct;
 
   public static final String SERIALIZED_NAME_VPN_CATEGORY = "vpnCategory";
   @SerializedName(SERIALIZED_NAME_VPN_CATEGORY)
+  @javax.annotation.Nullable
   private String vpnCategory;
 
   public static final String SERIALIZED_NAME_QUOTE_PRODUCTS_SUPPLIER_PART_AUXILIARY_ID = "quoteProductsSupplierPartAuxiliaryId";
   @SerializedName(SERIALIZED_NAME_QUOTE_PRODUCTS_SUPPLIER_PART_AUXILIARY_ID)
+  @javax.annotation.Nullable
   private String quoteProductsSupplierPartAuxiliaryId;
 
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
+  @javax.annotation.Nullable
   private String vendorName;
 
   public static final String SERIALIZED_NAME_TERMS = "terms";
   @SerializedName(SERIALIZED_NAME_TERMS)
+  @javax.annotation.Nullable
   private String terms;
 
   public static final String SERIALIZED_NAME_PLAN_DESCRIPTION = "planDescription";
   @SerializedName(SERIALIZED_NAME_PLAN_DESCRIPTION)
+  @javax.annotation.Nullable
   private String planDescription;
 
   public static final String SERIALIZED_NAME_IS_SUBSCRIPTION = "isSubscription";
   @SerializedName(SERIALIZED_NAME_IS_SUBSCRIPTION)
+  @javax.annotation.Nullable
   private Boolean isSubscription;
 
   public static final String SERIALIZED_NAME_RESELLER_MARGIN = "resellerMargin";
   @SerializedName(SERIALIZED_NAME_RESELLER_MARGIN)
+  @javax.annotation.Nullable
   private String resellerMargin;
 
   public static final String SERIALIZED_NAME_REQUESTED_START_DATE = "requestedStartDate";
   @SerializedName(SERIALIZED_NAME_REQUESTED_START_DATE)
+  @javax.annotation.Nullable
   private String requestedStartDate;
 
   public static final String SERIALIZED_NAME_START_DATE = "startDate";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private String startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "endDate";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private String endDate;
 
   public static final String SERIALIZED_NAME_SERIAL_NUMBER = "serialNumber";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBER)
+  @javax.annotation.Nullable
   private String serialNumber;
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
+  @javax.annotation.Nullable
   private QuoteDetailsResponseProductsInnerPrice price;
 
   public static final String SERIALIZED_NAME_BILL_DETAILS = "billDetails";
   @SerializedName(SERIALIZED_NAME_BILL_DETAILS)
+  @javax.annotation.Nullable
   private List<QuoteDetailsResponseProductsInnerBillDetailsInner> billDetails = new ArrayList<>();
 
   public QuoteDetailsResponseProductsInner() {
   }
 
-  public QuoteDetailsResponseProductsInner quoteProductGuid(String quoteProductGuid) {
+  public QuoteDetailsResponseProductsInner quoteProductGuid(@javax.annotation.Nullable String quoteProductGuid) {
     this.quoteProductGuid = quoteProductGuid;
     return this;
   }
@@ -181,12 +208,12 @@ public class QuoteDetailsResponseProductsInner {
     return quoteProductGuid;
   }
 
-  public void setQuoteProductGuid(String quoteProductGuid) {
+  public void setQuoteProductGuid(@javax.annotation.Nullable String quoteProductGuid) {
     this.quoteProductGuid = quoteProductGuid;
   }
 
 
-  public QuoteDetailsResponseProductsInner lineNumber(String lineNumber) {
+  public QuoteDetailsResponseProductsInner lineNumber(@javax.annotation.Nullable String lineNumber) {
     this.lineNumber = lineNumber;
     return this;
   }
@@ -200,12 +227,12 @@ public class QuoteDetailsResponseProductsInner {
     return lineNumber;
   }
 
-  public void setLineNumber(String lineNumber) {
+  public void setLineNumber(@javax.annotation.Nullable String lineNumber) {
     this.lineNumber = lineNumber;
   }
 
 
-  public QuoteDetailsResponseProductsInner quantity(Integer quantity) {
+  public QuoteDetailsResponseProductsInner quantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -219,12 +246,12 @@ public class QuoteDetailsResponseProductsInner {
     return quantity;
   }
 
-  public void setQuantity(Integer quantity) {
+  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
   }
 
 
-  public QuoteDetailsResponseProductsInner remainingQuoteQty(Integer remainingQuoteQty) {
+  public QuoteDetailsResponseProductsInner remainingQuoteQty(@javax.annotation.Nullable Integer remainingQuoteQty) {
     this.remainingQuoteQty = remainingQuoteQty;
     return this;
   }
@@ -238,12 +265,12 @@ public class QuoteDetailsResponseProductsInner {
     return remainingQuoteQty;
   }
 
-  public void setRemainingQuoteQty(Integer remainingQuoteQty) {
+  public void setRemainingQuoteQty(@javax.annotation.Nullable Integer remainingQuoteQty) {
     this.remainingQuoteQty = remainingQuoteQty;
   }
 
 
-  public QuoteDetailsResponseProductsInner minimumOrderAllowedQty(Integer minimumOrderAllowedQty) {
+  public QuoteDetailsResponseProductsInner minimumOrderAllowedQty(@javax.annotation.Nullable Integer minimumOrderAllowedQty) {
     this.minimumOrderAllowedQty = minimumOrderAllowedQty;
     return this;
   }
@@ -257,12 +284,12 @@ public class QuoteDetailsResponseProductsInner {
     return minimumOrderAllowedQty;
   }
 
-  public void setMinimumOrderAllowedQty(Integer minimumOrderAllowedQty) {
+  public void setMinimumOrderAllowedQty(@javax.annotation.Nullable Integer minimumOrderAllowedQty) {
     this.minimumOrderAllowedQty = minimumOrderAllowedQty;
   }
 
 
-  public QuoteDetailsResponseProductsInner notes(String notes) {
+  public QuoteDetailsResponseProductsInner notes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
     return this;
   }
@@ -276,12 +303,12 @@ public class QuoteDetailsResponseProductsInner {
     return notes;
   }
 
-  public void setNotes(String notes) {
+  public void setNotes(@javax.annotation.Nullable String notes) {
     this.notes = notes;
   }
 
 
-  public QuoteDetailsResponseProductsInner ean(String ean) {
+  public QuoteDetailsResponseProductsInner ean(@javax.annotation.Nullable String ean) {
     this.ean = ean;
     return this;
   }
@@ -295,12 +322,12 @@ public class QuoteDetailsResponseProductsInner {
     return ean;
   }
 
-  public void setEan(String ean) {
+  public void setEan(@javax.annotation.Nullable String ean) {
     this.ean = ean;
   }
 
 
-  public QuoteDetailsResponseProductsInner coo(String coo) {
+  public QuoteDetailsResponseProductsInner coo(@javax.annotation.Nullable String coo) {
     this.coo = coo;
     return this;
   }
@@ -314,12 +341,12 @@ public class QuoteDetailsResponseProductsInner {
     return coo;
   }
 
-  public void setCoo(String coo) {
+  public void setCoo(@javax.annotation.Nullable String coo) {
     this.coo = coo;
   }
 
 
-  public QuoteDetailsResponseProductsInner ingramPartNumber(String ingramPartNumber) {
+  public QuoteDetailsResponseProductsInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -333,12 +360,12 @@ public class QuoteDetailsResponseProductsInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public QuoteDetailsResponseProductsInner vendorPartNumber(String vendorPartNumber) {
+  public QuoteDetailsResponseProductsInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -352,12 +379,12 @@ public class QuoteDetailsResponseProductsInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public QuoteDetailsResponseProductsInner description(String description) {
+  public QuoteDetailsResponseProductsInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -371,12 +398,12 @@ public class QuoteDetailsResponseProductsInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public QuoteDetailsResponseProductsInner weight(BigDecimal weight) {
+  public QuoteDetailsResponseProductsInner weight(@javax.annotation.Nullable BigDecimal weight) {
     this.weight = weight;
     return this;
   }
@@ -390,12 +417,12 @@ public class QuoteDetailsResponseProductsInner {
     return weight;
   }
 
-  public void setWeight(BigDecimal weight) {
+  public void setWeight(@javax.annotation.Nullable BigDecimal weight) {
     this.weight = weight;
   }
 
 
-  public QuoteDetailsResponseProductsInner weightUom(String weightUom) {
+  public QuoteDetailsResponseProductsInner weightUom(@javax.annotation.Nullable String weightUom) {
     this.weightUom = weightUom;
     return this;
   }
@@ -409,12 +436,12 @@ public class QuoteDetailsResponseProductsInner {
     return weightUom;
   }
 
-  public void setWeightUom(String weightUom) {
+  public void setWeightUom(@javax.annotation.Nullable String weightUom) {
     this.weightUom = weightUom;
   }
 
 
-  public QuoteDetailsResponseProductsInner isSuggestionProduct(Boolean isSuggestionProduct) {
+  public QuoteDetailsResponseProductsInner isSuggestionProduct(@javax.annotation.Nullable Boolean isSuggestionProduct) {
     this.isSuggestionProduct = isSuggestionProduct;
     return this;
   }
@@ -428,12 +455,12 @@ public class QuoteDetailsResponseProductsInner {
     return isSuggestionProduct;
   }
 
-  public void setIsSuggestionProduct(Boolean isSuggestionProduct) {
+  public void setIsSuggestionProduct(@javax.annotation.Nullable Boolean isSuggestionProduct) {
     this.isSuggestionProduct = isSuggestionProduct;
   }
 
 
-  public QuoteDetailsResponseProductsInner vpnCategory(String vpnCategory) {
+  public QuoteDetailsResponseProductsInner vpnCategory(@javax.annotation.Nullable String vpnCategory) {
     this.vpnCategory = vpnCategory;
     return this;
   }
@@ -447,12 +474,12 @@ public class QuoteDetailsResponseProductsInner {
     return vpnCategory;
   }
 
-  public void setVpnCategory(String vpnCategory) {
+  public void setVpnCategory(@javax.annotation.Nullable String vpnCategory) {
     this.vpnCategory = vpnCategory;
   }
 
 
-  public QuoteDetailsResponseProductsInner quoteProductsSupplierPartAuxiliaryId(String quoteProductsSupplierPartAuxiliaryId) {
+  public QuoteDetailsResponseProductsInner quoteProductsSupplierPartAuxiliaryId(@javax.annotation.Nullable String quoteProductsSupplierPartAuxiliaryId) {
     this.quoteProductsSupplierPartAuxiliaryId = quoteProductsSupplierPartAuxiliaryId;
     return this;
   }
@@ -466,12 +493,12 @@ public class QuoteDetailsResponseProductsInner {
     return quoteProductsSupplierPartAuxiliaryId;
   }
 
-  public void setQuoteProductsSupplierPartAuxiliaryId(String quoteProductsSupplierPartAuxiliaryId) {
+  public void setQuoteProductsSupplierPartAuxiliaryId(@javax.annotation.Nullable String quoteProductsSupplierPartAuxiliaryId) {
     this.quoteProductsSupplierPartAuxiliaryId = quoteProductsSupplierPartAuxiliaryId;
   }
 
 
-  public QuoteDetailsResponseProductsInner vendorName(String vendorName) {
+  public QuoteDetailsResponseProductsInner vendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
     return this;
   }
@@ -485,12 +512,12 @@ public class QuoteDetailsResponseProductsInner {
     return vendorName;
   }
 
-  public void setVendorName(String vendorName) {
+  public void setVendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
   }
 
 
-  public QuoteDetailsResponseProductsInner terms(String terms) {
+  public QuoteDetailsResponseProductsInner terms(@javax.annotation.Nullable String terms) {
     this.terms = terms;
     return this;
   }
@@ -504,12 +531,12 @@ public class QuoteDetailsResponseProductsInner {
     return terms;
   }
 
-  public void setTerms(String terms) {
+  public void setTerms(@javax.annotation.Nullable String terms) {
     this.terms = terms;
   }
 
 
-  public QuoteDetailsResponseProductsInner planDescription(String planDescription) {
+  public QuoteDetailsResponseProductsInner planDescription(@javax.annotation.Nullable String planDescription) {
     this.planDescription = planDescription;
     return this;
   }
@@ -523,12 +550,12 @@ public class QuoteDetailsResponseProductsInner {
     return planDescription;
   }
 
-  public void setPlanDescription(String planDescription) {
+  public void setPlanDescription(@javax.annotation.Nullable String planDescription) {
     this.planDescription = planDescription;
   }
 
 
-  public QuoteDetailsResponseProductsInner isSubscription(Boolean isSubscription) {
+  public QuoteDetailsResponseProductsInner isSubscription(@javax.annotation.Nullable Boolean isSubscription) {
     this.isSubscription = isSubscription;
     return this;
   }
@@ -542,12 +569,12 @@ public class QuoteDetailsResponseProductsInner {
     return isSubscription;
   }
 
-  public void setIsSubscription(Boolean isSubscription) {
+  public void setIsSubscription(@javax.annotation.Nullable Boolean isSubscription) {
     this.isSubscription = isSubscription;
   }
 
 
-  public QuoteDetailsResponseProductsInner resellerMargin(String resellerMargin) {
+  public QuoteDetailsResponseProductsInner resellerMargin(@javax.annotation.Nullable String resellerMargin) {
     this.resellerMargin = resellerMargin;
     return this;
   }
@@ -561,12 +588,12 @@ public class QuoteDetailsResponseProductsInner {
     return resellerMargin;
   }
 
-  public void setResellerMargin(String resellerMargin) {
+  public void setResellerMargin(@javax.annotation.Nullable String resellerMargin) {
     this.resellerMargin = resellerMargin;
   }
 
 
-  public QuoteDetailsResponseProductsInner requestedStartDate(String requestedStartDate) {
+  public QuoteDetailsResponseProductsInner requestedStartDate(@javax.annotation.Nullable String requestedStartDate) {
     this.requestedStartDate = requestedStartDate;
     return this;
   }
@@ -580,12 +607,12 @@ public class QuoteDetailsResponseProductsInner {
     return requestedStartDate;
   }
 
-  public void setRequestedStartDate(String requestedStartDate) {
+  public void setRequestedStartDate(@javax.annotation.Nullable String requestedStartDate) {
     this.requestedStartDate = requestedStartDate;
   }
 
 
-  public QuoteDetailsResponseProductsInner startDate(String startDate) {
+  public QuoteDetailsResponseProductsInner startDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -599,12 +626,12 @@ public class QuoteDetailsResponseProductsInner {
     return startDate;
   }
 
-  public void setStartDate(String startDate) {
+  public void setStartDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
 
-  public QuoteDetailsResponseProductsInner endDate(String endDate) {
+  public QuoteDetailsResponseProductsInner endDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -618,12 +645,12 @@ public class QuoteDetailsResponseProductsInner {
     return endDate;
   }
 
-  public void setEndDate(String endDate) {
+  public void setEndDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 
 
-  public QuoteDetailsResponseProductsInner serialNumber(String serialNumber) {
+  public QuoteDetailsResponseProductsInner serialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
     return this;
   }
@@ -637,12 +664,12 @@ public class QuoteDetailsResponseProductsInner {
     return serialNumber;
   }
 
-  public void setSerialNumber(String serialNumber) {
+  public void setSerialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
   }
 
 
-  public QuoteDetailsResponseProductsInner price(QuoteDetailsResponseProductsInnerPrice price) {
+  public QuoteDetailsResponseProductsInner price(@javax.annotation.Nullable QuoteDetailsResponseProductsInnerPrice price) {
     this.price = price;
     return this;
   }
@@ -656,12 +683,12 @@ public class QuoteDetailsResponseProductsInner {
     return price;
   }
 
-  public void setPrice(QuoteDetailsResponseProductsInnerPrice price) {
+  public void setPrice(@javax.annotation.Nullable QuoteDetailsResponseProductsInnerPrice price) {
     this.price = price;
   }
 
 
-  public QuoteDetailsResponseProductsInner billDetails(List<QuoteDetailsResponseProductsInnerBillDetailsInner> billDetails) {
+  public QuoteDetailsResponseProductsInner billDetails(@javax.annotation.Nullable List<QuoteDetailsResponseProductsInnerBillDetailsInner> billDetails) {
     this.billDetails = billDetails;
     return this;
   }
@@ -683,7 +710,7 @@ public class QuoteDetailsResponseProductsInner {
     return billDetails;
   }
 
-  public void setBillDetails(List<QuoteDetailsResponseProductsInnerBillDetailsInner> billDetails) {
+  public void setBillDetails(@javax.annotation.Nullable List<QuoteDetailsResponseProductsInnerBillDetailsInner> billDetails) {
     this.billDetails = billDetails;
   }
 

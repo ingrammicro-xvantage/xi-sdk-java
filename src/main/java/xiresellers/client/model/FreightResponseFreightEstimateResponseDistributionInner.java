@@ -52,40 +52,47 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponseDistributionInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class FreightResponseFreightEstimateResponseDistributionInner {
   public static final String SERIALIZED_NAME_SHIP_FROM_BRANCH_NUMBER = "shipFromBranchNumber";
   @SerializedName(SERIALIZED_NAME_SHIP_FROM_BRANCH_NUMBER)
+  @javax.annotation.Nullable
   private String shipFromBranchNumber;
 
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
+  @javax.annotation.Nullable
   private String carrierCode;
 
   public static final String SERIALIZED_NAME_SHIP_VIA = "shipVia";
   @SerializedName(SERIALIZED_NAME_SHIP_VIA)
+  @javax.annotation.Nullable
   private String shipVia;
 
   public static final String SERIALIZED_NAME_FREIGHT_RATE = "freightRate";
   @SerializedName(SERIALIZED_NAME_FREIGHT_RATE)
+  @javax.annotation.Nullable
   private BigDecimal freightRate;
 
   public static final String SERIALIZED_NAME_TOTAL_WEIGHT = "totalWeight";
   @SerializedName(SERIALIZED_NAME_TOTAL_WEIGHT)
+  @javax.annotation.Nullable
   private BigDecimal totalWeight;
 
   public static final String SERIALIZED_NAME_TRANSIT_DAYS = "transitDays";
   @SerializedName(SERIALIZED_NAME_TRANSIT_DAYS)
+  @javax.annotation.Nullable
   private Integer transitDays;
 
   public static final String SERIALIZED_NAME_CARRIER_LIST = "carrierList";
   @SerializedName(SERIALIZED_NAME_CARRIER_LIST)
+  @javax.annotation.Nullable
   private List<FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner> carrierList = new ArrayList<>();
 
   public FreightResponseFreightEstimateResponseDistributionInner() {
   }
 
-  public FreightResponseFreightEstimateResponseDistributionInner shipFromBranchNumber(String shipFromBranchNumber) {
+  public FreightResponseFreightEstimateResponseDistributionInner shipFromBranchNumber(@javax.annotation.Nullable String shipFromBranchNumber) {
     this.shipFromBranchNumber = shipFromBranchNumber;
     return this;
   }
@@ -99,12 +106,12 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return shipFromBranchNumber;
   }
 
-  public void setShipFromBranchNumber(String shipFromBranchNumber) {
+  public void setShipFromBranchNumber(@javax.annotation.Nullable String shipFromBranchNumber) {
     this.shipFromBranchNumber = shipFromBranchNumber;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInner carrierCode(String carrierCode) {
+  public FreightResponseFreightEstimateResponseDistributionInner carrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
     return this;
   }
@@ -118,12 +125,12 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return carrierCode;
   }
 
-  public void setCarrierCode(String carrierCode) {
+  public void setCarrierCode(@javax.annotation.Nullable String carrierCode) {
     this.carrierCode = carrierCode;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInner shipVia(String shipVia) {
+  public FreightResponseFreightEstimateResponseDistributionInner shipVia(@javax.annotation.Nullable String shipVia) {
     this.shipVia = shipVia;
     return this;
   }
@@ -137,12 +144,12 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return shipVia;
   }
 
-  public void setShipVia(String shipVia) {
+  public void setShipVia(@javax.annotation.Nullable String shipVia) {
     this.shipVia = shipVia;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInner freightRate(BigDecimal freightRate) {
+  public FreightResponseFreightEstimateResponseDistributionInner freightRate(@javax.annotation.Nullable BigDecimal freightRate) {
     this.freightRate = freightRate;
     return this;
   }
@@ -156,12 +163,12 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return freightRate;
   }
 
-  public void setFreightRate(BigDecimal freightRate) {
+  public void setFreightRate(@javax.annotation.Nullable BigDecimal freightRate) {
     this.freightRate = freightRate;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInner totalWeight(BigDecimal totalWeight) {
+  public FreightResponseFreightEstimateResponseDistributionInner totalWeight(@javax.annotation.Nullable BigDecimal totalWeight) {
     this.totalWeight = totalWeight;
     return this;
   }
@@ -175,12 +182,12 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return totalWeight;
   }
 
-  public void setTotalWeight(BigDecimal totalWeight) {
+  public void setTotalWeight(@javax.annotation.Nullable BigDecimal totalWeight) {
     this.totalWeight = totalWeight;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInner transitDays(Integer transitDays) {
+  public FreightResponseFreightEstimateResponseDistributionInner transitDays(@javax.annotation.Nullable Integer transitDays) {
     this.transitDays = transitDays;
     return this;
   }
@@ -194,12 +201,12 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return transitDays;
   }
 
-  public void setTransitDays(Integer transitDays) {
+  public void setTransitDays(@javax.annotation.Nullable Integer transitDays) {
     this.transitDays = transitDays;
   }
 
 
-  public FreightResponseFreightEstimateResponseDistributionInner carrierList(List<FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner> carrierList) {
+  public FreightResponseFreightEstimateResponseDistributionInner carrierList(@javax.annotation.Nullable List<FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner> carrierList) {
     this.carrierList = carrierList;
     return this;
   }
@@ -221,7 +228,7 @@ public class FreightResponseFreightEstimateResponseDistributionInner {
     return carrierList;
   }
 
-  public void setCarrierList(List<FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner> carrierList) {
+  public void setCarrierList(@javax.annotation.Nullable List<FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner> carrierList) {
     this.carrierList = carrierList;
   }
 

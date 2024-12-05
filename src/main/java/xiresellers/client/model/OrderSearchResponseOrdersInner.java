@@ -53,52 +53,62 @@ import xiresellers.client.JSON;
 /**
  * OrderSearchResponseOrdersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderSearchResponseOrdersInner {
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String ingramOrderNumber;
 
   public static final String SERIALIZED_NAME_INGRAM_ORDER_DATE = "ingramOrderDate";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_DATE)
+  @javax.annotation.Nullable
   private String ingramOrderDate;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_SALES_ORDER_NUMBER = "vendorSalesOrderNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_SALES_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String vendorSalesOrderNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
+  @javax.annotation.Nullable
   private String vendorName;
 
   public static final String SERIALIZED_NAME_END_USER_COMPANY_NAME = "endUserCompanyName";
   @SerializedName(SERIALIZED_NAME_END_USER_COMPANY_NAME)
+  @javax.annotation.Nullable
   private String endUserCompanyName;
 
   public static final String SERIALIZED_NAME_ORDER_TOTAL = "orderTotal";
   @SerializedName(SERIALIZED_NAME_ORDER_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal orderTotal;
 
   public static final String SERIALIZED_NAME_ORDER_STATUS = "orderStatus";
   @SerializedName(SERIALIZED_NAME_ORDER_STATUS)
+  @javax.annotation.Nullable
   private String orderStatus;
 
   public static final String SERIALIZED_NAME_SUB_ORDERS = "subOrders";
   @SerializedName(SERIALIZED_NAME_SUB_ORDERS)
+  @javax.annotation.Nullable
   private List<OrderSearchResponseOrdersInnerSubOrdersInner> subOrders = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private OrderSearchResponseOrdersInnerLinks links;
 
   public OrderSearchResponseOrdersInner() {
   }
 
-  public OrderSearchResponseOrdersInner ingramOrderNumber(String ingramOrderNumber) {
+  public OrderSearchResponseOrdersInner ingramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
     return this;
   }
@@ -112,12 +122,12 @@ public class OrderSearchResponseOrdersInner {
     return ingramOrderNumber;
   }
 
-  public void setIngramOrderNumber(String ingramOrderNumber) {
+  public void setIngramOrderNumber(@javax.annotation.Nullable String ingramOrderNumber) {
     this.ingramOrderNumber = ingramOrderNumber;
   }
 
 
-  public OrderSearchResponseOrdersInner ingramOrderDate(String ingramOrderDate) {
+  public OrderSearchResponseOrdersInner ingramOrderDate(@javax.annotation.Nullable String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
     return this;
   }
@@ -131,12 +141,12 @@ public class OrderSearchResponseOrdersInner {
     return ingramOrderDate;
   }
 
-  public void setIngramOrderDate(String ingramOrderDate) {
+  public void setIngramOrderDate(@javax.annotation.Nullable String ingramOrderDate) {
     this.ingramOrderDate = ingramOrderDate;
   }
 
 
-  public OrderSearchResponseOrdersInner customerOrderNumber(String customerOrderNumber) {
+  public OrderSearchResponseOrdersInner customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -150,12 +160,12 @@ public class OrderSearchResponseOrdersInner {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public OrderSearchResponseOrdersInner vendorSalesOrderNumber(String vendorSalesOrderNumber) {
+  public OrderSearchResponseOrdersInner vendorSalesOrderNumber(@javax.annotation.Nullable String vendorSalesOrderNumber) {
     this.vendorSalesOrderNumber = vendorSalesOrderNumber;
     return this;
   }
@@ -169,12 +179,12 @@ public class OrderSearchResponseOrdersInner {
     return vendorSalesOrderNumber;
   }
 
-  public void setVendorSalesOrderNumber(String vendorSalesOrderNumber) {
+  public void setVendorSalesOrderNumber(@javax.annotation.Nullable String vendorSalesOrderNumber) {
     this.vendorSalesOrderNumber = vendorSalesOrderNumber;
   }
 
 
-  public OrderSearchResponseOrdersInner vendorName(String vendorName) {
+  public OrderSearchResponseOrdersInner vendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
     return this;
   }
@@ -188,12 +198,12 @@ public class OrderSearchResponseOrdersInner {
     return vendorName;
   }
 
-  public void setVendorName(String vendorName) {
+  public void setVendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
   }
 
 
-  public OrderSearchResponseOrdersInner endUserCompanyName(String endUserCompanyName) {
+  public OrderSearchResponseOrdersInner endUserCompanyName(@javax.annotation.Nullable String endUserCompanyName) {
     this.endUserCompanyName = endUserCompanyName;
     return this;
   }
@@ -207,12 +217,12 @@ public class OrderSearchResponseOrdersInner {
     return endUserCompanyName;
   }
 
-  public void setEndUserCompanyName(String endUserCompanyName) {
+  public void setEndUserCompanyName(@javax.annotation.Nullable String endUserCompanyName) {
     this.endUserCompanyName = endUserCompanyName;
   }
 
 
-  public OrderSearchResponseOrdersInner orderTotal(BigDecimal orderTotal) {
+  public OrderSearchResponseOrdersInner orderTotal(@javax.annotation.Nullable BigDecimal orderTotal) {
     this.orderTotal = orderTotal;
     return this;
   }
@@ -226,12 +236,12 @@ public class OrderSearchResponseOrdersInner {
     return orderTotal;
   }
 
-  public void setOrderTotal(BigDecimal orderTotal) {
+  public void setOrderTotal(@javax.annotation.Nullable BigDecimal orderTotal) {
     this.orderTotal = orderTotal;
   }
 
 
-  public OrderSearchResponseOrdersInner orderStatus(String orderStatus) {
+  public OrderSearchResponseOrdersInner orderStatus(@javax.annotation.Nullable String orderStatus) {
     this.orderStatus = orderStatus;
     return this;
   }
@@ -245,12 +255,12 @@ public class OrderSearchResponseOrdersInner {
     return orderStatus;
   }
 
-  public void setOrderStatus(String orderStatus) {
+  public void setOrderStatus(@javax.annotation.Nullable String orderStatus) {
     this.orderStatus = orderStatus;
   }
 
 
-  public OrderSearchResponseOrdersInner subOrders(List<OrderSearchResponseOrdersInnerSubOrdersInner> subOrders) {
+  public OrderSearchResponseOrdersInner subOrders(@javax.annotation.Nullable List<OrderSearchResponseOrdersInnerSubOrdersInner> subOrders) {
     this.subOrders = subOrders;
     return this;
   }
@@ -272,12 +282,12 @@ public class OrderSearchResponseOrdersInner {
     return subOrders;
   }
 
-  public void setSubOrders(List<OrderSearchResponseOrdersInnerSubOrdersInner> subOrders) {
+  public void setSubOrders(@javax.annotation.Nullable List<OrderSearchResponseOrdersInnerSubOrdersInner> subOrders) {
     this.subOrders = subOrders;
   }
 
 
-  public OrderSearchResponseOrdersInner links(OrderSearchResponseOrdersInnerLinks links) {
+  public OrderSearchResponseOrdersInner links(@javax.annotation.Nullable OrderSearchResponseOrdersInnerLinks links) {
     this.links = links;
     return this;
   }
@@ -291,7 +301,7 @@ public class OrderSearchResponseOrdersInner {
     return links;
   }
 
-  public void setLinks(OrderSearchResponseOrdersInnerLinks links) {
+  public void setLinks(@javax.annotation.Nullable OrderSearchResponseOrdersInnerLinks links) {
     this.links = links;
   }
 

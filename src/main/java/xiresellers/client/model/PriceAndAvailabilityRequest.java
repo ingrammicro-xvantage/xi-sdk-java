@@ -54,36 +54,42 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityRequest {
   public static final String SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS = "showAvailableDiscounts";
   @SerializedName(SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS)
+  @javax.annotation.Nullable
   private Boolean showAvailableDiscounts;
 
   public static final String SERIALIZED_NAME_SHOW_RESERVE_INVENTORY_DETAILS = "showReserveInventoryDetails";
   @SerializedName(SERIALIZED_NAME_SHOW_RESERVE_INVENTORY_DETAILS)
+  @javax.annotation.Nullable
   private Boolean showReserveInventoryDetails;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_NUMBER = "specialBidNumber";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_NUMBER)
+  @javax.annotation.Nullable
   private String specialBidNumber;
 
   public static final String SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE = "availabilityByWarehouse";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse;
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityRequestProductsInner> products = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes;
 
   public PriceAndAvailabilityRequest() {
   }
 
-  public PriceAndAvailabilityRequest showAvailableDiscounts(Boolean showAvailableDiscounts) {
+  public PriceAndAvailabilityRequest showAvailableDiscounts(@javax.annotation.Nullable Boolean showAvailableDiscounts) {
     this.showAvailableDiscounts = showAvailableDiscounts;
     return this;
   }
@@ -97,12 +103,12 @@ public class PriceAndAvailabilityRequest {
     return showAvailableDiscounts;
   }
 
-  public void setShowAvailableDiscounts(Boolean showAvailableDiscounts) {
+  public void setShowAvailableDiscounts(@javax.annotation.Nullable Boolean showAvailableDiscounts) {
     this.showAvailableDiscounts = showAvailableDiscounts;
   }
 
 
-  public PriceAndAvailabilityRequest showReserveInventoryDetails(Boolean showReserveInventoryDetails) {
+  public PriceAndAvailabilityRequest showReserveInventoryDetails(@javax.annotation.Nullable Boolean showReserveInventoryDetails) {
     this.showReserveInventoryDetails = showReserveInventoryDetails;
     return this;
   }
@@ -116,12 +122,12 @@ public class PriceAndAvailabilityRequest {
     return showReserveInventoryDetails;
   }
 
-  public void setShowReserveInventoryDetails(Boolean showReserveInventoryDetails) {
+  public void setShowReserveInventoryDetails(@javax.annotation.Nullable Boolean showReserveInventoryDetails) {
     this.showReserveInventoryDetails = showReserveInventoryDetails;
   }
 
 
-  public PriceAndAvailabilityRequest specialBidNumber(String specialBidNumber) {
+  public PriceAndAvailabilityRequest specialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
     return this;
   }
@@ -135,12 +141,12 @@ public class PriceAndAvailabilityRequest {
     return specialBidNumber;
   }
 
-  public void setSpecialBidNumber(String specialBidNumber) {
+  public void setSpecialBidNumber(@javax.annotation.Nullable String specialBidNumber) {
     this.specialBidNumber = specialBidNumber;
   }
 
 
-  public PriceAndAvailabilityRequest availabilityByWarehouse(List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse) {
+  public PriceAndAvailabilityRequest availabilityByWarehouse(@javax.annotation.Nullable List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse) {
     this.availabilityByWarehouse = availabilityByWarehouse;
     return this;
   }
@@ -162,12 +168,12 @@ public class PriceAndAvailabilityRequest {
     return availabilityByWarehouse;
   }
 
-  public void setAvailabilityByWarehouse(List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse) {
+  public void setAvailabilityByWarehouse(@javax.annotation.Nullable List<PriceAndAvailabilityRequestAvailabilityByWarehouseInner> availabilityByWarehouse) {
     this.availabilityByWarehouse = availabilityByWarehouse;
   }
 
 
-  public PriceAndAvailabilityRequest products(List<PriceAndAvailabilityRequestProductsInner> products) {
+  public PriceAndAvailabilityRequest products(@javax.annotation.Nullable List<PriceAndAvailabilityRequestProductsInner> products) {
     this.products = products;
     return this;
   }
@@ -189,12 +195,12 @@ public class PriceAndAvailabilityRequest {
     return products;
   }
 
-  public void setProducts(List<PriceAndAvailabilityRequestProductsInner> products) {
+  public void setProducts(@javax.annotation.Nullable List<PriceAndAvailabilityRequestProductsInner> products) {
     this.products = products;
   }
 
 
-  public PriceAndAvailabilityRequest additionalAttributes(List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes) {
+  public PriceAndAvailabilityRequest additionalAttributes(@javax.annotation.Nullable List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
@@ -216,7 +222,7 @@ public class PriceAndAvailabilityRequest {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<PriceAndAvailabilityRequestAdditionalAttributesInner> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 

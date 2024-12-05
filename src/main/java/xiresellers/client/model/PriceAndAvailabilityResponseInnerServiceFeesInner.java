@@ -49,32 +49,37 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerServiceFeesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerServiceFeesInner {
   public static final String SERIALIZED_NAME_CONDITION_TYPE = "conditionType";
   @SerializedName(SERIALIZED_NAME_CONDITION_TYPE)
+  @javax.annotation.Nullable
   private String conditionType;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_END_DATE = "endDate";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private String endDate;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public PriceAndAvailabilityResponseInnerServiceFeesInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerServiceFeesInner conditionType(String conditionType) {
+  public PriceAndAvailabilityResponseInnerServiceFeesInner conditionType(@javax.annotation.Nullable String conditionType) {
     this.conditionType = conditionType;
     return this;
   }
@@ -88,12 +93,12 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     return conditionType;
   }
 
-  public void setConditionType(String conditionType) {
+  public void setConditionType(@javax.annotation.Nullable String conditionType) {
     this.conditionType = conditionType;
   }
 
 
-  public PriceAndAvailabilityResponseInnerServiceFeesInner description(String description) {
+  public PriceAndAvailabilityResponseInnerServiceFeesInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -107,12 +112,12 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public PriceAndAvailabilityResponseInnerServiceFeesInner amount(BigDecimal amount) {
+  public PriceAndAvailabilityResponseInnerServiceFeesInner amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -126,12 +131,12 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public PriceAndAvailabilityResponseInnerServiceFeesInner endDate(String endDate) {
+  public PriceAndAvailabilityResponseInnerServiceFeesInner endDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -145,12 +150,12 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     return endDate;
   }
 
-  public void setEndDate(String endDate) {
+  public void setEndDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 
 
-  public PriceAndAvailabilityResponseInnerServiceFeesInner currencyCode(String currencyCode) {
+  public PriceAndAvailabilityResponseInnerServiceFeesInner currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -164,7 +169,7 @@ public class PriceAndAvailabilityResponseInnerServiceFeesInner {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 

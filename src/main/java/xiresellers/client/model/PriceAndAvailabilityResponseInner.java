@@ -58,128 +58,157 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInner {
   public static final String SERIALIZED_NAME_INDEX = "index";
   @SerializedName(SERIALIZED_NAME_INDEX)
+  @javax.annotation.Nullable
   private BigDecimal index;
 
   public static final String SERIALIZED_NAME_PRODUCT_STATUS_CODE = "productStatusCode";
   @SerializedName(SERIALIZED_NAME_PRODUCT_STATUS_CODE)
+  @javax.annotation.Nullable
   private String productStatusCode;
 
   public static final String SERIALIZED_NAME_PRODUCT_STATUS_MESSAGE = "productStatusMessage";
   @SerializedName(SERIALIZED_NAME_PRODUCT_STATUS_MESSAGE)
+  @javax.annotation.Nullable
   private String productStatusMessage;
 
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
+  @javax.annotation.Nullable
   private String ingramPartNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_PART_NUMBER = "vendorPartNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String vendorPartNumber;
 
   public static final String SERIALIZED_NAME_EXTENDED_VENDOR_PART_NUMBER = "extendedVendorPartNumber";
   @SerializedName(SERIALIZED_NAME_EXTENDED_VENDOR_PART_NUMBER)
+  @javax.annotation.Nullable
   private String extendedVendorPartNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_PART_NUMBER = "customerPartNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_PART_NUMBER)
+  @javax.annotation.Nullable
   private String customerPartNumber;
 
   public static final String SERIALIZED_NAME_UPC = "upc";
   @SerializedName(SERIALIZED_NAME_UPC)
+  @javax.annotation.Nullable
   private String upc;
 
   public static final String SERIALIZED_NAME_PART_NUMBER_TYPE = "partNumberType";
   @SerializedName(SERIALIZED_NAME_PART_NUMBER_TYPE)
+  @javax.annotation.Nullable
   private String partNumberType;
 
   public static final String SERIALIZED_NAME_VENDOR_NUMBER = "vendorNumber";
   @SerializedName(SERIALIZED_NAME_VENDOR_NUMBER)
+  @javax.annotation.Nullable
   private String vendorNumber;
 
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
+  @javax.annotation.Nullable
   private String vendorName;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_PRODUCT_CLASS = "productClass";
   @SerializedName(SERIALIZED_NAME_PRODUCT_CLASS)
+  @javax.annotation.Nullable
   private String productClass;
 
   public static final String SERIALIZED_NAME_UOM = "uom";
   @SerializedName(SERIALIZED_NAME_UOM)
+  @javax.annotation.Nullable
   private String uom;
 
   public static final String SERIALIZED_NAME_PRODUCT_STATUS = "productStatus";
   @SerializedName(SERIALIZED_NAME_PRODUCT_STATUS)
+  @javax.annotation.Nullable
   private String productStatus;
 
   public static final String SERIALIZED_NAME_ACCEPT_BACK_ORDER = "acceptBackOrder";
   @SerializedName(SERIALIZED_NAME_ACCEPT_BACK_ORDER)
+  @javax.annotation.Nullable
   private Boolean acceptBackOrder;
 
   public static final String SERIALIZED_NAME_PRODUCT_AUTHORIZED = "productAuthorized";
   @SerializedName(SERIALIZED_NAME_PRODUCT_AUTHORIZED)
+  @javax.annotation.Nullable
   private Boolean productAuthorized;
 
   public static final String SERIALIZED_NAME_RETURNABLE_PRODUCT = "returnableProduct";
   @SerializedName(SERIALIZED_NAME_RETURNABLE_PRODUCT)
+  @javax.annotation.Nullable
   private Boolean returnableProduct;
 
   public static final String SERIALIZED_NAME_END_USER_INFO_REQUIRED = "endUserInfoRequired";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO_REQUIRED)
+  @javax.annotation.Nullable
   private Boolean endUserInfoRequired;
 
   public static final String SERIALIZED_NAME_GOVT_SPECIAL_PRICE_AVAILABLE = "govtSpecialPriceAvailable";
   @SerializedName(SERIALIZED_NAME_GOVT_SPECIAL_PRICE_AVAILABLE)
+  @javax.annotation.Nullable
   private Boolean govtSpecialPriceAvailable;
 
   public static final String SERIALIZED_NAME_GOVT_PROGRAM_TYPE = "govtProgramType";
   @SerializedName(SERIALIZED_NAME_GOVT_PROGRAM_TYPE)
+  @javax.annotation.Nullable
   private String govtProgramType;
 
   public static final String SERIALIZED_NAME_GOVT_END_USER_TYPE = "govtEndUserType";
   @SerializedName(SERIALIZED_NAME_GOVT_END_USER_TYPE)
+  @javax.annotation.Nullable
   private String govtEndUserType;
 
   public static final String SERIALIZED_NAME_AVAILABILITY = "availability";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY)
+  @javax.annotation.Nullable
   private PriceAndAvailabilityResponseInnerAvailability availability;
 
   public static final String SERIALIZED_NAME_RESERVE_INVENTORY_DETAILS = "reserveInventoryDetails";
   @SerializedName(SERIALIZED_NAME_RESERVE_INVENTORY_DETAILS)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PRICING = "pricing";
   @SerializedName(SERIALIZED_NAME_PRICING)
+  @javax.annotation.Nullable
   private PriceAndAvailabilityResponseInnerPricing pricing;
 
   public static final String SERIALIZED_NAME_DISCOUNTS = "discounts";
   @SerializedName(SERIALIZED_NAME_DISCOUNTS)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerDiscountsInner> discounts;
 
   public static final String SERIALIZED_NAME_BUNDLE_PART_INDICATOR = "bundlePartIndicator";
   @SerializedName(SERIALIZED_NAME_BUNDLE_PART_INDICATOR)
+  @javax.annotation.Nullable
   private Boolean bundlePartIndicator;
 
   public static final String SERIALIZED_NAME_SERVICE_FEES = "serviceFees";
   @SerializedName(SERIALIZED_NAME_SERVICE_FEES)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerServiceFeesInner> serviceFees;
 
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PRICE = "subscriptionPrice";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PRICE)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerSubscriptionPriceInner> subscriptionPrice = new ArrayList<>();
 
   public PriceAndAvailabilityResponseInner() {
   }
 
-  public PriceAndAvailabilityResponseInner index(BigDecimal index) {
+  public PriceAndAvailabilityResponseInner index(@javax.annotation.Nullable BigDecimal index) {
     this.index = index;
     return this;
   }
@@ -193,12 +222,12 @@ public class PriceAndAvailabilityResponseInner {
     return index;
   }
 
-  public void setIndex(BigDecimal index) {
+  public void setIndex(@javax.annotation.Nullable BigDecimal index) {
     this.index = index;
   }
 
 
-  public PriceAndAvailabilityResponseInner productStatusCode(String productStatusCode) {
+  public PriceAndAvailabilityResponseInner productStatusCode(@javax.annotation.Nullable String productStatusCode) {
     this.productStatusCode = productStatusCode;
     return this;
   }
@@ -212,12 +241,12 @@ public class PriceAndAvailabilityResponseInner {
     return productStatusCode;
   }
 
-  public void setProductStatusCode(String productStatusCode) {
+  public void setProductStatusCode(@javax.annotation.Nullable String productStatusCode) {
     this.productStatusCode = productStatusCode;
   }
 
 
-  public PriceAndAvailabilityResponseInner productStatusMessage(String productStatusMessage) {
+  public PriceAndAvailabilityResponseInner productStatusMessage(@javax.annotation.Nullable String productStatusMessage) {
     this.productStatusMessage = productStatusMessage;
     return this;
   }
@@ -231,12 +260,12 @@ public class PriceAndAvailabilityResponseInner {
     return productStatusMessage;
   }
 
-  public void setProductStatusMessage(String productStatusMessage) {
+  public void setProductStatusMessage(@javax.annotation.Nullable String productStatusMessage) {
     this.productStatusMessage = productStatusMessage;
   }
 
 
-  public PriceAndAvailabilityResponseInner ingramPartNumber(String ingramPartNumber) {
+  public PriceAndAvailabilityResponseInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -250,12 +279,12 @@ public class PriceAndAvailabilityResponseInner {
     return ingramPartNumber;
   }
 
-  public void setIngramPartNumber(String ingramPartNumber) {
+  public void setIngramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
   }
 
 
-  public PriceAndAvailabilityResponseInner vendorPartNumber(String vendorPartNumber) {
+  public PriceAndAvailabilityResponseInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -269,12 +298,12 @@ public class PriceAndAvailabilityResponseInner {
     return vendorPartNumber;
   }
 
-  public void setVendorPartNumber(String vendorPartNumber) {
+  public void setVendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
   }
 
 
-  public PriceAndAvailabilityResponseInner extendedVendorPartNumber(String extendedVendorPartNumber) {
+  public PriceAndAvailabilityResponseInner extendedVendorPartNumber(@javax.annotation.Nullable String extendedVendorPartNumber) {
     this.extendedVendorPartNumber = extendedVendorPartNumber;
     return this;
   }
@@ -288,12 +317,12 @@ public class PriceAndAvailabilityResponseInner {
     return extendedVendorPartNumber;
   }
 
-  public void setExtendedVendorPartNumber(String extendedVendorPartNumber) {
+  public void setExtendedVendorPartNumber(@javax.annotation.Nullable String extendedVendorPartNumber) {
     this.extendedVendorPartNumber = extendedVendorPartNumber;
   }
 
 
-  public PriceAndAvailabilityResponseInner customerPartNumber(String customerPartNumber) {
+  public PriceAndAvailabilityResponseInner customerPartNumber(@javax.annotation.Nullable String customerPartNumber) {
     this.customerPartNumber = customerPartNumber;
     return this;
   }
@@ -307,12 +336,12 @@ public class PriceAndAvailabilityResponseInner {
     return customerPartNumber;
   }
 
-  public void setCustomerPartNumber(String customerPartNumber) {
+  public void setCustomerPartNumber(@javax.annotation.Nullable String customerPartNumber) {
     this.customerPartNumber = customerPartNumber;
   }
 
 
-  public PriceAndAvailabilityResponseInner upc(String upc) {
+  public PriceAndAvailabilityResponseInner upc(@javax.annotation.Nullable String upc) {
     this.upc = upc;
     return this;
   }
@@ -326,12 +355,12 @@ public class PriceAndAvailabilityResponseInner {
     return upc;
   }
 
-  public void setUpc(String upc) {
+  public void setUpc(@javax.annotation.Nullable String upc) {
     this.upc = upc;
   }
 
 
-  public PriceAndAvailabilityResponseInner partNumberType(String partNumberType) {
+  public PriceAndAvailabilityResponseInner partNumberType(@javax.annotation.Nullable String partNumberType) {
     this.partNumberType = partNumberType;
     return this;
   }
@@ -345,12 +374,12 @@ public class PriceAndAvailabilityResponseInner {
     return partNumberType;
   }
 
-  public void setPartNumberType(String partNumberType) {
+  public void setPartNumberType(@javax.annotation.Nullable String partNumberType) {
     this.partNumberType = partNumberType;
   }
 
 
-  public PriceAndAvailabilityResponseInner vendorNumber(String vendorNumber) {
+  public PriceAndAvailabilityResponseInner vendorNumber(@javax.annotation.Nullable String vendorNumber) {
     this.vendorNumber = vendorNumber;
     return this;
   }
@@ -364,12 +393,12 @@ public class PriceAndAvailabilityResponseInner {
     return vendorNumber;
   }
 
-  public void setVendorNumber(String vendorNumber) {
+  public void setVendorNumber(@javax.annotation.Nullable String vendorNumber) {
     this.vendorNumber = vendorNumber;
   }
 
 
-  public PriceAndAvailabilityResponseInner vendorName(String vendorName) {
+  public PriceAndAvailabilityResponseInner vendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
     return this;
   }
@@ -383,12 +412,12 @@ public class PriceAndAvailabilityResponseInner {
     return vendorName;
   }
 
-  public void setVendorName(String vendorName) {
+  public void setVendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
   }
 
 
-  public PriceAndAvailabilityResponseInner description(String description) {
+  public PriceAndAvailabilityResponseInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -402,12 +431,12 @@ public class PriceAndAvailabilityResponseInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public PriceAndAvailabilityResponseInner productClass(String productClass) {
+  public PriceAndAvailabilityResponseInner productClass(@javax.annotation.Nullable String productClass) {
     this.productClass = productClass;
     return this;
   }
@@ -421,12 +450,12 @@ public class PriceAndAvailabilityResponseInner {
     return productClass;
   }
 
-  public void setProductClass(String productClass) {
+  public void setProductClass(@javax.annotation.Nullable String productClass) {
     this.productClass = productClass;
   }
 
 
-  public PriceAndAvailabilityResponseInner uom(String uom) {
+  public PriceAndAvailabilityResponseInner uom(@javax.annotation.Nullable String uom) {
     this.uom = uom;
     return this;
   }
@@ -440,12 +469,12 @@ public class PriceAndAvailabilityResponseInner {
     return uom;
   }
 
-  public void setUom(String uom) {
+  public void setUom(@javax.annotation.Nullable String uom) {
     this.uom = uom;
   }
 
 
-  public PriceAndAvailabilityResponseInner productStatus(String productStatus) {
+  public PriceAndAvailabilityResponseInner productStatus(@javax.annotation.Nullable String productStatus) {
     this.productStatus = productStatus;
     return this;
   }
@@ -459,12 +488,12 @@ public class PriceAndAvailabilityResponseInner {
     return productStatus;
   }
 
-  public void setProductStatus(String productStatus) {
+  public void setProductStatus(@javax.annotation.Nullable String productStatus) {
     this.productStatus = productStatus;
   }
 
 
-  public PriceAndAvailabilityResponseInner acceptBackOrder(Boolean acceptBackOrder) {
+  public PriceAndAvailabilityResponseInner acceptBackOrder(@javax.annotation.Nullable Boolean acceptBackOrder) {
     this.acceptBackOrder = acceptBackOrder;
     return this;
   }
@@ -478,12 +507,12 @@ public class PriceAndAvailabilityResponseInner {
     return acceptBackOrder;
   }
 
-  public void setAcceptBackOrder(Boolean acceptBackOrder) {
+  public void setAcceptBackOrder(@javax.annotation.Nullable Boolean acceptBackOrder) {
     this.acceptBackOrder = acceptBackOrder;
   }
 
 
-  public PriceAndAvailabilityResponseInner productAuthorized(Boolean productAuthorized) {
+  public PriceAndAvailabilityResponseInner productAuthorized(@javax.annotation.Nullable Boolean productAuthorized) {
     this.productAuthorized = productAuthorized;
     return this;
   }
@@ -497,12 +526,12 @@ public class PriceAndAvailabilityResponseInner {
     return productAuthorized;
   }
 
-  public void setProductAuthorized(Boolean productAuthorized) {
+  public void setProductAuthorized(@javax.annotation.Nullable Boolean productAuthorized) {
     this.productAuthorized = productAuthorized;
   }
 
 
-  public PriceAndAvailabilityResponseInner returnableProduct(Boolean returnableProduct) {
+  public PriceAndAvailabilityResponseInner returnableProduct(@javax.annotation.Nullable Boolean returnableProduct) {
     this.returnableProduct = returnableProduct;
     return this;
   }
@@ -516,12 +545,12 @@ public class PriceAndAvailabilityResponseInner {
     return returnableProduct;
   }
 
-  public void setReturnableProduct(Boolean returnableProduct) {
+  public void setReturnableProduct(@javax.annotation.Nullable Boolean returnableProduct) {
     this.returnableProduct = returnableProduct;
   }
 
 
-  public PriceAndAvailabilityResponseInner endUserInfoRequired(Boolean endUserInfoRequired) {
+  public PriceAndAvailabilityResponseInner endUserInfoRequired(@javax.annotation.Nullable Boolean endUserInfoRequired) {
     this.endUserInfoRequired = endUserInfoRequired;
     return this;
   }
@@ -535,12 +564,12 @@ public class PriceAndAvailabilityResponseInner {
     return endUserInfoRequired;
   }
 
-  public void setEndUserInfoRequired(Boolean endUserInfoRequired) {
+  public void setEndUserInfoRequired(@javax.annotation.Nullable Boolean endUserInfoRequired) {
     this.endUserInfoRequired = endUserInfoRequired;
   }
 
 
-  public PriceAndAvailabilityResponseInner govtSpecialPriceAvailable(Boolean govtSpecialPriceAvailable) {
+  public PriceAndAvailabilityResponseInner govtSpecialPriceAvailable(@javax.annotation.Nullable Boolean govtSpecialPriceAvailable) {
     this.govtSpecialPriceAvailable = govtSpecialPriceAvailable;
     return this;
   }
@@ -554,12 +583,12 @@ public class PriceAndAvailabilityResponseInner {
     return govtSpecialPriceAvailable;
   }
 
-  public void setGovtSpecialPriceAvailable(Boolean govtSpecialPriceAvailable) {
+  public void setGovtSpecialPriceAvailable(@javax.annotation.Nullable Boolean govtSpecialPriceAvailable) {
     this.govtSpecialPriceAvailable = govtSpecialPriceAvailable;
   }
 
 
-  public PriceAndAvailabilityResponseInner govtProgramType(String govtProgramType) {
+  public PriceAndAvailabilityResponseInner govtProgramType(@javax.annotation.Nullable String govtProgramType) {
     this.govtProgramType = govtProgramType;
     return this;
   }
@@ -573,12 +602,12 @@ public class PriceAndAvailabilityResponseInner {
     return govtProgramType;
   }
 
-  public void setGovtProgramType(String govtProgramType) {
+  public void setGovtProgramType(@javax.annotation.Nullable String govtProgramType) {
     this.govtProgramType = govtProgramType;
   }
 
 
-  public PriceAndAvailabilityResponseInner govtEndUserType(String govtEndUserType) {
+  public PriceAndAvailabilityResponseInner govtEndUserType(@javax.annotation.Nullable String govtEndUserType) {
     this.govtEndUserType = govtEndUserType;
     return this;
   }
@@ -592,12 +621,12 @@ public class PriceAndAvailabilityResponseInner {
     return govtEndUserType;
   }
 
-  public void setGovtEndUserType(String govtEndUserType) {
+  public void setGovtEndUserType(@javax.annotation.Nullable String govtEndUserType) {
     this.govtEndUserType = govtEndUserType;
   }
 
 
-  public PriceAndAvailabilityResponseInner availability(PriceAndAvailabilityResponseInnerAvailability availability) {
+  public PriceAndAvailabilityResponseInner availability(@javax.annotation.Nullable PriceAndAvailabilityResponseInnerAvailability availability) {
     this.availability = availability;
     return this;
   }
@@ -611,12 +640,12 @@ public class PriceAndAvailabilityResponseInner {
     return availability;
   }
 
-  public void setAvailability(PriceAndAvailabilityResponseInnerAvailability availability) {
+  public void setAvailability(@javax.annotation.Nullable PriceAndAvailabilityResponseInnerAvailability availability) {
     this.availability = availability;
   }
 
 
-  public PriceAndAvailabilityResponseInner reserveInventoryDetails(List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails) {
+  public PriceAndAvailabilityResponseInner reserveInventoryDetails(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails) {
     this.reserveInventoryDetails = reserveInventoryDetails;
     return this;
   }
@@ -638,12 +667,12 @@ public class PriceAndAvailabilityResponseInner {
     return reserveInventoryDetails;
   }
 
-  public void setReserveInventoryDetails(List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails) {
+  public void setReserveInventoryDetails(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner> reserveInventoryDetails) {
     this.reserveInventoryDetails = reserveInventoryDetails;
   }
 
 
-  public PriceAndAvailabilityResponseInner pricing(PriceAndAvailabilityResponseInnerPricing pricing) {
+  public PriceAndAvailabilityResponseInner pricing(@javax.annotation.Nullable PriceAndAvailabilityResponseInnerPricing pricing) {
     this.pricing = pricing;
     return this;
   }
@@ -657,12 +686,12 @@ public class PriceAndAvailabilityResponseInner {
     return pricing;
   }
 
-  public void setPricing(PriceAndAvailabilityResponseInnerPricing pricing) {
+  public void setPricing(@javax.annotation.Nullable PriceAndAvailabilityResponseInnerPricing pricing) {
     this.pricing = pricing;
   }
 
 
-  public PriceAndAvailabilityResponseInner discounts(List<PriceAndAvailabilityResponseInnerDiscountsInner> discounts) {
+  public PriceAndAvailabilityResponseInner discounts(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerDiscountsInner> discounts) {
     this.discounts = discounts;
     return this;
   }
@@ -684,12 +713,12 @@ public class PriceAndAvailabilityResponseInner {
     return discounts;
   }
 
-  public void setDiscounts(List<PriceAndAvailabilityResponseInnerDiscountsInner> discounts) {
+  public void setDiscounts(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerDiscountsInner> discounts) {
     this.discounts = discounts;
   }
 
 
-  public PriceAndAvailabilityResponseInner bundlePartIndicator(Boolean bundlePartIndicator) {
+  public PriceAndAvailabilityResponseInner bundlePartIndicator(@javax.annotation.Nullable Boolean bundlePartIndicator) {
     this.bundlePartIndicator = bundlePartIndicator;
     return this;
   }
@@ -703,12 +732,12 @@ public class PriceAndAvailabilityResponseInner {
     return bundlePartIndicator;
   }
 
-  public void setBundlePartIndicator(Boolean bundlePartIndicator) {
+  public void setBundlePartIndicator(@javax.annotation.Nullable Boolean bundlePartIndicator) {
     this.bundlePartIndicator = bundlePartIndicator;
   }
 
 
-  public PriceAndAvailabilityResponseInner serviceFees(List<PriceAndAvailabilityResponseInnerServiceFeesInner> serviceFees) {
+  public PriceAndAvailabilityResponseInner serviceFees(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerServiceFeesInner> serviceFees) {
     this.serviceFees = serviceFees;
     return this;
   }
@@ -730,12 +759,12 @@ public class PriceAndAvailabilityResponseInner {
     return serviceFees;
   }
 
-  public void setServiceFees(List<PriceAndAvailabilityResponseInnerServiceFeesInner> serviceFees) {
+  public void setServiceFees(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerServiceFeesInner> serviceFees) {
     this.serviceFees = serviceFees;
   }
 
 
-  public PriceAndAvailabilityResponseInner subscriptionPrice(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInner> subscriptionPrice) {
+  public PriceAndAvailabilityResponseInner subscriptionPrice(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInner> subscriptionPrice) {
     this.subscriptionPrice = subscriptionPrice;
     return this;
   }
@@ -757,7 +786,7 @@ public class PriceAndAvailabilityResponseInner {
     return subscriptionPrice;
   }
 
-  public void setSubscriptionPrice(List<PriceAndAvailabilityResponseInnerSubscriptionPriceInner> subscriptionPrice) {
+  public void setSubscriptionPrice(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerSubscriptionPriceInner> subscriptionPrice) {
     this.subscriptionPrice = subscriptionPrice;
   }
 

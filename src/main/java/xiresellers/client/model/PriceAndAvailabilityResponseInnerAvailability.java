@@ -52,24 +52,27 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerAvailability
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerAvailability {
   public static final String SERIALIZED_NAME_AVAILABLE = "available";
   @SerializedName(SERIALIZED_NAME_AVAILABLE)
+  @javax.annotation.Nullable
   private Boolean available;
 
   public static final String SERIALIZED_NAME_TOTAL_AVAILABILITY = "totalAvailability";
   @SerializedName(SERIALIZED_NAME_TOTAL_AVAILABILITY)
+  @javax.annotation.Nullable
   private Integer totalAvailability;
 
   public static final String SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE = "availabilityByWarehouse";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE)
+  @javax.annotation.Nullable
   private List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner> availabilityByWarehouse;
 
   public PriceAndAvailabilityResponseInnerAvailability() {
   }
 
-  public PriceAndAvailabilityResponseInnerAvailability available(Boolean available) {
+  public PriceAndAvailabilityResponseInnerAvailability available(@javax.annotation.Nullable Boolean available) {
     this.available = available;
     return this;
   }
@@ -83,12 +86,12 @@ public class PriceAndAvailabilityResponseInnerAvailability {
     return available;
   }
 
-  public void setAvailable(Boolean available) {
+  public void setAvailable(@javax.annotation.Nullable Boolean available) {
     this.available = available;
   }
 
 
-  public PriceAndAvailabilityResponseInnerAvailability totalAvailability(Integer totalAvailability) {
+  public PriceAndAvailabilityResponseInnerAvailability totalAvailability(@javax.annotation.Nullable Integer totalAvailability) {
     this.totalAvailability = totalAvailability;
     return this;
   }
@@ -102,12 +105,12 @@ public class PriceAndAvailabilityResponseInnerAvailability {
     return totalAvailability;
   }
 
-  public void setTotalAvailability(Integer totalAvailability) {
+  public void setTotalAvailability(@javax.annotation.Nullable Integer totalAvailability) {
     this.totalAvailability = totalAvailability;
   }
 
 
-  public PriceAndAvailabilityResponseInnerAvailability availabilityByWarehouse(List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner> availabilityByWarehouse) {
+  public PriceAndAvailabilityResponseInnerAvailability availabilityByWarehouse(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner> availabilityByWarehouse) {
     this.availabilityByWarehouse = availabilityByWarehouse;
     return this;
   }
@@ -129,7 +132,7 @@ public class PriceAndAvailabilityResponseInnerAvailability {
     return availabilityByWarehouse;
   }
 
-  public void setAvailabilityByWarehouse(List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner> availabilityByWarehouse) {
+  public void setAvailabilityByWarehouse(@javax.annotation.Nullable List<PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner> availabilityByWarehouse) {
     this.availabilityByWarehouse = availabilityByWarehouse;
   }
 

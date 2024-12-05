@@ -51,48 +51,57 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchResponseRenewalsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class RenewalsSearchResponseRenewalsInner {
   public static final String SERIALIZED_NAME_RENEWAL_ID = "renewalId";
   @SerializedName(SERIALIZED_NAME_RENEWAL_ID)
+  @javax.annotation.Nullable
   private Integer renewalId;
 
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private String customerOrderNumber;
 
   public static final String SERIALIZED_NAME_REFERENCE_NUMBER = "referenceNumber";
   @SerializedName(SERIALIZED_NAME_REFERENCE_NUMBER)
+  @javax.annotation.Nullable
   private String referenceNumber;
 
   public static final String SERIALIZED_NAME_END_USER = "endUser";
   @SerializedName(SERIALIZED_NAME_END_USER)
+  @javax.annotation.Nullable
   private String endUser;
 
   public static final String SERIALIZED_NAME_VENDOR = "vendor";
   @SerializedName(SERIALIZED_NAME_VENDOR)
+  @javax.annotation.Nullable
   private String vendor;
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expirationDate";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
+  @javax.annotation.Nullable
   private String expirationDate;
 
   public static final String SERIALIZED_NAME_RENEWAL_VALUE = "renewalValue";
   @SerializedName(SERIALIZED_NAME_RENEWAL_VALUE)
+  @javax.annotation.Nullable
   private Double renewalValue;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<RenewalsSearchResponseRenewalsInnerLinksInner> links = new ArrayList<>();
 
   public RenewalsSearchResponseRenewalsInner() {
   }
 
-  public RenewalsSearchResponseRenewalsInner renewalId(Integer renewalId) {
+  public RenewalsSearchResponseRenewalsInner renewalId(@javax.annotation.Nullable Integer renewalId) {
     this.renewalId = renewalId;
     return this;
   }
@@ -106,12 +115,12 @@ public class RenewalsSearchResponseRenewalsInner {
     return renewalId;
   }
 
-  public void setRenewalId(Integer renewalId) {
+  public void setRenewalId(@javax.annotation.Nullable Integer renewalId) {
     this.renewalId = renewalId;
   }
 
 
-  public RenewalsSearchResponseRenewalsInner customerOrderNumber(String customerOrderNumber) {
+  public RenewalsSearchResponseRenewalsInner customerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
     return this;
   }
@@ -125,12 +134,12 @@ public class RenewalsSearchResponseRenewalsInner {
     return customerOrderNumber;
   }
 
-  public void setCustomerOrderNumber(String customerOrderNumber) {
+  public void setCustomerOrderNumber(@javax.annotation.Nullable String customerOrderNumber) {
     this.customerOrderNumber = customerOrderNumber;
   }
 
 
-  public RenewalsSearchResponseRenewalsInner referenceNumber(String referenceNumber) {
+  public RenewalsSearchResponseRenewalsInner referenceNumber(@javax.annotation.Nullable String referenceNumber) {
     this.referenceNumber = referenceNumber;
     return this;
   }
@@ -144,12 +153,12 @@ public class RenewalsSearchResponseRenewalsInner {
     return referenceNumber;
   }
 
-  public void setReferenceNumber(String referenceNumber) {
+  public void setReferenceNumber(@javax.annotation.Nullable String referenceNumber) {
     this.referenceNumber = referenceNumber;
   }
 
 
-  public RenewalsSearchResponseRenewalsInner endUser(String endUser) {
+  public RenewalsSearchResponseRenewalsInner endUser(@javax.annotation.Nullable String endUser) {
     this.endUser = endUser;
     return this;
   }
@@ -163,12 +172,12 @@ public class RenewalsSearchResponseRenewalsInner {
     return endUser;
   }
 
-  public void setEndUser(String endUser) {
+  public void setEndUser(@javax.annotation.Nullable String endUser) {
     this.endUser = endUser;
   }
 
 
-  public RenewalsSearchResponseRenewalsInner vendor(String vendor) {
+  public RenewalsSearchResponseRenewalsInner vendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
     return this;
   }
@@ -182,12 +191,12 @@ public class RenewalsSearchResponseRenewalsInner {
     return vendor;
   }
 
-  public void setVendor(String vendor) {
+  public void setVendor(@javax.annotation.Nullable String vendor) {
     this.vendor = vendor;
   }
 
 
-  public RenewalsSearchResponseRenewalsInner expirationDate(String expirationDate) {
+  public RenewalsSearchResponseRenewalsInner expirationDate(@javax.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
     return this;
   }
@@ -201,12 +210,12 @@ public class RenewalsSearchResponseRenewalsInner {
     return expirationDate;
   }
 
-  public void setExpirationDate(String expirationDate) {
+  public void setExpirationDate(@javax.annotation.Nullable String expirationDate) {
     this.expirationDate = expirationDate;
   }
 
 
-  public RenewalsSearchResponseRenewalsInner renewalValue(Double renewalValue) {
+  public RenewalsSearchResponseRenewalsInner renewalValue(@javax.annotation.Nullable Double renewalValue) {
     this.renewalValue = renewalValue;
     return this;
   }
@@ -220,12 +229,12 @@ public class RenewalsSearchResponseRenewalsInner {
     return renewalValue;
   }
 
-  public void setRenewalValue(Double renewalValue) {
+  public void setRenewalValue(@javax.annotation.Nullable Double renewalValue) {
     this.renewalValue = renewalValue;
   }
 
 
-  public RenewalsSearchResponseRenewalsInner status(String status) {
+  public RenewalsSearchResponseRenewalsInner status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -239,12 +248,12 @@ public class RenewalsSearchResponseRenewalsInner {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public RenewalsSearchResponseRenewalsInner links(List<RenewalsSearchResponseRenewalsInnerLinksInner> links) {
+  public RenewalsSearchResponseRenewalsInner links(@javax.annotation.Nullable List<RenewalsSearchResponseRenewalsInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -266,7 +275,7 @@ public class RenewalsSearchResponseRenewalsInner {
     return links;
   }
 
-  public void setLinks(List<RenewalsSearchResponseRenewalsInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<RenewalsSearchResponseRenewalsInnerLinksInner> links) {
     this.links = links;
   }
 

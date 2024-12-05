@@ -49,36 +49,42 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerPricing
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerPricing {
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_RETAIL_PRICE = "retailPrice";
   @SerializedName(SERIALIZED_NAME_RETAIL_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal retailPrice;
 
   public static final String SERIALIZED_NAME_MAP_PRICE = "mapPrice";
   @SerializedName(SERIALIZED_NAME_MAP_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal mapPrice;
 
   public static final String SERIALIZED_NAME_CUSTOMER_PRICE = "customerPrice";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal customerPrice;
 
   public static final String SERIALIZED_NAME_SPECIAL_BID_PRICING_AVAILABLE = "specialBidPricingAvailable";
   @SerializedName(SERIALIZED_NAME_SPECIAL_BID_PRICING_AVAILABLE)
+  @javax.annotation.Nullable
   private Boolean specialBidPricingAvailable;
 
   public static final String SERIALIZED_NAME_WEB_DISCOUNTS_AVAILABLE = "webDiscountsAvailable";
   @SerializedName(SERIALIZED_NAME_WEB_DISCOUNTS_AVAILABLE)
+  @javax.annotation.Nullable
   private Boolean webDiscountsAvailable;
 
   public PriceAndAvailabilityResponseInnerPricing() {
   }
 
-  public PriceAndAvailabilityResponseInnerPricing currencyCode(String currencyCode) {
+  public PriceAndAvailabilityResponseInnerPricing currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -92,12 +98,12 @@ public class PriceAndAvailabilityResponseInnerPricing {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public PriceAndAvailabilityResponseInnerPricing retailPrice(BigDecimal retailPrice) {
+  public PriceAndAvailabilityResponseInnerPricing retailPrice(@javax.annotation.Nullable BigDecimal retailPrice) {
     this.retailPrice = retailPrice;
     return this;
   }
@@ -111,12 +117,12 @@ public class PriceAndAvailabilityResponseInnerPricing {
     return retailPrice;
   }
 
-  public void setRetailPrice(BigDecimal retailPrice) {
+  public void setRetailPrice(@javax.annotation.Nullable BigDecimal retailPrice) {
     this.retailPrice = retailPrice;
   }
 
 
-  public PriceAndAvailabilityResponseInnerPricing mapPrice(BigDecimal mapPrice) {
+  public PriceAndAvailabilityResponseInnerPricing mapPrice(@javax.annotation.Nullable BigDecimal mapPrice) {
     this.mapPrice = mapPrice;
     return this;
   }
@@ -130,12 +136,12 @@ public class PriceAndAvailabilityResponseInnerPricing {
     return mapPrice;
   }
 
-  public void setMapPrice(BigDecimal mapPrice) {
+  public void setMapPrice(@javax.annotation.Nullable BigDecimal mapPrice) {
     this.mapPrice = mapPrice;
   }
 
 
-  public PriceAndAvailabilityResponseInnerPricing customerPrice(BigDecimal customerPrice) {
+  public PriceAndAvailabilityResponseInnerPricing customerPrice(@javax.annotation.Nullable BigDecimal customerPrice) {
     this.customerPrice = customerPrice;
     return this;
   }
@@ -149,12 +155,12 @@ public class PriceAndAvailabilityResponseInnerPricing {
     return customerPrice;
   }
 
-  public void setCustomerPrice(BigDecimal customerPrice) {
+  public void setCustomerPrice(@javax.annotation.Nullable BigDecimal customerPrice) {
     this.customerPrice = customerPrice;
   }
 
 
-  public PriceAndAvailabilityResponseInnerPricing specialBidPricingAvailable(Boolean specialBidPricingAvailable) {
+  public PriceAndAvailabilityResponseInnerPricing specialBidPricingAvailable(@javax.annotation.Nullable Boolean specialBidPricingAvailable) {
     this.specialBidPricingAvailable = specialBidPricingAvailable;
     return this;
   }
@@ -168,12 +174,12 @@ public class PriceAndAvailabilityResponseInnerPricing {
     return specialBidPricingAvailable;
   }
 
-  public void setSpecialBidPricingAvailable(Boolean specialBidPricingAvailable) {
+  public void setSpecialBidPricingAvailable(@javax.annotation.Nullable Boolean specialBidPricingAvailable) {
     this.specialBidPricingAvailable = specialBidPricingAvailable;
   }
 
 
-  public PriceAndAvailabilityResponseInnerPricing webDiscountsAvailable(Boolean webDiscountsAvailable) {
+  public PriceAndAvailabilityResponseInnerPricing webDiscountsAvailable(@javax.annotation.Nullable Boolean webDiscountsAvailable) {
     this.webDiscountsAvailable = webDiscountsAvailable;
     return this;
   }
@@ -187,7 +193,7 @@ public class PriceAndAvailabilityResponseInnerPricing {
     return webDiscountsAvailable;
   }
 
-  public void setWebDiscountsAvailable(Boolean webDiscountsAvailable) {
+  public void setWebDiscountsAvailable(@javax.annotation.Nullable Boolean webDiscountsAvailable) {
     this.webDiscountsAvailable = webDiscountsAvailable;
   }
 

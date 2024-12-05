@@ -51,40 +51,47 @@ import xiresellers.client.JSON;
 /**
  * Additional Information related to the product.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductDetailResponseAdditionalInformation {
   public static final String SERIALIZED_NAME_PRODUCT_WEIGHT = "productWeight";
   @SerializedName(SERIALIZED_NAME_PRODUCT_WEIGHT)
+  @javax.annotation.Nullable
   private List<ProductDetailResponseAdditionalInformationProductWeightInner> productWeight = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_IS_BULK_FREIGHT = "isBulkFreight";
   @SerializedName(SERIALIZED_NAME_IS_BULK_FREIGHT)
+  @javax.annotation.Nullable
   private Boolean isBulkFreight;
 
   public static final String SERIALIZED_NAME_HEIGHT = "height";
   @SerializedName(SERIALIZED_NAME_HEIGHT)
+  @javax.annotation.Nullable
   private String height;
 
   public static final String SERIALIZED_NAME_WIDTH = "width";
   @SerializedName(SERIALIZED_NAME_WIDTH)
+  @javax.annotation.Nullable
   private String width;
 
   public static final String SERIALIZED_NAME_LENGTH = "length";
   @SerializedName(SERIALIZED_NAME_LENGTH)
+  @javax.annotation.Nullable
   private String length;
 
   public static final String SERIALIZED_NAME_NET_WEIGHT = "netWeight";
   @SerializedName(SERIALIZED_NAME_NET_WEIGHT)
+  @javax.annotation.Nullable
   private String netWeight;
 
   public static final String SERIALIZED_NAME_DIMENSION_UNIT = "dimensionUnit";
   @SerializedName(SERIALIZED_NAME_DIMENSION_UNIT)
+  @javax.annotation.Nullable
   private String dimensionUnit;
 
   public ProductDetailResponseAdditionalInformation() {
   }
 
-  public ProductDetailResponseAdditionalInformation productWeight(List<ProductDetailResponseAdditionalInformationProductWeightInner> productWeight) {
+  public ProductDetailResponseAdditionalInformation productWeight(@javax.annotation.Nullable List<ProductDetailResponseAdditionalInformationProductWeightInner> productWeight) {
     this.productWeight = productWeight;
     return this;
   }
@@ -106,12 +113,12 @@ public class ProductDetailResponseAdditionalInformation {
     return productWeight;
   }
 
-  public void setProductWeight(List<ProductDetailResponseAdditionalInformationProductWeightInner> productWeight) {
+  public void setProductWeight(@javax.annotation.Nullable List<ProductDetailResponseAdditionalInformationProductWeightInner> productWeight) {
     this.productWeight = productWeight;
   }
 
 
-  public ProductDetailResponseAdditionalInformation isBulkFreight(Boolean isBulkFreight) {
+  public ProductDetailResponseAdditionalInformation isBulkFreight(@javax.annotation.Nullable Boolean isBulkFreight) {
     this.isBulkFreight = isBulkFreight;
     return this;
   }
@@ -125,12 +132,12 @@ public class ProductDetailResponseAdditionalInformation {
     return isBulkFreight;
   }
 
-  public void setIsBulkFreight(Boolean isBulkFreight) {
+  public void setIsBulkFreight(@javax.annotation.Nullable Boolean isBulkFreight) {
     this.isBulkFreight = isBulkFreight;
   }
 
 
-  public ProductDetailResponseAdditionalInformation height(String height) {
+  public ProductDetailResponseAdditionalInformation height(@javax.annotation.Nullable String height) {
     this.height = height;
     return this;
   }
@@ -144,12 +151,12 @@ public class ProductDetailResponseAdditionalInformation {
     return height;
   }
 
-  public void setHeight(String height) {
+  public void setHeight(@javax.annotation.Nullable String height) {
     this.height = height;
   }
 
 
-  public ProductDetailResponseAdditionalInformation width(String width) {
+  public ProductDetailResponseAdditionalInformation width(@javax.annotation.Nullable String width) {
     this.width = width;
     return this;
   }
@@ -163,12 +170,12 @@ public class ProductDetailResponseAdditionalInformation {
     return width;
   }
 
-  public void setWidth(String width) {
+  public void setWidth(@javax.annotation.Nullable String width) {
     this.width = width;
   }
 
 
-  public ProductDetailResponseAdditionalInformation length(String length) {
+  public ProductDetailResponseAdditionalInformation length(@javax.annotation.Nullable String length) {
     this.length = length;
     return this;
   }
@@ -182,12 +189,12 @@ public class ProductDetailResponseAdditionalInformation {
     return length;
   }
 
-  public void setLength(String length) {
+  public void setLength(@javax.annotation.Nullable String length) {
     this.length = length;
   }
 
 
-  public ProductDetailResponseAdditionalInformation netWeight(String netWeight) {
+  public ProductDetailResponseAdditionalInformation netWeight(@javax.annotation.Nullable String netWeight) {
     this.netWeight = netWeight;
     return this;
   }
@@ -201,12 +208,12 @@ public class ProductDetailResponseAdditionalInformation {
     return netWeight;
   }
 
-  public void setNetWeight(String netWeight) {
+  public void setNetWeight(@javax.annotation.Nullable String netWeight) {
     this.netWeight = netWeight;
   }
 
 
-  public ProductDetailResponseAdditionalInformation dimensionUnit(String dimensionUnit) {
+  public ProductDetailResponseAdditionalInformation dimensionUnit(@javax.annotation.Nullable String dimensionUnit) {
     this.dimensionUnit = dimensionUnit;
     return this;
   }
@@ -220,7 +227,7 @@ public class ProductDetailResponseAdditionalInformation {
     return dimensionUnit;
   }
 
-  public void setDimensionUnit(String dimensionUnit) {
+  public void setDimensionUnit(@javax.annotation.Nullable String dimensionUnit) {
     this.dimensionUnit = dimensionUnit;
   }
 

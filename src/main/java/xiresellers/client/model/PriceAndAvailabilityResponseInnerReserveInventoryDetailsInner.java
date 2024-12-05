@@ -48,28 +48,32 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner {
   public static final String SERIALIZED_NAME_QUANTITY_RESERVED = "quantityReserved";
   @SerializedName(SERIALIZED_NAME_QUANTITY_RESERVED)
+  @javax.annotation.Nullable
   private Integer quantityReserved;
 
   public static final String SERIALIZED_NAME_QUANTITY_AVAILABLE = "quantityAvailable";
   @SerializedName(SERIALIZED_NAME_QUANTITY_AVAILABLE)
+  @javax.annotation.Nullable
   private Integer quantityAvailable;
 
   public static final String SERIALIZED_NAME_EFFECTIVEDATE = "effectivedate";
   @SerializedName(SERIALIZED_NAME_EFFECTIVEDATE)
+  @javax.annotation.Nullable
   private String effectivedate;
 
   public static final String SERIALIZED_NAME_EXPIRYDATE = "expirydate";
   @SerializedName(SERIALIZED_NAME_EXPIRYDATE)
+  @javax.annotation.Nullable
   private String expirydate;
 
   public PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner() {
   }
 
-  public PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner quantityReserved(Integer quantityReserved) {
+  public PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner quantityReserved(@javax.annotation.Nullable Integer quantityReserved) {
     this.quantityReserved = quantityReserved;
     return this;
   }
@@ -83,12 +87,12 @@ public class PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner {
     return quantityReserved;
   }
 
-  public void setQuantityReserved(Integer quantityReserved) {
+  public void setQuantityReserved(@javax.annotation.Nullable Integer quantityReserved) {
     this.quantityReserved = quantityReserved;
   }
 
 
-  public PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner quantityAvailable(Integer quantityAvailable) {
+  public PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner quantityAvailable(@javax.annotation.Nullable Integer quantityAvailable) {
     this.quantityAvailable = quantityAvailable;
     return this;
   }
@@ -102,12 +106,12 @@ public class PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner {
     return quantityAvailable;
   }
 
-  public void setQuantityAvailable(Integer quantityAvailable) {
+  public void setQuantityAvailable(@javax.annotation.Nullable Integer quantityAvailable) {
     this.quantityAvailable = quantityAvailable;
   }
 
 
-  public PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner effectivedate(String effectivedate) {
+  public PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner effectivedate(@javax.annotation.Nullable String effectivedate) {
     this.effectivedate = effectivedate;
     return this;
   }
@@ -121,12 +125,12 @@ public class PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner {
     return effectivedate;
   }
 
-  public void setEffectivedate(String effectivedate) {
+  public void setEffectivedate(@javax.annotation.Nullable String effectivedate) {
     this.effectivedate = effectivedate;
   }
 
 
-  public PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner expirydate(String expirydate) {
+  public PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner expirydate(@javax.annotation.Nullable String expirydate) {
     this.expirydate = expirydate;
     return this;
   }
@@ -140,7 +144,7 @@ public class PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner {
     return expirydate;
   }
 
-  public void setExpirydate(String expirydate) {
+  public void setExpirydate(@javax.annotation.Nullable String expirydate) {
     this.expirydate = expirydate;
   }
 

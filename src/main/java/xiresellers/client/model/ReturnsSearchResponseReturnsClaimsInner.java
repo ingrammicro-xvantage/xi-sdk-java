@@ -52,56 +52,67 @@ import xiresellers.client.JSON;
 /**
  * ReturnsSearchResponseReturnsClaimsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T05:37:19.764548Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-05T05:54:00.257688Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ReturnsSearchResponseReturnsClaimsInner {
   public static final String SERIALIZED_NAME_RETURN_CLAIM_ID = "returnClaimId";
   @SerializedName(SERIALIZED_NAME_RETURN_CLAIM_ID)
+  @javax.annotation.Nullable
   private String returnClaimId;
 
   public static final String SERIALIZED_NAME_CASE_REQUEST_NUMBER = "caseRequestNumber";
   @SerializedName(SERIALIZED_NAME_CASE_REQUEST_NUMBER)
+  @javax.annotation.Nullable
   private String caseRequestNumber;
 
   public static final String SERIALIZED_NAME_CREATED_ON = "createdOn";
   @SerializedName(SERIALIZED_NAME_CREATED_ON)
+  @javax.annotation.Nullable
   private String createdOn;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_RETURN_REASON = "returnReason";
   @SerializedName(SERIALIZED_NAME_RETURN_REASON)
+  @javax.annotation.Nullable
   private String returnReason;
 
   public static final String SERIALIZED_NAME_REFERENCE_NUMBER = "referenceNumber";
   @SerializedName(SERIALIZED_NAME_REFERENCE_NUMBER)
+  @javax.annotation.Nullable
   private String referenceNumber;
 
   public static final String SERIALIZED_NAME_ESTIMATED_TOTAL_VALUE = "estimatedTotalValue";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_TOTAL_VALUE)
+  @javax.annotation.Nullable
   private Double estimatedTotalValue;
 
   public static final String SERIALIZED_NAME_CREDIT = "credit";
   @SerializedName(SERIALIZED_NAME_CREDIT)
+  @javax.annotation.Nullable
   private BigDecimal credit;
 
   public static final String SERIALIZED_NAME_MODIFIED_ON = "modifiedOn";
   @SerializedName(SERIALIZED_NAME_MODIFIED_ON)
+  @javax.annotation.Nullable
   private String modifiedOn;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> links = new ArrayList<>();
 
   public ReturnsSearchResponseReturnsClaimsInner() {
   }
 
-  public ReturnsSearchResponseReturnsClaimsInner returnClaimId(String returnClaimId) {
+  public ReturnsSearchResponseReturnsClaimsInner returnClaimId(@javax.annotation.Nullable String returnClaimId) {
     this.returnClaimId = returnClaimId;
     return this;
   }
@@ -115,12 +126,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return returnClaimId;
   }
 
-  public void setReturnClaimId(String returnClaimId) {
+  public void setReturnClaimId(@javax.annotation.Nullable String returnClaimId) {
     this.returnClaimId = returnClaimId;
   }
 
 
-  public ReturnsSearchResponseReturnsClaimsInner caseRequestNumber(String caseRequestNumber) {
+  public ReturnsSearchResponseReturnsClaimsInner caseRequestNumber(@javax.annotation.Nullable String caseRequestNumber) {
     this.caseRequestNumber = caseRequestNumber;
     return this;
   }
@@ -134,12 +145,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return caseRequestNumber;
   }
 
-  public void setCaseRequestNumber(String caseRequestNumber) {
+  public void setCaseRequestNumber(@javax.annotation.Nullable String caseRequestNumber) {
     this.caseRequestNumber = caseRequestNumber;
   }
 
 
-  public ReturnsSearchResponseReturnsClaimsInner createdOn(String createdOn) {
+  public ReturnsSearchResponseReturnsClaimsInner createdOn(@javax.annotation.Nullable String createdOn) {
     this.createdOn = createdOn;
     return this;
   }
@@ -153,12 +164,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return createdOn;
   }
 
-  public void setCreatedOn(String createdOn) {
+  public void setCreatedOn(@javax.annotation.Nullable String createdOn) {
     this.createdOn = createdOn;
   }
 
 
-  public ReturnsSearchResponseReturnsClaimsInner type(String type) {
+  public ReturnsSearchResponseReturnsClaimsInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -172,12 +183,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public ReturnsSearchResponseReturnsClaimsInner returnReason(String returnReason) {
+  public ReturnsSearchResponseReturnsClaimsInner returnReason(@javax.annotation.Nullable String returnReason) {
     this.returnReason = returnReason;
     return this;
   }
@@ -191,12 +202,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return returnReason;
   }
 
-  public void setReturnReason(String returnReason) {
+  public void setReturnReason(@javax.annotation.Nullable String returnReason) {
     this.returnReason = returnReason;
   }
 
 
-  public ReturnsSearchResponseReturnsClaimsInner referenceNumber(String referenceNumber) {
+  public ReturnsSearchResponseReturnsClaimsInner referenceNumber(@javax.annotation.Nullable String referenceNumber) {
     this.referenceNumber = referenceNumber;
     return this;
   }
@@ -210,12 +221,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return referenceNumber;
   }
 
-  public void setReferenceNumber(String referenceNumber) {
+  public void setReferenceNumber(@javax.annotation.Nullable String referenceNumber) {
     this.referenceNumber = referenceNumber;
   }
 
 
-  public ReturnsSearchResponseReturnsClaimsInner estimatedTotalValue(Double estimatedTotalValue) {
+  public ReturnsSearchResponseReturnsClaimsInner estimatedTotalValue(@javax.annotation.Nullable Double estimatedTotalValue) {
     this.estimatedTotalValue = estimatedTotalValue;
     return this;
   }
@@ -229,12 +240,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return estimatedTotalValue;
   }
 
-  public void setEstimatedTotalValue(Double estimatedTotalValue) {
+  public void setEstimatedTotalValue(@javax.annotation.Nullable Double estimatedTotalValue) {
     this.estimatedTotalValue = estimatedTotalValue;
   }
 
 
-  public ReturnsSearchResponseReturnsClaimsInner credit(BigDecimal credit) {
+  public ReturnsSearchResponseReturnsClaimsInner credit(@javax.annotation.Nullable BigDecimal credit) {
     this.credit = credit;
     return this;
   }
@@ -248,12 +259,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return credit;
   }
 
-  public void setCredit(BigDecimal credit) {
+  public void setCredit(@javax.annotation.Nullable BigDecimal credit) {
     this.credit = credit;
   }
 
 
-  public ReturnsSearchResponseReturnsClaimsInner modifiedOn(String modifiedOn) {
+  public ReturnsSearchResponseReturnsClaimsInner modifiedOn(@javax.annotation.Nullable String modifiedOn) {
     this.modifiedOn = modifiedOn;
     return this;
   }
@@ -267,12 +278,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return modifiedOn;
   }
 
-  public void setModifiedOn(String modifiedOn) {
+  public void setModifiedOn(@javax.annotation.Nullable String modifiedOn) {
     this.modifiedOn = modifiedOn;
   }
 
 
-  public ReturnsSearchResponseReturnsClaimsInner status(String status) {
+  public ReturnsSearchResponseReturnsClaimsInner status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -286,12 +297,12 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public ReturnsSearchResponseReturnsClaimsInner links(List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> links) {
+  public ReturnsSearchResponseReturnsClaimsInner links(@javax.annotation.Nullable List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> links) {
     this.links = links;
     return this;
   }
@@ -313,7 +324,7 @@ public class ReturnsSearchResponseReturnsClaimsInner {
     return links;
   }
 
-  public void setLinks(List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> links) {
+  public void setLinks(@javax.annotation.Nullable List<ReturnsSearchResponseReturnsClaimsInnerLinksInner> links) {
     this.links = links;
   }
 
