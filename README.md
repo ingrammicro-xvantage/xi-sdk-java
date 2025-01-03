@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2024-12-05T05:54:00.257688Z[Etc/UTC]
+  - Build date: 2025-01-03T11:27:04.886246725Z[Etc/UTC]
   - Generator version: 7.10.0
 
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
