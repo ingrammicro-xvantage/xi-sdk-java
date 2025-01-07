@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T08:16:24.530377484Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T09:55:14.296096519Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner {
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
@@ -60,7 +60,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
   @javax.annotation.Nullable
-  private Integer quantity;
+  private String quantity;
 
   public static final String SERIALIZED_NAME_MSRP = "msrp";
   @SerializedName(SERIALIZED_NAME_MSRP)
@@ -99,7 +99,7 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
   }
 
 
-  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner quantity(@javax.annotation.Nullable Integer quantity) {
+  public PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner quantity(@javax.annotation.Nullable String quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -109,11 +109,11 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
    * @return quantity
    */
   @javax.annotation.Nullable
-  public Integer getQuantity() {
+  public String getQuantity() {
     return quantity;
   }
 
-  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
+  public void setQuantity(@javax.annotation.Nullable String quantity) {
     this.quantity = quantity;
   }
 
@@ -272,6 +272,9 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("currencyCode") != null && !jsonObj.get("currencyCode").isJsonNull()) && !jsonObj.get("currencyCode").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `currencyCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyCode").toString()));
+      }
+      if ((jsonObj.get("quantity") != null && !jsonObj.get("quantity").isJsonNull()) && !jsonObj.get("quantity").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `quantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quantity").toString()));
       }
   }
 
