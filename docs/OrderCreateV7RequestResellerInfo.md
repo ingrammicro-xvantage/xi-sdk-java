@@ -17,7 +17,7 @@ The address and contact information provided by the reseller.
 |**state** | **String** | The reseller&#39;s state. |  [optional] |
 |**postalCode** | **String** | The reseller&#39;s zip or postal code. |  [optional] |
 |**countryCode** | **String** | The reseller&#39;s two-character ISO country code. |  [optional] |
-|**phoneNumber** | **Integer** | The reseller&#39;s phone number. |  [optional] |
+|**phoneNumber** | **String** | The reseller&#39;s phone number. |  [optional] |
 |**email** | **String** | The reseller&#39;s email address. |  [optional] |
 
 

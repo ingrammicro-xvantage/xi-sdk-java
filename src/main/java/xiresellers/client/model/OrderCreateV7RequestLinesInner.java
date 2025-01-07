@@ -24,6 +24,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerAdditionalAttributesInner;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerEndUserInfoInner;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner;
@@ -54,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7RequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T05:01:51.614791330Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T06:06:56.528081668Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7RequestLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -99,7 +100,7 @@ public class OrderCreateV7RequestLinesInner {
   public static final String SERIALIZED_NAME_END_USER_INFO = "endUserInfo";
   @SerializedName(SERIALIZED_NAME_END_USER_INFO)
   @javax.annotation.Nullable
-  private List<OrderCreateV7RequestLinesInnerEndUserInfoInner> endUserInfo = new ArrayList<>();
+  private List<OrderCreateV7RequestLinesInnerEndUserInfoInner> endUserInfo;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
@@ -370,9 +371,20 @@ public class OrderCreateV7RequestLinesInner {
         Objects.equals(this.vmfAdditionalAttributesLines, orderCreateV7RequestLinesInner.vmfAdditionalAttributesLines);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(customerLineNumber, ingramPartNumber, vendorPartNumber, quantity, unitPrice, specialBidNumber, endUserPrice, notes, endUserInfo, additionalAttributes, vmfAdditionalAttributesLines);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override

@@ -58,7 +58,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7Request
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T05:01:51.614791330Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T06:06:56.528081668Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7Request {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -123,12 +123,12 @@ public class OrderCreateV7Request {
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
   @javax.annotation.Nullable
-  private List<OrderCreateV7RequestAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
+  private List<OrderCreateV7RequestAdditionalAttributesInner> additionalAttributes;
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES = "vmfAdditionalAttributes";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES)
   @javax.annotation.Nullable
-  private List<OrderCreateV7RequestVmfAdditionalAttributesInner> vmfAdditionalAttributes = new ArrayList<>();
+  private List<OrderCreateV7RequestVmfAdditionalAttributesInner> vmfAdditionalAttributes;
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
