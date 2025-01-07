@@ -62,10 +62,10 @@ public class InvoicesApiTest {
      */
     @Test
     public void getResellersV6InvoicesearchTest() throws ApiException {
-        String imApplicationID = null;
         String imCustomerNumber = null;
         String imCountryCode = null;
         String imCorrelationID = null;
+        String imApplicationID = null;
         String paymentTermsNetDate = null;
         String invoiceDate = null;
         String invoiceDueDate = null;
@@ -89,7 +89,7 @@ public class InvoicesApiTest {
         String orderby = null;
         String direction = null;
         String serialNumber = null;
-        InvoiceSearchResponse response = api.getResellersV6Invoicesearch(imApplicationID, imCustomerNumber, imCountryCode, imCorrelationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber);
+        InvoiceSearchResponse response = api.getResellersV6Invoicesearch(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber);
         // TODO: test validations
     }
 

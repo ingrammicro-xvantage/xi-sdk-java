@@ -80,7 +80,7 @@ public class InvoicesApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany. (required)
+     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany. (optional)
      * @param customerType it should be invoice or order (optional)
      * @param includeSerialNumbers if serial in the response send as true or else false (optional)
      * @param _callback Callback for upload/download progress
@@ -190,11 +190,6 @@ public class InvoicesApi {
             throw new ApiException("Missing the required parameter 'imCorrelationID' when calling getInvoicedetailsV61(Async)");
         }
 
-        // verify the required parameter 'imApplicationID' is set
-        if (imApplicationID == null) {
-            throw new ApiException("Missing the required parameter 'imApplicationID' when calling getInvoicedetailsV61(Async)");
-        }
-
         return getInvoicedetailsV61Call(invoiceNumber, imCustomerNumber, imCountryCode, imCorrelationID, imApplicationID, customerType, includeSerialNumbers, _callback);
 
     }
@@ -206,7 +201,7 @@ public class InvoicesApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany. (required)
+     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany. (optional)
      * @param customerType it should be invoice or order (optional)
      * @param includeSerialNumbers if serial in the response send as true or else false (optional)
      * @return InvoiceDetailsv61Response
@@ -232,7 +227,7 @@ public class InvoicesApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany. (required)
+     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany. (optional)
      * @param customerType it should be invoice or order (optional)
      * @param includeSerialNumbers if serial in the response send as true or else false (optional)
      * @return ApiResponse&lt;InvoiceDetailsv61Response&gt;
@@ -259,7 +254,7 @@ public class InvoicesApi {
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
-     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany. (required)
+     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany. (optional)
      * @param customerType it should be invoice or order (optional)
      * @param includeSerialNumbers if serial in the response send as true or else false (optional)
      * @param _callback The callback to be executed when the API call finishes
@@ -283,10 +278,10 @@ public class InvoicesApi {
     }
     /**
      * Build call for getResellersV6Invoicesearch
-     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany (required)
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @param paymentTermsNetDate Search by payment terms net date(yyyy-MM-dd). (optional)
      * @param invoiceDate Search by invoice date(yyyy-MM-dd). (optional)
      * @param invoiceDueDate Search by invoice date from(yyyy-MM-dd). (optional)
@@ -322,7 +317,7 @@ public class InvoicesApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6InvoicesearchCall(String imApplicationID, String imCustomerNumber, String imCountryCode, String imCorrelationID, String paymentTermsNetDate, String invoiceDate, String invoiceDueDate, String orderDate, String orderFromDate, String orderToDate, String orderNumber, String deliveryNumber, String invoiceNumber, String invoiceStatus, String invoiceType, String customerOrderNumber, String endCustomerOrderNumber, String specialBidNumber, String invoiceFromDueDate, String invoiceToDueDate, List<String> invoiceFromDate, List<String> invoiceToDate, Integer pageSize, Integer pageNumber, String orderby, String direction, String serialNumber, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellersV6InvoicesearchCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationID, String paymentTermsNetDate, String invoiceDate, String invoiceDueDate, String orderDate, String orderFromDate, String orderToDate, String orderNumber, String deliveryNumber, String invoiceNumber, String invoiceStatus, String invoiceType, String customerOrderNumber, String endCustomerOrderNumber, String specialBidNumber, String invoiceFromDueDate, String invoiceToDueDate, List<String> invoiceFromDate, List<String> invoiceToDate, Integer pageSize, Integer pageNumber, String orderby, String direction, String serialNumber, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -479,12 +474,7 @@ public class InvoicesApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellersV6InvoicesearchValidateBeforeCall(String imApplicationID, String imCustomerNumber, String imCountryCode, String imCorrelationID, String paymentTermsNetDate, String invoiceDate, String invoiceDueDate, String orderDate, String orderFromDate, String orderToDate, String orderNumber, String deliveryNumber, String invoiceNumber, String invoiceStatus, String invoiceType, String customerOrderNumber, String endCustomerOrderNumber, String specialBidNumber, String invoiceFromDueDate, String invoiceToDueDate, List<String> invoiceFromDate, List<String> invoiceToDate, Integer pageSize, Integer pageNumber, String orderby, String direction, String serialNumber, final ApiCallback _callback) throws ApiException {
-        // verify the required parameter 'imApplicationID' is set
-        if (imApplicationID == null) {
-            throw new ApiException("Missing the required parameter 'imApplicationID' when calling getResellersV6Invoicesearch(Async)");
-        }
-
+    private okhttp3.Call getResellersV6InvoicesearchValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationID, String paymentTermsNetDate, String invoiceDate, String invoiceDueDate, String orderDate, String orderFromDate, String orderToDate, String orderNumber, String deliveryNumber, String invoiceNumber, String invoiceStatus, String invoiceType, String customerOrderNumber, String endCustomerOrderNumber, String specialBidNumber, String invoiceFromDueDate, String invoiceToDueDate, List<String> invoiceFromDate, List<String> invoiceToDate, Integer pageSize, Integer pageNumber, String orderby, String direction, String serialNumber, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellersV6Invoicesearch(Async)");
@@ -500,17 +490,17 @@ public class InvoicesApi {
             throw new ApiException("Missing the required parameter 'imCorrelationID' when calling getResellersV6Invoicesearch(Async)");
         }
 
-        return getResellersV6InvoicesearchCall(imApplicationID, imCustomerNumber, imCountryCode, imCorrelationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber, _callback);
+        return getResellersV6InvoicesearchCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber, _callback);
 
     }
 
     /**
      * Search your invoice
      * Search your Ingram Micro invoices. This endpoint searches by multiple invoice parameters and supports pagination of results.
-     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany (required)
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @param paymentTermsNetDate Search by payment terms net date(yyyy-MM-dd). (optional)
      * @param invoiceDate Search by invoice date(yyyy-MM-dd). (optional)
      * @param invoiceDueDate Search by invoice date from(yyyy-MM-dd). (optional)
@@ -545,18 +535,18 @@ public class InvoicesApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public InvoiceSearchResponse getResellersV6Invoicesearch(String imApplicationID, String imCustomerNumber, String imCountryCode, String imCorrelationID, String paymentTermsNetDate, String invoiceDate, String invoiceDueDate, String orderDate, String orderFromDate, String orderToDate, String orderNumber, String deliveryNumber, String invoiceNumber, String invoiceStatus, String invoiceType, String customerOrderNumber, String endCustomerOrderNumber, String specialBidNumber, String invoiceFromDueDate, String invoiceToDueDate, List<String> invoiceFromDate, List<String> invoiceToDate, Integer pageSize, Integer pageNumber, String orderby, String direction, String serialNumber) throws ApiException {
-        ApiResponse<InvoiceSearchResponse> localVarResp = getResellersV6InvoicesearchWithHttpInfo(imApplicationID, imCustomerNumber, imCountryCode, imCorrelationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber);
+    public InvoiceSearchResponse getResellersV6Invoicesearch(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationID, String paymentTermsNetDate, String invoiceDate, String invoiceDueDate, String orderDate, String orderFromDate, String orderToDate, String orderNumber, String deliveryNumber, String invoiceNumber, String invoiceStatus, String invoiceType, String customerOrderNumber, String endCustomerOrderNumber, String specialBidNumber, String invoiceFromDueDate, String invoiceToDueDate, List<String> invoiceFromDate, List<String> invoiceToDate, Integer pageSize, Integer pageNumber, String orderby, String direction, String serialNumber) throws ApiException {
+        ApiResponse<InvoiceSearchResponse> localVarResp = getResellersV6InvoicesearchWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber);
         return localVarResp.getData();
     }
 
     /**
      * Search your invoice
      * Search your Ingram Micro invoices. This endpoint searches by multiple invoice parameters and supports pagination of results.
-     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany (required)
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @param paymentTermsNetDate Search by payment terms net date(yyyy-MM-dd). (optional)
      * @param invoiceDate Search by invoice date(yyyy-MM-dd). (optional)
      * @param invoiceDueDate Search by invoice date from(yyyy-MM-dd). (optional)
@@ -591,8 +581,8 @@ public class InvoicesApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<InvoiceSearchResponse> getResellersV6InvoicesearchWithHttpInfo(String imApplicationID, String imCustomerNumber, String imCountryCode, String imCorrelationID, String paymentTermsNetDate, String invoiceDate, String invoiceDueDate, String orderDate, String orderFromDate, String orderToDate, String orderNumber, String deliveryNumber, String invoiceNumber, String invoiceStatus, String invoiceType, String customerOrderNumber, String endCustomerOrderNumber, String specialBidNumber, String invoiceFromDueDate, String invoiceToDueDate, List<String> invoiceFromDate, List<String> invoiceToDate, Integer pageSize, Integer pageNumber, String orderby, String direction, String serialNumber) throws ApiException {
-        okhttp3.Call localVarCall = getResellersV6InvoicesearchValidateBeforeCall(imApplicationID, imCustomerNumber, imCountryCode, imCorrelationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber, null);
+    public ApiResponse<InvoiceSearchResponse> getResellersV6InvoicesearchWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationID, String paymentTermsNetDate, String invoiceDate, String invoiceDueDate, String orderDate, String orderFromDate, String orderToDate, String orderNumber, String deliveryNumber, String invoiceNumber, String invoiceStatus, String invoiceType, String customerOrderNumber, String endCustomerOrderNumber, String specialBidNumber, String invoiceFromDueDate, String invoiceToDueDate, List<String> invoiceFromDate, List<String> invoiceToDate, Integer pageSize, Integer pageNumber, String orderby, String direction, String serialNumber) throws ApiException {
+        okhttp3.Call localVarCall = getResellersV6InvoicesearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber, null);
         Type localVarReturnType = new TypeToken<InvoiceSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -600,10 +590,10 @@ public class InvoicesApi {
     /**
      * Search your invoice (asynchronously)
      * Search your Ingram Micro invoices. This endpoint searches by multiple invoice parameters and supports pagination of results.
-     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany (required)
      * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param imApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
      * @param paymentTermsNetDate Search by payment terms net date(yyyy-MM-dd). (optional)
      * @param invoiceDate Search by invoice date(yyyy-MM-dd). (optional)
      * @param invoiceDueDate Search by invoice date from(yyyy-MM-dd). (optional)
@@ -639,9 +629,9 @@ public class InvoicesApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6InvoicesearchAsync(String imApplicationID, String imCustomerNumber, String imCountryCode, String imCorrelationID, String paymentTermsNetDate, String invoiceDate, String invoiceDueDate, String orderDate, String orderFromDate, String orderToDate, String orderNumber, String deliveryNumber, String invoiceNumber, String invoiceStatus, String invoiceType, String customerOrderNumber, String endCustomerOrderNumber, String specialBidNumber, String invoiceFromDueDate, String invoiceToDueDate, List<String> invoiceFromDate, List<String> invoiceToDate, Integer pageSize, Integer pageNumber, String orderby, String direction, String serialNumber, final ApiCallback<InvoiceSearchResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellersV6InvoicesearchAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationID, String paymentTermsNetDate, String invoiceDate, String invoiceDueDate, String orderDate, String orderFromDate, String orderToDate, String orderNumber, String deliveryNumber, String invoiceNumber, String invoiceStatus, String invoiceType, String customerOrderNumber, String endCustomerOrderNumber, String specialBidNumber, String invoiceFromDueDate, String invoiceToDueDate, List<String> invoiceFromDate, List<String> invoiceToDate, Integer pageSize, Integer pageNumber, String orderby, String direction, String serialNumber, final ApiCallback<InvoiceSearchResponse> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = getResellersV6InvoicesearchValidateBeforeCall(imApplicationID, imCustomerNumber, imCountryCode, imCorrelationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber, _callback);
+        okhttp3.Call localVarCall = getResellersV6InvoicesearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber, _callback);
         Type localVarReturnType = new TypeToken<InvoiceSearchResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

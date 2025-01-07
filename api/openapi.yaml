@@ -6404,7 +6404,7 @@ paths:
         explode: false
         in: header
         name: IM-ApplicationID
-        required: true
+        required: false
         schema:
           example: MyCompany
           maxLength: 32
@@ -6776,7 +6776,7 @@ paths:
         explode: false
         in: header
         name: IM-ApplicationID
-        required: true
+        required: false
         schema:
           example: MyCompany
           maxLength: 32
@@ -13256,7 +13256,6 @@ components:
           description: The ID references the resellers address in Ingram Micro's system
             for shipping. Provided to resellers during the onboarding process.
           maxLength: 10
-          nullable: true
           type: string
         contact:
           description: The company contact provided by the reseller.
