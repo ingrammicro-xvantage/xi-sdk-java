@@ -82,8 +82,6 @@ docs/OrderCreateV7RequestLinesInner.md
 docs/OrderCreateV7RequestLinesInnerAdditionalAttributesInner.md
 docs/OrderCreateV7RequestLinesInnerEndUserInfoInner.md
 docs/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.md
-docs/OrderCreateV7RequestLinesInnerWarrantyInfoInner.md
-docs/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner.md
 docs/OrderCreateV7RequestResellerInfo.md
 docs/OrderCreateV7RequestShipToInfo.md
 docs/OrderCreateV7RequestShipmentDetails.md
@@ -351,8 +349,6 @@ src/main/java/xiresellers/client/model/OrderCreateV7RequestLinesInner.java
 src/main/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerAdditionalAttributesInner.java
 src/main/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerEndUserInfoInner.java
 src/main/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.java
-src/main/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerWarrantyInfoInner.java
-src/main/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner.java
 src/main/java/xiresellers/client/model/OrderCreateV7RequestResellerInfo.java
 src/main/java/xiresellers/client/model/OrderCreateV7RequestShipToInfo.java
 src/main/java/xiresellers/client/model/OrderCreateV7RequestShipmentDetails.java
@@ -581,8 +577,6 @@ src/test/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerAdditionalA
 src/test/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerEndUserInfoInnerTest.java
 src/test/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerTest.java
 src/test/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInnerTest.java
-src/test/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInnerTest.java
-src/test/java/xiresellers/client/model/OrderCreateV7RequestLinesInnerWarrantyInfoInnerTest.java
 src/test/java/xiresellers/client/model/OrderCreateV7RequestResellerInfoTest.java
 src/test/java/xiresellers/client/model/OrderCreateV7RequestShipToInfoTest.java
 src/test/java/xiresellers/client/model/OrderCreateV7RequestShipmentDetailsTest.java

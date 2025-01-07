@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2025-01-03T17:34:44.949460271Z[Etc/UTC]
+  - Build date: 2025-01-07T05:01:51.614791330Z[Etc/UTC]
   - Generator version: 7.10.0
 
 For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
@@ -219,8 +219,6 @@ Class | Method | HTTP request | Description
  - [OrderCreateV7RequestLinesInnerAdditionalAttributesInner](docs/OrderCreateV7RequestLinesInnerAdditionalAttributesInner.md)
  - [OrderCreateV7RequestLinesInnerEndUserInfoInner](docs/OrderCreateV7RequestLinesInnerEndUserInfoInner.md)
  - [OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner](docs/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.md)
- - [OrderCreateV7RequestLinesInnerWarrantyInfoInner](docs/OrderCreateV7RequestLinesInnerWarrantyInfoInner.md)
- - [OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner](docs/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner.md)
  - [OrderCreateV7RequestResellerInfo](docs/OrderCreateV7RequestResellerInfo.md)
  - [OrderCreateV7RequestShipToInfo](docs/OrderCreateV7RequestShipToInfo.md)
  - [OrderCreateV7RequestShipmentDetails](docs/OrderCreateV7RequestShipmentDetails.md)

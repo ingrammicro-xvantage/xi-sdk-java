@@ -165,8 +165,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerAdditionalAttributesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerEndUserInfoInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerWarrantyInfoInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestResellerInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestShipToInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestShipmentDetails.CustomTypeAdapterFactory());

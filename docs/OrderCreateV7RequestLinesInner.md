@@ -17,7 +17,6 @@
 |**notes** | **String** | The attribute field data. |  [optional] |
 |**endUserInfo** | [**List&lt;OrderCreateV7RequestLinesInnerEndUserInfoInner&gt;**](OrderCreateV7RequestLinesInnerEndUserInfoInner.md) |  |  [optional] |
 |**additionalAttributes** | [**List&lt;OrderCreateV7RequestLinesInnerAdditionalAttributesInner&gt;**](OrderCreateV7RequestLinesInnerAdditionalAttributesInner.md) |  |  [optional] |
-|**warrantyInfo** | [**List&lt;OrderCreateV7RequestLinesInnerWarrantyInfoInner&gt;**](OrderCreateV7RequestLinesInnerWarrantyInfoInner.md) |  |  [optional] |
 |**vmfAdditionalAttributesLines** | [**List&lt;OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner&gt;**](OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.md) |  |  [optional] |
 
 

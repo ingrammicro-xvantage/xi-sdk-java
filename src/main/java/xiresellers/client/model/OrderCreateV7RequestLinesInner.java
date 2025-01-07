@@ -27,7 +27,6 @@ import java.util.List;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerAdditionalAttributesInner;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerEndUserInfoInner;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner;
-import xiresellers.client.model.OrderCreateV7RequestLinesInnerWarrantyInfoInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -55,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7RequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-03T17:34:44.949460271Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T05:01:51.614791330Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class OrderCreateV7RequestLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -106,11 +105,6 @@ public class OrderCreateV7RequestLinesInner {
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
   @javax.annotation.Nullable
   private List<OrderCreateV7RequestLinesInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
-
-  public static final String SERIALIZED_NAME_WARRANTY_INFO = "warrantyInfo";
-  @SerializedName(SERIALIZED_NAME_WARRANTY_INFO)
-  @javax.annotation.Nullable
-  private List<OrderCreateV7RequestLinesInnerWarrantyInfoInner> warrantyInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES = "vmfAdditionalAttributesLines";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES_LINES)
@@ -326,33 +320,6 @@ public class OrderCreateV7RequestLinesInner {
   }
 
 
-  public OrderCreateV7RequestLinesInner warrantyInfo(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerWarrantyInfoInner> warrantyInfo) {
-    this.warrantyInfo = warrantyInfo;
-    return this;
-  }
-
-  public OrderCreateV7RequestLinesInner addWarrantyInfoItem(OrderCreateV7RequestLinesInnerWarrantyInfoInner warrantyInfoItem) {
-    if (this.warrantyInfo == null) {
-      this.warrantyInfo = new ArrayList<>();
-    }
-    this.warrantyInfo.add(warrantyInfoItem);
-    return this;
-  }
-
-  /**
-   * Get warrantyInfo
-   * @return warrantyInfo
-   */
-  @javax.annotation.Nullable
-  public List<OrderCreateV7RequestLinesInnerWarrantyInfoInner> getWarrantyInfo() {
-    return warrantyInfo;
-  }
-
-  public void setWarrantyInfo(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerWarrantyInfoInner> warrantyInfo) {
-    this.warrantyInfo = warrantyInfo;
-  }
-
-
   public OrderCreateV7RequestLinesInner vmfAdditionalAttributesLines(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner> vmfAdditionalAttributesLines) {
     this.vmfAdditionalAttributesLines = vmfAdditionalAttributesLines;
     return this;
@@ -400,13 +367,12 @@ public class OrderCreateV7RequestLinesInner {
         Objects.equals(this.notes, orderCreateV7RequestLinesInner.notes) &&
         Objects.equals(this.endUserInfo, orderCreateV7RequestLinesInner.endUserInfo) &&
         Objects.equals(this.additionalAttributes, orderCreateV7RequestLinesInner.additionalAttributes) &&
-        Objects.equals(this.warrantyInfo, orderCreateV7RequestLinesInner.warrantyInfo) &&
         Objects.equals(this.vmfAdditionalAttributesLines, orderCreateV7RequestLinesInner.vmfAdditionalAttributesLines);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(customerLineNumber, ingramPartNumber, vendorPartNumber, quantity, unitPrice, specialBidNumber, endUserPrice, notes, endUserInfo, additionalAttributes, warrantyInfo, vmfAdditionalAttributesLines);
+    return Objects.hash(customerLineNumber, ingramPartNumber, vendorPartNumber, quantity, unitPrice, specialBidNumber, endUserPrice, notes, endUserInfo, additionalAttributes, vmfAdditionalAttributesLines);
   }
 
   @Override
@@ -423,7 +389,6 @@ public class OrderCreateV7RequestLinesInner {
     sb.append("    notes: ").append(toIndentedString(notes)).append("\n");
     sb.append("    endUserInfo: ").append(toIndentedString(endUserInfo)).append("\n");
     sb.append("    additionalAttributes: ").append(toIndentedString(additionalAttributes)).append("\n");
-    sb.append("    warrantyInfo: ").append(toIndentedString(warrantyInfo)).append("\n");
     sb.append("    vmfAdditionalAttributesLines: ").append(toIndentedString(vmfAdditionalAttributesLines)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -457,7 +422,6 @@ public class OrderCreateV7RequestLinesInner {
     openapiFields.add("notes");
     openapiFields.add("endUserInfo");
     openapiFields.add("additionalAttributes");
-    openapiFields.add("warrantyInfo");
     openapiFields.add("vmfAdditionalAttributesLines");
 
     // a set of required properties/fields (JSON key names)
@@ -525,20 +489,6 @@ public class OrderCreateV7RequestLinesInner {
           // validate the optional field `additionalAttributes` (array)
           for (int i = 0; i < jsonArrayadditionalAttributes.size(); i++) {
             OrderCreateV7RequestLinesInnerAdditionalAttributesInner.validateJsonElement(jsonArrayadditionalAttributes.get(i));
-          };
-        }
-      }
-      if (jsonObj.get("warrantyInfo") != null && !jsonObj.get("warrantyInfo").isJsonNull()) {
-        JsonArray jsonArraywarrantyInfo = jsonObj.getAsJsonArray("warrantyInfo");
-        if (jsonArraywarrantyInfo != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("warrantyInfo").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `warrantyInfo` to be an array in the JSON string but got `%s`", jsonObj.get("warrantyInfo").toString()));
-          }
-
-          // validate the optional field `warrantyInfo` (array)
-          for (int i = 0; i < jsonArraywarrantyInfo.size(); i++) {
-            OrderCreateV7RequestLinesInnerWarrantyInfoInner.validateJsonElement(jsonArraywarrantyInfo.get(i));
           };
         }
       }

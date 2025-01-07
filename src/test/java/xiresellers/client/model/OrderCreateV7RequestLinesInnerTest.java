@@ -26,7 +26,6 @@ import java.util.List;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerAdditionalAttributesInner;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerEndUserInfoInner;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner;
-import xiresellers.client.model.OrderCreateV7RequestLinesInnerWarrantyInfoInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -122,14 +121,6 @@ public class OrderCreateV7RequestLinesInnerTest {
     @Test
     public void additionalAttributesTest() {
         // TODO: test additionalAttributes
-    }
-
-    /**
-     * Test the property 'warrantyInfo'
-     */
-    @Test
-    public void warrantyInfoTest() {
-        // TODO: test warrantyInfo
     }
 
     /**
