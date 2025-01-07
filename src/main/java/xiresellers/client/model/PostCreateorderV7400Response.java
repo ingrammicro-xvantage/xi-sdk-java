@@ -51,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * PostCreateorderV7400Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T09:55:14.296096519Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T10:15:50.038455601Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class PostCreateorderV7400Response {
   public static final String SERIALIZED_NAME_TRACEID = "traceid";
   @SerializedName(SERIALIZED_NAME_TRACEID)

@@ -65,7 +65,7 @@ public class Example {
 | **imCustomerNumber** | **String**| Your unique Ingram Micro customer number. | |
 | **imCountryCode** | **String**| Two-character ISO country code. | |
 | **imCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | |
-| **imApplicationID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany. | [optional] |
+| **imApplicationID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany. | |
 | **customerType** | **String**| it should be invoice or order | [optional] |
 | **includeSerialNumbers** | **Boolean**| if serial in the response send as true or else false | [optional] |
 
@@ -91,7 +91,7 @@ public class Example {
 
 <a id="getResellersV6Invoicesearch"></a>
 # **getResellersV6Invoicesearch**
-> InvoiceSearchResponse getResellersV6Invoicesearch(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber)
+> InvoiceSearchResponse getResellersV6Invoicesearch(imApplicationID, imCustomerNumber, imCountryCode, imCorrelationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber)
 
 Search your invoice
 
@@ -117,10 +117,10 @@ public class Example {
     application.setAccessToken("YOUR ACCESS TOKEN");
 
     InvoicesApi apiInstance = new InvoicesApi(defaultClient);
+    String imApplicationID = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
     String imCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
     String imCountryCode = "US"; // String | Two-character ISO country code.
     String imCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
-    String imApplicationID = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
     String paymentTermsNetDate = "2021-04-23"; // String | Search by payment terms net date(yyyy-MM-dd).
     String invoiceDate = "2021-04-23"; // String | Search by invoice date(yyyy-MM-dd).
     String invoiceDueDate = "2021-04-23"; // String | Search by invoice date from(yyyy-MM-dd).
@@ -145,7 +145,7 @@ public class Example {
     String direction = "desc"; // String | asc or desc , along with orderby column result set will be sorted.
     String serialNumber = "serialNumber_example"; // String | Serial number of the product.
     try {
-      InvoiceSearchResponse result = apiInstance.getResellersV6Invoicesearch(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber);
+      InvoiceSearchResponse result = apiInstance.getResellersV6Invoicesearch(imApplicationID, imCustomerNumber, imCountryCode, imCorrelationID, paymentTermsNetDate, invoiceDate, invoiceDueDate, orderDate, orderFromDate, orderToDate, orderNumber, deliveryNumber, invoiceNumber, invoiceStatus, invoiceType, customerOrderNumber, endCustomerOrderNumber, specialBidNumber, invoiceFromDueDate, invoiceToDueDate, invoiceFromDate, invoiceToDate, pageSize, pageNumber, orderby, direction, serialNumber);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling InvoicesApi#getResellersV6Invoicesearch");
@@ -162,10 +162,10 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
+| **imApplicationID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | |
 | **imCustomerNumber** | **String**| Your unique Ingram Micro customer number. | |
 | **imCountryCode** | **String**| Two-character ISO country code. | |
 | **imCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | |
-| **imApplicationID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | [optional] |
 | **paymentTermsNetDate** | **String**| Search by payment terms net date(yyyy-MM-dd). | [optional] |
 | **invoiceDate** | **String**| Search by invoice date(yyyy-MM-dd). | [optional] |
 | **invoiceDueDate** | **String**| Search by invoice date from(yyyy-MM-dd). | [optional] |

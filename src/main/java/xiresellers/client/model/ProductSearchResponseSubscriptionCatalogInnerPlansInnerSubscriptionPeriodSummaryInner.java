@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T09:55:14.296096519Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T10:15:50.038455601Z[Etc/UTC]", comments = "Generator version: 7.10.0")
 public class ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner {
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD_UNIT = "subscriptionPeriodUnit";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD_UNIT)
